@@ -1,0 +1,103 @@
+import "cs_battle.proto" ;
+
+message CSRangeInfo {
+	required CSPoint start			= 1;
+	required CSPoint end			= 2;	
+}
+
+message CSMonsterInfo_t {
+	required uint32 raid_id			= 1;
+	required uint32 speed			= 2;
+	required uint32 type			= 3;
+	required bool is_boss			= 4;
+	required CSRangeInfo body_range = 5;
+	required uint32 physical_attack	= 6;
+	required uint32 magic_attack	= 7;
+	required uint32 skill_attack	= 8;
+	required uint32 physical_defence	= 9;
+	required uint32 magic_defence	= 10;
+	required uint32 skill_defence	= 11;
+	required uint32 health_point	= 12;
+	required uint32 accurate		= 13;
+	required uint32 dodge			= 14;
+	required uint32 wreck			= 15;
+	required uint32 parry			= 16;
+	required uint32 critical_strike = 17;
+	required uint32 tenacity		= 18;
+	required uint32 slay			= 19;
+	required uint32 proficiency		= 20;
+	required uint32 vision			= 21; 
+	required CSRangeInfo birth		= 22;
+}
+
+message CSMapMonster_t {
+	required uint32 raid_id					= 1;
+	required uint32 monster_id				= 2;
+	required uint32 monster_value_type		= 3;
+	required uint32 monster_level			= 4;
+	required CSPoint birth_place				= 5;
+	required CSRangeInfo	patrol_place		= 6;
+	required bool elite							= 7; 
+};
+
+message CSMapMonsterGroup_t {
+	required float refresh_time					= 1;
+	required uint32 times						= 2;
+	repeated CSMapMonster_t	monsters			= 3;
+	optional uint32 group_id					= 4;
+};
+
+message CSMapContent_t {
+	required uint32	map_id						= 1;	
+	required uint32 trans_des					= 2;
+	required CSPoint trans_place				= 3;
+	repeated CSPoint birth_place_gen			= 4;
+	repeated CSMapMonsterGroup_t monster_group	= 5;
+	repeated CSPoint monster_birth				= 6;
+	message CSMonsterNum {
+		required uint32 monster_id		= 1;
+		required uint32 monster_num		= 2;
+	}
+	repeated CSMonsterNum	monster_nums		= 7;
+};
+
+message CSMapContentList_t {
+	required uint32 instance_id					= 1;
+	repeated CSMapContent_t map_contents		= 2;
+};
+
+message CSMonsterValue_t {
+	required uint32 id							= 1;
+	required uint32	type						= 2;
+	required uint32 level						= 3;
+	required uint32 physical_attack				= 4;
+	required uint32 magic_attack				= 5;
+	required uint32 skill_attack				= 6;
+	required uint32 physical_defence			= 7;
+	required uint32 magic_defence				= 8;
+	required uint32 skill_defence				= 9;
+	required uint32 health_point				= 10;
+	required uint32 accurate					= 11;
+	required uint32 dodge						= 12;
+	required uint32 wreck						= 13;
+	required uint32 parry						= 14;
+	required uint32 critical_strike				= 15;
+	required uint32 tenacity					= 16;
+	required uint32 slay						= 17;
+	required uint32 courage						= 18;
+	required uint32 charm						= 19;
+	required uint32 trick						= 20;
+	required uint32 proficiency					= 21;
+	required uint32 hp_line						= 22;
+};
+
+message CSBattlePrepareReq {
+	required uint32 instance_id					= 1;
+};
+
+message CSBattlePrepareRsp {
+	required CSMapContentList_t map_contents			= 1;
+	repeated CSMonsterValue_t monster_values			= 2;
+    optional uint32 error                               = 3;
+};
+

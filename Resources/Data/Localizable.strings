@@ -1,0 +1,156 @@
+/* 
+  Localizable.strings
+  
+
+  Created by : tong on 12-2-3.
+  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+*/
+
+/*
+ B_   表示用在战斗中的提示语言
+ */
+
+"CONFIRM"       = "确定";
+"CANCEL"        = "取消";
+"RESET"         = "重置";
+"BACK"          = "返回";
+"PLAY_SKIP"     = "跳过";
+"YES"           = "是";
+"NO"            = "否";
+"B_GET_EXP"     = "获得经验:";
+"B_NEED_EXP"  = "离升级还需经验:";
+"B_LRN"       = "学习力:";
+"ABILITY_ATK" = "物攻: %d";
+"ABILITY_DEF" = "物防: %d";
+"ABILITY_SP_ATK" = "特攻: %d";
+"ABILITY_SP_DEF" = "特防: %d";
+"ABILITY_SPD" = "速度: %d";
+"ABILITY_HP"  = "体力: %d";
+"ABILITY_ID"  = "序号: %d";
+"ABILITY_NAME" = "名字: %s";
+"ABILITY_LV"  = "等级: %d";
+"ABILITY_TEMP" = "性格: %s";
+"LEVEL_UP_NEED_EXP" = "升级所需经验:";
+"LEVEL_UP_NEED_EXP_VALUE" = "升级所需经验: %d";
+"LEVEL_UP_NEED_EXP_NO_VALUE" = "升级所需经验: %s";
+"UNUSED_EXP_VALUE" = "剩余经验值: %d";
+"TOTAL_EXP"      = "累计经验: %d";
+"ADD_EXP_FOR_SP" = "增加经验值:";
+"UN_USED_LRN"    = "剩余学习力";
+"LEVEL_UP_ATK"              = "物攻";
+"LEVEL_UP_DEF"              = "物防";
+"LEVEL_UP_SP_ATK"           = "特攻";
+"LEVEL_UP_SP_DEF"           = "特防";
+"LEVEL_UP_SPD"              = "速度";
+"LEVEL_UP_HP" = "体力";
+"LEVEL_UP_LV_EX" = "等级";
+"UNKNOW_NAME" = "未知";
+"DEAL_SP_LINK" = "连接";
+"DEAL_SP_UN_LINK" = "断开";
+"DEAL_SP_FIRST" = "首发";
+"DEAL_SP_FOLLOW" = "跟随";
+"DEAL_SP_UN_FOLLOW" = "收回";
+"DEAL_SP_TO_PACK" = "入库";
+"PACK_INFO" = "资料";
+"PACK_ABILITY" = "能力";
+"PACK_SKILLS" = "技能";
+"PACK_TOOLS" = "道具";
+"PACK_ASSIGN_EXP" = "经验分配器";
+"PACK_ASSIGN_LRN" = "分配学习力";
+"SP_PROPERTY_ATT" = "属性: %s";
+"SP_PROPERTY_LV" = "等级: %d";
+"SP_PROPERTY_TEMP" = "性格: %s";
+"SP_PROPERTY_HEIGHT" = "身高: %dcm";
+"SP_PROPERTY_WEIGHT" = "体重: %dkg";
+"SP_CATCH_TIME" = "获取时间: %d年%d月%d日";
+"SP_EVO_VALUE" = "进化等级:";
+"SKILL_CATEGORY_PY" = "物理";
+"SKILL_CATEGORY_SP" = "特殊";
+"SKILL_CATEGORY_NATURE" = "属性";
+"SKILL_CATEGORY_OBI_1" = "必杀";
+"SKILL_CATEGORY_OBI_2" = "合体必杀";
+"SKILL_POWER" = "威力:";
+"SKILL_POWER_VALUE" = "威力 %d";
+"SKILL_ANGER" = "怒气:";
+"LEVEL_UP_LV" = "等级:";
+"SKILL_ANGER_VALUE"= "怒气 %d";
+"SORT_TIME" = "时间排序";
+"SORT_LV" = "等级排序";
+"STORAGE_EXT" = "仓库扩展";
+"NOTICE_STORAGE_EXT_USE" = "是否使用仓库扩展卡来扩展仓库容量?";
+"NOTICE_TO_SHOP_BUY_STORAGE_EXT" = "很抱歉，您没有仓库扩展卡，是否前往商店购买?";
+"NOTICE_CANNOT_USE_MORE_STORAGE_EXT" = "仓库已经扩展到最大，不能使用仓库扩展卡";
+"SP_NUM" = "数量:";
+"SP_TO_PACK" = "带走";
+"B_TIMEOUT_SELF"    = "你已经离开战斗";
+"B_TIMEOUT_OTHER"   = "对方已经离开战斗";
+
+"SP_FEATURE" = "特性:【%s】";
+"SP_BRIEF" = "简介: %s";
+"NO_WEIBO_SHARE"    = "需要连接网络才能进行微薄分享";
+"BIG_Fresent"       = "饱满的果实×10\n中级资质果实×10\n性格重置药剂×5\n高级学习力胶囊×5";
+
+//PVP
+"PVP_WAINT"         = "等待中";
+"PVPTOP"            = "排行榜";
+"MY_SCORE"          = "我的积分:";
+"MY_RANK"           = "我的排名:";
+"TODAY_SCORE"       = "今日积分";
+"TODAY_RANK"        = "今日排名";
+"LEFT_SCORE"        = "剩余积分";
+"SCORE_EXCHANGE"    = "积分兑换";
+"RANK"              = "排名";
+"NEW_RANK"          = "今日排行";
+"HISTORY_RANK"      = "历史排行"; 
+
+"PALYER" = "玩家";
+"SCORE" = "积分";
+"ID"    = "米米号";
+"USE_ITEM_MESSAGE" = "你确定要使用%s吗？";
+"CANNOT_USE_EXP_ITEM" = "%s已满级，不能使用%s";
+"DATA_TIME" = "%d年%d月%d日"; 
+
+
+// quest related
+"QUEST_AIM"             = "任务目标: ";
+"QUEST_AWARD"           = "任务奖励: ";
+"QUEST_ACCEPT"          = "接受";
+"QUEST_PRIMARY"         = "主线";
+"QUEST_BRANCH"          = "支线";
+"QUEST_DAILY"           = "日常";
+"QUEST_NEED_GEM"        = "需要 ";
+
+
+//网络没有链接
+"NOT_CONNECTED"             = "无可用网络连接，请确保您的设备已连接网络";
+"TOP_NO_NETWORK"            = "没有网络连接, 不能查看排行榜！";
+"NO_SERVER"                 = "连接游戏服务器失败";
+
+// AD Walls
+"ADWALL_IMMOB" = "力美平台";
+"ADWALL_ADWAY" = "爱德威平台";
+"ADWALL_TAPJOY" = "Tapjoy 平台";
+"ADWALL_DIANRU" = "点入平台";
+"ADWALL_YOUMI" = "有米平台";
+"AD_NOT_AVAIL_TITLE" = "温馨提醒";
+"AD_NOT_AVAIL" = "此服务暂不可用!";
+"NETWORK_NOT_AVAIL" = "此服务需要联网!";
+"GET_VIPGOLD_TITLE" = "恭喜";
+"GET_VIPGOLD_BY_ADWALL" = "从%@获得%d个金豆!!";
+"ACTIONSHEET_TITLE" = "免费金豆\n按提示操作后再次点击\"FREE\"按钮获取金豆";
+"LATER_RATE"        = "以后再说";
+"FREE_ADWALL"        = "免费";
+
+//登陆奖励
+"LOGIN_CONTINUOUS"  = "连续登陆%d天";
+"LOGIN_6"           = "连续登陆%d天以上";
+"LOGIN_INTRO"       = "连续登陆天数越多可获得更好的奖励";
+"confirm"           = "领取";
+"sconfirm"           = "已领取";
+"rename"            = "改名";
+"award_hint"        = "恭喜您，获得%d个%s";
+
+
+//登入
+"LOGIN" = "登入";
+"NO_CHARACTER" = "(没有角色)";

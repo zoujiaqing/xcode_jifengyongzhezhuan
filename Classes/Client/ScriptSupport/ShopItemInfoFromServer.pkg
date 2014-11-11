@@ -1,0 +1,19 @@
+class OneShopItemInfo
+{
+	unsigned int product_id;
+	unsigned int item_id;
+	unsigned int item_base_num;
+	unsigned int item_gift_num;
+	std::string product_name;
+	unsigned int product_price;
+	unsigned int product_orig_price;
+};
+
+class ShopItemInfoFromServer
+{
+	static ShopItemInfoFromServer *sharedInstance();
+	// Note: 基本信息查询函数
+	OneShopItemInfo GetOneShopItemInfo(unsigned int productId);
+	// Note: 为Lua准备需要的数据
+	void PrepareNeedDataForLua();
+};

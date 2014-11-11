@@ -1,0 +1,5 @@
+class UIControlAppearControler
+{
+	static UIControlAppearControler* Get();
+	void InsertOneTutorialAndTask(unsigned int tutorialId,unsigned int taskId);
+};

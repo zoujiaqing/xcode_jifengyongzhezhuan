@@ -1,0 +1,579 @@
+/*
+1. 包格式:
+	len(u32) + hlen(u32) + msghead + msgbody + checksum(u32)
+
+2. 使用规则:
+	(1) 字段只能加, 不能减;
+	(2) 增加的字段只能是 optional 类型, 且必须给出 default 值, 最好还有相关说明;
+*/
+
+package iAdCSProto;
+
+/* cs通讯错误码 */
+enum cs_err_code_t {
+        CS_ERR_NO_ERROR                     = 0; //没有错误
+
+        /* 系统级错误码1-200 */
+        CS_ERR_INV_PKGLEN                   = 1;  // 包长和收到的数据不匹配
+        CS_ERR_UNSUPPORTED_MSG              = 2;  // 不支持的消息
+        CS_ERR_NOT_ALLOWED_LOGIN            = 3;  // 不允许登录
+        CS_ERR_NOT_ENOUGH_RES_FOR_PLAYER    = 4;  // 系统资源不足, 不能再加人了
+        CS_ERR_UNSUPPORTED_MSG_TYPE         = 5;  // 不支持该协议
+        CS_ERR_NOFOUND_PLAYER               = 6;  // 找不到玩家
+        CS_ERR_SESS_AUTH_FAILED             = 7;  // SESSION验证失败
+        CS_ERR_UID_ILLEGAL                  = 8;  // UID非法(uid必须大于50000)
+        CS_ERR_CONN_ILLEGAL                 = 9;  // 连接非法(某fd发来数据,声称是玩家A,但玩家A的fd与该fd不同）
+        CS_ERR_SYSERR_BTLSVR                = 10; // 系统错误(连接不上btlsvr)
+        CS_ERR_ONLINE_RES_RUNOUT            = 11; // 服务器系统资源不足
+
+        /* 地图错误码 10000-10099 */
+        CS_ERR_NOFOUND_MAP_ID               = 10000; //未找到地图ID
+        CS_ERR_ENTER_SAME_MAP               = 10001; //在地图A又尝试进入地图A
+        CS_ERR_NOT_IN_MAP                   = 10002; //玩家不在地图     
+
+        /* 好友错误码 10100-10199 */
+
+        /* 聊天错误码 10200-10299 */
+        
+        /* 物品错误码 10300-10399 */
+        CS_ERR_ITEM_NOT_EXIST               = 10300; //物品不存在
+        CS_ERR_ITEM_NOT_ENOUGH              = 10301; //物品余量不够
+        CS_ERR_ITEM_MAX_LIMIT               = 10302; //物品达到拥有上限
+        CS_ERR_ITEM_UNUSABLE                = 10303; //物品不可使用
+        CS_ERR_ITEM_ABUSE                   = 10304; //物品使用对象不对
+        CS_ERR_ITEM_NOT_EQUIPMENT           = 10305; //物品不是装备
+        CS_ERR_ITEM_MONSTER_UNUSABLE         = 10306; //物品不可对精灵使用
+        CS_ERR_ITEM_MONSTER_UUID_ERR        = 10307; //物品对精灵使用时精灵唯一标识(uuid)错误
+        CS_ERR_NO_CHANGE_NICK_CARD_EXIST    = 10308; //改名芯片不存在
+        CS_ERR_ITEM_TYPE_ERROR              = 10309; //物品类型不存在
+        CS_ERR_ITEM_BAG_FULL                = 10310; //背包满
+        CS_ERR_ITEM_BAG_NOT_EXIST           = 10311; //未知错误导致某个物品找不到对应的包裹index
+
+        /* 精灵错误码 10400-10499 */
+        
+        /* 战斗错误码 10500-10599 */
+		// 战斗服务器内部错误1(无效战斗组id=0)
+		CS_ERR_BTLSVR_INNER_ERROR1			= 10500;
+
+        /* 角色自身错误码 10600-10699 */
+        CS_ERR_NICK_WITH_DIRTY_WORDS        = 10600; //昵称有脏词
+
+        /* 邮件错误码 10700-10799 */
+        CS_ERR_MAIL_ID_NOT_EXIST            = 10700;//邮件ID不存在
+        CS_ERR_MAIL_NO_ENCLOSURE            = 10701;//邮件里没有附件
+        CS_ERR_MAIL_RECEIVER_NOT_EXIST      = 10702;//收件人不存在
+        CS_ERR_MAIL_TITLE_DIRTY_WORD        = 10703;//邮件标题有脏话
+        CS_ERR_MAIL_CONTENT_DIRTY_WORD      = 10704;//邮件内容有脏话
+        CS_ERR_MAIL_ENCLOSURE_ID_NOT_EXIST  = 10705;//邮件附件里的物品ID不存在
+        CS_ERR_MAIL_MAIL_NOT_LOAD           = 10706;//邮件正文还未加载(未打开邮件就想领取附件时)
+        CS_ERR_MAIL_CLIENT_FORBIDDEN        = 10707;//目前不允许客户端发邮件
+        CS_ERR_MAIL_SEND_TO_SELF_FORBIDDEN  = 10708;//不可以自己给自己发邮件
+        CS_ERR_MAIL_RECEIVER_ID_INVALID     = 10709;//收件人米米号不合法
+        CS_ERR_MAIL_TITLE_TOO_LONG         = 10710;//邮件标题太长(64个字节[包含终止符])
+        CS_ERR_MAIL_CONTENT_TOO_LONG        = 10711;//邮件正文太长(1024个字节[包含终止符])
+
+
+        /*任务错误码 10800-10999*/
+        CS_ERR_TASK_INVALID_TASK_ID         = 10800;//任务ID不存在
+        CS_ERR_TASK_ALREADY_TAKEN           = 10801;//已经接过任务
+        CS_ERR_TASK_NO_TAKEN                = 10802;//未接过该任务
+        CS_ERR_TASK_ALREADY_FINISHED        = 10803;//任务已经完成过
+        CS_ERR_TASK_LACK_PRE_TASK           = 10804;//前置任务未完成
+        CS_ERR_TASK_HIGHER_LEVEL_REQUIRED   = 10805;//等级不够
+        CS_ERR_TASK_WRONG_MAP               = 10806;//接或者完成任务时所在地图ID不对
+        CS_ERR_TASK_SETTER_NOAUTH           = 10807;//设置者没有权限设置任务步骤
+        CS_ERR_TASK_STEP_INVALID            = 10808;//步骤ID不合法
+        CS_ERR_TASK_STEP_TYPE_INVALID       = 10809;//步骤类型不合法
+        CS_ERR_TASK_LACK_PRE_STEP           = 10810;//前置步骤未完成
+        CS_ERR_TASK_STEP_ALREADY_FINISHED   = 10811;//步骤已经完成过了
+        CS_ERR_TASK_UNFINISHED              = 10812;//任务还不能完成
+        CS_ERR_TASK_NOT_INIT                = 10813;//任务列表未初始化
+        CS_ERR_TASK_TOO_MANY_FLAG_REQ       = 10814;//一次请求任务标志列表过多(100个)
+        CS_ERR_TASK_TOO_MANY_BUFF_REQ       = 10815;//一次请求任务buff列表过多(50个)
+        CS_ERR_TASK_STAR_NOT_ENOUGH         = 10816;//星数不够
+}
+
+/* 包头 */
+
+message cs_empty_msg_t {
+
+}
+
+message cs_msg_head_t {
+	required string msg_type_name = 1;
+	required uint32 uid = 2;
+	required uint32 ret = 3;
+	optional uint32 seq = 4 [default = 0];
+}
+
+
+/* 包体 */
+
+/** @brief 返回错误码统一协议 */
+message ack_errcode_t {
+	required int32	errcode = 1;
+	optional string errmsg = 2 [default = "default error"];
+}
+
+/**
+ * @def echo 协议
+ */
+message cli_echo_req_t {
+    optional string str = 1;
+}
+
+message cli_echo_rsp_t {
+    optional string str = 1;
+}
+
+/**
+ * @def login_cmd
+ * @brief 登陆协议
+ */
+message login_req_t {
+	required string session = 1; // 验证session
+}
+
+message login_mon_ev_info_t {
+	required uint32 unalloc = 1; // 未分配努力值
+	required uint32 hp = 2; // hp努力值
+	required uint32 atk = 3; // 攻击努力值
+	required uint32 def = 4; // 防御努力值
+	required uint32 sp_atk = 5; // 特攻努力值
+	required uint32 sp_def = 6; // 特防努力值
+	required uint32 spd = 7; // 速度努力值
+}
+
+message login_mon_btl_attr_t {
+	required uint32 hp = 1; // 精灵当前hp
+	required uint32 atk = 2; // 攻击系数
+	required uint32 def = 3; // 防御系数
+	required uint32 sp_atk = 4; // 特攻系数
+	required uint32 sp_def = 5; // 特防系数
+	required uint32 spd = 6; // 速度系数
+}
+
+message login_mon_moves_info_t {
+	repeated uint32 learned_normal_moves = 1; // 已学会 普通技能列表
+	repeated uint32 learned_insight_moves = 2; // 已学会 技能列表
+	repeated uint32 learned_unique_moves = 3; // 已学会 必杀技能列表
+	repeated uint32 non_unique_moves = 4; // 已选取 非必杀技能 (normal + insight)
+	repeated uint32 unique_moves = 5; // 已选取 必杀技能列表
+}
+
+message login_mon_info_t {
+	required uint32 id = 1; // 精灵id
+	required uint32 family = 2; // 精灵家族id
+	required uint32 form = 3; // 精灵形态
+	required int32 born_time = 4; // 精灵出生时间
+	required string uuid = 5; // 精灵唯一标识
+	required uint32 exp_to_next_level = 6; // 到下一等级所需经验值
+	required uint32 max_hp = 7; // 最大hp
+	required uint32 level = 8; // 当前等级
+	required uint32 gender = 9; // 性别 (0: none, 1: male, 2: female, 3: both)
+	required uint32 character = 10; // 性格 (0~24)
+	required uint32 potential = 11; // 潜力 (0~31)
+	required uint32 signet_id = 12; // 纹章id
+	required uint32 weight = 13; // 体重
+	required uint32 height = 14; // 身高
+	required uint32 get_way = 15; // 改精灵获得的方式 (0: 不明, 1: 捕捉)
+	required uint32 is_fight_mon = 16; // 是否首发 (0: 不是, 1: 是首发)
+	required uint32 is_follow_mon = 17; // 是否跟随 (0: 不是, 1: 是跟随)
+	required uint32 is_connected_mon = 18; // 是否已连接陀螺 (0: 不是, 1: 已连接)
+
+	required login_mon_ev_info_t ev_info = 19; // 努力值信息
+	required login_mon_btl_attr_t btl_attr = 20; // 对战属性数值信息
+	required login_mon_moves_info_t moves_info = 21; // 技能信息
+}
+message login_rsp_t {
+	required bytes nick = 1; // 昵称
+	repeated login_mon_info_t mon_info = 2; // 精灵信息
+}
+
+/**
+ * @brief 进入地图请求包
+ */
+message player_enter_map_req_t {
+    required uint32 map_id  = 1;
+    required uint32 x_pos   = 2;
+    required uint32 y_pos   = 3;
+}
+
+/**
+ * @brief 进入地图回包
+ */
+message player_enter_map_rsp_t {
+    required uint32 map_id  = 1;
+    required uint32 x_pos   = 2;
+    required uint32 y_pos   = 3;
+}
+
+/**
+ * @brief 广播玩家进入地图(跳过玩家自身)
+ */
+message broadcast_player_enter_map_t {
+    required uint32 user_id     = 1;
+    optional string user_nick   = 2 [default = "test"];
+    required uint32 x_pos       = 3;
+    required uint32 y_pos       = 4;
+}
+
+/**
+ * @brief 离开地图请求包
+ */
+message player_leave_map_req_t {
+    optional uint32 map_id  = 1 [default = 0];
+}
+
+/**
+ * @brief 离开地图回包
+ */
+message player_leave_map_rsp_t {
+    optional uint32 map_id  = 1 [default = 0];
+}
+
+/**
+ * @brief 广播玩家离开地图(跳过玩家自身)
+ */
+message broadcast_player_leave_map_t {
+    required uint32 user_id     = 1;
+}
+
+/**
+ * @brief 玩家在地图上移动请求包
+ */
+message map_player_walk_req_t {
+    required uint32 dest_x  = 1;
+    required uint32 dest_y  = 2;
+}
+
+/**
+ * @brief 玩家在地图上移动回包
+ */
+message map_player_walk_rsp_t {
+    required uint32 dest_x  = 1;
+    required uint32 dest_y  = 2;
+}
+
+/**
+ * @brief 广播玩家在地图上移动(不需要给玩家自身广播)
+ */
+message broadcast_map_player_walk_t {
+    required uint32 user_id = 1;
+    required uint32 dest_x  = 2;
+    required uint32 dest_y  = 3;
+}
+
+/**
+ * @brief 拉取地图上的其他玩家列表(该请求只需要包头，不需要包体)
+ */
+message get_map_player_list_req_t {
+}
+
+message get_map_player_list_rsp_t{
+    message simple_player_info_t {
+        required uint32 user_id     = 1;
+        optional string user_nick   = 2;
+        optional uint32 x_pos       = 3;
+        optional uint32 y_pos       = 4;
+    }
+    repeated simple_player_info_t player_list = 1;
+}
+
+/**
+ * @brief 玩家改名协议(需要有改名芯片)
+ */
+message player_change_nick_req_t{
+    required string new_nick = 1;
+}
+
+/**
+ * @brief 通知玩家自身昵称更改协议
+ */
+message player_change_nick_rsp_t {
+    required string new_nick = 1;
+}
+
+/**
+ * @brief 广播给地图其他玩家玩家昵称已更改
+ */
+message broadcast_player_new_nick_t {
+    required uint32 user_id = 1;
+    required string new_nick = 2;
+}
+
+/*物品相关的协议*/
+message avatar_attr_info_t {
+    required uint32 attr_id = 1;
+    required uint32 attr_value = 2;
+}
+
+message player_item_info_t {
+    required uint64 id = 1;
+    required uint32 item_id = 2;
+    required uint32 item_count = 3;
+    required uint32 item_bag_flag = 4;
+    repeated avatar_attr_info_t avatar_attr_list = 5;
+}
+
+/**
+ * @brief 拉取玩家自身的物品信息(回包包体有两部分:物品背包、精灵背包)
+ */
+message get_player_items_req_t {
+
+}
+
+message get_player_items_rsp_t {
+    repeated player_item_info_t normal_items = 1;
+    repeated player_item_info_t monster_items = 2;
+}
+
+/**
+ * @brief 使用普通物品
+ */
+message use_normal_item_req_t {
+    required uint64 id = 1;
+    required uint32 item_id = 2;
+    optional uint32 item_count = 3 [default = 1];
+}
+
+message use_normal_item_rsp_t {
+    required uint64 id = 1;
+    required uint32 item_id = 2;
+    optional uint32 item_count = 3 [default = 1];
+}
+
+/**
+ * @brief 使用精灵物品
+ */
+message use_monster_item_req_t {
+    required uint64 id = 1;
+    required uint32 item_id = 2;
+    optional uint32 item_count = 3 [default = 1];
+    required string monster_uuid = 4;
+}
+
+message use_monster_item_rsp_t {
+    required uint64 id = 1;
+    required uint32 item_id = 2;
+    optional uint32 item_count = 3 [default = 1];
+    required string monster_uuid = 4;
+}
+
+//增加物品后的通知协议
+message cli_add_items_noti_t {
+    repeated player_item_info_t add_items = 1;//增加的物品
+}
+
+//丢弃物品的协议
+message cli_drop_items_req_t {
+    repeated player_item_info_t drop_items = 1;//丢弃的物品
+}
+message cli_drop_items_rsp_t {
+    repeated player_item_info_t drop_items = 1;//原样返回
+}
+
+//邮件相关
+message mail_head_t {
+    required uint64 mail_id = 1;//邮件ID
+    required int32 mail_time = 2;//邮件的建立时间
+    required uint32 mail_type = 3;//邮件类型 系统邮件0 玩家邮件1
+    required uint32 read_state = 4;//邮件的阅读状态 0未读 1已读
+    required uint32 sender_id = 5;//发送者ID
+    required int32 sender_role_tm = 6;//发送者role_tm
+    required string sender_nick = 7;//发送者昵称
+    required uint32 receiver_id = 8;//收件人ID
+    required int32 receiver_role_tm = 9;//收件人role_tm
+    required string mail_title = 10;//邮件标题
+}
+
+//发送邮件
+message send_mail_req_t {
+    //包头里有发件人的id和role_tm
+    required uint32 receiver_id = 1;
+    required int32  receiver_role_tm = 2;
+    required string mail_title = 3;
+    required string mail_content = 4;
+    repeated player_item_info_t enclosure = 5;//该项可做编码测试用 上线后的代码忽略这一项。
+}
+
+message send_mail_rsp_t {
+}
+
+//得到邮件头列表
+message get_mail_head_list_req_t {
+}
+
+message get_mail_head_list_rsp_t {//获取邮件头列表
+    repeated mail_head_t mail_head_list = 1;
+}
+
+//获取邮件正文+附件
+message get_mail_body_req_t {
+    required uint64 mail_id = 1;
+}
+
+message get_mail_body_rsp_t {
+    required uint64 mail_id = 1;
+    required string mail_content = 2;
+    repeated player_item_info_t enclosure = 3;
+}
+
+//删除邮件
+message del_mail_req_t {
+    required uint64 mail_id = 1;//服务器不判断是否有附件未领取,客户端自己给出删除前的提示
+}
+
+message del_mail_rsp_t {
+    required uint64 mail_id = 1;
+}
+
+//领取邮件附件(物品的增加会通过物品增加协议通知给前端)
+message get_mail_enclosure_req_t {
+    required uint64 mail_id = 1;
+}
+
+message get_mail_enclosure_rsp_t {
+    required uint64 mail_id = 1;
+}
+
+//通知客户端新邮件(如果玩家在线的话)
+message player_new_mail_noti_t {
+    required mail_head_t new_mail = 1;
+}
+
+
+//任务相关
+
+//接任务
+message obtain_task_req_t {
+    required uint32 task_id = 1;
+}
+
+message obtain_task_rsp_t {
+    required uint32 task_id = 1;
+    required bytes buffer = 2;
+}
+
+//放弃任务
+message cancel_task_req_t {
+    required uint32 task_id = 1;
+}
+
+message cancel_task_rsp_t {
+    required uint32 task_id = 1;
+}
+
+//完成任务
+message finish_task_req_t {
+    required uint32 task_id = 1;
+}
+
+message finish_task_rsp_t {
+    required uint32 task_id = 1;
+}
+
+message task_flag_t {
+    required uint32 task_id = 1;
+    required uint32 task_flag = 2;//0:inprogress, 1:finished
+}
+
+message task_buff_t {
+    required uint32 task_id = 1;
+    required bytes buffer = 2;
+}
+
+//拉取任务标志列表(完成、进行标志)
+message get_task_flag_list_req_t {
+    repeated uint32 task_id_list = 1;
+}
+
+message get_task_flag_list_rsp_t {
+    repeated task_flag_t flag_list = 1;
+}
+
+//拉取任务buffer列表
+message get_task_buff_list_req_t {
+    repeated uint32 task_id_list = 1;
+}
+
+message get_task_buff_list_rsp_t {
+    repeated task_buff_t buff_list = 1;
+}
+
+message pb_cs_task_info_t {
+    required uint32 task_id = 1;
+    required uint32 task_type = 2;
+    required uint32 task_flag = 3;
+    required bytes buffer = 4;//已完成任务buffer不发送,需要buffer的时候自行拉取
+}
+
+//拉取任务信息列表(一般登录的时候拉一次)
+message get_task_list_req_t {
+}
+message get_task_list_rsp_t {
+    repeated pb_cs_task_info_t task_list = 1;
+}
+
+//设置任务step(只能设置三种类型:点击背包 点击经验分配器 完成NPC对话)
+message set_task_step_req_t {
+    required uint32 task_id = 1;
+    required uint32 step = 2;//从1开始
+}
+
+message set_task_step_rsp_t {
+    required uint32 task_id = 1;
+    required bytes new_buffer = 2;
+}
+
+// battle 协议
+
+// 发起野怪对战
+message start_battle_pve_in_t {
+	required uint32 region = 1; // 精灵在当前地图上的位置编号
+}
+message start_battle_pve_out_t { }
+// NOTIFY: iseer20.btl.proto:btl_notify_load_res_out_t
+
+// 客户端上报完成加载资源, 准备好进入战斗画面
+message player_ready_in_t { }
+message player_ready_out_t { }
+// NOTIFY: iseer20.btl.proto:btl_notify_player_ready_out_t 
+// NOTIFY: iseer20.btl.proto:btl_notify_battle_start_out_t
+
+
+// 发招
+message select_move_in_t {
+	required uint32 move_id = 1; // 技能id
+}
+message select_move_out_t { }
+// NOTIFY: iseer20.btl.proto:btl_notify_battle_effect1_out_t
+// NOTIFY: iseer20.btl.proto:btl_notify_turn_over_out_t
+
+// 对战吸取经验值通知
+message btl_notify_absorb_gain_exp_out_t {
+	message mon_info_t {
+		required string uuid = 1;
+		required uint32 mon_id = 2;
+		required uint32 level = 3;
+		required uint32 hp = 4;
+		required uint32 max_hp = 5;
+		required uint32 mon_btl_attr_atk = 6; // 战斗值
+		required uint32 mon_btl_attr_def = 7; // 防御值
+		required uint32 mon_btl_attr_sp_atk = 8; // 特攻值
+		required uint32 mon_btl_attr_sp_def = 9; // 特防值
+		required uint32 mon_btl_attr_spd = 10; // 速度值
+		required uint32 exp = 11; // 经验值
+		required uint32 gain_exp = 12; // 本次战斗获得经验值
+		required uint32 gain_exp_rate = 13; // 本次战斗获得经验值的百分比
+		required uint32 gain_ev = 14; // 本次战斗获得学习力
+		required uint32 exp_to_next_level = 15; // 离升级还需要多少经验值
+	}
+	repeated mon_info_t mon_info = 1;
+}
+
+// 对战结束通知
+message btl_notify_battle_end_out_t {
+	required uint32 winner_side = 1; // 获胜方 (1: invitor, 2: invitee)
+	required uint32 reason = 2; // 对战结束原因 (seeto: END_BATTLE_REASON_T)
+}

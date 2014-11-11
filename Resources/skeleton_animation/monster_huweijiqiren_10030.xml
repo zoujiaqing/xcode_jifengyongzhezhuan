@@ -1,0 +1,692 @@
+<skeleton name="monster_huweijiqiren_10030" frameRate="24" version="1.4" modify="true">
+    <armatures>
+        <armature name="monster_huweijiqiren_10030">
+            <b name="s shou2" x="-41.55" y="-35.25" kX="0" kY="180" cX="0.82" cY="0.82" z="0" bT="0" bi="monster_huweijiqiren_10030:s shou2" />
+            <b name="h tui2" x="-39.9" y="-54.6" kX="0" kY="0" cX="1" cY="1" z="1" bT="0" bi="monster_huweijiqiren_10030:h tui2" />
+            <b name="h jian2" x="-40.2" y="-92.55" kX="0" kY="0" cX="1" cY="1" z="2" bT="0" bi="monster_huweijiqiren_10030:h jian2" />
+            <b name="h tui1" x="2.2" y="-32.2" kX="0" kY="0" cX="1" cY="1" z="3" bT="0" bi="monster_huweijiqiren_10030:h tui1" />
+            <b name="h shen" x="4.05" y="-76.95" kX="0" kY="0" cX="1" cY="1" z="4" bT="0" bi="monster_huweijiqiren_10030:h shen" />
+            <b name="s shou1" x="51.6" y="-17.5" kX="-15.31" kY="164.69" cX="0.84" cY="0.84" z="5" bT="0" bi="monster_huweijiqiren_10030:s shou1" />
+            <b name="h shoubi1" x="53.75" y="-36.2" kX="0" kY="0" cX="1" cY="1" z="6" bT="0" bi="monster_huweijiqiren_10030:h shoubi1" />
+            <b name="h jian1" x="53.2" y="-77.5" kX="0" kY="0" cX="1" cY="1" z="7" bT="0" bi="monster_huweijiqiren_10030:h jian1" />
+            <b name=" shou3" x="-42.85" y="-34.3" kX="36.17" kY="36.17" cX="0.84" cY="0.84" z="0" bT="0" bi="monster_huweijiqiren_10030: shou3" />
+            <b name="h shenzi2" x="3.7" y="-75" kX="0" kY="0" cX="1" cY="1" z="4" bT="0" bi="monster_huweijiqiren_10030:h shenzi2" />
+            <b name="shou3" x="51.7" y="-16.75" kX="17.48" kY="17.48" cX="0.84" cY="0.84" z="5" bT="0" bi="monster_huweijiqiren_10030:shou3" />
+            <b name="s shou2~" x="-41.55" y="-35.25" kX="0" kY="180" cX="0.82" cY="0.82" z="0" bT="0" bi="monster_huweijiqiren_10030:s shou2" />
+            <b name="h tui2~" x="-39.9" y="-54.6" kX="0" kY="0" cX="1" cY="1" z="1" bT="0" bi="monster_huweijiqiren_10030:h tui2" />
+            <b name="h jian2~" x="-40.2" y="-92.55" kX="0" kY="0" cX="1" cY="1" z="2" bT="0" bi="monster_huweijiqiren_10030:h jian2" />
+            <b name="h tui1~" x="2.2" y="-32.2" kX="0" kY="0" cX="1" cY="1" z="3" bT="0" bi="monster_huweijiqiren_10030:h tui1" />
+            <b name="h shen~" x="4.05" y="-76.95" kX="0" kY="0" cX="1" cY="1" z="4" bT="0" bi="monster_huweijiqiren_10030:h shen" />
+            <b name="s shou1~" x="51.6" y="-17.5" kX="-15.31" kY="164.69" cX="0.84" cY="0.84" z="5" bT="0" bi="monster_huweijiqiren_10030:s shou1" />
+            <b name="h shoubi1~" x="53.75" y="-36.2" kX="0" kY="0" cX="1" cY="1" z="6" bT="0" bi="monster_huweijiqiren_10030:h shoubi1" />
+            <b name="h jian1~" x="53.2" y="-77.5" kX="0" kY="0" cX="1" cY="1" z="7" bT="0" bi="monster_huweijiqiren_10030:h jian1" />
+            <b name="dsaadasda~" x="-41.45" y="-12.8" kX="0" kY="0" cX="1" cY="1" z="8" bT="0" bi="monster_huweijiqiren_10030:b1" />
+            <b name=" shou31~" x="-42.85" y="-34.3" kX="36.17" kY="36.17" cX="0.84" cY="0.84" z="0" bT="0" bi="monster_huweijiqiren_10030: shou3" />
+            <b name="h tui21~" x="-39.9" y="-52.6" kX="0" kY="0" cX="1" cY="1" z="1" bT="0" bi="monster_huweijiqiren_10030:h tui2" />
+            <b name="h jian21~" x="-40.2" y="-90.55" kX="0" kY="0" cX="1" cY="1" z="2" bT="0" bi="monster_huweijiqiren_10030:h jian2" />
+            <b name="h tui11~" x="2.2" y="-30.2" kX="0" kY="0" cX="1" cY="1" z="3" bT="0" bi="monster_huweijiqiren_10030:h tui1" />
+            <b name="h shenzi21~" x="3.7" y="-75" kX="0" kY="0" cX="1" cY="1" z="4" bT="0" bi="monster_huweijiqiren_10030:h shenzi2" />
+            <b name="shou31~" x="51.7" y="-16.75" kX="17.48" kY="17.48" cX="0.84" cY="0.84" z="5" bT="0" bi="monster_huweijiqiren_10030:shou3" />
+            <b name="h shoubi11~" x="53.75" y="-34.2" kX="0" kY="0" cX="1" cY="1" z="6" bT="0" bi="monster_huweijiqiren_10030:h shoubi1" />
+            <b name="h jian11~" x="53.2" y="-75.5" kX="0" kY="0" cX="1" cY="1" z="7" bT="0" bi="monster_huweijiqiren_10030:h jian1" />
+            <b name="s shou23~" x="-41.55" y="-35.25" kX="0" kY="180" cX="0.82" cY="0.82" z="0" bT="0" bi="monster_huweijiqiren_10030:s shou2" />
+            <b name="h tui23~" x="-39.9" y="-54.6" kX="0" kY="0" cX="1" cY="1" z="1" bT="0" bi="monster_huweijiqiren_10030:h tui2" />
+            <b name="h jian23~" x="-40.2" y="-92.55" kX="0" kY="0" cX="1" cY="1" z="2" bT="0" bi="monster_huweijiqiren_10030:h jian2" />
+            <b name="h tui13~" x="2.2" y="-32.2" kX="0" kY="0" cX="1" cY="1" z="3" bT="0" bi="monster_huweijiqiren_10030:h tui1" />
+            <b name="h shen3~" x="4.05" y="-76.95" kX="0" kY="0" cX="1" cY="1" z="4" bT="0" bi="monster_huweijiqiren_10030:h shen" />
+            <b name="s shou13~" x="51.6" y="-17.5" kX="-15.31" kY="164.69" cX="0.84" cY="0.84" z="5" bT="0" bi="monster_huweijiqiren_10030:s shou1" />
+            <b name="h shoubi13~" x="53.75" y="-36.2" kX="0" kY="0" cX="1" cY="1" z="6" bT="0" bi="monster_huweijiqiren_10030:h shoubi1" />
+            <b name="h jian13~" x="53.2" y="-77.5" kX="0" kY="0" cX="1" cY="1" z="7" bT="0" bi="monster_huweijiqiren_10030:h jian1" />
+            <b name=" shou34~" x="-42.85" y="-34.3" kX="36.17" kY="36.17" cX="0.84" cY="0.84" z="0" bT="0" bi="monster_huweijiqiren_10030: shou3" />
+            <b name="h tui24~" x="-39.9" y="-52.6" kX="0" kY="0" cX="1" cY="1" z="1" bT="0" bi="monster_huweijiqiren_10030:h tui2" />
+            <b name="h jian24~" x="-40.2" y="-90.55" kX="0" kY="0" cX="1" cY="1" z="2" bT="0" bi="monster_huweijiqiren_10030:h jian2" />
+            <b name="h tui14~" x="2.2" y="-30.2" kX="0" kY="0" cX="1" cY="1" z="3" bT="0" bi="monster_huweijiqiren_10030:h tui1" />
+            <b name="h shenzi24~" x="3.7" y="-75" kX="0" kY="0" cX="1" cY="1" z="4" bT="0" bi="monster_huweijiqiren_10030:h shenzi2" />
+            <b name="shou34~" x="51.7" y="-16.75" kX="17.48" kY="17.48" cX="0.84" cY="0.84" z="5" bT="0" bi="monster_huweijiqiren_10030:shou3" />
+            <b name="h shoubi14~" x="53.75" y="-34.2" kX="0" kY="0" cX="1" cY="1" z="6" bT="0" bi="monster_huweijiqiren_10030:h shoubi1" />
+            <b name="h jian14~" x="53.2" y="-75.5" kX="0" kY="0" cX="1" cY="1" z="7" bT="0" bi="monster_huweijiqiren_10030:h jian1" />
+        </armature>
+    </armatures>
+    <animations>
+        <animation name="monster_huweijiqiren_10030">
+            <mov name="f idle" dr="20" to="6" drTW="20" lp="0" twE="NaN">
+                <b name="s shou2" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="0.82" cY="0.82" z="0" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="-3.95" y="-0.450001" kX="-1.24" kY="-1.24001" cX="0.82" cY="0.82" z="0" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="0" y="0" kX="0" kY="0" cX="0.82" cY="0.82" z="0" dI="0" dr="1" img="monster_huweijiqiren_10030:s shou2" />
+                </b>
+                <b name="h tui2" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="-4.4" y="-0.5" kX="-1.24" kY="-1.24" cX="1" cY="1" z="1" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" dI="0" dr="1" img="monster_huweijiqiren_10030:h tui2" />
+                </b>
+                <b name="h jian2" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="2.1" y="-0.199997" kX="6.49" kY="6.49" cX="1" cY="1" z="2" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" dI="0" dr="1" img="monster_huweijiqiren_10030:h jian2" />
+                </b>
+                <b name="h tui1" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="3" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="0" y="4" kX="0" kY="0" cX="1" cY="1" z="3" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="3" dI="0" dr="1" img="monster_huweijiqiren_10030:h tui1" />
+                </b>
+                <b name="h shen" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="0" y="5.6" kX="0" kY="0" cX="1" cY="1" z="4" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" dI="0" dr="1" img="monster_huweijiqiren_10030:h shen" />
+                </b>
+                <b name="s shou1" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="5" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="4.85" y="-0.950001" kX="0.52" kY="0.520004" cX="0.84" cY="0.84" z="5" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="5" dI="0" dr="1" img="monster_huweijiqiren_10030:s shou1" />
+                </b>
+                <b name="h shoubi1" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="6" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="5.05" y="-0.950001" kX="0.52" kY="0.52" cX="1" cY="1" z="6" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="6" dI="0" dr="1" img="monster_huweijiqiren_10030:h shoubi1" />
+                </b>
+                <b name="h jian1" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="7" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-1.2" y="-0.349998" kX="-5.97" kY="-5.97" cX="1" cY="1" z="7" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="7" dI="0" dr="1" img="monster_huweijiqiren_10030:h jian1" />
+                </b>
+            </mov>
+            <mov name="b idle" dr="20" to="6" drTW="20" lp="0" twE="NaN">
+                <b name=" shou3" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="0" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="-5.3" y="-3.3" kX="-0.339996" kY="-0.339996" cX="0.84" cY="0.84" z="0" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="0" dI="0" dr="1" img="monster_huweijiqiren_10030: shou3" />
+                </b>
+                <b name="h tui2" sc="1" dl="0">
+                    <f x="0" y="2" kX="0" kY="0" cX="1" cY="1" z="1" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="-5.35" y="-1.3" kX="-0.35" kY="-0.35" cX="1" cY="1" z="1" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="0" y="2" kX="0" kY="0" cX="1" cY="1" z="1" dI="0" dr="1" img="monster_huweijiqiren_10030:h tui2" />
+                </b>
+                <b name="h jian2" sc="1" dl="0">
+                    <f x="0" y="2" kX="0" kY="0" cX="1" cY="1" z="2" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="2" y="-1.35" kX="8.44" kY="8.44" cX="1" cY="1" z="2" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="0" y="2" kX="0" kY="0" cX="1" cY="1" z="2" dI="0" dr="1" img="monster_huweijiqiren_10030:h jian2" />
+                </b>
+                <b name="h tui1" sc="1" dl="0">
+                    <f x="0" y="2" kX="0" kY="0" cX="1" cY="1" z="3" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="0" y="6.8" kX="0" kY="0" cX="1" cY="1" z="3" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="0" y="2" kX="0" kY="0" cX="1" cY="1" z="3" dI="0" dr="1" img="monster_huweijiqiren_10030:h tui1" />
+                </b>
+                <b name="h shenzi2" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="0" y="4.8" kX="0" kY="0" cX="1" cY="1" z="4" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" dI="0" dr="1" img="monster_huweijiqiren_10030:h shenzi2" />
+                </b>
+                <b name="shou3" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="5" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="10.3" y="-3.65" kX="-4.75" kY="-4.75" cX="0.84" cY="0.84" z="5" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="5" dI="0" dr="1" img="monster_huweijiqiren_10030:shou3" />
+                </b>
+                <b name="h shoubi1" sc="1" dl="0">
+                    <f x="0" y="2" kX="0" kY="0" cX="1" cY="1" z="6" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="8.85" y="-1.8" kX="-4.75" kY="-4.75" cX="1" cY="1" z="6" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="0" y="2" kX="0" kY="0" cX="1" cY="1" z="6" dI="0" dr="1" img="monster_huweijiqiren_10030:h shoubi1" />
+                </b>
+                <b name="h jian1" sc="1" dl="0">
+                    <f x="0" y="2" kX="0" kY="0" cX="1" cY="1" z="7" dI="0" twE="0" dr="9" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="0.25" y="-0.900002" kX="-7.96" kY="-7.96" cX="1" cY="1" z="7" dI="0" twE="0" dr="10" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="0" y="2" kX="0" kY="0" cX="1" cY="1" z="7" dI="0" dr="1" img="monster_huweijiqiren_10030:h jian1" />
+                </b>
+            </mov>
+            <mov name="f run" dr="15" to="6" drTW="15" lp="0" twE="NaN">
+                <b name="s shou2" sc="1" dl="0">
+                    <f x="-12.35" y="3.55" kX="-16.65" kY="-16.65" cX="0.82" cY="0.82" z="0" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="-12.45" y="5.9" kX="-11.92" kY="-11.92" cX="0.82" cY="0.82" z="0" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="-12.35" y="3.55" kX="-16.65" kY="-16.65" cX="0.82" cY="0.82" z="0" dI="0" dr="1" img="monster_huweijiqiren_10030:s shou2" />
+                </b>
+                <b name="h tui2" sc="1" dl="0">
+                    <f x="-18.05" y="3.9" kX="-16.64" kY="-16.64" cX="1" cY="1" z="1" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="-16.6" y="5.95" kX="-11.92" kY="-11.92" cX="1" cY="1" z="1" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="-18.05" y="3.9" kX="-16.64" kY="-16.64" cX="1" cY="1" z="1" dI="0" dr="1" img="monster_huweijiqiren_10030:h tui2" />
+                </b>
+                <b name="h jian2" sc="1" dl="0">
+                    <f x="-17.05" y="5.9" kX="3.8" kY="3.8" cX="1" cY="1" z="2" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="-12.65" y="8.15" kX="8.53" kY="8.53" cX="1" cY="1" z="2" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="-17.05" y="5.9" kX="3.8" kY="3.8" cX="1" cY="1" z="2" dI="0" dr="1" img="monster_huweijiqiren_10030:h jian2" />
+                </b>
+                <b name="h tui1" sc="1" dl="0">
+                    <f x="-7.25" y="-2.35" kX="-14.9" kY="-14.9" cX="1" cY="1" z="3" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="-7.25" y="4.05" kX="-14.9" kY="-14.9" cX="1" cY="1" z="3" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="-7.25" y="-2.35" kX="-14.9" kY="-14.9" cX="1" cY="1" z="3" dI="0" dr="1" img="monster_huweijiqiren_10030:h tui1" />
+                </b>
+                <b name="h shen" sc="1" dl="0">
+                    <f x="-18.85" y="-1.3" kX="-14.9" kY="-14.9" cX="1" cY="1" z="4" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="-18.85" y="5.1" kX="-14.9" kY="-14.9" cX="1" cY="1" z="4" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="-18.85" y="-1.3" kX="-14.9" kY="-14.9" cX="1" cY="1" z="4" dI="0" dr="1" img="monster_huweijiqiren_10030:h shen" />
+                </b>
+                <b name="s shou1" sc="1" dl="0">
+                    <f x="-0.899998" y="-24.9" kX="-19.16" kY="-19.16" cX="0.84" cY="0.84" z="5" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="3.25" y="-23.6" kX="-22.91" kY="-22.91" cX="0.84" cY="0.84" z="5" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="-0.899998" y="-24.9" kX="-19.16" kY="-19.16" cX="0.84" cY="0.84" z="5" dI="0" dr="1" img="monster_huweijiqiren_10030:s shou1" />
+                </b>
+                <b name="h shoubi1" sc="1" dl="0">
+                    <f x="-7.15" y="-24.5" kX="-19.16" kY="-19.16" cX="1" cY="1" z="6" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-4.2" y="-22.95" kX="-22.91" kY="-22.91" cX="1" cY="1" z="6" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-7.15" y="-24.5" kX="-19.16" kY="-19.16" cX="1" cY="1" z="6" dI="0" dr="1" img="monster_huweijiqiren_10030:h shoubi1" />
+                </b>
+                <b name="h jian1" sc="1" dl="0">
+                    <f x="-25.7" y="-17.45" kX="-27.36" kY="-27.36" cX="1" cY="1" z="7" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-24.95" y="-14.55" kX="-31.11" kY="-31.11" cX="1" cY="1" z="7" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-25.7" y="-17.45" kX="-27.36" kY="-27.36" cX="1" cY="1" z="7" dI="0" dr="1" img="monster_huweijiqiren_10030:h jian1" />
+                </b>
+            </mov>
+            <mov name="b run" dr="15" to="6" drTW="15" lp="0" twE="NaN">
+                <b name=" shou3" sc="1" dl="0">
+                    <f x="8" y="-25.7" kX="18.19" kY="18.19" cX="0.84" cY="0.84" z="0" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="5.05" y="-24.1" kX="26.14" kY="26.14" cX="0.84" cY="0.84" z="0" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="8" y="-25.7" kX="18.19" kY="18.19" cX="0.84" cY="0.84" z="0" dI="0" dr="1" img="monster_huweijiqiren_10030: shou3" />
+                </b>
+                <b name="h tui2" sc="1" dl="0">
+                    <f x="13.6" y="-21.8" kX="18.19" kY="18.19" cX="1" cY="1" z="1" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="12.85" y="-18.85" kX="26.14" kY="26.14" cX="1" cY="1" z="1" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="13.6" y="-21.8" kX="18.19" kY="18.19" cX="1" cY="1" z="1" dI="0" dr="1" img="monster_huweijiqiren_10030:h tui2" />
+                </b>
+                <b name="h jian2" sc="1" dl="0">
+                    <f x="32.15" y="-14" kX="37.11" kY="37.11" cX="1" cY="1" z="2" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="35.4" y="-8.25" kX="45.06" kY="45.06" cX="1" cY="1" z="2" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="32.15" y="-14" kX="37.11" kY="37.11" cX="1" cY="1" z="2" dI="0" dr="1" img="monster_huweijiqiren_10030:h jian2" />
+                </b>
+                <b name="h tui1" sc="1" dl="0">
+                    <f x="4.85" y="-0.5" kX="18.42" kY="18.42" cX="1" cY="1" z="3" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="6.05" y="4.7" kX="18.42" kY="18.42" cX="1" cY="1" z="3" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="4.85" y="-0.5" kX="18.42" kY="18.42" cX="1" cY="1" z="3" dI="0" dr="1" img="monster_huweijiqiren_10030:h tui1" />
+                </b>
+                <b name="h shenzi2" sc="1" dl="0">
+                    <f x="18.9" y="0.199997" kX="18.42" kY="18.42" cX="1" cY="1" z="4" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="20.1" y="5.4" kX="18.42" kY="18.42" cX="1" cY="1" z="4" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="18.9" y="0.199997" kX="18.42" kY="18.42" cX="1" cY="1" z="4" dI="0" dr="1" img="monster_huweijiqiren_10030:h shenzi2" />
+                </b>
+                <b name="shou3" sc="1" dl="0">
+                    <f x="3.05" y="0.75" kX="24.94" kY="24.94" cX="0.84" cY="0.84" z="5" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="2.45" y="6.5" kX="20.64" kY="20.64" cX="0.84" cY="0.84" z="5" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="3.05" y="0.75" kX="24.94" kY="24.94" cX="0.84" cY="0.84" z="5" dI="0" dr="1" img="monster_huweijiqiren_10030:shou3" />
+                </b>
+                <b name="h shoubi1" sc="1" dl="0">
+                    <f x="10.2" y="5.3" kX="24.93" kY="24.93" cX="1" cY="1" z="6" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="8.45" y="10.4" kX="20.64" kY="20.64" cX="1" cY="1" z="6" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="10.2" y="5.3" kX="24.93" kY="24.93" cX="1" cY="1" z="6" dI="0" dr="1" img="monster_huweijiqiren_10030:h shoubi1" />
+                </b>
+                <b name="h jian1" sc="1" dl="0">
+                    <f x="20.05" y="7.75" kX="10.7" kY="10.7" cX="1" cY="1" z="7" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="15.35" y="12.25" kX="6.41" kY="6.41" cX="1" cY="1" z="7" dI="0" twE="0" dr="7" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="20.05" y="7.75" kX="10.7" kY="10.7" cX="1" cY="1" z="7" dI="0" dr="1" img="monster_huweijiqiren_10030:h jian1" />
+                </b>
+            </mov>
+            <mov name="f attack" dr="35" to="6" drTW="35" lp="0" twE="NaN">
+                <b name="s shou2~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="-1.6" y="-13.15" kX="18.32" kY="-341.68" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="-3.25" y="-26.25" kX="36.94" kY="-323.06" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="7.4" y="-77.35" kX="92.3" kY="-267.7" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="23.5" y="-87.15" kX="107.52" kY="-252.48" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="39.5" y="-96.85" kX="122.72" kY="-237.28" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="68.45" y="-102.6" kX="146.68" kY="-213.32" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="97.45" y="-108.25" kX="170.64" kY="-189.36" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="97.45" y="-108.25" kX="170.64" kY="-189.36" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="-13.9" y="-44.8" kX="52.37" kY="-307.63" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="87.6" y="-62.3" kX="-58.82" kY="-238.82" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="87.6" y="-62.3" kX="-58.82" kY="-238.82" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="87.6" y="-62.3" kX="-58.82" kY="-238.82" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="95.6" y="-8.9" kX="-6.12" kY="-186.12" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="0" y="0" kX="0" kY="0" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou2" />
+                </b>
+                <b name="h tui2~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="4" y="-10.7" kX="18.32" kY="18.32" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="8" y="-21.45" kX="36.94" kY="36.94" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="25.05" y="-55.55" kX="92.3" kY="92.3" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="39.25" y="-60.6" kX="107.52" kY="107.52" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="53.25" y="-65.6" kX="122.72" kY="122.72" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="75.35" y="-67.5" kX="146.68" kY="146.68" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="97.3" y="-69.45" kX="170.64" kY="170.64" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="97.3" y="-69.45" kX="170.64" kY="170.64" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="0.850002" y="-36" kX="52.36" kY="52.36" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="68.55" y="-51.65" kX="-58.82" kY="121.18" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="68.55" y="-51.65" kX="-58.82" kY="121.18" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="68.55" y="-51.65" kX="-58.82" kY="121.18" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="90.05" y="-8.65" kX="-6.13" kY="173.87" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                </b>
+                <b name="h jian2~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="15.45" y="-6.95" kX="18.32" kY="18.32" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="30.85" y="-13.95" kX="36.94" kY="36.94" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="63.3" y="-16.4" kX="92.3" kY="92.3" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="67.6" y="-7.35" kX="124.56" kY="124.56" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="71.95" y="1.65" kX="156.72" kY="156.72" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="80.05" y="1.75" kX="-179.46" kY="-179.46" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="88.15" y="1.7" kX="-155.37" kY="-155.37" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="88.15" y="1.7" kX="-155.37" kY="-155.37" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="34.85" y="-5.39999" kX="86.36" kY="86.36" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="31.95" y="-12.85" kX="-95.79" kY="84.21" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="31.95" y="-12.85" kX="-95.79" kY="84.21" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="31.95" y="-12.85" kX="-95.79" kY="84.21" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="71.7" y="-6.05" kX="-36.89" kY="143.11" cX="1" cY="1.11" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                </b>
+                <b name="h tui1~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="1.15" y="0.0499992" kX="0.77" kY="0.77" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="2.35" y="0.150002" kX="1.53" kY="1.53" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="4.05" y="0.200001" kX="2.78" kY="2.78" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="4.9" y="0.200001" kX="3.31" kY="3.31" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="5.75" y="0.200001" kX="4.2" kY="4.2" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="7.85" y="-1.55" kX="8.27" kY="8.27" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="9.9" y="-3.35" kX="12.39" kY="12.39" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="9.9" y="-3.35" kX="12.39" kY="12.39" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="17.3" y="1.9" kX="-17.65" kY="-17.65" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="10.6" y="8.45" kX="-22.52" kY="-22.52" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="10.6" y="8.45" kX="-22.52" kY="-22.52" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="10.6" y="8.45" kX="-22.52" kY="-22.52" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="4.35" y="5.2" kX="-8.56" kY="-8.56" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                </b>
+                <b name="h shen~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="1.8" y="0.0999985" kX="0.77" kY="0.77" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="3.6" y="0.199997" kX="1.53" kY="1.53" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="6.3" y="0.349998" kX="2.78" kY="2.78" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="7.65" y="0.399994" kX="3.31" kY="3.31" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="9.05" y="0.449997" kX="4.2" kY="4.2" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="14.3" y="-0.700005" kX="8.27" kY="8.27" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="19.5" y="-1.95" kX="12.39" kY="12.39" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="19.5" y="-1.95" kX="12.39" kY="12.39" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="3.65" y="3.35" kX="-17.65" kY="-17.65" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="-6.65" y="11.15" kX="-22.52" kY="-22.52" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="-6.65" y="11.15" kX="-22.52" kY="-22.52" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="-6.65" y="11.15" kX="-22.52" kY="-22.52" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="-2.35" y="5.39999" kX="-8.56" kY="-8.56" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shen" />
+                </b>
+                <b name="s shou1~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="-11.45" y="0.700001" kX="16.56" kY="-343.44" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="-24.5" y="-3.1" kX="33.1" kY="-326.9" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="-39.4" y="-9.9" kX="57.94" kY="-302.06" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="-43.4" y="-14" kX="70.46" kY="-289.54" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="-51.15" y="-16.55" kX="82.86" kY="-277.14" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="-56.7" y="-24.95" kX="96.02" kY="-263.98" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="-62.3" y="-33.3" kX="109.02" kY="-250.98" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="-62.3" y="-33.3" kX="109.02" kY="-250.98" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="6.3" y="-29.3" kX="-2.47" kY="-2.47" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="-93.45" y="14.15" kX="22.66" kY="-157.34" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="-93.45" y="14.15" kX="22.66" kY="-157.34" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="-93.45" y="14.15" kX="22.66" kY="-157.34" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="-100.05" y="-8.25" kX="27.38" kY="-152.62" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou1" />
+                </b>
+                <b name="h shoubi1~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-7.7" y="1.6" kX="16.53" kY="16.53" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-16.55" y="2.4" kX="33.09" kY="33.09" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-27.75" y="3" kX="57.94" kY="57.94" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-29.3" y="1.65" kX="70.45" kY="70.45" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-34.5" y="1.95" kX="82.86" kY="82.86" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-41" y="-2.2" kX="95.8" kY="95.8" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-47.5" y="-6.5" kX="109.02" kY="109.02" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-47.5" y="-6.5" kX="109.02" kY="109.02" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="5.45" y="-29.3" kX="-2.47" kY="-2.47" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-100.2" y="14.55" kX="-7.96" kY="172.04" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-100.2" y="14.55" kX="-7.96" kY="172.04" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-100.2" y="14.55" kX="-7.96" kY="172.04" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-105.25" y="-8.1" kX="-3.23" kY="176.77" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                </b>
+                <b name="h jian1~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-0.0499992" y="4.45" kX="10.04" kY="10.04" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-0.0499992" y="8.9" kX="20.07" kY="20.07" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-0.150002" y="15.55" kX="35.34" kY="35.34" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-0.200001" y="18.8" kX="42.89" kY="42.89" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-0.200001" y="22.2" kX="50.62" kY="50.62" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-3.8" y="26.5" kX="63.7" kY="63.7" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-7.4" y="30.8" kX="76.78" kY="76.78" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-7.4" y="30.8" kX="76.78" kY="76.78" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-12.1" y="-23.35" kX="-34.71" kY="-34.71" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-101.05" y="17.65" kX="10.27" kY="-169.73" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-101.05" y="17.65" kX="10.27" kY="-169.73" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-101.05" y="17.65" kX="10.27" kY="-169.73" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-104.75" y="-5.45" kX="2.01" kY="-177.99" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                </b>
+                <b name="dsaadasda~" sc="1" dl="0">
+                    <f dr="22" dI="-1" hide="1" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="8" dI="0" twE="NaN" dr="1" img="monster_huweijiqiren_10030:b1" />
+                    <f x="-0.0999985" y="6.6" kX="0" kY="0" cX="1" cY="1" z="8" dI="1" twE="NaN" dr="1" img="monster_huweijiqiren_10030:b2" />
+                    <f x="-0.200001" y="10.3" kX="0" kY="0" cX="1" cY="1" z="8" dI="2" twE="NaN" dr="1" img="monster_huweijiqiren_10030:b3" />
+                    <f x="0.25" y="-6.4" kX="0" kY="0" cX="1" cY="1" z="8" dI="3" twE="NaN" dr="1" img="monster_huweijiqiren_10030:b4" />
+                    <f x="0.450001" y="-20.95" kX="0" kY="0" cX="1" cY="1" z="8" dI="4" twE="NaN" dr="1" img="monster_huweijiqiren_10030:b5" />
+                    <f x="0.450001" y="-27.75" kX="0" kY="0" cX="1" cY="1" z="8" dI="5" twE="NaN" dr="1" img="monster_huweijiqiren_10030:b6" />
+                    <f x="0.450001" y="-24.35" kX="0" kY="0" cX="1.38" cY="1.38" z="8" dI="6" twE="NaN" dr="1" img="monster_huweijiqiren_10030:t7" />
+                    <f dr="6" dI="-1" hide="1" />
+                </b>
+            </mov>
+            <mov name="b attack" dr="39" to="6" drTW="39" lp="0" twE="NaN">
+                <b name="dsaadasda~" sc="1" dl="0">
+                    <f dr="26" dI="-1" hide="1" />
+                    <f x="122.7" y="-16.5" kX="0" kY="0" cX="1" cY="1" z="0" dI="0" twE="NaN" dr="1" img="monster_huweijiqiren_10030:b1" />
+                    <f x="122.6" y="-9.9" kX="0" kY="0" cX="1" cY="1" z="0" dI="1" twE="NaN" dr="1" img="monster_huweijiqiren_10030:b2" />
+                    <f x="122.5" y="-6.2" kX="0" kY="0" cX="1" cY="1" z="0" dI="2" twE="NaN" dr="1" img="monster_huweijiqiren_10030:b3" />
+                    <f x="122.95" y="-22.9" kX="0" kY="0" cX="1" cY="1" z="0" dI="3" twE="NaN" dr="1" img="monster_huweijiqiren_10030:b4" />
+                    <f x="123.15" y="-37.45" kX="0" kY="0" cX="1" cY="1" z="0" dI="4" twE="NaN" dr="1" img="monster_huweijiqiren_10030:b5" />
+                    <f x="123.15" y="-44.25" kX="0" kY="0" cX="1" cY="1" z="0" dI="5" twE="NaN" dr="1" img="monster_huweijiqiren_10030:b6" />
+                    <f x="123.15" y="-40.85" kX="0" kY="0" cX="1.38" cY="1.38" z="0" dI="6" twE="NaN" dr="1" img="monster_huweijiqiren_10030:t7" />
+                    <f dr="6" dI="-1" hide="1" />
+                </b>
+                <b name=" shou31~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="10.35" y="-1.95" kX="-22.61" kY="-22.61" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="15.85" y="-2.95" kX="-34.63" kY="-34.63" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="24.1" y="-4.5" kX="-52.39" kY="-52.39" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="23.45" y="-6.65" kX="-60.73" kY="-60.73" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="22.8" y="-8.85" kX="-69.03" kY="-69.03" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="22.15" y="-11" kX="-77.52" kY="-77.52" cX="0.83" cY="0.83" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="21.45" y="-13.2" kX="-85.94" kY="-85.94" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="19.8" y="-12.9" kX="-89.56" kY="-89.56" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="18.1" y="-12.65" kX="-93.08" kY="-93.08" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="18.1" y="-12.65" kX="-93.08" kY="-93.08" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="39.85" y="-10.4" kX="-65.13" kY="-65.13" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="101.1" y="27.75" kX="-55.82" kY="122.7" cX="0.83" cY="0.79" z="1" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="101.1" y="27.75" kX="-55.82" kY="122.7" cX="0.83" cY="0.79" z="1" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="101.1" y="27.75" kX="-55.82" kY="122.7" cX="0.83" cY="0.79" z="0" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="4.6" y="-7.5" kX="7.91" kY="7.91" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                </b>
+                <b name="h tui21~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="3.65" y="0.149998" kX="-22.33" kY="-22.33" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="5.6" y="0.25" kX="-34.34" kY="-34.34" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="8.5" y="0.349998" kX="-52.4" kY="-52.4" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="6.6" y="0.549999" kX="-60.9" kY="-60.9" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="4.55" y="0.649998" kX="-69.23" kY="-69.23" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="2.6" y="0.699997" kX="-77.7" kY="-77.7" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="0.600002" y="0.849998" kX="-85.94" kY="-85.94" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="-1.25" y="2.2" kX="-89.69" kY="-89.69" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="-3.1" y="3.65" kX="-93.09" kY="-93.09" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="-3.1" y="3.65" kX="-93.09" kY="-93.09" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="21.7" y="-2.45" kX="-65.14" kY="-65.14" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="98.95" y="29.1" kX="17.44" kY="-165.93" cX="0.97" cY="0.98" z="2" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="98.95" y="29.1" kX="17.44" kY="-165.93" cX="0.97" cY="0.98" z="2" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="98.95" y="29.1" kX="17.44" kY="-165.93" cX="0.97" cY="0.98" z="1" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="7.85" y="-6.4" kX="7.91" kY="7.91" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                </b>
+                <b name="h jian21~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="-2.85" y="1.95" kX="-9.26" kY="-9.26" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="-4.35" y="3" kX="-14.07" kY="-14.07" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="-6.7" y="4.55" kX="-21.66" kY="-21.66" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="-10.35" y="6.3" kX="-20.03" kY="-20.03" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="-13.95" y="8.10001" kX="-18.31" kY="-18.31" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="-17.55" y="9.8" kX="-16.58" kY="-16.58" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="-21.3" y="11.55" kX="-15.18" kY="-15.18" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="-24.75" y="14.5" kX="-35.12" kY="-35.12" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="-28.2" y="17.4" kX="-55.28" kY="-55.28" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="-28.2" y="17.4" kX="-55.28" kY="-55.28" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="10.95" y="2.25" kX="-27.33" kY="-27.33" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="101.1" y="32.45" kX="-2.19" kY="174.89" cX="0.99" cY="0.96" z="3" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="101.1" y="32.45" kX="-2.19" kY="174.89" cX="0.99" cY="0.96" z="3" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="101.1" y="32.45" kX="-2.19" kY="174.89" cX="0.99" cY="0.96" z="2" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="20.95" y="-1.95" kX="22.71" kY="22.71" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                </b>
+                <b name="h tui11~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="-2.55" y="0.400002" kX="-4.79" kY="-4.79" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="-3.95" y="0.650002" kX="-7.3" kY="-7.3" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="-5.95" y="0.950001" kX="-11.44" kY="-11.44" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="-7.05" y="1.25" kX="-14.29" kY="-14.29" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="-8.15" y="1.55" kX="-17.27" kY="-17.27" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="-9.15" y="1.85" kX="-20.08" kY="-20.08" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="-10.2" y="2.15" kX="-23.18" kY="-23.18" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="-10.65" y="1.55" kX="-26.6" kY="-26.6" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="-11.2" y="0.900002" kX="-30.32" kY="-30.32" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="-11.2" y="0.900002" kX="-30.32" kY="-30.32" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="0.45" y="8.45" kX="-2.37" kY="-2.37" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="11.8" y="12.35" kX="26.24" kY="26.24" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="11.8" y="12.35" kX="26.24" kY="26.24" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="11.8" y="12.35" kX="26.24" kY="26.24" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="5.15" y="6.5" kX="14.24" kY="-165.76" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                </b>
+                <b name="h shenzi21~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="-6.35" y="0.650002" kX="-4.79" kY="-4.79" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="-9.75" y="1" kX="-7.3" kY="-7.3" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="-14.85" y="1.55" kX="-11.44" kY="-11.44" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="-18.15" y="2.45" kX="-14.29" kY="-14.29" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="-21.4" y="3.35" kX="-17.27" kY="-17.27" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="-24.75" y="4.2" kX="-20.08" kY="-20.08" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="-28" y="5.15" kX="-23.18" kY="-23.18" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="-31" y="5.7" kX="-26.6" kY="-26.6" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="-34.1" y="6.25" kX="-30.32" kY="-30.32" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="-34.1" y="6.25" kX="-30.32" kY="-30.32" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="-1.5" y="8.35" kX="-2.37" kY="-2.37" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="31.45" y="17.6" kX="26.24" kY="26.24" cX="1" cY="1" z="5" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="31.45" y="17.6" kX="26.24" kY="26.24" cX="1" cY="1" z="5" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="31.45" y="17.6" kX="26.24" kY="26.24" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="13.35" y="7.55" kX="14.24" kY="-165.76" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                </b>
+                <b name="shou31~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="22.3" y="-26.8" kX="-63.13" kY="-63.13" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="19.35" y="-52.15" kX="-96.95" kY="-96.95" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="-5.9" y="-85.2" kX="-147.47" kY="-147.47" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="-18" y="-92.8" kX="-154.87" kY="-155.36" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="-30" y="-100.45" kX="-162.37" kY="-163.36" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="-42.15" y="-108.1" kX="-169.88" kY="-171.18" cX="0.85" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="-54.25" y="-115.85" kX="-177.14" kY="-178.98" cX="0.85" cY="0.85" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="-67.7" y="-117.8" kX="-189.69" kY="-191.46" cX="0.85" cY="0.85" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="-99.55" y="-114.2" kX="157.98" kY="156.13" cX="0.85" cY="0.85" z="5" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="-99.55" y="-114.2" kX="157.98" kY="156.13" cX="0.85" cY="0.85" z="5" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="10.5" y="-39.9" kX="-81.71" kY="97.97" cX="0.87" cY="0.91" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="-82.95" y="-71.8" kX="64.1" kY="-115.9" cX="0.84" cY="0.84" z="6" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="-82.95" y="-71.8" kX="64.1" kY="-115.9" cX="0.84" cY="0.84" z="6" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="-82.95" y="-71.8" kX="64.1" kY="-115.9" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="8.4" y="4.15" kX="-8.13" kY="-8.13" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                </b>
+                <b name="h shoubi11~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="7.25" y="-20" kX="-63.2" kY="-63.2" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="1.05" y="-34" kX="-96.79" kY="-96.79" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-19.1" y="-54.15" kX="-147.48" kY="-147.48" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-28.7" y="-60.4" kX="-154.96" kY="-155.41" cX="1.01" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-38.25" y="-66.65" kX="-162.47" kY="-163.22" cX="1.01" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-47.9" y="-73.05" kX="-169.98" kY="-170.98" cX="1.02" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-57.55" y="-79.35" kX="-177.42" kY="-178.69" cX="1.03" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-66.9" y="-81.95" kX="170.22" kY="168.96" cX="1.03" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-94.7" y="-78.95" kX="157.69" kY="156.42" cX="1.03" cY="1" z="6" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-94.7" y="-78.95" kX="157.69" kY="156.42" cX="1.03" cY="1" z="6" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-7" y="-36.1" kX="-47.44" kY="133.65" cX="1.04" cY="1.08" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-67.55" y="-53.5" kX="99.06" kY="-80.94" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-67.55" y="-53.5" kX="99.06" kY="-80.94" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-67.55" y="-53.5" kX="99.06" kY="-80.94" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="5.8" y="4.2" kX="-8.14" kY="-8.14" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                </b>
+                <b name="h jian11~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-21.85" y="1.5" kX="-47.4" kY="-47.4" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-33.5" y="2.3" kX="-72.73" kY="-72.73" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-51" y="3.55" kX="-110.75" kY="-110.75" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-56.05" y="2.05" kX="-121.35" kY="-120.86" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-61.05" y="0.599998" kX="-132.1" kY="-131.11" cX="1" cY="1.01" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-66.1" y="-0.949997" kX="-142.88" kY="-141.4" cX="1.01" cY="1.01" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-71.15" y="-2.65" kX="-153.5" kY="-151.68" cX="1.01" cY="1.02" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-71.7" y="-4.05" kX="-164.68" kY="-162.73" cX="1.01" cY="1.02" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-90.65" y="0.25" kX="-175.58" kY="-173.76" cX="1.01" cY="1.02" z="7" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-90.65" y="0.25" kX="-175.58" kY="-173.76" cX="1.01" cY="1.02" z="7" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-37.75" y="7.25" kX="-114.94" kY="63.11" cX="1.07" cY="1.06" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-33.7" y="-9.05" kX="75.34" kY="-104.66" cX="1" cY="1" z="8" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-33.7" y="-9.05" kX="75.34" kY="-104.66" cX="1" cY="1" z="8" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-33.7" y="-9.05" kX="75.34" kY="-104.66" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="3" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="2.7" y="3.4" kX="-0.65" kY="-0.65" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                </b>
+            </mov>
+            <mov name="f hurt" dr="6" to="6" drTW="6" lp="0" twE="NaN">
+                <b name="s shou23~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="21.8" y="11.7" kX="8.51" kY="-351.49" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou2" />
+                    <f x="22.05" y="19.35" kX="20.21" kY="-339.79" cX="0.82" cY="0.82" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou2" />
+                </b>
+                <b name="h tui23~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="26.1" y="14.55" kX="16" kY="16" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="29.6" y="23.75" kX="27.7" kY="27.7" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                </b>
+                <b name="h jian23~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="22.6" y="14.1" kX="-11.44" kY="-11.44" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="25.4" y="23.8" kX="-17.18" kY="-17.18" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                </b>
+                <b name="h tui13~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="20.2" y="2.3" kX="-7.74" kY="-7.74" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="26.2" y="3.5" kX="-7.74" kY="-7.74" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                </b>
+                <b name="h shen3~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="14.4" y="6.55" kX="-11.44" kY="-11.44" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shen" />
+                    <f x="17.85" y="12.6" kX="-17.18" kY="-17.18" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shen" />
+                </b>
+                <b name="s shou13~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="6.85" y="0.950001" kX="5.75" kY="5.75" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou1" />
+                    <f x="1.55" y="5.5" kX="16.98" kY="-343.02" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:s shou1" />
+                </b>
+                <b name="h shoubi13~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="8.7" y="1.35" kX="5.75" kY="5.75" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="6.9" y="7.05" kX="16.98" kY="16.98" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                </b>
+                <b name="h jian13~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="9.7" y="1.9" kX="-11.44" kY="-11.44" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="5.15" y="10.95" kX="-17.18" kY="-17.18" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                </b>
+            </mov>
+            <mov name="f die" dr="1" to="6">
+                <b name="s shou2" sc="1" dl="0">
+                    <f x="22.05" y="19.35" kX="20.21" kY="-339.79" cX="0.82" cY="0.82" z="0" dI="0" dr="1" img="monster_huweijiqiren_10030:s shou2" />
+                </b>
+                <b name="h tui2" sc="1" dl="0">
+                    <f x="29.6" y="23.75" kX="27.7" kY="27.7" cX="1" cY="1" z="1" dI="0" dr="1" img="monster_huweijiqiren_10030:h tui2" />
+                </b>
+                <b name="h jian2" sc="1" dl="0">
+                    <f x="25.4" y="23.8" kX="-17.18" kY="-17.18" cX="1" cY="1" z="2" dI="0" dr="1" img="monster_huweijiqiren_10030:h jian2" />
+                </b>
+                <b name="h tui1" sc="1" dl="0">
+                    <f x="26.2" y="3.5" kX="-7.74" kY="-7.74" cX="1" cY="1" z="3" dI="0" dr="1" img="monster_huweijiqiren_10030:h tui1" />
+                </b>
+                <b name="h shen" sc="1" dl="0">
+                    <f x="17.85" y="12.6" kX="-17.18" kY="-17.18" cX="1" cY="1" z="4" dI="0" dr="1" img="monster_huweijiqiren_10030:h shen" />
+                </b>
+                <b name="s shou1" sc="1" dl="0">
+                    <f x="1.55" y="5.5" kX="16.98" kY="-343.02" cX="0.84" cY="0.84" z="5" dI="0" dr="1" img="monster_huweijiqiren_10030:s shou1" />
+                </b>
+                <b name="h shoubi1" sc="1" dl="0">
+                    <f x="6.9" y="7.05" kX="16.98" kY="16.98" cX="1" cY="1" z="6" dI="0" dr="1" img="monster_huweijiqiren_10030:h shoubi1" />
+                </b>
+                <b name="h jian1" sc="1" dl="0">
+                    <f x="5.15" y="10.95" kX="-17.18" kY="-17.18" cX="1" cY="1" z="7" dI="0" dr="1" img="monster_huweijiqiren_10030:h jian1" />
+                </b>
+            </mov>
+            <mov name="b hurt" dr="6" to="6" drTW="6" lp="0" twE="NaN">
+                <b name=" shou34~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="0.299999" y="10.1" kX="-22.25" kY="-22.25" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                    <f x="-15.65" y="13.9" kX="-17.27" kY="-17.27" cX="0.84" cY="0.84" z="0" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030: shou3" />
+                </b>
+                <b name="h tui24~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="-6.85" y="10.3" kX="-22.26" kY="-22.26" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                    <f x="-21.25" y="13.8" kX="-17.27" kY="-17.27" cX="1" cY="1" z="1" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui2" />
+                </b>
+                <b name="h jian24~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="-3.95" y="11.4" kX="5.95" kY="5.95" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                    <f x="-15.15" y="15.25" kX="10.93" kY="10.93" cX="1" cY="1" z="2" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian2" />
+                </b>
+                <b name="h tui14~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="-11.55" y="6.1" kX="-8.22" kY="-8.22" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                    <f x="-27.65" y="12.8" kX="-3.23" kY="-3.23" cX="1" cY="1" z="3" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h tui1" />
+                </b>
+                <b name="h shenzi24~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="-11.45" y="10.65" kX="5.95" kY="5.95" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                    <f x="-24.05" y="17.6" kX="10.93" kY="10.93" cX="1" cY="1" z="4" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shenzi2" />
+                </b>
+                <b name="shou34~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="-10.25" y="9.55" kX="-26.66" kY="-26.66" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                    <f x="-28.05" y="20.55" kX="-21.68" kY="-21.68" cX="0.84" cY="0.84" z="5" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:shou3" />
+                </b>
+                <b name="h shoubi14~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-18.2" y="10.45" kX="-26.66" kY="-26.66" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                    <f x="-34.5" y="21.05" kX="-21.68" kY="-21.68" cX="1" cY="1" z="6" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h shoubi1" />
+                </b>
+                <b name="h jian14~" sc="1" dl="0">
+                    <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-21.25" y="17.35" kX="5.95" kY="5.95" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                    <f x="-34.55" y="27.7" kX="10.93" kY="10.93" cX="1" cY="1" z="7" dI="0" twE="NaN" dr="2" img="monster_huweijiqiren_10030:h jian1" />
+                </b>
+            </mov>
+            <mov name="b die" dr="1" to="6">
+                <b name=" shou3" sc="1" dl="0">
+                    <f x="-15.65" y="13.9" kX="-17.27" kY="-17.27" cX="0.84" cY="0.84" z="0" dI="0" dr="1" img="monster_huweijiqiren_10030: shou3" />
+                </b>
+                <b name="h tui2" sc="1" dl="0">
+                    <f x="-21.25" y="15.8" kX="-17.27" kY="-17.27" cX="1" cY="1" z="1" dI="0" dr="1" img="monster_huweijiqiren_10030:h tui2" />
+                </b>
+                <b name="h jian2" sc="1" dl="0">
+                    <f x="-15.15" y="17.25" kX="10.93" kY="10.93" cX="1" cY="1" z="2" dI="0" dr="1" img="monster_huweijiqiren_10030:h jian2" />
+                </b>
+                <b name="h tui1" sc="1" dl="0">
+                    <f x="-27.65" y="14.8" kX="-3.23" kY="-3.23" cX="1" cY="1" z="3" dI="0" dr="1" img="monster_huweijiqiren_10030:h tui1" />
+                </b>
+                <b name="h shenzi2" sc="1" dl="0">
+                    <f x="-24.05" y="17.6" kX="10.93" kY="10.93" cX="1" cY="1" z="4" dI="0" dr="1" img="monster_huweijiqiren_10030:h shenzi2" />
+                </b>
+                <b name="shou3" sc="1" dl="0">
+                    <f x="-28.05" y="20.55" kX="-21.68" kY="-21.68" cX="0.84" cY="0.84" z="5" dI="0" dr="1" img="monster_huweijiqiren_10030:shou3" />
+                </b>
+                <b name="h shoubi1" sc="1" dl="0">
+                    <f x="-34.5" y="23.05" kX="-21.68" kY="-21.68" cX="1" cY="1" z="6" dI="0" dr="1" img="monster_huweijiqiren_10030:h shoubi1" />
+                </b>
+                <b name="h jian1" sc="1" dl="0">
+                    <f x="-34.55" y="29.7" kX="10.93" kY="10.93" cX="1" cY="1" z="7" dI="0" dr="1" img="monster_huweijiqiren_10030:h jian1" />
+                </b>
+            </mov>
+        </animation>
+    </animations>
+    <TextureAtlas name="monster_huweijiqiren_10030" width="507" height="338">
+        <SubTexture name="monster_huweijiqiren_10030: shou3" pX="13.95" pY="12.55" x="468" y="224" width="29" height="26" />
+        <SubTexture name="monster_huweijiqiren_10030:b1" pX="57.9" pY="33.65" x="276" y="265" width="116" height="68" />
+        <SubTexture name="monster_huweijiqiren_10030:b2" pX="58.35" pY="57.1" x="156" y="154" width="117" height="115" />
+        <SubTexture name="monster_huweijiqiren_10030:b3" pX="62.3" pY="62.3" x="290" y="137" width="125" height="125" />
+        <SubTexture name="monster_huweijiqiren_10030:b4" pX="60.8" pY="54.2" x="0" y="181" width="122" height="109" />
+        <SubTexture name="monster_huweijiqiren_10030:b5" pX="65.1" pY="75.4" x="156" y="0" width="131" height="151" />
+        <SubTexture name="monster_huweijiqiren_10030:b6" pX="76.4" pY="88.7" x="0" y="0" width="153" height="178" />
+        <SubTexture name="monster_huweijiqiren_10030:h jian1" pX="24.15" pY="33.75" x="418" y="138" width="49" height="68" />
+        <SubTexture name="monster_huweijiqiren_10030:h jian2" pX="23.5" pY="31" x="418" y="209" width="47" height="63" />
+        <SubTexture name="monster_huweijiqiren_10030:h shen" pX="33.95" pY="33" x="421" y="69" width="68" height="66" />
+        <SubTexture name="monster_huweijiqiren_10030:h shenzi2" pX="33.95" pY="33" x="421" y="0" width="68" height="66" />
+        <SubTexture name="monster_huweijiqiren_10030:h shoubi1" pX="22.25" pY="19.15" x="176" y="272" width="45" height="39" />
+        <SubTexture name="monster_huweijiqiren_10030:h tui1" pX="23.65" pY="23.6" x="125" y="272" width="48" height="48" />
+        <SubTexture name="monster_huweijiqiren_10030:h tui2" pX="21.4" pY="17.55" x="224" y="272" width="43" height="36" />
+        <SubTexture name="monster_huweijiqiren_10030:s shou1" pX="18.2" pY="12.95" x="470" y="138" width="37" height="26" />
+        <SubTexture name="monster_huweijiqiren_10030:s shou2" pX="15.75" pY="12.2" x="470" y="196" width="32" height="25" />
+        <SubTexture name="monster_huweijiqiren_10030:shou3" pX="15.9" pY="11.65" x="470" y="167" width="36" height="26" />
+        <SubTexture name="monster_huweijiqiren_10030:t7" pX="63.6" pY="66.55" x="290" y="0" width="128" height="134" />
+    </TextureAtlas>
+</skeleton>

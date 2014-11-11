@@ -1,0 +1,27 @@
+class SpriteElfDataCenter
+{
+public:
+	SpriteElfDataCenter();
+	virtual ~SpriteElfDataCenter(); 
+
+	static SpriteElfDataCenter* Get();
+	static void Destroy();
+
+	/**
+	* Instruction : 装备某一精灵
+	* @param 
+	*/	
+	void EquipOneElf(unsigned int elfId);	
+	/**
+	* Instruction : 发送获取精灵列表
+	* @param 
+	*/
+	void SendGetElfListMessage(PLAYER_ID roleId,const char* name);
+	/**
+	* Instruction : 设置精灵的状态
+	* @param 
+	*/
+	void SendSetElfStateMessage(unsigned int elfId,int state);
+
+	PLAYER_ID GetHeroUserId();
+};

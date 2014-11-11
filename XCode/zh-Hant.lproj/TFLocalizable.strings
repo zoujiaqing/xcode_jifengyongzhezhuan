@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  TaomeeGameMore
+
+  Created by Michael Wong on 12/13/11.
+  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+*/
+"Personal Thread" = "我的回複";
+"FAQ" = "熱點問題";
+"Cancel" = "取消";
+"Feedback" = "在線提問";
+"Answer" = "回複查詢";
+"Taomee Feedback" = "用戶反饋";
+"Back" = "返回";
+"Reply" = "回複";
+"Send" = "提交";
+"Title" = "題目 (%d字)";
+"Question" = "%d 問題 (%d字)";
+"Reply content" = "%d 回複內容 (%d字)";
+"Contact" = "Phone/Email/QQ/MSN";
+"Need User ID" = "當前的米米號是(%d)。請先登陸，然後再使用反饋功能。";
+"ERR_IO_PENDING" = "ERR_IO_PENDING";
+"ERR_FAILED" = "系統錯誤";
+"ERR_ABORTED" = "系統異常";
+"ERR_TIMED_OUT" = "連接超時";
+"ERR_HEADER_RETURN" = "系統錯誤";
+"ERR_HEADER_NAGTIVE_BODY_LENGTH" = "系統錯誤";
+"ERR_MESSAGE_BODY_CORRUPTED" = "系統錯誤";
+"ERR_UNEXPECTED" = "系統異常";
+"Post Question Success" = "問題發送成功";
+"Answer Question Success" = "回復發送成功";
+"Bug report" = "Bug反饋";
+"QuestionPost" = "在線提問";
+"Suggestion" = "建議";
+"Forum" = "論壇";
+"ForumTitle" = "大家討論";

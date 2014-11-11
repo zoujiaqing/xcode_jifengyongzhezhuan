@@ -1,0 +1,525 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>monster_qingwa_10003:B Y datui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{75,113},{13,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,9}}</string>
+                <key>sourceSize</key>
+                <string>{13,9}</string>
+            </dict>
+            <key>monster_qingwa_10003:B Y xiaotui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{109,91},{9,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,12}}</string>
+                <key>sourceSize</key>
+                <string>{9,12}</string>
+            </dict>
+            <key>monster_qingwa_10003:B Yjiao.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{227,104},{18,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,11}}</string>
+                <key>sourceSize</key>
+                <string>{18,11}</string>
+            </dict>
+            <key>monster_qingwa_10003:B Z jiao.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{120,109},{16,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,12}}</string>
+                <key>sourceSize</key>
+                <string>{16,12}</string>
+            </dict>
+            <key>monster_qingwa_10003:B Zdatui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{106,114},{11,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,11}}</string>
+                <key>sourceSize</key>
+                <string>{11,11}</string>
+            </dict>
+            <key>monster_qingwa_10003:B Zxiaotui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{160,86},{7,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{7,10}}</string>
+                <key>sourceSize</key>
+                <string>{7,10}</string>
+            </dict>
+            <key>monster_qingwa_10003:B beidai.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{175,0},{60,38}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{60,38}}</string>
+                <key>sourceSize</key>
+                <string>{60,38}</string>
+            </dict>
+            <key>monster_qingwa_10003:B qiang.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{170,83},{32,30}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,30}}</string>
+                <key>sourceSize</key>
+                <string>{32,30}</string>
+            </dict>
+            <key>monster_qingwa_10003:B shen.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{61,0},{59,47}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{59,47}}</string>
+                <key>sourceSize</key>
+                <string>{59,47}</string>
+            </dict>
+            <key>monster_qingwa_10003:B tou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{58,56}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{58,56}}</string>
+                <key>sourceSize</key>
+                <string>{58,56}</string>
+            </dict>
+            <key>monster_qingwa_10003:E Z jiao.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{205,98},{19,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,10}}</string>
+                <key>sourceSize</key>
+                <string>{19,10}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Y houbi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{182,116},{10,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{10,11}}</string>
+                <key>sourceSize</key>
+                <string>{10,11}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Y qianbi1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{230,93},{21,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,8}}</string>
+                <key>sourceSize</key>
+                <string>{21,8}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Y shou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{167,116},{12,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,9}}</string>
+                <key>sourceSize</key>
+                <string>{12,9}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Y shou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{91,113},{12,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,10}}</string>
+                <key>sourceSize</key>
+                <string>{12,10}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Ydatui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{236,118},{11,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,8}}</string>
+                <key>sourceSize</key>
+                <string>{11,8}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Yjiao.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{57,113},{15,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,11}}</string>
+                <key>sourceSize</key>
+                <string>{15,11}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Yxiaotui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{109,106},{8,5}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{8,5}}</string>
+                <key>sourceSize</key>
+                <string>{8,5}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Z datui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{40,102},{14,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,14}}</string>
+                <key>sourceSize</key>
+                <string>{14,14}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Z houbi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{236,45},{16,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,23}}</string>
+                <key>sourceSize</key>
+                <string>{16,23}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Z jiao.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{238,0},{15,20}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,20}}</string>
+                <key>sourceSize</key>
+                <string>{15,20}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Z shou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{20,110},{14,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,13}}</string>
+                <key>sourceSize</key>
+                <string>{14,13}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Z xiaotui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{222,118},{11,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,8}}</string>
+                <key>sourceSize</key>
+                <string>{11,8}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Z yan.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{236,71},{14,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,19}}</string>
+                <key>sourceSize</key>
+                <string>{14,19}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Z yan1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{238,23},{14,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,19}}</string>
+                <key>sourceSize</key>
+                <string>{14,19}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Zqianbi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{205,83},{22,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,12}}</string>
+                <key>sourceSize</key>
+                <string>{22,12}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Zxiaobi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,110},{17,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,10}}</string>
+                <key>sourceSize</key>
+                <string>{17,10}</string>
+            </dict>
+            <key>monster_qingwa_10003:F Zyan1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{92,91},{14,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,19}}</string>
+                <key>sourceSize</key>
+                <string>{14,19}</string>
+            </dict>
+            <key>monster_qingwa_10003:F bao.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{154,109},{10,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{10,15}}</string>
+                <key>sourceSize</key>
+                <string>{10,15}</string>
+            </dict>
+            <key>monster_qingwa_10003:F beidai.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{61,50},{57,38}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{57,38}}</string>
+                <key>sourceSize</key>
+                <string>{57,38}</string>
+            </dict>
+            <key>monster_qingwa_10003:F bu.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{205,111},{14,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,13}}</string>
+                <key>sourceSize</key>
+                <string>{14,13}</string>
+            </dict>
+            <key>monster_qingwa_10003:F gong.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{57,91},{32,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,19}}</string>
+                <key>sourceSize</key>
+                <string>{32,19}</string>
+            </dict>
+            <key>monster_qingwa_10003:F jian.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{121,57},{46,26}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{46,26}}</string>
+                <key>sourceSize</key>
+                <string>{46,26}</string>
+            </dict>
+            <key>monster_qingwa_10003:F jiantong.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{123,0},{49,54}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{49,54}}</string>
+                <key>sourceSize</key>
+                <string>{49,54}</string>
+            </dict>
+            <key>monster_qingwa_10003:F qianggan.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{121,86},{36,20}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{36,20}}</string>
+                <key>sourceSize</key>
+                <string>{36,20}</string>
+            </dict>
+            <key>monster_qingwa_10003:F shen.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{175,41},{58,39}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{58,39}}</string>
+                <key>sourceSize</key>
+                <string>{58,39}</string>
+            </dict>
+            <key>monster_qingwa_10003:F tou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,59},{54,40}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{54,40}}</string>
+                <key>sourceSize</key>
+                <string>{54,40}</string>
+            </dict>
+            <key>monster_qingwa_10003:F yaodai.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,102},{37,5}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{37,5}}</string>
+                <key>sourceSize</key>
+                <string>{37,5}</string>
+            </dict>
+            <key>monster_qingwa_10003:sdf.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{139,109},{12,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,16}}</string>
+                <key>sourceSize</key>
+                <string>{12,16}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>monster_qingwa_10003.pvr.ccz</string>
+            <key>size</key>
+            <string>{254,126}</string>
+            <key>textureFileName</key>
+            <string>monster_qingwa_10003.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

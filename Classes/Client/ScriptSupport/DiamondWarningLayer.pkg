@@ -1,0 +1,5 @@
+class DiamondWarningLayer
+{
+	static void SetTipContentColor(const char* tipContent, ccColor3B tipColor);
+	
+};

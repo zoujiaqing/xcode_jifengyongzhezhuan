@@ -1,0 +1,941 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>skill_Invisible: Z ku.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{232,150},{16,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,13}}</string>
+                <key>sourceSize</key>
+                <string>{16,13}</string>
+            </dict>
+            <key>skill_Invisible:345erfvf.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{46,153},{17,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,11}}</string>
+                <key>sourceSize</key>
+                <string>{17,11}</string>
+            </dict>
+            <key>skill_Invisible:ASDQWRT.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{26,122},{27,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,17}}</string>
+                <key>sourceSize</key>
+                <string>{27,17}</string>
+            </dict>
+            <key>skill_Invisible:B B ku.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{124,150},{18,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,11}}</string>
+                <key>sourceSize</key>
+                <string>{18,11}</string>
+            </dict>
+            <key>skill_Invisible:B kua.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{388,122},{27,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,13}}</string>
+                <key>sourceSize</key>
+                <string>{27,13}</string>
+            </dict>
+            <key>skill_Invisible:B shenti.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{310,98},{25,22}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,22}}</string>
+                <key>sourceSize</key>
+                <string>{25,22}</string>
+            </dict>
+            <key>skill_Invisible:B weijin.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{468,87},{35,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{35,16}}</string>
+                <key>sourceSize</key>
+                <string>{35,16}</string>
+            </dict>
+            <key>skill_Invisible:B xie.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{381,137},{20,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,15}}</string>
+                <key>sourceSize</key>
+                <string>{20,15}</string>
+            </dict>
+            <key>skill_Invisible:B yaodai.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{46,143},{25,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,8}}</string>
+                <key>sourceSize</key>
+                <string>{25,8}</string>
+            </dict>
+            <key>skill_Invisible:B youdat.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{233,131},{21,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,17}}</string>
+                <key>sourceSize</key>
+                <string>{21,17}</string>
+            </dict>
+            <key>skill_Invisible:B youshou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{403,153},{9,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,9}}</string>
+                <key>sourceSize</key>
+                <string>{9,9}</string>
+            </dict>
+            <key>skill_Invisible:B youxiaobi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{278,144},{9,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,10}}</string>
+                <key>sourceSize</key>
+                <string>{9,10}</string>
+            </dict>
+            <key>skill_Invisible:B youxiaot.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{100,159},{14,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,11}}</string>
+                <key>sourceSize</key>
+                <string>{14,11}</string>
+            </dict>
+            <key>skill_Invisible:B zuodatui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,122},{24,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,21}}</string>
+                <key>sourceSize</key>
+                <string>{24,21}</string>
+            </dict>
+            <key>skill_Invisible:B zuohujian.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{417,122},{15,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,21}}</string>
+                <key>sourceSize</key>
+                <string>{15,21}</string>
+            </dict>
+            <key>skill_Invisible:B zuoqianbi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{503,0},{7,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{7,8}}</string>
+                <key>sourceSize</key>
+                <string>{7,8}</string>
+            </dict>
+            <key>skill_Invisible:B zuoxiaobi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{201,146},{17,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,14}}</string>
+                <key>sourceSize</key>
+                <string>{17,14}</string>
+            </dict>
+            <key>skill_Invisible:B zuoxiaotui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{338,137},{17,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,19}}</string>
+                <key>sourceSize</key>
+                <string>{17,19}</string>
+            </dict>
+            <key>skill_Invisible:Bzuoshou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{82,142},{16,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,18}}</string>
+                <key>sourceSize</key>
+                <string>{16,18}</string>
+            </dict>
+            <key>skill_Invisible:F kua.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{261,129},{26,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,13}}</string>
+                <key>sourceSize</key>
+                <string>{26,13}</string>
+            </dict>
+            <key>skill_Invisible:F kuu.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{357,152},{18,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,10}}</string>
+                <key>sourceSize</key>
+                <string>{18,10}</string>
+            </dict>
+            <key>skill_Invisible:F shenti.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{177,139},{22,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,12}}</string>
+                <key>sourceSize</key>
+                <string>{22,12}</string>
+            </dict>
+            <key>skill_Invisible:F tou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{109,113},{47,35}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{47,35}}</string>
+                <key>sourceSize</key>
+                <string>{47,35}</string>
+            </dict>
+            <key>skill_Invisible:F toufa.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{388,70},{45,50}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{45,50}}</string>
+                <key>sourceSize</key>
+                <string>{45,50}</string>
+            </dict>
+            <key>skill_Invisible:F weijin.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{474,64},{33,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{33,21}}</string>
+                <key>sourceSize</key>
+                <string>{33,21}</string>
+            </dict>
+            <key>skill_Invisible:F yaodai.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{100,150},{22,7}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,7}}</string>
+                <key>sourceSize</key>
+                <string>{22,7}</string>
+            </dict>
+            <key>skill_Invisible:F youdat.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{82,122},{24,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,18}}</string>
+                <key>sourceSize</key>
+                <string>{24,18}</string>
+            </dict>
+            <key>skill_Invisible:F youhoubi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{503,10},{7,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{7,8}}</string>
+                <key>sourceSize</key>
+                <string>{7,8}</string>
+            </dict>
+            <key>skill_Invisible:F youhujian.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{434,142},{14,20}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,20}}</string>
+                <key>sourceSize</key>
+                <string>{14,20}</string>
+            </dict>
+            <key>skill_Invisible:F youqianbi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{26,141},{18,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,16}}</string>
+                <key>sourceSize</key>
+                <string>{18,16}</string>
+            </dict>
+            <key>skill_Invisible:F yous.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{177,153},{16,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,12}}</string>
+                <key>sourceSize</key>
+                <string>{16,12}</string>
+            </dict>
+            <key>skill_Invisible:F youxiaot.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{289,129},{18,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,19}}</string>
+                <key>sourceSize</key>
+                <string>{18,19}</string>
+            </dict>
+            <key>skill_Invisible:F zuodat.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{468,149},{16,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,15}}</string>
+                <key>sourceSize</key>
+                <string>{16,15}</string>
+            </dict>
+            <key>skill_Invisible:F zuoqianb.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{328,158},{14,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,13}}</string>
+                <key>sourceSize</key>
+                <string>{14,13}</string>
+            </dict>
+            <key>skill_Invisible:F zuos.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{144,150},{12,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,12}}</string>
+                <key>sourceSize</key>
+                <string>{12,12}</string>
+            </dict>
+            <key>skill_Invisible:F zuoxiaot.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{377,154},{14,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,14}}</string>
+                <key>sourceSize</key>
+                <string>{14,14}</string>
+            </dict>
+            <key>skill_Invisible:Y houbi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{220,146},{10,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{10,9}}</string>
+                <key>sourceSize</key>
+                <string>{10,9}</string>
+            </dict>
+            <key>skill_Invisible:Y hujian.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{19,159},{13,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,14}}</string>
+                <key>sourceSize</key>
+                <string>{13,14}</string>
+            </dict>
+            <key>skill_Invisible:Y qianbi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,145},{17,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,16}}</string>
+                <key>sourceSize</key>
+                <string>{17,16}</string>
+            </dict>
+            <key>skill_Invisible:Y shou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{450,149},{16,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,15}}</string>
+                <key>sourceSize</key>
+                <string>{16,15}</string>
+            </dict>
+            <key>skill_Invisible:Z datui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{55,122},{25,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,19}}</string>
+                <key>sourceSize</key>
+                <string>{25,19}</string>
+            </dict>
+            <key>skill_Invisible:Z xiaotui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{318,70},{27,26}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,26}}</string>
+                <key>sourceSize</key>
+                <string>{27,26}</string>
+            </dict>
+            <key>skill_Invisible:asdcd.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{65,153},{15,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,13}}</string>
+                <key>sourceSize</key>
+                <string>{15,13}</string>
+            </dict>
+            <key>skill_Invisible:csadf.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{107,120}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{107,120}}</string>
+                <key>sourceSize</key>
+                <string>{107,120}</string>
+            </dict>
+            <key>skill_Invisible:dao.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{347,70},{39,65}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{39,65}}</string>
+                <key>sourceSize</key>
+                <string>{39,65}</string>
+            </dict>
+            <key>skill_Invisible:die tou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{212,85},{47,44}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{47,44}}</string>
+                <key>sourceSize</key>
+                <string>{47,44}</string>
+            </dict>
+            <key>skill_Invisible:gttyuvs.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{403,137},{12,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,14}}</string>
+                <key>sourceSize</key>
+                <string>{12,14}</string>
+            </dict>
+            <key>skill_Invisible:hasdq.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{158,159},{14,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,9}}</string>
+                <key>sourceSize</key>
+                <string>{14,9}</string>
+            </dict>
+            <key>skill_Invisible:langer.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{309,139},{20,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,14}}</string>
+                <key>sourceSize</key>
+                <string>{20,14}</string>
+            </dict>
+            <key>skill_Invisible:mjkui003.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{289,150},{16,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,13}}</string>
+                <key>sourceSize</key>
+                <string>{16,13}</string>
+            </dict>
+            <key>skill_Invisible:pen.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{310,122},{26,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,15}}</string>
+                <key>sourceSize</key>
+                <string>{26,15}</string>
+            </dict>
+            <key>skill_Invisible:sdfcw.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{158,139},{17,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,18}}</string>
+                <key>sourceSize</key>
+                <string>{17,18}</string>
+            </dict>
+            <key>skill_Invisible:shenti.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{434,122},{21,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,18}}</string>
+                <key>sourceSize</key>
+                <string>{21,18}</string>
+            </dict>
+            <key>skill_Invisible:tou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{261,85},{47,42}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{47,42}}</string>
+                <key>sourceSize</key>
+                <string>{47,42}</string>
+            </dict>
+            <key>skill_Invisible:vfasqi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{212,0},{104,83}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{104,83}}</string>
+                <key>sourceSize</key>
+                <string>{104,83}</string>
+            </dict>
+            <key>skill_Invisible:vfddfger.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{460,105},{46,42}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{46,42}}</string>
+                <key>sourceSize</key>
+                <string>{46,42}</string>
+            </dict>
+            <key>skill_Invisible:vffh.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{109,0},{101,111}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{101,111}}</string>
+                <key>sourceSize</key>
+                <string>{101,111}</string>
+            </dict>
+            <key>skill_Invisible:weiba.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{158,113},{46,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{46,24}}</string>
+                <key>sourceSize</key>
+                <string>{46,24}</string>
+            </dict>
+            <key>skill_Invisible:weijin.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{435,70},{31,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{31,21}}</string>
+                <key>sourceSize</key>
+                <string>{31,21}</string>
+            </dict>
+            <key>skill_Invisible:weijinwei.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{435,93},{23,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{23,27}}</string>
+                <key>sourceSize</key>
+                <string>{23,27}</string>
+            </dict>
+            <key>skill_Invisible:wuqi_1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{474,0},{27,62}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,62}}</string>
+                <key>sourceSize</key>
+                <string>{27,62}</string>
+            </dict>
+            <key>skill_Invisible:wuqi_20.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{435,0},{37,68}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{37,68}}</string>
+                <key>sourceSize</key>
+                <string>{37,68}</string>
+            </dict>
+            <key>skill_Invisible:wuqi_40.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{357,0},{37,68}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{37,68}}</string>
+                <key>sourceSize</key>
+                <string>{37,68}</string>
+            </dict>
+            <key>skill_Invisible:wuqi_60.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{396,0},{37,68}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{37,68}}</string>
+                <key>sourceSize</key>
+                <string>{37,68}</string>
+            </dict>
+            <key>skill_Invisible:wuqi_80.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{318,0},{37,68}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{37,68}}</string>
+                <key>sourceSize</key>
+                <string>{37,68}</string>
+            </dict>
+            <key>skill_Invisible:y datui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{206,131},{25,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,13}}</string>
+                <key>sourceSize</key>
+                <string>{25,13}</string>
+            </dict>
+            <key>skill_Invisible:yaodai.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{486,149},{21,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,9}}</string>
+                <key>sourceSize</key>
+                <string>{21,9}</string>
+            </dict>
+            <key>skill_Invisible:youjiao.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{307,155},{19,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,8}}</string>
+                <key>sourceSize</key>
+                <string>{19,8}</string>
+            </dict>
+            <key>skill_Invisible:youxiaotui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{256,144},{20,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,13}}</string>
+                <key>sourceSize</key>
+                <string>{20,13}</string>
+            </dict>
+            <key>skill_Invisible:zuijiao.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{357,137},{22,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,13}}</string>
+                <key>sourceSize</key>
+                <string>{22,13}</string>
+            </dict>
+            <key>skill_Invisible:zuoshou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{417,145},{15,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,16}}</string>
+                <key>sourceSize</key>
+                <string>{15,16}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>skill_Invisible.pvr.ccz</string>
+            <key>size</key>
+            <string>{510,173}</string>
+            <key>textureFileName</key>
+            <string>skill_Invisible.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

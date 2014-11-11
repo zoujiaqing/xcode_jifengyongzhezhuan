@@ -1,0 +1,8 @@
+class GemStonesFromLua
+{
+	static GemStonesFromLua* getInstance(void);
+	void EquipInlayGemReq(unsigned int equip,unsigned int hole,unsigned int gemId);
+	void GemRecastReq(unsigned int equipPos,unsigned int hole1,unsigned int hole2,unsigned int hole3,unsigned int hole4,unsigned int currencyKey);
+	void GemAnimaExchangeReq(unsigned int gemId,unsigned int multi);
+	void GemHoleUnlockReq(unsigned int exchangeId,unsigned int equipPos);
+}

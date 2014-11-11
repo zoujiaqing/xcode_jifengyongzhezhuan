@@ -1,0 +1,9 @@
+class MenuItemExpand : public CCMenuItemSprite
+{
+	void setMenuItemDispalyState(int state);
+	void setEnabled(bool bEnabled);
+
+	static MenuItemExpand * create(CCNode* normalSprite, CCNode* selectedSprite, CCNode* disabledSprite = NULL);
+	static MenuItemExpand * create(CCNode* normalSprite, CCNode* selectedSprite, CCObject* target, SEL_MenuHandler selector);
+	static MenuItemExpand * create(CCNode* normalSprite, CCNode* selectedSprite, CCNode* disabledSprite, CCObject* target, SEL_MenuHandler selector);
+};

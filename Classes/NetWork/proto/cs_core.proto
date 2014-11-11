@@ -1,0 +1,3837 @@
+// 定义核心功能模块的协议格式：场景、物品、
+// 对战模块的协议定义于cs_battle.proto
+   
+//------------------------------------------------------------
+// 基本数据结构定义
+//------------------------------------------------------------
+// 用户基本属性枚举
+enum PB_PLAYET_ATTR_T {
+    // 时区偏移(高16位表示: 1-Greenwich时间往东方的时差(+);2-Greenwich时间往西方的时差(-) 低16位表示: 时差偏移分钟数)
+    PB_ATTR_SVC_TIME_ZONE                   =   1; 
+	//      普通物品相关(1-5)
+	PB_ATTR_PLAYER_SS_MOD_ID				= 	2;	// 寻灵精灵pos(从0开始计算)
+	//      宝石相关(6-10)
+	PB_ATTR_PLAYER_GEM_BACKPACK_CAPACITY	= 	6; // 宝石背包容量
+	//      装备相关(11-15)
+	PB_ATTR_PLAYER_RESET_GEM_TIMES			= 	11;	// 重铸装备次数
+	PB_ATTR_EQUIP_LVUP_FLAG                 =   12; // 装备强化flag(0:可以强化 1:不可以强化)
+	PB_ATTR_EFFECTIVENESS					= 	13;	// 战斗力
+   	// 		庄园相关(16-20)
+	PB_ATTR_PLAYER_ENTER_MANOR_TIMES		=	16;	// 庄园进入次数
+    //      探索相关(21-25)
+    PB_ATTR_PLAYER_EXPLORE_TIMES            =   21;  // 今日探索次数
+	//      物品回收站相关
+    PB_ATTR_RECYCLE_BIN_START_POS           =   26; 	// 物品回收站起始位置	
+	//      挂机相关
+    PB_ATTR_HOLD_ON_LINE_ACCU_TIME          =   30;     // 挂机累积时间
+	//      每日目标相关
+	PB_ATTR_GET_DAILY_GOALS_REWARD_TIMES    =   36;		// 领取每日目标奖励次数
+	//		地下城相关
+	PB_ATTR_UGCITY_BOXES_STATUS             =   40;		// 地下城宝箱领取奖励情况状态
+	PB_ATTR_UGCITY_BOXES_RESET_TIMES        =   41;	 	// 地下城宝箱重置次数
+	PB_ATTR_UGCITY_BOXES_OPEN_NUM           =   42;		// 地下城宝箱开启的数目
+	//		对战相关
+	PB_ATTR_PLAYER_PVAI_TIMES				= 	50;		// 玩家当天还剩余pvai的次数
+	PB_ATTR_PLAYER_PVP_TIMES                =   51; 	// 玩家当天玩pvp的次数
+	PB_ATTR_PLAYER_CDEF_TIMES               =   52;		// 玩家本次主城防守次数
+	PB_ATTR_PLAYER_WINNING_STREAK           =   53; 	// 玩家连胜PVAI的次数
+	PB_ATTR_PLAYER_SPEC_INSTANCE_BTL_TIME	= 	54;		// 玩家完成精英副本次数
+	PB_ATTR_PLAYER_PVP_RED					= 	55; 	// 红名程度
+	PB_ATTR_PLAYER_PVP_RED_TIME				= 	56;		// 红名时间
+    //      vip 相关
+    PB_ATTR_PLAYER_VIP_LV                   =   60; 	// 玩家vip等级
+    PB_ATTR_BUY_DIAMOND_ACCU                =   61; 	// 充值的钻石累积数量
+    //      连续登陆
+    PB_ATTR_CONTINUE_LOGIN_TIMES            =   65; 	// 连续登陆天数
+	PB_ATTR_DAILY_LOGIN_COUNT               =   66; 	// 每天登陆次数
+    //      兑换次数
+    PB_ATTR_DIAMOND_EX_POWER_TIMES          =   70; 	// 钻石兑换体力次数
+	PB_ATTR_FAIRY_LOTTERY_ACCU_TIMES        =   71;		// 精灵转盘累计抽取次数
+
+	// 		星座相关(100 - 120)
+	PB_ATTR_CONSTEL_MIN_DEF					= 	100;
+
+	PB_ATTR_CONSTEL_1_CAPACIT				= 	101;	// 白羊座
+	PB_ATTR_CONSTEL_2_CAPACIT				= 	102;	// 金牛座
+	PB_ATTR_CONSTEL_3_CAPACIT				= 	103;	// 双子座
+	PB_ATTR_CONSTEL_4_CAPACIT				= 	104;	// 巨蟹座
+	PB_ATTR_CONSTEL_5_CAPACIT				= 	105;	// 狮子座
+	PB_ATTR_CONSTEL_6_CAPACIT				= 	106;    // 处女座
+	PB_ATTR_CONSTEL_7_CAPACIT				= 	107;    // 天秤座
+	PB_ATTR_CONSTEL_8_CAPACIT				= 	108;    // 天蝎座
+	PB_ATTR_CONSTEL_9_CAPACIT				= 	109;    // 射手座
+	PB_ATTR_CONSTEL_10_CAPACIT				= 	110;    // 摩羯座
+	PB_ATTR_CONSTEL_11_CAPACIT				= 	111;    // 水瓶座
+	PB_ATTR_CONSTEL_12_CAPACIT				= 	112;    // 双鱼座
+    //      每日各种次数统计(5001 - 5500)
+    PB_ATTR_DAILY_TIMES_BEGIN                      =   5000;
+    PB_ATTR_DAILY_TIMES_LGION                      =   5010;   // 每日登陆次数
+    PB_ATTR_DAILY_TIMES_PAY                        =   5020;   // 每日薪资
+    PB_ATTR_DAILY_TIMES_HERO_TREASURE              =   5030;   // 勇者宝藏
+    PB_ATTR_DAILY_TIMES_EXPLORE                    =   5040;   // 每日云游次数
+    PB_ATTR_DAILY_TIMES_EQUIP_LVUP                 =   5050;   // 每天强化装备次数
+    PB_ATTR_DAILY_TIMES_PVE_WIN                    =   5060;   // 每日普通副本
+    PB_ATTR_DAILY_TIMES_PVAI_BTL                   =   5070;   // 每天pvai次数
+    PB_ATTR_DAILY_TIMES_CARD_COMPOSE               =   5080;   // 每日卡牌合成
+    PB_ATTR_DAILY_TIMES_PVE2_WIN                   =   5090;   // 每日精英副本
+    PB_ATTR_DAILY_TIMES_PPVE_WIN                   =   5100;   // 每日多人副本
+    PB_ATTR_DAILY_TIMES_TRAINING                   =   5110;   // 每天训练次数
+    PB_ATTR_DAILY_TIMES_DAILY_TASK                 =   5120;   // 每日任务
+	PB_ATTR_DAILY_TIMES_CDEF                       =   5121;   // 每日主城防守次数
+    PB_ATTR_DAILY_TIMES_SEARCH_SS                  =   5130;   // 每天寻灵次数
+	PB_ATTR_DAILY_TIMES_WBOSS                      =   5131;   // 每天世界boss次数
+    PB_ATTR_DAILY_TIMES_ENTER_MANOR                =   5140;   // 每日进入庄园次数
+    PB_ATTR_DAILY_TIMES_GEM_RESET                  =   5150;   // 每天重铸宝石次数
+    PB_ATTR_DAILY_TIMES_PVE3                       =   5160;   // 每日地下城副本(进地下城就算次数)
+    PB_ATTR_KAKAO_DEL_NUM_EACH_DAY                 =   5170;   // 每日删除好友个数
+
+    // 策划未给出的，先自己定义了
+    PB_ATTR_DAILY_TIMES_CONSUME_DIAMOND            =   5200;   // 每天消耗钻石次数
+    PB_ATTR_DAILY_TIMES_SKILL_LVUP                 =   5201;   // 每天技能升级次数
+    PB_ATTR_DAILY_TIMES_DOWER_LVUP                 =   5202;   // 每天天赋升级次数
+    PB_ATTR_DAILY_BABEL_INSTANCE_ID                =   5304;   // 每日爬到第几层
+	PB_ATTR_DAILY_TIMES_END                        =   5500;
+    PB_ATTR_DAILY_REFRESH_SHOP_TIMES               =   5501;   // 神秘商店今日次数
+    PB_ATTR_DAILY_ACC_REFRESH_SHOP_TIMES           =   5502;   // 神秘商店今日免费累计刷新次数
+    PB_ATTR_DAILY_ACC_USED_REFRESH_SHOP_TIMES      =   5503;   // 神秘商店今日免费累计刷新使用次数
+
+	//      每日领取相关
+    PB_ATTR_GET_DAILY_REWARD_BEGIN                 =   6000;
+    PB_ATTR_GET_DAILY_PAY_REWARD_TIME              =   6000;   // 上次领取每日薪资奖励时间
+    PB_ATTR_GET_DAILY_LOGIN_UI_FLAG                =   6001;   // 上次领取每日登陆UI显示标识(不存db中)
+	PB_ATTR_GET_HERO_TREASURE                      =   6002;   // 勇者宝藏标志位
+    PB_ATTR_GET_PVAI_REWARD_TIME                   =   6003;   // 上次领取pvai奖励时间
+    PB_ATTR_GET_HOLD_EXP_TIME                      =   6004;   // 上次领取挂机经验时间(hold exp->exp or store exp->exp)
+	PB_ATTR_GET_REWARD_BY_VIP_LV                   =   6005;   // vip奖励
+    PB_ATTR_GET_FIRST_BUY_DIAMOND_REWARD_TIME      =   6006;   // 首次充值奖励领取时间 
+    PB_ATTR_GET_THREE_DAY_REWARD_ENABLE_FLAG	   =   6007;   // 今日三日奖励是否可领取 
+	PB_ATTR_GET_STAMINA_RESTORE_TIME	           =   6010;   // 每日领取体力恢复时间
+	PB_ATTR_GET_DAILY_LOGIN_REWARD_TIME            =   6099;   // 上次领取每日登陆奖励时间
+    PB_ATTR_GET_DAILY_VIP_REWARD_TIME              =   6100;   // 上次领取每日vip奖励时间
+    PB_ATTR_GET_DAILY_LOGIN_TIMES                  =   6101;   //  玩家累计登入天数(登入同一天算一次)
+    PB_ATTR_GET_DAILY_LOGIN_REWARD_MARK            =   6102;   //  玩家累计登入领取奖励标示()
+    PB_ATTR_GET_DAILY_VIP_LOGIN_REWARD_MARK		   =   6103;   //  玩家累计登入领取奖励标示()
+	PB_ATTR_GET_DAILY_FACEBOOK_SHARE_MARK 		   =   6104;	// 
+	PB_ATTR_GET_DAILY_REP_EXCHANGE_FLAG			   =   6105;	// 每日声望兑换标记
+    PB_ATTR_GET_DAILY_REWARD_END                   =   6105;
+
+	//		抽精灵相关
+	PB_ATTR_GET_SPEC_FAIRY_BEIGN				   =   6200;   //  剩余获得指定类型精灵次数
+	PB_ATTR_GET_SPEC_P_FAIRY_LEFT_TIMES			   =   6200;   //  剩余获得指定紫色精灵次数
+
+	PB_ATTR_FAIRY_COLLECTION_BEGIN				   =   7200;
+	PB_ATTR_FAIRY_COLLECTION_END				   =   7300;
+
+	PB_ATTR_SPECIAL_VIP_GIFT_BEGIN					=	7500;	// 91VIP奖励起始
+	PB_ATTR_91_VIP_DAILY_GIFT_GET_TIME				=	7500;	// 91VIP每日礼包
+	PB_ATTR_91_VIP_GIFT_GET_TIME					=	7501;	// 91VIP专属礼包
+	PB_ATTR_91_VIP_TOPUS_STATUS						=	7502;	// 91VIP首冲礼包
+	PB_ATTR_91_VIP_STATUS							=	7503;	// 91VIP标志
+	PB_ATTR_SPECIAL_VIP_GIFT_END					=	7510;	// 91VIP奖励结束
+
+	PB_ATTR_EXPLORE_DAILY_TIMES                    	=   7550;   // 今日探宝次数                            
+    PB_ATTR_EXPLORE_MAP_INDEX                      	=   7551;   // 今日探宝当前地图                        
+    PB_ATTR_EXPLORE_SUCCESS_RATE                   	=   7552;   // 今日探宝地图成功几率          
+	PB_ATTR_EXPLORE_HAVE_GOT_MAP_INDEX				=	7553;	// 今日目前领取到多少
+	PB_ATTR_EXPLORE_REWARD_LEVELUP_FLAG				=	7554;	// 探宝升级标志
+
+
+
+
+    PB_ATTR_JUNIOR_EXPLORE_TIME                    =   8000;   //   中级探索到期时间 
+    PB_ATTR_SENIOR_EXPLORE_TIME                    =   8001;   //   高级探索到期时间
+
+	// 下面是和钻石相关的cd时间属性 (定义值需要和ExchangeParameter.xml 中的Type1字段一致)
+	PB_ATTR_DEF_MIN_CD						= 	300000;  // cd标识默认min字段(不做属性用) 
+
+	PB_ATTR_EQUIP_LVUP_CD					= 	300100;	 // 装备强化cd
+	PB_ATTR_DOWER_LVUP_CD					=	300200;	 // 天赋升级冷却时间cd
+	PB_ATTR_SKILL_LVUP_CD                 	=   300300;	 // 技能升级冷却时间cd
+	PB_ATTR_PVAI_CD							=   300400;  // pvai冷却时间cd
+	PB_ATTR_AB_NORMAL_MAP_CD				= 	300500;	 // 自动战斗普通副本冷却时间cd
+	PB_ATTR_AB_SPECIAL_MAP_CD				= 	300501;  // 自动战斗精英副本冷却时间cd
+	PB_ATTR_AB_UGCITY_MAP_CD                =   300502;  // 自动战斗地下城副本冷却时间cd
+	PB_ATTR_WOELD_BOSS_CD					=	300600;	 // 世界boss冷却时间cd
+	PB_ATTR_MANOR_CD						= 	300700;  // 消除庄园冷却时间(准备不用)
+	PB_ATTR_SHOP_CD                         =   300800;  // 刷新神秘商店CD
+
+	PB_ATTR_DEF_MAX_CD						= 	309999;	 // cd标识默认max字段(不做属性用) 
+
+	// 下面是和钻石相关的其他属性 (定义值需要和ExchangeParameter.xml 中的Type1字段一致)
+	PB_ATTR_DEF_MIN_OTHER					= 	310000;	 // 其他属性默认min字段(不做属性用)
+	PB_ATTR_DEF_MAX_OTHER					= 	314999;	 // 其他属性默认max字段(不做属性用)
+	// 下面是和钻石相关的购买次数属性 (定义值需要和ExchangeParameter.xml 中的Type1字段一致)
+
+	PB_ATTR_RESET_GEM_BUY_TIMES				= 	315000;	 // 镶嵌宝石重铸次数(含有每天的概念)(准备不用)
+	
+	PB_ATTR_MANOR_BUY_TIMES					= 	315100;	 // 庄园购买次数(含有每天的概念)
+	PB_ATTR_PVAI_BUY_TIMES                  =   315400;  // pvai买次数(含有每天的概念)
+
+	PB_ATTR_DEF_MAX_BUY_TIMES				= 	319999;	 // 购买次数性默认max字段(不做属性用)
+
+	// 下面是和钻石相关的格子属性  (定义值需要和ExchangeParameter.xml 中的Type1字段一致)
+	PB_ATTR_DEF_MIN_CAPACITY				= 	320000;	 // 格子标识默认min字段(不做属性用)
+	
+	PB_ATTR_BUY_MANOR_CAPACITY				=	320000;	 // 购买的庄园格子数(准备不用)
+	PB_ATTR_BUY_SKILL_CAPACITY				=   320100;	 // 购买的技能格子容量
+	PB_ATTR_BUY_CONSTEL_CAPACITY		 	=	320150;	 // 购买的玩家星座格子容量修改
+	PB_ATTR_BUY_EQUIP_HOLE_CAPACITY			= 	320170;	 // 购买的玩家装备的镶嵌孔
+	PB_ATTR_BUY_SS_BAG_CAPACITY				=	320200;	 // 购买的玩家灵石背包格子容量
+	PB_ATTR_BUY_BAG_CAPACITY				= 	320300;	 // 购买的玩家背包格子容量
+	PB_ATTR_BUY_STORE_CAPACITY				= 	320400;	 // 购买的玩家仓库格子容量
+	
+	PB_ATTR_DEF_MAX_CAPACITY				= 	329999;	 // 格子标识默认max字段(不做属性用)
+ 
+	// 下面属性key和配置文件中的编号是对应的
+	PB_ATTR_PLAYER_STAMINA					= 	416000;	 // 玩家体力
+    PB_ATTR_PLAYER_COIN                    	=   416001;  // 玩家金币
+    PB_ATTR_PLAYER_DIAMOND                 	=   416002;  // 钻石   
+    PB_ATTR_EXP                            	=   416003;  // 用户经验值
+	PB_ATTR_PLAYER_PRESTIGE					= 	416004;	 // 声望
+    PB_ATTR_PLAYER_GEM_ANIMA               	=   416005;  // 宝石精华
+    PB_ATTR_PLAYER_SS_CHIP                 	=   416006;  // 灵石碎片(spirit stone chip) 
+	PB_ATTR_PLAYER_EXPLOIT					=	416007;  // 功勋
+	PB_ATTR_PLAYER_EXPLORE_EXP              =   416008;  // 探索阅历
+	PB_ATTR_PLAYER_HERALDRY                 =   416009;  // 纹章
+	PB_ATTR_PLAYER_SP						=	416010;	 // 灵能(spirit power)
+	PB_ATTR_PLAYER_PVP2_SCORE               =   416011;  // 最强勇者积分 
+	PB_ATTR_PLAYER_REFINE_STONE             =   416015;  // 炼精石
+	PB_ATTR_PLAYER_POTENTIAL_DRUG			=   416016;  // 潜力药剂
+    PB_ATTR_PLAYER_SHOP_REF_TOKEN           =   416017;  // 刷新令
+    PB_ATTR_PLAYER_SOUL_STONE               =   416018;  // 魂石
+	PB_ATTR_PLAYER_FAIRY_ELEM               =   416019;  // 精元
+    
+    PB_ATTR_PLAYER_EPLORE_TICKET            =   416021;  // 探索卷
+
+	PB_ATTR_PLAYER_CONTRIBUTE				=	416025;	 //  贡献
+
+    PB_ATTR_DOWER_LIGHT							=	416920;	 // 点亮的天赋数量
+    PB_ATTR_TITLE_WEAR                             =   416921;  // 装备的称号
+    PB_ATTR_STAR_NUM                               =   416922;  // 剩余的星星总量   
+    PB_ATTR_STAR_CONSUME                           =   416923;  // 消耗的星星总量  
+
+    PB_ATTR_PLAYER_HOLD_EXP                 =   416100;  // 挂机经验值
+    PB_ATTR_PLAYER_STORE_EXP                =   416101;  // 挂机转存经验值
+
+	
+	PB_ATTR_DAILY_GOALS_ACTIVITY            =   475001;	 // 每日活跃度
+	PB_ATTR_GROWUP_STATUS					=	482001;	// 成长计划
+	PB_ATTR_PLAYER_LAST_RESTORE_POWER_TIME	= 	482002;	// 用户最后恢复体力时间
+
+	PB_ATTR_EXCHANGE_TIMES_BEGIN            =   500000;   // 兑换次数开始
+    PB_ATTR_EXCHANGE_TIMES_END              =   510000;   // 兑换次数结束 	
+	PB_ATTR_PLAYER_GUILD_LAST_LEAVE_TIME	=	610003;	  // 玩家上次离开时间
+	PB_ATTR_PLAYER_GUILD_DIALY_GOLD_BLESS	= 	610009;	  // 当日女神祝福次数
+	PB_ATTR_PLAYER_GUILD_CONTRIBUTE_TIMES	=	610012;	  // 玩家贡献时间
+	PB_ATTR_PLAYER_GUILD_INSTANCE_TIMES		=	610013;	  // 玩家公会副本次数
+
+//--------上面属性需要通知客户端--------------------------------------------------------------------------------------------------
+	PB_ATTR_SEGMENT_DEF						= 	999999;	 // 通知客户端的分界点
+//--------下面属性不需要通知客户端------------------------------------------------------------------------------------------------
+	PB_ATTR_PLAYER_LAST_LOGIN_MAP   	    =   1000001;   	// 用户最后登陆的地图ID 
+    PB_ATTR_LAST_EXPLORE_ID                 =   1000002; 	// 缓存探索随机出来的地图ID
+	PB_ATTR_SET_ONCE_BEGIN					=  	1100000; 	//前端在这个范围内可以自由的设置一次值
+	PB_ATTR_SET_ONCE_END					=  	1200000;
+    PB_ATTR_SET_BEGIN                       =   1200001;     //前端在这个范围内可以自由的设置值
+    PB_ATTR_READY_SKILL_START               =   1200001;     //前端设置的安转技能   
+    PB_ATTR_READY_SKILL_END                 =   1200005;
+    PB_ATTR_MXA_VIEW_PLAYER                 =   1200006;     // 同屏可见最大人数
+    PB_ATTR_GAME_PIC_QUALITY                =   1200007;     // 游戏画面品质
+	PB_ATTR_WBOSS_VIEW_NUMBER               =   1200008;    // 世界boss玩家可见其它人数量 4 - thisvalue
+	PB_ATTR_AUTO_COST_DIAMOND				= 	1200009;	// 世界boss自动扣钻复活
+	PB_ATTR_AUTO_WAIT_TIMEOUT				= 	1200011;	// 世界boss自动等待时间复活
+    PB_ATTR_SET_END							=	1201000;
+	
+	PB_ATTR_DOWER_START						=	1210000;	// 天赋属性开始位置
+	PB_ATTR_DOWER_END						=	1220000;	// 天赋属性结束位置
+
+    PB_ATTR_SHOP_ITEM_START                =   1230000;    // 神秘商店物品起始id(注:记录ProbabilityExchange.xml中的ID,并非物品id)
+    PB_ATTR_SHOP_ITEM_END                  =   1230100;    // 神秘商店物品起始id(注:记录ProbabilityExchange.xml中的ID,并非物品id)
+    PB_ATTR_SHOP_ITEM_BUY_START            =   1230200;    // 购买商店中物品起始id(注:记录ProbabilityExchange.xml中的ID,并非物品id)
+    PB_ATTR_SHOP_ITEM_BUY_END              =   1230300;    // 购买商店中物品起始id(注:记录ProbabilityExchange.xml中的ID,并非物品id)
+
+    // 是否是第一次使用系统(0:是 !0:不是)
+    PB_ATTR_SPIRIT_SYS_NOT_FIRST_USED      =   1240000;    // 寻灵系统不是第一次使用
+    PB_ATTR_SPOP_SYS_NOT_FIRST_USED        =   1240001;    // 神秘商店系统不是第一次使用
+
+    PB_ATTR_PLAYER_LAST_LOGIN_OUT_TIME     =   1250000;    // 用户最后退出系统时间
+	   
+	PB_ATTR_SET_ONCE_DAILY_BEGIN           =   1300000; // 每日设置一次，前段可以查询，后台设置
+    PB_ATTR_SET_ONCE_DAILY_END             =   1400000;
+
+    PB_ATTR_PPVE_TIMES_DAILY_BEGIN          =   1500000;
+    PB_ATTR_PPVE_TIMES_DAILY_END            =   1600000;
+
+	PB_ATTR_PHYSICAL_ATTACK_ADD				= 	2010000;
+	PB_ATTR_MAGIC_ATTACK_ADD				= 	2020000;
+	PB_ATTR_SKILL_ATTACK_ADD				= 	2030000;
+	PB_ATTR_PHYSICAL_DEFENCE_ADD			= 	2040000;
+	PB_ATTR_MAGIC_DEFENCE_ADD				= 	2050000;
+	PB_ATTR_SKILL_DEFENCE_ADD				= 	2060000;
+	PB_ATTR_HP_ADD							= 	2070000;
+	PB_ATTR_COURAGE_ADD			        	=   2080000;   // 增加的勇气值 
+	PB_ATTR_CHARM_ADD				        =   2090000;   // 增加的勇气值 
+	PB_ATTR_TRICK_ADD				        =   2100000;   // 增加的勇气值 
+
+
+   
+	//-- 对战相关定义段 3000001-3000010------------------------
+	PB_ATTR_AUTO_BTL_INSTANCE_ID			= 	3000001;	// 自动对战的地图
+	PB_ATTR_AUTO_BTL_REMAIN_TURN			= 	3000002;	// 自动对战剩余轮次
+	
+	PB_ATTR_PLAYER_PVP_DUEL_TIMES			= 	3000030;	 // 每日pvp次数(主动)
+	PB_ATTR_PLAYER_PVP_DUELED_TIMES			= 	3000031;	 // 每日pvp次数(被动)
+}
+
+enum PB_ITEM_ATTR_T {
+    PB_ITEM_ATTR_PHYATK        =   1;  // 物理攻击(1)
+    PB_ITEM_ATTR_MAGATK        =   2;  // 魔法攻击(2)
+    PB_ITEM_ATTR_SKIATK        =   3;  // 技能攻击(3)
+    PB_ITEM_ATTR_PHYDEF        =   4;  // 物理防御(4)
+    PB_ITEM_ATTR_MAGDEF        =   5;  // 魔法防御(5)
+    PB_ITEM_ATTR_SKIDEF        =   6;  // 技能防御(6)
+    PB_ITEM_ATTR_HP            =   7;  // 生命值(7)
+    PB_ITEM_ATTR_ACCU          =   8;  // 精准(8)
+    PB_ITEM_ATTR_DODG          =   9;  // 闪避(9)
+    PB_ITEM_ATTR_WRK           =   10; // 破击(10)
+    PB_ITEM_ATTR_PARRY         =   11; // 格挡(11)
+    PB_ITEM_ATTR_CRIT          =   12; // 暴击(12)
+    PB_ITEM_ATTR_TENA          =   13; // 韧性(13)
+    PB_ITEM_ATTR_SLY           =   14; // 必杀(14)
+    PB_ITEM_ATTR_SPEED         =   15; // 极速(15)
+}
+
+enum PB_TASK_STATUS_T {
+	PB_TASK_CANT_TOUCH			= 0;
+	PB_TASK_TOUCH				= 1;
+	PB_TASK_FINISH				= 2;
+}
+
+enum PB_INSTANCE_TYPE_T {
+	PB_INSTANCE_TYPE_PVE		= 1;	// 普通副本
+	PB_INSTANCE_TYPE_PPVE		= 2;	// 多人副本
+	PB_INSTANCE_TYPE_PVP		= 3;	// 角斗场
+	PB_INSTANCE_TYPE_PVAI		= 4;	// 竞技场
+	PB_INSTANCE_TYPE_PVE2		= 5;	// 精英副本
+	PB_INSTANCE_TYPE_PVE3		= 6;	// 地下城副本
+	PB_INSTANCE_TYPE_PVAI2		= 8;	// 切磋
+	PB_INSTANCE_TYPE_PVP2		= 9;	// 最强勇者
+}
+
+enum PB_SPEC_ACTIVITY_ID_T{
+	PB_SA_CDEF_ID				= 6300;		// 主城防守
+	PB_SA_WBOSS_ID				= 6240;		// 世界boss
+	PB_SA_PVP2_ID				= 6250;		// 最强勇者
+}
+
+message BasicUserBattleInfo {
+	required uint32 physical_attack = 1 ; // 物理攻击
+	required uint32 magic_attack = 2 ; // 魔法攻击
+	required uint32 skill_attack = 3 ; // 技能攻击
+	required uint32 physical_defence = 4 ; // 物理防御
+	required uint32 magic_defence = 5 ; // 魔法防御
+	required uint32 skill_defence = 6 ; // 技能防御
+	required uint32 health_point = 7 ; // 生命值
+	required uint32 accurate	= 8 ; // 精准
+	required uint32 dodge		= 9 ; // 闪避
+	required uint32 wreck		= 10; // 破击
+	required uint32 parry		= 11; // 格挡
+	required uint32 critical_strike	= 12; // 暴击
+	required uint32 tenacity	= 13; // 韧性
+	required uint32 slay		= 14; // 必杀
+	required uint32 courage		= 15; // 勇气
+	required uint32 charm		= 16; // 魔力
+	required uint32 trick		= 17; // 技巧
+	required uint32 speed		= 18; // 极速
+	required uint32 proficiency	= 19; // 潜能
+	optional uint32 current_hp 	= 20 ; // 生命值
+}
+
+message UserSkillPart {
+	required uint32 part		= 1;
+	required BasicUserBattleInfo exp_battle_info = 2;
+
+	required float continue_time = 5;
+	required uint32 can_attack_number = 6;
+	required uint32 hurt			= 7;
+	required float continue_time2 = 8;
+}
+
+message UserSkillInfo {
+	required uint32 skill_id	= 1;
+	required uint32 level		= 2;
+	required uint32 part		= 3;
+	required uint32 skill_level	= 4;
+	required uint32 money		= 5;
+	required uint32 exploit		= 6;
+	required float own_cd		= 7;
+	required float share_cd	= 8;
+	
+	repeated UserSkillPart		parts	= 9;
+
+	required uint32 max_level	= 10;
+}
+
+// 用户基本信息
+message BasicUserInfo {
+    required uint32 uid        = 1; // 玩家标识(米米号)
+	required uint32 reg_time   = 2;	// 玩家注册时间
+	required uint32 channel_id = 3; // 渠道id
+	required bytes name       = 4; // 玩家昵称
+	required uint32 type       = 5; // 玩家职业类型：1战士，2弓箭手，3刺客
+	required uint32 gender     = 6; // 性别：0男，1女
+	required uint32 lv         = 7; // 玩家等级
+	required uint32 xpos       = 8; // 玩家所在地图x坐标
+	required uint32 ypos       = 9; // 玩家所在地图y坐标
+	required uint32 orient     = 10;// 玩家朝向
+	optional uint32 battle_side	= 11; // 游戏阵营
+	optional BasicUserBattleInfo battle_info = 12;
+	required uint32 next_lv	   = 13; // 用户下一等级经验
+	optional uint32 vip_lv	   = 14;	// 玩家vip等级
+	optional bool red_name		= 15;  // 玩家红名
+	optional uint32 effectiveness = 16;  //战斗力
+    optional uint32 globalid    = 17; //全局ID
+    optional uint32 gid_high    = 18; //公会id
+    optional uint32 gid_low    	= 19; //公会id
+    optional bytes gname    	= 20; //公会名字
+	optional uint32 gstatus		= 21;
+	// TODO：装扮、伙伴
+	optional uint32 current_title = 22;//装备的称号
+}
+
+//------------------------------------------------------------
+// 协议定义
+//------------------------------------------------------------
+
+// 进入地图请求，把要进入的坐标和朝向也发过来
+message CSEnterMapReq {
+    required uint32 mapid  = 1; // 地图ID
+    required uint32 xpos   = 2; // x坐标
+    required uint32 ypos   = 3; // y
+    required uint32 orient = 4; // 朝向
+}
+
+message CSEnterMapRsp { // 收到这个包时，在地图上展示玩家
+    required uint32        mapid    = 1;
+    required BasicUserInfo userinfo = 2;
+}
+
+message CSLeaveMapRsp {      // 玩家进入别的地图时，通过本协议通知原来地图的玩家把该玩家从地图中移除
+    required uint32 uid 		= 1; // 离开地图的玩家标识(米米号)
+	required uint32 reg_time	= 2;
+	required uint32 channel_id  = 3; // 渠道id
+}
+
+// 获取当前地图上所有用户的基本信息，用于显示用户场景中的形象
+message CSGetMapUsersReq {
+}
+
+message CSGetMapUsersRsp {
+    repeated BasicUserInfo userinfo = 1;
+}
+
+message CSGetUserSkillReq {
+	required uint32 userid 			= 1;	// 玩家标识(米米号)
+	required uint32 reg_time   		= 2;	// 玩家注册时间
+	required uint32 channel_id      = 3; 	// 渠道id
+}
+
+message CSGetUserSkillRsp {
+	required uint32 userid			= 1;	// 玩家标识(米米号)
+	required uint32 reg_time   		= 2;	// 玩家注册时间
+	required uint32 channel_id      = 3;    // 渠道id
+	repeated UserSkillInfo userskills	= 4;
+	repeated uint32 ready			= 5;
+}
+
+message CSGetUserInfoReq {
+	required uint32 userid			= 1; 	// 玩家标识(米米号)
+	required uint32 reg_time 	 	= 2;	// 玩家注册时间
+	required uint32 channel_id      = 3;    // 渠道id
+}
+
+message CSGetUserInfoRsp {
+	required uint32 userid			= 1;	// 玩家标识(米米号)
+	required uint32 reg_time  		= 2;	// 玩家注册时间
+	required uint32 channel_id      = 3;    // 渠道id
+	required BasicUserInfo userinfo = 4;
+}
+
+message CSAddUserSkillReq {
+	required uint32 skill_id		= 1;
+	required uint32 skill_level		= 2;
+}
+
+message CSAddUserSkillRsp {
+	required uint32 skill_id		= 1;
+	required uint32 skill_level		= 2;
+	required uint32 max_level		= 3;
+}
+
+message CSUserSkillDiffReq {
+	required uint32 skill_id		= 1;
+	required uint32 skill_level		= 2;
+}
+
+message CSUserSkillDiffRsp{
+	required uint32 skill_id		= 1;
+	required uint32 skill_level		= 2;
+	optional uint32 money		= 3;
+	optional uint32 exploit	= 4;
+	optional uint32 lv			= 5;
+
+	optional BasicUserBattleInfo battle_info = 6;
+
+	optional int32 own_cd		= 7;
+	optional int32 share_cd	= 8;
+	optional int32 hurt		= 9;
+	optional uint32 continue_time = 10;
+}
+
+message CSSkillUpdateValidRsq {
+ 	required bool valid			= 1;
+}
+
+// 场景地图行走
+message CSWalkReq {
+    required uint32 xpos 	= 1;
+    required uint32 ypos 	= 2;
+	required uint32 animid 	= 3;
+	required bool	flip 	= 4;
+}
+
+message CSWalkRsp {
+    required uint32 uid  		= 1;   	// 玩家标识(米米号)
+	required uint32 reg_time	= 2;	// 玩家注册时间
+	required uint32 channel_id  = 3;    // 渠道id
+    required uint32 xpos 		= 4;
+    required uint32 ypos 		= 5;
+	required uint32 animid 		= 6;
+	required bool	flip 		= 7;
+}
+
+//--物品相关协议段----------------------------------------------------------------------------------
+enum ITEM_TARGET_T {
+	ITEM_TARGET_BAG							= 1;	// 背包
+	ITEM_TARGET_STORE						= 2;	// 仓库
+	ITEM_TARGET_CARD						= 11;	// 卡牌
+	ITEM_TARGET_EQUIP_CHIP					= 14;	// 装备碎片
+	ITEM_TARGET_MONSTER_CHIP				= 15;	// 精灵碎片
+}
+// 物品基本属性信息
+message CSItemAttr {
+	required uint32 attr_key				= 1;	// 物品属性key
+	required uint32 attr_basic_value    	= 2;	// 物品基本属性对应的value
+	optional uint32 attr_intensify_value	= 3;	// 强化影响物品属性value增量
+	optional uint32 attr_gem_value			= 4;	// 宝石影响物品属性value增量
+}
+// 装备孔信息
+message CSEquipHole {
+	required uint32 hole_index		= 1;	// 孔编号
+	required uint32 item_gem_id		= 2;	// 宝石id
+	required uint32 attr_key		= 3;	// 影响属性的key
+	required uint32 attr_value		= 4;	// 影响属性的value
+	optional uint32 attr_min_v		= 5;	// 影响属性的key 对应value的最小值
+	optional uint32 attr_max_v		= 6;	// 影响属性的key 对应value的最大值
+}
+// 装备信息(位置、升到下级所需要的花费、下一等级的属性增量)
+message EquipmentBase
+{
+	message Item_Attr {
+		required uint32 key				= 	1;	// 装备属性key
+		required uint32 value			= 	2;	// 装备属性value
+	}
+	required uint32 cost_levelup			=	1;	// 升级花费
+	repeated Item_Attr incr_attr_next_lv	= 	2;	// 下一等级装备强化属性的增量
+	repeated CSEquipHole equip_holes 		= 	3; 	// 装备中宝石信息
+	repeated uint32	rel_ids					= 	4;	// 缘分
+}
+message SpiritStoneBase {
+	required uint32 consume		= 1; // 灵石升级需要的花费(=0时表示已经达到最高级，不能升级)
+	required uint32 convert		= 2; // 兑换成精华数量
+}
+message ManorBase {
+	required uint32 hunt_gain_coin		= 	1;	// 打猎获得的金币
+	required uint32 pick_gain_exp		= 	2;	// 采集获得的经验
+}
+// 物品信息
+message CSItemInfo { 
+    required uint32 pos             = 1; // 物品位置
+    required uint32 item_id         = 2; // 物品ID
+    required uint32 item_num        = 3; // 物品数量(num 对精灵来说代表status)
+    optional uint32 item_level      = 4; // 物品等级
+	repeated CSItemAttr item_attrs	= 5; // 物品影响的属性及其对应的值
+	optional EquipmentBase equip_info	= 6; // 装备信息
+	optional SpiritStoneBase ss_info	= 7; // 灵石信息
+	optional ManorBase manor_info		= 8; // 庄园信息 
+	optional uint32 item_dead_tm		= 9[default = 2147483647]; //过期时间
+	optional uint32 item_op_flag		= 10[default = 100]; // 0,时限物品未过期; 10,时限物品已过期; 100,非时限物品
+}
+
+// 请求所有物品
+message CSAllItemsReq {
+
+}
+message CSAllItemsRsp { 
+	required uint32 def_bag_size		= 1;	// 默认背包大小
+	required uint32 def_store_size		= 2;	// 默认仓库大小
+	required uint32 def_ss_bag_size     = 3;    // 默认灵石背包大小
+	required uint32 def_ss_store_size	= 4;	// 默认灵石仓库大小
+	required uint32 def_equip_lvup_max_cd_time= 5;// 默认装备升级最大cd时间
+
+	repeated CSItemInfo items			= 15;	// 所有物品信息
+}
+// 增加物品通知回包
+message CSItemAddRsp {
+	repeated CSItemInfo  items		= 1;
+}
+// 删除物品请求
+message CSItemRemoveReq { 
+	required uint32 pos				= 1;
+	required uint32 item_id			= 2;
+}
+message CSItemRemoveRsp { 
+	required uint32 pos				= 1;
+	required uint32 item_id			= 2;
+}
+// 使用指定物品请求(礼包...)
+message CSItemUseReq { 
+	required uint32 pos				= 1;
+	required uint32 item_id			= 2;
+	optional uint32 num				= 3[default = 1]; // 使用个数
+}
+message CSItemUseRsp {
+	message Item {
+		required uint32 id			= 1;
+		required uint32 num			= 2;
+	}
+	required uint32 item_id         = 1;	// 使用的物品id
+	repeated Item to_items			= 2;	// 获得的物品
+}
+
+// 交换物品请求
+message CSItemMoveReq { 
+	required uint32 pos_from		= 1; //起始位置
+	required uint32 pos_to			= 2; //结束位置
+};
+message CSItemMoveRsp { 
+	required uint32 pos_from		= 1; //起始位置
+	required uint32 pos_to			= 2; //结束位置
+};
+// 更新物品通知回包
+message CSItemUpdateRsp { 
+	repeated CSItemInfo item			= 1;
+};
+// 整理背包或仓库请求
+message CSItemOrderReq { 
+	required uint32 target			= 1; //1: 背包整理， 2: 仓库整理 11:卡牌背包 14:碎片背包
+};
+// 出售item请求
+message CSItemMoveToRecycleBinReq {
+	required uint32 pos             = 1;	// 出售商品所在的pos
+}
+message CSItemMoveToRecycleBinRsp {
+	required uint32 coin			= 1;	// 获得得金币
+}
+
+// 回购item请求
+message CSRepoRecycleBinItemReq {
+	required uint32 pos             = 1;	// 回购物品所在回收站的pos
+}
+message CSRepoRecycleBinItemRsp {
+	required uint32 coin			= 1;	// 消耗得金币
+}
+
+//--副本相关协议段----------------------------------------------------------------------------------
+message CSInstanceInfo {
+	required uint32 instance_id     = 1; 	// 副本ID
+	required uint32 star            = 2;	// 星星
+	required bool can_enter_flag	= 3;	// 是否可进标识(true:可进 false:不可进) (对精英、地下城副本有效)
+	required uint32 refresh_times	= 4;	// 重置次数 (对精英、地下城副本有效)
+	optional uint32 btl_times  		= 5;    // 可以挂机次数
+}
+// 获取副本列表请求
+message CSInstanceReq {
+	required uint32 start			= 1; //起始位置 包括
+	required uint32 end				= 2; //结束位置 不包括
+};
+
+message CSInstanceRsp {
+	repeated CSInstanceInfo new_instances	= 1;	// 副本信息(新副本系统)
+};
+
+// 获取地下城宝箱奖励
+message CSGetUGCityBoxRewardReq {
+	required uint32 index			= 1;	// 箱子的index(0 1 2 3 ......)
+}
+message CSGetUGCityBoxRewardRsp {
+	required bool succ				= 1;	// 是否成功 (true:成功 false:失败)
+	required uint32 index           = 2;	// 箱子的index(0 1 2 3 ......)
+	optional CSReward reward		= 3;	// 开箱子奖励
+}
+
+message CSReward {
+	message RewardInfo {
+		required uint32 item_id			= 1;
+		required uint32 item_level		= 2;
+		required uint32 item_num		= 3;
+	}
+	repeated RewardInfo rewards			= 1;
+	optional uint32	add_coin			= 2;	// 金币奖励
+	optional uint32 add_exp				= 3;	// 经验奖励
+	optional uint32 add_exploit			= 4;	// 功勋奖励
+	optional uint32 add_diamond			= 5;	// 钻石奖励
+	optional uint32 add_phase_exp		= 6;	// 精元奖励
+}
+
+message CSLevelUpRsp {
+	required uint32 level				= 1;
+}
+
+message CSBasicUserBattleInfoRsp {
+	required uint32	id			 				= 1;
+	required uint32	reg_time	 				= 2;
+	required uint32 channel_id      			= 3;    // 渠道id
+	required BasicUserBattleInfo battle_info 	= 4;
+}
+
+//--灵石操作相关协议段----------------------------------------------------------------------------------
+
+// 寻灵请求
+message CSSearchSpiritStoneReq {
+
+}
+// 寻灵请求回包,得到物品后会有add item的通知包给客户端
+message CSSearchSpiritStoneRsp {
+	required uint32 ret			= 1; //寻灵错误码 0:无错误(add_item,金币重设/重设) 1: 金币不足 2: 格子不足 3:...
+	// 寻灵无错误cost_coin、mon_id两字段不存在，成功两字段必须存在
+	optional uint32 cost_coin	= 2; //花费的金币(寻灵花费+寻灵返回),cli得到该值后需要在coin字段减去该值才是玩家当前coin
+	optional uint32 mon_id		= 3; //寻灵后当前精灵id
+	optional uint32 item_id		= 4; //寻灵后获得的物品id(灵石id或碎片id)
+}
+
+// 灵石仓库->灵石背包 移动请求
+message CSSpiritStoneMoveBagReq {
+	required uint32 pos	        = 1; //需要移动灵石仓库中灵石所在位置
+}
+// 移动请求回包,成功会有del item和add item的通知包给客户端
+message CSSpiritStoneMoveBagRsp {
+	required uint32 ret			= 1; //移动结果 0:成功 1:pos没有对应灵石 2:背包满 3:...
+}
+
+// 升级灵石请求包
+message CSSpiritStoneLevelUpReq {
+	required uint32 pos         = 1; //需要升级的灵石所在pos
+}
+// 升级灵石请求回包,会产生update item回包
+message CSSpiritStoneLevelUpRsp {
+	required uint32 ret			= 1; //升级结果 0:成功 1:不是背包灵石 2:pos没有对应灵石 3:灵能不足 4:已经是最高等级 5:...
+	required uint32 pos			= 2; //灵石所在pos
+	required uint32 cost_sp		= 3; //升级所花费的灵能(spirit power)(不成功=0)
+}
+
+// 灵石转化为灵能请求
+message CSSpiritStoneToSPReq {
+	required uint32 pos         = 1; //需要转化为灵能的灵石所在pos(如果pos=0则转换灵石仓库中所有灵石)
+}
+// 灵石转化为灵能请求回包 会有del item 操作
+message CSSpiritStoneToSPRsp {
+	required uint32 ret         = 1; //转化结果 0:成功 1:pos不是背包中灵石 2:pos没有对应灵石 3:...
+	// 转化失败后sp_key、sp_value两字段不存在，成功两字段必须存在
+	optional uint32 sp_key		= 2; //灵能对应的key
+	optional uint32 sp_value	= 3; //灵能对应value
+}
+
+// 获得可以用碎片兑换的灵石基本属性信息请求包
+message CSGetExchangeSSInfoReq {
+}
+message ExchangeSSInfo{
+	required uint32 ss_id		= 1; // 灵石id
+	required uint32 consume		= 2; // 升级消耗精华数量
+	required uint32 convert		= 3; // 兑换成精华数量
+	required uint32 need_chip	= 4; // 需要的碎片数量
+	required uint32 key			= 5; // 灵石对应属性key
+	required uint32 value		= 6; // 灵石对应属性value
+}
+message CSGetExchangeSSInfoRsp {
+	repeated ExchangeSSInfo ss_list	= 1; // 可兑换灵石列表
+}
+//--卡牌相关 协议段-------------------------------------------------------------------------------------
+// 整理、移动、换装、合成 按照原有的协议
+
+//--庄园相关 协议段-------------------------------------------------------------------------------------
+// 添加庄园请求包(错误码以err包形式返回(id不合法、庄园已经存在、金币不足、...),添加成功会返回add_item包)
+message CSAddManorReq {
+	required uint32 manor_id			= 1; // 庄园编号
+}
+message CSAddManorRsp {
+	required uint32 pos                 = 1; // 庄园所在pos
+}
+
+// 热身运动请求包(错误码以err包形式返回(pos不合法、达到最大级别、金币不足)), 更改成功会返回update item
+message CSWarmSportLvUpReq {
+	required uint32 pos					= 1; // 热身运动的庄园所在pos
+	optional bool to_max_lv				= 2[default = false];	// 是否直接达到A级任务
+}
+message CSWarmSportLvUpRsp {
+	required uint32 pos                 = 1; // 热身运动的庄园所在pos
+}
+
+// 庄园操作请求包(错误码以err包形式返回(pos不合法、opt不合法、cd时间未冷却、...))
+message CSManorOptReq {
+	required uint32 pos                 = 1; // 庄园所在pos
+	required uint32 opt					= 2; // 庄园操作(1:打猎 2: 采集)
+}
+message CSManorOptRsp {
+	required uint32 pos                 = 1; // 庄园所在pos
+	required uint32 opt                 = 2; // 庄园操作(1:打猎 2: 采集)
+}
+// 购买庄园进入次数协议见CSExchangeParameterReq
+
+//--精灵相关 协议段-------------------------------------------------------------------------------------
+
+// 获取用户精灵信息
+message CSMonListReq {
+	required uint32 uid 		= 1; // 玩家标识(米米号)
+	required uint32 reg_time	= 2; // 玩家注册时间
+	required uint32 channel_id  = 3; // 渠道id
+}
+
+message MonInfo {
+	required uint32 mon_id      = 1; // 精灵id
+	required uint32 mon_status  = 2; // 精灵状态 1: 普通 2: 新精灵 3: 跟随
+	optional uint32 pos			= 3; // 精灵位置 
+    optional uint32 grade       = 4; // 阶数
+}
+
+// 获取用户精灵信息回包
+message CSMonListRsp {
+	required uint32 uid         = 1; // 玩家标识(米米号)
+	required uint32 reg_time	= 2; // 玩家注册时间
+	required uint32 channel_id  = 3; // 渠道id
+	repeated MonInfo mon_info	= 4; // 用户精灵列表
+}
+
+// 设置精灵状态请求包
+message CSSetMonStatusReq {
+	required uint32 mon_id      	= 1; // 需要改变状态的精灵id	
+	required uint32 mon_status		= 2; // 1: 普通 2: 新精灵 3: 跟随
+}
+// 设置精灵状态回包
+message CSSetMonStatusRsp {
+	required uint32 ret         = 1; // set结果 0:成功 1:pos没有对应精灵 2: ...
+	// ret != 0 mon_id、status 两字段不存在，否则必须存在
+	optional uint32 mon_id      = 2; // 改变状态的精灵id
+	optional uint32 mon_status      = 3; // 1: 普通 2: 新精灵 3: 跟随
+}
+
+//--PVP, PPVP协议段-------------------------------------------------------------------------------------
+
+message CSPVPQueryRoomReq				//查询PVP房间列表
+{
+}
+
+message PVPRoomBase
+{
+	required uint32 room_id				=	1;	//房间编号
+	required uint32 top_level			=	2;	//等级限制
+	required uint32 current_online		=	3;	//当前人数
+	required uint32 max_online			=	4;	//最大人数
+}
+message CSPVPQueryRoomRsp				//回复PVP房间列表
+{
+	repeated PVPRoomBase rooms			=	1;
+}
+
+message CSPVPBaseInfoRsp				//回复主角个人的PVP信息
+{
+	required uint32 winning				=	1;	//胜率
+	required uint32 remain_times		=	2;	//剩余次数
+}
+
+message CSPVPCreateRoomReq				//请求创建PVP房间,创建成功返回CSPVPJoinRoomRsp
+{
+	required uint32 type				=	1;	//1: 1 vs 1, 2: 2 vs 2
+	required uint32 top_level			=	2;	//等级限制，0:表示无限制，自由	
+}
+
+message CSPVPJoinRoomReq				//请求进入PVP房间
+{
+	required uint32 room_id				=	1;	//房间编号，0: 快速匹配
+}
+
+message PVPSeatBase
+{
+	required uint32 id					=	1;	//位置编号
+	required uint32 avatar				=	2;	//头像
+	required bytes name				=	3;	//名字
+	required uint32 level				=	4;	//等级
+	required bool ready					=	5;	//就绪标记
+}
+
+message CSPVPJoinRoomRsp				//返回当前房间内玩家信息
+{
+	required uint32 room_id				=	1;	//房间编号，0: 快速匹配
+	required uint32 type				= 	2;	//1: 1 vs 1, 2: 2 vs 2
+	required uint32 top_level			=	3;		
+	repeated PVPSeatBase seats			=	4;	//当前房间内玩家信息
+}
+
+message CSPVPExitRoomReq				//退出房间请求
+{
+}
+
+message CSPVPExitRoomRsp				//退出房间响应
+{
+}
+
+message CSPVPCloseRoomRsp				//房间被关闭
+{
+}
+
+message CSPVPChangeSeatReq				//玩家换座位
+{
+	required uint32 seat				=	1;	//位置编号
+}
+
+message CSPVPReadyReq					//玩家准备完毕
+{
+}
+
+message CSPVPCancelReadyReq				//玩家取消准备
+{
+}
+
+message CSPVPKickoffReq					//房主踢人
+{
+	required uint32 seat				=	1;	//位置编号
+}
+
+message CSPVPKickoffRsp					//被房主踢出
+{
+}
+
+message CSPVPStartReq					//房主开始游戏
+{
+}
+
+message CSPVPStartRsp					//游戏开始
+{
+    required uint32 mapid				=	1;	//地图编号
+}
+
+//--PVE, PPVE协议段-------------------------------------------------------------------------------------
+
+message CSPPVEBattleReq
+{
+}
+
+message CSPPVEBattleRsp
+{	
+	repeated uint32 ids					=  1;
+}
+
+message CSPVEQueryRoomReq				//查询PVE房间列表
+{
+}
+
+message PVERoomBase
+{
+	required uint32 room_id				=	1;	//房间编号
+	required uint32 top_level			=	2;	//等级限制
+	required uint32 current_online		=	3;	//当前人数
+	required uint32 max_online			=	4;	//最大人数
+}
+message CSPVEQueryRoomRsp				//回复PVE房间列表
+{
+	repeated PVERoomBase rooms			=	1;
+}
+
+message CSPVEBaseInfoRsp				//回复主角个人的PVE信息
+{
+	required uint32 countdown			=	1;	//活动倒计时
+	required uint32 remain_times		=	2;	//剩余次数
+}
+
+message CSPVECreateRoomReq				//请求创建PVE房间,创建成功返回CSPVEJoinRoomRsp
+{
+	required uint32 top_level			=	1;	//等级限制
+	required uint32 battle_id			=   2;
+}
+
+message CSPVEJoinRoomReq				//请求进入PVE房间
+{
+	required uint32 room_id				=	1;	//房间编号,0:表示快速加入
+}
+
+message CSPVEJoinRoomFailureRsp			//进入PVE房间失败返回，成功返回CSPVEJoinRoomRsp
+{
+	required uint32 errcode				=	1;	//错误编码
+}
+
+message PVESeatBase
+{
+	required uint32 id					=	1;	//位置编号
+	required uint32 avatar				=	2;	//头像
+	required bytes name				=	3;	//名字
+	required uint32 level				=	4;	//等级
+	required bool ready					=	5;	//就绪标记
+    optional	uint32 userid   	    = 	6[default=0]; // 玩家标识(米米号)
+    optional	uint32 reg_time    		= 	7[default=0]; // 玩家注册时间
+    optional	uint32 channel_id  		= 	8[default=0]; // 渠道id
+    optional	bytes  kakao_url		= 	9[default=""];// kakao url
+	optional uint32 effective			=  10[default=0];
+}
+message CSPVEJoinRoomRsp				//返回当前房间内玩家信息
+{
+	required uint32 room_id				=	1;	//房间编号
+	required uint32 top_level			=	2;	//等级限制
+	repeated PVESeatBase seats			=	3;	//当前房间内玩家信息
+}
+
+message CSPVEExitRoomReq				//退出房间请求
+{
+}
+
+message CSPVEExitRoomRsp				//退出房间响应
+{
+}
+
+message CSPVECloseRoomRsp				//房间被关闭
+{
+}
+
+message CSPVEReadyReq					//玩家准备完毕
+{
+}
+
+message CSPVECancelReadyReq				//玩家取消准备
+{
+}
+
+message CSPVEKickoffReq					//房主踢人
+{
+	required uint32 seat				=	1;	//位置编号
+}
+
+message CSPVEKickoffRsp					//被房主踢出
+{
+}
+
+message CSPVEStartReq					//房主开始游戏
+{
+}
+
+message CSPVEStartRsp					//游戏开始
+{
+    required uint32 mapid				=	1;	//地图编号
+}
+
+//--PVAI协议段-------------------------------------------------------------------------------------
+
+message CSPVAIReq
+{
+	required uint32 userid		= 1; // 玩家标识(米米号)
+	required uint32 reg_time	= 2; // 玩家注册时间
+	required uint32 channel_id  = 3; // 渠道id
+
+	optional PB_INSTANCE_TYPE_T type		= 4[default = PB_INSTANCE_TYPE_PVAI]; // PB_INSTANCE_TYPE_PVAI or PB_INSTANCE_TYPE_PVAI2
+}
+
+enum AI_STATUS_T {
+	PB_AI_STATUS_TOP10			= 1;	// top10 info
+	PB_AI_STATUS_FRONT			= 2;	// 自己可以挑战的玩家
+	PB_AI_STATUS_SELF			= 3;	// 自己的名次
+	PB_AI_STATUS_BACK			= 4;	// 比自己排名低的玩家
+}
+
+message CSPVAIInfoReq
+{
+}
+
+message CSPVAIInfoRsq
+{
+	message CSPVAIInfo {
+		required uint32 userid			= 1;
+		required uint32 reg_time		= 2;
+		required uint32 channel_id  	= 3;    // 渠道id
+		required uint32 rank			= 4;
+		required bytes name				= 5;
+		required uint32 type			= 6;
+		required uint32 lv				= 7;  
+		optional AI_STATUS_T ai_status	= 8;	// ai 的状态
+		repeated uint32	fairys			= 9;	// 特殊精灵
+	}
+	message CSPVAILog {
+		required bytes name			= 1; //对方用户名
+		required bool 	direct			= 2; //true 主动 false被动
+		required bool 	win 			= 3; //
+	}
+	required uint32 rank				= 1;//玩家名次
+	repeated CSPVAIInfo   infos			= 2;//推荐玩家列表
+	repeated CSPVAILog		logs		= 3;//PVAI日志
+}
+// -------- 获取副本奖励信息
+message CSGetInstanceInfoReq {
+	required uint32 instance_id			= 1;
+}
+message CSGetInstanceInfoRsp {
+	required uint32 instance_id         = 1;
+	required uint32 effectiveness		= 2;	// 推荐战斗力
+	required CSReward reward			= 3;	// 奖励信息
+}
+
+//--PVXXX 奖励 协议段-------------------------------------------------------------------------------------
+message CSPVXRewardRsp {
+	required bool is_win				= 1;	// 是否赢 true:赢 false: 输
+	required uint32 pvx_type			= 2;	// 对战类型: PVE = 1,PPVE = 2,PVP = 3,PVAI = 4,PVE2 = 5,PVE3 = 6, PVP2 = 7, PVP3 = 8,PVP4 = 9...
+	required uint32 coin				= 3;	// pvx 后奖励的金币
+	required uint32 reputation			= 4;	// pvx 后奖励的声望
+	optional CSReward reward			= 5;	// 物品奖励 
+	// TODO (lyle) 其他奖励... optional
+}
+
+//--装备强化、合成、镶嵌、钻孔协议段-------------------------------------------------------------------------------------
+
+// 装备镶嵌请求包
+message CSEquipInlayGemReq {
+	required uint32 equip_pos			= 1;	// 装备pos
+	required uint32 gem_id				= 2;	// 宝石id
+	required uint32 hole_index			= 3;	// 孔index(例如:1 2 3 4(从1开始))
+}
+// 装备镶嵌请求回包(ret = 0 时有del item、update item 包传给客户端)
+message CSEquipInlayGemRsp {
+	required uint32 ret					= 1;	// 0 成功 !0 失败(1:装备或宝石不存在 2:孔index不合法 3:...)
+}
+
+// 重铸装备请求包
+message CSResetGemAttrReq {
+	required uint32 equip_pos           = 1;    // 装备pos
+	repeated uint32 holes_index			= 2;	// 重铸宝石所在孔的index
+	optional uint32 cost_attr_key		= 3;	// 重铸所花费的物品的key(注意和item_id的区别,在此表示玩家属性key)
+}
+// 重铸装备请求回包(ret = 0 时有update item 包传给客户端)
+message CSResetGemAttrRsp {
+	required uint32 ret					= 1;	// 0 成功 !0 失败(1:pos不合法 2:孔index不合法 3:免费重铸次数用完或花费物不足 4:锁定孔的花费不够 5:...)
+}
+
+// 装备强化
+message CSEquipmentStrengthReq			//装备强化请求
+{
+	required uint32 pos					= 	1;	//指定强化的位置
+	required bool 	direct				=	2;	//是否一键强化
+}
+message CSEquipmentStrengthRsp			//强化是否成功
+{
+	required uint32 result				= 	1;	//0: 成功，!0: 错误码(1:pos不合法 2:pos没有对应装备 3:item不是装备 4:玩家等级不够 5:升级cd达到最大 6:装备的下一等级不存在 7:金币不够 8:...)
+	required uint32 pos 				= 	2;	// 强化的位置
+	optional uint32 level				=	3;  // 强化到的等级
+}
+
+// 装备合成请求包
+message CSEquipmentComposeReq			//装备合成请求
+{
+	required uint32 exchange_item_id	= 	1;  // 请求合成的物品配置编号
+	repeated uint32 from_item_pos		=	2;	// 请求合成物品的所需材料的pos,pos没给全的需系统自动查找并消耗
+	optional uint32 multi				=	3[default = 1]; // 请求合成倍数(默认为1)
+}
+message CSEquipmentComposeRsp
+{
+   message Item {
+        required uint32 id              =   1;  // 物品ID
+        required uint32 num         	=   2;  // 物品数量
+    }
+	required uint32 exchange_item_id    =   1;  // 请求合成的物品配置编号
+	required uint32 result				=	2;	//0:成功, !0: 错误码(1:配置编号不存在 2:pos与配置不匹配 3:物品不足 4:格子不够 5:用户等级不够 6:vip等级不够 7:未知错误...)
+	repeated Item	items				= 	3;
+}
+
+// 装备分解请求包
+message CSEquipmentDecomposeQueryReq
+{
+	required uint32 pos					=	1;	//查询分解信息
+}
+
+message CSEquipmentDecomposeQueryRsp
+{
+	message Item {
+		required uint32 id				= 	1;	// 物品ID
+		required uint32 num			= 	2;	// 物品数量
+	}
+	required uint32 money				=	1;
+	repeated Item	items			=	2;
+}
+
+message CSEquipmentDecomposeReq
+{
+	required uint32 pos					=	1; //制定分解位置
+}
+
+message CSEquipmentDecomposeRsp
+{
+	message Item {
+		required uint32 id				= 	1;	// 物品ID
+		required uint32 num			= 	2;	// 物品数量
+	}
+	required uint32 money				=	1;
+	repeated Item	items			=	2;
+}
+
+//--任务相关 协议段-------------------------------------------------------------------------------------
+
+message CSTaskInfoReq
+{
+    optional uint32 check_gg      = 1[default = 0]; //是否要检测google评分状态(IGG专有)1需要0不需要
+}
+
+message TaskInfo
+{
+	required uint32 task_id					= 1;
+	required uint32 step_id					= 2;
+	required uint32 step_value				= 3;
+}
+
+message CSTaskInfoRsp
+{
+	repeated uint32 acceptable_tasks		= 1;
+	repeated TaskInfo accept_tasks			= 2; 
+}
+
+message CSTaskDoStepReq
+{
+	required uint32 task_id					= 1;
+	required uint32 step_id					= 2;
+	required uint32 step_value				= 3;
+}
+
+message CSTaskDoStepRsp
+{
+	required uint32 task_id					= 1;
+	required uint32 step_id					= 2;
+	required uint32 step_value				= 3;
+}
+
+message CSTaskLogReq
+{
+}
+
+message CSTaskLogRsp
+{
+	repeated TaskInfo tasks				= 1;
+}
+
+message CSTaskStatusReq
+{
+	required uint32 task_id				= 1;
+}
+
+message CSTaskStatusRsp
+{
+	required uint32 task_id				= 1;
+	required PB_TASK_STATUS_T status	= 2;
+}
+
+//--每日任务相关 协议段-------------------------------------------------------------------------------------
+message DailyTaskInfo {
+	required uint32 daily_task_id			= 1;	// 每日任务id
+	required int32 daily_task_status		= 2;	// 每日任务状态 -1:在任务列表中,未接受 0:接受任务 >0: 任务当前完成的星星数
+}
+
+// 每日任务列表请求
+message CSDailyTaskInfoReq {
+
+}
+message CSDailyTaskInfoRsp {
+	repeated DailyTaskInfo daily_tasks		= 1;	// 每日任务列表
+}
+// 接受每日任务
+message CSAcceptDailyTaskReq {
+	required uint32 daily_task_id           = 1;    // 每日任务id
+}
+message CSAcceptDailyTaskRsp {
+	required bool succ                      = 1;    // 接受每日任务是否成功
+	required uint32 daily_task_id           = 2;    // 每日任务id
+}
+// 放弃每日任务
+message CSGiveUpDailyTaskReq {
+
+}
+message CSGiveUpDailyTaskRsp {
+	required bool succ                      = 1;    // 放弃每日任务是否成功
+	optional uint32 daily_task_id           = 2;    // 每日任务id
+}
+// 领取每日任务奖励
+message CSGetDailyTaskRewardReq {
+
+}
+message CSGetDailyTaskRewardRsp {
+	required bool succ						= 1;	// 领取奖励是否成功
+	optional uint32 daily_task_id           = 2;    // 每日任务id
+}
+
+// 更新每日任务通知
+message CSNotifyUpdateDailyTaskInfoRsp {
+	repeated DailyTaskInfo update_daily_tasks   = 1;    // 更新每日任务状态
+}
+
+// NOTI 使用钻石类操作请使用CSExchangeParameterReq(钻石系统) 协议
+
+//--每日目标相关 协议段---------------------------------------------------------------------------------
+message CSGetDailyGoalRewardReq {
+
+}
+message CSGetDailyGoalRewardRsp {
+	required bool succ					= 1;	// true:成功 false:失败
+}
+
+//--每日领取 协议段------------------------------------------------------------------------------------
+message CSGetDailyRewardReq {
+	// 需要领取的奖励参数说明:
+	//		PB_ATTR_GET_DAILY_PAY_REWARD_TIME 			领取每日薪资奖励
+	//		PB_ATTR_GET_DAILY_LOGIN_REWARD_TIME 		领取每日登陆奖励
+	//		PB_ATTR_GET_PVAI_REWARD_TIME 				领取pvai奖励
+	//		PB_ATTR_GET_DAILY_VIP_REWARD_TIME 			领取每日vip奖励
+	//		PB_ATTR_GET_REWARD_BY_VIP_LV                vip奖励
+	//		PB_ATTR_GET_FIRST_BUY_DIAMOND_REWARD_TIME 	首次充值奖励领取
+	//		PB_ATTR_GET_STAMINA_RESTORE_TIME	        体力恢复时间
+	//		PB_ATTR_91_VIP_DAILY_GIFT_GET_TIME 			91vip每日礼包
+	//		PB_ATTR_91_VIP_GIFT_GET_TIME 				91专属礼包
+	//		PB_ATTR_91_VIP_TOPUS_STATUS 	 			91首冲礼包
+	//		PB_ATTR_DAILY_TIMES_HERO_TREASURE 			勇者宝藏
+	//		PB_ATTR_GET_DAILY_FACEBOOK_MARK				FACEBOOK分享
+	//		....................
+	required uint32	key					= 1;	// 领取的key
+}
+message CSGetDailyRewardRsp {
+	required bool succ 					= 1;	// 是否领取成功
+	required uint32 key                 = 2;    // 领取的key
+}
+
+// 累计登入领取奖励
+message CSGetLoginRewardReq{
+	required uint32 someday 			= 1; 	//累计奖励的某一天（1-7）
+}
+message CSGetLoginRewardRsp{
+	required bool succ 					= 1;	// 是否领取成功
+}
+
+// 查询pvai累积的奖励
+message CSSelectPVAIACCURewardReq {
+
+}
+
+message CSSelectPVAIACCURewardRsp {
+	required uint32 accu_coin				= 1;	// 累积奖励的金币
+	required uint32 accu_reputation			= 2;	// 累积奖励的声望
+	required uint32 one_hour_coin			= 3;	// 一小时获得的金币
+	required uint32 one_hour_reputation		= 4;	// 一小时获得的声望
+}
+
+
+//--拉取玩家属性 协议段---------------------------------------------------------------------------------
+message CSAttributesSetReq
+{
+	required uint32 key					= 1;
+	required uint32 value				= 2;
+}
+
+message CSAttributesReq
+{
+	repeated uint32 keys				= 1; // 请求玩家属性列表
+}
+
+message CSAttributesRsp
+{
+	message KeyValue {
+		required uint32 key				= 1; // 玩家属性key
+		required uint32 value			= 2; // 玩家属性value
+	}
+	repeated KeyValue values		= 1;
+}
+
+message CSOnceSetReq
+{
+	required uint32 index					= 1;
+}
+
+message CSOnceReq {
+	repeated uint32 indexs				= 1; //1-10000
+}
+
+message CSOnceRsp
+{
+	message Once {
+		required uint32 index			= 1;
+		required bool 	is_set			= 2;
+	}
+	repeated Once values				= 1;
+}
+
+//--训练 协议段--------------------------------------------------------------------------------
+
+message CSTrainInfoReq {
+}
+
+message CSTrainInfoRsp {
+	required uint32 potential			= 1;
+	required uint32 courage				= 2;
+    required uint32 charm				= 3;
+    required uint32 trick				= 4; 
+}
+
+message CSTrainReq {
+	required uint32 type				= 1; // 训练等级(1,2,3,4)
+}
+
+message CSTrainRsp {
+	required int32 courage				= 1; // 增加的勇气值
+    required int32 charm				= 2; 
+    required int32 trick				= 3; 
+	required bool succ					= 4; // 特训是否成功(true 成功 false 失败)
+}
+
+message CSTrainDetermineReq {
+
+}
+
+message CSTrainDetermineRsp {
+
+}
+
+//--探索 协议段--------------------------------------------------------------------------------
+// 刷新请求协议
+message CSExploreReq {
+	required uint32 option              = 1; // 1:open 云游系统 2: 刷新
+}
+message CSExploreRsp {
+	required uint32 option              = 1;
+	required uint32 map_id				= 2; // 地图id
+}
+// 领取奖励请求(领奖一次，探索次数加1)
+message CSExploreDetermineReq {
+	required uint32 option				= 1; // 选择奖励(1: 奖励1 2: 奖励2)
+}
+message CSExploreDetermineRsp {
+	required uint32 map_id				= 1; // 地图id
+	optional CSReward rewards			= 2; // 奖励
+}
+
+//--天赋 协议段--------------------------------------------------------------------------------
+message CSQueryDowerReq {
+
+}
+
+message CSQueryDowerRsp {		 // 查询天赋信息
+	message Dower {
+		required uint32 id				= 1; // 天赋ID
+		required uint32 level			= 2; // 天赋等级
+		required uint32 max_level		= 3; // 最大天赋等级
+		required uint32 plus			= 4; // 增加的属性值
+		required uint32 each_plus		= 5; // 每级增加的属性值
+	}
+	repeated Dower dower				= 1; // 天赋
+	optional uint32 timeout				= 2; // 冷却时间
+}
+
+message CSDowerInfoReq { 		// 查询单个天赋信息
+	required uint32 id					= 1; // 天赋ID
+	required uint32 level				= 2; // 天赋等级
+}
+
+message CSDowerInfoRsp { 		// 查询单个天赋信息
+	required uint32 id						= 1; // 天赋ID
+	required uint32 level					= 2; // 天赋等级
+	required uint32 next_exploit 			= 3; // 升级需要的功勋
+	required uint32 next_time 				= 4; // 升级时间
+	required uint32 diff_physical_attack 			= 5; // 提高的物理攻击
+	required uint32 diff_magic_attack 			= 6; // 提高的魔法攻击
+	required uint32 diff_skill_attack 			= 7; // 提高的技能攻击
+	required uint32 diff_physical_defence 		= 8; // 提高的物理防御
+	required uint32 diff_magic_defence 		= 9; // 提高的魔法防御
+	required uint32 diff_skill_defence		= 10; // 提高的技能防御
+	required uint32 diff_hp					= 11; // 提高的HP
+	required uint32 plus			= 12; // 增加的属性值
+}
+
+message CSDowerReq {					// 升级天赋
+	required uint32 id					= 1; //天赋ID
+}
+
+message CSDowerRsp {
+	required uint32 timeout				= 1; // 冷却时间
+	required uint32 level				= 2; //升级后天赋等级
+	required uint32 plus				= 3; // 增加的属性值
+	required uint32 next_exploit		= 4; // 升级需要的功勋
+}
+// ---------自动战斗协议段---------------------------------------------------------------------------
+// 自动战斗副本中怪物信息查询请求包
+message CSABMonsterReq {
+	required uint32 id 	= 1; 							// 副本ID or 章节id
+	optional uint32 instance_type 	= 2[default = 1];	// 副本类型(和章节id配合使用)
+}
+message CSABMonsterRsp {
+	message MonInfo {
+		required uint32 mon_id	= 1; // 怪物id
+		required uint32 mon_num	= 2; // 怪物num
+	}
+	required uint32 id 	= 1; 				// 副本ID or 章节id
+	optional uint32 instance_type 	= 2;  	// 副本类型(和章节id配合使用)
+	repeated MonInfo mon_infos		= 3; 	// 怪物信息
+}
+
+// 玩家自动战斗请求包
+message CSAutoBattleReq {
+    required uint32 id		= 1; // 副本ID or 章节id
+	required uint32 param 	= 2; // 轮数(=0时表示消耗所有体力值 和副本ID配合使用) or 副本类型(和章节id配合使用)
+}
+// 对用户上次启动自动战斗之后，再次登录游戏处理也发该回包
+message CSAutoBattleRsp {
+	required uint32 ret				= 1; // 0 成功 !0 失败(1:上个战斗自动战斗未完成 2:地图不能自动战斗 3...)
+	required uint32 id				= 2; // 自动战斗副本 or 章节id
+	required uint32 instance_type 	= 3; // 自动战斗副本类型
+}
+
+// 玩家自动战斗回包(ret = 0 后,自动战斗回包cd完成后将产生CSABRewardRsp回包告知玩家所获得的奖励)
+message CSABRewardRsp {
+	required uint32 id 				= 1; // 副本ID or 章节id
+	required uint32 instance_type 	= 2; // 自动战斗副本类型
+	required CSReward rewards   	= 3; // 副本奖励
+}
+
+// 玩家取消自动战斗
+message CSCancelAutoBattleReq {
+}
+message CSCancelAutoBattleRsp {
+}
+
+// 加速完成自动战斗 用cs_core.proto的协议 CSExchangeParameterReq
+//--钻石系统 协议段--------------------------------------------------------------------------------
+// 钻石系统协议
+//exchange parameter
+enum RefreshShopTye{
+	USE_FREE_TIMES		= 1;
+	USE_TICKET			= 2;
+	USE_DIAMOND			= 3;
+}
+
+message CSExchangeParameterReq {
+	required uint32 id					= 1;				// 钻石相关id
+	// 相关参数: 
+	//		1、星座开槽[1-12]
+	//		2、装备开孔[传装备的pos]
+	//		3、精英、地下城副本章节重置[章节id + 副本类型])
+	//		4、庄园清除cd[庄园的pos]
+	//		N、TODO(lyle) ...
+	repeated uint32 param				= 2;
+}
+message CSExchangeParameterRsp {
+	required bool succ					= 1;				// true成功 false 失败
+	required uint32 id					= 2;				// 钻石相关id
+	repeated uint32 param				= 3;				// 相关参数
+}
+
+//--神秘商店 协议段--------------------------------------------------------------------------------
+message ShopItemInfo {
+	message Item {
+		required uint32 item_id			= 1;	// 物品id
+		required uint32 item_num		= 2;	// 物品数量
+	}
+	required uint32 index				= 1;	// 买卖暗号(index)	
+	required Item from_item				= 2;	// 消耗的物品
+	required Item to_item				= 3;	// 得到的物品
+	required bool is_buy				= 4;	// 是否购买(true:已经购买 false:没有购买)
+}
+
+// 请求商店商品列表请求
+message CSGetShopItemsReq {
+	
+}
+message CSGetShopItemsRsp {
+	repeated ShopItemInfo items		= 1;	// 商店商品列表
+	optional uint32	rtimes			= 2;	// 商店剩余刷新次数
+}
+// 购买商店商品请求
+message CSBuyShopItemReq {
+	required uint32 index               = 1;    // 买卖暗号(index) 
+}
+message CSBuyShopItemRsp {
+	required uint32 index               = 1;    // 买卖暗号(index) 
+	required bool succ					= 2;	// 购买是否成功
+}
+// NOTI 商店刷新请走CSExchangeParameterReq 协议
+
+//--拉取其他玩家信息 协议段--------------------------------------------------------------------------------
+// 拉取玩家物品信息	
+message CSGetUserItemReq {
+	required uint32 userid		        = 1; // 玩家标识(米米号)
+	required uint32 reg_time			= 2; // 玩家注册时间
+	required uint32 channel_id  		= 3; // 渠道id
+}
+message CSGetUserItemRsp {
+	required uint32 userid              = 1; // 玩家标识(米米号)
+	required uint32 reg_time			= 2; // 玩家注册时间
+	required uint32 channel_id          = 3; // 渠道id
+	repeated CSItemInfo items           = 4; // 物品信息
+}
+
+// 拉取玩家属性信息请求包
+message CSGetUserAttributesReq {
+	required uint32 userid              = 1;  
+	required uint32 reg_time			= 2; // 玩家注册时间
+	required uint32 channel_id          = 3; // 渠道id
+}
+message CSGetUserAttributesRsp {
+	required uint32 userid              = 1; // 玩家标识(米米号)
+	required uint32 reg_time			= 2; // 玩家注册时间
+	required uint32 channel_id          = 3; // 渠道id
+	required CSAttributesRsp attributes = 4; // 属性集合
+}
+
+// 玩家基本属性和对战属性见 CSGetUserInfoReq
+// 玩家技能信息见 CSGetUserSkillReq
+
+//--各种通知(start 2013.05.28) 协议段----------------------------------------------------------------------
+// 通知系统和等级相关的配表信息(用户登录和等级升级是发送该通知)
+message CSNotifyMoneyConfInfoRsp {
+	required uint32 pay					= 1;	// 每日薪资
+	required uint32 diamond				= 2;	// 钻石还金币
+	required uint32 explore				= 3;	// 探索
+	required uint32 train				= 4;	// 训练
+
+	required uint32 hold_on_line_max_exp	 = 20;	// 挂机可以获得的最大经验
+}
+
+message CSNotifyLevelConfInfoRsp {
+    required uint32 pay_money			= 1;        // 每日薪资                       
+    required uint32 mine_money			= 2;        // 勇者宝藏金钱奖励               
+    required uint32 train_money			= 3;       	// 训练消耗金币                   
+    required uint32 suspend_limit_exp	= 4; 		// 挂机最多获得的经验  
+}
+
+message CSNotifyVipConfInfoRsp {
+	required uint32 hold_on_line_max_time	 = 1;	// 挂机最大时长
+}
+
+// 各系统升级提醒(只和等级相关的提醒，cd冷却不提醒)
+message CSNotifyCliSysFlagRsp {
+	enum SysIndex {
+		DOWER_SYSTEM			= 2;	// 天赋系统
+	}
+	message SysFlag {
+		required SysIndex	sys_index	= 1;	// 系统id
+		required bool		flag		= 2;	// true:提醒 false:不提醒
+	}
+	repeated SysFlag sys_flags			= 1;	// 系统提醒标志
+}
+
+//--好友相关协议定义(start 2013.06.06)--------------------------------------------------------------------
+message PartnerInfo {
+	required uint32 userid				= 1;	//玩家标识(米米号)
+	required uint32 reg_tm				= 2;	//注册时间
+	required uint32 channel_id          = 3; 	//渠道id
+	required bytes name					= 4;	//姓名
+	required uint32 lv					= 5;	//等级
+	required uint32 type				= 6;	//职业，确定头像
+	required uint32 prestige			= 7;	//声望
+	required uint32 pvai_rank			= 8;    //pvai排名
+	optional uint32 time				= 9  [default = 0];    //玩家登入时间
+	optional uint32 killed_times		= 10 [default = 0];	//被该玩家击败次数
+	optional uint32 kill_punish			= 11 [default = 0];	//红名惩罚
+	optional uint32 redname_lv			= 12 [default = 0];	//红名程度
+	optional uint32 kills				= 13 [default = 0];	//kill次数
+	optional uint32 isol				= 14 [default = 0];	//是否在线
+	optional uint32	powerscore			= 15 [default = 0]; //战斗力 
+	optional uint32 left_pvped_times	= 16 [default = 0]; //剩余挑战次数
+	optional bytes  gname          		= 17 [default = ""]; //公会名字
+}
+
+message CSNearByReq{
+
+}
+
+message CSNearByRsp{
+	repeated PartnerInfo nearby			= 1;    //有可能不存在附近玩家
+}
+
+message CSPartnerInfoReq{
+
+}
+
+message CSAddPartnerReq{
+	required bytes name				= 1;	//所要添加玩家的名字
+}
+
+message CSDelPartnerReq{
+	required uint32 userid				= 1;	//玩家标识(米米号)
+	required uint32 reg_tm				= 2;	//注册时间
+	required uint32 channel_id          = 3; // 渠道id
+}
+
+message CSPartnerInfoRsp {	
+	repeated PartnerInfo partner		= 1;
+}
+
+
+message CSAddPartnerRsp{
+	enum AddPartnerType{
+		succ                            = 1;    //成功
+		existed                         = 2;    //已经存在
+		nofound                         = 3;    //没有找到
+		overflow                        = 4;    //超过人数
+		self							= 5;	//添加自己
+	}
+	optional AddPartnerType	rsp			= 1 [default = succ]; //添加好友结果
+}
+
+message CSDelPartnerRsp{
+	required bool succ					= 1;	//true成功 false失败
+}
+
+//--屏蔽相关协议定义（start 2013.6.17）-----------------------------------------------------------
+message DndInfo{
+	required uint32 userid				= 1;	//玩家标识(米米号)
+	required uint32 reg_tm				= 2;    //注册时间
+	required uint32 channel_id          = 3; 	//渠道id
+	required bytes name				= 4;	//姓名
+}
+
+message CSAddDndReq{
+	required uint32 userid				= 1;	//玩家标识(米米号)
+	required uint32 reg_tm				= 2;	//注册时间
+	required uint32 channel_id          = 3; 	//渠道id
+}
+
+message CSDndInfoReq{
+
+}
+
+message CSDelDndReq{
+	required uint32 userid				= 1;	//玩家标识(米米号)
+	required uint32 reg_tm				= 2;	//注册时间
+	required uint32 channel_id          = 3; 	//渠道id
+}
+
+message CSDndInfoRsp {
+	repeated DndInfo dnd				= 1;
+}
+
+message CSAddDndRsp{
+	required bool succ					= 1;	//true成功 false失败	
+}
+
+message CSDelDndRsp{
+	required bool succ					= 1;	//true成功 false失败	
+}
+//--聊天相关协议定义（start 2013.6.20）-----------------------------------------------------------
+
+enum NoteType{
+	WORLD                           = 1;    //世界
+	PARTY                           = 2;    //公会
+	PM                              = 3;    //私聊
+}
+
+enum NoteResult{
+	SUCC							= 1;	//成功
+	FAIL							= 2;	//失败
+	NOTALLOW						= 3;	//禁言
+}
+
+message CSNoteReq{
+	required NoteType type				= 1;
+	required bytes content				= 2;
+	required uint32 seq					= 3;	// 聊天信息标号
+	required bytes name					= 4;
+	optional uint32 userid				= 5 [default = 0];	// 玩家标识(米米号)
+	optional uint32 reg_tm				= 6 [default = 0];
+	optional uint32 channel_id          = 7	[default = 0]; 	// 渠道id
+	optional bool	dnd					= 8 [default = true];
+
+}
+
+message CSNoteRsp{
+	required uint32 seq					= 1;	//聊天信息标号
+	required NoteResult succ			= 2;   
+	optional uint32 dead				= 3;   // 有效期
+}
+
+message CSNoteShow{
+	required NoteType type      		= 1;
+    required bytes content         	    = 2;
+	optional bytes name 				= 3;	// 发送玩家
+	optional bytes tname				= 4;	// 接收玩家	
+	optional uint32 userid              = 5;	// 玩家标识(米米号)
+	optional uint32 reg_tm              = 6;
+	optional uint32 channel_id          = 7;    // 渠道id
+	optional bool system 				= 8; 	// 是否是系统消息
+	optional uint32 isgmuser			= 9;	// 是否为GM
+}
+
+//--邮件相关的协议---------------
+message CSMailReq{
+	required uint32 mailid				= 1;	//邮件编号
+}
+
+message AttachItem{
+	required uint32 id					= 1;	//物品编号
+	required uint32 num					= 2;	//物品数目
+}
+
+message CSMailRsp{
+	required uint32 mailid				= 1;	// 邮件编号
+	optional bytes title				= 2;	// 邮件名称
+	optional bytes from					= 3;	// 发件人
+	optional bytes content				= 4;	// 内容
+	repeated AttachItem items			= 5;	// 附件
+	required bool	hasget				= 6;	// 已领取
+	required bytes from_tm				= 7;	// 时间
+}
+
+
+message MailList{
+	required uint32 mailid				= 1;	// 邮件编号
+	optional bytes title				= 2;	// 邮件名称
+	required bool	hasread				= 3;	// 已读
+	required bool	hasattach			= 4;	// 有附件
+}
+
+message CSMailListReq{
+}
+
+
+
+message CSMailListRsp{
+	repeated MailList maillist	 			= 1;	//玩家邮件列表
+	optional CSMailRsp mail					= 2;	//第一封邮件
+}
+
+
+message CSDelMailReq{
+	required uint32 mailid				= 1;	//玩家获取附件
+}
+
+message CSDelMailRsp{
+	required bool rsp					= 1;	//获取附件结果，一般都成功
+}
+
+
+message CSGetAttachReq{
+	required uint32 mailid				= 1;	//玩家获取附件
+}
+
+//0为成功，非0为失败，提示信息与物品兑换一致
+message CSGetAttachRsp{
+	required uint32 rsp					= 1;	//获取附件结果
+}
+
+message CSNewMailRsp{
+
+}
+// 活动相关协议------------------------------------------------------------------------------------
+enum PB_ACTIVITY_STATUS_T {
+    PB_ACTIVITY_STATUS_NOT_START       = 0;    // 活动未开始
+	PB_ACTIVITY_STATUS_VALID		   = 1;	   // 活动有效(此状态表示前端可以显示)
+    PB_ACTIVITY_STATUS_UNFINISH        = 2;    // 活动未完成状态
+    PB_ACTIVITY_STATUS_FINISH          = 3;    // 活动完成状态
+    PB_ACTIVITY_STATUS_REWARD_REVC     = 4;    // 活动奖励已经领取
+    PB_ACTIVITY_STATUS_END             = 5;    // 活动奖励结束
+    PB_ACTIVITY_STATUS_INVALID         = 6;    // 活动领取奖励时间失效
+}
+
+// 活动列表请求
+message CSActivityListReq {
+
+}
+message Activity_Step {
+	required uint32 step_type			= 1;	// 活动步骤类型
+	required uint32 step_id				= 2;	// 活动步骤需的id
+	required uint32 step_value			= 3;	// 活动步骤完成数量
+	required uint32 is_need_step		= 4;	// 活动步骤是否是必须完成的(0:非 1:是)
+}
+message Activity_Info {
+	required uint32 activity_id				= 1;	// 活动id
+	repeated Activity_Step activity_steps	= 2;	// 活动步骤
+	required uint32 revc_reward_times		= 3;	// 领取奖励次数
+	required uint32 status					= 4;	// 活动状态
+	optional uint32 time_limit				= 5;	// 活动次数限制
+}
+message CSActivityListRsp {
+	repeated Activity_Info activitys		= 1;	// 活动列表
+}
+// 领取活动奖励请求
+message CSGetActivityRewardReq {
+	required uint32 activity_id             = 1;    // 活动id
+	repeated uint32 param					= 2;	// 领取活动奖励对应的参数(如:转盘的十连抽...)
+}
+message CSGetActivityRewardRsp {
+	required uint32 activity_id             = 1;    // 活动id
+	required bool is_succ					= 2;	// 领取是否成功
+	optional CSReward rewards       		= 3; 	// 副本奖励
+}
+
+// 通知活动信息更新
+message CSUpdateActivityInfoRsp {
+	repeated Activity_Info activitys        = 1;    // 有更新的活动列表
+}
+// 通知活动信息删除
+message CSDelActivityInfoRsp {
+	repeated uint32 activity_ids			= 1;	// 需要删除的活动列表
+}
+
+//--CITYDEFENCE协议段-------------------------------------------------------------------------------------
+
+message CSCDEFQueryRoomReq				//查询PVE房间列表
+{
+}
+
+message CDEFRoomBase
+{
+	required uint32 room_id				=	1;	//房间编号
+	required uint32 top_level			=	2;	//等级限制
+	required uint32 current_online		=	3;	//当前人数
+	required uint32 max_online			=	4;	//最大人数
+}
+message CSCDEFQueryRoomRsp				//回复PVE房间列表
+{
+	repeated CDEFRoomBase rooms			=	1;
+}
+
+message CSCDEFBaseInfoRsp				//回复主角个人的PVE信息
+{
+	required uint32 countdown			=	1;	//活动倒计时
+	required uint32 remain_times		=	2;	//剩余次数
+}
+
+message CSCDEFCreateRoomReq				//请求创建PVE房间,创建成功返回CSPVEJoinRoomRsp
+{
+	required uint32 top_level			=	1;	//等级限制
+	required uint32 battle_id			=   2;
+}
+
+message CSCDEFJoinRoomReq				//请求进入PVE房间
+{
+	required uint32 room_id				=	1;	//房间编号,0:表示快速加入
+}
+
+message CSCDEFJoinRoomFailureRsp			//进入PVE房间失败返回，成功返回CSPVEJoinRoomRsp
+{
+	required uint32 errcode				=	1;	//错误编码
+}
+
+message CDEFSeatBase
+{
+	required uint32 id					=	1;	// 位置编号
+	required uint32 avatar				=	2;	// 头像
+	required bytes name					=	3;	// 名字
+	required uint32 level				=	4;	// 等级
+	required bool ready					=	5;	// 就绪标记
+	optional uint32 effective			=	6;	// 战力
+}
+
+message CSCDEFJoinRoomRsp				//返回当前房间内玩家信息
+{
+	required uint32 room_id				=	1;	//房间编号
+	required uint32 top_level			=	2;	//等级限制
+	repeated CDEFSeatBase seats			=	3;	//当前房间内玩家信息
+}
+
+message CSCDEFExitRoomReq				//退出房间请求
+{
+}
+
+message CSCDEFCloseRoomRsp				//房间被关闭
+{
+	required uint32 room_id				=	1;	//房间编号
+}
+
+message CSCDEFReadyReq					//玩家准备完毕
+{
+}
+
+message CSCDEFCancelReadyReq				//玩家取消准备
+{
+}
+
+message CSCDEFKickoffReq					//房主踢人
+{
+	required uint32 seat				=	1;	//位置编号
+}
+
+message CSCDEFKickoffRsp					//被房主踢出
+{
+}
+
+message CSCDEFStartReq					//房主开始游戏
+{
+}
+// 查询活动开启时间
+message CSGetSpecActivityTimeReq 
+{
+}
+message CSGetSpecActivityTimeRsp 
+{
+	message Time {
+		required uint32 enter_time     = 1;    // 进入时间
+		required uint32 start_time     = 2;    // 开始时间
+		required uint32 end_time       = 3;    // 结束时间
+	}
+	message Inter {
+		required uint32 id				= 1;	// 活动id
+		repeated Time ac_time			= 2;	// 活动时间
+	}
+	repeated Inter interval				= 1;	// 活动区间
+}
+
+message CSCDEFStartRsp					//游戏开始
+{
+    required uint32 mapid				=	1;	//地图编号
+}
+
+
+//==================公告 跑马灯--------------------------------------------------------------------
+message Announcement{
+	repeated CSStyle context			= 	1;
+	optional uint32 from 				=   2;
+	optional uint32 to					=   3;
+	optional uint32 count				= 	4;
+	required bytes 	title				= 	5;	//标题
+
+}
+
+message CSLoginAnnouncementRsp{
+	optional Announcement content		= 1;  //公告
+}
+
+
+message CSAnnouncementPreReq{
+
+}
+
+message CSAnnouncementPreRsp{
+
+}
+
+message CSAnnouncementReq{
+
+}
+
+message CSAnnouncementRsp{
+	repeated Announcement content	    = 1;	//内容
+}
+
+message CSMaAdvertisingRsp{
+	repeated CSMaStyle content			= 1;	//内容
+	required uint32 opt					= 2;	//优先级
+}
+
+message CSStyle{
+	required uint32 red					= 1;	//颜色
+	required uint32 green				= 2;	//绿色
+	required uint32 blue				= 3;	//蓝色
+	required bytes 	text				= 4;	//文本
+	required uint32 fontsize			= 5; 	//字体大小
+}
+
+message CSMaStyle{
+	required uint32 red					= 1;	//颜色
+	required uint32 green				= 2;	//绿色
+	required uint32 blue				= 3;	//蓝色
+	required bytes 	text				= 4;	//文本
+	
+}
+
+// 通知其他玩家获取奖励情况
+message CSNotifyRewardToOtherRsp { 		// TODO(lyle) 将来会调整顺序
+    required bytes player_name        	= 1; 	// 活动奖励的玩家名字
+	required CSReward reward 	      	= 2; 	// 获得的奖励
+	optional uint32 activity_id			= 3;	// 活动id
+}
+
+// -- msg 占位作用 没有实际意义 ---------------------------------------------
+message LyleMsg1 {
+}
+message LyleMsg2 {
+}
+message LyleMsg3 {
+}
+message LyleMsg4 {
+}
+
+// ---------各种碎片是否可以合成通知包-------------------------------------------------
+
+// 各种碎片背包是否可以合成请求
+message CSGetChipComposeStatusReq {
+	required uint32 opt_target          = 1;    // 目标编号(参考ITEM_TARGET_T)
+}
+message CSGetChipComposeStatusRsp {
+	required uint32 opt_target			= 1;	// 目标编号(参考ITEM_TARGET_T)
+	required bool	can_compose			= 2;	// 是否可以合成
+}
+
+// 活动排行相关协议------------------------------------------------------------------------------------
+enum ACTIVITY_RANK_QUERY_T {
+	PB_ACTIVITY_RANK_QUERY_SELF    		= 1;    // 查询自己在排行位置
+	PB_ACTIVITY_RANK_QUERY_TOTLE   		= 2;    // 查询总排行榜
+}
+// 获取活动排行请求
+message CSGetActivityRankReq {
+	required uint32 activity_id			= 1;	// 活动id
+	required uint32 query_type			= 2;	// 查询类型
+}
+message CSGetActivityRankRsp {
+	message RanKInfo {
+		required uint32 userid			= 1;
+		required uint32 channel_id		= 2;	
+		required uint32 reg_time		= 3;
+		required bytes name				= 4;
+		required uint32 rank			= 5;	// 排名
+		required uint32 score			= 6;	// 分数
+	}
+	required uint32 activity_id         = 1;    // 活动id
+	required uint32 query_type          = 2;    // 查询类型
+	repeated RanKInfo rank_infos		= 3;	// 排名信息
+}
+
+
+//在线礼包-------------------------------------------------------------------------------------------------------
+message CSAskOnlineGiftReq{
+	
+}
+
+message CSAskOnlineGiftRsp{
+	required uint32 award_id			= 1;	// 第几个礼包
+	required int32 time					= 2;	// 领取该礼包的剩余时间
+}
+
+message CSGetOnlineGiftReq{
+
+}
+
+enum GET_GIFT_RES_T{
+	GET_ON_GIFT_SUCC 					= 1; 	// 领取成功
+	ON_GIFT_TIME_NOT_CLEAR				= 2;	// 冷却时间未到
+}
+
+message CSGetOnlineGiftRsp{
+	required uint32 res			= 1;	//领取礼包结果
+}
+
+// -- 首充奖励 --------------------------------------------------------------------------------------------
+message CSCheckTopupAwardReq {
+}
+
+enum TOPUP_AWARD_STATUS {
+	NONE_TOPUP_AWARD         = 0;  // 当前没有首充奖励活动
+	DONE_TOPUP_NOT_GET_AWARD = 1;  // 玩家已经完成首充，但未领奖
+	DONE_TOPUP_AND_GET_AWARD = 2;  // 玩家完成首充，并且已经领取奖励
+	WAITTING_FOR_TOPUP       = 3;  // 玩家没有进行首充 
+}
+
+message CSCheckTopupAwardRsp {
+	required uint32 status = 1; // 返回当前首充活动的状态
+	optional uint32 id     = 2; // 如果用户没有进行首充活动，id取值有效
+}
+
+message CSGetTopupAwardReq {
+	required uint32 id = 1; // 首充活动id
+}
+
+enum GET_TOPUP_AWARD_RESULT {
+	GET_TOPUP_AWARD_SUCCESS = 1; // 领取首充奖励成功
+}
+
+message CSGetTopupAwardRsp {
+	required uint32 result = 1; // 领取首充奖励的结果 
+}
+
+// -- 最强勇者 --------------------------------------------------------------------------------------------
+// 参加最强勇者活动请求
+message CSPVP2JoinReq {
+
+}
+message CSPVP2JoinRsp {
+	required bool join_ret				= 1;	// 加入请求结果(true: 成功)
+	optional uint32 start_btl_time		= 2;	// pvp2战斗开始时间(绝对时间)
+}
+// 最强勇者战斗取消
+message CSPVP2BtlCancelReq {
+
+}
+message CSPVP2BtlCancelRsp {
+
+}
+
+// 最强勇者结算奖励
+enum PB_PVP2_BTL_RET_T {
+	PB_PVP2_BTL_RET_WIN					= 1;	// 最强勇者胜利
+	PB_PVP2_BTL_RET_FAIL				= 2;	// 最强勇者失败
+	PB_PVP2_BTL_RET_UNMATCH				= 3;	// 最强勇者轮空
+}
+message CSPVP2RewardRsp {
+	required uint32 btl_ret				= 1;	// pvp2战斗结果
+    required uint32 bcoin               = 2;    // pvp2后奖励的基础金币
+    required uint32 bpvp2_score         = 3;    // pvp2后基础积分奖励
+    optional uint32 ccoin               = 4[default=0];    // pvp2后奖励的连胜金币
+    optional uint32 cpvp2_score         = 5[default=0];    // pvp2后连胜积分奖励
+	optional CSReward reward            = 6;    // 物品奖励
+	// TODO (lyle) 其他奖励... optional
+}
+// -- Rank 排名相关------------------------------------------------------------------------------------------
+enum RANK_NAME_T {
+	RANK_NAME_PVP2_SCORE		= 1;	// 最强勇者分数
+	RANK_NAME_LV_SCORE			= 2;	// 等级
+	RANK_NAME_POWER_SCORE		= 3;	// 战斗力
+	RANK_NAME_REPUTATION_SCORE	= 4;	// 声望
+	RANK_NAME_FAIRY_SCORE   	= 5;	// 精灵
+	RANK_NAME_WB_HURT_SCORE   	= 6;	// 精灵
+	RANK_NAME_ACTIVITY_MIN      = 20000;// 活动排行榜最小值
+	RANK_NAME_ACTIVITY_MAX      = 39999;// 活动排行榜最大值
+}
+
+enum RANK_TYPE_T {
+	RANK_TYPE_TOTAL				= 1;	// 总排名
+	RANK_TYPE_DAILY				= 2;	// 日排名
+	RANK_TYPE_WEEK				= 3;	// 周排名
+	RANK_TYPE_MONTH				= 4;	// 月排名
+}
+
+//这里是排行的各种信息包
+    message cs_fairy_info {
+        required bytes username         = 1;
+        required uint32 fairy_id        = 2;
+        required uint32 fairy_grade     = 3;
+    }
+
+
+// 查询排名信息
+message CSQueryRankReq {
+	required uint32 rank_name			= 1;	// 具体排名
+	required uint32 rank_type			= 2;	// 排名类型
+	required uint32 rank_start			= 3;	// 查询排名起始位置
+	required uint32 rank_end			= 4;	// 查询排名结束位置
+}
+message CSQueryRankRsp {
+	message RankInfo {
+		required uint32 userid			= 1;	// 玩家userid
+		required uint32 reg_time		= 2;	// 玩家注册时间
+		required uint32 channel_id		= 3;	// 玩家渠道号
+		required bytes name				= 4;	// 玩家昵称
+		required uint64 score			= 5;	// 玩家分数
+		required uint32 rank			= 6;	// 玩家排名
+		required uint32 updown			= 7;	// 排名升降
+		optional uint32 type			= 8;	// 玩家职业
+		optional bytes	gname			= 9;	// 公会名字
+	}
+	required uint32 rank_name           = 1;    // 具体排名
+	required uint32 rank_type           = 2;    // 排名类型
+	repeated RankInfo rank_info			= 3;	// 排名信息
+}
+// 查询玩家排名分数信息
+message CSQueryPlayerRankInfoReq {
+	required uint32 rank_name           = 1;    // 具体排名
+	required uint32 userid         		= 2;    // 玩家userid
+	required uint32 reg_time        	= 3;    // 玩家注册时间
+	required uint32 channel_id      	= 4;    // 玩家渠道号
+}
+message CSQueryPlayerRankInfoRsp {
+	message RankInfo {
+		required uint32 rank_type		= 1;	// 排名类型
+		required uint64 score			= 2;	// 玩家分数
+		required uint32 rank			= 3;	// 玩家排名
+	}
+	required uint32 rank_name           = 1;    // 具体排名
+    required uint32 userid              = 2;    // 玩家userid
+    required uint32 reg_time            = 3;    // 玩家注册时间
+    required uint32 channel_id          = 4;    // 玩家渠道号
+	required bytes name					= 5;    // 玩家昵称
+	repeated RankInfo rank_info			= 6;	// 玩家排名信息
+
+	// 下面都是optional 字段(根据各个具体排名进行添加)
+	optional uint32 pvp2_daily_max_cwin_num		= 7;	// 最强勇者今日最大连胜次数
+	optional uint32 pvp2_daily_accu_coin		= 8;	// 最强勇者今日累积金币
+	optional uint32 pvp2_daily_accu_reputation	= 9[default = 0];	// 最强勇者今日累积声望
+	optional uint32 wb_daily_times		= 10;			// 金币副本
+}
+// 查询排行榜参与总人数
+message CSQueryRankCountReq {
+	required uint32 rank_name           = 1;    // 具体排名
+	required uint32 rank_type           = 2;    // 排名类型
+}
+
+message CSQueryRankCountRsp {
+	required uint32 rank_name           = 1;    // 具体排名
+	required uint32 rank_type           = 2;    // 排名类型
+	required uint32 rank_count			= 3;	// 参与排名的总人数
+}
+
+message LyleMsg7 {
+}
+message LyleMsg8 {
+}
+
+// 新邮件系统相关协议------------------------------------------------------------------------------------
+enum PB_MAIL_STATUS_T {
+    PB_MAIL_STATUS_NEW                  = 0;    // 新增
+    PB_MAIL_STATUS_UNREAD               = 1;    // 未阅
+    PB_MAIL_STATUS_READ                 = 2;    // 已阅
+	PB_MAIL_STATUS_GOT					= 3;	// 已领取
+    PB_MAIL_STATUS_DEL                  = 4;    // 已删除   
+}
+
+message CSMailBasicInfo {
+	required uint32 mail_id_high    = 1;    // 邮件id高32位(此字段就是邮件添加时间)
+	required uint32 mail_id_low     = 2;    // 邮件id低32位
+	required uint32 mail_status     = 3;    // 邮件状态
+	required bytes title            = 4;    // 邮件名称
+	required bool has_attach        = 5;    // 是否有附件(true: 有附件 false: 没有附件)
+	required bool is_sys_mail		= 6;	// 是否是系统邮件(true: 是系统邮件 标题和内容需要前端自己读)
+}
+
+message CSMailInfo {
+    message AMItem {
+        required uint32 item_id         = 1;    // 物品id 
+        required uint32 item_num        = 2;    // 物品数量
+    }
+    required uint32 mail_id_high        = 1;    // 邮件id高32位(此字段就是邮件添加时间)
+    required uint32 mail_id_low         = 2;    // 邮件id低32位
+    required bytes title                = 3;    // 邮件名称
+    required bytes from                 = 4;    // 邮件发件人
+    required bytes content              = 5;    // 邮件内容
+    repeated AMItem items            	= 6;    // 邮件附件(根据该字段判断是否有附件)
+    required uint32 mail_status         = 7;    // 邮件状态
+	required bool is_sys_mail			= 8;	// 是否是系统邮件(true: 是系统邮件 标题和内容需要前端自己读)
+}
+// 请求邮件列表
+message CSGetMailListReq {
+    required uint32 index_start         = 1;    // 请求邮件起始index(从1开始)
+    required uint32 index_over          = 2;    // 请求邮件终止index
+}
+message CSGetMailListRsp {
+	message MailBasic {
+		required CSMailBasicInfo mail	= 1;	// 邮件基本信息
+		required uint32 index           = 2;    // 邮件编号
+	}
+    repeated MailBasic base_mails  		= 1;    // 邮件列表
+}
+
+
+// 邮件内容请求
+message CSGetMailInfoReq {
+   	required uint32 mail_id_high        = 1;    // 邮件id高32位
+   	required uint32 mail_id_low         = 2;    // 邮件id低32位
+}
+
+message CSGetMailInfoRsp {
+   	optional CSMailInfo mail            = 1;    // 邮件信息
+}
+
+message MailStatus {
+    required uint32 mail_id_high        = 1;    // 邮件id高32位
+    required uint32 mail_id_low         = 2;    // 邮件id低32位
+    // 设置状态转换:只允许低状态向高状态转换
+    // (设置为已领取状态时后台需要领取邮件附件,领取是否成功根据返回的mail_status判断)
+    required uint32 new_status			= 3;	// 邮件的新状态
+}
+
+// 设置邮件状态
+message CSSetMailStatusReq {
+    repeated MailStatus mails           =1; 
+}
+
+message CSSetMailStatusRsp {
+    repeated MailStatus mails           = 1;
+}
+// 通知玩家有新邮件
+message CSNotifyMailNumInfoRsp {
+	required uint32 new_mail_num		= 1;	// 新邮件数量
+	required uint32 total_mail_num		= 2;	// 总邮件数量
+	required uint32 has_attach_num		= 3;	// 有附件的邮件数目
+}
+
+// 新版跑马灯协议
+message CSMarqueeRsp {
+	required uint32   marquee_id        = 1;    // 跑马灯id
+	required uint32   priority          = 2;    // 优先级
+	optional string   player1           = 3;    // 玩家1名称
+	optional string   player2           = 4;    // 玩家2名称
+	optional uint32   item_id           = 5;    // 物品id；
+	optional uint32   number            = 6;    // 数量相关
+}
+
+enum CARDTYPE{
+	EXCHANGE	= 1;	// 兑换码
+	INVITE		= 2;	// 邀请码
+}
+
+//兑换码
+message CSMagicCardReq {
+	required bytes 		card_passwd		= 1;	// 码
+	required CARDTYPE	type			= 2;	// 码的类型 
+	optional uint32		card_id			= 3;	// 码号
+}
+
+message CSMagicCardRsp {
+	required bool		succ			= 1;	// true 成功 ，false失败
+}
+
+//设置PVP对战房间是否公开
+message CSPVPSetOpeningReq{
+	required bool open					= 1;   // true 房间可见， false 房间不可见 
+}
+message CSPVPSetOpeningRsp{
+	required bool open					= 1;   // true 开放, false 私人房间 
+}
+//设置PVE对战房间是否公开
+message CSPVESetOpeningReq{
+	required bool open					= 1;   // true 房间可见， false 房间不可见 
+}
+message CSPVESetOpeningRsp{
+	required bool open					= 1;   // true 开放, false 私人房间 
+}
+
+message base_info{
+    required uint32 userid          = 1;    // 米米号
+    required uint32 reg_time        = 2;    // 玩家注册时间
+    required uint32 channel_id      = 3;    // 玩家渠道号
+	optional bytes	name			= 4;    // 昵称
+}
+
+// 玩家基本信息
+message player_basic_info_t {
+	required uint32 userid 			= 1;	// 米米号
+	required uint32 reg_time 		= 2;	// 玩家注册时间
+	required uint32 channel_id		= 3;	// 玩家渠道号
+    optional bytes name             = 4[default = ""];	// 玩家昵称
+    optional uint32 type            = 5[default = 0];    // 玩家职业类型：1战士，2弓箭手，3刺客
+    optional uint32 gender          = 6[default = 0];    // 性别：0男，1女
+    optional uint32 lv              = 7[default = 0];    // 玩家等级
+    optional uint32 time            = 8[default = 0];    // 玩家登入游戏时间戳
+}
+
+//邀请对战
+message CSInviteToBattleReq{
+    required uint32 time                	= 1;    // 时间戳 
+    required uint32 scene_id                = 2;    // 房间id
+    required uint32 scene_type              = 3;    // 房间类型(2:pvp 4:pve)
+    repeated base_info invitee              = 4;	// 被邀请方信息
+}
+
+message CSInviteToBattleRsp{
+    required uint32 time                	= 1;    // 时间戳 
+    required uint32 scene_id                = 2;    // 房间id
+    required uint32 scene_type              = 3;    // 房间类型
+    required base_info inviter              = 4;	// 邀请方信息
+}
+
+message CSAnswerToBattleReq{
+	required bool accept					= 1;	// 1接受邀请，0拒绝邀请
+    required base_info inviter              = 2;	// 邀请方信息
+}
+
+message CSAnswerToBattleRsp{
+	required bool accept					= 1;	// 1接受邀请，0拒绝邀请
+    required base_info invitee              = 2;	// 被邀请方信息
+}
+
+//查询好友在线信息
+message CSLookupFriendListReq{
+
+	repeated base_info friends				= 1; 	//好友列表
+}
+
+message CSLookupFriendListRsp{
+
+	repeated player_basic_info_t friends	= 1;    //好友信息列表
+	repeated player_basic_info_t off_friends= 2;    //离线好友信息列表
+}
+
+// -------新精灵系统--------------------------------------------------------------------
+enum FAIRY_POS_START_T {
+	FAIRY_POS_START_BTL						= 1;	// 出战精灵起始位置
+	FAIRY_POS_START_AST						= 20;	// 助战精灵起始位置
+	FAIRY_POS_START_PRT						= 50;	// 伙伴精灵起始位置
+	FAIRY_POS_START_NOM						= 100;	// 普通精灵起始位置
+}
+
+message FairyBasic {
+	required uint32 fairy_lv                = 1;    // 精灵等级
+	required uint32 fairy_grade             = 2;    // 精灵阶级
+	// required uint32 fairy_status            = 3;    // 精灵状态
+	required uint32 fairy_exp               = 4;    // 精灵经验
+	required uint32 next_lv_exp				= 5;	// 下一级至少需要的经验
+}
+message FairyAttr {
+	required uint32 key                 	= 1;    // 属性key
+	required uint32 value               	= 2;    // 属性value
+}
+// 特训属性变更
+message FairyTrainAttr {
+	required uint32 key                     = 1;    // 属性key
+	required int32 value             		= 2;    // 属性value
+}
+message FairyInfo {
+	required uint32 fairy_pos				= 1;	// 精灵所在位置
+    required uint32 fairy_id                = 2;    // 精灵id
+    required uint32 fairy_born_time			= 3;    // 精灵获取时间
+    required uint32 fairy_get_way			= 4;    // 精灵获取方式
+	required FairyBasic fairy_basic			= 5;	// 精灵基本信息
+	repeated FairyAttr fairy_attrs			= 6;	// 精灵各种属性
+	repeated FairyTrainAttr fairy_train_attrs	= 7;// 精灵特训属性
+	repeated uint32 fairy_rel_ids			= 8;	// 精灵缘分id列表
+	required uint32 fairy_effectiveness		= 9;	// 精灵战斗力
+}
+// 精灵列表请求
+message CSGetFairyListReq {
+    required uint32 userid              	= 1; 	// 玩家标识(米米号)
+    required uint32 reg_time            	= 2; 	// 玩家注册时间
+    required uint32 channel_id          	= 3; 	// 渠道id
+	optional bool req_btl_fairy				= 4;	// 是否只查询出战精灵信息
+}
+message CSGetFairyListRsp {
+    required uint32 userid             		= 1; 	// 玩家标识(米米号)
+    required uint32 reg_time            	= 2; 	// 玩家注册时间
+    required uint32 channel_id          	= 3; 	// 渠道id
+	repeated FairyInfo fairy_infos			= 4;	// 精灵信息
+}
+// 交换两只精灵坑位
+message CSMoveFairyPosReq {
+	required uint32 from_pos              	= 1;
+	required uint32 to_pos              	= 2;
+}
+message CSMoveFairyPosRsp {
+	required uint32 from_pos              	= 1;
+	required uint32 to_pos              	= 2;
+}
+// 精灵特训请求
+message CSFairyTrainReq {
+	required uint32 fairy_pos				= 1;	// 精灵所在位置
+	required uint32 train_lv				= 2;	// 特训等级(1,2,3,4)
+}
+message CSFairyTrainRsp {
+	required uint32 fairy_pos               	= 1;    // 精灵所在位置
+	repeated FairyTrainAttr fairy_train_attrs	= 2;	// 精灵特训属性
+	required int32 eff_diff						= 3;	// 特训后的差距
+}
+// 特训确认请求
+message CSFairyTrainDetermineReq {
+	required uint32 fairy_pos               = 1;    // 精灵所在位置
+	required bool save						= 2;	// 保存特训信息
+}
+message CSFairyTrainDetermineRsp {
+	required uint32 fairy_pos               = 1;    // 精灵所在位置
+	required bool succ						= 2;
+}
+// 精灵吞噬请求
+message CSFairyAddExpReq {
+	required uint32 fairy_pos               = 1;    // 添加经验的精灵
+	repeated uint32 del_fairy_poss			= 2;	// 吞噬的精灵
+	optional uint32 fairy_elem              = 3;    // 吞噬的精元
+	optional bool req_info					= 4;	// true: 信息查看,并非真正的吞噬 false:吞噬
+	optional uint32 times					= 5;	// 精元升级次数
+}
+message CSFairyAddExpRsp {
+	required uint32 fairy_pos               = 1; 	// 添加经验的精灵
+	optional bool succ                      = 2;	// 吞噬是否成功
+	optional FairyInfo fairy_info			= 3;	// 吞噬后精灵信息
+	optional uint32 cost_coin				= 4;	// 吞噬需要消耗的金币
+}
+
+// 精灵升阶请求
+message CSFairyUpGradeLevelReq {
+	required uint32 fairy_pos               = 1;    // 精灵所在位置
+	optional bool req_info                  = 4;    // true: 信息查看,并非真正升阶 fales: 升阶
+}
+message CSFairyUpGradeLevelRsp {
+    message Item {
+        required uint32 id          		= 1;
+        required uint32 num         		= 2;
+    }
+	required uint32 fairy_pos               = 1;    // 精灵所在位置
+	optional bool succ                      = 2;
+	optional FairyInfo fairy_info           = 3;    // 升阶后精灵信息
+	repeated Item consume_items				= 4;	// 升阶消耗的物品信息
+}
+
+// 精灵分解请求
+message CSFairyDecomposeReq {
+	repeated uint32 fairy_pos               = 1;    // 精灵所在位置
+	required bool req_info					= 2;	// 是否查看
+	optional bool is_fragments				= 3;	// 是否碎片分解
+} 
+message CSFairyDecomposeRsp {
+    message Item {
+        required uint32 id          		= 1;
+        required uint32 num         		= 2;
+    }
+	repeated uint32 fairy_pos               = 1;    // 精灵所在位置
+	required bool succ                      = 2;
+	repeated Item to_items					= 3;	// 分解后获得的物品
+	required bool req_info					= 4;	// 是否查看
+	repeated Item fragments					= 5;	// 精灵分解	
+	optional bool is_fragments				= 6;	// 是否碎片分解
+}
+// 精灵重生请求
+message CSFairyRebirthReq {
+	repeated uint32 fairy_pos               = 1;    // 精灵所在位置
+	required bool req_info					= 2;	// 是否查看
+}
+
+message CSFairyRebirthRsp {
+	message Item {
+		required uint32 id          		= 1;
+		required uint32 num         		= 2;
+	}
+	repeated uint32 fairy_pos               = 1;    // 精灵所在位置
+	required bool succ                      = 2;	// 重生成功否
+	repeated Item to_items					= 3;	// 重生获得物品
+	required bool req_info					= 4;	// 是否查看
+}
+
+// TODO(lyle)抽取精灵协议
+// 增加精灵通知
+message CSNotifyAddFairyRsp {
+	required FairyInfo fairy_info			= 1;	// 精灵信息
+}
+// 更新精灵通知
+message CSNotifyUpdateFairyRsp {
+	required uint32 fairy_pos               = 1;    // 精灵所在位置
+	optional FairyBasic fairy_basic         = 2;	// 精灵基本信息更新
+	repeated FairyAttr fairy_attrs          = 3;    // 精灵各种属性更新(size=0则不更新属性)
+	repeated FairyTrainAttr fairy_train_attrs	= 4;// 精灵特训属性更新(size=0则不更新属性)
+	repeated uint32 fairy_rel_ids			= 5;	// 精灵缘分id集合
+	required uint32 fairy_effectiveness		= 6;	// 精灵战力 
+}
+// 删除精灵通知
+message CSNotifyDelFairyRsp {
+	repeated uint32 fairy_pos               = 1;    // 精灵所在位置
+}
+// -- msg 占位作用 没有实际意义 供消息扩展用---------------------------------------------
+message LyleMsg9 { }
+message LyleMsg10 { }
+message LyleMsg11 { }
+message LyleMsg12 { }
+
+//kakao社交///////////////////////////////////////////////
+message kakao_cd{
+	required	uint32 	uid					= 1;	//针对的玩家id(可能是本人，也可能是其他好友) 
+	required	uint32 	count				= 2;    //数量
+	required	uint32 	expire_time			= 3;    //过期时间
+	optional	uint32	start_time 			= 4[default=0];	//开始时间
+	optional	bytes	name				= 5[default=""];//当前uid的名字
+}
+
+message CSQueryKakaoCdReq{
+	required	uint32 	ntype				= 1; 	//查询类别	
+}
+
+message CSQueryKakaoCdRsp{
+	repeated 	kakao_cd	cd				= 1;  
+}
+
+//赠送kakao好友体力物品
+message CSSendPowerReq{
+	required	uint32 	accepter			= 1;	//好友id
+}
+
+message CSSendPoweRsp{
+	required	bool 	succ				= 1;	//succ=1成功
+}
+
+//获取kakao 体力物品
+message CSGetPowerRewardReq{
+
+	required	uint32 	accepter			= 1;	//好友id
+	required	uint32 	expire_time			= 2;	//该记录到期时间
+}
+
+message CSGetPowerRewardRsp{
+
+}
+
+//玩家向kakao发送好友邀请
+message CSPushMsgToKakaoReq{
+	repeated		 uint32		accepter	= 1;	//kakao玩家id	
+}
+
+message CSPushMsgToKakaoRsp{
+	required	uint32	num					= 1;   //已推荐数目 
+}
+
+
+//kakao好友列表查询
+message CSKakaolistFriendReq{
+
+}
+
+message CSKakaolistFriendRsp{
+	repeated	PartnerInfo game_friends   	= 1;//游戏好友详细信息
+	repeated	PartnerInfo verify_friends 	= 2;//待确认好友详细信息
+}
+
+
+//kakao添加好友
+message CSKakaoAddFriendReq{
+
+	required	base_info	invitee			= 1;
+}
+
+message CSKakaoAddFriendRsp{
+
+	required	base_info	inviter			= 1;
+}
+
+//kakao好友应答
+message CSKakaoAnswerFriendReq{
+	required	uint32		accept			= 1;//(accept=0 拒绝邀请，accept=1接收邀请)
+	required	base_info	inviter			= 2;//主动邀请方信息
+}
+
+message CSKakaoAnswerFriendRsp{
+	required	uint32		accept			= 1;//(accept=0 拒绝邀请，accept=1接收邀请)
+	required	base_info	invitee			= 2;
+}
+
+//kakao好友删除
+message CSKakaoDelFriendReq{
+
+	required	base_info	fri				= 1;
+}
+
+//kakao 好友添加db返回,通知客户端添加情况
+message CSKakaoDBAddRsp{
+	required	uint32		type			= 1;
+	required	base_info	fri				= 2;
+
+}
+
+//切磋
+
+// 准备切磋请求
+message CSPVPLearnPrepareReq {
+	required uint32 uid  		= 1;   	// 被发起玩家标识(米米号)
+	required uint32 reg_time	= 2;	// 玩家注册时间
+	required uint32 channel_id  = 3;    // 渠道id
+	required bool 	mandatory	= 4;	// 是否强制
+};
+
+//
+message CSPVPLearnPrepareRsp {
+	required uint32 uid  		= 1;   	// 对方玩家标识(米米号)
+	required uint32 reg_time	= 2;	// 玩家注册时间
+	required uint32 channel_id  = 3;    // 渠道id
+	required bytes name			= 4;	//	玩家姓名
+	required uint32 effectiveness	= 5;	// 战斗力
+	required uint32 type		= 6;	//1高概率、2较高概率、3一般概率、4较低概率、5低概率  
+	required bool 	mandatory	= 7;	// 是否强制
+};
+
+// 发起切磋请求
+message CSPVPLearnReq {
+    required uint32 uid  		= 1;   	// 被发起玩家标识(米米号)
+	required uint32 reg_time	= 2;	// 玩家注册时间
+	required uint32 channel_id  = 3;    // 渠道id
+	required bool 	mandatory	= 4;	// 是否强制
+};
+
+// 被发起切磋收到这个包
+message CSPVPLearnRsp { 
+    required uint32 uid  		= 1;   	// 发起玩家标识(米米号)
+	required uint32 reg_time	= 2;	// 玩家注册时间
+	required uint32 channel_id  = 3;    // 渠道id
+	required bytes name			= 4;	//
+	required uint32 effectiveness	= 5;	//
+	required uint32 type		= 6;
+	required bool 	mandatory   = 7;
+};
+
+// 被发起强制切磋收到这个包
+message CSPVPLearnMandatoryRsp { 
+};
+
+
+// 被发起切磋同意切磋
+message CSPVPAckLearnReq {
+    required uint32 uid  		= 1;   	// 发起玩家标识(米米号)
+	required uint32 reg_time	= 2;	// 玩家注册时间
+	required uint32 channel_id  = 3;    // 渠道id
+	required bool 	accept		= 4;	//
+	required uint32 type		= 5;	// 1:free 2:battle 3:busy
+};
+
+message CSPVPAckLearnRefuseRsp {
+    required uint32 uid  		= 1;   	// 被发起玩家标识(米米号)
+	required uint32 reg_time	= 2;	// 玩家注册时间
+	required uint32 channel_id  = 3;    // 渠道id
+	required bytes	name		= 4;
+	required uint32 type		= 5;	// 1:free 2:battle 3:busy
+};
+
+
+// 自动战斗
+message CSAutoBattleCheckReq {
+
+}
+
+message CSAutoBattleCheckRsp {
+	required uint32 on_or_off	= 1;	// 0: 表示不可使用自动战斗 1: 表示可以使用
+	required uint32 vip_lv		= 2;	// 允许自动战斗的VIP等级
+	required uint32 lv			= 3;	// 允许自动战斗的等级
+}
+
+//附近红名玩家
+message CSNearbyRednameReq {
+
+}
+
+message CSNearbyRednameRsp {
+	repeated PartnerInfo nearby	= 1;    //有可能不存在附近玩家
+}
+
+// 普通副本星数奖励
+message CSInstanceStarRewardReq {
+	required uint32 instance_category = 1; // 普通副本类别ID
+}
+
+message CSInstanceStarRewardRsp {
+	required uint32 instance_category	= 1;
+	required uint32 stars				= 2; // 当前副本类别中累计的星数
+	required uint32 one_status 			= 3; // 一星奖励的领取状态: 0-不满足领取条件 | 1-可以领取但没有领 | 2-已经领取
+	required uint32 two_status 			= 4; // 
+	required uint32 three_status 		= 5; //
+}
+
+// 领取星数奖励
+message CSInstanceGetStarRewardReq {
+	required uint32 instance_category = 1;
+	required uint32 reward_type		  = 2;	// 奖励的星级[1, 3]
+}
+
+message CSInstanceGetStarRewardRsp {
+	required uint32 instance_category = 1;
+	required uint32 reward_type		  = 2;	
+	required uint32 status	          = 3;	// 0-领取成功 | 1-领取失败(包裹已满)
+}
+
+// 检索系统中是否有未领取星级奖励
+message CSChkInstanceStarRewardReq {
+
+}
+
+message CSChkInstanceStarRewardRsp {
+	required bool all_or_nothing	= 1;	// 0-没有奖励 | 1-有奖励
+	required uint32 last_raid_id    = 2;    // 没有领取的最大raid id值 
+}
+
+message CSDelEnemyReq{
+	required uint32 userid			= 1;		
+	required uint32 reg_tm 			= 2;
+	required uint32 channelid		= 3;
+
+}
+
+message CSDelEnemyRsp{
+	required uint32 succ			= 1;
+
+}
+
+message CSEnemyInfoReq{
+
+}
+
+message CSEnemyInfoRsp {	
+	repeated PartnerInfo enemy		= 1;	
+}
+
+
+message CSGetRednameTimeReq{
+	required uint32 userid			= 1;
+	required uint32 reg_tm 			= 2;
+	required uint32 channelid		= 3;
+}
+
+message CSGetRednameTimeRsp{
+	required uint32	time			= 1; //距离红名消除的秒数
+	optional uint32 userid			= 2; 
+	optional uint32 reg_tm 			= 3;
+	optional uint32 channelid		= 4;
+}
+
+message CSSpiritDrawReq{                  //精灵抽牌
+    required uint32 type            = 1; // 1:初级抽精灵 2：中级免费抽精灵3：花费中级抽精灵4：高级免费抽精灵5：花费高级抽精灵6,10连抽
+}
+
+message CSSpiritDrawRsp{
+    repeated uint32 spirits         = 1;
+	optional uint32 type			= 2;
+}
+
+
+//一键装备
+message CSEquipAllBestReq{
+	required uint32 pos				= 1;	// 0代表人物，1代表1好出战精灵....依次类推
+}
+
+//一键上阵
+message CSCALBattleFairyReq{
+
+}
+
+
+message CSCALBattleFairyRsp{
+
+}
+
+
+message CSBabelFactorReq{
+
+}
+
+
+message CSBabelFactorRsp{
+	repeated uint32 factors			= 1;
+}
+
+
+//-------------------------------------------
+message CSShoppingInfo {
+	required uint32 shopping_id     = 1; 	// 商品id号
+	required uint32 buy_times  		= 2;    // 可以挂机次数
+}
+
+// 获取商店够买列表请求
+message CSShoppingReq {
+	repeated uint32 shopping_ids	= 1;	// 商品id号
+};
+
+message CSShoppingRsp {
+	repeated CSShoppingInfo shoppings	= 1;	//商品
+};
+
+message CSEquipNotify {  
+    required uint32 pos         = 1;
+};
+
+message CSShowRebirthNotify{
+	required bool	show		= 1;	//是否需要显示
+};
+
+
+//----------------------------------------------
+message CSNewFairyNotify{
+	repeated uint32 fairys		= 1;	//新精灵
+}
+
+
+//--------------------------------------------
+// 海外相关功能
+//--------------------------------------------
+// 通知给Google商店评分
+message CSGoogleGradingRsp{
+}
+
+
+
+// 请求完成Google商店评分
+message CSGoogleGradingCompleteReq{
+}
+//--------------------------------------------
+message CSKakaoAttrReq{
+	repeated	uint32		key 			= 1;
+}
+
+message CSKakaoAttrRsp{
+    message kakao_value {
+        required uint32 key             	= 1; // 玩家属性key
+        required uint32 value          		= 2; // 玩家属性value
+    }
+    repeated kakao_value	values          = 1;
+}
+
+message CSkakaoUrlReq{
+	required	bytes		kakao_url		= 1; //kakao玩家url
+}
+
+//领取kakao相关的奖励
+message CSGetCdRewardReq{
+	required	uint32		type			= 1;
+	required	uint64		accepter		= 2;
+	required	uint32		expire_time		= 3;
+}
+
+message CSGetCdRewardRsp{
+	
+}
+
+
+
+//=======================================
+message CSEquipAllBestRsp{
+
+}
+
+// 通知给Google商店评分
+message CSGoogleGradingReq{
+}
+
+
+
+//========探宝======
+message CSGetExploreTreasureReq{
+
+}
+
+message CSGetExploreTreasureRsp{
+	required bool	res						= 1;
+}
+
+
+message CSGetExploreInfoReq{
+
+}
+
+message CSGetExploreInfoRsp{
+	optional uint32 res						= 1;	//0不提示，1提示成功，2提示失败
+	repeated uint32 param					= 2;	//相关参数
+}
+
+// 活动详细信息数据请求
+message CSGetActivityDataReq {
+	
+}
+
+message CSActivityCentreItemInfo {
+	required uint32 index 					= 1;	//下标索引，比如现在第一个是10410
+	optional bytes activity_type			= 2;
+	optional bytes activity_show			= 3;
+	optional bytes activity_qualification	= 4;
+	optional bytes activity_qualification2	= 5;
+	optional bytes award1					= 6;
+	optional bytes award2					= 7;
+	optional uint32 startdate				= 8;	// 活动起始时间
+	optional uint32 enddate					= 9;	// 活动截止时间
+	optional uint32 starttime				= 10;	// 活动开始时间
+	optional uint32 endtime					= 11;	// 活动结束时间
+	repeated uint32 specialtm				= 12;	// 活动特殊时间
+	optional uint32 rewarddate				= 13;	// 活动领奖截止时间
+	optional bytes extend_1					= 14;	// 活动扩展1
+	optional bytes extend_2					= 15;	// 活动扩展2
+}
+
+// 单个活动信息
+message CSShowActivityItemInfo {
+	required bytes activity_show    			= 1;	// 活动显示ID
+	optional bytes activity_condition    		= 2;	// 活动状态显示
+	optional bytes activity_name				= 3;	// 活动名称
+	optional bytes font_color 					= 4;	// 字体颜色
+	optional bytes buttonid						= 5;	// 按钮类型
+	optional bytes buttonid_text				= 6;	// 按钮的文本
+	optional bytes openlayername				= 7;	// 弹出界面ID
+	optional bytes activity_content				= 8;	// 活动内容
+	optional bytes itemflag						= 9;	// 兑换活动标志位
+	
+}
+message CSGetActivityDataRsp {
+	repeated CSShowActivityItemInfo show_info			= 1; // show activity活动列表
+	repeated CSActivityCentreItemInfo center_info		= 2; //activity center info
+}
+
+message carmsg01{
+
+}
+
+message carmsg02{
+
+}
+
+message carmsg03{
+
+}
+
+message carmsg04{
+
+}
+
+message carmsg05{
+
+}
+//=========成长目标=================
+enum PB_TARGET_STATUS_T {
+    PB_TARGET_STATUS_NOT_START       = 0;    // 目标未开始
+	PB_TARGET_STATUS_VALID		   	 = 1;	 // 目标有效(此状态表示前端可以显示)
+    PB_TARGET_STATUS_UNFINISH        = 2;    // 目标未完成状态
+    PB_TARGET_STATUS_FINISH          = 3;    // 目标完成状态
+    PB_TARGET_STATUS_REWARD_REVC     = 4;    // 目标奖励已经领取
+    PB_TARGET_STATUS_END             = 5;    // 目标结束
+    PB_TARGET_STATUS_INVALID         = 6;    // 目标无效
+}
+
+
+// 活动列表请求
+message CSTargetListReq {
+
+}
+
+
+message Step_Rate{
+	required uint32 cur_rate                = 1;    // 当前进度
+	required uint32 total_rate              = 2;    // 总进度
+}
+
+message Target_Info {
+	required uint32 target_id				= 1;	// 目标id
+	repeated Step_Rate rate					= 2;	// 目标进度
+	required uint32 status					= 3;	// 目标状态
+}
+
+message CSTargetListRsp {
+	repeated Target_Info targets			= 1;	// 目标列表
+}
+
+// 领取活动奖励请求
+message CSGetTargetRewardReq {
+	required uint32 target_id             = 1;    // 目标id
+	repeated uint32 param					= 2;	// 备用
+}
+
+message CSGetTargetRewardRsp {
+	required uint32 target_id             = 1;    // 目标id
+	required bool is_succ					= 2;	// 领取是否成功
+	optional CSReward rewards       		= 3; 	// 奖励
+}
+
+// 通知活动信息更新
+message CSUpdateTargetInfoRsp {
+	repeated Target_Info targets        	= 1;    // 有更新的目标列表
+}
+
+// 通知活动信息删除
+message CSDelTargetfoRsp {
+	repeated uint32 target_ids			= 1;	// 需要删除的目标列表
+}
+
+
+//
+message CSExchangeParameterListReq {
+    repeated uint32 ids                 =   1;
+}
+
+message CSExchangeParameterListRsp {
+    message ParameterList {
+        required uint32 id           = 1;
+        required uint32 price       = 2;
+    }
+    repeated ParameterList prices   =   1;
+}
+
+message CSTargetFinishedRsp{
+	required bool res				= 1;
+}
+
+//月卡相关
+message CSMcardInfoReq {
+
+}
+
+message McardInfo {
+	required uint32 card_id			= 1;	//	卡的类型
+	required bool	is_rev			= 2;    //	今日是否已领取月卡奖励
+	required uint32 day_cnt			= 3;	//	剩余领取天数
+	required bool	is_alarm		= 4;	//	是否需要结束提醒
+	required uint32 ret_diamond		= 5;	//	每日应返还钻石数
+}
+
+message CSMcardInfoRsp {
+	required uint32		cnt				= 1;	//	不同类型卡 --  卡的个数
+	repeated McardInfo	info			= 2;	//	卡的信息 -- 类型 和 剩余天数
+}
+
+message CSMcardRewardReq {
+	required uint32 card_id  = 1;    //卡的类型
+}
+
+message CSMcardRewardRsp {
+	required bool is_succ    = 1;    //领取是否成功
+}
+
+
+//===============公会===================================
+message CSCreateGuildReq{
+	required string name				= 1;
+}
+
+message CSCreateGuildRsp{
+	required uint32	res					= 1;
+	required uint32 gid_high			= 2;
+	required uint32 gid_low				= 3;
+}
+
+
+message CSJoinGuildReq{
+	required uint32 gid_high				= 1;
+	required uint32 gid_low					= 2;
+}
+
+
+message CSJoinGuildRsp{
+	required uint32	res					= 1;
+	optional uint32 gid_high			= 2;
+	optional uint32 gid_low				= 3;
+}
+
+
+message CSDropGuildReq{
+}
+
+
+message CSDropGuildRsp{
+	required bool res					= 1;
+}
+
+
+message CSQuitGuildReq{
+}
+
+
+message CSQuitGuildRsp{
+	required bool res					= 1;
+}
+
+
+message CSGuildInfo{
+	required uint32 gid_high			= 1;
+	required uint32 gid_low				= 2;
+	required uint32 exp					= 3;
+	required uint32 contribute			= 4;
+	required uint32 lv 					= 5;
+	required uint32 fightcondition		= 6;
+	required bytes	gname				= 7;		// 工会名字
+	required bytes	oname				= 8;		// 工会会长名字
+	required bytes	note				= 9;		// 工会宣言
+	required uint32 member_num			= 10;		// 公会人数
+	required uint32 power_score			= 11;		// 总战力
+	required uint32 exp_limit           = 12;       // 经验上限
+	required uint32 member_num_limit    = 13;       // 公会人数上限
+	required bytes  notice              = 14;       // 公会公告
+	required uint32 join_type			= 15;		// 公会进入类型
+	optional bool	isrequired			= 16[default = false];		// 是否申请
+	optional uint32 ouserid				= 17;		// owner的userid
+	optional uint32 oreg_tm				= 18;		// owner的reg_tm
+	optional uint32 ochannel_id			= 19;		// owner的channel_id
+}
+
+message CSListGuildReq{
+	required uint32 begin 			    = 1;
+	required uint32 end 			    = 2;
+}
+
+message CSListGuildRsp{
+	required uint32 begin 			    = 1;
+	repeated CSGuildInfo infos			= 2;
+	required uint32 guild_num			= 3;
+}
+
+message CSSearchGuildReq{
+	required string name				= 1;
+}
+
+message CSSearchGuildRsp{
+	repeated CSGuildInfo infos          = 1;
+}
+
+
+message CSListPlayerGuildReq{
+	optional uint32	gid_high				= 1;
+	optional uint32	gid_low					= 2;
+}
+
+
+message CSPlayerGuildInfo{
+	message Item {
+		required uint32 item_id			= 1;	// 物品id
+		required uint32 item_num		= 2;	// 物品数量
+	}
+
+	required uint32 userid				= 1;	//米米号
+	required uint32 reg_tm				= 2;	//注册时间
+	required uint32 channel_id			= 3;	//米米号
+	required bytes name					= 4;	//姓名
+	required uint32 lv					= 5;	//等级
+	required uint32 contribute			= 6;	//贡献
+	required uint32 power_score			= 7;	//战力
+	required uint32 status				= 8;	//职位
+	required uint32 total_contribute    = 9;    //历史总贡献
+	optional uint32 online				= 10;	//上次登录时间
+	optional uint32 type				= 11;	//职业
+	repeated Item	cost				= 12;	//公会副本出战花费 
+}
+
+message CSListPlayerGuildRsp{
+	repeated CSPlayerGuildInfo infos	= 1;
+}
+
+enum GUILD_STATUS{
+	GUILD_TO_MEMBER						= 1;
+	GUILD_TO_ELITE						= 2;
+	GUILD_TO_VICE						= 3;
+	GUILD_TO_OWNER						= 4;
+	GUILD_TO_NOT_MEMBER					= 5;
+	GUILD_TO_REFUSE						= 6;
+}
+
+
+message PlayerGuild{
+	required uint32 userid				= 1;
+	required uint32 reg_tm				= 2;
+	required uint32 channel_id			= 3;
+	required uint32 status				= 4;
+}
+
+message CSChangeOtherPlayerGuildStatusReq{
+	repeated PlayerGuild keys			= 1;
+}
+
+message CSChangePlayerGuildStatusRsp{
+	required bool res					= 1;
+	repeated PlayerGuild info     		= 2;
+}
+
+message CSSetGuildNoticeReq{
+	optional bytes guild_notice = 1;         // 公会公告
+	optional bytes guild_note   = 2;         // 公告宣言
+}
+
+message CSSetGuildNoticeRsp{
+	required bool res					= 1;
+}
+
+
+message CSGetRecruitMemberReq{
+	required uint32 instance_id			= 1;
+}
+
+message CSGetRecruitMemberRsp{
+	repeated CSPlayerGuildInfo infos	= 1;
+}
+
+message CSPVAI3Req{
+	required uint32	instance_id			= 1;
+	optional CSPlayerGuildInfo infos	= 2;
+}
+
+
+//--新天赋 协议段--------------------------------------------------------------------------------
+message CSQueryNewDowerReq {
+
+}
+
+message CSQueryNewDowerRsp {		 // 查询天赋信息
+    required uint32 next_title_light    = 2; //距离下一个称号需要点亮的步数
+
+    required uint32 physical_attack     = 11; //累计升级物攻
+	required uint32 magic_attack        = 12; //累计升级魔攻
+	required uint32 skill_attack        = 13; //累计升级技攻
+	required uint32 physical_defence    = 14; //累计升级物防
+	required uint32 magic_defence       = 15; //累计升级魔防
+	required uint32 skill_defence       = 16; //累计升级技防
+	required uint32 health_point        = 17; //累计升级血量
+}
+
+message CSNewDowerReq {					// 升级天赋
+}
+
+message CSNewDowerRsp {
+    required uint32 id              = 1;
+}
+
+message CSNewDowerOneKeyReq {
+
+}
+
+message CSNewDowerOneKeyRsp {
+}
+
+
+//--称号系统协议段-------------------------------------------------
+message CSTitleReq {
+
+}
+
+message TitleInfo {
+	required uint32 title_id			= 1;
+	optional uint32 dead_tm				= 2[default = 2147483647];
+}
+
+message CSTitleRsp {
+    optional TitleInfo wear_title           = 1; //已经装备的天赋ID
+    repeated TitleInfo unlock_titles        = 2; //已经解锁的天赋ID
+    repeated TitleInfo learn_titles         = 3; //已经学习的称号ＩＤ
+}
+
+message CSTitleLearnReq {
+    required uint32 title_id                = 1; //称号ID
+}
+
+message CSTitleLearnRsp {
+}
+
+message CSTitleWearReq {
+    required uint32 title_id                = 1; //称号ID
+}
+
+message CSTitleWearRsp {
+}
+
+message CSTitleUnlockRsp {
+    required uint32 title                   = 1; //称号ID
+}
+
+//----player_guild协议段-----------------------------------------
+message CSPGSetAcceptInviteReq {
+
+}
+
+message CSPGSetAcceptInviteRsp {
+	required bool is_set					= 1;  //是否设置成功
+}
+
+message CSPGContributeToGuildReq {
+	required uint32 param					= 1;
+}
+
+message CSPGContributeToGuildRsp {
+	required uint32 res					= 1;  //是否成功捐献
+}
+
+message CSCancelWaitingRsp{
+
+}
+
+
+message CSQueryPlayerGuildInfoReq{
+
+}
+
+
+message CSQueryPlayerGuildInfoRsp{
+	optional CSGuildInfo guildinfo			= 1; // 公会信息
+	optional CSPlayerGuildInfo playerinfo 	= 2; // 玩家信息
+}
+
+enum APPLY_TYPE{
+	NOCONDITION		 						= 1;
+	FIGHTCONDITION		 					= 2;
+	NOAPPLY	 								= 3;
+}	
+
+message CSSetPlayerGuildApplyConditionReq{
+	required uint32	type					= 1; // 设置公会申请类型
+	optional uint32 fight					= 2; // 战力值
+}
+
+message CSSetPlayerGuildApplyConditionRsp{
+	required uint32	res						= 1; // 
+}
+
+
+
+//========guild_record=============
+message GuildRecordInfo {
+	required uint32 record_type				= 1; //记录类型
+	required bytes	log						= 2; //具体消息
+	required uint32	modify_tm				= 3; //修改时间 
+}
+
+message CSGuildRecordListReq {
+	required uint32 zone_id					= 1;
+	required uint32 guild_id_low			= 2;
+	required uint32 guild_id_high			= 3;
+}
+
+message CSGuildRecordListRsp {
+	repeated GuildRecordInfo logs			= 1;
+}
+
+
+message CSGoddessBlessReq{
+	required bool ischeck					= 1; //查看
+}
+
+message CSGoddessBlessRsp{
+	message Item {
+		required uint32 item_id			= 1;	// 物品id
+		required uint32 item_num		= 2;	// 物品数量
+	}
+	required uint32 res               	= 1; 	// 	
+	repeated Item	from_item			= 2; 	//	 
+	repeated Item	to_item				= 3; 	//	 
+	repeated Item 	next_to_item		= 4;	// 下一阶消耗物品
+	optional uint32 next_level			= 5;	// 下一阶等级
+}
+
+
+message ShoppingItemInfo {
+	message Item {
+		required uint32 item_id			= 1;	// 物品id
+		required uint32 item_num		= 2;	// 物品数量
+	}
+	required uint32 index				= 1;	// 买卖暗号(index)	
+	required Item from_item				= 2;	// 消耗的物品
+	required Item to_item				= 3;	// 得到的物品
+	required uint32 buytimes			= 4;	// 够买次数
+	optional uint32 limit				= 5;	// 等级限制
+	optional uint32 times				= 6;	// 可以买几次
+}
+
+
+message CSGetShoppingItemsReq{
+	repeated uint32	type			= 1;
+}
+
+message CSGetShoppingItemsRsp{
+	repeated ShoppingItemInfo items = 1;	// 商品列表 
+	repeated uint32	param			= 2;	// 各类参数
+}
+
+
+message CSExchangeItemInfoReq{
+	repeated uint32 params		= 1;	// 各种价格
+	optional uint32 type		= 2;	// 获取类型
+}
+
+
+message CSExchangeItemInfoRsp{
+	message Item {
+		required uint32 item_id			= 1;	// 物品id
+		required uint32 item_num		= 2;	// 物品数量
+	}
+	message ItemInfo{
+		repeated Item	from_item			= 1; 	//	 
+		repeated Item	to_item				= 2; 	//	 	
+		required uint32 type				= 3;	//
+	}
+	repeated ItemInfo items					= 1;
+}
+
+message CSGuildNoteRsp{
+	required bytes	text					= 1;
+}
+
+//=====GUILD_RED_PACKET--START============================================
+
+//message CSGuildRedPacketInfo {
+////need fix	required uint64 userid				= 1;	//发放红包玩家的ID
+//	required uint32 reg_tm				= 2;
+//	required uint32 zone_id				= 3;
+//	required uint32 send_tm				= 4;	//发放红包的时间
+//	required bytes  name				= 5;
+//	required uint32 packet_type			= 6;	//红包类型
+//	required uint32 packet_id			= 7;	//红包ID
+//	required uint32 surplus_nu			= 8;	//剩余领取数
+//}
+//
+//message CSPlayerGuildRedPacket {
+//	repeated CSGuildRedPacketInfo red_packets	= 1;	//玩家红包
+//}
+
+message CSGuildRedPacketKey {
+	required uint32 userid				= 1;
+	required uint32 channelid			= 2;
+	required uint32 reg_tm				= 3;
+	required uint32 zone_id				= 4;
+	required uint32 send_tm				= 5;
+}
+
+message CSGuildRedPacketInfo {
+	required CSGuildRedPacketKey key	= 1;
+	required bytes name					= 2;
+	required uint32 packet_type			= 3;
+	required uint32 packet_id			= 4;
+	required uint32 surplus_nu			= 5;
+	optional bool	is_draw				= 6[default = false];
+	optional uint32 real_diamond		= 7[default = 1000];
+}
+
+message CSGuildRedPacketQueryReq {
+
+}
+
+message CSGuildRedPacketQueryRsp {
+	repeated  CSGuildRedPacketInfo	infos	= 1;
+}
+
+message CSGuildRedPacketSendReq {
+	required uint32	packet_id			= 1;
+	required uint32 packet_type			= 2;
+}
+
+message CSGuildRedPacketSendRsp {
+	required bool suc					= 1;
+	required uint32 packet_id			= 2;
+	required uint32	packet_type			= 3;
+	required uint32 acc_packet_diamond	= 4;
+	required uint32 real_diamond		= 5;	//实际发放钻石数
+}
+
+message CSGuildRedPacketGetAwardReq {
+	required CSGuildRedPacketKey key	= 1;
+}
+
+message CSGuildRedPacketAward {
+	required uint32 item_id				= 1;
+	required uint32 item_count			= 2;
+}
+
+message CSGuildRedPacketGetAwardRsp {
+	required bool suc						= 1;
+	required uint32 diamond_count			= 2;
+	repeated CSGuildRedPacketAward awards	= 3;
+}
+
+message CSGuildRedPacketRecordReq {
+	required CSGuildRedPacketKey key		= 1;
+}
+
+message CSRedPacketRecordInfo {
+	required bytes log						= 1;
+	required uint32 modify_tm				= 2;
+}
+
+message CSGuildRedPacketRecordRsp {
+	repeated CSRedPacketRecordInfo logs		= 1;
+}
+
+message CSGuildRedPacketFirstCheckReq{
+	required uint32 packet_id				= 1;
+	required uint32 packet_type				= 2;
+}
+
+message CSGuildRedPacketFirstCheckRsp{
+	required uint32	acc_packet_diamond	= 1;
+	optional bool	is_succ				= 2[default = false];
+}
+
+message CSGuildRedPacketConfigInfo{
+	required uint32 envelopeid				= 1;
+	required uint32 envelope_type			= 2;
+	required uint32 time_type				= 3;
+	required string activity_date			= 4;
+	required string activity_time			= 5;
+	required string activity_qualification	= 6;
+	required uint32 random_multiples		= 7;
+	required string award1					= 8;
+	required string award2					= 9;
+	required string award3					= 10;
+	required string extent					= 11;
+	optional uint32 remain_times			= 12[default = 0];
+}
+
+message CSGuildRedPacketConfigReq{
+
+}
+
+message CSGuildRedPacketConfigRsp{
+	repeated CSGuildRedPacketConfigInfo configs = 1;
+}
+
+//=====GUILD_RED_PACKET--END==============================================
+
+
+message UnionInfo{
+	optional uint32 level					= 1;
+	optional uint32 exp						= 2;
+	optional uint32 people_num				= 3;
+	optional uint32 chairman_num			= 4;
+	optional uint32 elite_num				= 5;
+	optional uint32 donate					= 6;
+	optional uint32 benedition				= 9;
+	optional uint32 shop					= 10;
+	optional uint32 transcript				= 11;
+	optional uint32 target					= 12;
+	optional uint32 boss					= 13;
+	optional uint32 melee					= 14;
+	optional uint32 scramble				= 15;
+	optional uint32 redenvelope				= 16;
+}
+
+message CSUnionInfoReq{
+
+}
+
+
+message CSUnionInfoRsp{
+	repeated UnionInfo infos 				= 1;
+}
+
+message CSChangeNameReq{
+	required bytes nick_name				= 1;
+}
+
+message CSChangeNameRsp{
+	required bool  res						= 1;
+	required bytes nick_name				= 2;
+}
+
+
+
+//========================探宝奖励刷新====================
+message CSNotifyItemExploreRewardRsp{
+	message Item {
+		required uint32 item_id			= 1;	// 物品id
+		required uint32 item_num		= 2;	// 物品数量
+	}
+
+	repeated Item items					= 1; 
+	optional bool isfresh				= 2[default = true];
+}
+
+message CSExploreRestRsp{
+
+}
+
+
+message carmsg07{
+
+}
+
+message carmsg08{
+
+}
+
+message carmsg09{
+
+}
+
+message carmsg10{
+
+}
+//====================排行榜奖励================================
+message CSRankRewardListReq{
+	required uint32 rank_name			= 1;	// 具体排名
+	required uint32 rank_type			= 2;	// 排名类型
+	required uint32 rank_start			= 3;	// 查询排名起始位置
+	required uint32 rank_size			= 4;	// 查询大小
+}
+
+message CSRankRewardListRsp{
+	required uint32 rank_name			= 1;	// 具体排名
+	required uint32 rank_type			= 2;	// 排名类型
+	required uint32 rank_start			= 3;	// 查询排名起始位置
+	required uint32 rank_size			= 4;	// 查询大小
+	message Item{
+		required uint32 item_id			= 1;	// 物品id
+		required uint32 item_num		= 2;	// 物品数量
+	}
+	message RankReward{
+		required uint32 rank_start	  	= 1;
+		required uint32 rank_end		= 2;
+		repeated Item items       		= 3;
+	}
+
+	repeated RankReward items			= 5; 
+}
+
+
+//====================战友招募================================
+message CSRecruitCommitReq{
+	required	uint64	code	= 1;	//邀请码(userid)
+}
+
+enum RecruitCommitResult{
+	RCR_OK 				= 0;
+	RCR_CODE_INVALID 	= 1;		//邀请码不存在
+	RCR_REPEATED_COMMIT = 2;		//重复提交
+	RCR_NO_OWNSELF 		= 3;		//不能邀请自己
+}
+message CSRecruitCommitRsp{
+	required	uint64	code	= 1;	//邀请码(userid)
+    required    RecruitCommitResult  result  = 2;
+}
+
+message CSRecruitAwardReq{
+    required    uint32  id      = 1;    //奖励ID
+}
+
+enum RecruitAwardResult{
+	RAR_OK 				= 0;
+	RAR_UNCONDITIONAL 	= 1;		//条件不符合
+	RAR_REPEATED_COMMIT = 2;		//重复提交,已经领取
+	RAR_OVER_LIMIT		= 3;		//超过领取次数上限
+}
+message CSRecruitAwardRsp{
+    required    uint32  id      = 1;    //奖励ID
+    required    RecruitAwardResult  result  = 2;
+}
+
+message RecruitInfo{
+    required    uint32 id       = 1;
+    required    uint32 count    = 3;                 //满足条件的人数
+    required    uint32 status   = 4;                 //基础奖励：可领奖次数(0表示不能领取)
+                                                     //累计奖励：0不可领取1可领取2已领取
+}
+
+message CSRecruitListReq{
+}
+
+message CSRecruitListRsp{
+    required   uint64       my_code = 1;
+    repeated   RecruitInfo  info    = 2; 
+}
+
+//=================6品兑换===================================
+message CSExchangeHighQualityReq{
+	required uint32 exid			= 1;
+	repeated uint32	params			= 2;
+}
+
+message CSExchangeHighQualityRsp{
+	required bool 	is_succ			= 1;
+	required uint32 exid			= 2;
+	optional CSReward rewards		= 3;
+
+}
+
+message carmsg30{
+
+}
+
+message carmsg31{
+
+}
+
+
+//===================转职=================================
+message CSExchangeVocationInfoReq{
+	repeated uint32 params			= 1;
+}
+
+message VocationInfo{
+	message Item{
+		required uint32 item_id         = 1;    // 物品id
+		required uint32 item_num        = 2;    // 物品数量
+	}
+	required uint32 id						= 1;
+	required uint32 vocation				= 2;
+	required uint32 level					= 3;
+	repeated Item 	reward_items			= 4;	// 奖励 
+	repeated Item 	cost_items				= 5;	// 消耗
+	required uint32 physical_attack			= 6; 
+	required uint32 magic_attack			= 7; 
+	required uint32 skill_attack			= 8; 
+	required uint32 physical_defence		= 9; 
+	required uint32 magic_defence			= 10; 
+	required uint32 skill_defence			= 11; 
+	required uint32	health_point			= 12; 
+}
+
+message CSExchangeVocationInfoRsp{
+	repeated VocationInfo infos 	= 1;
+}
+
+message CSExchangeVocationReq{
+	required uint32 id				= 1;
+}
+
+
+message CSExchangeVocationRsp{
+	required uint32 id				= 1;
+	required uint32	ret				= 2;	// 0 表示成功
+}

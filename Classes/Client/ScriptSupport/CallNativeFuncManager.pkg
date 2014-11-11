@@ -1,0 +1,7 @@
+class CallNativeFuncManager
+{
+	static CallNativeFuncManager* getInstance();
+	void AddIndexLayerToMainScene(int whatLayer);
+	void SetRankLayerVipFlgVisible(bool flag);
+	void ShowCombatSettingLayer(bool flag);
+}

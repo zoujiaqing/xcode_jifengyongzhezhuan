@@ -1,0 +1,26 @@
+class MainMenuLayer : public CCLayer
+{
+public:
+	void  setChatToolbar(bool isChatVisible,bool isFunctionVisible,bool isExtraVisible = false,int order = 0);
+	static MainMenuLayer* getMainMenuLayer();
+	static const char* GetNumByFormat(unsigned int num);
+	static const char* GetNumByFormatK(unsigned int num);
+	
+	CCLayer* showUILayerByTag(int tag,bool isAutoCreate);
+	CCLayer* findUILayerByTag(int tag);
+	void hideUILayerByTag(int tag);
+	CCLayer* getUILayerByTag(int tag,bool isAutoCreate = true);
+	PPVELayer* ShowPPVELayer();
+	void HidePPVELayer(bool bShowGameUI);
+	PVPLayer* ShowPVPLayer();
+	void resetMailUIMsg();
+	void HidePVPLayer(bool bShowGameUI);
+	void showMagicShop();
+	void onReceivedElfStrengthLayerClosed();
+	void setFairyMovedIcon(unsigned int changedPos);
+	void setFairySelectStatus(bool isSelected);
+	
+	void ShowMarketLayer(bool flag, int layerTag = 0);
+	void ShowChargeLayer(bool flag);
+	void HideFirstChargeEffect();
+};

@@ -1,0 +1,17 @@
+class ParticleManagerX
+{
+public:
+	static ParticleManagerX* sharedManager(void);
+	CCNode* getParticles(const char* name);
+	CCNode* getParticles_uieffect(const char* name);
+}
+
+
+
+class ParticleManager
+{
+public:
+	static ParticleManager* Get(void);
+	CCNode * createEffectSpriteAndPlay(int type,const char *name,int animId, int nloop, bool isLoop);
+	EffectSprite * playOneTimeEffect(int effectId, CCPoint position, float delayTime = 0, int playType = 0);
+}

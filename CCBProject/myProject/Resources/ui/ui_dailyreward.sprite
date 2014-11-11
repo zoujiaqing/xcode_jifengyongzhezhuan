@@ -1,0 +1,5217 @@
+// saved by AuroraGT v0.1.0.2 (SpriteEditor v0.1.0.5)
+////////////////////////////////////////////////////////////////////////////////
+/*SPRITE*/ {
+
+    VERSION 0001
+
+    // Images:  3
+    // Modules: 196
+    // Frames:  338
+    // Anims:   0
+
+////////////////////////////////////////////////////////////////////////////////
+// Images...
+// <Image> := IMAGE [id] "file" [ALPHA "alpha_file"] [TRANSP transp_color]
+
+    IMAGE 0x0001 ".\ui_dailyreward.png" TRANSP 0x00FF00FF // 0  size: 512 x 512  palettes: 1
+    IMAGE 0x0000 ".\ui.png" TRANSP 0x00FF00FF // 1  size: 1024 x 1024  palettes: 1
+    IMAGE 0x0002 ".\ui_card_attribute.png" TRANSP 0x00FF00FF // 2  size: 499 x 324  palettes: 1
+
+////////////////////////////////////////////////////////////////////////////////
+// Modules...
+// <Modules> := MODULES { <MD1> <MD2> ... }
+// <MDi>     := MD id Type [params] ["desc"]
+// Type      := MD_IMAGE | MD_RECT | ...
+// [params]  := if (Type == MD_IMAGE)     -> image x y width height
+//              if (Type == MD_RECT)      -> color width height
+//              if (Type == MD_FILL_RECT) -> color width height
+//              if (Type == MD_ARC)       -> color width height startAngle arcAngle
+//              if (Type == MD_FILL_ARC)  -> color width height startAngle arcAngle
+//              if (Type == MD_MARKER)    -> color width height
+//              if (Type == MD_TRIANGLE)  -> color p2X p2Y p3X p3Y
+//              if (Type == MD_FILL_TRIANGLE)  -> color p2X p2Y p3X p3Y
+
+    MODULES
+    {
+        MD	0x1000	MD_IMAGE	1	10	13	139	138
+        MD	0x1001	MD_IMAGE	1	154	5	119	119
+        MD	0x1004	MD_IMAGE	1	5	165	172	171
+        MD	0x1005	MD_IMAGE	1	187	187	148	148
+        MD	0x1007	MD_IMAGE	1	20	359	91	93
+        MD	0x1008	MD_IMAGE	1	128	368	77	78
+        MD	0x1014	MD_IMAGE	1	219	372	69	69
+        MD	0x1015	MD_IMAGE	1	14	545	52	42
+        MD	0x1016	MD_IMAGE	1	15	590	51	42
+        MD	0x1017	MD_IMAGE	1	75	544	50	43
+        MD	0x103C	MD_IMAGE	1	125	544	14	43
+        MD	0x10A9	MD_IMAGE	1	75	587	50	43
+        MD	0x10AA	MD_IMAGE	1	125	587	14	43
+        MD	0x109A	MD_IMAGE	1	197	537	14	14
+        MD	0x10A4	MD_IMAGE	1	217	537	17	17
+        MD	0x10A5	MD_IMAGE	1	236	537	17	17
+        MD	0x10A6	MD_IMAGE	1	255	537	17	17
+        MD	0x109B	MD_IMAGE	1	154	537	43	14
+        MD	0x1019	MD_IMAGE	1	8	457	32	39
+        MD	0x10B4	MD_IMAGE	1	40	457	9	39
+        MD	0x10B5	MD_IMAGE	1	49	457	148	39
+        MD	0x1028	MD_IMAGE	1	8	498	137	39
+        MD	0x1029	MD_IMAGE	1	151	507	121	23
+        MD	0x102A	MD_IMAGE	1	284	507	20	24
+        MD	0x102B	MD_IMAGE	1	314	505	24	28
+        MD	0x102C	MD_IMAGE	1	346	507	22	23
+        MD	0x10B6	MD_IMAGE	1	329	571	22	26
+        MD	0x10B7	MD_IMAGE	1	358	569	24	29
+        MD	0x106A	MD_IMAGE	1	373	509	16	19
+        MD	0x101A	MD_IMAGE	1	199	457	45	39
+        MD	0x101B	MD_IMAGE	1	249	457	44	39
+        MD	0x1039	MD_IMAGE	1	306	24	109	110
+        MD	0x1002	MD_IMAGE	1	446	13	91	92
+        MD	0x1003	MD_IMAGE	1	543	14	90	91
+        MD	0x1006	MD_IMAGE	1	638	0	228	111
+        MD	0x1009	MD_IMAGE	1	450	112	212	11
+        MD	0x103D	MD_IMAGE	1	662	112	26	11
+        MD	0x100A	MD_IMAGE	1	450	130	35	46
+        MD	0x1040	MD_IMAGE	1	450	176	35	29
+        MD	0x103E	MD_IMAGE	1	485	130	15	46
+        MD	0x1041	MD_IMAGE	1	485	176	15	29
+        MD	0x103F	MD_IMAGE	1	500	130	35	46
+        MD	0x1042	MD_IMAGE	1	500	176	35	29
+        MD	0x100B	MD_IMAGE	1	542	130	35	46
+        MD	0x1043	MD_IMAGE	1	542	176	35	29
+        MD	0x1044	MD_IMAGE	1	577	130	15	46
+        MD	0x1045	MD_IMAGE	1	577	176	15	29
+        MD	0x1046	MD_IMAGE	1	592	130	35	46
+        MD	0x1047	MD_IMAGE	1	592	176	35	29
+        MD	0x100C	MD_IMAGE	1	643	143	42	55
+        MD	0x100D	MD_IMAGE	1	699	145	48	52
+        MD	0x100E	MD_IMAGE	1	762	125	87	86
+        MD	0x100F	MD_IMAGE	1	848	125	87	86
+        MD	0x1010	MD_IMAGE	1	449	206	66	70
+        MD	0x1057	MD_IMAGE	1	518	206	20	70
+        MD	0x10B1	MD_IMAGE	1	587	912	66	70
+        MD	0x10B2	MD_IMAGE	1	656	912	20	70
+        MD	0x1011	MD_IMAGE	1	544	206	66	70
+        MD	0x1058	MD_IMAGE	1	613	206	20	70
+        MD	0x1012	MD_IMAGE	1	687	221	229	183
+        MD	0x1013	MD_IMAGE	1	921	221	25	183
+        MD	0x1018	MD_IMAGE	1	696	409	220	25
+        MD	0x101C	MD_IMAGE	1	921	409	25	25
+        MD	0x101D	MD_IMAGE	1	151	560	64	61
+        MD	0x101E	MD_IMAGE	1	215	568	48	47
+        MD	0x101F	MD_IMAGE	1	269	566	54	52
+        MD	0x1020	MD_IMAGE	1	217	558	9	9
+        MD	0x1021	MD_IMAGE	1	229	558	9	9
+        MD	0x1022	MD_IMAGE	1	393	421	94	213
+        MD	0x1023	MD_IMAGE	1	492	520	263	107
+        MD	0x1024	MD_IMAGE	1	0	341	383	15
+        MD	0x1025	MD_IMAGE	1	287	359	93	8
+        MD	0x1026	MD_IMAGE	1	566	283	52	46
+        MD	0x1027	MD_IMAGE	1	634	277	50	57
+        MD	0x102D	MD_IMAGE	1	569	333	51	56
+        MD	0x102E	MD_IMAGE	1	624	334	63	49
+        MD	0x102F	MD_IMAGE	1	571	391	50	46
+        MD	0x1030	MD_IMAGE	1	626	385	51	53
+        MD	0x1031	MD_IMAGE	1	286	534	16	30
+        MD	0x1032	MD_IMAGE	1	308	534	25	31
+        MD	0x1033	MD_IMAGE	1	335	535	18	31
+        MD	0x1034	MD_IMAGE	1	358	539	19	27
+        MD	0x1035	MD_IMAGE	1	360	164	80	69
+        MD	0x1036	MD_IMAGE	1	356	247	80	69
+        MD	0x1037	MD_IMAGE	1	440	279	109	39
+        MD	0x1038	MD_IMAGE	1	432	320	28	96
+        MD	0x103A	MD_IMAGE	1	466	320	50	96
+        MD	0x103B	MD_IMAGE	1	522	320	31	96
+        MD	0x1048	MD_IMAGE	1	608	444	51	44
+        MD	0x1049	MD_IMAGE	1	673	444	51	44
+        MD	0x104A	MD_IMAGE	1	739	443	20	46
+        MD	0x1051	MD_IMAGE	1	759	443	20	46
+        MD	0x104B	MD_IMAGE	1	791	443	20	46
+        MD	0x1052	MD_IMAGE	1	811	443	20	46
+        MD	0x104C	MD_IMAGE	1	838	439	32	119
+        MD	0x104D	MD_IMAGE	1	873	439	40	119
+        MD	0x104E	MD_IMAGE	1	916	439	32	119
+        MD	0x104F	MD_IMAGE	1	353	373	16	89
+        MD	0x1050	MD_IMAGE	1	370	373	20	89
+        MD	0x1078	MD_IMAGE	1	308	373	16	89
+        MD	0x1079	MD_IMAGE	1	325	373	20	89
+        MD	0x1098	MD_IMAGE	1	394	320	16	89
+        MD	0x1099	MD_IMAGE	1	411	320	20	89
+        MD	0x1053	MD_IMAGE	1	299	470	29	22
+        MD	0x106E	MD_IMAGE	1	330	466	20	31
+        MD	0x106F	MD_IMAGE	1	356	464	19	33
+        MD	0x1054	MD_IMAGE	1	3	642	161	310
+        MD	0x1055	MD_IMAGE	1	170	636	103	103
+        MD	0x1060	MD_IMAGE	1	279	635	108	107
+        MD	0x1061	MD_IMAGE	1	393	636	106	107
+        MD	0x1062	MD_IMAGE	1	503	635	45	45
+        MD	0x1063	MD_IMAGE	1	550	635	76	45
+        MD	0x1064	MD_IMAGE	1	503	682	45	76
+        MD	0x1065	MD_IMAGE	1	550	682	76	76
+        MD	0x1066	MD_IMAGE	1	503	761	45	45
+        MD	0x1067	MD_IMAGE	1	550	761	76	45
+        MD	0x1059	MD_IMAGE	1	792	565	110	58
+        MD	0x105A	MD_IMAGE	1	906	565	38	58
+        MD	0x105B	MD_IMAGE	1	492	436	84	84
+        MD	0x105C	MD_IMAGE	1	834	628	70	70
+        MD	0x105E	MD_IMAGE	1	834	703	70	38
+        MD	0x105D	MD_IMAGE	1	907	628	38	70
+        MD	0x105F	MD_IMAGE	1	907	703	38	38
+        MD	0x1068	MD_IMAGE	1	948	14	50	163
+        MD	0x1069	MD_IMAGE	1	948	180	74	156
+        MD	0x1070	MD_IMAGE	1	171	761	25	149
+        MD	0x1071	MD_IMAGE	1	196	753	185	37
+        MD	0x10B8	MD_IMAGE	1	196	753	113	37
+        MD	0x10B9	MD_IMAGE	1	309	753	40	37
+        MD	0x1072	MD_IMAGE	1	386	753	25	43
+        MD	0x1073	MD_IMAGE	1	802	746	187	141
+        MD	0x1074	MD_IMAGE	1	994	746	25	141
+        MD	0x1075	MD_IMAGE	1	802	892	187	25
+        MD	0x1076	MD_IMAGE	1	994	892	25	25
+        MD	0x1077	MD_IMAGE	1	946	341	78	78
+        MD	0x107A	MD_IMAGE	1	205	802	187	141
+        MD	0x107B	MD_IMAGE	1	204	948	188	25
+        MD	0x107C	MD_IMAGE	1	397	948	25	25
+        MD	0x107D	MD_IMAGE	1	397	802	25	141
+        MD	0x107E	MD_IMAGE	1	414	751	42	42
+        MD	0x107F	MD_IMAGE	1	458	752	42	42
+        MD	0x1080	MD_IMAGE	1	628	635	29	41
+        MD	0x108E	MD_IMAGE	1	660	635	20	41
+        MD	0x108F	MD_IMAGE	1	683	635	46	41
+        MD	0x1081	MD_IMAGE	1	643	684	12	12
+        MD	0x1082	MD_IMAGE	1	657	684	12	12
+        MD	0x1083	MD_IMAGE	1	671	684	12	12
+        MD	0x1084	MD_IMAGE	1	686	684	12	12
+        MD	0x1085	MD_IMAGE	1	701	684	12	12
+        MD	0x1086	MD_IMAGE	1	717	684	10	10
+        MD	0x1087	MD_IMAGE	1	629	701	102	32
+        MD	0x1088	MD_IMAGE	1	697	738	102	178
+        MD	0x1089	MD_IMAGE	1	955	632	63	45
+        MD	0x108A	MD_IMAGE	1	955	679	63	30
+        MD	0x108B	MD_IMAGE	1	955	711	63	30
+        MD	0x108C	MD_IMAGE	1	952	425	38	69
+        MD	0x10A8	MD_IMAGE	1	990	425	29	69
+        MD	0x108D	MD_IMAGE	1	952	496	38	69
+        MD	0x10A7	MD_IMAGE	1	990	496	29	69
+        MD	0x1090	MD_IMAGE	1	799	500	29	29
+        MD	0x1091	MD_IMAGE	1	431	811	68	95
+        MD	0x1092	MD_IMAGE	1	500	811	17	95
+        MD	0x10AF	MD_IMAGE	1	738	634	68	95
+        MD	0x10B0	MD_IMAGE	1	807	634	17	95
+        MD	0x1093	MD_IMAGE	1	519	811	68	95
+        MD	0x1094	MD_IMAGE	1	588	811	17	95
+        MD	0x1095	MD_IMAGE	1	606	811	68	95
+        MD	0x1096	MD_IMAGE	1	675	811	17	95
+        MD	0x1097	MD_IMAGE	1	162	977	211	47
+        MD	0x109C	MD_IMAGE	1	0	962	49	58
+        MD	0x109D	MD_IMAGE	1	52	964	49	44
+        MD	0x109E	MD_IMAGE	1	103	963	49	44
+        MD	0x109F	MD_IMAGE	1	427	910	154	67
+        MD	0x10A1	MD_IMAGE	1	742	931	89	89
+        MD	0x10A2	MD_IMAGE	1	838	930	90	92
+        MD	0x10A3	MD_IMAGE	1	932	931	90	92
+        MD	0x10AB	MD_IMAGE	1	377	977	48	47
+        MD	0x10AC	MD_IMAGE	1	426	977	48	47
+        MD	0x10AD	MD_IMAGE	1	475	977	48	47
+        MD	0x10AE	MD_IMAGE	1	526	977	48	47
+        MD	0x10A0	MD_IMAGE	1	1023	0	1	1
+        MD	0x1056	MD_IMAGE	1	328	604	22	24
+        MD	0x10B3	MD_IMAGE	1	354	599	35	35
+        MD	0x10BA	MD_IMAGE	1	878	10	51	44
+        MD	0x10BB	MD_IMAGE	1	877	64	51	44
+        MD	0x10BC	MD_IMAGE	1	606	990	22	21
+        MD	0x10BD	MD_IMAGE	1	641	987	29	28
+        MD	0x10BE	MD_IMAGE	1	693	929	28	28
+        MD	0x10C2	MD_IMAGE	1	186	132	115	49
+        MD	0x106B	MD_IMAGE	0	8	7	402	106
+        MD	0x106C	MD_IMAGE	0	8	118	402	106
+        MD	0x106D	MD_IMAGE	0	8	231	402	106
+        MD	0x10BF	MD_IMAGE	0	10	351	125	59
+        MD	0x10C0	MD_IMAGE	0	9	416	125	59
+        MD	0x10C1	MD_IMAGE	0	142	358	183	100
+        MD	0x10C3	MD_IMAGE	2	0	0	499	324
+    }
+
+////////////////////////////////////////////////////////////////////////////////
+// Frames...
+// <Frame> := FRAME ["desc"] { id <RC1> [<RC2> ...] <FM1> [<FM2> ...] }
+// <RCi>   := RC x1 y1 x2 y2
+// <FMi>   := FM module_or_frame_id ox oy [FLAGS hex_flags] [+Flags]
+// Flags   := HYPER_FM | FLIP_X | FLIP_Y | ROT_90 | FREE_ROT
+
+    FRAME "dailyreward_background" // Index = 0, FModules = 234
+    {
+        0x22DF
+        RC	44	-637	1101	-96
+        FM	0x1012	44	-637
+        FM	0x1012	872	-637	+FLIP_X
+        FM	0x1013	372	-637
+        FM	0x1013	397	-637
+        FM	0x1013	422	-637
+        FM	0x1013	447	-637
+        FM	0x1013	472	-637
+        FM	0x1013	497	-637
+        FM	0x1013	522	-637
+        FM	0x1013	547	-637
+        FM	0x1013	572	-637
+        FM	0x1013	597	-637
+        FM	0x1013	622	-637
+        FM	0x1013	647	-637
+        FM	0x1013	672	-637
+        FM	0x1013	697	-637
+        FM	0x1013	722	-637
+        FM	0x1013	747	-637
+        FM	0x1013	372	-279	+FLIP_Y
+        FM	0x1013	397	-279	+FLIP_Y
+        FM	0x1013	422	-279	+FLIP_Y
+        FM	0x1013	447	-279	+FLIP_Y
+        FM	0x1013	472	-279	+FLIP_Y
+        FM	0x1013	497	-279	+FLIP_Y
+        FM	0x1013	522	-279	+FLIP_Y
+        FM	0x1013	547	-279	+FLIP_Y
+        FM	0x1013	572	-279	+FLIP_Y
+        FM	0x1013	597	-279	+FLIP_Y
+        FM	0x1013	622	-279	+FLIP_Y
+        FM	0x1013	647	-279	+FLIP_Y
+        FM	0x1013	672	-279	+FLIP_Y
+        FM	0x1013	697	-279	+FLIP_Y
+        FM	0x1013	722	-279	+FLIP_Y
+        FM	0x1013	747	-279	+FLIP_Y
+        FM	0x1018	53	-454
+        FM	0x1018	53	-429
+        FM	0x1018	53	-404
+        FM	0x1018	53	-379
+        FM	0x1018	53	-354
+        FM	0x1018	53	-329
+        FM	0x1018	872	-454	+FLIP_X
+        FM	0x1018	872	-429	+FLIP_X
+        FM	0x1018	872	-404	+FLIP_X
+        FM	0x1018	872	-379	+FLIP_X
+        FM	0x1018	872	-354	+FLIP_X
+        FM	0x1018	872	-329	+FLIP_X
+        FM	0x1012	44	-279	+FLIP_Y
+        FM	0x1012	872	-279	+FLIP_X	+FLIP_Y
+        FM	0x101C	372	-454
+        FM	0x101C	372	-429
+        FM	0x101C	372	-404
+        FM	0x101C	372	-379
+        FM	0x101C	372	-354
+        FM	0x101C	372	-329
+        FM	0x101C	397	-454
+        FM	0x101C	397	-429
+        FM	0x101C	397	-404
+        FM	0x101C	397	-379
+        FM	0x101C	397	-354
+        FM	0x101C	397	-329
+        FM	0x101C	422	-454
+        FM	0x101C	422	-429
+        FM	0x101C	422	-404
+        FM	0x101C	422	-379
+        FM	0x101C	422	-354
+        FM	0x101C	422	-329
+        FM	0x101C	447	-454
+        FM	0x101C	447	-429
+        FM	0x101C	447	-404
+        FM	0x101C	447	-379
+        FM	0x101C	447	-354
+        FM	0x101C	447	-329
+        FM	0x101C	472	-454
+        FM	0x101C	472	-429
+        FM	0x101C	472	-404
+        FM	0x101C	472	-379
+        FM	0x101C	472	-354
+        FM	0x101C	472	-329
+        FM	0x101C	497	-454
+        FM	0x101C	497	-429
+        FM	0x101C	497	-404
+        FM	0x101C	497	-379
+        FM	0x101C	497	-354
+        FM	0x101C	497	-329
+        FM	0x101C	522	-454
+        FM	0x101C	522	-429
+        FM	0x101C	522	-404
+        FM	0x101C	522	-379
+        FM	0x101C	522	-354
+        FM	0x101C	522	-329
+        FM	0x101C	547	-454
+        FM	0x101C	547	-429
+        FM	0x101C	547	-404
+        FM	0x101C	547	-379
+        FM	0x101C	547	-354
+        FM	0x101C	547	-329
+        FM	0x101C	572	-454
+        FM	0x101C	572	-429
+        FM	0x101C	572	-404
+        FM	0x101C	572	-379
+        FM	0x101C	572	-354
+        FM	0x101C	572	-329
+        FM	0x101C	597	-454
+        FM	0x101C	597	-429
+        FM	0x101C	597	-404
+        FM	0x101C	597	-379
+        FM	0x101C	597	-354
+        FM	0x101C	597	-329
+        FM	0x101C	622	-454
+        FM	0x101C	622	-429
+        FM	0x101C	622	-404
+        FM	0x101C	622	-379
+        FM	0x101C	622	-354
+        FM	0x101C	622	-329
+        FM	0x101C	647	-454
+        FM	0x101C	647	-429
+        FM	0x101C	647	-404
+        FM	0x101C	647	-379
+        FM	0x101C	647	-354
+        FM	0x101C	647	-329
+        FM	0x101C	672	-454
+        FM	0x101C	672	-429
+        FM	0x101C	672	-404
+        FM	0x101C	672	-379
+        FM	0x101C	672	-354
+        FM	0x101C	672	-329
+        FM	0x101C	697	-454
+        FM	0x101C	697	-429
+        FM	0x101C	697	-404
+        FM	0x101C	697	-379
+        FM	0x101C	697	-354
+        FM	0x101C	697	-329
+        FM	0x101C	722	-454
+        FM	0x101C	722	-429
+        FM	0x101C	722	-404
+        FM	0x101C	722	-379
+        FM	0x101C	722	-354
+        FM	0x101C	722	-329
+        FM	0x101C	747	-454
+        FM	0x101C	747	-429
+        FM	0x101C	747	-404
+        FM	0x101C	747	-379
+        FM	0x101C	747	-354
+        FM	0x101C	747	-329
+        FM	0x1018	53	-304
+        FM	0x1018	872	-304	+FLIP_X
+        FM	0x101C	372	-304
+        FM	0x101C	397	-304
+        FM	0x1013	322	-637
+        FM	0x1013	347	-637
+        FM	0x1013	322	-279	+FLIP_Y
+        FM	0x1013	347	-279	+FLIP_Y
+        FM	0x101C	322	-454
+        FM	0x101C	322	-429
+        FM	0x101C	322	-404
+        FM	0x101C	322	-379
+        FM	0x101C	322	-354
+        FM	0x101C	322	-329
+        FM	0x101C	347	-454
+        FM	0x101C	347	-429
+        FM	0x101C	347	-404
+        FM	0x101C	347	-379
+        FM	0x101C	347	-354
+        FM	0x101C	347	-329
+        FM	0x101C	322	-304
+        FM	0x101C	347	-304
+        FM	0x1013	272	-637
+        FM	0x1013	297	-637
+        FM	0x1013	272	-279	+FLIP_Y
+        FM	0x1013	297	-279	+FLIP_Y
+        FM	0x101C	272	-454
+        FM	0x101C	272	-429
+        FM	0x101C	272	-404
+        FM	0x101C	272	-379
+        FM	0x101C	272	-354
+        FM	0x101C	272	-329
+        FM	0x101C	297	-454
+        FM	0x101C	297	-429
+        FM	0x101C	297	-404
+        FM	0x101C	297	-379
+        FM	0x101C	297	-354
+        FM	0x101C	297	-329
+        FM	0x101C	272	-304
+        FM	0x101C	297	-304
+        FM	0x101C	422	-304
+        FM	0x101C	447	-304
+        FM	0x101C	472	-304
+        FM	0x101C	497	-304
+        FM	0x101C	522	-304
+        FM	0x101C	547	-304
+        FM	0x101C	572	-304
+        FM	0x101C	597	-304
+        FM	0x101C	622	-304
+        FM	0x101C	647	-304
+        FM	0x101C	672	-304
+        FM	0x101C	697	-304
+        FM	0x101C	722	-304
+        FM	0x101C	747	-304
+        FM	0x1013	772	-637
+        FM	0x1013	797	-637
+        FM	0x1013	772	-279	+FLIP_Y
+        FM	0x1013	797	-279	+FLIP_Y
+        FM	0x101C	772	-454
+        FM	0x101C	772	-429
+        FM	0x101C	772	-404
+        FM	0x101C	772	-379
+        FM	0x101C	772	-354
+        FM	0x101C	772	-329
+        FM	0x101C	797	-454
+        FM	0x101C	797	-429
+        FM	0x101C	797	-404
+        FM	0x101C	797	-379
+        FM	0x101C	797	-354
+        FM	0x101C	797	-329
+        FM	0x101C	772	-304
+        FM	0x101C	797	-304
+        FM	0x1013	822	-637
+        FM	0x1013	847	-637
+        FM	0x1013	822	-279	+FLIP_Y
+        FM	0x1013	847	-279	+FLIP_Y
+        FM	0x101C	822	-454
+        FM	0x101C	822	-429
+        FM	0x101C	822	-404
+        FM	0x101C	822	-379
+        FM	0x101C	822	-354
+        FM	0x101C	822	-329
+        FM	0x101C	847	-454
+        FM	0x101C	847	-429
+        FM	0x101C	847	-404
+        FM	0x101C	847	-379
+        FM	0x101C	847	-354
+        FM	0x101C	847	-329
+        FM	0x101C	822	-304
+        FM	0x101C	847	-304
+    }
+
+    FRAME "dailyreward_background_decoration1" // Index = 1, FModules = 203
+    {
+        0x20BA
+        RC	63	-613	1083	-124
+        FM	0x1073	99	-523
+        FM	0x1073	861	-523	+FLIP_X
+        FM	0x1073	99	-265	+FLIP_Y
+        FM	0x1073	861	-265	+FLIP_X	+FLIP_Y
+        FM	0x1075	99	-340
+        FM	0x1075	99	-315
+        FM	0x1075	99	-290
+        FM	0x1075	861	-340	+FLIP_X
+        FM	0x1075	861	-315	+FLIP_X
+        FM	0x1075	861	-290	+FLIP_X
+        FM	0x1074	386	-523
+        FM	0x1074	411	-523
+        FM	0x1074	436	-523
+        FM	0x1074	461	-523
+        FM	0x1074	486	-523
+        FM	0x1074	511	-523
+        FM	0x1074	536	-523
+        FM	0x1074	561	-523
+        FM	0x1074	586	-523
+        FM	0x1074	611	-523
+        FM	0x1074	636	-523
+        FM	0x1074	386	-265	+FLIP_Y
+        FM	0x1074	411	-265	+FLIP_Y
+        FM	0x1074	436	-265	+FLIP_Y
+        FM	0x1074	461	-265	+FLIP_Y
+        FM	0x1074	486	-265	+FLIP_Y
+        FM	0x1074	511	-265	+FLIP_Y
+        FM	0x1074	536	-265	+FLIP_Y
+        FM	0x1074	561	-265	+FLIP_Y
+        FM	0x1074	586	-265	+FLIP_Y
+        FM	0x1074	611	-265	+FLIP_Y
+        FM	0x1074	636	-265	+FLIP_Y
+        FM	0x1076	386	-340
+        FM	0x1076	411	-340
+        FM	0x1076	436	-340
+        FM	0x1076	461	-340
+        FM	0x1076	486	-340
+        FM	0x1076	511	-340
+        FM	0x1076	536	-340
+        FM	0x1076	561	-340
+        FM	0x1076	586	-340
+        FM	0x1076	611	-340
+        FM	0x1076	636	-340
+        FM	0x1075	99	-365
+        FM	0x1075	861	-365	+FLIP_X
+        FM	0x1076	386	-365
+        FM	0x1076	411	-365
+        FM	0x1076	436	-365
+        FM	0x1076	461	-365
+        FM	0x1076	486	-365
+        FM	0x1076	511	-365
+        FM	0x1076	536	-365
+        FM	0x1076	561	-365
+        FM	0x1076	586	-365
+        FM	0x1076	611	-365
+        FM	0x1076	636	-365
+        FM	0x1075	99	-390
+        FM	0x1075	861	-390	+FLIP_X
+        FM	0x1076	386	-390
+        FM	0x1076	411	-390
+        FM	0x1076	436	-390
+        FM	0x1076	461	-390
+        FM	0x1076	486	-390
+        FM	0x1076	511	-390
+        FM	0x1076	536	-390
+        FM	0x1076	561	-390
+        FM	0x1076	586	-390
+        FM	0x1076	611	-390
+        FM	0x1076	636	-390
+        FM	0x1076	386	-315
+        FM	0x1076	411	-315
+        FM	0x1076	436	-315
+        FM	0x1076	461	-315
+        FM	0x1076	486	-315
+        FM	0x1076	511	-315
+        FM	0x1076	536	-315
+        FM	0x1076	561	-315
+        FM	0x1076	586	-315
+        FM	0x1076	611	-315
+        FM	0x1076	636	-315
+        FM	0x1076	386	-290
+        FM	0x1076	411	-290
+        FM	0x1074	336	-523
+        FM	0x1074	361	-523
+        FM	0x1074	336	-265	+FLIP_Y
+        FM	0x1074	361	-265	+FLIP_Y
+        FM	0x1076	336	-340
+        FM	0x1076	361	-340
+        FM	0x1076	336	-365
+        FM	0x1076	361	-365
+        FM	0x1076	336	-390
+        FM	0x1076	361	-390
+        FM	0x1076	336	-315
+        FM	0x1076	361	-315
+        FM	0x1076	336	-290
+        FM	0x1076	361	-290
+        FM	0x1074	286	-523
+        FM	0x1074	311	-523
+        FM	0x1074	286	-265	+FLIP_Y
+        FM	0x1074	311	-265	+FLIP_Y
+        FM	0x1076	286	-340
+        FM	0x1076	311	-340
+        FM	0x1076	286	-365
+        FM	0x1076	311	-365
+        FM	0x1076	286	-390
+        FM	0x1076	311	-390
+        FM	0x1076	286	-315
+        FM	0x1076	311	-315
+        FM	0x1076	286	-290
+        FM	0x1076	311	-290
+        FM	0x1076	436	-290
+        FM	0x1076	461	-290
+        FM	0x1076	486	-290
+        FM	0x1076	511	-290
+        FM	0x1076	536	-290
+        FM	0x1076	561	-290
+        FM	0x1076	586	-290
+        FM	0x1076	611	-290
+        FM	0x1076	636	-290
+        FM	0x1074	661	-523
+        FM	0x1074	661	-265	+FLIP_Y
+        FM	0x1076	661	-340
+        FM	0x1076	661	-365
+        FM	0x1076	661	-390
+        FM	0x1076	661	-315
+        FM	0x1076	661	-290
+        FM	0x1074	686	-523
+        FM	0x1074	686	-265	+FLIP_Y
+        FM	0x1076	686	-340
+        FM	0x1076	686	-365
+        FM	0x1076	686	-390
+        FM	0x1076	686	-315
+        FM	0x1076	686	-290
+        FM	0x1074	711	-523
+        FM	0x1074	711	-265	+FLIP_Y
+        FM	0x1076	711	-340
+        FM	0x1076	711	-365
+        FM	0x1076	711	-390
+        FM	0x1076	711	-315
+        FM	0x1076	711	-290
+        FM	0x1074	736	-523
+        FM	0x1074	736	-265	+FLIP_Y
+        FM	0x1076	736	-340
+        FM	0x1076	736	-365
+        FM	0x1076	736	-390
+        FM	0x1076	736	-315
+        FM	0x1076	736	-290
+        FM	0x1074	761	-523
+        FM	0x1074	761	-265	+FLIP_Y
+        FM	0x1076	761	-340
+        FM	0x1076	761	-365
+        FM	0x1076	761	-390
+        FM	0x1076	761	-315
+        FM	0x1076	761	-290
+        FM	0x1074	786	-523
+        FM	0x1074	786	-265	+FLIP_Y
+        FM	0x1076	786	-340
+        FM	0x1076	786	-365
+        FM	0x1076	786	-390
+        FM	0x1076	786	-315
+        FM	0x1076	786	-290
+        FM	0x1074	811	-523
+        FM	0x1074	811	-265	+FLIP_Y
+        FM	0x1076	811	-340
+        FM	0x1076	811	-365
+        FM	0x1076	811	-390
+        FM	0x1076	811	-315
+        FM	0x1076	811	-290
+        FM	0x1074	836	-523
+        FM	0x1074	836	-265	+FLIP_Y
+        FM	0x1076	836	-340
+        FM	0x1076	836	-365
+        FM	0x1076	836	-390
+        FM	0x1076	836	-315
+        FM	0x1076	836	-290
+        FM	0x1070	63	-605
+        FM	0x1070	1058	-604	+FLIP_X
+        FM	0x1071	88	-613
+        FM	0x1071	873	-612	+FLIP_X
+        FM	0x1072	373	-613
+        FM	0x1072	398	-613
+        FM	0x1072	323	-613
+        FM	0x1072	348	-613
+        FM	0x1072	273	-613
+        FM	0x1072	298	-613
+        FM	0x1072	423	-613
+        FM	0x1072	448	-613
+        FM	0x1072	473	-613
+        FM	0x1072	498	-613
+        FM	0x1072	523	-613
+        FM	0x1072	548	-613
+        FM	0x1072	573	-613
+        FM	0x1072	598	-613
+        FM	0x1072	623	-613
+        FM	0x1072	648	-613
+        FM	0x1072	673	-613
+        FM	0x1072	698	-613
+        FM	0x1072	723	-613
+        FM	0x1072	748	-613
+        FM	0x1072	773	-613
+        FM	0x1072	798	-613
+        FM	0x1072	823	-613
+        FM	0x1072	848	-613
+    }
+
+    FRAME "dailyreward_background_decoration2" // Index = 2, FModules = 2
+    {
+        0x20BB
+        RC	305	-636	831	-529
+        FM	0x1023	305	-636
+        FM	0x1023	568	-636	+FLIP_X
+    }
+
+    FRAME "dailyreward_list_area" // Index = 3, FModules = 0
+    {
+        0x2001
+        RC	148	-495	998	-152
+    }
+
+    FRAME "dailyreward_button_list" // Index = 4, FModules = 0
+    {
+        0x20A9
+        RC	163	-486	975	-380
+    }
+
+    FRAME "dailyreward_button_function1" // Index = 5, FModules = 3
+    {
+        0x2002
+        RC	166	-486	568	-380
+        FM	0x106B	166	-486
+        FM	0x1014	187	-467
+        FM	0x1007	176	-480
+    }
+
+    FRAME "dailyreward_button_function1_clicked" // Index = 6, FModules = 3
+    {
+        0x2007
+        RC	166	-486	568	-380
+        FM	0x106C	166	-486
+        FM	0x1014	187	-467
+        FM	0x1007	176	-480
+    }
+
+    FRAME "dailyreward_button_function1_got" // Index = 7, FModules = 3
+    {
+        0x2008
+        RC	166	-486	568	-380
+        FM	0x106D	166	-486
+        FM	0x1014	187	-467
+        FM	0x1007	176	-480
+    }
+
+    FRAME "dailyreward_icon_function1" // Index = 8, FModules = 0
+    {
+        0x2004
+        RC	187	-468	255	-398
+    }
+
+    FRAME "dailyreward_text_functionstate1" // Index = 9, FModules = 0
+    {
+        0x2006
+        RC	265	-470	551	-432
+    }
+
+    FRAME "dailyreward_text_functionname1" // Index = 10, FModules = 0
+    {
+        0x2005
+        RC	265	-432	551	-394
+    }
+
+    FRAME "dailyreward_button_function2" // Index = 11, FModules = 3
+    {
+        0x2003
+        RC	576	-486	978	-380
+        FM	0x106B	576	-486
+        FM	0x1014	597	-467
+        FM	0x1007	586	-480
+    }
+
+    FRAME "dailyreward_button_function2_clicked" // Index = 12, FModules = 3
+    {
+        0x2009
+        RC	576	-486	978	-380
+        FM	0x106C	576	-486
+        FM	0x1014	597	-467
+        FM	0x1007	586	-480
+    }
+
+    FRAME "dailyreward_button_function2_got" // Index = 13, FModules = 3
+    {
+        0x200A
+        RC	576	-486	978	-380
+        FM	0x106D	576	-486
+        FM	0x1014	597	-467
+        FM	0x1007	586	-480
+    }
+
+    FRAME "dailyreward_icon_function2" // Index = 14, FModules = 0
+    {
+        0x200B
+        RC	597	-468	665	-398
+    }
+
+    FRAME "dailyreward_text_functionstate2" // Index = 15, FModules = 0
+    {
+        0x200C
+        RC	675	-470	961	-432
+    }
+
+    FRAME "dailyreward_text_functionname2" // Index = 16, FModules = 0
+    {
+        0x200D
+        RC	675	-432	961	-394
+    }
+
+    FRAME "dailyreward_button_function3" // Index = 17, FModules = 3
+    {
+        0x209A
+        RC	166	-371	568	-265
+        FM	0x106B	166	-371
+        FM	0x1014	188	-353
+        FM	0x1007	176	-365
+    }
+
+    FRAME "dailyreward_button_function3_clicked" // Index = 18, FModules = 3
+    {
+        0x209B
+        RC	166	-371	568	-265
+        FM	0x106C	166	-371
+        FM	0x1014	188	-353
+        FM	0x1007	176	-365
+    }
+
+    FRAME "dailyreward_button_function3_got" // Index = 19, FModules = 3
+    {
+        0x20A6
+        RC	166	-371	568	-265
+        FM	0x106D	166	-371
+        FM	0x1014	188	-353
+        FM	0x1007	176	-365
+    }
+
+    FRAME "dailyreward_icon_function3" // Index = 20, FModules = 0
+    {
+        0x20A7
+        RC	187	-353	255	-283
+    }
+
+    FRAME "dailyreward_text_functionstate3" // Index = 21, FModules = 0
+    {
+        0x20C1
+        RC	265	-355	551	-317
+    }
+
+    FRAME "dailyreward_text_functionname3" // Index = 22, FModules = 0
+    {
+        0x20C2
+        RC	265	-317	551	-279
+    }
+
+    FRAME "dailyreward_button_function4" // Index = 23, FModules = 3
+    {
+        0x20C3
+        RC	576	-371	978	-265
+        FM	0x106B	576	-371
+        FM	0x1014	597	-352
+        FM	0x1007	586	-365
+    }
+
+    FRAME "dailyreward_button_function4_clicked" // Index = 24, FModules = 3
+    {
+        0x20C4
+        RC	576	-371	978	-265
+        FM	0x106C	576	-371
+        FM	0x1014	597	-352
+        FM	0x1007	586	-365
+    }
+
+    FRAME "dailyreward_button_function4_got" // Index = 25, FModules = 3
+    {
+        0x20C5
+        RC	576	-371	978	-265
+        FM	0x106D	576	-371
+        FM	0x1014	597	-352
+        FM	0x1007	586	-365
+    }
+
+    FRAME "dailyreward_icon_function4" // Index = 26, FModules = 0
+    {
+        0x20C6
+        RC	597	-353	665	-283
+    }
+
+    FRAME "dailyreward_text_functionstate4" // Index = 27, FModules = 0
+    {
+        0x20C7
+        RC	675	-355	961	-317
+    }
+
+    FRAME "dailyreward_text_functionname4" // Index = 28, FModules = 0
+    {
+        0x20C8
+        RC	675	-317	961	-279
+    }
+
+    FRAME "dailyreward_button_function5" // Index = 29, FModules = 3
+    {
+        0x20CF
+        RC	166	-256	568	-150
+        FM	0x106B	166	-256
+        FM	0x1014	187	-237
+        FM	0x1007	176	-250
+    }
+
+    FRAME "dailyreward_button_function5_clicked" // Index = 30, FModules = 3
+    {
+        0x20D0
+        RC	166	-256	568	-150
+        FM	0x106C	166	-256
+        FM	0x1014	187	-237
+        FM	0x1007	176	-250
+    }
+
+    FRAME "dailyreward_button_function5_got" // Index = 31, FModules = 3
+    {
+        0x20D1
+        RC	166	-256	568	-150
+        FM	0x106D	166	-256
+        FM	0x1014	187	-237
+        FM	0x1007	176	-250
+    }
+
+    FRAME "dailyreward_icon_function5" // Index = 32, FModules = 0
+    {
+        0x20D2
+        RC	187	-238	255	-168
+    }
+
+    FRAME "dailyreward_text_functionstate5" // Index = 33, FModules = 0
+    {
+        0x20D3
+        RC	265	-240	551	-202
+    }
+
+    FRAME "dailyreward_text_functionname5" // Index = 34, FModules = 0
+    {
+        0x20D4
+        RC	265	-202	551	-164
+    }
+
+    FRAME "dailyreward_button_function6" // Index = 35, FModules = 3
+    {
+        0x20C9
+        RC	576	-256	978	-150
+        FM	0x106B	576	-256
+        FM	0x1014	597	-237
+        FM	0x1007	586	-250
+    }
+
+    FRAME "dailyreward_button_function6_clicked" // Index = 36, FModules = 3
+    {
+        0x20CA
+        RC	576	-256	978	-150
+        FM	0x106C	576	-256
+        FM	0x1014	597	-237
+        FM	0x1007	586	-250
+    }
+
+    FRAME "dailyreward_button_function6_got" // Index = 37, FModules = 3
+    {
+        0x20CB
+        RC	576	-256	978	-150
+        FM	0x106D	576	-256
+        FM	0x1014	597	-237
+        FM	0x1007	586	-250
+    }
+
+    FRAME "dailyreward_icon_function6" // Index = 38, FModules = 0
+    {
+        0x20CC
+        RC	597	-238	665	-168
+    }
+
+    FRAME "dailyreward_text_functionstate6" // Index = 39, FModules = 0
+    {
+        0x20CD
+        RC	675	-240	961	-202
+    }
+
+    FRAME "dailyreward_text_functionname6" // Index = 40, FModules = 0
+    {
+        0x20CE
+        RC	675	-202	961	-164
+    }
+
+    FRAME "dailyreward_text_title" // Index = 41, FModules = 2
+    {
+        0x2000
+        RC	480	-601	655	-551
+        FM	0x1023	305	-636
+        FM	0x1023	568	-636	+FLIP_X
+    }
+
+    FRAME "dailyreward_close" // Index = 42, FModules = 1
+    {
+        0x22EE
+        RC	1010	-640	1097	-554
+        FM	0x100E	1010	-640
+    }
+
+    FRAME "dailyreward_close_clicked" // Index = 43, FModules = 1
+    {
+        0x22EF
+        RC	1010	-640	1097	-554
+        FM	0x100F	1010	-640
+    }
+
+    FRAME "loginreward_background" // Index = 44, FModules = 230
+    {
+        0x200E
+        RC	86	-641	1062	-93
+        FM	0x105C	86	-613
+        FM	0x105C	86	-163	+FLIP_Y
+        FM	0x105C	992	-613	+FLIP_X
+        FM	0x105C	992	-163	+FLIP_X	+FLIP_Y
+        FM	0x105E	86	-543
+        FM	0x105E	86	-505
+        FM	0x105E	86	-467
+        FM	0x105E	86	-429
+        FM	0x105E	86	-391
+        FM	0x105E	86	-353
+        FM	0x105E	86	-315
+        FM	0x105E	86	-277
+        FM	0x105E	86	-239
+        FM	0x105E	86	-201
+        FM	0x105E	992	-543	+FLIP_X
+        FM	0x105E	992	-505	+FLIP_X
+        FM	0x105E	992	-467	+FLIP_X
+        FM	0x105E	992	-429	+FLIP_X
+        FM	0x105E	992	-391	+FLIP_X
+        FM	0x105E	992	-353	+FLIP_X
+        FM	0x105E	992	-315	+FLIP_X
+        FM	0x105E	992	-277	+FLIP_X
+        FM	0x105E	992	-239	+FLIP_X
+        FM	0x105E	992	-201	+FLIP_X
+        FM	0x105D	194	-613
+        FM	0x105D	156	-613
+        FM	0x105D	232	-613
+        FM	0x105D	270	-613
+        FM	0x105D	308	-613
+        FM	0x105D	346	-613
+        FM	0x105D	384	-613
+        FM	0x105D	422	-613
+        FM	0x105D	460	-613
+        FM	0x105D	498	-613
+        FM	0x105D	536	-613
+        FM	0x105D	574	-613
+        FM	0x105D	612	-613
+        FM	0x105D	650	-613
+        FM	0x105D	688	-613
+        FM	0x105D	726	-613
+        FM	0x105D	764	-613
+        FM	0x105D	802	-613
+        FM	0x105D	840	-613
+        FM	0x105D	878	-613
+        FM	0x105D	916	-613
+        FM	0x105D	954	-613
+        FM	0x105D	194	-163	+FLIP_Y
+        FM	0x105D	156	-163	+FLIP_Y
+        FM	0x105D	232	-163	+FLIP_Y
+        FM	0x105D	270	-163	+FLIP_Y
+        FM	0x105D	308	-163	+FLIP_Y
+        FM	0x105D	346	-163	+FLIP_Y
+        FM	0x105D	384	-163	+FLIP_Y
+        FM	0x105D	422	-163	+FLIP_Y
+        FM	0x105D	460	-163	+FLIP_Y
+        FM	0x105D	498	-163	+FLIP_Y
+        FM	0x105D	536	-163	+FLIP_Y
+        FM	0x105D	574	-163	+FLIP_Y
+        FM	0x105D	612	-163	+FLIP_Y
+        FM	0x105D	650	-163	+FLIP_Y
+        FM	0x105D	688	-163	+FLIP_Y
+        FM	0x105D	726	-163	+FLIP_Y
+        FM	0x105D	764	-163	+FLIP_Y
+        FM	0x105D	802	-163	+FLIP_Y
+        FM	0x105D	840	-163	+FLIP_Y
+        FM	0x105D	878	-163	+FLIP_Y
+        FM	0x105D	916	-163	+FLIP_Y
+        FM	0x105D	954	-163	+FLIP_Y
+        FM	0x105F	156	-543
+        FM	0x105F	194	-543
+        FM	0x105F	156	-505
+        FM	0x105F	194	-505
+        FM	0x105F	232	-543
+        FM	0x105F	270	-543
+        FM	0x105F	232	-505
+        FM	0x105F	270	-505
+        FM	0x105F	156	-467
+        FM	0x105F	194	-467
+        FM	0x105F	156	-429
+        FM	0x105F	194	-429
+        FM	0x105F	232	-467
+        FM	0x105F	270	-467
+        FM	0x105F	232	-429
+        FM	0x105F	270	-429
+        FM	0x105F	308	-543
+        FM	0x105F	346	-543
+        FM	0x105F	308	-505
+        FM	0x105F	346	-505
+        FM	0x105F	384	-543
+        FM	0x105F	422	-543
+        FM	0x105F	384	-505
+        FM	0x105F	422	-505
+        FM	0x105F	308	-467
+        FM	0x105F	346	-467
+        FM	0x105F	308	-429
+        FM	0x105F	346	-429
+        FM	0x105F	384	-467
+        FM	0x105F	422	-467
+        FM	0x105F	384	-429
+        FM	0x105F	422	-429
+        FM	0x105F	156	-391
+        FM	0x105F	194	-391
+        FM	0x105F	156	-353
+        FM	0x105F	194	-353
+        FM	0x105F	232	-391
+        FM	0x105F	270	-391
+        FM	0x105F	232	-353
+        FM	0x105F	270	-353
+        FM	0x105F	156	-315
+        FM	0x105F	194	-315
+        FM	0x105F	156	-277
+        FM	0x105F	194	-277
+        FM	0x105F	232	-315
+        FM	0x105F	270	-315
+        FM	0x105F	232	-277
+        FM	0x105F	270	-277
+        FM	0x105F	308	-391
+        FM	0x105F	346	-391
+        FM	0x105F	308	-353
+        FM	0x105F	346	-353
+        FM	0x105F	384	-391
+        FM	0x105F	422	-391
+        FM	0x105F	384	-353
+        FM	0x105F	422	-353
+        FM	0x105F	308	-315
+        FM	0x105F	346	-315
+        FM	0x105F	308	-277
+        FM	0x105F	346	-277
+        FM	0x105F	384	-315
+        FM	0x105F	422	-315
+        FM	0x105F	384	-277
+        FM	0x105F	422	-277
+        FM	0x105F	156	-239
+        FM	0x105F	194	-239
+        FM	0x105F	156	-201
+        FM	0x105F	194	-201
+        FM	0x105F	232	-239
+        FM	0x105F	270	-239
+        FM	0x105F	232	-201
+        FM	0x105F	270	-201
+        FM	0x105F	308	-239
+        FM	0x105F	346	-239
+        FM	0x105F	308	-201
+        FM	0x105F	346	-201
+        FM	0x105F	384	-239
+        FM	0x105F	422	-239
+        FM	0x105F	384	-201
+        FM	0x105F	422	-201
+        FM	0x105F	460	-543
+        FM	0x105F	498	-543
+        FM	0x105F	460	-505
+        FM	0x105F	498	-505
+        FM	0x105F	536	-543
+        FM	0x105F	574	-543
+        FM	0x105F	536	-505
+        FM	0x105F	574	-505
+        FM	0x105F	460	-467
+        FM	0x105F	498	-467
+        FM	0x105F	460	-429
+        FM	0x105F	498	-429
+        FM	0x105F	536	-467
+        FM	0x105F	574	-467
+        FM	0x105F	536	-429
+        FM	0x105F	574	-429
+        FM	0x105F	612	-543
+        FM	0x105F	650	-543
+        FM	0x105F	612	-505
+        FM	0x105F	650	-505
+        FM	0x105F	688	-543
+        FM	0x105F	726	-543
+        FM	0x105F	688	-505
+        FM	0x105F	726	-505
+        FM	0x105F	612	-467
+        FM	0x105F	650	-467
+        FM	0x105F	612	-429
+        FM	0x105F	650	-429
+        FM	0x105F	688	-467
+        FM	0x105F	726	-467
+        FM	0x105F	688	-429
+        FM	0x105F	726	-429
+        FM	0x105F	460	-391
+        FM	0x105F	498	-391
+        FM	0x105F	460	-353
+        FM	0x105F	498	-353
+        FM	0x105F	536	-391
+        FM	0x105F	574	-391
+        FM	0x105F	536	-353
+        FM	0x105F	574	-353
+        FM	0x105F	460	-315
+        FM	0x105F	498	-315
+        FM	0x105F	460	-277
+        FM	0x105F	498	-277
+        FM	0x105F	536	-315
+        FM	0x105F	574	-315
+        FM	0x105F	536	-277
+        FM	0x105F	574	-277
+        FM	0x105F	612	-391
+        FM	0x105F	650	-391
+        FM	0x105F	612	-353
+        FM	0x105F	650	-353
+        FM	0x105F	688	-391
+        FM	0x105F	726	-391
+        FM	0x105F	688	-353
+        FM	0x105F	726	-353
+        FM	0x105F	612	-315
+        FM	0x105F	650	-315
+        FM	0x105F	612	-277
+        FM	0x105F	650	-277
+        FM	0x105F	688	-315
+        FM	0x105F	726	-315
+        FM	0x105F	688	-277
+        FM	0x105F	726	-277
+        FM	0x105F	460	-239
+        FM	0x105F	498	-239
+        FM	0x105F	460	-201
+        FM	0x105F	498	-201
+        FM	0x105F	536	-239
+        FM	0x105F	574	-239
+        FM	0x105F	536	-201
+        FM	0x105F	574	-201
+        FM	0x105F	612	-239
+        FM	0x105F	650	-239
+        FM	0x105F	612	-201
+        FM	0x105F	650	-201
+        FM	0x105F	688	-239
+        FM	0x105F	726	-239
+        FM	0x105F	688	-201
+        FM	0x105F	726	-201
+        FM	0x109F	414	-641
+        FM	0x109F	568	-641	+FLIP_X
+    }
+
+    FRAME "loginreward_background2" // Index = 45, FModules = 60
+    {
+        0x200F
+        RC	764	-543	992	-163
+        FM	0x105F	764	-543
+        FM	0x105F	802	-543
+        FM	0x105F	764	-505
+        FM	0x105F	802	-505
+        FM	0x105F	764	-467
+        FM	0x105F	802	-467
+        FM	0x105F	764	-429
+        FM	0x105F	802	-429
+        FM	0x105F	840	-543
+        FM	0x105F	878	-543
+        FM	0x105F	840	-505
+        FM	0x105F	878	-505
+        FM	0x105F	916	-543
+        FM	0x105F	954	-543
+        FM	0x105F	916	-505
+        FM	0x105F	954	-505
+        FM	0x105F	840	-467
+        FM	0x105F	878	-467
+        FM	0x105F	840	-429
+        FM	0x105F	878	-429
+        FM	0x105F	916	-467
+        FM	0x105F	954	-467
+        FM	0x105F	916	-429
+        FM	0x105F	954	-429
+        FM	0x105F	764	-391
+        FM	0x105F	802	-391
+        FM	0x105F	764	-353
+        FM	0x105F	802	-353
+        FM	0x105F	764	-315
+        FM	0x105F	802	-315
+        FM	0x105F	764	-277
+        FM	0x105F	802	-277
+        FM	0x105F	840	-391
+        FM	0x105F	878	-391
+        FM	0x105F	840	-353
+        FM	0x105F	878	-353
+        FM	0x105F	916	-391
+        FM	0x105F	954	-391
+        FM	0x105F	916	-353
+        FM	0x105F	954	-353
+        FM	0x105F	840	-315
+        FM	0x105F	878	-315
+        FM	0x105F	840	-277
+        FM	0x105F	878	-277
+        FM	0x105F	916	-315
+        FM	0x105F	954	-315
+        FM	0x105F	916	-277
+        FM	0x105F	954	-277
+        FM	0x105F	764	-239
+        FM	0x105F	802	-239
+        FM	0x105F	764	-201
+        FM	0x105F	802	-201
+        FM	0x105F	840	-239
+        FM	0x105F	878	-239
+        FM	0x105F	840	-201
+        FM	0x105F	878	-201
+        FM	0x105F	916	-239
+        FM	0x105F	954	-239
+        FM	0x105F	916	-201
+        FM	0x105F	954	-201
+    }
+
+    FRAME "loginreward_text_title" // Index = 46, FModules = 0
+    {
+        0x2011
+        RC	481	-628	653	-586
+    }
+
+    FRAME "loginreward_background_decoration1" // Index = 47, FModules = 225
+    {
+        0x2010
+        RC	98	-563	1049	-106
+        FM	0x107A	99	-563
+        FM	0x107A	99	-247	+FLIP_Y
+        FM	0x107A	861	-563	+FLIP_X
+        FM	0x107A	861	-247	+FLIP_X	+FLIP_Y
+        FM	0x107B	98	-422
+        FM	0x107B	98	-397
+        FM	0x107B	98	-372
+        FM	0x107B	98	-347
+        FM	0x107B	98	-322
+        FM	0x107B	98	-297
+        FM	0x107B	98	-272
+        FM	0x107B	861	-422	+FLIP_X
+        FM	0x107B	861	-397	+FLIP_X
+        FM	0x107B	861	-372	+FLIP_X
+        FM	0x107B	861	-347	+FLIP_X
+        FM	0x107B	861	-322	+FLIP_X
+        FM	0x107B	861	-297	+FLIP_X
+        FM	0x107B	861	-272	+FLIP_X
+        FM	0x107D	286	-563
+        FM	0x107D	311	-563
+        FM	0x107D	336	-563
+        FM	0x107D	361	-563
+        FM	0x107D	386	-563
+        FM	0x107D	411	-563
+        FM	0x107D	436	-563
+        FM	0x107D	461	-563
+        FM	0x107D	486	-563
+        FM	0x107D	511	-563
+        FM	0x107D	536	-563
+        FM	0x107D	561	-563
+        FM	0x107D	586	-563
+        FM	0x107D	611	-563
+        FM	0x107D	636	-563
+        FM	0x107D	661	-563
+        FM	0x107D	686	-563
+        FM	0x107D	711	-563
+        FM	0x107D	736	-563
+        FM	0x107D	761	-563
+        FM	0x107D	786	-563
+        FM	0x107D	811	-563
+        FM	0x107D	836	-563
+        FM	0x107D	286	-247	+FLIP_Y
+        FM	0x107D	311	-247	+FLIP_Y
+        FM	0x107D	336	-247	+FLIP_Y
+        FM	0x107D	361	-247	+FLIP_Y
+        FM	0x107D	386	-247	+FLIP_Y
+        FM	0x107D	411	-247	+FLIP_Y
+        FM	0x107D	436	-247	+FLIP_Y
+        FM	0x107D	461	-247	+FLIP_Y
+        FM	0x107D	486	-247	+FLIP_Y
+        FM	0x107D	511	-247	+FLIP_Y
+        FM	0x107D	536	-247	+FLIP_Y
+        FM	0x107D	561	-247	+FLIP_Y
+        FM	0x107D	586	-247	+FLIP_Y
+        FM	0x107D	611	-247	+FLIP_Y
+        FM	0x107D	636	-247	+FLIP_Y
+        FM	0x107D	661	-247	+FLIP_Y
+        FM	0x107D	686	-247	+FLIP_Y
+        FM	0x107D	711	-247	+FLIP_Y
+        FM	0x107D	736	-247	+FLIP_Y
+        FM	0x107D	761	-247	+FLIP_Y
+        FM	0x107D	786	-247	+FLIP_Y
+        FM	0x107D	811	-247	+FLIP_Y
+        FM	0x107D	836	-247	+FLIP_Y
+        FM	0x107C	286	-422
+        FM	0x107C	311	-422
+        FM	0x107C	336	-422
+        FM	0x107C	361	-422
+        FM	0x107C	286	-397
+        FM	0x107C	311	-397
+        FM	0x107C	336	-397
+        FM	0x107C	361	-397
+        FM	0x107C	286	-372
+        FM	0x107C	311	-372
+        FM	0x107C	336	-372
+        FM	0x107C	361	-372
+        FM	0x107C	286	-347
+        FM	0x107C	311	-347
+        FM	0x107C	336	-347
+        FM	0x107C	361	-347
+        FM	0x107C	386	-422
+        FM	0x107C	411	-422
+        FM	0x107C	436	-422
+        FM	0x107C	461	-422
+        FM	0x107C	386	-397
+        FM	0x107C	411	-397
+        FM	0x107C	436	-397
+        FM	0x107C	461	-397
+        FM	0x107C	386	-372
+        FM	0x107C	411	-372
+        FM	0x107C	436	-372
+        FM	0x107C	461	-372
+        FM	0x107C	386	-347
+        FM	0x107C	411	-347
+        FM	0x107C	436	-347
+        FM	0x107C	461	-347
+        FM	0x107C	486	-422
+        FM	0x107C	511	-422
+        FM	0x107C	536	-422
+        FM	0x107C	561	-422
+        FM	0x107C	486	-397
+        FM	0x107C	511	-397
+        FM	0x107C	536	-397
+        FM	0x107C	561	-397
+        FM	0x107C	486	-372
+        FM	0x107C	511	-372
+        FM	0x107C	536	-372
+        FM	0x107C	561	-372
+        FM	0x107C	486	-347
+        FM	0x107C	511	-347
+        FM	0x107C	536	-347
+        FM	0x107C	561	-347
+        FM	0x107C	586	-422
+        FM	0x107C	611	-422
+        FM	0x107C	636	-422
+        FM	0x107C	661	-422
+        FM	0x107C	586	-397
+        FM	0x107C	611	-397
+        FM	0x107C	636	-397
+        FM	0x107C	661	-397
+        FM	0x107C	586	-372
+        FM	0x107C	611	-372
+        FM	0x107C	636	-372
+        FM	0x107C	661	-372
+        FM	0x107C	586	-347
+        FM	0x107C	611	-347
+        FM	0x107C	636	-347
+        FM	0x107C	661	-347
+        FM	0x107C	686	-422
+        FM	0x107C	711	-422
+        FM	0x107C	736	-422
+        FM	0x107C	686	-397
+        FM	0x107C	711	-397
+        FM	0x107C	736	-397
+        FM	0x107C	686	-372
+        FM	0x107C	711	-372
+        FM	0x107C	736	-372
+        FM	0x107C	686	-347
+        FM	0x107C	711	-347
+        FM	0x107C	736	-347
+        FM	0x107C	761	-422
+        FM	0x107C	786	-422
+        FM	0x107C	811	-422
+        FM	0x107C	836	-422
+        FM	0x107C	761	-397
+        FM	0x107C	786	-397
+        FM	0x107C	811	-397
+        FM	0x107C	836	-397
+        FM	0x107C	761	-372
+        FM	0x107C	786	-372
+        FM	0x107C	811	-372
+        FM	0x107C	836	-372
+        FM	0x107C	761	-347
+        FM	0x107C	786	-347
+        FM	0x107C	811	-347
+        FM	0x107C	836	-347
+        FM	0x107C	286	-322
+        FM	0x107C	311	-322
+        FM	0x107C	336	-322
+        FM	0x107C	361	-322
+        FM	0x107C	286	-297
+        FM	0x107C	311	-297
+        FM	0x107C	336	-297
+        FM	0x107C	361	-297
+        FM	0x107C	286	-272
+        FM	0x107C	311	-272
+        FM	0x107C	336	-272
+        FM	0x107C	361	-272
+        FM	0x107C	386	-322
+        FM	0x107C	411	-322
+        FM	0x107C	436	-322
+        FM	0x107C	461	-322
+        FM	0x107C	386	-297
+        FM	0x107C	411	-297
+        FM	0x107C	436	-297
+        FM	0x107C	461	-297
+        FM	0x107C	386	-272
+        FM	0x107C	411	-272
+        FM	0x107C	436	-272
+        FM	0x107C	461	-272
+        FM	0x107C	486	-322
+        FM	0x107C	511	-322
+        FM	0x107C	536	-322
+        FM	0x107C	561	-322
+        FM	0x107C	486	-297
+        FM	0x107C	511	-297
+        FM	0x107C	536	-297
+        FM	0x107C	561	-297
+        FM	0x107C	486	-272
+        FM	0x107C	511	-272
+        FM	0x107C	536	-272
+        FM	0x107C	561	-272
+        FM	0x107C	586	-322
+        FM	0x107C	611	-322
+        FM	0x107C	636	-322
+        FM	0x107C	661	-322
+        FM	0x107C	586	-297
+        FM	0x107C	611	-297
+        FM	0x107C	636	-297
+        FM	0x107C	661	-297
+        FM	0x107C	586	-272
+        FM	0x107C	611	-272
+        FM	0x107C	636	-272
+        FM	0x107C	661	-272
+        FM	0x107C	686	-322
+        FM	0x107C	711	-322
+        FM	0x107C	736	-322
+        FM	0x107C	686	-297
+        FM	0x107C	711	-297
+        FM	0x107C	736	-297
+        FM	0x107C	686	-272
+        FM	0x107C	711	-272
+        FM	0x107C	736	-272
+        FM	0x107C	761	-322
+        FM	0x107C	786	-322
+        FM	0x107C	811	-322
+        FM	0x107C	836	-322
+        FM	0x107C	761	-297
+        FM	0x107C	786	-297
+        FM	0x107C	811	-297
+        FM	0x107C	836	-297
+        FM	0x107C	761	-272
+        FM	0x107C	786	-272
+        FM	0x107C	811	-272
+        FM	0x107C	836	-272
+    }
+
+    FRAME "loginreward_list_area" // Index = 48, FModules = 0
+    {
+        0x20EA
+        RC	107	-536	1045	-126
+    }
+
+    FRAME "loginreward_frame_line1" // Index = 49, FModules = 0
+    {
+        0x20EB
+        RC	107	-536	1045	-443
+    }
+
+    FRAME "loginreward_frame_rewardday1" // Index = 50, FModules = 27
+    {
+        0x2014
+        RC	109	-536	565	-443
+        FM	0x1078	161	-534
+        FM	0x1078	177	-534
+        FM	0x1078	193	-534
+        FM	0x1078	209	-534
+        FM	0x1078	225	-534
+        FM	0x1078	241	-534
+        FM	0x1078	257	-534
+        FM	0x1078	273	-534
+        FM	0x1078	289	-534
+        FM	0x1078	305	-534
+        FM	0x1078	321	-534
+        FM	0x1078	337	-534
+        FM	0x1078	353	-534
+        FM	0x1078	369	-534
+        FM	0x1078	385	-534
+        FM	0x1078	401	-534
+        FM	0x1078	417	-534
+        FM	0x1078	433	-534
+        FM	0x1078	449	-534
+        FM	0x1078	465	-534
+        FM	0x1078	481	-534
+        FM	0x1078	497	-534
+        FM	0x1078	513	-534
+        FM	0x1078	529	-534
+        FM	0x1079	545	-534
+        FM	0x1014	120	-523
+        FM	0x1007	109	-536
+    }
+
+    FRAME "loginreward_icon_rewardday1" // Index = 51, FModules = 0
+    {
+        0x2015
+        RC	120	-523	190	-454
+    }
+
+    FRAME "loginreward_text_rewardday1" // Index = 52, FModules = 0
+    {
+        0x201A
+        RC	107	-476	203	-444
+    }
+
+    FRAME "loginreward_icon_day1_reward1" // Index = 53, FModules = 0
+    {
+        0x2017
+        RC	205	-516	229	-492
+    }
+
+    FRAME "loginreward_num_day1_reward1" // Index = 54, FModules = 0
+    {
+        0x2018
+        RC	232	-518	304	-490
+    }
+
+    FRAME "loginreward_icon_day1_reward2" // Index = 55, FModules = 0
+    {
+        0x2016
+        RC	315	-516	339	-492
+    }
+
+    FRAME "loginreward_num_day1_reward2" // Index = 56, FModules = 0
+    {
+        0x201B
+        RC	342	-518	414	-490
+    }
+
+    FRAME "loginreward_icon_day1_reward3" // Index = 57, FModules = 0
+    {
+        0x201C
+        RC	205	-486	229	-462
+    }
+
+    FRAME "loginreward_num_day1_reward3" // Index = 58, FModules = 0
+    {
+        0x201D
+        RC	232	-488	304	-460
+    }
+
+    FRAME "loginreward_icon_day1_reward4" // Index = 59, FModules = 0
+    {
+        0x201E
+        RC	315	-486	339	-462
+    }
+
+    FRAME "loginreward_num_day1_reward4" // Index = 60, FModules = 0
+    {
+        0x201F
+        RC	342	-488	414	-460
+    }
+
+    FRAME "loginreward_button_getreward1" // Index = 61, FModules = 2
+    {
+        0x2019
+        RC	425	-524	557	-454
+        FM	0x1010	425	-524
+        FM	0x1010	491	-524	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward1_clicked" // Index = 62, FModules = 2
+    {
+        0x2020
+        RC	425	-524	557	-454
+        FM	0x1011	425	-524
+        FM	0x1011	491	-524	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward1_cantget" // Index = 63, FModules = 2
+    {
+        0x2021
+        RC	425	-524	557	-454
+        FM	0x10B1	425	-524
+        FM	0x10B1	491	-524	+FLIP_X
+    }
+
+    FRAME "loginreward_text_getreward1" // Index = 64, FModules = 0
+    {
+        0x2022
+        RC	437	-513	545	-466
+    }
+
+    FRAME "loginreward_frame_rewardday2" // Index = 65, FModules = 27
+    {
+        0x2024
+        RC	579	-536	1035	-443
+        FM	0x1078	631	-534
+        FM	0x1078	647	-534
+        FM	0x1078	663	-534
+        FM	0x1078	679	-534
+        FM	0x1078	695	-534
+        FM	0x1078	711	-534
+        FM	0x1078	727	-534
+        FM	0x1078	743	-534
+        FM	0x1078	759	-534
+        FM	0x1078	775	-534
+        FM	0x1078	791	-534
+        FM	0x1078	807	-534
+        FM	0x1078	823	-534
+        FM	0x1078	839	-534
+        FM	0x1078	855	-534
+        FM	0x1078	871	-534
+        FM	0x1078	887	-534
+        FM	0x1078	903	-534
+        FM	0x1078	919	-534
+        FM	0x1078	935	-534
+        FM	0x1078	951	-534
+        FM	0x1078	967	-534
+        FM	0x1078	983	-534
+        FM	0x1078	999	-534
+        FM	0x1079	1015	-534
+        FM	0x1014	590	-523
+        FM	0x1007	579	-536
+    }
+
+    FRAME "loginreward_icon_rewardday2" // Index = 66, FModules = 0
+    {
+        0x2025
+        RC	590	-523	660	-454
+    }
+
+    FRAME "loginreward_text_rewardday2" // Index = 67, FModules = 0
+    {
+        0x2026
+        RC	577	-476	673	-444
+    }
+
+    FRAME "loginreward_icon_day2_reward1" // Index = 68, FModules = 0
+    {
+        0x2027
+        RC	675	-516	699	-492
+    }
+
+    FRAME "loginreward_num_day2_reward1" // Index = 69, FModules = 0
+    {
+        0x2028
+        RC	702	-518	774	-490
+    }
+
+    FRAME "loginreward_icon_day2_reward2" // Index = 70, FModules = 0
+    {
+        0x2029
+        RC	785	-516	809	-492
+    }
+
+    FRAME "loginreward_num_day2_reward2" // Index = 71, FModules = 0
+    {
+        0x202A
+        RC	812	-518	884	-490
+    }
+
+    FRAME "loginreward_icon_day2_reward3" // Index = 72, FModules = 0
+    {
+        0x202B
+        RC	675	-486	699	-462
+    }
+
+    FRAME "loginreward_num_day2_reward3" // Index = 73, FModules = 0
+    {
+        0x202C
+        RC	702	-488	774	-460
+    }
+
+    FRAME "loginreward_icon_day2_reward4" // Index = 74, FModules = 0
+    {
+        0x202D
+        RC	785	-486	809	-462
+    }
+
+    FRAME "loginreward_num_day2_reward4" // Index = 75, FModules = 0
+    {
+        0x202E
+        RC	812	-488	884	-460
+    }
+
+    FRAME "loginreward_button_getreward2" // Index = 76, FModules = 2
+    {
+        0x202F
+        RC	895	-524	1027	-454
+        FM	0x1010	895	-524
+        FM	0x1010	961	-524	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward2_clicked" // Index = 77, FModules = 2
+    {
+        0x2030
+        RC	895	-524	1027	-454
+        FM	0x1011	895	-524
+        FM	0x1011	961	-524	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward2_cantget" // Index = 78, FModules = 2
+    {
+        0x2031
+        RC	895	-524	1027	-454
+        FM	0x10B1	895	-524
+        FM	0x10B1	961	-524	+FLIP_X
+    }
+
+    FRAME "loginreward_text_getreward2" // Index = 79, FModules = 0
+    {
+        0x2032
+        RC	907	-513	1015	-466
+    }
+
+    FRAME "loginreward_frame_rewardday3" // Index = 80, FModules = 27
+    {
+        0x2033
+        RC	109	-431	565	-338
+        FM	0x1078	161	-429
+        FM	0x1078	177	-429
+        FM	0x1078	193	-429
+        FM	0x1078	209	-429
+        FM	0x1078	225	-429
+        FM	0x1078	241	-429
+        FM	0x1078	257	-429
+        FM	0x1078	273	-429
+        FM	0x1078	289	-429
+        FM	0x1078	305	-429
+        FM	0x1078	321	-429
+        FM	0x1078	337	-429
+        FM	0x1078	353	-429
+        FM	0x1078	369	-429
+        FM	0x1078	385	-429
+        FM	0x1078	401	-429
+        FM	0x1078	417	-429
+        FM	0x1078	433	-429
+        FM	0x1078	449	-429
+        FM	0x1078	465	-429
+        FM	0x1078	481	-429
+        FM	0x1078	497	-429
+        FM	0x1078	513	-429
+        FM	0x1078	529	-429
+        FM	0x1079	545	-429
+        FM	0x1014	120	-418
+        FM	0x1007	109	-431
+    }
+
+    FRAME "loginreward_icon_rewardday3" // Index = 81, FModules = 0
+    {
+        0x2034
+        RC	120	-418	190	-349
+    }
+
+    FRAME "loginreward_text_rewardday3" // Index = 82, FModules = 0
+    {
+        0x2035
+        RC	107	-371	203	-339
+    }
+
+    FRAME "loginreward_icon_day3_reward1" // Index = 83, FModules = 0
+    {
+        0x2036
+        RC	205	-411	229	-387
+    }
+
+    FRAME "loginreward_num_day3_reward1" // Index = 84, FModules = 0
+    {
+        0x2037
+        RC	232	-413	304	-385
+    }
+
+    FRAME "loginreward_icon_day3_reward2" // Index = 85, FModules = 0
+    {
+        0x2038
+        RC	315	-411	339	-387
+    }
+
+    FRAME "loginreward_num_day3_reward2" // Index = 86, FModules = 0
+    {
+        0x2039
+        RC	342	-413	414	-385
+    }
+
+    FRAME "loginreward_icon_day3_reward3" // Index = 87, FModules = 0
+    {
+        0x203A
+        RC	205	-381	229	-357
+    }
+
+    FRAME "loginreward_num_day3_reward3" // Index = 88, FModules = 0
+    {
+        0x203B
+        RC	232	-383	304	-355
+    }
+
+    FRAME "loginreward_icon_day3_reward4" // Index = 89, FModules = 0
+    {
+        0x203C
+        RC	315	-381	339	-357
+    }
+
+    FRAME "loginreward_num_day3_reward4" // Index = 90, FModules = 0
+    {
+        0x203D
+        RC	342	-383	414	-355
+    }
+
+    FRAME "loginreward_button_getreward3" // Index = 91, FModules = 2
+    {
+        0x203E
+        RC	425	-419	557	-349
+        FM	0x1010	425	-419
+        FM	0x1010	491	-419	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward3_clicked" // Index = 92, FModules = 2
+    {
+        0x203F
+        RC	425	-419	557	-349
+        FM	0x1011	425	-419
+        FM	0x1011	491	-419	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward3_cantget" // Index = 93, FModules = 2
+    {
+        0x2040
+        RC	425	-419	557	-349
+        FM	0x10B1	425	-419
+        FM	0x10B1	491	-419	+FLIP_X
+    }
+
+    FRAME "loginreward_text_getreward3" // Index = 94, FModules = 0
+    {
+        0x2041
+        RC	437	-408	545	-361
+    }
+
+    FRAME "loginreward_frame_rewardday4" // Index = 95, FModules = 27
+    {
+        0x2042
+        RC	579	-431	1035	-338
+        FM	0x1078	631	-429
+        FM	0x1078	647	-429
+        FM	0x1078	663	-429
+        FM	0x1078	679	-429
+        FM	0x1078	695	-429
+        FM	0x1078	711	-429
+        FM	0x1078	727	-429
+        FM	0x1078	743	-429
+        FM	0x1078	759	-429
+        FM	0x1078	775	-429
+        FM	0x1078	791	-429
+        FM	0x1078	807	-429
+        FM	0x1078	823	-429
+        FM	0x1078	839	-429
+        FM	0x1078	855	-429
+        FM	0x1078	871	-429
+        FM	0x1078	887	-429
+        FM	0x1078	903	-429
+        FM	0x1078	919	-429
+        FM	0x1078	935	-429
+        FM	0x1078	951	-429
+        FM	0x1078	967	-429
+        FM	0x1078	983	-429
+        FM	0x1078	999	-429
+        FM	0x1079	1015	-429
+        FM	0x1014	590	-418
+        FM	0x1007	579	-431
+    }
+
+    FRAME "loginreward_icon_rewardday4" // Index = 96, FModules = 0
+    {
+        0x2043
+        RC	590	-418	660	-349
+    }
+
+    FRAME "loginreward_text_rewardday4" // Index = 97, FModules = 0
+    {
+        0x2044
+        RC	577	-371	673	-339
+    }
+
+    FRAME "loginreward_icon_day4_reward1" // Index = 98, FModules = 0
+    {
+        0x2045
+        RC	675	-411	699	-387
+    }
+
+    FRAME "loginreward_num_day4_reward1" // Index = 99, FModules = 0
+    {
+        0x2046
+        RC	702	-413	774	-385
+    }
+
+    FRAME "loginreward_icon_day4_reward2" // Index = 100, FModules = 0
+    {
+        0x2047
+        RC	785	-411	809	-387
+    }
+
+    FRAME "loginreward_num_day4_reward2" // Index = 101, FModules = 0
+    {
+        0x2048
+        RC	812	-413	884	-385
+    }
+
+    FRAME "loginreward_icon_day4_reward3" // Index = 102, FModules = 0
+    {
+        0x2049
+        RC	675	-381	699	-357
+    }
+
+    FRAME "loginreward_num_day4_reward3" // Index = 103, FModules = 0
+    {
+        0x204A
+        RC	702	-383	774	-355
+    }
+
+    FRAME "loginreward_icon_day4_reward4" // Index = 104, FModules = 0
+    {
+        0x204B
+        RC	785	-381	809	-357
+    }
+
+    FRAME "loginreward_num_day4_reward4" // Index = 105, FModules = 0
+    {
+        0x204C
+        RC	812	-383	884	-355
+    }
+
+    FRAME "loginreward_button_getreward4" // Index = 106, FModules = 2
+    {
+        0x204D
+        RC	895	-419	1027	-349
+        FM	0x1010	895	-419
+        FM	0x1010	961	-419	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward4_clicked" // Index = 107, FModules = 2
+    {
+        0x204E
+        RC	895	-419	1027	-349
+        FM	0x1011	895	-419
+        FM	0x1011	961	-419	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward4_cantget" // Index = 108, FModules = 2
+    {
+        0x204F
+        RC	895	-419	1027	-349
+        FM	0x10B1	895	-419
+        FM	0x10B1	961	-419	+FLIP_X
+    }
+
+    FRAME "loginreward_text_getreward4" // Index = 109, FModules = 0
+    {
+        0x2050
+        RC	907	-408	1015	-361
+    }
+
+    FRAME "loginreward_frame_rewardday5" // Index = 110, FModules = 27
+    {
+        0x205F
+        RC	109	-326	565	-233
+        FM	0x1078	161	-324
+        FM	0x1078	177	-324
+        FM	0x1078	193	-324
+        FM	0x1078	209	-324
+        FM	0x1078	225	-324
+        FM	0x1078	241	-324
+        FM	0x1078	257	-324
+        FM	0x1078	273	-324
+        FM	0x1078	289	-324
+        FM	0x1078	305	-324
+        FM	0x1078	321	-324
+        FM	0x1078	337	-324
+        FM	0x1078	353	-324
+        FM	0x1078	369	-324
+        FM	0x1078	385	-324
+        FM	0x1078	401	-324
+        FM	0x1078	417	-324
+        FM	0x1078	433	-324
+        FM	0x1078	449	-324
+        FM	0x1078	465	-324
+        FM	0x1078	481	-324
+        FM	0x1078	497	-324
+        FM	0x1078	513	-324
+        FM	0x1078	529	-324
+        FM	0x1079	545	-324
+        FM	0x1014	120	-313
+        FM	0x1007	109	-326
+    }
+
+    FRAME "loginreward_icon_rewardday5" // Index = 111, FModules = 0
+    {
+        0x2060
+        RC	120	-313	190	-244
+    }
+
+    FRAME "loginreward_text_rewardday5" // Index = 112, FModules = 0
+    {
+        0x2061
+        RC	107	-266	203	-234
+    }
+
+    FRAME "loginreward_icon_day5_reward1" // Index = 113, FModules = 0
+    {
+        0x2062
+        RC	205	-306	229	-282
+    }
+
+    FRAME "loginreward_num_day5_reward1" // Index = 114, FModules = 0
+    {
+        0x2063
+        RC	232	-308	304	-280
+    }
+
+    FRAME "loginreward_icon_day5_reward2" // Index = 115, FModules = 0
+    {
+        0x2064
+        RC	315	-306	339	-282
+    }
+
+    FRAME "loginreward_num_day5_reward2" // Index = 116, FModules = 0
+    {
+        0x2065
+        RC	342	-308	414	-280
+    }
+
+    FRAME "loginreward_icon_day5_reward3" // Index = 117, FModules = 0
+    {
+        0x2066
+        RC	205	-276	229	-252
+    }
+
+    FRAME "loginreward_num_day5_reward3" // Index = 118, FModules = 0
+    {
+        0x2067
+        RC	232	-278	304	-250
+    }
+
+    FRAME "loginreward_icon_day5_reward4" // Index = 119, FModules = 0
+    {
+        0x2068
+        RC	315	-276	339	-252
+    }
+
+    FRAME "loginreward_num_day5_reward4" // Index = 120, FModules = 0
+    {
+        0x2069
+        RC	342	-278	414	-250
+    }
+
+    FRAME "loginreward_button_getreward5" // Index = 121, FModules = 2
+    {
+        0x206A
+        RC	425	-314	557	-244
+        FM	0x1010	425	-314
+        FM	0x1010	491	-314	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward5_clicked" // Index = 122, FModules = 2
+    {
+        0x206B
+        RC	425	-314	557	-244
+        FM	0x1011	425	-314
+        FM	0x1011	491	-314	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward5_cantget" // Index = 123, FModules = 2
+    {
+        0x206C
+        RC	425	-314	557	-244
+        FM	0x10B1	425	-314
+        FM	0x10B1	491	-314	+FLIP_X
+    }
+
+    FRAME "loginreward_text_getreward5" // Index = 124, FModules = 0
+    {
+        0x206D
+        RC	437	-303	545	-256
+    }
+
+    FRAME "loginreward_frame_rewardday6" // Index = 125, FModules = 27
+    {
+        0x2023
+        RC	579	-326	1035	-233
+        FM	0x1078	631	-324
+        FM	0x1078	647	-324
+        FM	0x1078	663	-324
+        FM	0x1078	679	-324
+        FM	0x1078	695	-324
+        FM	0x1078	711	-324
+        FM	0x1078	727	-324
+        FM	0x1078	743	-324
+        FM	0x1078	759	-324
+        FM	0x1078	775	-324
+        FM	0x1078	791	-324
+        FM	0x1078	807	-324
+        FM	0x1078	823	-324
+        FM	0x1078	839	-324
+        FM	0x1078	855	-324
+        FM	0x1078	871	-324
+        FM	0x1078	887	-324
+        FM	0x1078	903	-324
+        FM	0x1078	919	-324
+        FM	0x1078	935	-324
+        FM	0x1078	951	-324
+        FM	0x1078	967	-324
+        FM	0x1078	983	-324
+        FM	0x1078	999	-324
+        FM	0x1079	1015	-324
+        FM	0x1014	590	-313
+        FM	0x1007	579	-326
+    }
+
+    FRAME "loginreward_icon_rewardday6" // Index = 126, FModules = 0
+    {
+        0x2051
+        RC	590	-313	660	-244
+    }
+
+    FRAME "loginreward_text_rewardday6" // Index = 127, FModules = 0
+    {
+        0x2052
+        RC	577	-266	673	-234
+    }
+
+    FRAME "loginreward_icon_day6_reward1" // Index = 128, FModules = 0
+    {
+        0x2053
+        RC	675	-306	699	-282
+    }
+
+    FRAME "loginreward_num_day6_reward1" // Index = 129, FModules = 0
+    {
+        0x2054
+        RC	702	-308	774	-280
+    }
+
+    FRAME "loginreward_icon_day6_reward2" // Index = 130, FModules = 0
+    {
+        0x2055
+        RC	785	-306	809	-282
+    }
+
+    FRAME "loginreward_num_day6_reward2" // Index = 131, FModules = 0
+    {
+        0x2056
+        RC	812	-308	884	-280
+    }
+
+    FRAME "loginreward_icon_day6_reward3" // Index = 132, FModules = 0
+    {
+        0x2057
+        RC	675	-276	699	-252
+    }
+
+    FRAME "loginreward_num_day6_reward3" // Index = 133, FModules = 0
+    {
+        0x2058
+        RC	702	-278	774	-250
+    }
+
+    FRAME "loginreward_icon_day6_reward4" // Index = 134, FModules = 0
+    {
+        0x2059
+        RC	785	-276	809	-252
+    }
+
+    FRAME "loginreward_num_day6_reward4" // Index = 135, FModules = 0
+    {
+        0x205A
+        RC	812	-278	884	-250
+    }
+
+    FRAME "loginreward_button_getreward6" // Index = 136, FModules = 2
+    {
+        0x205B
+        RC	895	-314	1027	-244
+        FM	0x1010	895	-314
+        FM	0x1010	961	-314	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward6_clicked" // Index = 137, FModules = 2
+    {
+        0x205C
+        RC	895	-314	1027	-244
+        FM	0x1011	895	-314
+        FM	0x1011	961	-314	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward6_cantget" // Index = 138, FModules = 2
+    {
+        0x205D
+        RC	895	-314	1027	-244
+        FM	0x10B1	895	-314
+        FM	0x10B1	961	-314	+FLIP_X
+    }
+
+    FRAME "loginreward_text_getreward6" // Index = 139, FModules = 0
+    {
+        0x205E
+        RC	907	-303	1015	-256
+    }
+
+    FRAME "loginreward_frame_rewardday7" // Index = 140, FModules = 27
+    {
+        0x207D
+        RC	109	-221	565	-128
+        FM	0x1078	161	-219
+        FM	0x1078	177	-219
+        FM	0x1078	193	-219
+        FM	0x1078	209	-219
+        FM	0x1078	225	-219
+        FM	0x1078	241	-219
+        FM	0x1078	257	-219
+        FM	0x1078	273	-219
+        FM	0x1078	289	-219
+        FM	0x1078	305	-219
+        FM	0x1078	321	-219
+        FM	0x1078	337	-219
+        FM	0x1078	353	-219
+        FM	0x1078	369	-219
+        FM	0x1078	385	-219
+        FM	0x1078	401	-219
+        FM	0x1078	417	-219
+        FM	0x1078	433	-219
+        FM	0x1078	449	-219
+        FM	0x1078	465	-219
+        FM	0x1078	481	-219
+        FM	0x1078	497	-219
+        FM	0x1078	513	-219
+        FM	0x1078	529	-219
+        FM	0x1079	545	-219
+        FM	0x1014	120	-209
+        FM	0x1007	109	-221
+    }
+
+    FRAME "loginreward_icon_rewardday7" // Index = 141, FModules = 0
+    {
+        0x207E
+        RC	120	-208	190	-139
+    }
+
+    FRAME "loginreward_text_rewardday7" // Index = 142, FModules = 0
+    {
+        0x207F
+        RC	107	-161	203	-129
+    }
+
+    FRAME "loginreward_icon_day7_reward1" // Index = 143, FModules = 0
+    {
+        0x2080
+        RC	205	-201	229	-177
+    }
+
+    FRAME "loginreward_num_day7_reward1" // Index = 144, FModules = 0
+    {
+        0x2081
+        RC	232	-203	304	-175
+    }
+
+    FRAME "loginreward_icon_day7_reward2" // Index = 145, FModules = 0
+    {
+        0x2082
+        RC	315	-201	339	-177
+    }
+
+    FRAME "loginreward_num_day7_reward2" // Index = 146, FModules = 0
+    {
+        0x2083
+        RC	342	-203	414	-175
+    }
+
+    FRAME "loginreward_icon_day7_reward3" // Index = 147, FModules = 0
+    {
+        0x2084
+        RC	205	-171	229	-147
+    }
+
+    FRAME "loginreward_num_day7_reward3" // Index = 148, FModules = 0
+    {
+        0x2085
+        RC	232	-173	304	-145
+    }
+
+    FRAME "loginreward_icon_day7_reward4" // Index = 149, FModules = 0
+    {
+        0x2086
+        RC	315	-171	339	-147
+    }
+
+    FRAME "loginreward_num_day7_reward4" // Index = 150, FModules = 0
+    {
+        0x2087
+        RC	342	-173	414	-145
+    }
+
+    FRAME "loginreward_button_getreward7" // Index = 151, FModules = 2
+    {
+        0x2088
+        RC	425	-209	557	-139
+        FM	0x1010	425	-209
+        FM	0x1010	491	-209	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward7_clicked" // Index = 152, FModules = 2
+    {
+        0x2089
+        RC	425	-209	557	-139
+        FM	0x1011	425	-209
+        FM	0x1011	491	-209	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward7_cantget" // Index = 153, FModules = 2
+    {
+        0x208A
+        RC	425	-209	557	-139
+        FM	0x10B1	425	-209
+        FM	0x10B1	491	-209	+FLIP_X
+    }
+
+    FRAME "loginreward_text_getreward7" // Index = 154, FModules = 0
+    {
+        0x208B
+        RC	437	-198	545	-151
+    }
+
+    FRAME "loginreward_frame_rewardday8" // Index = 155, FModules = 27
+    {
+        0x206E
+        RC	579	-221	1035	-128
+        FM	0x1078	631	-219
+        FM	0x1078	647	-219
+        FM	0x1078	663	-219
+        FM	0x1078	679	-219
+        FM	0x1078	695	-219
+        FM	0x1078	711	-219
+        FM	0x1078	727	-219
+        FM	0x1078	743	-219
+        FM	0x1078	759	-219
+        FM	0x1078	775	-219
+        FM	0x1078	791	-219
+        FM	0x1078	807	-219
+        FM	0x1078	823	-219
+        FM	0x1078	839	-219
+        FM	0x1078	855	-219
+        FM	0x1078	871	-219
+        FM	0x1078	887	-219
+        FM	0x1078	903	-219
+        FM	0x1078	919	-219
+        FM	0x1078	935	-219
+        FM	0x1078	951	-219
+        FM	0x1078	967	-219
+        FM	0x1078	983	-219
+        FM	0x1078	999	-219
+        FM	0x1079	1015	-219
+        FM	0x1014	590	-208
+        FM	0x1007	579	-221
+    }
+
+    FRAME "loginreward_icon_rewardday8" // Index = 156, FModules = 0
+    {
+        0x206F
+        RC	590	-208	660	-139
+    }
+
+    FRAME "loginreward_text_rewardday8" // Index = 157, FModules = 0
+    {
+        0x2070
+        RC	577	-161	673	-129
+    }
+
+    FRAME "loginreward_icon_day8_reward1" // Index = 158, FModules = 0
+    {
+        0x2071
+        RC	675	-201	699	-177
+    }
+
+    FRAME "loginreward_num_day8_reward1" // Index = 159, FModules = 0
+    {
+        0x2072
+        RC	702	-203	774	-175
+    }
+
+    FRAME "loginreward_icon_day8_reward2" // Index = 160, FModules = 0
+    {
+        0x2073
+        RC	785	-201	809	-177
+    }
+
+    FRAME "loginreward_num_day8_reward2" // Index = 161, FModules = 0
+    {
+        0x2074
+        RC	812	-203	884	-175
+    }
+
+    FRAME "loginreward_icon_day8_reward3" // Index = 162, FModules = 0
+    {
+        0x2075
+        RC	675	-171	699	-147
+    }
+
+    FRAME "loginreward_num_day8_reward3" // Index = 163, FModules = 0
+    {
+        0x2076
+        RC	702	-173	774	-145
+    }
+
+    FRAME "loginreward_icon_day8_reward4" // Index = 164, FModules = 0
+    {
+        0x2077
+        RC	785	-171	809	-147
+    }
+
+    FRAME "loginreward_num_day8_reward4" // Index = 165, FModules = 0
+    {
+        0x2078
+        RC	812	-173	884	-145
+    }
+
+    FRAME "loginreward_button_getreward8" // Index = 166, FModules = 2
+    {
+        0x2079
+        RC	895	-209	1027	-139
+        FM	0x1010	895	-209
+        FM	0x1010	961	-209	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward8_clicked" // Index = 167, FModules = 2
+    {
+        0x207A
+        RC	895	-209	1027	-139
+        FM	0x1011	895	-209
+        FM	0x1011	961	-209	+FLIP_X
+    }
+
+    FRAME "loginreward_button_getreward8_cantget" // Index = 168, FModules = 2
+    {
+        0x207B
+        RC	895	-209	1027	-139
+        FM	0x10B1	895	-209
+        FM	0x10B1	961	-209	+FLIP_X
+    }
+
+    FRAME "loginreward_text_getreward8" // Index = 169, FModules = 0
+    {
+        0x207C
+        RC	907	-198	1015	-151
+    }
+
+    FRAME "loginreward_close" // Index = 170, FModules = 1
+    {
+        0x2012
+        RC	980	-640	1067	-554
+        FM	0x100E	980	-640
+    }
+
+    FRAME "loginreward_close_clicked" // Index = 171, FModules = 1
+    {
+        0x2013
+        RC	980	-640	1067	-554
+        FM	0x100F	980	-640
+    }
+
+    FRAME "dailysalary_background" // Index = 172, FModules = 134
+    {
+        0x2095
+        RC	308	-596	828	-83
+        FM	0x105C	308	-565
+        FM	0x105C	308	-153	+FLIP_Y
+        FM	0x105C	758	-565	+FLIP_X
+        FM	0x105C	758	-153	+FLIP_X	+FLIP_Y
+        FM	0x105D	378	-565
+        FM	0x105D	416	-565
+        FM	0x105D	454	-565
+        FM	0x105D	492	-565
+        FM	0x105D	530	-565
+        FM	0x105D	568	-565
+        FM	0x105D	606	-565
+        FM	0x105D	644	-565
+        FM	0x105D	682	-565
+        FM	0x105D	720	-565
+        FM	0x105D	378	-153	+FLIP_Y
+        FM	0x105D	416	-153	+FLIP_Y
+        FM	0x105D	454	-153	+FLIP_Y
+        FM	0x105D	492	-153	+FLIP_Y
+        FM	0x105D	530	-153	+FLIP_Y
+        FM	0x105D	568	-153	+FLIP_Y
+        FM	0x105D	606	-153	+FLIP_Y
+        FM	0x105D	644	-153	+FLIP_Y
+        FM	0x105D	682	-153	+FLIP_Y
+        FM	0x105D	720	-153	+FLIP_Y
+        FM	0x105E	308	-495
+        FM	0x105E	308	-457
+        FM	0x105E	308	-419
+        FM	0x105E	308	-381
+        FM	0x105E	758	-495	+FLIP_X
+        FM	0x105E	758	-457	+FLIP_X
+        FM	0x105E	758	-419	+FLIP_X
+        FM	0x105E	758	-381	+FLIP_X
+        FM	0x105F	378	-495
+        FM	0x105F	378	-457
+        FM	0x105F	378	-419
+        FM	0x105F	378	-381
+        FM	0x105F	416	-495
+        FM	0x105F	416	-457
+        FM	0x105F	416	-419
+        FM	0x105F	416	-381
+        FM	0x105F	454	-495
+        FM	0x105F	454	-457
+        FM	0x105F	454	-419
+        FM	0x105F	454	-381
+        FM	0x105F	492	-495
+        FM	0x105F	492	-457
+        FM	0x105F	492	-419
+        FM	0x105F	492	-381
+        FM	0x105F	530	-495
+        FM	0x105F	530	-457
+        FM	0x105F	530	-419
+        FM	0x105F	530	-381
+        FM	0x105F	568	-495
+        FM	0x105F	568	-457
+        FM	0x105F	568	-419
+        FM	0x105F	568	-381
+        FM	0x105F	606	-495
+        FM	0x105F	606	-457
+        FM	0x105F	606	-419
+        FM	0x105F	606	-381
+        FM	0x105F	644	-495
+        FM	0x105F	644	-457
+        FM	0x105F	644	-419
+        FM	0x105F	644	-381
+        FM	0x105F	682	-495
+        FM	0x105F	682	-457
+        FM	0x105F	682	-419
+        FM	0x105F	682	-381
+        FM	0x105F	720	-495
+        FM	0x105F	720	-457
+        FM	0x105F	720	-419
+        FM	0x105F	720	-381
+        FM	0x105E	308	-343
+        FM	0x105E	308	-305
+        FM	0x105E	308	-267
+        FM	0x105E	758	-343	+FLIP_X
+        FM	0x105E	758	-305	+FLIP_X
+        FM	0x105E	758	-267	+FLIP_X
+        FM	0x105F	378	-343
+        FM	0x105F	378	-305
+        FM	0x105F	378	-267
+        FM	0x105F	416	-343
+        FM	0x105F	416	-305
+        FM	0x105F	416	-267
+        FM	0x105F	454	-343
+        FM	0x105F	454	-305
+        FM	0x105F	454	-267
+        FM	0x105F	492	-343
+        FM	0x105F	492	-305
+        FM	0x105F	492	-267
+        FM	0x105F	530	-343
+        FM	0x105F	530	-305
+        FM	0x105F	530	-267
+        FM	0x105F	568	-343
+        FM	0x105F	568	-305
+        FM	0x105F	568	-267
+        FM	0x105F	606	-343
+        FM	0x105F	606	-305
+        FM	0x105F	606	-267
+        FM	0x105F	644	-343
+        FM	0x105F	644	-305
+        FM	0x105F	644	-267
+        FM	0x105F	682	-343
+        FM	0x105F	682	-305
+        FM	0x105F	682	-267
+        FM	0x105F	720	-343
+        FM	0x105F	720	-305
+        FM	0x105F	720	-267
+        FM	0x105E	308	-229
+        FM	0x105E	758	-229	+FLIP_X
+        FM	0x105F	378	-229
+        FM	0x105F	416	-229
+        FM	0x105F	454	-229
+        FM	0x105F	492	-229
+        FM	0x105F	530	-229
+        FM	0x105F	568	-229
+        FM	0x105F	606	-229
+        FM	0x105F	644	-229
+        FM	0x105F	682	-229
+        FM	0x105F	720	-229
+        FM	0x105E	308	-191
+        FM	0x105E	758	-191	+FLIP_X
+        FM	0x105F	378	-191
+        FM	0x105F	416	-191
+        FM	0x105F	454	-191
+        FM	0x105F	492	-191
+        FM	0x105F	530	-191
+        FM	0x105F	568	-191
+        FM	0x105F	606	-191
+        FM	0x105F	644	-191
+        FM	0x105F	682	-191
+        FM	0x105F	720	-191
+        FM	0x109F	415	-596
+        FM	0x109F	569	-596	+FLIP_X
+    }
+
+    FRAME "dailysalary_pic" // Index = 173, FModules = 0
+    {
+        0x208E
+        RC	337	-516	801	-293
+    }
+
+    FRAME "dailysalary_text_title" // Index = 174, FModules = 0
+    {
+        0x208C
+        RC	483	-583	655	-541
+    }
+
+    FRAME "dailysalary_icon_coin" // Index = 175, FModules = 1
+    {
+        0x208F
+        RC	491	-285	511	-261
+        FM	0x102A	491	-285
+    }
+
+    FRAME "dailysalary_num_coin" // Index = 176, FModules = 0
+    {
+        0x2090
+        RC	515	-293	635	-261
+    }
+
+    FRAME "dailysalary_text_description" // Index = 177, FModules = 0
+    {
+        0x2091
+        RC	345	-251	796	-180
+    }
+
+    FRAME "dailysalary_button_get" // Index = 178, FModules = 2
+    {
+        0x2092
+        RC	503	-174	635	-104
+        FM	0x1010	503	-174
+        FM	0x1010	569	-174	+FLIP_X
+    }
+
+    FRAME "dailysalary_button_get_clicked" // Index = 179, FModules = 2
+    {
+        0x2093
+        RC	503	-174	635	-104
+        FM	0x1011	503	-174
+        FM	0x1011	569	-174	+FLIP_X
+    }
+
+    FRAME "dailysalary_text_get" // Index = 180, FModules = 0
+    {
+        0x2094
+        RC	514	-163	622	-116
+    }
+
+    FRAME "dailysalary_button_close" // Index = 181, FModules = 1
+    {
+        0x2096
+        RC	762	-595	849	-509
+        FM	0x100E	762	-595
+    }
+
+    FRAME "dailysalary_button_close_clicked" // Index = 182, FModules = 1
+    {
+        0x2097
+        RC	762	-595	849	-509
+        FM	0x100F	762	-595
+    }
+
+    FRAME "pvaireward_background" // Index = 183, FModules = 134
+    {
+        0x2104
+        RC	308	-596	828	-83
+        FM	0x105C	308	-565
+        FM	0x105C	308	-153	+FLIP_Y
+        FM	0x105C	758	-565	+FLIP_X
+        FM	0x105C	758	-153	+FLIP_X	+FLIP_Y
+        FM	0x105D	378	-565
+        FM	0x105D	416	-565
+        FM	0x105D	454	-565
+        FM	0x105D	492	-565
+        FM	0x105D	530	-565
+        FM	0x105D	568	-565
+        FM	0x105D	606	-565
+        FM	0x105D	644	-565
+        FM	0x105D	682	-565
+        FM	0x105D	720	-565
+        FM	0x105D	378	-153	+FLIP_Y
+        FM	0x105D	416	-153	+FLIP_Y
+        FM	0x105D	454	-153	+FLIP_Y
+        FM	0x105D	492	-153	+FLIP_Y
+        FM	0x105D	530	-153	+FLIP_Y
+        FM	0x105D	568	-153	+FLIP_Y
+        FM	0x105D	606	-153	+FLIP_Y
+        FM	0x105D	644	-153	+FLIP_Y
+        FM	0x105D	682	-153	+FLIP_Y
+        FM	0x105D	720	-153	+FLIP_Y
+        FM	0x105E	308	-495
+        FM	0x105E	308	-457
+        FM	0x105E	308	-419
+        FM	0x105E	308	-381
+        FM	0x105E	758	-495	+FLIP_X
+        FM	0x105E	758	-457	+FLIP_X
+        FM	0x105E	758	-419	+FLIP_X
+        FM	0x105E	758	-381	+FLIP_X
+        FM	0x105F	378	-495
+        FM	0x105F	378	-457
+        FM	0x105F	378	-419
+        FM	0x105F	378	-381
+        FM	0x105F	416	-495
+        FM	0x105F	416	-457
+        FM	0x105F	416	-419
+        FM	0x105F	416	-381
+        FM	0x105F	454	-495
+        FM	0x105F	454	-457
+        FM	0x105F	454	-419
+        FM	0x105F	454	-381
+        FM	0x105F	492	-495
+        FM	0x105F	492	-457
+        FM	0x105F	492	-419
+        FM	0x105F	492	-381
+        FM	0x105F	530	-495
+        FM	0x105F	530	-457
+        FM	0x105F	530	-419
+        FM	0x105F	530	-381
+        FM	0x105F	568	-495
+        FM	0x105F	568	-457
+        FM	0x105F	568	-419
+        FM	0x105F	568	-381
+        FM	0x105F	606	-495
+        FM	0x105F	606	-457
+        FM	0x105F	606	-419
+        FM	0x105F	606	-381
+        FM	0x105F	644	-495
+        FM	0x105F	644	-457
+        FM	0x105F	644	-419
+        FM	0x105F	644	-381
+        FM	0x105F	682	-495
+        FM	0x105F	682	-457
+        FM	0x105F	682	-419
+        FM	0x105F	682	-381
+        FM	0x105F	720	-495
+        FM	0x105F	720	-457
+        FM	0x105F	720	-419
+        FM	0x105F	720	-381
+        FM	0x105E	308	-343
+        FM	0x105E	308	-305
+        FM	0x105E	308	-267
+        FM	0x105E	758	-343	+FLIP_X
+        FM	0x105E	758	-305	+FLIP_X
+        FM	0x105E	758	-267	+FLIP_X
+        FM	0x105F	378	-343
+        FM	0x105F	378	-305
+        FM	0x105F	378	-267
+        FM	0x105F	416	-343
+        FM	0x105F	416	-305
+        FM	0x105F	416	-267
+        FM	0x105F	454	-343
+        FM	0x105F	454	-305
+        FM	0x105F	454	-267
+        FM	0x105F	492	-343
+        FM	0x105F	492	-305
+        FM	0x105F	492	-267
+        FM	0x105F	530	-343
+        FM	0x105F	530	-305
+        FM	0x105F	530	-267
+        FM	0x105F	568	-343
+        FM	0x105F	568	-305
+        FM	0x105F	568	-267
+        FM	0x105F	606	-343
+        FM	0x105F	606	-305
+        FM	0x105F	606	-267
+        FM	0x105F	644	-343
+        FM	0x105F	644	-305
+        FM	0x105F	644	-267
+        FM	0x105F	682	-343
+        FM	0x105F	682	-305
+        FM	0x105F	682	-267
+        FM	0x105F	720	-343
+        FM	0x105F	720	-305
+        FM	0x105F	720	-267
+        FM	0x105E	308	-229
+        FM	0x105E	758	-229	+FLIP_X
+        FM	0x105F	378	-229
+        FM	0x105F	416	-229
+        FM	0x105F	454	-229
+        FM	0x105F	492	-229
+        FM	0x105F	530	-229
+        FM	0x105F	568	-229
+        FM	0x105F	606	-229
+        FM	0x105F	644	-229
+        FM	0x105F	682	-229
+        FM	0x105F	720	-229
+        FM	0x105E	308	-191
+        FM	0x105E	758	-191	+FLIP_X
+        FM	0x105F	378	-191
+        FM	0x105F	416	-191
+        FM	0x105F	454	-191
+        FM	0x105F	492	-191
+        FM	0x105F	530	-191
+        FM	0x105F	568	-191
+        FM	0x105F	606	-191
+        FM	0x105F	644	-191
+        FM	0x105F	682	-191
+        FM	0x105F	720	-191
+        FM	0x109F	415	-596
+        FM	0x109F	569	-596	+FLIP_X
+    }
+
+    FRAME "pvaireward_pic" // Index = 184, FModules = 0
+    {
+        0x2105
+        RC	337	-516	801	-293
+    }
+
+    FRAME "pvaireward_text_title" // Index = 185, FModules = 0
+    {
+        0x2106
+        RC	483	-583	655	-541
+    }
+
+    FRAME "pvaireward_icon_coin" // Index = 186, FModules = 1
+    {
+        0x209C
+        RC	441	-285	461	-261
+        FM	0x102A	441	-285
+    }
+
+    FRAME "pvaireward_num_coin" // Index = 187, FModules = 0
+    {
+        0x209D
+        RC	475	-287	563	-259
+    }
+
+    FRAME "pvaireward_icon_reputation" // Index = 188, FModules = 1
+    {
+        0x20A4
+        RC	576	-283	598	-259
+        FM	0x1056	576	-283
+    }
+
+    FRAME "pvaireward_num_reputation" // Index = 189, FModules = 0
+    {
+        0x20A5
+        RC	607	-287	695	-259
+    }
+
+    FRAME "pvaireward_text_description" // Index = 190, FModules = 0
+    {
+        0x209E
+        RC	344	-245	801	-172
+    }
+
+    FRAME "pvaireward_button_get" // Index = 191, FModules = 2
+    {
+        0x209F
+        RC	503	-165	635	-95
+        FM	0x1010	503	-165
+        FM	0x1010	569	-165	+FLIP_X
+    }
+
+    FRAME "pvaireward_button_get_clicked" // Index = 192, FModules = 2
+    {
+        0x20A0
+        RC	503	-165	635	-95
+        FM	0x1011	503	-165
+        FM	0x1011	569	-165	+FLIP_X
+    }
+
+    FRAME "pvaireward_text_get" // Index = 193, FModules = 0
+    {
+        0x20A1
+        RC	514	-154	622	-107
+    }
+
+    FRAME "pvaireward_button_close" // Index = 194, FModules = 1
+    {
+        0x20A2
+        RC	762	-595	849	-509
+        FM	0x100E	762	-595
+    }
+
+    FRAME "pvaireward_button_close_clicked" // Index = 195, FModules = 1
+    {
+        0x20A3
+        RC	762	-595	849	-509
+        FM	0x100F	762	-595
+    }
+
+    FRAME "offlineexp_background" // Index = 196, FModules = 137
+    {
+        0x20A8
+        RC	252	-571	886	-136
+        FM	0x105C	252	-542
+        FM	0x105C	252	-206	+FLIP_Y
+        FM	0x105C	816	-542	+FLIP_X
+        FM	0x105C	816	-206	+FLIP_X	+FLIP_Y
+        FM	0x105D	360	-542
+        FM	0x105D	322	-542
+        FM	0x105D	398	-542
+        FM	0x105D	436	-542
+        FM	0x105D	474	-542
+        FM	0x105D	512	-542
+        FM	0x105D	550	-542
+        FM	0x105D	588	-542
+        FM	0x105D	626	-542
+        FM	0x105D	664	-542
+        FM	0x105D	702	-542
+        FM	0x105D	740	-542
+        FM	0x105D	778	-542
+        FM	0x105D	322	-206	+FLIP_Y
+        FM	0x105D	360	-206	+FLIP_Y
+        FM	0x105D	398	-206	+FLIP_Y
+        FM	0x105D	550	-206	+FLIP_Y
+        FM	0x105D	588	-206	+FLIP_Y
+        FM	0x105D	626	-206	+FLIP_Y
+        FM	0x105D	664	-206	+FLIP_Y
+        FM	0x105D	702	-206	+FLIP_Y
+        FM	0x105D	740	-206	+FLIP_Y
+        FM	0x105D	778	-206	+FLIP_Y
+        FM	0x105E	252	-434
+        FM	0x105E	252	-472
+        FM	0x105E	252	-396
+        FM	0x105E	252	-358
+        FM	0x105E	252	-320
+        FM	0x105E	816	-434	+FLIP_X
+        FM	0x105E	816	-472	+FLIP_X
+        FM	0x105E	816	-396	+FLIP_X
+        FM	0x105E	816	-358	+FLIP_X
+        FM	0x105E	816	-320	+FLIP_X
+        FM	0x105F	322	-434
+        FM	0x105F	322	-396
+        FM	0x105F	322	-358
+        FM	0x105F	322	-320
+        FM	0x105F	360	-434
+        FM	0x105F	360	-396
+        FM	0x105F	360	-358
+        FM	0x105F	360	-320
+        FM	0x105F	398	-434
+        FM	0x105F	398	-396
+        FM	0x105F	398	-358
+        FM	0x105F	398	-320
+        FM	0x105F	550	-434
+        FM	0x105F	550	-396
+        FM	0x105F	550	-358
+        FM	0x105F	550	-320
+        FM	0x105F	588	-434
+        FM	0x105F	588	-396
+        FM	0x105F	588	-358
+        FM	0x105F	588	-320
+        FM	0x105F	626	-434
+        FM	0x105F	626	-396
+        FM	0x105F	626	-358
+        FM	0x105F	626	-320
+        FM	0x105F	664	-434
+        FM	0x105F	664	-396
+        FM	0x105F	664	-358
+        FM	0x105F	664	-320
+        FM	0x105F	702	-434
+        FM	0x105F	702	-396
+        FM	0x105F	702	-358
+        FM	0x105F	702	-320
+        FM	0x105F	740	-434
+        FM	0x105F	740	-396
+        FM	0x105F	740	-358
+        FM	0x105F	740	-320
+        FM	0x105F	778	-434
+        FM	0x105F	778	-396
+        FM	0x105F	778	-358
+        FM	0x105F	778	-320
+        FM	0x105E	252	-282
+        FM	0x105E	816	-282	+FLIP_X
+        FM	0x105F	322	-282
+        FM	0x105F	360	-282
+        FM	0x105F	398	-282
+        FM	0x105D	436	-206	+FLIP_Y
+        FM	0x105D	474	-206	+FLIP_Y
+        FM	0x105D	512	-206	+FLIP_Y
+        FM	0x105F	436	-434
+        FM	0x105F	436	-396
+        FM	0x105F	436	-358
+        FM	0x105F	436	-320
+        FM	0x105F	474	-434
+        FM	0x105F	474	-396
+        FM	0x105F	474	-358
+        FM	0x105F	474	-320
+        FM	0x105F	512	-434
+        FM	0x105F	322	-472
+        FM	0x105F	360	-472
+        FM	0x105F	398	-472
+        FM	0x105F	550	-472
+        FM	0x105F	588	-472
+        FM	0x105F	626	-472
+        FM	0x105F	664	-472
+        FM	0x105F	702	-472
+        FM	0x105F	740	-472
+        FM	0x105F	778	-472
+        FM	0x105F	436	-472
+        FM	0x105F	474	-472
+        FM	0x105F	512	-472
+        FM	0x105F	512	-396
+        FM	0x105F	512	-358
+        FM	0x105F	512	-320
+        FM	0x105F	436	-282
+        FM	0x105F	474	-282
+        FM	0x105F	512	-282
+        FM	0x105F	550	-282
+        FM	0x105F	588	-282
+        FM	0x105F	626	-282
+        FM	0x105F	664	-282
+        FM	0x105F	702	-282
+        FM	0x105F	740	-282
+        FM	0x105F	778	-282
+        FM	0x105E	252	-244
+        FM	0x105E	816	-244	+FLIP_X
+        FM	0x105F	322	-244
+        FM	0x105F	360	-244
+        FM	0x105F	398	-244
+        FM	0x105F	436	-244
+        FM	0x105F	474	-244
+        FM	0x105F	512	-244
+        FM	0x105F	550	-244
+        FM	0x105F	588	-244
+        FM	0x105F	626	-244
+        FM	0x105F	664	-244
+        FM	0x105F	702	-244
+        FM	0x105F	740	-244
+        FM	0x105F	778	-244
+        FM	0x109F	415	-571
+        FM	0x109F	569	-571	+FLIP_X
+    }
+
+    FRAME "offlineexp_text_title" // Index = 197, FModules = 0
+    {
+        0x20AA
+        RC	483	-558	655	-517
+    }
+
+    FRAME "offlineexp_text_remainonhooktime" // Index = 198, FModules = 0
+    {
+        0x20AD
+        RC	294	-490	459	-458
+    }
+
+    FRAME "offlineexp_num_remainonhooktime" // Index = 199, FModules = 0
+    {
+        0x20AE
+        RC	462	-490	529	-458
+    }
+
+    FRAME "offlineexp_text_canonhooktime" // Index = 200, FModules = 0
+    {
+        0x20AF
+        RC	533	-490	695	-458
+    }
+
+    FRAME "offlineexp_num_canonhooktime" // Index = 201, FModules = 0
+    {
+        0x208D
+        RC	698	-490	863	-458
+    }
+
+    FRAME "offlineexp_bar_exp" // Index = 202, FModules = 4
+    {
+        0x20B1
+        RC	299	-430	671	-422
+        FM	0x1025	299	-430
+        FM	0x1025	392	-430
+        FM	0x1025	485	-430
+        FM	0x1025	578	-430
+    }
+
+    FRAME "offlineexp_frame_exp" // Index = 203, FModules = 1
+    {
+        0x20B0
+        RC	293	-434	676	-419
+        FM	0x1024	293	-434
+    }
+
+    FRAME "offlineexp_button_got1" // Index = 204, FModules = 2
+    {
+        0x20B2
+        RC	719	-459	851	-389
+        FM	0x1010	719	-459
+        FM	0x1010	785	-459	+FLIP_X
+    }
+
+    FRAME "offlineexp_button_got1_clicked" // Index = 205, FModules = 2
+    {
+        0x20B3
+        RC	719	-459	851	-389
+        FM	0x1011	719	-459
+        FM	0x1011	785	-459	+FLIP_X
+    }
+
+    FRAME "offlineexp_text_got1" // Index = 206, FModules = 0
+    {
+        0x20B4
+        RC	731	-448	839	-401
+    }
+
+    FRAME "offlineexp_text_expgotnow" // Index = 207, FModules = 0
+    {
+        0x20B5
+        RC	294	-410	475	-377
+    }
+
+    FRAME "offlineexp_num_expgotnow" // Index = 208, FModules = 0
+    {
+        0x20B6
+        RC	478	-410	607	-377
+    }
+
+    FRAME "offlineexp_button_exchange" // Index = 209, FModules = 1
+    {
+        0x20B7
+        RC	510	-359	635	-300
+        FM	0x10C0	510	-359
+    }
+
+    FRAME "offlineexp_button_exchange_clicked" // Index = 210, FModules = 1
+    {
+        0x20B8
+        RC	510	-359	635	-300
+        FM	0x10BF	511	-359
+    }
+
+    FRAME "offlineexp_pic_exp" // Index = 211, FModules = 1
+    {
+        0x20B9
+        RC	480	-285	663	-185
+        FM	0x10C1	480	-285
+    }
+
+    FRAME "offlineexp_num_allexp" // Index = 212, FModules = 0
+    {
+        0x20BC
+        RC	480	-184	663	-153
+    }
+
+    FRAME "offlineexp_text_expsave" // Index = 213, FModules = 0
+    {
+        0x20BD
+        RC	294	-250	475	-217
+    }
+
+    FRAME "offlineexp_button_got2" // Index = 214, FModules = 2
+    {
+        0x20BE
+        RC	719	-269	851	-199
+        FM	0x1010	719	-269
+        FM	0x1010	785	-269	+FLIP_X
+    }
+
+    FRAME "offlineexp_button_got2_clicked" // Index = 215, FModules = 2
+    {
+        0x20BF
+        RC	719	-269	851	-199
+        FM	0x1011	719	-269
+        FM	0x1011	785	-269	+FLIP_X
+    }
+
+    FRAME "offlineexp_text_got2" // Index = 216, FModules = 0
+    {
+        0x20C0
+        RC	731	-258	839	-211
+    }
+
+    FRAME "offlineexp_button_close" // Index = 217, FModules = 1
+    {
+        0x20AB
+        RC	817	-565	904	-479
+        FM	0x100E	817	-565
+    }
+
+    FRAME "offlineexp_button_close_clicked" // Index = 218, FModules = 1
+    {
+        0x20AC
+        RC	817	-565	904	-479
+        FM	0x100F	817	-565
+    }
+
+    FRAME "vipreward_background" // Index = 219, FModules = 194
+    {
+        0x20D5
+        RC	124	-641	1024	-93
+        FM	0x1012	127	-634
+        FM	0x1012	781	-276	+FLIP_X	+FLIP_Y
+        FM	0x1012	127	-276	+FLIP_Y
+        FM	0x1012	781	-634	+FLIP_X
+        FM	0x1013	356	-634
+        FM	0x1013	381	-634
+        FM	0x1013	406	-634
+        FM	0x1013	431	-634
+        FM	0x1013	456	-634
+        FM	0x1013	481	-634
+        FM	0x1013	506	-634
+        FM	0x1013	531	-634
+        FM	0x1013	556	-634
+        FM	0x1013	581	-634
+        FM	0x1013	606	-634
+        FM	0x1013	631	-634
+        FM	0x1013	656	-634
+        FM	0x1013	681	-634
+        FM	0x1013	706	-634
+        FM	0x1013	731	-634
+        FM	0x1013	756	-634
+        FM	0x1013	356	-276	+FLIP_Y
+        FM	0x1013	381	-276	+FLIP_Y
+        FM	0x1013	406	-276	+FLIP_Y
+        FM	0x1013	431	-276	+FLIP_Y
+        FM	0x1013	456	-276	+FLIP_Y
+        FM	0x1013	481	-276	+FLIP_Y
+        FM	0x1013	506	-276	+FLIP_Y
+        FM	0x1013	531	-276	+FLIP_Y
+        FM	0x1013	556	-276	+FLIP_Y
+        FM	0x1013	581	-276	+FLIP_Y
+        FM	0x1013	606	-276	+FLIP_Y
+        FM	0x1013	631	-276	+FLIP_Y
+        FM	0x1013	656	-276	+FLIP_Y
+        FM	0x1013	681	-276	+FLIP_Y
+        FM	0x1013	706	-276	+FLIP_Y
+        FM	0x1013	731	-276	+FLIP_Y
+        FM	0x1013	756	-276	+FLIP_Y
+        FM	0x1018	136	-451
+        FM	0x1018	136	-426
+        FM	0x1018	136	-401
+        FM	0x1018	136	-376
+        FM	0x1018	136	-351
+        FM	0x1018	136	-326
+        FM	0x1018	136	-301
+        FM	0x1018	781	-451	+FLIP_X
+        FM	0x1018	781	-426	+FLIP_X
+        FM	0x1018	781	-401	+FLIP_X
+        FM	0x1018	781	-376	+FLIP_X
+        FM	0x1018	781	-351	+FLIP_X
+        FM	0x1018	781	-326	+FLIP_X
+        FM	0x1018	781	-301	+FLIP_X
+        FM	0x101C	356	-451
+        FM	0x101C	356	-426
+        FM	0x101C	381	-451
+        FM	0x101C	381	-426
+        FM	0x101C	406	-451
+        FM	0x101C	406	-426
+        FM	0x101C	431	-451
+        FM	0x101C	431	-426
+        FM	0x101C	356	-401
+        FM	0x101C	356	-376
+        FM	0x101C	381	-401
+        FM	0x101C	381	-376
+        FM	0x101C	406	-401
+        FM	0x101C	406	-376
+        FM	0x101C	431	-401
+        FM	0x101C	431	-376
+        FM	0x101C	356	-351
+        FM	0x101C	381	-351
+        FM	0x101C	406	-351
+        FM	0x101C	431	-351
+        FM	0x101C	356	-326
+        FM	0x101C	356	-301
+        FM	0x101C	381	-326
+        FM	0x101C	381	-301
+        FM	0x101C	406	-326
+        FM	0x101C	406	-301
+        FM	0x101C	431	-326
+        FM	0x101C	431	-301
+        FM	0x101C	456	-451
+        FM	0x101C	456	-426
+        FM	0x101C	481	-451
+        FM	0x101C	481	-426
+        FM	0x101C	506	-451
+        FM	0x101C	506	-426
+        FM	0x101C	531	-451
+        FM	0x101C	531	-426
+        FM	0x101C	456	-401
+        FM	0x101C	456	-376
+        FM	0x101C	481	-401
+        FM	0x101C	481	-376
+        FM	0x101C	506	-401
+        FM	0x101C	506	-376
+        FM	0x101C	531	-401
+        FM	0x101C	531	-376
+        FM	0x101C	456	-351
+        FM	0x101C	481	-351
+        FM	0x101C	506	-351
+        FM	0x101C	531	-351
+        FM	0x101C	456	-326
+        FM	0x101C	456	-301
+        FM	0x101C	481	-326
+        FM	0x101C	481	-301
+        FM	0x101C	506	-326
+        FM	0x101C	506	-301
+        FM	0x101C	531	-326
+        FM	0x101C	531	-301
+        FM	0x101C	556	-451
+        FM	0x101C	556	-426
+        FM	0x101C	581	-451
+        FM	0x101C	581	-426
+        FM	0x101C	606	-451
+        FM	0x101C	606	-426
+        FM	0x101C	631	-451
+        FM	0x101C	631	-426
+        FM	0x101C	556	-401
+        FM	0x101C	556	-376
+        FM	0x101C	581	-401
+        FM	0x101C	581	-376
+        FM	0x101C	606	-401
+        FM	0x101C	606	-376
+        FM	0x101C	631	-401
+        FM	0x101C	631	-376
+        FM	0x101C	556	-351
+        FM	0x101C	581	-351
+        FM	0x101C	606	-351
+        FM	0x101C	631	-351
+        FM	0x101C	556	-326
+        FM	0x101C	556	-301
+        FM	0x101C	581	-326
+        FM	0x101C	581	-301
+        FM	0x101C	606	-326
+        FM	0x101C	606	-301
+        FM	0x101C	631	-326
+        FM	0x101C	631	-301
+        FM	0x101C	656	-451
+        FM	0x101C	656	-426
+        FM	0x101C	681	-451
+        FM	0x101C	681	-426
+        FM	0x101C	706	-451
+        FM	0x101C	706	-426
+        FM	0x101C	731	-451
+        FM	0x101C	731	-426
+        FM	0x101C	656	-401
+        FM	0x101C	656	-376
+        FM	0x101C	681	-401
+        FM	0x101C	681	-376
+        FM	0x101C	706	-401
+        FM	0x101C	706	-376
+        FM	0x101C	731	-401
+        FM	0x101C	731	-376
+        FM	0x101C	656	-351
+        FM	0x101C	681	-351
+        FM	0x101C	706	-351
+        FM	0x101C	731	-351
+        FM	0x101C	656	-326
+        FM	0x101C	656	-301
+        FM	0x101C	681	-326
+        FM	0x101C	681	-301
+        FM	0x101C	706	-326
+        FM	0x101C	706	-301
+        FM	0x101C	731	-326
+        FM	0x101C	731	-301
+        FM	0x101C	756	-451
+        FM	0x101C	756	-426
+        FM	0x101C	756	-401
+        FM	0x101C	756	-376
+        FM	0x101C	756	-351
+        FM	0x101C	756	-326
+        FM	0x101C	756	-301
+        FM	0x1070	146	-609
+        FM	0x1071	171	-617
+        FM	0x1070	966	-608	+FLIP_X
+        FM	0x1071	781	-616	+FLIP_X
+        FM	0x1072	356	-617
+        FM	0x1072	381	-617
+        FM	0x1072	406	-617
+        FM	0x1072	431	-617
+        FM	0x1072	456	-617
+        FM	0x1072	481	-617
+        FM	0x1072	506	-617
+        FM	0x1072	531	-617
+        FM	0x1072	556	-617
+        FM	0x1072	581	-617
+        FM	0x1072	606	-617
+        FM	0x1072	631	-617
+        FM	0x1072	656	-617
+        FM	0x1072	681	-617
+        FM	0x1072	706	-617
+        FM	0x1072	731	-617
+        FM	0x1072	756	-617
+        FM	0x109F	414	-641
+        FM	0x109F	568	-641	+FLIP_X
+    }
+
+    FRAME "vipreward_text_title" // Index = 220, FModules = 0
+    {
+        0x20D7
+        RC	481	-628	653	-586
+    }
+
+    FRAME "vipreward_background_decoration1" // Index = 221, FModules = 152
+    {
+        0x20D8
+        RC	168	-538	969	-123
+        FM	0x107A	169	-538
+        FM	0x107A	169	-264	+FLIP_Y
+        FM	0x107A	781	-538	+FLIP_X
+        FM	0x107A	781	-264	+FLIP_X	+FLIP_Y
+        FM	0x107B	168	-397
+        FM	0x107B	168	-372
+        FM	0x107B	168	-347
+        FM	0x107B	168	-322
+        FM	0x107B	168	-297
+        FM	0x107B	168	-272
+        FM	0x107B	781	-397	+FLIP_X
+        FM	0x107B	781	-372	+FLIP_X
+        FM	0x107B	781	-347	+FLIP_X
+        FM	0x107B	781	-322	+FLIP_X
+        FM	0x107B	781	-297	+FLIP_X
+        FM	0x107B	781	-272	+FLIP_X
+        FM	0x107D	381	-538
+        FM	0x107D	406	-538
+        FM	0x107D	431	-538
+        FM	0x107D	456	-538
+        FM	0x107D	481	-538
+        FM	0x107D	506	-538
+        FM	0x107D	531	-538
+        FM	0x107D	556	-538
+        FM	0x107D	581	-538
+        FM	0x107D	606	-538
+        FM	0x107D	631	-538
+        FM	0x107D	656	-538
+        FM	0x107D	681	-538
+        FM	0x107D	706	-538
+        FM	0x107D	731	-538
+        FM	0x107D	756	-538
+        FM	0x107D	381	-264	+FLIP_Y
+        FM	0x107D	406	-264	+FLIP_Y
+        FM	0x107D	431	-264	+FLIP_Y
+        FM	0x107D	456	-264	+FLIP_Y
+        FM	0x107D	481	-264	+FLIP_Y
+        FM	0x107D	506	-264	+FLIP_Y
+        FM	0x107D	531	-264	+FLIP_Y
+        FM	0x107D	556	-264	+FLIP_Y
+        FM	0x107D	581	-264	+FLIP_Y
+        FM	0x107D	606	-264	+FLIP_Y
+        FM	0x107D	631	-264	+FLIP_Y
+        FM	0x107D	656	-264	+FLIP_Y
+        FM	0x107D	681	-264	+FLIP_Y
+        FM	0x107D	706	-264	+FLIP_Y
+        FM	0x107D	731	-264	+FLIP_Y
+        FM	0x107D	756	-264	+FLIP_Y
+        FM	0x107C	381	-397
+        FM	0x107C	381	-372
+        FM	0x107C	381	-347
+        FM	0x107C	406	-397
+        FM	0x107C	431	-397
+        FM	0x107C	456	-397
+        FM	0x107C	481	-397
+        FM	0x107C	406	-372
+        FM	0x107C	431	-372
+        FM	0x107C	456	-372
+        FM	0x107C	481	-372
+        FM	0x107C	406	-347
+        FM	0x107C	431	-347
+        FM	0x107C	456	-347
+        FM	0x107C	481	-347
+        FM	0x107C	506	-397
+        FM	0x107C	531	-397
+        FM	0x107C	556	-397
+        FM	0x107C	581	-397
+        FM	0x107C	506	-372
+        FM	0x107C	531	-372
+        FM	0x107C	556	-372
+        FM	0x107C	581	-372
+        FM	0x107C	506	-347
+        FM	0x107C	531	-347
+        FM	0x107C	556	-347
+        FM	0x107C	581	-347
+        FM	0x107C	606	-397
+        FM	0x107C	631	-397
+        FM	0x107C	656	-397
+        FM	0x107C	681	-397
+        FM	0x107C	606	-372
+        FM	0x107C	631	-372
+        FM	0x107C	656	-372
+        FM	0x107C	681	-372
+        FM	0x107C	606	-347
+        FM	0x107C	631	-347
+        FM	0x107C	656	-347
+        FM	0x107C	681	-347
+        FM	0x107C	706	-397
+        FM	0x107C	731	-397
+        FM	0x107C	756	-397
+        FM	0x107C	706	-372
+        FM	0x107C	731	-372
+        FM	0x107C	756	-372
+        FM	0x107C	706	-347
+        FM	0x107C	731	-347
+        FM	0x107C	756	-347
+        FM	0x107C	381	-322
+        FM	0x107C	381	-297
+        FM	0x107C	381	-272
+        FM	0x107D	356	-538
+        FM	0x107D	356	-264	+FLIP_Y
+        FM	0x107C	356	-397
+        FM	0x107C	356	-372
+        FM	0x107C	356	-347
+        FM	0x107C	356	-322
+        FM	0x107C	356	-297
+        FM	0x107C	356	-272
+        FM	0x107C	406	-322
+        FM	0x107C	431	-322
+        FM	0x107C	456	-322
+        FM	0x107C	481	-322
+        FM	0x107C	406	-297
+        FM	0x107C	431	-297
+        FM	0x107C	456	-297
+        FM	0x107C	481	-297
+        FM	0x107C	406	-272
+        FM	0x107C	431	-272
+        FM	0x107C	456	-272
+        FM	0x107C	481	-272
+        FM	0x107C	506	-322
+        FM	0x107C	531	-322
+        FM	0x107C	556	-322
+        FM	0x107C	581	-322
+        FM	0x107C	506	-297
+        FM	0x107C	531	-297
+        FM	0x107C	556	-297
+        FM	0x107C	581	-297
+        FM	0x107C	506	-272
+        FM	0x107C	531	-272
+        FM	0x107C	556	-272
+        FM	0x107C	581	-272
+        FM	0x107C	606	-322
+        FM	0x107C	631	-322
+        FM	0x107C	656	-322
+        FM	0x107C	681	-322
+        FM	0x107C	606	-297
+        FM	0x107C	631	-297
+        FM	0x107C	656	-297
+        FM	0x107C	681	-297
+        FM	0x107C	606	-272
+        FM	0x107C	631	-272
+        FM	0x107C	656	-272
+        FM	0x107C	681	-272
+        FM	0x107C	706	-322
+        FM	0x107C	731	-322
+        FM	0x107C	756	-322
+        FM	0x107C	706	-297
+        FM	0x107C	731	-297
+        FM	0x107C	756	-297
+        FM	0x107C	706	-272
+        FM	0x107C	731	-272
+        FM	0x107C	756	-272
+    }
+
+    FRAME "vipreward_text_viplevel1" // Index = 222, FModules = 0
+    {
+        0x20E7
+        RC	212	-572	419	-540
+    }
+
+    FRAME "vipreward_text_viplevel2" // Index = 223, FModules = 0
+    {
+        0x20E8
+        RC	422	-572	502	-540
+    }
+
+    FRAME "vipreward_button_pay" // Index = 224, FModules = 1
+    {
+        0x2107
+        RC	502	-581	617	-532
+        FM	0x10C2	502	-581
+    }
+
+    FRAME "vipreward_list_area" // Index = 225, FModules = 0
+    {
+        0x20DC
+        RC	184	-521	963	-124
+    }
+
+    FRAME "vipreward_area_vip1" // Index = 226, FModules = 0
+    {
+        0x2098
+        RC	183	-512	963	-393
+    }
+
+    FRAME "vipreward_frame_vip1" // Index = 227, FModules = 19
+    {
+        0x20D9
+        RC	195	-512	939	-393
+        FM	0x104C	195	-512
+        FM	0x104C	907	-512	+FLIP_X
+        FM	0x104D	267	-512
+        FM	0x104D	227	-512
+        FM	0x104D	307	-512
+        FM	0x104D	347	-512
+        FM	0x104D	387	-512
+        FM	0x104D	427	-512
+        FM	0x104D	467	-512
+        FM	0x104D	507	-512
+        FM	0x104D	547	-512
+        FM	0x104D	587	-512
+        FM	0x104D	627	-512
+        FM	0x104D	667	-512
+        FM	0x104D	707	-512
+        FM	0x104D	747	-512
+        FM	0x104D	787	-512
+        FM	0x104D	827	-512
+        FM	0x104D	867	-512
+    }
+
+    FRAME "vipreward_icon_viplevel" // Index = 228, FModules = 0
+    {
+        0x20DD
+        RC	204	-505	383	-402
+    }
+
+    FRAME "vipreward_frame_reward1" // Index = 229, FModules = 1
+    {
+        0x2099
+        RC	382	-500	473	-408
+        FM	0x1002	382	-500
+    }
+
+    FRAME "vipreward_icon_reward1" // Index = 230, FModules = 0
+    {
+        0x20E3
+        RC	395	-488	461	-420
+    }
+
+    FRAME "vipreward_frame_reward2" // Index = 231, FModules = 1
+    {
+        0x20D6
+        RC	482	-500	573	-408
+        FM	0x1002	482	-500
+    }
+
+    FRAME "vipreward_icon_reward2" // Index = 232, FModules = 0
+    {
+        0x20E4
+        RC	495	-488	561	-420
+    }
+
+    FRAME "vipreward_frame_reward3" // Index = 233, FModules = 1
+    {
+        0x20E1
+        RC	582	-500	673	-408
+        FM	0x1002	582	-500
+    }
+
+    FRAME "vipreward_icon_reward3" // Index = 234, FModules = 0
+    {
+        0x20E5
+        RC	595	-488	661	-420
+    }
+
+    FRAME "vipreward_frame_reward4" // Index = 235, FModules = 1
+    {
+        0x20E2
+        RC	682	-500	773	-408
+        FM	0x1002	682	-500
+    }
+
+    FRAME "vipreward_icon_reward4" // Index = 236, FModules = 0
+    {
+        0x20E6
+        RC	695	-488	761	-420
+    }
+
+    FRAME "vipreward_button_get" // Index = 237, FModules = 2
+    {
+        0x20DE
+        RC	791	-486	923	-416
+        FM	0x1010	791	-486
+        FM	0x1010	857	-486	+FLIP_X
+    }
+
+    FRAME "vipreward_button_get_clicked" // Index = 238, FModules = 2
+    {
+        0x20DF
+        RC	791	-486	923	-416
+        FM	0x1011	791	-486
+        FM	0x1011	857	-486	+FLIP_X
+    }
+
+    FRAME "vipreward_button_alreadyget" // Index = 239, FModules = 2
+    {
+        0x20E9
+        RC	791	-486	923	-416
+        FM	0x10B1	791	-486
+        FM	0x10B1	857	-486	+FLIP_X
+    }
+
+    FRAME "vipreward_text_get" // Index = 240, FModules = 0
+    {
+        0x20E0
+        RC	803	-474	911	-428
+    }
+
+    FRAME "vipreward_close" // Index = 241, FModules = 1
+    {
+        0x20DA
+        RC	930	-640	1017	-554
+        FM	0x100E	930	-640
+    }
+
+    FRAME "vipreward_close_clicked" // Index = 242, FModules = 1
+    {
+        0x20DB
+        RC	930	-640	1017	-554
+        FM	0x100F	930	-640
+    }
+
+    FRAME "activity_background" // Index = 243, FModules = 234
+    {
+        0x20EC
+        RC	44	-637	1101	-96
+        FM	0x1012	44	-637
+        FM	0x1012	872	-637	+FLIP_X
+        FM	0x1013	372	-637
+        FM	0x1013	397	-637
+        FM	0x1013	422	-637
+        FM	0x1013	447	-637
+        FM	0x1013	472	-637
+        FM	0x1013	497	-637
+        FM	0x1013	522	-637
+        FM	0x1013	547	-637
+        FM	0x1013	572	-637
+        FM	0x1013	597	-637
+        FM	0x1013	622	-637
+        FM	0x1013	647	-637
+        FM	0x1013	672	-637
+        FM	0x1013	697	-637
+        FM	0x1013	722	-637
+        FM	0x1013	747	-637
+        FM	0x1013	372	-279	+FLIP_Y
+        FM	0x1013	397	-279	+FLIP_Y
+        FM	0x1013	422	-279	+FLIP_Y
+        FM	0x1013	447	-279	+FLIP_Y
+        FM	0x1013	472	-279	+FLIP_Y
+        FM	0x1013	497	-279	+FLIP_Y
+        FM	0x1013	522	-279	+FLIP_Y
+        FM	0x1013	547	-279	+FLIP_Y
+        FM	0x1013	572	-279	+FLIP_Y
+        FM	0x1013	597	-279	+FLIP_Y
+        FM	0x1013	622	-279	+FLIP_Y
+        FM	0x1013	647	-279	+FLIP_Y
+        FM	0x1013	672	-279	+FLIP_Y
+        FM	0x1013	697	-279	+FLIP_Y
+        FM	0x1013	722	-279	+FLIP_Y
+        FM	0x1013	747	-279	+FLIP_Y
+        FM	0x1018	53	-454
+        FM	0x1018	53	-429
+        FM	0x1018	53	-404
+        FM	0x1018	53	-379
+        FM	0x1018	53	-354
+        FM	0x1018	53	-329
+        FM	0x1018	872	-454	+FLIP_X
+        FM	0x1018	872	-429	+FLIP_X
+        FM	0x1018	872	-404	+FLIP_X
+        FM	0x1018	872	-379	+FLIP_X
+        FM	0x1018	872	-354	+FLIP_X
+        FM	0x1018	872	-329	+FLIP_X
+        FM	0x1012	44	-279	+FLIP_Y
+        FM	0x1012	872	-279	+FLIP_X	+FLIP_Y
+        FM	0x101C	372	-454
+        FM	0x101C	372	-429
+        FM	0x101C	372	-404
+        FM	0x101C	372	-379
+        FM	0x101C	372	-354
+        FM	0x101C	372	-329
+        FM	0x101C	397	-454
+        FM	0x101C	397	-429
+        FM	0x101C	397	-404
+        FM	0x101C	397	-379
+        FM	0x101C	397	-354
+        FM	0x101C	397	-329
+        FM	0x101C	422	-454
+        FM	0x101C	422	-429
+        FM	0x101C	422	-404
+        FM	0x101C	422	-379
+        FM	0x101C	422	-354
+        FM	0x101C	422	-329
+        FM	0x101C	447	-454
+        FM	0x101C	447	-429
+        FM	0x101C	447	-404
+        FM	0x101C	447	-379
+        FM	0x101C	447	-354
+        FM	0x101C	447	-329
+        FM	0x101C	472	-454
+        FM	0x101C	472	-429
+        FM	0x101C	472	-404
+        FM	0x101C	472	-379
+        FM	0x101C	472	-354
+        FM	0x101C	472	-329
+        FM	0x101C	497	-454
+        FM	0x101C	497	-429
+        FM	0x101C	497	-404
+        FM	0x101C	497	-379
+        FM	0x101C	497	-354
+        FM	0x101C	497	-329
+        FM	0x101C	522	-454
+        FM	0x101C	522	-429
+        FM	0x101C	522	-404
+        FM	0x101C	522	-379
+        FM	0x101C	522	-354
+        FM	0x101C	522	-329
+        FM	0x101C	547	-454
+        FM	0x101C	547	-429
+        FM	0x101C	547	-404
+        FM	0x101C	547	-379
+        FM	0x101C	547	-354
+        FM	0x101C	547	-329
+        FM	0x101C	572	-454
+        FM	0x101C	572	-429
+        FM	0x101C	572	-404
+        FM	0x101C	572	-379
+        FM	0x101C	572	-354
+        FM	0x101C	572	-329
+        FM	0x101C	597	-454
+        FM	0x101C	597	-429
+        FM	0x101C	597	-404
+        FM	0x101C	597	-379
+        FM	0x101C	597	-354
+        FM	0x101C	597	-329
+        FM	0x101C	622	-454
+        FM	0x101C	622	-429
+        FM	0x101C	622	-404
+        FM	0x101C	622	-379
+        FM	0x101C	622	-354
+        FM	0x101C	622	-329
+        FM	0x101C	647	-454
+        FM	0x101C	647	-429
+        FM	0x101C	647	-404
+        FM	0x101C	647	-379
+        FM	0x101C	647	-354
+        FM	0x101C	647	-329
+        FM	0x101C	672	-454
+        FM	0x101C	672	-429
+        FM	0x101C	672	-404
+        FM	0x101C	672	-379
+        FM	0x101C	672	-354
+        FM	0x101C	672	-329
+        FM	0x101C	697	-454
+        FM	0x101C	697	-429
+        FM	0x101C	697	-404
+        FM	0x101C	697	-379
+        FM	0x101C	697	-354
+        FM	0x101C	697	-329
+        FM	0x101C	722	-454
+        FM	0x101C	722	-429
+        FM	0x101C	722	-404
+        FM	0x101C	722	-379
+        FM	0x101C	722	-354
+        FM	0x101C	722	-329
+        FM	0x101C	747	-454
+        FM	0x101C	747	-429
+        FM	0x101C	747	-404
+        FM	0x101C	747	-379
+        FM	0x101C	747	-354
+        FM	0x101C	747	-329
+        FM	0x1018	53	-304
+        FM	0x1018	872	-304	+FLIP_X
+        FM	0x101C	372	-304
+        FM	0x101C	397	-304
+        FM	0x1013	322	-637
+        FM	0x1013	347	-637
+        FM	0x1013	322	-279	+FLIP_Y
+        FM	0x1013	347	-279	+FLIP_Y
+        FM	0x101C	322	-454
+        FM	0x101C	322	-429
+        FM	0x101C	322	-404
+        FM	0x101C	322	-379
+        FM	0x101C	322	-354
+        FM	0x101C	322	-329
+        FM	0x101C	347	-454
+        FM	0x101C	347	-429
+        FM	0x101C	347	-404
+        FM	0x101C	347	-379
+        FM	0x101C	347	-354
+        FM	0x101C	347	-329
+        FM	0x101C	322	-304
+        FM	0x101C	347	-304
+        FM	0x1013	272	-637
+        FM	0x1013	297	-637
+        FM	0x1013	272	-279	+FLIP_Y
+        FM	0x1013	297	-279	+FLIP_Y
+        FM	0x101C	272	-454
+        FM	0x101C	272	-429
+        FM	0x101C	272	-404
+        FM	0x101C	272	-379
+        FM	0x101C	272	-354
+        FM	0x101C	272	-329
+        FM	0x101C	297	-454
+        FM	0x101C	297	-429
+        FM	0x101C	297	-404
+        FM	0x101C	297	-379
+        FM	0x101C	297	-354
+        FM	0x101C	297	-329
+        FM	0x101C	272	-304
+        FM	0x101C	297	-304
+        FM	0x101C	422	-304
+        FM	0x101C	447	-304
+        FM	0x101C	472	-304
+        FM	0x101C	497	-304
+        FM	0x101C	522	-304
+        FM	0x101C	547	-304
+        FM	0x101C	572	-304
+        FM	0x101C	597	-304
+        FM	0x101C	622	-304
+        FM	0x101C	647	-304
+        FM	0x101C	672	-304
+        FM	0x101C	697	-304
+        FM	0x101C	722	-304
+        FM	0x101C	747	-304
+        FM	0x1013	772	-637
+        FM	0x1013	797	-637
+        FM	0x1013	772	-279	+FLIP_Y
+        FM	0x1013	797	-279	+FLIP_Y
+        FM	0x101C	772	-454
+        FM	0x101C	772	-429
+        FM	0x101C	772	-404
+        FM	0x101C	772	-379
+        FM	0x101C	772	-354
+        FM	0x101C	772	-329
+        FM	0x101C	797	-454
+        FM	0x101C	797	-429
+        FM	0x101C	797	-404
+        FM	0x101C	797	-379
+        FM	0x101C	797	-354
+        FM	0x101C	797	-329
+        FM	0x101C	772	-304
+        FM	0x101C	797	-304
+        FM	0x1013	822	-637
+        FM	0x1013	847	-637
+        FM	0x1013	822	-279	+FLIP_Y
+        FM	0x1013	847	-279	+FLIP_Y
+        FM	0x101C	822	-454
+        FM	0x101C	822	-429
+        FM	0x101C	822	-404
+        FM	0x101C	822	-379
+        FM	0x101C	822	-354
+        FM	0x101C	822	-329
+        FM	0x101C	847	-454
+        FM	0x101C	847	-429
+        FM	0x101C	847	-404
+        FM	0x101C	847	-379
+        FM	0x101C	847	-354
+        FM	0x101C	847	-329
+        FM	0x101C	822	-304
+        FM	0x101C	847	-304
+    }
+
+    FRAME "activity_background_decoration1" // Index = 244, FModules = 203
+    {
+        0x20ED
+        RC	63	-613	1083	-124
+        FM	0x1073	99	-523
+        FM	0x1073	861	-523	+FLIP_X
+        FM	0x1073	99	-265	+FLIP_Y
+        FM	0x1073	861	-265	+FLIP_X	+FLIP_Y
+        FM	0x1075	99	-340
+        FM	0x1075	99	-315
+        FM	0x1075	99	-290
+        FM	0x1075	861	-340	+FLIP_X
+        FM	0x1075	861	-315	+FLIP_X
+        FM	0x1075	861	-290	+FLIP_X
+        FM	0x1074	386	-523
+        FM	0x1074	411	-523
+        FM	0x1074	436	-523
+        FM	0x1074	461	-523
+        FM	0x1074	486	-523
+        FM	0x1074	511	-523
+        FM	0x1074	536	-523
+        FM	0x1074	561	-523
+        FM	0x1074	586	-523
+        FM	0x1074	611	-523
+        FM	0x1074	636	-523
+        FM	0x1074	386	-265	+FLIP_Y
+        FM	0x1074	411	-265	+FLIP_Y
+        FM	0x1074	436	-265	+FLIP_Y
+        FM	0x1074	461	-265	+FLIP_Y
+        FM	0x1074	486	-265	+FLIP_Y
+        FM	0x1074	511	-265	+FLIP_Y
+        FM	0x1074	536	-265	+FLIP_Y
+        FM	0x1074	561	-265	+FLIP_Y
+        FM	0x1074	586	-265	+FLIP_Y
+        FM	0x1074	611	-265	+FLIP_Y
+        FM	0x1074	636	-265	+FLIP_Y
+        FM	0x1076	386	-340
+        FM	0x1076	411	-340
+        FM	0x1076	436	-340
+        FM	0x1076	461	-340
+        FM	0x1076	486	-340
+        FM	0x1076	511	-340
+        FM	0x1076	536	-340
+        FM	0x1076	561	-340
+        FM	0x1076	586	-340
+        FM	0x1076	611	-340
+        FM	0x1076	636	-340
+        FM	0x1075	99	-365
+        FM	0x1075	861	-365	+FLIP_X
+        FM	0x1076	386	-365
+        FM	0x1076	411	-365
+        FM	0x1076	436	-365
+        FM	0x1076	461	-365
+        FM	0x1076	486	-365
+        FM	0x1076	511	-365
+        FM	0x1076	536	-365
+        FM	0x1076	561	-365
+        FM	0x1076	586	-365
+        FM	0x1076	611	-365
+        FM	0x1076	636	-365
+        FM	0x1075	99	-390
+        FM	0x1075	861	-390	+FLIP_X
+        FM	0x1076	386	-390
+        FM	0x1076	411	-390
+        FM	0x1076	436	-390
+        FM	0x1076	461	-390
+        FM	0x1076	486	-390
+        FM	0x1076	511	-390
+        FM	0x1076	536	-390
+        FM	0x1076	561	-390
+        FM	0x1076	586	-390
+        FM	0x1076	611	-390
+        FM	0x1076	636	-390
+        FM	0x1076	386	-315
+        FM	0x1076	411	-315
+        FM	0x1076	436	-315
+        FM	0x1076	461	-315
+        FM	0x1076	486	-315
+        FM	0x1076	511	-315
+        FM	0x1076	536	-315
+        FM	0x1076	561	-315
+        FM	0x1076	586	-315
+        FM	0x1076	611	-315
+        FM	0x1076	636	-315
+        FM	0x1076	386	-290
+        FM	0x1076	411	-290
+        FM	0x1074	336	-523
+        FM	0x1074	361	-523
+        FM	0x1074	336	-265	+FLIP_Y
+        FM	0x1074	361	-265	+FLIP_Y
+        FM	0x1076	336	-340
+        FM	0x1076	361	-340
+        FM	0x1076	336	-365
+        FM	0x1076	361	-365
+        FM	0x1076	336	-390
+        FM	0x1076	361	-390
+        FM	0x1076	336	-315
+        FM	0x1076	361	-315
+        FM	0x1076	336	-290
+        FM	0x1076	361	-290
+        FM	0x1074	286	-523
+        FM	0x1074	311	-523
+        FM	0x1074	286	-265	+FLIP_Y
+        FM	0x1074	311	-265	+FLIP_Y
+        FM	0x1076	286	-340
+        FM	0x1076	311	-340
+        FM	0x1076	286	-365
+        FM	0x1076	311	-365
+        FM	0x1076	286	-390
+        FM	0x1076	311	-390
+        FM	0x1076	286	-315
+        FM	0x1076	311	-315
+        FM	0x1076	286	-290
+        FM	0x1076	311	-290
+        FM	0x1076	436	-290
+        FM	0x1076	461	-290
+        FM	0x1076	486	-290
+        FM	0x1076	511	-290
+        FM	0x1076	536	-290
+        FM	0x1076	561	-290
+        FM	0x1076	586	-290
+        FM	0x1076	611	-290
+        FM	0x1076	636	-290
+        FM	0x1074	661	-523
+        FM	0x1074	661	-265	+FLIP_Y
+        FM	0x1076	661	-340
+        FM	0x1076	661	-365
+        FM	0x1076	661	-390
+        FM	0x1076	661	-315
+        FM	0x1076	661	-290
+        FM	0x1074	686	-523
+        FM	0x1074	686	-265	+FLIP_Y
+        FM	0x1076	686	-340
+        FM	0x1076	686	-365
+        FM	0x1076	686	-390
+        FM	0x1076	686	-315
+        FM	0x1076	686	-290
+        FM	0x1074	711	-523
+        FM	0x1074	711	-265	+FLIP_Y
+        FM	0x1076	711	-340
+        FM	0x1076	711	-365
+        FM	0x1076	711	-390
+        FM	0x1076	711	-315
+        FM	0x1076	711	-290
+        FM	0x1074	736	-523
+        FM	0x1074	736	-265	+FLIP_Y
+        FM	0x1076	736	-340
+        FM	0x1076	736	-365
+        FM	0x1076	736	-390
+        FM	0x1076	736	-315
+        FM	0x1076	736	-290
+        FM	0x1074	761	-523
+        FM	0x1074	761	-265	+FLIP_Y
+        FM	0x1076	761	-340
+        FM	0x1076	761	-365
+        FM	0x1076	761	-390
+        FM	0x1076	761	-315
+        FM	0x1076	761	-290
+        FM	0x1074	786	-523
+        FM	0x1074	786	-265	+FLIP_Y
+        FM	0x1076	786	-340
+        FM	0x1076	786	-365
+        FM	0x1076	786	-390
+        FM	0x1076	786	-315
+        FM	0x1076	786	-290
+        FM	0x1074	811	-523
+        FM	0x1074	811	-265	+FLIP_Y
+        FM	0x1076	811	-340
+        FM	0x1076	811	-365
+        FM	0x1076	811	-390
+        FM	0x1076	811	-315
+        FM	0x1076	811	-290
+        FM	0x1074	836	-523
+        FM	0x1074	836	-265	+FLIP_Y
+        FM	0x1076	836	-340
+        FM	0x1076	836	-365
+        FM	0x1076	836	-390
+        FM	0x1076	836	-315
+        FM	0x1076	836	-290
+        FM	0x1070	63	-605
+        FM	0x1070	1058	-604	+FLIP_X
+        FM	0x1071	88	-613
+        FM	0x1071	873	-612	+FLIP_X
+        FM	0x1072	373	-613
+        FM	0x1072	398	-613
+        FM	0x1072	323	-613
+        FM	0x1072	348	-613
+        FM	0x1072	273	-613
+        FM	0x1072	298	-613
+        FM	0x1072	423	-613
+        FM	0x1072	448	-613
+        FM	0x1072	473	-613
+        FM	0x1072	498	-613
+        FM	0x1072	523	-613
+        FM	0x1072	548	-613
+        FM	0x1072	573	-613
+        FM	0x1072	598	-613
+        FM	0x1072	623	-613
+        FM	0x1072	648	-613
+        FM	0x1072	673	-613
+        FM	0x1072	698	-613
+        FM	0x1072	723	-613
+        FM	0x1072	748	-613
+        FM	0x1072	773	-613
+        FM	0x1072	798	-613
+        FM	0x1072	823	-613
+        FM	0x1072	848	-613
+    }
+
+    FRAME "activity_background_decoration2" // Index = 245, FModules = 2
+    {
+        0x20EE
+        RC	305	-636	831	-529
+        FM	0x1023	305	-636
+        FM	0x1023	568	-636	+FLIP_X
+    }
+
+    FRAME "activity_text_title" // Index = 246, FModules = 0
+    {
+        0x2103
+        RC	478	-594	659	-542
+    }
+
+    FRAME "activity_list_area" // Index = 247, FModules = 0
+    {
+        0x20EF
+        RC	148	-495	998	-152
+    }
+
+    FRAME "activity_button_list" // Index = 248, FModules = 0
+    {
+        0x20F0
+        RC	163	-486	975	-380
+    }
+
+    FRAME "activity_button_function1" // Index = 249, FModules = 3
+    {
+        0x20F1
+        RC	166	-486	568	-380
+        FM	0x106B	166	-486
+        FM	0x1014	187	-467
+        FM	0x1007	176	-480
+    }
+
+    FRAME "activity_button_function1_clicked" // Index = 250, FModules = 3
+    {
+        0x20F2
+        RC	166	-486	568	-380
+        FM	0x106C	166	-486
+        FM	0x1014	187	-467
+        FM	0x1007	176	-480
+    }
+
+    FRAME "activity_button_function1_lock" // Index = 251, FModules = 3
+    {
+        0x20F3
+        RC	166	-486	568	-380
+        FM	0x106D	166	-486
+        FM	0x1014	187	-467
+        FM	0x1007	176	-480
+    }
+
+    FRAME "activity_icon_function1" // Index = 252, FModules = 0
+    {
+        0x20F4
+        RC	187	-468	255	-398
+    }
+
+    FRAME "activity_text_functionname1" // Index = 253, FModules = 0
+    {
+        0x2101
+        RC	167	-415	275	-381
+    }
+
+    FRAME "activity_text_functiontime1" // Index = 254, FModules = 0
+    {
+        0x20F5
+        RC	270	-470	481	-432
+    }
+
+    FRAME "activity_text_functionstate1" // Index = 255, FModules = 0
+    {
+        0x20FF
+        RC	481	-470	548	-432
+    }
+
+    FRAME "activity_text_description1" // Index = 256, FModules = 0
+    {
+        0x20F6
+        RC	265	-432	551	-394
+    }
+
+    FRAME "activity_button_function2" // Index = 257, FModules = 3
+    {
+        0x20F7
+        RC	576	-486	978	-380
+        FM	0x106B	576	-486
+        FM	0x1014	597	-467
+        FM	0x1007	586	-480
+    }
+
+    FRAME "activity_button_function2_clicked" // Index = 258, FModules = 3
+    {
+        0x20F8
+        RC	576	-486	978	-380
+        FM	0x106C	576	-486
+        FM	0x1014	597	-467
+        FM	0x1007	586	-480
+    }
+
+    FRAME "activity_button_function2_lock" // Index = 259, FModules = 3
+    {
+        0x20F9
+        RC	576	-486	978	-380
+        FM	0x106D	576	-486
+        FM	0x1014	597	-467
+        FM	0x1007	586	-480
+    }
+
+    FRAME "activity_icon_function2" // Index = 260, FModules = 0
+    {
+        0x20FA
+        RC	597	-468	665	-398
+    }
+
+    FRAME "activity_text_functionname2" // Index = 261, FModules = 0
+    {
+        0x2102
+        RC	577	-415	685	-381
+    }
+
+    FRAME "activity_text_functiontime2" // Index = 262, FModules = 0
+    {
+        0x20FB
+        RC	680	-470	891	-432
+    }
+
+    FRAME "activity_text_functionstate2" // Index = 263, FModules = 0
+    {
+        0x2100
+        RC	891	-470	958	-432
+    }
+
+    FRAME "activity_text_description2" // Index = 264, FModules = 0
+    {
+        0x20FC
+        RC	675	-432	961	-394
+    }
+
+    FRAME "activity_close" // Index = 265, FModules = 1
+    {
+        0x20FD
+        RC	1010	-640	1097	-554
+        FM	0x100E	1010	-640
+    }
+
+    FRAME "activity_close_clicked" // Index = 266, FModules = 1
+    {
+        0x20FE
+        RC	1010	-640	1097	-554
+        FM	0x100F	1010	-640
+    }
+
+    FRAME "olreward_background" // Index = 267, FModules = 108
+    {
+        0x2108
+        RC	218	-637	926	-96
+        FM	0x1012	218	-637
+        FM	0x1012	697	-637	+FLIP_X
+        FM	0x1013	447	-637
+        FM	0x1013	472	-637
+        FM	0x1013	497	-637
+        FM	0x1013	522	-637
+        FM	0x1013	547	-637
+        FM	0x1013	572	-637
+        FM	0x1013	597	-637
+        FM	0x1013	622	-637
+        FM	0x1013	647	-637
+        FM	0x1013	672	-637
+        FM	0x1013	447	-279	+FLIP_Y
+        FM	0x1013	472	-279	+FLIP_Y
+        FM	0x1013	497	-279	+FLIP_Y
+        FM	0x1013	522	-279	+FLIP_Y
+        FM	0x1013	547	-279	+FLIP_Y
+        FM	0x1013	572	-279	+FLIP_Y
+        FM	0x1013	597	-279	+FLIP_Y
+        FM	0x1013	622	-279	+FLIP_Y
+        FM	0x1013	647	-279	+FLIP_Y
+        FM	0x1013	672	-279	+FLIP_Y
+        FM	0x1018	227	-454
+        FM	0x1018	227	-429
+        FM	0x1018	227	-404
+        FM	0x1018	227	-379
+        FM	0x1018	227	-354
+        FM	0x1018	227	-329
+        FM	0x1018	697	-454	+FLIP_X
+        FM	0x1018	697	-429	+FLIP_X
+        FM	0x1018	697	-404	+FLIP_X
+        FM	0x1018	697	-379	+FLIP_X
+        FM	0x1018	697	-354	+FLIP_X
+        FM	0x1018	697	-329	+FLIP_X
+        FM	0x1012	218	-279	+FLIP_Y
+        FM	0x1012	697	-279	+FLIP_X	+FLIP_Y
+        FM	0x101C	447	-454
+        FM	0x101C	447	-429
+        FM	0x101C	447	-404
+        FM	0x101C	447	-379
+        FM	0x101C	447	-354
+        FM	0x101C	447	-329
+        FM	0x101C	472	-454
+        FM	0x101C	472	-429
+        FM	0x101C	472	-404
+        FM	0x101C	472	-379
+        FM	0x101C	472	-354
+        FM	0x101C	472	-329
+        FM	0x101C	497	-454
+        FM	0x101C	497	-429
+        FM	0x101C	497	-404
+        FM	0x101C	497	-379
+        FM	0x101C	497	-354
+        FM	0x101C	497	-329
+        FM	0x101C	522	-454
+        FM	0x101C	522	-429
+        FM	0x101C	522	-404
+        FM	0x101C	522	-379
+        FM	0x101C	522	-354
+        FM	0x101C	522	-329
+        FM	0x101C	547	-454
+        FM	0x101C	547	-429
+        FM	0x101C	547	-404
+        FM	0x101C	547	-379
+        FM	0x101C	547	-354
+        FM	0x101C	547	-329
+        FM	0x101C	572	-454
+        FM	0x101C	572	-429
+        FM	0x101C	572	-404
+        FM	0x101C	572	-379
+        FM	0x101C	572	-354
+        FM	0x101C	572	-329
+        FM	0x101C	597	-454
+        FM	0x101C	597	-429
+        FM	0x101C	597	-404
+        FM	0x101C	597	-379
+        FM	0x101C	597	-354
+        FM	0x101C	597	-329
+        FM	0x101C	622	-454
+        FM	0x101C	622	-429
+        FM	0x101C	622	-404
+        FM	0x101C	622	-379
+        FM	0x101C	622	-354
+        FM	0x101C	622	-329
+        FM	0x101C	647	-454
+        FM	0x101C	647	-429
+        FM	0x101C	647	-404
+        FM	0x101C	647	-379
+        FM	0x101C	647	-354
+        FM	0x101C	647	-329
+        FM	0x101C	672	-454
+        FM	0x101C	672	-429
+        FM	0x101C	672	-404
+        FM	0x101C	672	-379
+        FM	0x101C	672	-354
+        FM	0x101C	672	-329
+        FM	0x1018	227	-304
+        FM	0x1018	697	-304	+FLIP_X
+        FM	0x101C	447	-304
+        FM	0x101C	472	-304
+        FM	0x101C	497	-304
+        FM	0x101C	522	-304
+        FM	0x101C	547	-304
+        FM	0x101C	572	-304
+        FM	0x101C	597	-304
+        FM	0x101C	622	-304
+        FM	0x101C	647	-304
+        FM	0x101C	672	-304
+    }
+
+    FRAME "olreward_background_decoration1" // Index = 268, FModules = 105
+    {
+        0x2109
+        RC	238	-613	908	-124
+        FM	0x1070	238	-605
+        FM	0x1070	883	-605	+FLIP_X
+        FM	0x1071	263	-613
+        FM	0x1071	698	-613	+FLIP_X
+        FM	0x1072	448	-613
+        FM	0x1072	473	-613
+        FM	0x1072	498	-613
+        FM	0x1072	523	-613
+        FM	0x1072	548	-613
+        FM	0x1072	573	-613
+        FM	0x1072	598	-613
+        FM	0x1072	623	-613
+        FM	0x1072	648	-613
+        FM	0x1072	673	-613
+        FM	0x1073	249	-523
+        FM	0x1073	711	-523	+FLIP_X
+        FM	0x1073	249	-265	+FLIP_Y
+        FM	0x1073	711	-265	+FLIP_X	+FLIP_Y
+        FM	0x1075	249	-340
+        FM	0x1075	249	-315
+        FM	0x1075	249	-290
+        FM	0x1075	711	-340	+FLIP_X
+        FM	0x1075	711	-315	+FLIP_X
+        FM	0x1075	711	-290	+FLIP_X
+        FM	0x1074	436	-523
+        FM	0x1074	461	-523
+        FM	0x1074	486	-523
+        FM	0x1074	511	-523
+        FM	0x1074	536	-523
+        FM	0x1074	561	-523
+        FM	0x1074	586	-523
+        FM	0x1074	611	-523
+        FM	0x1074	636	-523
+        FM	0x1074	436	-265	+FLIP_Y
+        FM	0x1074	461	-265	+FLIP_Y
+        FM	0x1074	486	-265	+FLIP_Y
+        FM	0x1074	511	-265	+FLIP_Y
+        FM	0x1074	536	-265	+FLIP_Y
+        FM	0x1074	561	-265	+FLIP_Y
+        FM	0x1074	586	-265	+FLIP_Y
+        FM	0x1074	611	-265	+FLIP_Y
+        FM	0x1074	636	-265	+FLIP_Y
+        FM	0x1076	436	-340
+        FM	0x1076	461	-340
+        FM	0x1076	486	-340
+        FM	0x1076	511	-340
+        FM	0x1076	536	-340
+        FM	0x1076	561	-340
+        FM	0x1076	586	-340
+        FM	0x1076	611	-340
+        FM	0x1076	636	-340
+        FM	0x1075	249	-365
+        FM	0x1075	711	-365	+FLIP_X
+        FM	0x1076	436	-365
+        FM	0x1076	461	-365
+        FM	0x1076	486	-365
+        FM	0x1076	511	-365
+        FM	0x1076	536	-365
+        FM	0x1076	561	-365
+        FM	0x1076	586	-365
+        FM	0x1076	611	-365
+        FM	0x1076	636	-365
+        FM	0x1075	249	-390
+        FM	0x1075	711	-390	+FLIP_X
+        FM	0x1076	436	-390
+        FM	0x1076	461	-390
+        FM	0x1076	486	-390
+        FM	0x1076	511	-390
+        FM	0x1076	536	-390
+        FM	0x1076	561	-390
+        FM	0x1076	586	-390
+        FM	0x1076	611	-390
+        FM	0x1076	636	-390
+        FM	0x1076	436	-315
+        FM	0x1076	461	-315
+        FM	0x1076	486	-315
+        FM	0x1076	511	-315
+        FM	0x1076	536	-315
+        FM	0x1076	561	-315
+        FM	0x1076	586	-315
+        FM	0x1076	611	-315
+        FM	0x1076	636	-315
+        FM	0x1076	436	-290
+        FM	0x1076	461	-290
+        FM	0x1076	486	-290
+        FM	0x1076	511	-290
+        FM	0x1076	536	-290
+        FM	0x1076	561	-290
+        FM	0x1076	586	-290
+        FM	0x1076	611	-290
+        FM	0x1076	636	-290
+        FM	0x1074	661	-523
+        FM	0x1074	661	-265	+FLIP_Y
+        FM	0x1076	661	-340
+        FM	0x1076	661	-365
+        FM	0x1076	661	-390
+        FM	0x1076	661	-315
+        FM	0x1076	661	-290
+        FM	0x1074	686	-523
+        FM	0x1074	686	-265	+FLIP_Y
+        FM	0x1076	686	-340
+        FM	0x1076	686	-365
+        FM	0x1076	686	-390
+        FM	0x1076	686	-315
+        FM	0x1076	686	-290
+    }
+
+    FRAME "olreward_background_decoration2" // Index = 269, FModules = 2
+    {
+        0x210A
+        RC	305	-636	831	-529
+        FM	0x1023	305	-636
+        FM	0x1023	568	-636	+FLIP_X
+    }
+
+    FRAME "olreward_text_title" // Index = 270, FModules = 0
+    {
+        0x210B
+        RC	478	-594	659	-542
+    }
+
+    FRAME "olreward_text_rewardnum" // Index = 271, FModules = 0
+    {
+        0x210C
+        RC	293	-497	571	-467
+    }
+
+    FRAME "olreward_text_countdown1" // Index = 272, FModules = 0
+    {
+        0x2129
+        RC	595	-497	741	-467
+    }
+
+    FRAME "olreward_num_countdown1" // Index = 273, FModules = 0
+    {
+        0x212A
+        RC	743	-497	874	-467
+    }
+
+    FRAME "olreward_frame_reward1" // Index = 274, FModules = 1
+    {
+        0x210D
+        RC	324	-453	415	-361
+        FM	0x1002	324	-453
+    }
+
+    FRAME "olreward_icon_reward1" // Index = 275, FModules = 0
+    {
+        0x210E
+        RC	336	-441	403	-373
+    }
+
+    FRAME "olreward_num_reward1" // Index = 276, FModules = 0
+    {
+        0x212D
+        RC	355	-397	403	-373
+    }
+
+    FRAME "olreward_frame_reward2" // Index = 277, FModules = 1
+    {
+        0x210F
+        RC	434	-453	525	-361
+        FM	0x1002	434	-453
+    }
+
+    FRAME "olreward_icon_reward2" // Index = 278, FModules = 0
+    {
+        0x2110
+        RC	446	-441	513	-373
+    }
+
+    FRAME "olreward_num_reward2" // Index = 279, FModules = 0
+    {
+        0x212E
+        RC	465	-397	513	-373
+    }
+
+    FRAME "olreward_frame_reward3" // Index = 280, FModules = 1
+    {
+        0x2111
+        RC	544	-453	635	-361
+        FM	0x1002	544	-453
+    }
+
+    FRAME "olreward_icon_reward3" // Index = 281, FModules = 0
+    {
+        0x2112
+        RC	556	-441	623	-373
+    }
+
+    FRAME "olreward_num_reward3" // Index = 282, FModules = 0
+    {
+        0x212F
+        RC	575	-397	623	-373
+    }
+
+    FRAME "olreward_frame_reward4" // Index = 283, FModules = 1
+    {
+        0x2113
+        RC	324	-353	415	-261
+        FM	0x1002	324	-353
+    }
+
+    FRAME "olreward_icon_reward4" // Index = 284, FModules = 0
+    {
+        0x2114
+        RC	336	-341	403	-273
+    }
+
+    FRAME "olreward_num_reward4" // Index = 285, FModules = 0
+    {
+        0x2130
+        RC	355	-297	403	-273
+    }
+
+    FRAME "olreward_frame_reward5" // Index = 286, FModules = 1
+    {
+        0x2115
+        RC	434	-353	525	-261
+        FM	0x1002	434	-353
+    }
+
+    FRAME "olreward_icon_reward5" // Index = 287, FModules = 0
+    {
+        0x2116
+        RC	446	-341	513	-273
+    }
+
+    FRAME "olreward_num_reward5" // Index = 288, FModules = 0
+    {
+        0x2131
+        RC	465	-297	513	-273
+    }
+
+    FRAME "olreward_frame_reward6" // Index = 289, FModules = 1
+    {
+        0x2117
+        RC	544	-353	635	-261
+        FM	0x1002	544	-353
+    }
+
+    FRAME "olreward_icon_reward6" // Index = 290, FModules = 0
+    {
+        0x2118
+        RC	556	-341	623	-273
+    }
+
+    FRAME "olreward_num_reward6" // Index = 291, FModules = 0
+    {
+        0x2132
+        RC	575	-297	623	-273
+    }
+
+    FRAME "olreward_frame_reward7" // Index = 292, FModules = 1
+    {
+        0x211D
+        RC	324	-228	415	-136
+        FM	0x1002	324	-228
+    }
+
+    FRAME "olreward_icon_reward7" // Index = 293, FModules = 0
+    {
+        0x211E
+        RC	336	-216	403	-148
+    }
+
+    FRAME "olreward_num_reward7" // Index = 294, FModules = 0
+    {
+        0x2133
+        RC	355	-172	403	-148
+    }
+
+    FRAME "olreward_frame_reward8" // Index = 295, FModules = 1
+    {
+        0x211F
+        RC	434	-228	525	-136
+        FM	0x1002	434	-228
+    }
+
+    FRAME "olreward_icon_reward8" // Index = 296, FModules = 0
+    {
+        0x2120
+        RC	446	-216	513	-148
+    }
+
+    FRAME "olreward_num_reward8" // Index = 297, FModules = 0
+    {
+        0x2134
+        RC	465	-172	513	-148
+    }
+
+    FRAME "olreward_frame_reward9" // Index = 298, FModules = 1
+    {
+        0x2121
+        RC	544	-228	635	-136
+        FM	0x1002	544	-228
+    }
+
+    FRAME "olreward_icon_reward9" // Index = 299, FModules = 0
+    {
+        0x2122
+        RC	556	-216	623	-148
+    }
+
+    FRAME "olreward_num_reward9" // Index = 300, FModules = 0
+    {
+        0x2135
+        RC	575	-172	623	-148
+    }
+
+    FRAME "olreward_frame_reward10" // Index = 301, FModules = 1
+    {
+        0x2123
+        RC	654	-228	745	-136
+        FM	0x1002	654	-228
+    }
+
+    FRAME "olreward_icon_reward10" // Index = 302, FModules = 0
+    {
+        0x2124
+        RC	666	-216	733	-148
+    }
+
+    FRAME "olreward_num_reward10" // Index = 303, FModules = 0
+    {
+        0x2136
+        RC	685	-172	733	-148
+    }
+
+    FRAME "olreward_frame_reward11" // Index = 304, FModules = 1
+    {
+        0x2125
+        RC	764	-228	855	-136
+        FM	0x1002	764	-228
+    }
+
+    FRAME "olreward_icon_reward11" // Index = 305, FModules = 0
+    {
+        0x2126
+        RC	776	-216	843	-148
+    }
+
+    FRAME "olreward_num_reward11" // Index = 306, FModules = 0
+    {
+        0x2137
+        RC	795	-172	843	-148
+    }
+
+    FRAME "olreward_button_get" // Index = 307, FModules = 2
+    {
+        0x2119
+        RC	694	-399	826	-329
+        FM	0x1010	694	-399
+        FM	0x1010	760	-399	+FLIP_X
+    }
+
+    FRAME "olreward_button_get_clicked" // Index = 308, FModules = 2
+    {
+        0x211A
+        RC	694	-399	826	-329
+        FM	0x1011	694	-399
+        FM	0x1011	760	-399	+FLIP_X
+    }
+
+    FRAME "olreward_text_get" // Index = 309, FModules = 0
+    {
+        0x211B
+        RC	706	-388	814	-341
+    }
+
+    FRAME "olreward_text_rewardpreview" // Index = 310, FModules = 0
+    {
+        0x211C
+        RC	293	-257	571	-227
+    }
+
+    FRAME "olreward_text_countdown2" // Index = 311, FModules = 0
+    {
+        0x212B
+        RC	663	-257	741	-227
+    }
+
+    FRAME "olreward_num_countdown2" // Index = 312, FModules = 0
+    {
+        0x212C
+        RC	743	-257	874	-227
+    }
+
+    FRAME "olreward_close" // Index = 313, FModules = 1
+    {
+        0x2127
+        RC	840	-640	927	-554
+        FM	0x100E	840	-640
+    }
+
+    FRAME "olreward_close_clicked" // Index = 314, FModules = 1
+    {
+        0x2128
+        RC	840	-640	927	-554
+        FM	0x100F	840	-640
+    }
+
+    FRAME "staminareward_background" // Index = 315, FModules = 134
+    {
+        0x2138
+        RC	308	-596	828	-83
+        FM	0x105C	308	-565
+        FM	0x105C	308	-153	+FLIP_Y
+        FM	0x105C	758	-565	+FLIP_X
+        FM	0x105C	758	-153	+FLIP_X	+FLIP_Y
+        FM	0x105D	378	-565
+        FM	0x105D	416	-565
+        FM	0x105D	454	-565
+        FM	0x105D	492	-565
+        FM	0x105D	530	-565
+        FM	0x105D	568	-565
+        FM	0x105D	606	-565
+        FM	0x105D	644	-565
+        FM	0x105D	682	-565
+        FM	0x105D	720	-565
+        FM	0x105D	378	-153	+FLIP_Y
+        FM	0x105D	416	-153	+FLIP_Y
+        FM	0x105D	454	-153	+FLIP_Y
+        FM	0x105D	492	-153	+FLIP_Y
+        FM	0x105D	530	-153	+FLIP_Y
+        FM	0x105D	568	-153	+FLIP_Y
+        FM	0x105D	606	-153	+FLIP_Y
+        FM	0x105D	644	-153	+FLIP_Y
+        FM	0x105D	682	-153	+FLIP_Y
+        FM	0x105D	720	-153	+FLIP_Y
+        FM	0x105E	308	-495
+        FM	0x105E	308	-457
+        FM	0x105E	308	-419
+        FM	0x105E	308	-381
+        FM	0x105E	758	-495	+FLIP_X
+        FM	0x105E	758	-457	+FLIP_X
+        FM	0x105E	758	-419	+FLIP_X
+        FM	0x105E	758	-381	+FLIP_X
+        FM	0x105F	378	-495
+        FM	0x105F	378	-457
+        FM	0x105F	378	-419
+        FM	0x105F	378	-381
+        FM	0x105F	416	-495
+        FM	0x105F	416	-457
+        FM	0x105F	416	-419
+        FM	0x105F	416	-381
+        FM	0x105F	454	-495
+        FM	0x105F	454	-457
+        FM	0x105F	454	-419
+        FM	0x105F	454	-381
+        FM	0x105F	492	-495
+        FM	0x105F	492	-457
+        FM	0x105F	492	-419
+        FM	0x105F	492	-381
+        FM	0x105F	530	-495
+        FM	0x105F	530	-457
+        FM	0x105F	530	-419
+        FM	0x105F	530	-381
+        FM	0x105F	568	-495
+        FM	0x105F	568	-457
+        FM	0x105F	568	-419
+        FM	0x105F	568	-381
+        FM	0x105F	606	-495
+        FM	0x105F	606	-457
+        FM	0x105F	606	-419
+        FM	0x105F	606	-381
+        FM	0x105F	644	-495
+        FM	0x105F	644	-457
+        FM	0x105F	644	-419
+        FM	0x105F	644	-381
+        FM	0x105F	682	-495
+        FM	0x105F	682	-457
+        FM	0x105F	682	-419
+        FM	0x105F	682	-381
+        FM	0x105F	720	-495
+        FM	0x105F	720	-457
+        FM	0x105F	720	-419
+        FM	0x105F	720	-381
+        FM	0x105E	308	-343
+        FM	0x105E	308	-305
+        FM	0x105E	308	-267
+        FM	0x105E	758	-343	+FLIP_X
+        FM	0x105E	758	-305	+FLIP_X
+        FM	0x105E	758	-267	+FLIP_X
+        FM	0x105F	378	-343
+        FM	0x105F	378	-305
+        FM	0x105F	378	-267
+        FM	0x105F	416	-343
+        FM	0x105F	416	-305
+        FM	0x105F	416	-267
+        FM	0x105F	454	-343
+        FM	0x105F	454	-305
+        FM	0x105F	454	-267
+        FM	0x105F	492	-343
+        FM	0x105F	492	-305
+        FM	0x105F	492	-267
+        FM	0x105F	530	-343
+        FM	0x105F	530	-305
+        FM	0x105F	530	-267
+        FM	0x105F	568	-343
+        FM	0x105F	568	-305
+        FM	0x105F	568	-267
+        FM	0x105F	606	-343
+        FM	0x105F	606	-305
+        FM	0x105F	606	-267
+        FM	0x105F	644	-343
+        FM	0x105F	644	-305
+        FM	0x105F	644	-267
+        FM	0x105F	682	-343
+        FM	0x105F	682	-305
+        FM	0x105F	682	-267
+        FM	0x105F	720	-343
+        FM	0x105F	720	-305
+        FM	0x105F	720	-267
+        FM	0x105E	308	-229
+        FM	0x105E	758	-229	+FLIP_X
+        FM	0x105F	378	-229
+        FM	0x105F	416	-229
+        FM	0x105F	454	-229
+        FM	0x105F	492	-229
+        FM	0x105F	530	-229
+        FM	0x105F	568	-229
+        FM	0x105F	606	-229
+        FM	0x105F	644	-229
+        FM	0x105F	682	-229
+        FM	0x105F	720	-229
+        FM	0x105E	308	-191
+        FM	0x105E	758	-191	+FLIP_X
+        FM	0x105F	378	-191
+        FM	0x105F	416	-191
+        FM	0x105F	454	-191
+        FM	0x105F	492	-191
+        FM	0x105F	530	-191
+        FM	0x105F	568	-191
+        FM	0x105F	606	-191
+        FM	0x105F	644	-191
+        FM	0x105F	682	-191
+        FM	0x105F	720	-191
+        FM	0x109F	415	-596
+        FM	0x109F	569	-596	+FLIP_X
+    }
+
+    FRAME "staminareward_pic" // Index = 316, FModules = 0
+    {
+        0x2139
+        RC	337	-516	801	-293
+    }
+
+    FRAME "staminareward_text_title" // Index = 317, FModules = 0
+    {
+        0x213A
+        RC	483	-583	655	-541
+    }
+
+    FRAME "staminareward_text_description" // Index = 318, FModules = 0
+    {
+        0x213D
+        RC	345	-291	796	-219
+    }
+
+    FRAME "staminareward_text_description2" // Index = 319, FModules = 0
+    {
+        0x213C
+        RC	345	-216	796	-180
+    }
+
+    FRAME "staminareward_text_countdowntime1" // Index = 320, FModules = 0
+    {
+        0x2143
+        RC	385	-216	595	-180
+    }
+
+    FRAME "staminareward_text_countdowntime2" // Index = 321, FModules = 0
+    {
+        0x2144
+        RC	600	-216	740	-180
+    }
+
+    FRAME "staminareward_button_get" // Index = 322, FModules = 2
+    {
+        0x213E
+        RC	503	-174	635	-104
+        FM	0x1010	503	-174
+        FM	0x1010	569	-174	+FLIP_X
+    }
+
+    FRAME "staminareward_button_get_clicked" // Index = 323, FModules = 2
+    {
+        0x213F
+        RC	503	-174	635	-104
+        FM	0x1011	503	-174
+        FM	0x1011	569	-174	+FLIP_X
+    }
+
+    FRAME "staminareward_button_cantget" // Index = 324, FModules = 2
+    {
+        0x213B
+        RC	503	-174	635	-104
+        FM	0x10B1	503	-174
+        FM	0x10B1	569	-174	+FLIP_X
+    }
+
+    FRAME "staminareward_text_get" // Index = 325, FModules = 0
+    {
+        0x2140
+        RC	514	-163	622	-116
+    }
+
+    FRAME "staminareward_button_close" // Index = 326, FModules = 1
+    {
+        0x2141
+        RC	762	-595	849	-509
+        FM	0x100E	762	-595
+    }
+
+    FRAME "staminareward_button_close_clicked" // Index = 327, FModules = 1
+    {
+        0x2142
+        RC	762	-595	849	-509
+        FM	0x100F	762	-595
+    }
+
+    FRAME "exchangecode_background" // Index = 328, FModules = 3
+    {
+        0x2145
+        RC	324	-522	823	-176
+        FM	0x10C3	324	-500
+        FM	0x109F	416	-522
+        FM	0x109F	570	-522	+FLIP_X
+    }
+
+    FRAME "exchangecode_text_title" // Index = 329, FModules = 0
+    {
+        0x2146
+        RC	483	-508	656	-467
+    }
+
+    FRAME "exchangecode_text_input" // Index = 330, FModules = 0
+    {
+        0x2147
+        RC	363	-400	438	-359
+    }
+
+    FRAME "exchangecode_frame_input" // Index = 331, FModules = 9
+    {
+        0x2148
+        RC	449	-414	728	-345
+        FM	0x108C	449	-414
+        FM	0x108C	690	-414	+FLIP_X
+        FM	0x10A8	487	-414
+        FM	0x10A8	516	-414
+        FM	0x10A8	545	-414
+        FM	0x10A8	574	-414
+        FM	0x10A8	603	-414
+        FM	0x10A8	632	-414
+        FM	0x10A8	661	-414
+    }
+
+    FRAME "exchangecode_text_example" // Index = 332, FModules = 0
+    {
+        0x214A
+        RC	392	-336	749	-294
+    }
+
+    FRAME "exchangecode_button_confirm" // Index = 333, FModules = 2
+    {
+        0x2149
+        RC	504	-286	636	-216
+        FM	0x1010	504	-286
+        FM	0x1010	570	-286	+FLIP_X
+    }
+
+    FRAME "exchangecode_button_confirm_clicked" // Index = 334, FModules = 2
+    {
+        0x214B
+        RC	504	-286	636	-216
+        FM	0x1011	504	-286
+        FM	0x1011	570	-286	+FLIP_X
+    }
+
+    FRAME "exchangecode_text_confirm" // Index = 335, FModules = 0
+    {
+        0x214C
+        RC	515	-275	623	-228
+    }
+
+    FRAME "exchangecode_button_close" // Index = 336, FModules = 1
+    {
+        0x214D
+        RC	751	-514	838	-428
+        FM	0x100E	751	-514
+    }
+
+    FRAME "exchangecode_button_close_clicked" // Index = 337, FModules = 1
+    {
+        0x214E
+        RC	751	-514	838	-428
+        FM	0x100F	751	-514
+    }
+
+    SPRITE_END
+
+} // SPRITE
+////////////////////////////////////////////////////////////////////////////////

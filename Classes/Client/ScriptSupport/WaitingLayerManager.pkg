@@ -1,0 +1,7 @@
+class WaitingLayerManager
+{
+	static WaitingLayerManager* Get();
+	
+	void PushOneMessage(const char* pMessage);
+	void clearMessages();
+}

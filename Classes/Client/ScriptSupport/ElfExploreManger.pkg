@@ -1,0 +1,16 @@
+class ElfExploreManger
+{
+	ElfExploreManger();
+
+	static ElfExploreManger* Get();
+	static void Destroy();
+	/**
+	* Instruction : ÷ÿ÷√±‰¡ø
+	* @param 
+	*/
+	void ResetValue();
+
+	void SendExchangeElfReq(unsigned int elfId);
+	void SendExploreReq(unsigned int type);
+	void SendExploreDetermineReq(unsigned int optionId);
+};

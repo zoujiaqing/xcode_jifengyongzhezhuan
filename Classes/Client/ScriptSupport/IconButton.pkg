@@ -1,0 +1,68 @@
+	enum DragHandlerType
+	{
+		EUnKowned	   = 0,
+		EBackPackItem  = 1,			// 背包格
+		EStorageItem   = 2,			// 仓库格
+		EEquipmentItem = 3,			// 装备格
+		EUIBg		   = 4,			// UI面板
+		EAlchemyButton = 5,			// 炼金熔灵石
+		EAlchemyUpgrade = 6,		// 炼金石升级格
+		EAlchemyBag	   = 7,			// 灵石背包格   
+		EAlchemyStorage= 8,			// 灵石仓库格 
+		EAlchemyEquip  = 9,			// 灵石装备格 
+		EALchemyToStorage = 10,		// 灵石拖入仓库
+		ESkillEquipItem	  = 11,		// 技能列表
+		ESlotItem = 12,			// 技能槽格
+		ECardBagItem	= 13,		// 卡牌背包
+		ECardEquipItem	= 14		// 卡牌装备
+	};
+
+class IconButton : public CCNode
+{
+		static IconButton * create(CCSprite* backgroundTex , CCSprite* normalTex, CCSprite* selectedTex,
+			int priority);
+	
+		IconButton(CCSprite* backgroundTex , CCSprite* normalTex, CCSprite* selectedTex);		
+
+		void SetButtonName(string name){m_name = name;}
+
+		void SetButtonIndex(int index){m_pagePosition = index;}
+
+		int GetButtonIndex(){return m_pagePosition;}
+
+		void SetNormalIcon(CCSprite* normalTex);
+
+		void SetSelectedIcon(CCSprite* selectedTex);
+
+		void AddExternalSprite(CCSprite* sprite, CCPoint pt);
+
+		virtual UILabelTTF* getItemLabel();
+
+		virtual void setItemLabel(const char * text,float fontSize,const char* font);
+
+		virtual void removeItemLabel();
+
+		void SetUserData(int data);
+
+		void SetDragFlagTime(unsigned int ms);
+
+		void SetDoubleClickHandler(CCObject* listerner,SEL_MenuHandler handler);
+		void SetTappedHandler(CCObject* listerner,SEL_MenuHandler tapHandler,SEL_MenuHandler tapCancelHandler);
+		bool isReleaseInButton(CCTouch* touch);
+		void setDragMove(bool);
+		void setFrameSprite(CCSprite* sprite,CCPoint pt);
+
+		CCMenuItemSprite* getMenuItem(){return m_menuItem;}
+
+		void setIconOrder(int order){m_iconOrder = order;}
+		// 动态修改按键优先级
+		virtual void setHandlerPriority(int newPriority);
+
+		int getHandlerPriority();
+		
+		void creatDragReceiver(DragHandlerType type);
+		UIMenu* getMenuNode();
+		
+		void showTipIcon(const CCPoint& anchorPos);
+		void hideTipIcon();
+};

@@ -1,0 +1,5 @@
+class CityListLayer : public CCLayer
+{
+public:
+		void openCityList();
+};

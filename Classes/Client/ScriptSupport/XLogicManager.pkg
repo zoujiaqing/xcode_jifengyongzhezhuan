@@ -1,0 +1,36 @@
+class XLogicManager
+{
+public:
+	static XLogicManager* sharedManager();
+
+	void reqPlayerAttributes(int attributeId);
+	
+	void LeaveBattle();
+	void setHasStarReward(bool flag);
+
+	void networkDisConnected();
+    void notifyShowNextAppearUI();
+	void fromGameBackToLogin();
+    bool getAutoLogin() ;
+enum  
+	{
+		E_NOE,
+		E_SELECT_ZONE ,
+		E_CREATE_PLAYER_LAYER ,
+		E_SELECT_CHARACTER ,
+		E_ENTER_MAINLAND,
+		E_ENTER_FB,
+		E_MAIN_GAME_LAYER ,
+		E_GAME_HELP_LAYER ,
+		E_PVP_LAYER ,
+		E_PVE_LAYER,
+		E_TASK_PANEL_LAYER ,
+
+		E_XLOGICMANAGER,
+
+		// add more...
+
+	}
+
+};
+

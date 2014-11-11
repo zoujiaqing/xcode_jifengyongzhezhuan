@@ -1,0 +1,23 @@
+enum ENTERANCE_TYPE
+{
+	ENTERANCE_UNDERGROUND,
+	ENTERANCE_CITYDEFEND,
+	ENTERANCE_WORLDBOSS,
+	ENTERANCE_BESTFIGHTER,
+};
+
+
+
+class InstanceManager
+{
+	static InstanceManager* Get();
+	
+	int getSpecialEnteranceMapId(ENTERANCE_TYPE type);
+	
+	void onEnterSpecialEntrance(ENTERANCE_TYPE type);
+	void onLeaveSpecialEntrance(ENTERANCE_TYPE type);
+	
+	void autoSearchPathToInstance(int instanceId);
+	int getOneInstanceStars(unsigned int instanceId);
+	InstanceInfo * getOneInstance(unsigned int instanceId);
+};

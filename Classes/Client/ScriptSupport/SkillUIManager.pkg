@@ -1,0 +1,9 @@
+class SkillUIManager
+{
+	static SkillUIManager* getInstance(void);
+	void ResetValue();
+	void sendGetUserSkillReqMessage(bool bSender);
+	void sendAddUserSkillReqMessage(unsigned int skillId,unsigned int levelId);
+	void sendUserSkillDiffReqMessage(unsigned int skillId,unsigned int levelId);
+	void sendSetSlotAttributeMessage(unsigned int slotIndex,unsigned int skillId);
+};

@@ -1,0 +1,499 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>monster_lvzhoujiangshi_10048:1dda.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{246,0},{6,6}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{6,6}}</string>
+                <key>sourceSize</key>
+                <string>{6,6}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:jiangsi shenti.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{94,114},{16,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,17}}</string>
+                <key>sourceSize</key>
+                <string>{16,17}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:jiangsi tou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{209,38},{35,36}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{35,36}}</string>
+                <key>sourceSize</key>
+                <string>{35,36}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si bozi1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{99,148},{12,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,9}}</string>
+                <key>sourceSize</key>
+                <string>{12,9}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si bozi2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{85,148},{12,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,9}}</string>
+                <key>sourceSize</key>
+                <string>{12,9}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si jiao1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{209,76},{21,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,21}}</string>
+                <key>sourceSize</key>
+                <string>{21,21}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si jiao2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{208,119},{15,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,16}}</string>
+                <key>sourceSize</key>
+                <string>{15,16}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si jiao3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{94,94},{21,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,18}}</string>
+                <key>sourceSize</key>
+                <string>{21,18}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si jiao4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{242,121},{12,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,13}}</string>
+                <key>sourceSize</key>
+                <string>{12,13}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si shenti2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{228,102},{16,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,17}}</string>
+                <key>sourceSize</key>
+                <string>{16,17}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si shou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{208,99},{18,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,18}}</string>
+                <key>sourceSize</key>
+                <string>{18,18}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si shou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{232,76},{18,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,24}}</string>
+                <key>sourceSize</key>
+                <string>{18,24}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si shou3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{74,94},{18,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,23}}</string>
+                <key>sourceSize</key>
+                <string>{18,23}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si shou4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{74,119},{15,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,18}}</string>
+                <key>sourceSize</key>
+                <string>{15,18}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si shoubi1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{207,137},{12,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,11}}</string>
+                <key>sourceSize</key>
+                <string>{12,11}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si shoubi2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{240,149},{9,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,10}}</string>
+                <key>sourceSize</key>
+                <string>{9,10}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si shoubi3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{195,142},{9,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,11}}</string>
+                <key>sourceSize</key>
+                <string>{9,11}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si tou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{209,0},{35,36}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{35,36}}</string>
+                <key>sourceSize</key>
+                <string>{35,36}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si tui1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{225,136},{13,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,14}}</string>
+                <key>sourceSize</key>
+                <string>{13,14}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si tui3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{195,125},{10,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{10,15}}</string>
+                <key>sourceSize</key>
+                <string>{10,15}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si xiati.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{91,133},{15,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,13}}</string>
+                <key>sourceSize</key>
+                <string>{15,13}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:si xiati2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{225,121},{15,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,13}}</string>
+                <key>sourceSize</key>
+                <string>{15,13}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:sishoubi4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{240,136},{12,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,11}}</string>
+                <key>sourceSize</key>
+                <string>{12,11}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:situi2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{74,139},{9,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,13}}</string>
+                <key>sourceSize</key>
+                <string>{9,13}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:situi4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{195,83},{11,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,19}}</string>
+                <key>sourceSize</key>
+                <string>{11,19}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:situi4 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{195,104},{11,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,19}}</string>
+                <key>sourceSize</key>
+                <string>{11,19}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:y23.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,94},{72,65}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{72,65}}</string>
+                <key>sourceSize</key>
+                <string>{72,65}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:y24.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{118,0},{89,81}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{89,81}}</string>
+                <key>sourceSize</key>
+                <string>{89,81}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:y25.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{116,92}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{116,92}}</string>
+                <key>sourceSize</key>
+                <string>{116,92}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:y45.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{55,161},{52,51}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{52,51}}</string>
+                <key>sourceSize</key>
+                <string>{52,51}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:y46.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,161},{53,63}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{53,63}}</string>
+                <key>sourceSize</key>
+                <string>{53,63}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:y48.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{118,83},{75,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{75,72}}</string>
+                <key>sourceSize</key>
+                <string>{75,72}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:y49.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{55,214},{49,36}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{49,36}}</string>
+                <key>sourceSize</key>
+                <string>{49,36}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:y51.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{106,218},{50,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{50,32}}</string>
+                <key>sourceSize</key>
+                <string>{50,32}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:y52.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{180,157},{55,67}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{55,67}}</string>
+                <key>sourceSize</key>
+                <string>{55,67}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:y54.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{113,157},{65,59}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{65,59}}</string>
+                <key>sourceSize</key>
+                <string>{65,59}</string>
+            </dict>
+            <key>monster_lvzhoujiangshi_10048:y55.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,226},{50,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{50,21}}</string>
+                <key>sourceSize</key>
+                <string>{50,21}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>monster_lvzhoujiangshi_10048.pvr.ccz</string>
+            <key>size</key>
+            <string>{255,251}</string>
+            <key>textureFileName</key>
+            <string>monster_lvzhoujiangshi_10048.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

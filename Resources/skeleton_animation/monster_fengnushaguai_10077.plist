@@ -1,0 +1,148 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>monster_fengnushaguai_10077:n chushou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{76,61},{26,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,13}}</string>
+                <key>sourceSize</key>
+                <string>{26,13}</string>
+            </dict>
+            <key>monster_fengnushaguai_10077:n daoju.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{76,36},{25,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,23}}</string>
+                <key>sourceSize</key>
+                <string>{25,23}</string>
+            </dict>
+            <key>monster_fengnushaguai_10077:ni daoju2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{79,0},{24,34}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,34}}</string>
+                <key>sourceSize</key>
+                <string>{24,34}</string>
+            </dict>
+            <key>monster_fengnushaguai_10077:ni shen.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,87},{61,39}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{61,39}}</string>
+                <key>sourceSize</key>
+                <string>{61,39}</string>
+            </dict>
+            <key>monster_fengnushaguai_10077:ni yan.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{105,22},{20,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,8}}</string>
+                <key>sourceSize</key>
+                <string>{20,8}</string>
+            </dict>
+            <key>monster_fengnushaguai_10077:ni yan 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{103,36},{22,7}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,7}}</string>
+                <key>sourceSize</key>
+                <string>{22,7}</string>
+            </dict>
+            <key>monster_fengnushaguai_10077:ni zui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{105,0},{20,20}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,20}}</string>
+                <key>sourceSize</key>
+                <string>{20,20}</string>
+            </dict>
+            <key>monster_fengnushaguai_10077:z11.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{77,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{77,27}}</string>
+                <key>sourceSize</key>
+                <string>{77,27}</string>
+            </dict>
+            <key>monster_fengnushaguai_10077:z12.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,58},{74,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{74,27}}</string>
+                <key>sourceSize</key>
+                <string>{74,27}</string>
+            </dict>
+            <key>monster_fengnushaguai_10077:z22.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,29},{74,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{74,27}}</string>
+                <key>sourceSize</key>
+                <string>{74,27}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>monster_fengnushaguai_10077.pvr.ccz</string>
+            <key>size</key>
+            <string>{125,127}</string>
+            <key>textureFileName</key>
+            <string>monster_fengnushaguai_10077.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

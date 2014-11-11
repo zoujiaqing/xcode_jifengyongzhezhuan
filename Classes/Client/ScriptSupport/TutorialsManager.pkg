@@ -1,0 +1,6 @@
+class TutorialsManager
+{
+	static TutorialsManager* Get();
+	void StartOneTutorial(unsigned int id);
+	bool HandleOneEvent(const char* name,unsigned int type);
+};

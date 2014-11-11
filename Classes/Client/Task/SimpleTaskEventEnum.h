@@ -1,0 +1,9 @@
+#ifndef _SIMPLE_TASK_EVENT_ENUM_H_
+#define _SIMPLE_TASK_EVENT_ENUM_H_
+
+typedef enum
+{
+	E_SIMPLE_TASK_EVENT_GET_FIRSRT_ID = 0
+}ESimpleTaskEvent;
+
+#endif	//_SIMPLE_TASK_EVENT_ENUM_H_

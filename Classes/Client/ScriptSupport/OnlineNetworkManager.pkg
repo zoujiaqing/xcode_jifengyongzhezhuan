@@ -1,0 +1,18 @@
+class OnlineNetworkManager
+{
+	static OnlineNetworkManager*	sShareInstance();
+	void sendDailyTaskReqMessage();
+	void sendDailyTaskAcceptReqMessage(unsigned int taskId);
+	void sendGiveUpTaskReqMessage();
+	void sendExchangeParameterReq(unsigned int exchangeId,unsigned int* params, int len);
+	void sendGetDailyTaskRewardReqMessage();
+	void sendGetTaskStatusMessage(int taskId);
+	void sendUseItem(unsigned int pos, unsigned int itemId,unsigned int num);
+	void sendEquipComposeReq(unsigned int exchangeId,unsigned int pos,unsigned int multi);
+	void SendMoveFairyPosReq(unsigned int fromPos,unsigned int toPos);
+	bool  sendMessage(
+		char *msgName,
+		void *bodyBuff,
+		int bodylen,
+        bool isFailedCache);
+}

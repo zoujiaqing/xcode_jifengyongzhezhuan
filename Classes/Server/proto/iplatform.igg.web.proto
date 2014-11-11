@@ -1,0 +1,109 @@
+message pf_msg_head_t {
+    required string msg_type_name   = 1;//body message name
+    required uint32 game_id         = 2;//game ID
+    required uint32 channel_id      = 3;//third platform channel ID
+    required int32  ret             = 4;//return code
+    required uint32 seq             = 5;//sequence
+    optional string sign            = 6;//md5(game_id=%u&channel_id=%u&pri_key=%s&data=msg_body), msg_body: binary body
+}
+
+
+//在线数据接口
+message pf_online_data_msg_in_t {
+    required uint64 online_time = 1; // online timestamp
+}
+message pf_online_data_msg_out_t {
+    message pf_online_data_t {
+        required uint64 online_ip   = 1; // online IP
+        required uint32 online_port = 2; // online port
+        required uint64 online_time = 3; // online timestamp
+        required uint32 online_num  = 4; // online user number
+    }
+
+    repeated pf_online_data_t online_data = 1;
+}
+
+//玩家角色信息接口
+message pf_user_base_info_msg_in_t {
+    required uint64 user_id = 1; // user ID
+}
+message pf_user_base_info_msg_out_t {
+    required uint64 user_id     = 1; 
+    required int32  user_level  = 2; //等级(如果没有返回0)
+    required int32  user_exp    = 3; //经验值(如果没有返回0)
+    required int32  user_cash   = 4; //点券(如果没有返回0)
+    required int32  user_coin   = 5; //游戏币(如果没有返回0)
+    required int32  friend_num  = 6; //好友数
+    required uint64 reg_time    = 7; //注册日期
+    required uint64 last_login_time = 8; //最后登陆时间
+}
+
+//玩家金钱、经验值修改接口
+message pf_user_attr_modify_msg_in_t {
+    required uint64 user_id     = 1;
+    required int32  user_cash   = 2; //Cash值，为0时不修改
+    required int32  user_coin   = 3; //Coin值，为0时不修改
+    required int32  user_exp    = 4; //经验值，为0时不修改
+}
+message pf_user_attr_modify_msg_out_t {
+    required uint64 user_id     = 1;
+}
+
+//玩家背包道具、礼物修改接口
+message pf_user_bag_modify_msg_in_t {
+    required uint64 user_id     = 1;
+    required int32  item_id     = 2; //物品编号
+    required int32  item_count  = 3; //修改物品数量(正数为增加，负数为减少)
+    required int32  modify_type = 4; //修改物品类型（type=1 为修改背包物品数量，
+                                    //type=0为修改玩家礼品背包的物品数量，默认为1物品背包）
+    required int32  delete_type = 5; //是否删除物品（delete=0 为删除所有该类型物品，
+                                    //number此时无用，delete=1 为不删除，默认为1不删除）
+}
+message pf_user_bag_modify_msg_out_t {
+    required uint64 user_id     = 1;
+}
+
+//玩家封号解封接口
+message pf_forceout_msg_in_t {
+    required uint64 user_id     = 1;
+    required int32  type     = 2; // 操作类型（0为封号操作，1为解号操作）
+    required int32  code  = 3;    // 封号原因代码（含义自定）
+}
+message pf_forceout_msg_out_t {
+    required uint64 user_id     = 1;
+}
+
+//游戏禁言接口
+message pf_stop_chat_in_t {
+    required uint64 user_id     = 1;
+    required int32  type     = 2; // 操作类型（0为禁言操作，1为解禁操作）
+}
+message pf_stop_chat_out_t {
+    required uint64 user_id     = 1;
+}
+
+//游戏踢人接口
+message pf_disconn_in_t {
+    required uint64 user_id     = 1;
+}
+message pf_disconn_out_t {
+    required uint64 user_id     = 1;
+}
+
+//游戏公告接口
+message pf_bulletin_in_t {
+    required string content     = 1;
+    required int32 mixed     = 2;
+}
+message pf_bulletin_out_t {
+    required string flag     = 1;
+}
+
+
+message pf_ack_errcode_t {
+    required int32  errcode             = 1;
+    optional string errmsg              = 2 [default = "default error"];
+    optional string ori_msg_typename    = 3 [default = "Unknown"];
+}
+
+

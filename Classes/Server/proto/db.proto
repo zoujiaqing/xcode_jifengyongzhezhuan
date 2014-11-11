@@ -1,0 +1,1773 @@
+/*
+1. 包格式:
+     total_len(u32) + header_len(u32) + msghead + msgbody
+	|   整包长度   |  包头长度（包括本身） | 包头 | 包体 |
+
+2. 使用规则：
+    (1) 包头格式绝对不能改；
+	(2) 字段只能加，不能减；
+	(3) 增加的字段只能是optional类型，且必须给出default值，最好还有相关说明；
+	(4) 不能改变原来字段的序号。
+
+3. 命名规则：
+	DBXXXXReq/Rsp：以大写DB开头，Online发来的请求以Req结尾，DB应答包以Rsp结尾，
+					中间的XXXX代表对应的功能，比如DBLoginReq/Rsp。
+*/
+
+package rudb;
+
+// 和DB通讯的标准报文头部
+message db_msgheader_t {
+	// 前三个是DB框架要求的字段，不能改变含义
+	required bytes msg_name   = 1; // 协议名字
+	required uint32 target_uid = 2; // 要操作的米米号
+	required uint32 errcode    = 3; // DB返回的错误码
+	// 后五个是Online可以自定义含义的变量
+	optional uint32 reg_time   = 4; // 要操作的角色的创建时间，限定同一个米米号不能在同一秒创建两个角色
+	optional uint32 src_uid    = 5; // 发起操作请求的米米号，如果需要记录日志，或者需要处理DB返回，则必须设置本字段。
+	optional uint32 login_id   = 6; // 发起操作请求的米米号的登录ID，每次登录都不一样，用于DB返回时，Online判断玩家是否
+									// 已经重新登录或者Online是否已经重启。如果没有设置该字段，则表明无需处理DB返回包。
+	optional bytes aux        = 7; // 辅助信息，目前通过aux.size()来判断是否需要给客户端返回
+	optional uint32 trans_id   = 8; // 请求ID，Online用这个来一一对应请求和返回，并写日志记录请求是否成功。
+                                    // 如果不需要写日志，则无需设置该字段。
+                                    // ahero 项目目前用改字段表示玩家渠道号
+}
+
+message db_player_pvai_info_t {
+	required uint32 rank			= 1;	// 排名
+	required uint32 accu_coin		= 2;    // 累计金币奖励
+	required uint32 accu_reputation	= 3;   	// 累计声望奖励
+	required uint32 accu_times		= 4;    // 累计时长(小时为单位)
+	required uint32 accu_end_time	= 5;	// 上次累计结束时间点
+}
+
+message db_player_attr_t {
+	required uint32 key				= 1;
+	required uint32 value			= 2;
+	required uint32 dead_tm			= 3;
+}
+
+message db_player_info_t {
+	required uint64 userid		= 1;	// 米米号
+	required uint32 reg_time	= 2;	// 注册时间
+	optional uint32 level		= 3;	// 玩家等级
+	optional bytes 	name		= 4;	// 玩家昵称
+	optional uint32 type		= 5;	// 玩家职业
+	optional uint32 gender		= 6;	// 玩家性别
+	optional uint32 zone_id		= 7;	// 玩家所在服务器
+	optional uint32 vip_lv		= 8;	// 玩家vip
+	optional db_player_pvai_info_t pvai_info	= 9;	// 玩家pvai信息
+	repeated db_player_attr_t player_attr		= 10;	// 玩家属性
+	optional uint32 kill_num 	= 11;	// 该玩家击败次数
+	repeated uint32 fairy		= 12;	// 特殊位置精灵
+    optional uint32 globalid      = 13;   // 全局ID
+    optional uint32 last_login_tm = 14;   //上次登录时间
+	optional uint32 acc_consume	  = 15;	  //累计充值金额
+	optional bool	gm		  	  = 16;	  //是否为GM
+}
+
+message db_player_info_igg_t {
+    required uint32 global_id     = 1;
+	required bytes  name		  = 2;
+    required uint32 level         = 3;
+    required uint32 exp           = 4;
+    required uint32 diamond       = 5;
+    required uint32 coin          = 6;
+    required uint32 friend_num    = 7;
+    required uint32 reg_tm        = 8;
+    required uint32 last_login_tm = 9;
+}
+/* 包体（只有 _out/_in 的 message 才是用于通信的，否则就是在 _in/_out 里被用到的结构体） */
+
+// 创建角色协议。目前一个服只允许创建一个角色，如果在zone_id下已有角色，则返回dberr_role_exists。
+// 同一个米米号，在不同的服创建角色的时间不能相同，如果出现角色创建时间相同的情况，返回dberr_crtrole_time_limit。
+// 同一个服的所有玩家的昵称必须唯一，如果昵称已存在，返回dberr_duplicated_nickname。
+message db_crtrole_in {
+    required uint32 zone_id               = 1; // 创建角色的服务器分区ID。10101代表华东电信（01）一区（01）一服（01）
+    required bytes name                  = 2; // 玩家角色昵称，全服唯一
+    required uint32 type                  = 3; // 角色类型：1001男战士、1002女战士、1101男猎人、1101女猎人、1201男刺客、1201女刺客
+    required uint32 gender                = 4; // 性别：0男、1女
+    // 等级、经验值等其他信息，DBServer默认赋初值
+}
+
+message db_crtrole_out {
+    required uint32 regtime               = 1; // 角色创建时间
+	required bytes name                   = 2; 
+	required uint32 type                  = 3;
+	required uint32 gender                = 4;
+	required uint32 zone_id				  = 5;
+}
+
+message db_get_role_list_by_igggm_in {
+    required uint32 zone_id               = 1;
+	required uint32 user_id      		  = 2;    
+    required uint32 channel_id            = 3;
+}
+
+message db_get_role_list_by_igggm_out {
+    required uint32 zone_id               = 1;
+    repeated db_player_info_igg_t roles   = 2;
+}
+
+message db_get_role_list_in {
+	required uint32 zone_id               = 1; // 为0时查询所有服务器角色列表)
+	required uint64 userid      		  = 2;    
+    optional uint32 check_freeze          = 3[default=0]; //0不要确认封号状态，1需要确认
+}
+
+message db_get_role_list_out {
+	required uint32 zone_id               = 1;
+	repeated db_player_info_t roles		  = 2;	// 角色列表
+    optional uint32 freeze_status         = 3[default=0]; //0未被封，1被封号 
+}
+
+message db_get_role_list_by_kakaogm_in {
+	required uint32 zone_id               = 1;	// 如果为0查找所有渠道
+    required uint32 user_id               = 2;
+	required uint32 channel_id            = 3;
+}
+message db_get_role_list_by_kakaogm_out {
+	repeated db_player_info_t roles       = 1;  // 角色列表
+}
+
+message db_get_role_list_by_gm_in {
+	required uint32 zone_id               = 1;	// 如果为0查找所有渠道
+    required uint64 user_id               = 2;
+}
+message db_get_role_list_by_gm_out {
+	repeated db_player_info_t roles       = 1;  // 角色列表
+}
+
+message db_get_role_id_by_gm_in {
+	required uint32 zone_id               = 1;	// 如果为0查找所有渠道
+    required uint32 global_id             = 2;  // 全局ID
+}
+
+message db_get_role_id_by_gm_out {
+    required uint64 user_id               = 1;
+    required uint32 reg_tm                = 2;
+    required uint32 zone_id               = 3;
+}
+
+message db_get_role_name_by_gm_in {
+    required uint64 user_id               = 1;
+    required uint32 reg_tm                = 2;
+    required uint32 zone_id               = 3;
+}
+
+message db_get_role_name_by_gm_out {
+    required bytes name					  = 1;
+}
+
+// 登录协议。因为目前一个服只有一个角色，所以登录协议包头reg_time填0，DBServer根据zone_id和uid返回角色数据
+message db_login_in {
+    required uint32 zone_id               = 1;
+}
+
+message db_login_out {
+    required bytes name                  = 1; // 角色昵称，全区唯一
+    required uint32 regtime               = 2; // 角色创建时间
+    required uint32 type                  = 3; // 职业类型：1战士，2猎人，3刺客
+    required uint32 gender                = 4; // 性别：0男，1女
+	required uint32 lv                    = 5; // 用户等级
+	required uint32 exp                   = 6; // 用户经验值
+    required uint32 last_login_time       = 7; // 上次登录时间
+	optional uint32 globalID			  = 8; // 全局ID
+	optional uint32 airank				  = 9; // airank排名
+}
+
+message db_del_role_in {
+    required uint32 zone_id               = 1; // 创建角色的服务器分区ID。10101代表华东电信（01）一区（01）一服（01）
+}
+
+message db_levelup_in {
+    required uint32 zone_id               = 1; // 创建角色的服务器分区ID。10101代表华东电信（01）一区（01）一服（01）
+	required uint32 level				  = 2; // 升级级别 
+}
+
+// 玩家所有物品信息查询
+message db_backpack_query_in {
+	required uint32 zone_id				= 1;
+}
+message db_equip_hole {
+	required uint32 hole_index		= 1;	// 孔编号
+	required uint32 item_gem_id		= 2;	// 宝石id
+	required uint32 attr_key		= 3;	// 影响属性的key
+	required uint32 attr_value		= 4;	// 影响属性的value
+}
+message db_packpos {
+	required uint32 pos				= 1;
+	required uint32	item_id			= 2;
+	required uint32 item_level		= 3;
+	required uint32 item_num		= 4;
+	optional uint32 hole1			= 9;
+	optional uint32 hole2			= 6;
+	optional uint32 hole3			= 7;
+	optional uint32 hole4			= 8;
+	repeated db_equip_hole equip_holes = 5;	// 装备中宝石信息
+	optional uint32 item_dead_tm	= 10[default = 2147483647];
+	optional uint32 item_op_flag	= 11[default = 100];
+}	
+message db_backpack_query_out {
+	repeated db_packpos items				= 1;
+}
+
+// 添加物品
+message db_backpack_add_in {
+	required uint32 zone_id					= 1;
+	repeated db_packpos items				= 2;
+    optional bool is_order                  = 3[default = false];
+}
+
+message db_backpack_update_in {
+	required uint32 zone_id                 = 1;
+	repeated db_packpos items               = 2;
+}
+
+message db_backpack_del_in {
+	required uint32 zone_id					= 1;
+	repeated db_packpos items				= 2;
+    optional bool is_order                  = 3[default = false];
+}
+
+message db_backpack_move_in {
+	required uint32 zone_id					= 1;
+	required uint32 pos_from				= 2;
+	required uint32 pos_to					= 3;
+}
+
+// ---------- 新精灵相关协议 --------------------------------------------
+// 精灵基本信息
+message db_fairy_basic_info_t {
+	required uint32 fairy_lv				= 1;	// 精灵等级
+	required uint32 fairy_grade             = 2;    // 精灵阶级
+	required uint32 fairy_status			= 3;	// 精灵状态
+	required uint32 fairy_exp				= 4;	// 精灵经验
+	required uint32 fairy_born_time			= 5;	// 精灵获取时间
+	required uint32 fairy_get_way			= 6;	// 精灵获取方式
+}
+// 精灵特训信息
+message db_fairy_train_info_t {
+	required int32 train_phy_atk			= 1;	// 精灵特训物攻增量
+	required int32 train_mag_atk            = 2;	// 精灵特训魔攻增量
+	required int32 train_ski_atk            = 3;	// 精灵特训技攻增量
+	required int32 train_phy_def            = 4;	// 精灵特训物防增量
+	required int32 train_mag_def            = 5;	// 精灵特训魔防增量
+	required int32 train_ski_def            = 6;	// 精灵特训技防增量
+	required int32 train_hp			        = 7;	// 精灵特训生命值增量
+}
+// 精灵信息
+message db_fairy_info_t {
+	required uint32 fairy_pos					= 1;	// 精灵位置
+	required uint32 fairy_id					= 2;	// 精灵id
+	required db_fairy_basic_info_t basic_info	= 3;	// 精灵基本信息
+	required db_fairy_train_info_t train_info	= 4;	// 精灵特训信息
+	required uint32 train_cost					= 5;	// 特训量
+}
+// 查询玩家精灵信息
+message db_fairy_query_in {
+	required uint32 zone_id             	= 1;
+}
+message db_fairy_query_out {
+	repeated db_fairy_info_t fairy_infos	= 1;	// 精灵列表
+}
+
+// 添加精灵
+message db_add_fairy_in {
+	required uint32 zone_id                 	= 1;
+	required uint32 fairy_pos             		= 2;    // 精灵位置
+	required uint32 fairy_id                	= 3;    // 精灵id
+	required db_fairy_basic_info_t basic_info   = 4;    // 精灵基本信息
+}
+// 更新精灵基本信息
+message db_update_fairy_basic_info_in {
+	required uint32 zone_id                 	= 1;
+	required uint32 fairy_pos             		= 2;    // 精灵位置
+	required db_fairy_basic_info_t basic_info   = 3;	// 精灵基本信息
+}
+// 更新精灵特训信息
+message db_update_fairy_train_info_in {
+	required uint32 zone_id                 	= 1;
+	required uint32 fairy_pos             		= 2;    // 精灵位置
+	required db_fairy_train_info_t train_info   = 3;	// 精灵特训信息
+}
+// 移动两只精灵位置
+message db_move_fairy_in {
+	required uint32 zone_id                     = 1;
+	required uint32 from_pos					= 2;
+	required uint32 to_pos						= 3;
+}
+// 删除精灵
+message db_del_fairy_in {
+	required uint32 zone_id                 = 1;
+	repeated uint32 fairy_poss				= 2;	// 精灵位置列表
+    optional string fairy_ids               = 3[default = ""];      // 精灵位置对应的ID
+}
+// 更新训练消耗
+message db_train_cost_in{
+	required uint32 zone_id					= 1;
+	required uint32 fairy_pos				= 2;
+	required uint32 train_cost				= 3;
+}
+
+//	---------- 副本相关信息协议 ----------------------------------------------------------------------
+message db_instance_info {
+	required uint32 instance_id 		= 1;
+	required uint32 star				= 2;	// 副本的星星数
+	required uint32 can_enter_flag		= 3;	// 不许进入 0:可进 1:不可
+	required uint32 refresh_times		= 4;	// 刷新次数
+	required uint32 dead_tm				= 5;	// can_enter_flag和refresh_times字段失效时间
+	required uint32 btl_times		    = 6;	// 可以挂机次数
+	required uint32 btl_total		    = 7;	// 总战斗次数
+}
+
+message db_instance_query_in {
+	required uint32 zone_id					= 1;
+}
+
+message db_instance_query_out {
+	repeated db_instance_info instances	= 1;
+}
+
+message db_instance_modify_in {
+	required uint32 zone_id					= 1;
+	repeated db_instance_info instances		= 2;	// 副本信息
+}
+
+//	---------- 任务相关信息协议 ----------------------------------------------------------------------
+message db_task_query_in {
+	required uint32 zone_id					= 1;
+}
+
+message db_task_info {
+	required uint32 task_id				= 1;
+	required uint32 step_id				= 2;
+	required uint32 step_rate			= 3;	
+}
+
+message db_task_query_out {
+	repeated db_task_info tasks				= 1; 
+}
+
+message db_task_step_in {
+	required uint32 zone_id					= 1;
+	required uint32 task_id					= 2;
+	required uint32 step_id					= 3;
+	required uint32 step_rate				= 4;
+}
+
+//	---------- 每日任务相关信息协议 ----------------------------------------------------------------------
+message db_daily_task_info {
+	required uint32 daily_task_id			= 1;	// 每日任务id
+	required int32 daily_task_status		= 2;	// 每日任务状态 -1:在列表中 0:刚接受 >0 步骤 =max+1 奖励已经领取
+	required uint32 dead_tm					= 3;	// 每日任务失效时间
+}
+// 每日任务信息查询
+message db_query_daily_task_in {
+	required uint32 zone_id                 = 1;
+}
+message db_query_daily_task_out {
+	repeated db_daily_task_info daily_tasks	= 1;	// 每日任务信息
+}
+// 每日任务信息更新
+message db_replace_daily_task_in {
+	required uint32 zone_id                 = 1;
+	repeated db_daily_task_info daily_tasks = 2;	// 每日任务信息
+}
+// 每日任务删除
+message db_del_daily_task_in {
+	required uint32 zone_id                 = 1;
+}
+
+//	---------- 属性相关信息协议 ----------------------------------------------------------------------
+message db_attribute_query_in {
+	required uint32 zone_id					= 1;
+}
+
+message db_attribute_info {
+	required uint32 attribute_id			= 1;
+	required uint32 attribute_value			= 2;
+	required uint32 dead_tm					= 3;
+}
+
+message db_attribute_query_out {
+	repeated db_attribute_info attributes	= 1;
+}
+
+message db_attribute_set_in {
+	required uint32 zone_id					= 1;	//服务器
+	required uint32 attribute_id			= 2;	//属性id
+	required uint32 attribute_value			= 3;	//属性值
+	required uint32 dead_tm					= 4;	//有效期 这个是隐藏的 ，填0 为无限
+}
+
+message db_server_attr_query_in {
+	required uint32 zone_id                 = 1;
+}
+
+message db_server_attr_query_out {
+	repeated db_attribute_info server_attributes = 1;
+}
+
+message db_server_attr_set_in {
+	required uint32 zone_id                 = 1;
+	required uint32 server_attr_id          = 2;
+	required uint32 server_attr_value       = 3;
+	required uint32 dead_tm                 = 4;
+}
+
+
+message db_shared_attribute_query_in {
+	required uint32 zone_id                 = 1;
+}
+message db_shared_attribute_query_out {
+	repeated db_attribute_info shared_attributes = 1;
+}
+
+message db_shared_attribute_set_in {
+	required uint32 zone_id					= 1;
+	required uint32 attribute_id			= 2;
+	required uint32 attribute_value			= 3;
+	required uint32 dead_tm					= 4;
+}
+//	---------- 技能相关信息协议 ----------------------------------------------------------------------
+
+message db_skill_query_in {
+	required uint32 zone_id					= 1;
+}
+
+message db_skill_query_out {
+	message skill_info {
+		required uint32 skill_id					= 1;
+		required uint32 skill_level				= 2;
+	}
+	repeated skill_info skills				= 1;
+}
+
+message db_skill_add_in {
+	required uint32 zone_id						= 1;
+	required uint32 skill_id					= 2;
+	required uint32 skill_level					= 3;
+}
+
+
+//==============================================
+//查询好友列表所需字段
+message db_friend_query_in {
+	required uint32 zone_id		= 1;
+}
+
+//根据姓名查询用户基本信息
+message db_query_id_by_name_in {
+	required bytes name		= 1;
+	required uint32 zone_id		= 2;
+}
+
+message db_query_id_by_name_out {
+    optional uint64 userid = 1;
+    optional uint32 reg_tm = 2;	
+}
+
+
+//各类
+enum NEARBY_T{
+	DB_NB_SIMPLE								= 0;	//普通的附近玩家
+	DB_NB_REDNAME								= 1;	//红名的附近玩家
+}
+
+//角色展示
+message show_info {
+	required uint64 userid				= 1;	//米米号
+	required uint32 reg_tm				= 2;	//注册时间
+	required bytes name					= 3;	//姓名
+	required uint32 lv					= 4;	//等级
+	required uint32 type				= 5;	//职业，确定头像
+	required uint32 prestige			= 6;	//声望
+	required uint32 pvai_rank			= 7;    //pvai排名
+	optional uint32 power_score			= 8 [default = 0];	//战斗力
+	optional uint32 pvped_times			= 9 [default = 0];	//被挑战次数
+	optional uint32 killed_times		= 10 [default = 0];	//被击杀次数
+	optional uint32 vip_lv			    = 11 [default = 0]; //vip等级
+	repeated uint32 fairy				= 12;	// 特殊位置精灵
+	optional uint64 gid					= 13;	// 公会id
+}
+
+message db_nearby_query_in{
+	required uint32 zone_id 			= 1;
+	repeated db_player_info_t info		= 2;	//附近玩家
+	optional NEARBY_T type				= 3;	 
+}
+
+message db_nearby_query_out{
+	repeated show_info info				= 1;	//附近玩家
+	optional NEARBY_T type				= 2;	 
+}
+
+message db_list_partner_in {
+	required uint32 zone_id				= 1;
+	repeated db_player_info_t partner			= 2;    //要查询好友
+}
+
+message db_list_partner_out {
+	repeated show_info info				= 1;   //查询好友结果
+}
+
+//查询好友列表信息回包
+message db_friend_query_out {
+	repeated db_player_info_t friends	= 1;
+}
+
+
+message db_friend_add_in {
+	required uint64 fuserid = 1;
+	required uint32 freg_tm = 2;
+	required uint32 zone_id = 3;
+}
+
+message db_friend_del_in {	
+	required uint32 zone_id = 1;
+	required uint64 fuserid = 2;
+	required uint32 freg_tm = 3;
+}
+
+//查询屏蔽列表所需字段
+message db_dnd_query_in {
+	required uint32 zone_id		= 1;
+}
+
+//查询屏蔽列表信息回包
+message db_dnd_query_out {
+	repeated db_player_info_t dnds	= 1;
+}
+
+message db_dnd_add_in {
+	required uint32 zone_id	= 1;	
+	required uint64 duserid = 2;
+	required uint32 dreg_tm = 3;
+
+}
+
+message db_dnd_del_in{
+	required uint32 zone_id = 1;
+	required uint64 duserid = 2;
+	required uint32 dreg_tm = 3;
+}
+
+//	---------- 查询PVAI信息协议 ----------------------------------------------------------------------
+
+message db_ai_rank_info {					// PVAI基本信息
+	required uint64 userid				= 1; // 用户名
+	required uint32 reg_time			= 2; // 注册时间
+	required uint32 rank				= 3; // 名次
+}
+
+message db_ai_rank_log {
+	message one_log {
+		required bytes name				= 1;
+		required bool direct 				= 2;
+		required bool win					= 3;
+	}
+	repeated one_log			logs		= 1;
+}
+
+message db_ai_rank_add_in {				// 加入PVAI排名
+	required uint32 zone_id					= 1; 
+	required uint32 accu_coin				= 2;	// 累积金币
+	required uint32 accu_reputation			= 3;	// 累积声望
+	required uint32 accu_end_time			= 4;	// 上次累积最后时间
+}
+message db_ai_rank_add_out {
+	required db_player_pvai_info_t pvai_info	 = 1;	// pvai排行信息
+}
+
+message db_ai_rank_query_in {			//	查询PVAI信息
+	required uint32 zone_id					= 1;
+	required uint32 length					= 2; // 查询人数
+}
+
+message db_ai_rank_query_out {
+	required uint32 rank					= 1; // 名次
+	repeated db_ai_rank_info  infos			= 2; // 推荐的排名信息
+	optional db_ai_rank_log	  log			= 3; 
+}
+
+message db_ai_rank_exchange_in {
+	required uint32 zone_id					= 1;
+	required uint64 target_userid			= 2;
+	required uint32 target_reg_time			= 3;
+}
+
+message db_ai_rank_range_in {
+	required uint32 zone_id					= 1;
+	required uint32 start					= 2;
+	required uint32 end						= 3;
+}
+
+message db_ai_rank_range_out {
+	repeated db_ai_rank_info infos					= 1;
+}
+
+message db_ai_rank_log_in {
+	required uint32 zone_id					= 1;
+	required bytes name					= 2;
+	required uint64 target_userid			= 3;
+	required uint32 target_reg_time			= 4;
+	required bytes target_name				= 5;
+	required bool win						= 6;
+}
+
+message db_update_pvai_basic_info_in {
+	required uint32 zone_id					= 1;
+	repeated db_player_info_t infos			= 2;
+}
+//	---------- 活动相关信息协议 ----------------------------------------------------------------------
+message activity_step_t {
+    required uint32 step_type           = 1;    // 活动步骤类型
+    required uint32 step_id		        = 2;    // 活动步骤需的id
+    required uint32 step_value         	= 3;    // 活动步骤完成数量
+	required uint32 is_need_step		= 4;	// 活动步骤是否是必须完成的(0:非 1:是)
+}
+message activity_info_t {
+    required uint32 activity_id             = 1;    // 活动id
+    repeated activity_step_t steps   		= 2;    // 活动步骤
+    required uint32 revc_reward_times       = 3;    // 领取奖励次数
+	required uint32 dead_tm					= 4;	// 失效时间
+}
+// 请求活动列表
+message db_query_activity_list_in {
+	required uint32 zone_id                 = 1; 	// 区号
+}
+message db_query_activity_list_out {
+	repeated activity_info_t infos         	= 1;	// 活动列表
+}
+// 更新活动列表
+message db_replace_activity_info_in {
+	required uint32 zone_id                 = 1;    // 区号
+	repeated activity_info_t infos          = 2;    // 活动列表
+}
+// 删除活动列表
+message db_delete_activity_info_in {
+	required uint32 zone_id                 = 1;    // 区号
+	repeated uint32 activity_ids            = 2;    // 活动id
+}
+//	---------- new mail相关信息协议 ----------------------------------------------------------------------
+message mail_item_attachment_t {
+	required uint32 item_id					= 1;	// 物品id
+	required uint32 item_num				= 2;	// 物品数量
+//	required uint32 item_level				= 3;	// 物品等级
+}
+message db_mail_info_t {
+	required uint64 mail_id					= 1;	// 邮件id
+	required bytes title              	 	= 2;    // 邮件名称
+	required bytes come_from                = 3;    // 发件人
+	required bytes content             		= 4;    // 内容
+	repeated mail_item_attachment_t items   = 5;    // 附件
+}
+// 添加新邮件请求
+message db_add_new_mail_in {
+	required uint32 zone_id                 = 1;    // 区号
+	required db_mail_info_t mail_info		= 2;	// 邮件信息 
+	optional uint32 gm_server_id			= 3;	// 添加邮件的gm 服务器编号
+}
+message db_add_new_mail_out {
+	required uint32 zone_id                 = 1;    // 区号
+	required uint64 mail_id                 = 2;    // 邮件id
+	optional uint32 gm_server_id			= 3;	// 添加邮件的gm 服务器编号
+}
+// 查询邮件列表
+message db_query_mail_infos_in {
+	required uint32 zone_id                 = 1;    // 区号
+	repeated uint64 mail_ids				= 2;	// 查询的邮件列表
+	required uint32 query_cmd				= 3;	// 查询目的(1:客户端请求 2:查询附件)
+	optional uint32 page_num				= 4;	// 查询第几页数
+}
+message db_query_mail_infos_out {
+	repeated db_mail_info_t mail_infos		= 1;	// 邮件列表
+	required uint32 query_cmd				= 2;	// 查询目的(1:客户端请求 2:查询附件)
+	optional uint32 page_num				= 3;	// 查询第几页数
+}
+
+//	---------- 查询其他玩家信息协议 ----------------------------------------------------------------------
+// 查询玩家基本信息
+message db_query_players_info_in {
+	required uint32 zone_id                 = 1; // 区号
+	required uint32 cmd						= 2; // 查询cmd
+	required bool	is_ref_cnt_cmd			= 3; // 是否是引用计数命令
+	repeated db_player_info_t players		= 4; // 待查询的玩家
+}
+message db_query_players_info_out {
+	required uint32 cmd                     = 1; // 查询cmd
+	required bool	is_ref_cnt_cmd			= 2; // 是否是引用计数命令
+	repeated db_player_info_t players       = 3; // 玩家信息
+}
+
+message db_get_players_info_in {
+	required uint32 zone_id                 = 1; // 区号
+	repeated db_player_info_t players		= 2; // 待查询的玩家
+}
+message db_get_players_info_out {
+	repeated db_player_info_t players       = 1; // 待查询的玩家
+}
+
+//--------------客服相关的协议--------------------------------------------------------------------------------------------
+message db_query_userinfo_by_name_zone_in{
+	required uint32 zone_id					= 1; //服务器
+	required bytes name 					= 2; //用户名字
+	optional uint32 channelid				= 3; //渠道号
+}
+
+
+message db_query_userinfo_by_name_zone_out{
+	required uint64 userid                  = 1; //用户id
+	required uint32 reg_tm					= 2; //注册时间
+}
+
+//---------------邮件相关协议-------------------------------------------------------------------------------------------------
+message db_query_mail_list_in{
+	required uint32 zone_id					= 1; //服务器
+	optional bool kefu						= 3; //是否为客服
+}
+
+message db_mail_list{
+	required uint32 mailid				= 1;	// 邮件编号
+	optional bytes title				= 2;	// 邮件名称
+	required bool  hasread             	= 3;    // 已读
+	required bool  hasattach           	= 4;    // 已领
+}
+
+
+message db_query_mail_list_out{
+	repeated db_mail_list maillist			= 1; //邮件编号
+	optional db_query_mail_out mail			= 2; //第一封邮件
+
+}
+
+message db_query_mail_in{
+	required uint32 zone_id                 = 1; //服务器
+	required uint32 mail_id					= 2; //邮件编号
+	optional bool kefu						= 3; //是否为客服
+}
+
+message db_query_mail_out{
+	required uint32 mailid             = 1;    // 邮件编号
+    optional bytes title               = 2;    // 邮件名称
+	optional bytes from                = 3;    // 发件人
+	optional bytes content             = 4;    // 内容
+	optional bytes items               = 5;    // 附件
+	required bool  hasget              = 6;    // 已领取
+	required bytes from_tm			   = 7;    // 发送时间
+
+}
+
+message db_get_attach_in{
+	required uint32 mailid			  	= 1;	//邮件编号
+	required uint32 zone_id			  	= 2;	//服务器号
+}
+
+message db_get_attach_out{
+	required bool  hasget				= 1;	//是否已经领取
+	required bytes items			  	= 2;	//附件
+	required uint32 mailid				= 3;    //邮件编号
+}
+
+
+message db_get_attach_success_in{
+	required uint32 mailid			  	= 1;	//邮件编号
+	required uint32 zone_id			  	= 2;	//服务器号
+}
+
+message db_del_mail_in{
+	required uint32 mailid			  	= 1;	//邮件编号
+	required uint32 zone_id				= 2;	//服务器号
+}
+
+message db_del_mail_sw_in{
+	required uint32 mailid			  	= 1;	//邮件编号
+}
+
+message db_new_mail_in{
+	required uint32 zone_id			  	= 1;	//服务器号
+
+}
+
+message db_new_mail_out{
+	required uint32 hasnew				= 1;  	//新邮件
+}
+
+message db_attach{
+	required uint32 id					= 1;	//物品编号
+	required uint32 num					= 2;	//物品数目
+
+}
+
+message db_add_mail_in{
+	required uint32 zone_id			  	= 1;	//服务器号
+	required uint32 userid				= 2;	// 玩家id
+	required uint32 reg_time			= 3;	// 玩家注册时间
+	required uint32 channel_id			= 4;	// 玩家渠道号
+	required bytes title               	= 5;    // 邮件名称
+	required bytes from               	= 6;    // 发件人
+	required bytes content             	= 7;    // 内容
+	repeated db_attach items           	= 8;    // 附件
+}
+
+//---------------switch和db通信相关协议---------------------------------------------------------------------
+// NOTI switch 和db同信不同与online与db通信, online每个用户有完整的信息在db头中
+//      而switch没有具体的玩家信息, 因此switch和db通信时需要在包体中定义完整的操作玩家信息
+message db_add_mail_by_switch_in{
+	required bytes title               = 1;    // 邮件名称
+	required bytes from                = 2;    // 发件人
+	required bytes content             = 3;    // 内容
+	repeated db_attach items           = 4;    // 附件
+	required uint32 server_id		   = 5;	   // 服务器id
+}
+
+message db_add_mail_by_switch_out{
+	required int32 mail_id             = 1;    // 邮件编号
+	required uint32 server_id		   = 2;	   // 服务器id
+}
+
+message mail_rel{
+	required uint64 userid          = 1;    // 米米号
+    required uint32 reg_time        = 2;    // 玩家注册时间
+	required uint32 zone_id         = 3;    // 服务器
+	required uint32 mail_id         = 4;    // 邮件编号
+	required uint32 hasattach       = 5;    // 是否有附件
+}
+
+message db_add_mail_rel_by_switch_in{
+	repeated mail_rel info			= 1;	//要插入的数据
+}
+
+//邮件刷新
+message db_add_mail_rel_flush_in{
+
+}
+
+
+// 给玩家用户添加钻石
+message db_add_diamond_by_switch_in {
+	required uint64 userid             	= 1;	// 渠道号 + 米米号
+	required uint32 reg_tm             	= 2;	// 角色注册时间
+	required uint32 zone_id            	= 3;    // 服务器号
+	required uint32 buy_diamond_num		= 4;	// 需要添加钻石的数量(购买)
+	required uint32 ext_diamond_num		= 5;	// 需要添加钻石的数量(赠送)
+	required uint32 buy_time			= 6;	// 购买时间
+    required uint32 buy_channel_id      = 7;    // 购买渠道号
+    required uint32 cost_money          = 8;    // 花费的钱(国内单位:RMB 分)
+	required uint64 order_index			= 9;	// 订单index
+	required uint32 add_times			= 10;	// 加倍数
+
+    optional uint32 item_id             = 11;   // 道具ID
+    optional uint32 item_count          = 12;   // 道具数量
+    optional uint32 gift_id             = 13;   // 礼物ID
+    optional uint32 gift_count          = 14;   // 礼物数量
+    optional uint32 consume_type        = 15;   // 消耗类型 只有1为首充 
+}
+message db_add_diamond_by_switch_out {
+	required uint64 order_index         = 1;    // 订单index
+}
+
+// 修改玩家背包
+message db_user_bag_modify_in{
+    required uint64 user_id     = 1;
+	required uint32 reg_tm		= 2;
+	required uint32 zone_id		= 3;
+    required int32  item_id     = 4; //物品编号
+    required int32  item_count  = 5;  //修改物品数量(正数为增加，负数为减少)
+  	required int32  modify_type = 6; //修改物品类型（type=1 为修改背包物品数量，
+                                     //type=0为修改玩家礼品背包的物品数量，默认为1物品背包）
+    required int32  delete_type = 7; //是否删除物品（delete=0 为删除所有该类型物品，
+									 //number此时无用，delete=1 为不删除，默认为1不删除）
+	required uint32 channel_id	= 8;	// 渠道号
+}
+//-------------------公告------------------------------------
+message db_query_user_note_read_count_in{
+	required uint32 zone_id			   = 1; 	//需要这样
+	required uint32 ann_id			   = 2;		//公告id
+}
+
+message db_query_user_note_read_count_out{
+	optional uint32 count			   = 1;     //读取次数
+	optional uint32 last_tm			   = 2;     //最后读取时间
+}
+
+message db_user_note_read_first_in{
+	required uint32 zone_id			   = 1; 	//需要这样
+	required uint32 ann_id			   = 2;		//公告id
+}
+
+message db_user_note_read_not_first_in{
+	required uint32 zone_id			   = 1; 	//需要这样
+	required uint32 ann_id			   = 2;		//公告id
+}
+
+//-------------------账户转换------------------------------------
+message db_query_real_userid_in {
+	required uint32 zone_id				= 1;	// 没用,统一处理
+	required uint32 userid			   	= 2;	// 玩家用户id
+	required bytes key					= 3;	// key	(需要原样返回)
+}
+message db_query_real_userid_out {
+	required uint64	real_userid			= 1;	// 玩家真实id
+	required bytes key					= 2;    // key
+}
+
+
+//----------------封号 解封--------------------------------
+message db_user_info{
+	required uint64 userid				= 1;	// 用户id
+	required uint32 reg_tm 				= 2;	// 注册时间
+	required uint32 zone_id				= 3;	// 服务器号
+}
+
+message db_set_freeze_player_in{
+	repeated db_user_info info			= 1;			// 玩家信息
+	required uint32 time                = 2;			// 时间
+	optional uint32 zone_id				= 3[default=0];	// 全服发0
+}
+
+message db_lookup_freeze_in{
+	required uint32 zone_id				= 1;	// 服务器号
+}
+
+message db_lookup_freeze_out{
+	optional uint32 time				= 1;	// 冻结时间
+}
+
+message db_set_gm_player_in{
+	required uint64 userid				= 1;	// 用户id
+	required uint32 reg_tm 				= 2;	// 注册时间
+	required uint32 zone_id				= 3;	// 服务器号
+	required uint32 time                = 4;	// 时间
+}
+
+message db_lookup_gm_in{
+	required uint32 zone_id				= 1;	// 服务器号
+}
+
+message db_lookup_gm_out{
+	optional uint32 time				= 1;	// GM最后期限
+}
+
+message db_sw_attribute_set_in{
+	required uint64 userid				= 1;	// 用户
+	required uint32 reg_tm 				= 2;	// 注册时间
+	required uint32 zone_id				= 3;	// 服务器
+	required uint32 attribute_id		= 4;	// 属性id
+	required uint32 attribute_value		= 5;	// 属性值
+	required uint32 dead_tm				= 6;	// 有效期 这个是隐藏的 ，填0 为无限
+}
+
+message db_sw_attribute_modify_in{
+	required uint64 userid				= 1;	// 用户
+	required uint32 reg_tm 				= 2;	// 注册时间
+	required uint32 zone_id				= 3;	// 服务器
+	required uint32 attribute_id		= 4;	// 属性id
+	required int32 attribute_value		= 5;	// 属性值
+	required uint32 dead_tm				= 6;	// 有效期 这个是隐藏的 ，填0 为无限
+}
+
+//服务器属性添加
+message db_server_attr_add_in {
+	required uint32 zone_id                 = 1;
+	required uint32 server_attr_id          = 2;
+	required uint32 server_attr_value       = 3;
+	required uint32 dead_tm                 = 4;
+}
+
+//服务器注册人数信息
+message registers_t{
+		required	uint32		zone_id		= 1;
+		required	uint32		num			= 2;
+}
+message db_svr_register_t
+{
+	repeated	registers_t	infos			= 1;
+}
+
+//拉取服务器列表
+message db_get_recommend_svr_list_in{
+	required uint32 zone_id					= 1;	// 服务器号
+	required uint32 attribute_id			= 2;	
+}
+
+message db_get_recommend_svr_list_out{
+	
+	required uint32 server_id				= 1;   //服务器返回id
+}
+
+
+
+//------------------删除账号------------------------------
+message db_del_user_in{
+	required uint32 zone_id				= 1;	// 服务器号
+}
+
+
+message db_recover_user_in{
+	required uint32 zone_id             = 1;    // 服务器号
+}
+
+message db_query_del_user_in{
+	required uint32 zone_id             = 1;    // 服务器号
+}
+
+message db_query_del_user_out{
+	required bool res					= 1;	// true 代表被删除
+}
+
+
+
+message type_cd{
+	required	uint32 	 type				= 1;						
+	required	uint64   accepter			= 2;
+	required	uint32   count				= 3;
+	required	uint32   expire_time		= 4;//cd时间戳
+	optional 	uint32   start_time			= 5;//cd时间戳
+	optional 	bytes    name				= 6[default = ""];//对方昵称
+}
+
+message db_kakao_cd_query_in{
+	required uint32 zone_id					= 1;
+	required uint32 type                    = 2;
+}
+
+message db_kakao_cd_query_out{
+	repeated 	type_cd 	 cd				= 1;
+}
+
+message db_kakao_all_query_in{
+	required uint32 zone_id					= 1;
+	optional uint32 info_flag				= 2;
+}
+
+message db_kakao_all_query_out{
+	repeated 	type_cd 	 cd				= 1;
+	optional uint32 info_flag				= 2;
+}
+
+message db_kakao_cd_add_in{
+	required 	uint32 	 zone_id			= 1;
+	required	uint64   userid				= 2;
+	required	uint32 	 type				= 3;						
+	required	uint64   accepter			= 4;
+	required	uint32   start_time			= 6;//cd时间戳
+	required	uint32   expire_time		= 7;//cd到期时间戳
+}
+
+message db_kakao_cd_dec_in{
+	required 	uint32 	 zone_id			= 1;
+	required	uint64   userid				= 2;
+	required	uint32 	 type				= 3;						
+	required	uint64   accepter			= 4;
+}
+
+message db_kakao_cd_mod_in{
+	required 	uint32 	 zone_id			= 1;
+	required	uint64   userid				= 2;
+	required	uint32 	 type				= 3;						
+	required	uint64   accepter			= 4;
+	optional	uint32   count				= 5;
+	optional	uint32   start_time			= 6;
+	optional	uint32   expire_time        = 7;
+}
+
+message db_kakao_cd_mod_out{
+	required 	uint32 	 zone_id			= 1;
+	required	uint64   userid				= 2;
+	required	uint32 	 type				= 3;						
+	required	uint64   accepter			= 4;
+	required    uint32   status				= 5; //删除时检查是否存在，返回状态（0成功删除， 1当前id不存在）
+}
+
+
+//kakao（待确认好友，游戏好友）查询
+message kakao_friend_info{
+	required uint32   uid               	= 1;
+	required uint32   reg               	= 2;
+	required uint32   channel          		= 3;
+	optional uint32   type 		       		= 4;   //type=0待确认好友，type=1游戏好友
+	optional bytes    name 		       		= 5;   //昵称 
+}
+
+message kakao_db_basic_info{
+    required uint64 userid              = 1;    //米米号
+    required int32 reg_tm               = 2;    //注册时间
+    optional bytes name             	= 3;    //姓名
+    optional uint32 lv                  = 4;    //等级
+    optional uint32 type                = 5;    //职业，确定头像
+    optional uint32 prestige            = 6;    //声望
+    optional uint32 pvai_rank           = 7;    //pvai排名
+    optional uint32 friend_type			= 8;    //好友类别（0待确认好友，1游戏中好友）
+}
+
+message db_kakao_friend_query_in{
+	required 	uint32 	 zone_id			= 1;
+}
+
+message db_kakao_friend_query_out{
+	repeated    kakao_db_basic_info friends   = 1;
+}
+
+message db_kakao_friend_list_in{
+	required 	uint32 	 zone_id			= 1;
+	repeated 	kakao_friend_info infos    	= 2;
+}
+
+message db_kakao_friend_list_out{
+	repeated    kakao_db_basic_info infos	= 1;    //待确认好友信息
+}
+
+message db_kakao_add_friend_in{
+	required 	uint32 	 zone_id			= 1;
+	required	kakao_friend_info	me		= 2;	
+	required	kakao_friend_info	fri		= 3;	
+}
+
+message db_kakao_add_friend_out{
+	required	kakao_friend_info	me		= 1;	
+	required	kakao_friend_info	fri		= 2;	
+}
+
+message db_kakao_del_friend_in{
+
+	required 	uint32 	 zone_id			= 1;
+	required	kakao_friend_info	me		= 2;	
+	required	kakao_friend_info	fri		= 3;	
+}
+
+message db_kakao_del_friend_out{
+	required	kakao_friend_info	me		= 1;	
+	required	kakao_friend_info	fri		= 2;	
+}
+
+//kakao账号绑定属性
+message kakao_attr{
+	required 	uint32 	 type				= 1;
+	required 	uint32 	 count				= 2;
+	required 	uint32 	 expire_time		= 3;
+}
+
+message db_kakao_attr_query_in{
+	required 	uint32 	 zone_id			= 1;
+}
+
+message db_kakao_attr_query_out{
+	repeated	kakao_attr	attr			= 1;
+}
+
+message db_kakao_attr_set_in{
+	required 	uint32 	 zone_id			= 1;
+	required 	uint32 	 type				= 2;
+	required 	uint32 	 count				= 3;
+	required 	uint32 	 expire_time		= 4;
+}
+
+message db_personal_info_exist_in {
+	required uint32 zone_id				= 1;
+}
+
+message db_personal_info_exist_out {
+	required uint32  count				= 1;
+}
+
+message db_set_personal_info_in {
+	required uint32 zone_id				= 1;
+	required bytes position				= 2;
+	required bytes phone				= 3;
+	required uint32 qq					= 4;
+	required bytes email				= 5;
+}
+
+message db_set_temp_reward_in {
+	required uint32 zone_id				= 1;
+	required uint32 reward			= 2;
+}
+
+message db_get_temp_reward_in {
+	required uint32 zone_id				= 1;
+}
+
+message db_get_temp_reward_out {
+	message reward {
+		required uint64 userid			= 1;
+		required uint32 reg_tm			= 2;
+		required uint32 reward			= 3;
+	}
+	repeated reward rewards			= 1;
+}
+
+message db_query_username_in {
+	required uint32 zone_id				= 1;
+	message userkey {
+		required uint64 userid			= 1;
+		required uint32 reg_tm			= 2;
+	}
+	repeated userkey keys			= 2;
+}
+
+message db_query_username_out {
+	message username {
+		required uint64 userid			= 1;
+		required uint32 reg_tm			= 2;
+		required bytes name				= 3;
+	}
+	repeated username names			= 1;
+}
+
+
+
+//================宿敌信息===========================
+message db_enemy_query_in {
+	required uint32 zone_id				= 1;
+}
+
+//查询宿敌列表信息回包
+message db_enemy_query_out {
+	repeated db_player_info_t enemies	= 1;
+}
+
+message db_enemy_add_in {
+	required uint64 euserid 			= 1;
+	required uint32 ereg_tm 			= 2;
+	required uint32 zone_id 			= 3;
+}
+
+message db_enemy_del_in {	
+	required uint32 zone_id 			= 1;
+	required uint64 euserid 			= 2;
+	required uint32 ereg_tm 			= 3;
+}
+
+
+
+//================show info cache db query===================================
+message db_list_showinfo_in {
+	required uint32 zone_id				= 1;
+	repeated db_player_info_t enemy		= 2;    //要查询宿敌
+}
+
+message db_list_showinfo_out {
+	repeated show_info info				= 1;   //查询宿敌结果
+}
+
+//================shopping info db query=================================
+message db_shopping_info {
+	required uint32 shopping_id 		= 1;
+	required uint32 shopping_times		= 2;	// 购买次数
+	required uint32 dead_tm				= 3;	// 失效时间
+}
+
+message db_shopping_query_in {
+	required uint32 zone_id				= 1;
+}
+
+message db_shopping_query_out {
+	repeated db_shopping_info shoppings	= 1;
+}
+
+message db_shopping_modify_in {
+	required uint32 zone_id					= 1;
+	repeated db_shopping_info shoppings		= 2;	// 副本信息
+}
+
+
+//========================钻石返还==================================================
+message db_query_diamondback_list_in{
+	required uint32 zone_id					= 1;
+}
+
+
+message db_query_diamondback_list_out{
+	optional uint32 back_num				= 1;
+	optional uint32 vip						= 2;
+}
+
+message db_modify_diamondback_info_in{
+	required uint32 zone_id					= 1;
+}
+
+message db_levelmodify_in {
+    required uint32 zone_id               = 1; // 
+	required uint32 level				  = 2; //  
+}
+message db_levelmodify_out {
+    required uint32 ret                   = 1; //ret=0成功
+}
+
+message db_set_token_in {
+	required uint32 zone_id					= 1;
+    required uint64 userid                  = 2;
+    required uint64 token_id                = 3;
+    optional string kakao_tokenid           = 4;
+}
+
+message db_check_token_in {
+	required uint32 zone_id					= 1;
+    required uint64 userid                  = 2;
+    required uint64 token_id                = 3;
+	optional string kakao_tokenid         	= 4;
+}
+
+message db_check_token_out {
+    required bool check                 = 1;
+    required uint32 account_id          = 2;
+}
+
+
+message db_parse{
+	required uint32 zone_id				= 1;
+}
+
+
+//===公会信息====================================================================
+message db_guild_info_t{
+	required uint64 gid					= 1;
+	required uint32 exp					= 2;
+	required uint32 contribute			= 3;
+	required uint32 lv 					= 4;
+	required uint32 fightcondition		= 5;
+	required bytes	gname				= 6;		// 公会名字
+	required bytes	oname				= 7;		// 公会会长名字
+	required bytes	note				= 8;		// 公会宣言
+	required uint32 member_num			= 9;		// 公会人数
+	required uint32 power_score			= 10;		// 总战力
+	required bytes notice				= 11;		// 公会公告
+	required uint32 type				= 12;		// 公会申请类型
+	optional uint64 ouserid				= 13;		// owner的userid
+	optional uint32 oreg_tm				= 14;		// owner的reg_tm
+}
+	
+
+message db_list_guild_info_in{
+	required uint32 zone_id				= 1;
+}
+
+
+message db_list_guild_info_out{
+	repeated db_guild_info_t infos		= 1;
+}
+
+
+message db_new_guild_info_in{
+	required uint32 zone_id				= 1;
+	required db_guild_info_t info		= 2;
+}
+
+message db_update_guild_info_in{
+	required uint32 zone_id				= 1;
+	required uint64 gid					= 2;
+	optional uint32 exp					= 3;
+	optional uint32 contribute			= 4;
+	optional uint32 lv 					= 5;
+	optional uint32 fightcondition		= 6;
+	optional bytes	gname				= 7;		// 公会名字
+	optional bytes	oname				= 8;		// 公会会长名字
+	optional bytes	note				= 9;		// 公会宣言
+	optional uint32 member_num			= 10;		// 人数
+	optional uint32 power_score			= 11;		// 总战力
+	optional bytes notice				= 12;		// 公会公告
+	optional uint32 type				= 13;		// 公会申请类型
+}
+
+
+message db_drop_guild_in{
+	required uint32 zone_id				= 1;
+	required uint64 gid					= 2;
+}
+
+
+//====玩家公会信息==============================================================
+message db_guild_player_info_t{
+	required uint64 userid 				= 1;
+	required uint32 reg_tm				= 2;
+	optional uint32 status				= 3;
+}
+
+
+message db_query_player_guild_in{
+	required uint32 zone_id				= 1;
+	required uint64 gid					= 2;
+}
+
+message db_query_player_guild_out{
+	repeated db_guild_player_info_t infos 	= 1;
+	required uint64 gid					= 2;
+}
+
+message db_change_player_guild_status_in{
+	required uint32 zone_id				= 1;
+	required uint32 status				= 2;
+	required uint64 gid					= 3;
+}
+
+
+message db_player_guild_list_join_req_in{
+	required uint32 zone_id             = 1;
+	required uint64 gid					= 2;
+}
+
+message db_player_guild_list_join_req_out{
+	repeated db_guild_player_info_t infos 	= 1;
+}
+
+message db_change_other_player_guild_status_in{
+	required uint32 zone_id				= 1;
+	required uint64 userid				= 2;
+	required uint32 reg_tm				= 3;
+	required uint32 status				= 4;
+	required uint64 gid					= 5;
+}
+
+
+message db_del_player_guild_status_in{
+	required uint32 zone_id				= 1;
+	required uint64 gid					= 2;
+	required uint64 userid				= 3;
+	required uint32 reg_tm				= 4;
+	required uint32 status				= 5;
+	required uint32 type				= 6;
+}
+
+
+
+
+//======公会信息缓存================================================
+message db_guild_player_showinfo_t{
+	required uint64 userid				= 1;	//米米号
+	required uint32 reg_tm				= 2;	//注册时间
+	optional bytes name					= 3;	//姓名
+	optional uint32 lv					= 4;	//等级
+	optional uint32 contribute			= 5;	//贡献
+	optional uint32 status				= 6;	//职位
+	optional uint32 power_score			= 7;	//战力
+	optional uint32 lastlogin_tm		= 8;	//上次登录时间
+	optional uint32 total_contribute	= 9;	//总贡献
+	optional uint64 gid					= 10;	//所在帮会
+	optional uint32 cold_tm				= 11;	//cold时间
+	optional uint32 type				= 12;	//职业
+}
+
+message db_list_guild_playerinfo_in{
+	required uint32 zone_id				= 1;	//服务器id
+	repeated db_guild_player_showinfo_t infos = 2;	
+}
+
+message db_list_guild_playerinfo_out{
+	repeated db_guild_player_showinfo_t infos = 1;	
+}
+
+
+
+
+//======player_guild公会及职位=====================================
+message db_player_guild_query_in {
+	required uint32 zone_id				= 1;
+}
+
+message db_player_guild_query_out {
+	optional uint64 guild_id			= 1;  //公会号
+	optional uint32 status				= 2;  //职位
+	repeated uint64 applyids			= 3;  //申请公会列表
+}
+
+//message db_player_guild_set_in {
+//	required uint32 zone_id				= 1;
+//	required uint64	guild_id			= 2;  //公会号
+//	required uint32	status				= 3;  //职位
+//}
+
+//message db_player_guild_query_others_in {
+//	required uint32 zone_id				= 1;
+//	required uint64 user_id				= 2;  //米米号
+//	required uint32 reg_tm				= 3;  //注册时间
+//}
+
+//message db_player_guild_query_others_out {
+//	required uint64 user_id				= 1;  //玩家ID
+//	required uint32	reg_tm				= 2;  //注册时间
+//	required uint64	guild_id			= 3;  //公会ID
+//	required uint32 status				= 4;  //公会职位
+//}
+
+//message db_player_guild_set_others_in {
+//	required uint32 zone_id				= 1;
+//	required uint64 user_id				= 2;  //玩家ID
+//	required uint32	reg_tm				= 3;  //注册时间
+//	required uint64	guild_id			= 4;  //公会ID
+//	required uint32 status				= 5;  //公会职位
+//}
+
+//-----stat_histroy--------------
+//message db_stat_history_in {
+//	required uint32 zone_id			= 1;
+//	required uint32	item_id			= 2;
+//	required string item_name		= 3;
+//	required int32	op_count		= 4;
+//	required string op_way			= 5;
+//}
+
+//-------player_guild_record--------------------------
+enum PB_GUILD_RECORD_TYPE{
+	PB_RECORD_CON_COIN			= 1; //捐献金币
+	PB_RECORD_CON_DIA			= 2; //捐献钻石
+	PB_RECORD_STATUS_CHANGE		= 3; //人员职位变动
+	PB_RECORD_KICK_OUT			= 4; //玩家被踢出
+	PB_RECORD_MEM_IN			= 5; //人员加入
+	PB_RECORD_MEM_LEAVE			= 6; //人员离开
+	PB_RECORD_FIGHT_DEAD		= 7; //强制决斗失败
+	PB_RECORD_UPGRADE			= 8;  //公会升级
+}
+
+message guild_record_info {
+	required uint32 zone_id				= 1;
+	required uint64 guild_id			= 2;
+	required uint32 record_type			= 3;	//记录类型
+	required bytes  log					= 4;	//具体消息
+	required uint32 modify_tm			= 5;	//修改时间
+}
+
+message db_guild_record_in {
+	required uint32 zone_id				= 1;
+	required uint64	guild_id			= 2;	//公会iD
+	required uint32 record_type			= 3;	//记录类型
+	required bytes  log					= 4;	//具体消息
+}
+
+message db_guild_record_query_in {
+	required uint32	zone_id			= 1;
+	required uint64 guild_id		= 2;	//公会ID
+}
+message db_guild_record_query_out {
+	repeated guild_record_info logs = 1;
+	optional uint64 guild_id		= 2;
+}
+
+// 战友招募
+message db_recruit_basic_info{
+    required uint64 userid              = 1;    //米米号
+    required uint32 reg_tm              = 2;   	//注册时间
+	required uint32 zone_id				= 3;	//服务器ID
+    optional bytes 	name             	= 4;    //姓名
+    optional uint32 lv                  = 5;    //等级
+    optional uint32 type                = 6;    //职业，确定头像
+    optional uint32 prestige            = 7;    //声望
+    optional uint32 pvai_rank           = 8;    //pvai排名
+	optional uint32 add_tm           	= 9;    //添加时间
+}
+
+message db_recruit_friend_query_in{
+    optional uint32 zone_id             = 1[default = 0];
+    optional uint32 channel_id          = 2[default = 0];//供接口使用
+}
+
+message db_recruit_friend_query_out{
+	repeated db_recruit_basic_info friends   = 1;
+}
+
+
+message db_recruit_status_info{
+   required uint64 userid          = 1;
+   required uint32 reward_id       = 2;
+   required uint32 reward_status   = 3;
+}
+
+message db_recruit_status_query_in{
+   optional uint32 zone_id             = 1[default = 0];
+}
+
+message db_recruit_status_query_out{
+   repeated db_recruit_status_info status    = 1;
+}
+
+message db_recruit_status_set_in{
+    required db_recruit_status_info status    = 1;
+    optional uint32 zone_id             = 2[default = 0];
+}
+
+message db_recruit_friend_add_in{
+	required uint64 userid              = 1;    //米米号
+    optional uint32 zone_id             = 2[default = 0];
+}
+
+message db_recruit_friend_add_out{
+	required uint32 result				   = 1;	//0成功,1用户不存在,2已经是战友
+	optional db_recruit_basic_info info    = 2;    
+}
+
+message db_recruit_del_friend_in{
+	required uint64 userid              = 1;    //米米号
+    optional uint32 zone_id             = 2[default = 0];
+}
+
+message db_recruit_del_friend_out{
+	required uint64 userid              = 1;    //米米号
+}
+
+
+message db_rank_showinfo_t{
+	required uint32 userid			= 1;	// 玩家userid
+	required uint32 reg_time		= 2;	// 玩家注册时间
+	required uint32 channel_id		= 3;	// 玩家渠道号
+	required bytes name				= 4;	// 玩家昵称
+	required uint64 score			= 5;	// 玩家分数
+	required uint32 rank			= 6;	// 玩家排名
+	required uint32 updown			= 7;	// 排名升降
+	optional uint32 type			= 8;	// 玩家职业
+	optional uint64	gid				= 9;	// 公会ID
+}
+
+
+message db_rank_showinfo_query_in{
+	repeated db_rank_showinfo_t infos 		= 1; 
+	required uint32	zone_id					= 2;
+}
+
+
+message db_rank_showinfo_query_out{
+	repeated db_rank_showinfo_t infos 		= 1; 
+}
+
+
+message db_rank_backup_in{
+	required uint32 zone_id			= 1;	//
+	required uint32 rank_max		= 2;	// 
+	required uint32 rank_mid		= 3;	// 
+	required uint32 rank_min		= 4;	// 
+	required uint32 type			= 5;	//
+	required uint32 optype			= 6;	//
+	required uint64	score			= 7;	//
+}
+
+
+//=====GUILD_RED_PACKET--START============================================
+
+message db_guild_red_packet_info_t {
+	required uint64 userid			= 1;	//发放红包的玩家ID
+	required uint32 reg_tm			= 2;	//				注册时间
+	required uint32 zone_id			= 3;	//				ZONE_ID
+	required uint32 send_tm			= 4;	//红包发放时间
+	required bytes  name			= 5;	//玩家昵称
+	required uint32 packet_type		= 6;	//红包类型  1:土豪 2.充值
+	required uint32 packet_id		= 7;	//红包ID
+	required uint32 total_nu		= 8;
+	required uint32	surplus_nu		= 9;	//红包剩余领取数
+	required uint32 surplus_item1	= 10;	//红包等价物剩余个数
+	required uint32	surplus_item2	= 11;
+	required uint32 surplus_item3	= 12;
+	required uint32 surplus_item4	= 13;
+	required uint32 diamond_count	= 14;	//红包总钻石数
+	required uint64 guild_id		= 15;	//公会ID
+	optional uint32 real_diamond	= 16;	//实际发放钻石数量,不变
+}
+
+message db_player_red_packet_info_t {
+	required uint64 userid			= 1;
+	required uint32 reg_tm			= 2;
+	required uint32 zone_id			= 3;
+	required uint32 send_tm			= 4;
+	optional uint32	is_draw			= 5[default = 0];
+}
+
+message db_player_red_packet_query_in {
+	required uint32 zone_id			= 1;
+}
+
+message db_player_red_packet_query_out{
+	repeated db_player_red_packet_info_t red_packet_infos = 1;
+}
+
+message db_player_red_packet_add_in {
+	required uint32 zone_id					= 1;
+	required db_player_red_packet_info_t red_packet	= 2;
+}
+
+message db_player_red_packet_del_in {
+	required uint32 zone_id					= 1;
+	required db_player_red_packet_info_t red_packet	= 2;
+}
+
+message db_zone_red_packet_query_in {
+	required uint32 zone_id			= 1;
+}
+
+message db_zone_red_packet_query_out {
+	repeated db_guild_red_packet_info_t	infos		= 1;
+}
+
+message db_zone_red_packet_add_in {
+	required db_guild_red_packet_info_t packet		= 1;
+	required uint32	zone_id							= 2;
+}
+
+message db_zone_red_packet_get_award_in {
+	required db_guild_red_packet_info_t packet		= 1;
+	required uint32 zone_id							= 2;
+}
+
+message db_red_packet_record_add_in {
+	required uint32 zone_id							= 1;
+	required db_player_red_packet_info_t key		= 2;
+	required bytes	log								= 3;
+}
+
+message db_red_packet_record_query_in {
+	required uint32 zone_id							= 1;
+	required db_player_red_packet_info_t key		= 2;
+}
+
+message db_red_packet_log_info {
+	required uint64 userid			= 1;
+	required uint32 reg_tm			= 2;
+	required uint32 zone_id			= 3;
+	required uint32 send_tm			= 4;
+	required bytes	log				= 5;
+	required uint32	modify_tm		= 6;
+}
+
+message db_red_packet_record_query_out {
+	repeated db_red_packet_log_info	logs			= 1;
+	optional db_player_red_packet_info_t key		= 2;
+}
+
+//=====GUILD_RED_PACKET--END==============================================
+
+message db_change_name_in{
+	required uint32 zone_id			= 1;
+	required bytes	name			= 2;
+	optional uint32 channel_id		= 3[default=0];
+	optional uint32 reg_tm			= 4[default=0];
+}
+
+message db_change_name_out{
+	required uint32 ret				= 1;
+	required bytes  name            = 2;
+}
+
+message db_get_last_login_svrid_in {
+        required uint64 userid                = 1;
+        optional uint32 zone_id               = 2[default=0]; //不用传
+}
+
+message db_get_last_login_svrid_out {
+      required uint32 svr_id      = 1;
+}
+
+message db_set_last_login_svrid_in {
+        required uint64 userid      = 1;
+    	required uint32 zone_id     = 2;
+}
+
+
+//----get-db-ip-port-info--------------------------------------------------
+message db_get_mysql_info_in{
+	required uint32	zone_id			= 1;
+}
+//
+message db_get_mysql_info_out{
+	required string ip              = 1;
+	required uint32 port			= 2;
+}
+
+

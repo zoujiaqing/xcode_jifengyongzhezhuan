@@ -1,0 +1,1344 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>assassin_common_move: Z ku.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{18,415},{16,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,13}}</string>
+                <key>sourceSize</key>
+                <string>{16,13}</string>
+            </dict>
+            <key>assassin_common_move:00ff.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{517,299},{113,90}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{113,90}}</string>
+                <key>sourceSize</key>
+                <string>{113,90}</string>
+            </dict>
+            <key>assassin_common_move:232fer.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{492,339},{18,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,23}}</string>
+                <key>sourceSize</key>
+                <string>{18,23}</string>
+            </dict>
+            <key>assassin_common_move:234fsaw.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{688,420},{14,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,14}}</string>
+                <key>sourceSize</key>
+                <string>{14,14}</string>
+            </dict>
+            <key>assassin_common_move:345rtf.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{649,194},{103,103}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{103,103}}</string>
+                <key>sourceSize</key>
+                <string>{103,103}</string>
+            </dict>
+            <key>assassin_common_move:45ec.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{367,0},{149,198}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{149,198}}</string>
+                <key>sourceSize</key>
+                <string>{149,198}</string>
+            </dict>
+            <key>assassin_common_move:45vf.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{367,200},{148,108}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{148,108}}</string>
+                <key>sourceSize</key>
+                <string>{148,108}</string>
+            </dict>
+            <key>assassin_common_move:890s.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{843,409},{17,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,17}}</string>
+                <key>sourceSize</key>
+                <string>{17,17}</string>
+            </dict>
+            <key>assassin_common_move:90erc.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{129,326}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{129,326}}</string>
+                <key>sourceSize</key>
+                <string>{129,326}</string>
+            </dict>
+            <key>assassin_common_move:990t.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,328},{124,70}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{124,70}}</string>
+                <key>sourceSize</key>
+                <string>{124,70}</string>
+            </dict>
+            <key>assassin_common_move:ASDQWRT.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{515,391},{27,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,17}}</string>
+                <key>sourceSize</key>
+                <string>{27,17}</string>
+            </dict>
+            <key>assassin_common_move:B B ku.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{761,412},{18,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,11}}</string>
+                <key>sourceSize</key>
+                <string>{18,11}</string>
+            </dict>
+            <key>assassin_common_move:B kua.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{718,391},{27,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,13}}</string>
+                <key>sourceSize</key>
+                <string>{27,13}</string>
+            </dict>
+            <key>assassin_common_move:B shenti.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{325,385},{25,22}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,22}}</string>
+                <key>sourceSize</key>
+                <string>{25,22}</string>
+            </dict>
+            <key>assassin_common_move:B weijin.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{799,386},{35,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{35,16}}</string>
+                <key>sourceSize</key>
+                <string>{35,16}</string>
+            </dict>
+            <key>assassin_common_move:B xie.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{492,403},{20,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,15}}</string>
+                <key>sourceSize</key>
+                <string>{20,15}</string>
+            </dict>
+            <key>assassin_common_move:B yaodai.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{118,411},{25,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,8}}</string>
+                <key>sourceSize</key>
+                <string>{25,8}</string>
+            </dict>
+            <key>assassin_common_move:B youdat.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{492,384},{21,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,17}}</string>
+                <key>sourceSize</key>
+                <string>{21,17}</string>
+            </dict>
+            <key>assassin_common_move:B youshou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1011,23},{9,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,9}}</string>
+                <key>sourceSize</key>
+                <string>{9,9}</string>
+            </dict>
+            <key>assassin_common_move:B youxiaobi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1011,11},{9,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,10}}</string>
+                <key>sourceSize</key>
+                <string>{9,10}</string>
+            </dict>
+            <key>assassin_common_move:B youxiaot.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{408,421},{14,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,11}}</string>
+                <key>sourceSize</key>
+                <string>{14,11}</string>
+            </dict>
+            <key>assassin_common_move:B zuodatui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{836,386},{24,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,21}}</string>
+                <key>sourceSize</key>
+                <string>{24,21}</string>
+            </dict>
+            <key>assassin_common_move:B zuohujian.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1005,378},{15,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,21}}</string>
+                <key>sourceSize</key>
+                <string>{15,21}</string>
+            </dict>
+            <key>assassin_common_move:B zuoqianbi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1011,44},{7,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{7,8}}</string>
+                <key>sourceSize</key>
+                <string>{7,8}</string>
+            </dict>
+            <key>assassin_common_move:B zuoxiaobi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{186,411},{17,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,14}}</string>
+                <key>sourceSize</key>
+                <string>{17,14}</string>
+            </dict>
+            <key>assassin_common_move:B zuoxiaotui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1005,357},{17,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,19}}</string>
+                <key>sourceSize</key>
+                <string>{17,19}</string>
+            </dict>
+            <key>assassin_common_move:Bzuoshou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{514,410},{16,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,18}}</string>
+                <key>sourceSize</key>
+                <string>{16,18}</string>
+            </dict>
+            <key>assassin_common_move:F kua.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,400},{26,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,13}}</string>
+                <key>sourceSize</key>
+                <string>{26,13}</string>
+            </dict>
+            <key>assassin_common_move:F kuu.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{799,419},{18,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,10}}</string>
+                <key>sourceSize</key>
+                <string>{18,10}</string>
+            </dict>
+            <key>assassin_common_move:F shenti.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{457,407},{22,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,12}}</string>
+                <key>sourceSize</key>
+                <string>{22,12}</string>
+            </dict>
+            <key>assassin_common_move:F tou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{408,384},{47,35}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{47,35}}</string>
+                <key>sourceSize</key>
+                <string>{47,35}</string>
+            </dict>
+            <key>assassin_common_move:F toufa.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{671,368},{45,50}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{45,50}}</string>
+                <key>sourceSize</key>
+                <string>{45,50}</string>
+            </dict>
+            <key>assassin_common_move:F weijin.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{457,384},{33,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{33,21}}</string>
+                <key>sourceSize</key>
+                <string>{33,21}</string>
+            </dict>
+            <key>assassin_common_move:F yaodai.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{737,412},{22,7}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,7}}</string>
+                <key>sourceSize</key>
+                <string>{22,7}</string>
+            </dict>
+            <key>assassin_common_move:F youdat.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{571,391},{24,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,18}}</string>
+                <key>sourceSize</key>
+                <string>{24,18}</string>
+            </dict>
+            <key>assassin_common_move:F youhoubi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1011,34},{7,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{7,8}}</string>
+                <key>sourceSize</key>
+                <string>{7,8}</string>
+            </dict>
+            <key>assassin_common_move:F youhujian.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{862,386},{14,20}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,20}}</string>
+                <key>sourceSize</key>
+                <string>{14,20}</string>
+            </dict>
+            <key>assassin_common_move:F youqianbi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{823,409},{18,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,16}}</string>
+                <key>sourceSize</key>
+                <string>{18,16}</string>
+            </dict>
+            <key>assassin_common_move:F yous.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{481,420},{16,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,12}}</string>
+                <key>sourceSize</key>
+                <string>{16,12}</string>
+            </dict>
+            <key>assassin_common_move:F youxiaot.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{98,400},{18,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,19}}</string>
+                <key>sourceSize</key>
+                <string>{18,19}</string>
+            </dict>
+            <key>assassin_common_move:F zuodat.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{205,411},{16,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,15}}</string>
+                <key>sourceSize</key>
+                <string>{16,15}</string>
+            </dict>
+            <key>assassin_common_move:F zuoqianb.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{129,421},{14,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,13}}</string>
+                <key>sourceSize</key>
+                <string>{14,13}</string>
+            </dict>
+            <key>assassin_common_move:F zuos.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{635,237},{12,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,12}}</string>
+                <key>sourceSize</key>
+                <string>{12,12}</string>
+            </dict>
+            <key>assassin_common_move:F zuoxiaot.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{53,421},{14,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,14}}</string>
+                <key>sourceSize</key>
+                <string>{14,14}</string>
+            </dict>
+            <key>assassin_common_move:Lzuoxiaot s.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1005,401},{17,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,18}}</string>
+                <key>sourceSize</key>
+                <string>{17,18}</string>
+            </dict>
+            <key>assassin_common_move:WER2345.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{597,408},{21,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,13}}</string>
+                <key>sourceSize</key>
+                <string>{21,13}</string>
+            </dict>
+            <key>assassin_common_move:Y houbi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1011,0},{10,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{10,9}}</string>
+                <key>sourceSize</key>
+                <string>{10,9}</string>
+            </dict>
+            <key>assassin_common_move:Y hujian.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{499,420},{13,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,14}}</string>
+                <key>sourceSize</key>
+                <string>{13,14}</string>
+            </dict>
+            <key>assassin_common_move:Y qianbi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{167,411},{17,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,16}}</string>
+                <key>sourceSize</key>
+                <string>{17,16}</string>
+            </dict>
+            <key>assassin_common_move:Y shou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{223,411},{16,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,15}}</string>
+                <key>sourceSize</key>
+                <string>{16,15}</string>
+            </dict>
+            <key>assassin_common_move:Z datui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{544,391},{25,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,19}}</string>
+                <key>sourceSize</key>
+                <string>{25,19}</string>
+            </dict>
+            <key>assassin_common_move:Z xiaotui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{330,357},{27,26}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,26}}</string>
+                <key>sourceSize</key>
+                <string>{27,26}</string>
+            </dict>
+            <key>assassin_common_move:asdcaz.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{635,219},{12,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,16}}</string>
+                <key>sourceSize</key>
+                <string>{12,16}</string>
+            </dict>
+            <key>assassin_common_move:asdcd.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{671,420},{15,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,13}}</string>
+                <key>sourceSize</key>
+                <string>{15,13}</string>
+            </dict>
+            <key>assassin_common_move:asdvftr.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{757,0},{125,153}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{125,153}}</string>
+                <key>sourceSize</key>
+                <string>{125,153}</string>
+            </dict>
+            <key>assassin_common_move:asdvrt.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{36,415},{15,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,14}}</string>
+                <key>sourceSize</key>
+                <string>{15,14}</string>
+            </dict>
+            <key>assassin_common_move:asdwe45.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{635,179},{12,38}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,38}}</string>
+                <key>sourceSize</key>
+                <string>{12,38}</string>
+            </dict>
+            <key>assassin_common_move:bgnt.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{752,309},{125,75}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{125,75}}</string>
+                <key>sourceSize</key>
+                <string>{125,75}</string>
+            </dict>
+            <key>assassin_common_move:bgrthg.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{76,419},{14,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,15}}</string>
+                <key>sourceSize</key>
+                <string>{14,15}</string>
+            </dict>
+            <key>assassin_common_move:cdte.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{92,421},{14,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,14}}</string>
+                <key>sourceSize</key>
+                <string>{14,14}</string>
+            </dict>
+            <key>assassin_common_move:fbvgfe.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{261,263},{67,101}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{67,101}}</string>
+                <key>sourceSize</key>
+                <string>{67,101}</string>
+            </dict>
+            <key>assassin_common_move:ffer.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{757,155},{120,152}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{120,152}}</string>
+                <key>sourceSize</key>
+                <string>{120,152}</string>
+            </dict>
+            <key>assassin_common_move:fgsxf.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{359,310},{131,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{131,72}}</string>
+                <key>sourceSize</key>
+                <string>{131,72}</string>
+            </dict>
+            <key>assassin_common_move:hasdq.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{424,421},{14,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,9}}</string>
+                <key>sourceSize</key>
+                <string>{14,9}</string>
+            </dict>
+            <key>assassin_common_move:iorf.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{131,0},{128,265}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{128,265}}</string>
+                <key>sourceSize</key>
+                <string>{128,265}</string>
+            </dict>
+            <key>assassin_common_move:ippe.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{518,179},{115,118}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{115,118}}</string>
+                <key>sourceSize</key>
+                <string>{115,118}</string>
+            </dict>
+            <key>assassin_common_move:kui4563.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,415},{16,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,13}}</string>
+                <key>sourceSize</key>
+                <string>{16,13}</string>
+            </dict>
+            <key>assassin_common_move:langer.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{325,409},{20,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,14}}</string>
+                <key>sourceSize</key>
+                <string>{20,14}</string>
+            </dict>
+            <key>assassin_common_move:lian.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{330,327},{27,28}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,28}}</string>
+                <key>sourceSize</key>
+                <string>{27,28}</string>
+            </dict>
+            <key>assassin_common_move:lopq.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{126,344},{119,65}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{119,65}}</string>
+                <key>sourceSize</key>
+                <string>{119,65}</string>
+            </dict>
+            <key>assassin_common_move:mjkui003.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{781,412},{16,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,13}}</string>
+                <key>sourceSize</key>
+                <string>{16,13}</string>
+            </dict>
+            <key>assassin_common_move:nngy.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{632,299},{118,67}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{118,67}}</string>
+                <key>sourceSize</key>
+                <string>{118,67}</string>
+            </dict>
+            <key>assassin_common_move:oipwes.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{261,0},{104,261}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{104,261}}</string>
+                <key>sourceSize</key>
+                <string>{104,261}</string>
+            </dict>
+            <key>assassin_common_move:oplou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{131,267},{128,75}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{128,75}}</string>
+                <key>sourceSize</key>
+                <string>{128,75}</string>
+            </dict>
+            <key>assassin_common_move:opwev.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{884,0},{125,153}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{125,153}}</string>
+                <key>sourceSize</key>
+                <string>{125,153}</string>
+            </dict>
+            <key>assassin_common_move:pen.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{597,391},{26,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,15}}</string>
+                <key>sourceSize</key>
+                <string>{26,15}</string>
+            </dict>
+            <key>assassin_common_move:podf778.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{76,400},{20,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,17}}</string>
+                <key>sourceSize</key>
+                <string>{20,17}</string>
+            </dict>
+            <key>assassin_common_move:qwa.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{879,283},{137,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{137,72}}</string>
+                <key>sourceSize</key>
+                <string>{137,72}</string>
+            </dict>
+            <key>assassin_common_move:rrf.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{879,357},{85,74}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{85,74}}</string>
+                <key>sourceSize</key>
+                <string>{85,74}</string>
+            </dict>
+            <key>assassin_common_move:rt45ef.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{55,400},{19,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,19}}</string>
+                <key>sourceSize</key>
+                <string>{19,19}</string>
+            </dict>
+            <key>assassin_common_move:sdfcw.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{718,406},{17,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,18}}</string>
+                <key>sourceSize</key>
+                <string>{17,18}</string>
+            </dict>
+            <key>assassin_common_move:sdvfer.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{518,0},{131,177}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{131,177}}</string>
+                <key>sourceSize</key>
+                <string>{131,177}</string>
+            </dict>
+            <key>assassin_common_move:shenti.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{492,364},{21,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,18}}</string>
+                <key>sourceSize</key>
+                <string>{21,18}</string>
+            </dict>
+            <key>assassin_common_move:tou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{359,384},{47,42}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{47,42}}</string>
+                <key>sourceSize</key>
+                <string>{47,42}</string>
+            </dict>
+            <key>assassin_common_move:vfbg.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{651,0},{104,192}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{104,192}}</string>
+                <key>sourceSize</key>
+                <string>{104,192}</string>
+            </dict>
+            <key>assassin_common_move:vfgbrty.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{532,412},{16,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,14}}</string>
+                <key>sourceSize</key>
+                <string>{16,14}</string>
+            </dict>
+            <key>assassin_common_move:weiba.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{751,386},{46,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{46,24}}</string>
+                <key>sourceSize</key>
+                <string>{46,24}</string>
+            </dict>
+            <key>assassin_common_move:weijin.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{718,368},{31,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{31,21}}</string>
+                <key>sourceSize</key>
+                <string>{31,21}</string>
+            </dict>
+            <key>assassin_common_move:weijinwei.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{492,310},{23,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{23,27}}</string>
+                <key>sourceSize</key>
+                <string>{23,27}</string>
+            </dict>
+            <key>assassin_common_move:wfw43f.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{879,155},{142,126}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{142,126}}</string>
+                <key>sourceSize</key>
+                <string>{142,126}</string>
+            </dict>
+            <key>assassin_common_move:wuqi_1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{330,263},{27,62}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,62}}</string>
+                <key>sourceSize</key>
+                <string>{27,62}</string>
+            </dict>
+            <key>assassin_common_move:wuqi_20.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{966,357},{37,68}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{37,68}}</string>
+                <key>sourceSize</key>
+                <string>{37,68}</string>
+            </dict>
+            <key>assassin_common_move:wuqi_40.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{286,366},{37,68}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{37,68}}</string>
+                <key>sourceSize</key>
+                <string>{37,68}</string>
+            </dict>
+            <key>assassin_common_move:wuqi_60.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{247,366},{37,68}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{37,68}}</string>
+                <key>sourceSize</key>
+                <string>{37,68}</string>
+            </dict>
+            <key>assassin_common_move:wuqi_80.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{632,368},{37,68}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{37,68}}</string>
+                <key>sourceSize</key>
+                <string>{37,68}</string>
+            </dict>
+            <key>assassin_common_move:xcascwe.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{550,412},{15,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,15}}</string>
+                <key>sourceSize</key>
+                <string>{15,15}</string>
+            </dict>
+            <key>assassin_common_move:y datui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{28,400},{25,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,13}}</string>
+                <key>sourceSize</key>
+                <string>{25,13}</string>
+            </dict>
+            <key>assassin_common_move:yaodai.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{571,411},{21,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,9}}</string>
+                <key>sourceSize</key>
+                <string>{21,9}</string>
+            </dict>
+            <key>assassin_common_move:youjiao.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{108,421},{19,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,8}}</string>
+                <key>sourceSize</key>
+                <string>{19,8}</string>
+            </dict>
+            <key>assassin_common_move:youxiaotui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{145,411},{20,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,13}}</string>
+                <key>sourceSize</key>
+                <string>{20,13}</string>
+            </dict>
+            <key>assassin_common_move:zuijiao.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{799,404},{22,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,13}}</string>
+                <key>sourceSize</key>
+                <string>{22,13}</string>
+            </dict>
+            <key>assassin_common_move:zuoshou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{862,408},{15,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,16}}</string>
+                <key>sourceSize</key>
+                <string>{15,16}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>assassin_common_move.pvr.ccz</string>
+            <key>size</key>
+            <string>{1022,438}</string>
+            <key>textureFileName</key>
+            <string>assassin_common_move.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

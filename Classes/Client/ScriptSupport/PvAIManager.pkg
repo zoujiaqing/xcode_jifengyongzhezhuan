@@ -1,0 +1,11 @@
+class PvAIManager
+{
+	static PvAIManager* Get();
+	
+	void sendPvAIReq(unsigned int userId);
+	void onMsgPvAIReward(int accuCoin, int accuReputation, int oneCoin, int oneReputation);
+	
+	long getCoolDownEndTime();
+	int getRemainCount();
+	int getBuyCount();
+};

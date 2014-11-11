@@ -1,0 +1,1032 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>skill_earthquake_swordswoman:2 hxdg1 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{685,638},{107,58}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{107,58}}</string>
+                <key>sourceSize</key>
+                <string>{107,58}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:2hxdg2 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{895,0},{124,130}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{124,130}}</string>
+                <key>sourceSize</key>
+                <string>{124,130}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:2hxdg2 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{608,603},{75,103}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{75,103}}</string>
+                <key>sourceSize</key>
+                <string>{75,103}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:b nvjian pifeng.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{794,638},{78,53}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{78,53}}</string>
+                <key>sourceSize</key>
+                <string>{78,53}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:c nvjian fa.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{408,346},{36,34}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{36,34}}</string>
+                <key>sourceSize</key>
+                <string>{36,34}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:c nvjian hujian1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{161,497},{15,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,9}}</string>
+                <key>sourceSize</key>
+                <string>{15,9}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:c nvjian shou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{161,508},{11,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,9}}</string>
+                <key>sourceSize</key>
+                <string>{11,9}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:c nvjian shou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{884,394},{9,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,9}}</string>
+                <key>sourceSize</key>
+                <string>{9,9}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:c nvjian shoujia 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{427,487},{16,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,10}}</string>
+                <key>sourceSize</key>
+                <string>{16,10}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:c nvjian shoujia2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{698,501},{13,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,10}}</string>
+                <key>sourceSize</key>
+                <string>{13,10}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:hxdg3 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{884,410},{73,130}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{73,130}}</string>
+                <key>sourceSize</key>
+                <string>{73,130}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:hxdg5 3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,585},{107,75}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{107,75}}</string>
+                <key>sourceSize</key>
+                <string>{107,75}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:k1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{408,603},{198,339}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{198,339}}</string>
+                <key>sourceSize</key>
+                <string>{198,339}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:k2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{178,307},{228,320}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{228,320}}</string>
+                <key>sourceSize</key>
+                <string>{228,320}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:k3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{447,293},{249,308}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{249,308}}</string>
+                <key>sourceSize</key>
+                <string>{249,308}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:k4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{178,0},{267,305}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{267,305}}</string>
+                <key>sourceSize</key>
+                <string>{267,305}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:k5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{447,0},{276,291}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{276,291}}</string>
+                <key>sourceSize</key>
+                <string>{276,291}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:k6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{717,394},{165,242}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{165,242}}</string>
+                <key>sourceSize</key>
+                <string>{165,242}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:k7.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{166,629},{178,180}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{178,180}}</string>
+                <key>sourceSize</key>
+                <string>{178,180}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:k8.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1021,0},{0,0}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{0,0}}</string>
+                <key>sourceSize</key>
+                <string>{0,0}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nv jian p1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{80,673},{64,39}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{64,39}}</string>
+                <key>sourceSize</key>
+                <string>{64,39}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nv jian p10.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{109,585},{63,42}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{63,42}}</string>
+                <key>sourceSize</key>
+                <string>{63,42}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nv jian p14.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{977,285},{44,62}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{44,62}}</string>
+                <key>sourceSize</key>
+                <string>{44,62}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nv jian p15.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{975,349},{45,58}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{45,58}}</string>
+                <key>sourceSize</key>
+                <string>{45,58}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian fa1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{979,250},{40,33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{40,33}}</string>
+                <key>sourceSize</key>
+                <string>{40,33}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian fa3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{408,307},{35,37}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{35,37}}</string>
+                <key>sourceSize</key>
+                <string>{35,37}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian huijian2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{428,453},{16,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,14}}</string>
+                <key>sourceSize</key>
+                <string>{16,14}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian hujian2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{408,509},{11,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,8}}</string>
+                <key>sourceSize</key>
+                <string>{11,8}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian hujian3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{132,502},{12,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,8}}</string>
+                <key>sourceSize</key>
+                <string>{12,8}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian jiao1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{698,389},{17,22}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,22}}</string>
+                <key>sourceSize</key>
+                <string>{17,22}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian jiao2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{698,485},{13,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,14}}</string>
+                <key>sourceSize</key>
+                <string>{13,14}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian kudang1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{146,485},{17,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,10}}</string>
+                <key>sourceSize</key>
+                <string>{17,10}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian kudang2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{408,484},{17,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,10}}</string>
+                <key>sourceSize</key>
+                <string>{17,10}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian lian1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{698,319},{24,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,25}}</string>
+                <key>sourceSize</key>
+                <string>{24,25}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian lian2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{698,293},{25,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,24}}</string>
+                <key>sourceSize</key>
+                <string>{25,24}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian p123.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{346,629},{52,43}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{52,43}}</string>
+                <key>sourceSize</key>
+                <string>{52,43}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian p16.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{109,629},{55,42}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{55,42}}</string>
+                <key>sourceSize</key>
+                <string>{55,42}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian pifeng1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{939,663},{72,47}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{72,47}}</string>
+                <key>sourceSize</key>
+                <string>{72,47}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian shenti1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{132,453},{21,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,15}}</string>
+                <key>sourceSize</key>
+                <string>{21,15}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian shou4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{165,485},{11,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,10}}</string>
+                <key>sourceSize</key>
+                <string>{11,10}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian shou5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{964,324},{10,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{10,12}}</string>
+                <key>sourceSize</key>
+                <string>{10,12}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian shoubi1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{964,292},{11,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,14}}</string>
+                <key>sourceSize</key>
+                <string>{11,14}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian shoubi3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{964,338},{9,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,13}}</string>
+                <key>sourceSize</key>
+                <string>{9,13}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian shoubi4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{964,382},{7,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{7,12}}</string>
+                <key>sourceSize</key>
+                <string>{7,12}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian shoujia4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{698,434},{16,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,15}}</string>
+                <key>sourceSize</key>
+                <string>{16,15}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian shoujia5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{146,497},{13,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,12}}</string>
+                <key>sourceSize</key>
+                <string>{13,12}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian tui1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{155,453},{19,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,14}}</string>
+                <key>sourceSize</key>
+                <string>{19,14}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian tui2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{132,470},{12,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,17}}</string>
+                <key>sourceSize</key>
+                <string>{12,17}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian tui3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{964,367},{8,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{8,13}}</string>
+                <key>sourceSize</key>
+                <string>{8,13}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian tui4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{424,499},{14,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,9}}</string>
+                <key>sourceSize</key>
+                <string>{14,9}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian tui5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{132,489},{12,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,11}}</string>
+                <key>sourceSize</key>
+                <string>{12,11}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian tuijia2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{698,451},{14,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,17}}</string>
+                <key>sourceSize</key>
+                <string>{14,17}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian weijing2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{132,433},{32,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,18}}</string>
+                <key>sourceSize</key>
+                <string>{32,18}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian weijing3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{408,417},{36,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{36,18}}</string>
+                <key>sourceSize</key>
+                <string>{36,18}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian xie3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{698,470},{15,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,13}}</string>
+                <key>sourceSize</key>
+                <string>{15,13}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian xie3 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{964,271},{11,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,19}}</string>
+                <key>sourceSize</key>
+                <string>{11,19}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian xie5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{698,413},{15,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,19}}</string>
+                <key>sourceSize</key>
+                <string>{15,19}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian xie6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{698,346},{22,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,19}}</string>
+                <key>sourceSize</key>
+                <string>{22,19}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjian xie7.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{155,469},{18,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,14}}</string>
+                <key>sourceSize</key>
+                <string>{18,14}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjiang tou5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{408,382},{32,33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,33}}</string>
+                <key>sourceSize</key>
+                <string>{32,33}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjianshenti2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{698,367},{21,20}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,20}}</string>
+                <key>sourceSize</key>
+                <string>{21,20}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjianshoubi2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{964,353},{9,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,12}}</string>
+                <key>sourceSize</key>
+                <string>{9,12}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjiantui1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{408,496},{14,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,11}}</string>
+                <key>sourceSize</key>
+                <string>{14,11}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjiantui3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{428,469},{13,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,16}}</string>
+                <key>sourceSize</key>
+                <string>{13,16}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjiantui4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{408,469},{18,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,13}}</string>
+                <key>sourceSize</key>
+                <string>{18,13}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjiantui4 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{408,453},{18,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,14}}</string>
+                <key>sourceSize</key>
+                <string>{18,14}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjiantuijia1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{964,308},{10,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{10,14}}</string>
+                <key>sourceSize</key>
+                <string>{10,14}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:nvjianweijing1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{408,437},{26,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,14}}</string>
+                <key>sourceSize</key>
+                <string>{26,14}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:o1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,433},{130,150}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{130,150}}</string>
+                <key>sourceSize</key>
+                <string>{130,150}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:o2-.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{176,431}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{176,431}}</string>
+                <key>sourceSize</key>
+                <string>{176,431}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:o3-.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{725,0},{168,392}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{168,392}}</string>
+                <key>sourceSize</key>
+                <string>{168,392}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:vvzvzvz1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{895,132},{82,137}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{82,137}}</string>
+                <key>sourceSize</key>
+                <string>{82,137}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:wuqi_1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{979,132},{42,116}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{42,116}}</string>
+                <key>sourceSize</key>
+                <string>{42,116}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:wuqi_20.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{964,409},{58,130}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{58,130}}</string>
+                <key>sourceSize</key>
+                <string>{58,130}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:wuqi_40.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{959,541},{58,120}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{58,120}}</string>
+                <key>sourceSize</key>
+                <string>{58,120}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:wuqi_60.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{884,542},{53,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{53,125}}</string>
+                <key>sourceSize</key>
+                <string>{53,125}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:wuqi_80.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{895,271},{67,137}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{67,137}}</string>
+                <key>sourceSize</key>
+                <string>{67,137}</string>
+            </dict>
+            <key>skill_earthquake_swordswoman:z nvjian pifeng1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,662},{78,47}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{78,47}}</string>
+                <key>sourceSize</key>
+                <string>{78,47}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>skill_earthquake_swordswoman.pvr.ccz</string>
+            <key>size</key>
+            <string>{1022,933}</string>
+            <key>textureFileName</key>
+            <string>skill_earthquake_swordswoman.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

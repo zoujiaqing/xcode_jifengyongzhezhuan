@@ -1,0 +1,564 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>monster_anheiyezhu_10062:bz xiatui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{210,161},{11,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,8}}</string>
+                <key>sourceSize</key>
+                <string>{11,8}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:fs h1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{223,0},{98,130}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{98,130}}</string>
+                <key>sourceSize</key>
+                <string>{98,130}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:fs h2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{117,0},{104,145}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{104,145}}</string>
+                <key>sourceSize</key>
+                <string>{104,145}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:fs h3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{115,183}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{115,183}}</string>
+                <key>sourceSize</key>
+                <string>{115,183}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:fs h4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{323,0},{101,120}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{101,120}}</string>
+                <key>sourceSize</key>
+                <string>{101,120}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:knm.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{426,57},{57,55}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{57,55}}</string>
+                <key>sourceSize</key>
+                <string>{57,55}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:nbnvn.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{323,122},{39,56}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{39,56}}</string>
+                <key>sourceSize</key>
+                <string>{39,56}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:vxv.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{491,21},{11,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,27}}</string>
+                <key>sourceSize</key>
+                <string>{11,27}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:weiba b.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{483,150},{26,26}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,26}}</string>
+                <key>sourceSize</key>
+                <string>{26,26}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:yezgy tui3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{301,132},{17,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,10}}</string>
+                <key>sourceSize</key>
+                <string>{17,10}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:yezhu houui1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{406,147},{17,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,8}}</string>
+                <key>sourceSize</key>
+                <string>{17,8}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:yezhu qiantui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{406,157},{15,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,10}}</string>
+                <key>sourceSize</key>
+                <string>{15,10}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:yezhu shangshou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{301,144},{11,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,16}}</string>
+                <key>sourceSize</key>
+                <string>{11,16}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:yezhu shou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{485,92},{22,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,12}}</string>
+                <key>sourceSize</key>
+                <string>{22,12}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:yezhu tui2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{406,122},{18,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,11}}</string>
+                <key>sourceSize</key>
+                <string>{18,11}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:yezhu xiaotui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{210,147},{10,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{10,12}}</string>
+                <key>sourceSize</key>
+                <string>{10,12}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:yezhudatui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{491,50},{19,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,10}}</string>
+                <key>sourceSize</key>
+                <string>{19,10}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:yezhuhoushou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{197,175},{21,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,9}}</string>
+                <key>sourceSize</key>
+                <string>{21,9}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:z b xiatui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{301,162},{12,7}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,7}}</string>
+                <key>sourceSize</key>
+                <string>{12,7}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zb qiantui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{466,160},{13,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,10}}</string>
+                <key>sourceSize</key>
+                <string>{13,10}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zb shangtui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{406,135},{17,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,10}}</string>
+                <key>sourceSize</key>
+                <string>{17,10}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zb xiatui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{485,106},{20,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,14}}</string>
+                <key>sourceSize</key>
+                <string>{20,14}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhu b shenti.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{426,0},{63,55}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{63,55}}</string>
+                <key>sourceSize</key>
+                <string>{63,55}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhu weiba z.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{491,0},{19,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,19}}</string>
+                <key>sourceSize</key>
+                <string>{19,19}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhuhoutui z.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{364,178},{39,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{39,17}}</string>
+                <key>sourceSize</key>
+                <string>{39,17}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhuhoutui z 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{485,62},{23,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{23,14}}</string>
+                <key>sourceSize</key>
+                <string>{23,14}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhujiao b.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{466,178},{36,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{36,17}}</string>
+                <key>sourceSize</key>
+                <string>{36,17}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhujiao b 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{165,147},{43,26}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{43,26}}</string>
+                <key>sourceSize</key>
+                <string>{43,26}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhujiao z.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{117,147},{46,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{46,24}}</string>
+                <key>sourceSize</key>
+                <string>{46,24}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhujiao z 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{423,160},{41,22}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{41,22}}</string>
+                <key>sourceSize</key>
+                <string>{41,22}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhushangtui 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{301,180},{34,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{34,17}}</string>
+                <key>sourceSize</key>
+                <string>{34,17}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhushangtui b.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{405,184},{29,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{29,18}}</string>
+                <key>sourceSize</key>
+                <string>{29,18}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhushangtui z.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{157,175},{38,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{38,19}}</string>
+                <key>sourceSize</key>
+                <string>{38,19}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhushangtui z 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{117,173},{38,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{38,24}}</string>
+                <key>sourceSize</key>
+                <string>{38,24}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhushenti z.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{426,114},{55,44}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{55,44}}</string>
+                <key>sourceSize</key>
+                <string>{55,44}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhutou b.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{262,132},{37,54}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{37,54}}</string>
+                <key>sourceSize</key>
+                <string>{37,54}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhutou b 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{223,132},{37,56}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{37,56}}</string>
+                <key>sourceSize</key>
+                <string>{37,56}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhutou z.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{364,122},{40,54}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{40,54}}</string>
+                <key>sourceSize</key>
+                <string>{40,54}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhuxiatui b 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{485,78},{24,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,12}}</string>
+                <key>sourceSize</key>
+                <string>{24,12}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhuxiatui b2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,185},{26,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,15}}</string>
+                <key>sourceSize</key>
+                <string>{26,15}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhuxiatui z.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{436,184},{27,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,15}}</string>
+                <key>sourceSize</key>
+                <string>{27,15}</string>
+            </dict>
+            <key>monster_anheiyezhu_10062:zhuxiatui z 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{483,122},{27,26}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,26}}</string>
+                <key>sourceSize</key>
+                <string>{27,26}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>monster_anheiyezhu_10062.pvr.ccz</string>
+            <key>size</key>
+            <string>{510,201}</string>
+            <key>textureFileName</key>
+            <string>monster_anheiyezhu_10062.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

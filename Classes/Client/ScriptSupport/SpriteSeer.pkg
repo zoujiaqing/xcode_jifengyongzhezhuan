@@ -1,0 +1,14 @@
+class SpriteSeer : CCNode
+{
+	void MoveToSpriteTranspoint(bool bNormalTranspoint);
+	void SetAnim(int animId, int nloop, bool isLoop);
+	void SetEquipItemsData(unsigned int id);
+	CCNode* getRoot(void);
+	bool IsHadFairy(void);
+	bool IsHasFightElf(unsigned int pos);
+};
+
+class RoleBase : public SpriteSeer
+{
+
+};

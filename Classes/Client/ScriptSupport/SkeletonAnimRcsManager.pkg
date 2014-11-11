@@ -1,0 +1,5 @@
+class SkeletonAnimRcsManager
+{
+	static SkeletonAnimRcsManager* getInstance(void);
+	void LoadOneRoleRcsOnly(int roleId);
+};

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaidBasicInformation>
+     <Raid RaidID="200798" RaidName="森林对战1" Submap="1" Icon="icon_instance_forest1" MapID="100101" HeroBornCoordinate="22/80;22/80;22/80;22/80" Type="3" RequiredLevel="0" RaidDrops1="0" RaidDrops2="425000//3;425000//6" money="50" exp="50" Exploit="50" TransDestination="0" TransCoordinate="0" />
+</RaidID>

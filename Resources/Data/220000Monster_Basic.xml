@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Map_Basic>
+     <Map RaidID="220000" RaidName="INSTANCE_PVP_NAME_1" Icon="icon_instance_mountain1" MapID="100199" HeroBornCoordinate="17/56;96/56;17/48;96/48" Type="3" Chapter="0" MosterBirth="0" BGMID="301001" TransDestination="0" TransCoordinate="0" count_down="120" Fighting_Condition="0" Number="0" RequiredLevel="0" RaidDrops1="0" RaidDrops2="0" RaidDrops3="0" RaidDrops4="0" RaidDrops5="0" Spirit1="0" Spirit2="0" Spirit3="0" money="0" exp="0" Exploit="0" Phase_Exp="0" Star_Time="180" Fighting="0" />
+</RaidID>

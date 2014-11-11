@@ -1,0 +1,88 @@
+import "head.proto";
+import "cs_core.proto";
+
+message InterAttributesInfo
+{
+    message KeyValueDead {
+        required uint32 key             = 1; // 玩家属性key
+        required uint32 value           = 2; // 玩家属性value
+   		required uint32 dead_tm			= 3;
+	}
+    repeated KeyValueDead values        = 1;
+}
+
+message InterUserSkillInfo {
+	message UserSkill {
+		required uint32 id			= 1;
+		required uint32 level		= 2;
+	}
+	repeated UserSkill skills			= 1;
+}
+
+message InterItemInfo {
+	message EquipHole {
+		required uint32 hole_index      = 1;    // 孔编号
+		required uint32 item_gem_id     = 2;    // 宝石id
+		required uint32 attr_key        = 3;    // 影响属性的key
+		required uint32 attr_value      = 4;    // 影响属性的value
+	}
+	message UserItem {
+		required uint32 pos             = 1;
+		required uint32 item_id         = 2;
+		required uint32 item_level      = 3;
+		required uint32 item_num        = 4;
+		repeated EquipHole equip_holes 	= 5; 	// 装备中宝石信息	
+	}
+	repeated UserItem items				= 1;
+}
+message inter_fairy_basic_info_t {
+	required uint32 fairy_lv				= 1;	// 精灵等级
+	required uint32 fairy_grade             = 2;    // 精灵阶级
+	required uint32 fairy_status			= 3;	// 精灵状态
+	required uint32 fairy_exp				= 4;	// 精灵经验
+	required uint32 fairy_born_time			= 5;	// 精灵获取时间
+	required uint32 fairy_get_way			= 6;	// 精灵获取方式
+}
+// 精灵特训信息
+message inter_fairy_train_info_t {
+	required int32 train_phy_atk			= 1;	// 精灵特训物攻增量
+	required int32 train_mag_atk            = 2;	// 精灵特训魔攻增量
+	required int32 train_ski_atk            = 3;	// 精灵特训技攻增量
+	required int32 train_phy_def            = 4;	// 精灵特训物防增量
+	required int32 train_mag_def            = 5;	// 精灵特训魔防增量
+	required int32 train_ski_def            = 6;	// 精灵特训技防增量
+	required int32 train_hp			        = 7;	// 精灵特训生命值增量
+}
+
+// 精灵信息
+message InterFairyInfo {
+	required uint32 fairy_pos					= 1;	// 精灵位置
+	required uint32 fairy_id					= 2;	// 精灵id
+	required inter_fairy_basic_info_t basic_info	= 3;	// 精灵基本信息
+	required inter_fairy_train_info_t train_info	= 4;	// 精灵特训信息
+	required uint32 train_cost					= 5;	// 特训量
+}
+
+message InterSync {
+	required uint32 uid         = 1; // 登录米米号
+    required uint32 reg_time    = 2; // 角色注册时间
+    required uint32 channel_id  = 3; // 渠道id
+    required	BasicUserInfo userinfo			= 4;
+	required	InterUserSkillInfo skillinfo			= 5;
+	required	InterAttributesInfo attributeinfo	= 6;
+	required 	InterItemInfo iteminfo				= 7;
+	repeated	InterFairyInfo fairyinfo			= 8;
+	optional	bytes	data	= 9; //携带的额外信息
+    required uint32 zone_id     = 10; 
+};
+
+message InterOut {
+
+}
+
+message InterDbSync {
+	required bytes	msg_name	= 1; // 携带的Db
+	required bytes	data	    = 2; // 携带的Db
+};
+
+

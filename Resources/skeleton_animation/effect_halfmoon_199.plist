@@ -1,0 +1,57 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_halfmoon_199:bvnvbn.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,256},{273,233}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{273,233}}</string>
+                <key>sourceSize</key>
+                <string>{273,233}</string>
+            </dict>
+            <key>effect_halfmoon_199:cxzczx.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,492},{264,238}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{264,238}}</string>
+                <key>sourceSize</key>
+                <string>{264,238}</string>
+            </dict>
+            <key>effect_halfmoon_199:vxcv.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{286,253}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{286,253}}</string>
+                <key>sourceSize</key>
+                <string>{286,253}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>effect_halfmoon_199.pvr.ccz</string>
+            <key>size</key>
+            <string>{259,679}</string>
+            <key>textureFileName</key>
+            <string>effect_halfmoon_199.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

@@ -1,0 +1,1136 @@
+// saved by AuroraGT v0.1.0.2 (SpriteEditor v0.1.0.5)
+////////////////////////////////////////////////////////////////////////////////
+/*SPRITE*/ {
+
+    VERSION 0001
+
+    // Images:  3
+    // Modules: 204
+    // Frames:  54
+    // Anims:   0
+
+////////////////////////////////////////////////////////////////////////////////
+// Images...
+// <Image> := IMAGE [id] "file" [ALPHA "alpha_file"] [TRANSP transp_color]
+
+    IMAGE 0x0000 ".\ui.png" TRANSP 0x00FF00FF // 0  size: 1024 x 1024  palettes: 1
+    IMAGE 0x0002 ".\ui_7day.png" TRANSP 0x00FF00FF // 1  size: 512 x 512  palettes: 1
+    IMAGE 0x0001 ".\ui_7day_background.png" TRANSP 0x00FF00FF // 2  size: 1095 x 509  palettes: 1
+
+////////////////////////////////////////////////////////////////////////////////
+// Modules...
+// <Modules> := MODULES { <MD1> <MD2> ... }
+// <MDi>     := MD id Type [params] ["desc"]
+// Type      := MD_IMAGE | MD_RECT | ...
+// [params]  := if (Type == MD_IMAGE)     -> image x y width height
+//              if (Type == MD_RECT)      -> color width height
+//              if (Type == MD_FILL_RECT) -> color width height
+//              if (Type == MD_ARC)       -> color width height startAngle arcAngle
+//              if (Type == MD_FILL_ARC)  -> color width height startAngle arcAngle
+//              if (Type == MD_MARKER)    -> color width height
+//              if (Type == MD_TRIANGLE)  -> color p2X p2Y p3X p3Y
+//              if (Type == MD_FILL_TRIANGLE)  -> color p2X p2Y p3X p3Y
+
+    MODULES
+    {
+        MD	0x1000	MD_IMAGE	0	10	13	139	138
+        MD	0x1001	MD_IMAGE	0	154	5	119	119
+        MD	0x1004	MD_IMAGE	0	5	165	172	171
+        MD	0x1005	MD_IMAGE	0	187	187	148	148
+        MD	0x1007	MD_IMAGE	0	20	359	91	93
+        MD	0x1008	MD_IMAGE	0	128	368	77	78
+        MD	0x1014	MD_IMAGE	0	219	372	69	69
+        MD	0x1015	MD_IMAGE	0	14	545	52	42
+        MD	0x1016	MD_IMAGE	0	15	590	51	42
+        MD	0x1017	MD_IMAGE	0	75	544	50	43
+        MD	0x103C	MD_IMAGE	0	125	544	14	43
+        MD	0x10A9	MD_IMAGE	0	75	587	50	43
+        MD	0x10AA	MD_IMAGE	0	125	587	14	43
+        MD	0x109A	MD_IMAGE	0	197	537	14	14
+        MD	0x10A4	MD_IMAGE	0	217	537	17	17
+        MD	0x10A5	MD_IMAGE	0	236	537	17	17
+        MD	0x10A6	MD_IMAGE	0	255	537	17	17
+        MD	0x109B	MD_IMAGE	0	154	537	43	14
+        MD	0x1019	MD_IMAGE	0	8	457	32	39
+        MD	0x10B4	MD_IMAGE	0	40	457	9	39
+        MD	0x10B5	MD_IMAGE	0	49	457	148	39
+        MD	0x1028	MD_IMAGE	0	8	498	137	39
+        MD	0x1029	MD_IMAGE	0	151	507	121	23
+        MD	0x102A	MD_IMAGE	0	284	507	20	24
+        MD	0x102B	MD_IMAGE	0	314	505	24	28
+        MD	0x102C	MD_IMAGE	0	346	507	22	23
+        MD	0x10B6	MD_IMAGE	0	329	571	22	26
+        MD	0x10B7	MD_IMAGE	0	358	569	24	29
+        MD	0x106A	MD_IMAGE	0	373	509	16	19
+        MD	0x101A	MD_IMAGE	0	199	457	45	39
+        MD	0x101B	MD_IMAGE	0	249	457	44	39
+        MD	0x1039	MD_IMAGE	0	306	24	109	110
+        MD	0x1002	MD_IMAGE	0	446	13	91	92
+        MD	0x1003	MD_IMAGE	0	543	14	90	91
+        MD	0x1006	MD_IMAGE	0	638	0	228	111
+        MD	0x1009	MD_IMAGE	0	450	112	212	11
+        MD	0x103D	MD_IMAGE	0	662	112	26	11
+        MD	0x100A	MD_IMAGE	0	450	130	35	46
+        MD	0x1040	MD_IMAGE	0	450	176	35	29
+        MD	0x103E	MD_IMAGE	0	485	130	15	46
+        MD	0x1041	MD_IMAGE	0	485	176	15	29
+        MD	0x103F	MD_IMAGE	0	500	130	35	46
+        MD	0x1042	MD_IMAGE	0	500	176	35	29
+        MD	0x100B	MD_IMAGE	0	542	130	35	46
+        MD	0x1043	MD_IMAGE	0	542	176	35	29
+        MD	0x1044	MD_IMAGE	0	577	130	15	46
+        MD	0x1045	MD_IMAGE	0	577	176	15	29
+        MD	0x1046	MD_IMAGE	0	592	130	35	46
+        MD	0x1047	MD_IMAGE	0	592	176	35	29
+        MD	0x100C	MD_IMAGE	0	643	143	42	55
+        MD	0x100D	MD_IMAGE	0	699	145	48	52
+        MD	0x100E	MD_IMAGE	0	762	125	87	86
+        MD	0x100F	MD_IMAGE	0	848	125	87	86
+        MD	0x1010	MD_IMAGE	0	449	206	66	70
+        MD	0x1057	MD_IMAGE	0	518	206	20	70
+        MD	0x10B1	MD_IMAGE	0	587	912	66	70
+        MD	0x10B2	MD_IMAGE	0	656	912	20	70
+        MD	0x1011	MD_IMAGE	0	544	206	66	70
+        MD	0x1058	MD_IMAGE	0	613	206	20	70
+        MD	0x1012	MD_IMAGE	0	687	221	229	183
+        MD	0x1013	MD_IMAGE	0	921	221	25	183
+        MD	0x1018	MD_IMAGE	0	696	409	220	25
+        MD	0x101C	MD_IMAGE	0	921	409	25	25
+        MD	0x101D	MD_IMAGE	0	151	560	64	61
+        MD	0x101E	MD_IMAGE	0	215	568	48	47
+        MD	0x101F	MD_IMAGE	0	269	566	54	52
+        MD	0x1020	MD_IMAGE	0	217	558	9	9
+        MD	0x1021	MD_IMAGE	0	229	558	9	9
+        MD	0x1022	MD_IMAGE	0	393	421	94	213
+        MD	0x1023	MD_IMAGE	0	492	520	263	107
+        MD	0x1024	MD_IMAGE	0	0	341	383	15
+        MD	0x1025	MD_IMAGE	0	287	359	93	8
+        MD	0x1026	MD_IMAGE	0	566	283	52	46
+        MD	0x1027	MD_IMAGE	0	634	277	50	57
+        MD	0x102D	MD_IMAGE	0	569	333	51	56
+        MD	0x102E	MD_IMAGE	0	624	334	63	49
+        MD	0x102F	MD_IMAGE	0	571	391	50	46
+        MD	0x1030	MD_IMAGE	0	626	385	51	53
+        MD	0x1031	MD_IMAGE	0	286	534	16	30
+        MD	0x1032	MD_IMAGE	0	308	534	25	31
+        MD	0x1033	MD_IMAGE	0	335	535	18	31
+        MD	0x1034	MD_IMAGE	0	358	539	19	27
+        MD	0x1035	MD_IMAGE	0	360	164	80	69
+        MD	0x1036	MD_IMAGE	0	356	247	80	69
+        MD	0x1037	MD_IMAGE	0	440	279	109	39
+        MD	0x1038	MD_IMAGE	0	432	320	28	96
+        MD	0x103A	MD_IMAGE	0	466	320	50	96
+        MD	0x103B	MD_IMAGE	0	522	320	31	96
+        MD	0x1048	MD_IMAGE	0	608	444	51	44
+        MD	0x1049	MD_IMAGE	0	673	444	51	44
+        MD	0x104A	MD_IMAGE	0	739	443	20	46
+        MD	0x1051	MD_IMAGE	0	759	443	20	46
+        MD	0x104B	MD_IMAGE	0	791	443	20	46
+        MD	0x1052	MD_IMAGE	0	811	443	20	46
+        MD	0x104C	MD_IMAGE	0	838	439	32	119
+        MD	0x104D	MD_IMAGE	0	873	439	40	119
+        MD	0x104E	MD_IMAGE	0	916	439	32	119
+        MD	0x104F	MD_IMAGE	0	353	373	16	89
+        MD	0x1050	MD_IMAGE	0	370	373	20	89
+        MD	0x1078	MD_IMAGE	0	308	373	16	89
+        MD	0x1079	MD_IMAGE	0	325	373	20	89
+        MD	0x1098	MD_IMAGE	0	394	320	16	89
+        MD	0x1099	MD_IMAGE	0	411	320	20	89
+        MD	0x1053	MD_IMAGE	0	299	470	29	22
+        MD	0x106E	MD_IMAGE	0	330	466	20	31
+        MD	0x106F	MD_IMAGE	0	356	464	19	33
+        MD	0x1054	MD_IMAGE	0	3	642	161	310
+        MD	0x1055	MD_IMAGE	0	170	636	103	103
+        MD	0x1060	MD_IMAGE	0	279	635	108	107
+        MD	0x1061	MD_IMAGE	0	393	636	106	107
+        MD	0x1062	MD_IMAGE	0	503	635	45	45
+        MD	0x1063	MD_IMAGE	0	550	635	76	45
+        MD	0x1064	MD_IMAGE	0	503	682	45	76
+        MD	0x1065	MD_IMAGE	0	550	682	76	76
+        MD	0x1066	MD_IMAGE	0	503	761	45	45
+        MD	0x1067	MD_IMAGE	0	550	761	76	45
+        MD	0x1059	MD_IMAGE	0	792	565	110	58
+        MD	0x105A	MD_IMAGE	0	906	565	38	58
+        MD	0x105B	MD_IMAGE	0	492	436	84	84
+        MD	0x105C	MD_IMAGE	0	834	628	70	70
+        MD	0x105E	MD_IMAGE	0	834	703	70	38
+        MD	0x105D	MD_IMAGE	0	907	628	38	70
+        MD	0x105F	MD_IMAGE	0	907	703	38	38
+        MD	0x1068	MD_IMAGE	0	948	14	50	163
+        MD	0x1069	MD_IMAGE	0	948	180	74	156
+        MD	0x1070	MD_IMAGE	0	171	761	25	149
+        MD	0x1071	MD_IMAGE	0	196	753	185	37
+        MD	0x10B8	MD_IMAGE	0	196	753	113	37
+        MD	0x10B9	MD_IMAGE	0	309	753	40	37
+        MD	0x1072	MD_IMAGE	0	386	753	25	43
+        MD	0x1073	MD_IMAGE	0	802	746	187	141
+        MD	0x1074	MD_IMAGE	0	994	746	25	141
+        MD	0x1075	MD_IMAGE	0	802	892	187	25
+        MD	0x1076	MD_IMAGE	0	994	892	25	25
+        MD	0x1077	MD_IMAGE	0	946	341	78	78
+        MD	0x107A	MD_IMAGE	0	205	802	187	141
+        MD	0x107B	MD_IMAGE	0	204	948	188	25
+        MD	0x107C	MD_IMAGE	0	397	948	25	25
+        MD	0x107D	MD_IMAGE	0	397	802	25	141
+        MD	0x107E	MD_IMAGE	0	414	751	42	42
+        MD	0x107F	MD_IMAGE	0	458	752	42	42
+        MD	0x1080	MD_IMAGE	0	628	635	29	41
+        MD	0x108E	MD_IMAGE	0	660	635	20	41
+        MD	0x108F	MD_IMAGE	0	683	635	46	41
+        MD	0x1081	MD_IMAGE	0	643	684	12	12
+        MD	0x1082	MD_IMAGE	0	657	684	12	12
+        MD	0x1083	MD_IMAGE	0	671	684	12	12
+        MD	0x1084	MD_IMAGE	0	686	684	12	12
+        MD	0x1085	MD_IMAGE	0	701	684	12	12
+        MD	0x1086	MD_IMAGE	0	717	684	10	10
+        MD	0x1087	MD_IMAGE	0	629	701	102	32
+        MD	0x1088	MD_IMAGE	0	697	738	102	178
+        MD	0x1089	MD_IMAGE	0	955	632	63	45
+        MD	0x108A	MD_IMAGE	0	955	679	63	30
+        MD	0x108B	MD_IMAGE	0	955	711	63	30
+        MD	0x108C	MD_IMAGE	0	952	425	38	69
+        MD	0x10A8	MD_IMAGE	0	990	425	29	69
+        MD	0x108D	MD_IMAGE	0	952	496	38	69
+        MD	0x10A7	MD_IMAGE	0	990	496	29	69
+        MD	0x1090	MD_IMAGE	0	799	500	29	29
+        MD	0x1091	MD_IMAGE	0	431	811	68	95
+        MD	0x1092	MD_IMAGE	0	500	811	17	95
+        MD	0x10AF	MD_IMAGE	0	738	634	68	95
+        MD	0x10B0	MD_IMAGE	0	807	634	17	95
+        MD	0x1093	MD_IMAGE	0	519	811	68	95
+        MD	0x1094	MD_IMAGE	0	588	811	17	95
+        MD	0x1095	MD_IMAGE	0	606	811	68	95
+        MD	0x1096	MD_IMAGE	0	675	811	17	95
+        MD	0x1097	MD_IMAGE	0	162	977	211	47
+        MD	0x109C	MD_IMAGE	0	0	962	49	58
+        MD	0x109D	MD_IMAGE	0	52	964	49	44
+        MD	0x109E	MD_IMAGE	0	103	963	49	44
+        MD	0x109F	MD_IMAGE	0	427	910	154	67
+        MD	0x10A1	MD_IMAGE	0	742	931	89	89
+        MD	0x10A2	MD_IMAGE	0	838	930	90	92
+        MD	0x10A3	MD_IMAGE	0	932	931	90	92
+        MD	0x10AB	MD_IMAGE	0	377	977	48	47
+        MD	0x10AC	MD_IMAGE	0	426	977	48	47
+        MD	0x10AD	MD_IMAGE	0	475	977	48	47
+        MD	0x10AE	MD_IMAGE	0	526	977	48	47
+        MD	0x10A0	MD_IMAGE	0	1023	0	1	1
+        MD	0x1056	MD_IMAGE	0	328	604	22	24
+        MD	0x10B3	MD_IMAGE	0	354	599	35	35
+        MD	0x10BA	MD_IMAGE	0	878	10	51	44
+        MD	0x10BB	MD_IMAGE	0	877	64	51	44
+        MD	0x10BC	MD_IMAGE	0	606	990	22	21
+        MD	0x10BD	MD_IMAGE	0	641	987	29	28
+        MD	0x10BE	MD_IMAGE	0	693	929	28	28
+        MD	0x10C2	MD_IMAGE	0	186	132	115	49
+        MD	0x106B	MD_IMAGE	1	13	0	108	64
+        MD	0x106C	MD_IMAGE	1	131	0	91	64
+        MD	0x106D	MD_IMAGE	1	235	1	23	67
+        MD	0x10BF	MD_IMAGE	1	0	70	121	42
+        MD	0x10C0	MD_IMAGE	1	131	70	91	42
+        MD	0x10C1	MD_IMAGE	1	28	123	93	32
+        MD	0x10C3	MD_IMAGE	1	131	123	91	32
+        MD	0x10C4	MD_IMAGE	1	275	0	60	231
+        MD	0x10C5	MD_IMAGE	1	345	0	70	231
+        MD	0x10C6	MD_IMAGE	1	437	0	75	198
+        MD	0x10CA	MD_IMAGE	1	0	162	99	246
+        MD	0x10C7	MD_IMAGE	1	171	243	341	129
+        MD	0x10C8	MD_IMAGE	1	284	395	228	116
+        MD	0x10CB	MD_IMAGE	1	99	162	74	75
+        MD	0x10C9	MD_IMAGE	2	0	0	1095	509
+    }
+
+////////////////////////////////////////////////////////////////////////////////
+// Frames...
+// <Frame> := FRAME ["desc"] { id <RC1> [<RC2> ...] <FM1> [<FM2> ...] }
+// <RCi>   := RC x1 y1 x2 y2
+// <FMi>   := FM module_or_frame_id ox oy [FLAGS hex_flags] [+Flags]
+// Flags   := HYPER_FM | FLIP_X | FLIP_Y | ROT_90 | FREE_ROT
+
+    FRAME "7day_background" // Index = 0, FModules = 252
+    {
+        0x22DF
+        RC	3	-637	907	-96
+        FM	0x1012	3	-637
+        FM	0x1013	357	-637
+        FM	0x1013	382	-637
+        FM	0x1013	407	-637
+        FM	0x1013	432	-637
+        FM	0x1013	457	-637
+        FM	0x1013	482	-637
+        FM	0x1013	507	-637
+        FM	0x1013	532	-637
+        FM	0x1013	582	-637
+        FM	0x1013	607	-637
+        FM	0x1013	632	-637
+        FM	0x1013	657	-637
+        FM	0x1013	682	-637
+        FM	0x1013	707	-637
+        FM	0x1013	732	-637
+        FM	0x1013	757	-637
+        FM	0x1013	357	-279	+FLIP_Y
+        FM	0x1013	382	-279	+FLIP_Y
+        FM	0x1013	407	-279	+FLIP_Y
+        FM	0x1013	432	-279	+FLIP_Y
+        FM	0x1013	457	-279	+FLIP_Y
+        FM	0x1013	482	-279	+FLIP_Y
+        FM	0x1013	507	-279	+FLIP_Y
+        FM	0x1013	532	-279	+FLIP_Y
+        FM	0x1013	582	-279	+FLIP_Y
+        FM	0x1013	607	-279	+FLIP_Y
+        FM	0x1013	632	-279	+FLIP_Y
+        FM	0x1013	657	-279	+FLIP_Y
+        FM	0x1013	682	-279	+FLIP_Y
+        FM	0x1013	707	-279	+FLIP_Y
+        FM	0x1013	732	-279	+FLIP_Y
+        FM	0x1013	757	-279	+FLIP_Y
+        FM	0x1018	12	-454
+        FM	0x1018	12	-429
+        FM	0x1018	12	-404
+        FM	0x1018	12	-379
+        FM	0x1018	12	-354
+        FM	0x1018	12	-329
+        FM	0x1012	3	-279	+FLIP_Y
+        FM	0x101C	357	-454
+        FM	0x101C	357	-429
+        FM	0x101C	357	-404
+        FM	0x101C	357	-379
+        FM	0x101C	357	-354
+        FM	0x101C	357	-329
+        FM	0x101C	382	-454
+        FM	0x101C	382	-429
+        FM	0x101C	382	-404
+        FM	0x101C	382	-379
+        FM	0x101C	382	-354
+        FM	0x101C	382	-329
+        FM	0x101C	407	-454
+        FM	0x101C	407	-429
+        FM	0x101C	407	-404
+        FM	0x101C	407	-379
+        FM	0x101C	407	-354
+        FM	0x101C	407	-329
+        FM	0x101C	432	-454
+        FM	0x101C	432	-429
+        FM	0x101C	432	-404
+        FM	0x101C	432	-379
+        FM	0x101C	432	-354
+        FM	0x101C	432	-329
+        FM	0x101C	457	-454
+        FM	0x101C	457	-429
+        FM	0x101C	457	-404
+        FM	0x101C	457	-379
+        FM	0x101C	457	-354
+        FM	0x101C	457	-329
+        FM	0x101C	482	-454
+        FM	0x101C	482	-429
+        FM	0x101C	482	-404
+        FM	0x101C	482	-379
+        FM	0x101C	482	-354
+        FM	0x101C	482	-329
+        FM	0x101C	507	-454
+        FM	0x101C	507	-429
+        FM	0x101C	507	-404
+        FM	0x101C	507	-379
+        FM	0x101C	507	-354
+        FM	0x101C	507	-329
+        FM	0x101C	532	-454
+        FM	0x101C	532	-429
+        FM	0x101C	532	-404
+        FM	0x101C	532	-379
+        FM	0x101C	532	-354
+        FM	0x101C	532	-329
+        FM	0x101C	582	-454
+        FM	0x101C	582	-429
+        FM	0x101C	582	-404
+        FM	0x101C	582	-379
+        FM	0x101C	582	-354
+        FM	0x101C	582	-329
+        FM	0x101C	607	-454
+        FM	0x101C	607	-429
+        FM	0x101C	607	-404
+        FM	0x101C	607	-379
+        FM	0x101C	607	-354
+        FM	0x101C	607	-329
+        FM	0x101C	632	-454
+        FM	0x101C	632	-429
+        FM	0x101C	632	-404
+        FM	0x101C	632	-379
+        FM	0x101C	632	-354
+        FM	0x101C	632	-329
+        FM	0x101C	657	-454
+        FM	0x101C	657	-429
+        FM	0x101C	657	-404
+        FM	0x101C	657	-379
+        FM	0x101C	657	-354
+        FM	0x101C	657	-329
+        FM	0x101C	682	-454
+        FM	0x101C	682	-429
+        FM	0x101C	682	-404
+        FM	0x101C	682	-379
+        FM	0x101C	682	-354
+        FM	0x101C	682	-329
+        FM	0x101C	707	-454
+        FM	0x101C	707	-429
+        FM	0x101C	707	-404
+        FM	0x101C	707	-379
+        FM	0x101C	707	-354
+        FM	0x101C	707	-329
+        FM	0x101C	732	-454
+        FM	0x101C	732	-429
+        FM	0x101C	732	-404
+        FM	0x101C	732	-379
+        FM	0x101C	732	-354
+        FM	0x101C	732	-329
+        FM	0x101C	757	-454
+        FM	0x101C	757	-429
+        FM	0x101C	757	-404
+        FM	0x101C	757	-379
+        FM	0x101C	757	-354
+        FM	0x101C	757	-329
+        FM	0x1018	12	-304
+        FM	0x101C	357	-304
+        FM	0x101C	382	-304
+        FM	0x1013	307	-637
+        FM	0x1013	332	-637
+        FM	0x1013	307	-279	+FLIP_Y
+        FM	0x1013	332	-279	+FLIP_Y
+        FM	0x101C	307	-454
+        FM	0x101C	307	-429
+        FM	0x101C	307	-404
+        FM	0x101C	307	-379
+        FM	0x101C	307	-354
+        FM	0x101C	307	-329
+        FM	0x101C	332	-454
+        FM	0x101C	332	-429
+        FM	0x101C	332	-404
+        FM	0x101C	332	-379
+        FM	0x101C	332	-354
+        FM	0x101C	332	-329
+        FM	0x101C	307	-304
+        FM	0x101C	332	-304
+        FM	0x1013	257	-637
+        FM	0x1013	282	-637
+        FM	0x1013	257	-279	+FLIP_Y
+        FM	0x1013	282	-279	+FLIP_Y
+        FM	0x101C	257	-454
+        FM	0x101C	257	-429
+        FM	0x101C	257	-404
+        FM	0x101C	257	-379
+        FM	0x101C	257	-354
+        FM	0x101C	257	-329
+        FM	0x101C	282	-454
+        FM	0x101C	282	-429
+        FM	0x101C	282	-404
+        FM	0x101C	282	-379
+        FM	0x101C	282	-354
+        FM	0x101C	282	-329
+        FM	0x101C	257	-304
+        FM	0x1013	232	-637
+        FM	0x1013	232	-279	+FLIP_Y
+        FM	0x101C	232	-454
+        FM	0x101C	232	-429
+        FM	0x101C	232	-404
+        FM	0x101C	232	-379
+        FM	0x101C	232	-354
+        FM	0x101C	232	-329
+        FM	0x101C	232	-304
+        FM	0x101C	282	-304
+        FM	0x101C	407	-304
+        FM	0x101C	432	-304
+        FM	0x101C	457	-304
+        FM	0x101C	482	-304
+        FM	0x101C	507	-304
+        FM	0x101C	532	-304
+        FM	0x1013	557	-637
+        FM	0x1013	557	-279	+FLIP_Y
+        FM	0x101C	557	-454
+        FM	0x101C	557	-429
+        FM	0x101C	557	-404
+        FM	0x101C	557	-379
+        FM	0x101C	557	-354
+        FM	0x101C	557	-329
+        FM	0x101C	557	-304
+        FM	0x101C	582	-304
+        FM	0x101C	607	-304
+        FM	0x101C	632	-304
+        FM	0x101C	657	-304
+        FM	0x101C	682	-304
+        FM	0x101C	707	-304
+        FM	0x101C	732	-304
+        FM	0x101C	757	-304
+        FM	0x1013	782	-637
+        FM	0x1013	807	-637
+        FM	0x1013	782	-279	+FLIP_Y
+        FM	0x1013	807	-279	+FLIP_Y
+        FM	0x101C	782	-454
+        FM	0x101C	782	-429
+        FM	0x101C	782	-404
+        FM	0x101C	782	-379
+        FM	0x101C	782	-354
+        FM	0x101C	782	-329
+        FM	0x101C	807	-454
+        FM	0x101C	807	-429
+        FM	0x101C	807	-404
+        FM	0x101C	807	-379
+        FM	0x101C	807	-354
+        FM	0x101C	807	-329
+        FM	0x101C	782	-304
+        FM	0x101C	807	-304
+        FM	0x1013	832	-637
+        FM	0x1013	857	-637
+        FM	0x1013	832	-279	+FLIP_Y
+        FM	0x1013	857	-279	+FLIP_Y
+        FM	0x101C	832	-454
+        FM	0x101C	832	-429
+        FM	0x101C	832	-404
+        FM	0x101C	832	-379
+        FM	0x101C	832	-354
+        FM	0x101C	832	-329
+        FM	0x101C	857	-454
+        FM	0x101C	857	-429
+        FM	0x101C	857	-404
+        FM	0x101C	857	-379
+        FM	0x101C	857	-354
+        FM	0x101C	857	-329
+        FM	0x101C	832	-304
+        FM	0x101C	857	-304
+        FM	0x1013	882	-637
+        FM	0x1013	882	-279	+FLIP_Y
+        FM	0x101C	882	-454
+        FM	0x101C	882	-429
+        FM	0x101C	882	-404
+        FM	0x101C	882	-379
+        FM	0x101C	882	-354
+        FM	0x101C	882	-329
+        FM	0x101C	882	-304
+    }
+
+    FRAME "7day_background2" // Index = 1, FModules = 9
+    {
+        0x2003
+        RC	907	-637	1136	-96
+        FM	0x1012	907	-637	+FLIP_X
+        FM	0x1018	907	-454	+FLIP_X
+        FM	0x1018	907	-429	+FLIP_X
+        FM	0x1018	907	-404	+FLIP_X
+        FM	0x1018	907	-379	+FLIP_X
+        FM	0x1018	907	-354	+FLIP_X
+        FM	0x1018	907	-329	+FLIP_X
+        FM	0x1012	907	-279	+FLIP_X	+FLIP_Y
+        FM	0x1018	907	-304	+FLIP_X
+    }
+
+    FRAME "7day_backpic" // Index = 2, FModules = 1
+    {
+        0x2002
+        RC	22	-620	1117	-111
+        FM	0x10C9	22	-620
+    }
+
+    FRAME "7day_background_decoration" // Index = 3, FModules = 120
+    {
+        0x20BB
+        RC	205	-640	1089	-111
+        FM	0x1023	305	-640
+        FM	0x1023	568	-640	+FLIP_X
+        FM	0x10C7	404	-590
+        FM	0x10C8	745	-583
+        FM	0x1017	205	-197
+        FM	0x1017	205	-154	+FLIP_Y
+        FM	0x1017	1039	-197	+FLIP_X
+        FM	0x1017	1039	-154	+FLIP_X	+FLIP_Y
+        FM	0x103C	269	-197
+        FM	0x103C	269	-154	+FLIP_Y
+        FM	0x103C	255	-197
+        FM	0x103C	255	-154	+FLIP_Y
+        FM	0x103C	283	-197
+        FM	0x103C	283	-154	+FLIP_Y
+        FM	0x103C	297	-197
+        FM	0x103C	297	-154	+FLIP_Y
+        FM	0x103C	311	-197
+        FM	0x103C	311	-154	+FLIP_Y
+        FM	0x103C	325	-197
+        FM	0x103C	325	-154	+FLIP_Y
+        FM	0x103C	339	-197
+        FM	0x103C	339	-154	+FLIP_Y
+        FM	0x103C	353	-197
+        FM	0x103C	353	-154	+FLIP_Y
+        FM	0x103C	367	-197
+        FM	0x103C	367	-154	+FLIP_Y
+        FM	0x103C	381	-197
+        FM	0x103C	381	-154	+FLIP_Y
+        FM	0x103C	395	-197
+        FM	0x103C	395	-154	+FLIP_Y
+        FM	0x103C	409	-197
+        FM	0x103C	409	-154	+FLIP_Y
+        FM	0x103C	423	-197
+        FM	0x103C	423	-154	+FLIP_Y
+        FM	0x103C	437	-197
+        FM	0x103C	437	-154	+FLIP_Y
+        FM	0x103C	451	-197
+        FM	0x103C	451	-154	+FLIP_Y
+        FM	0x103C	465	-197
+        FM	0x103C	465	-154	+FLIP_Y
+        FM	0x103C	479	-197
+        FM	0x103C	479	-154	+FLIP_Y
+        FM	0x103C	493	-197
+        FM	0x103C	493	-154	+FLIP_Y
+        FM	0x103C	507	-197
+        FM	0x103C	507	-154	+FLIP_Y
+        FM	0x103C	521	-197
+        FM	0x103C	521	-154	+FLIP_Y
+        FM	0x103C	535	-197
+        FM	0x103C	535	-154	+FLIP_Y
+        FM	0x103C	549	-197
+        FM	0x103C	549	-154	+FLIP_Y
+        FM	0x103C	563	-197
+        FM	0x103C	563	-154	+FLIP_Y
+        FM	0x103C	577	-197
+        FM	0x103C	577	-154	+FLIP_Y
+        FM	0x103C	591	-197
+        FM	0x103C	591	-154	+FLIP_Y
+        FM	0x103C	605	-197
+        FM	0x103C	605	-154	+FLIP_Y
+        FM	0x103C	619	-197
+        FM	0x103C	619	-154	+FLIP_Y
+        FM	0x103C	633	-197
+        FM	0x103C	633	-154	+FLIP_Y
+        FM	0x103C	647	-197
+        FM	0x103C	647	-154	+FLIP_Y
+        FM	0x103C	661	-197
+        FM	0x103C	661	-154	+FLIP_Y
+        FM	0x103C	675	-197
+        FM	0x103C	675	-154	+FLIP_Y
+        FM	0x103C	689	-197
+        FM	0x103C	689	-154	+FLIP_Y
+        FM	0x103C	703	-197
+        FM	0x103C	703	-154	+FLIP_Y
+        FM	0x103C	717	-197
+        FM	0x103C	717	-154	+FLIP_Y
+        FM	0x103C	731	-197
+        FM	0x103C	731	-154	+FLIP_Y
+        FM	0x103C	745	-197
+        FM	0x103C	745	-154	+FLIP_Y
+        FM	0x103C	759	-197
+        FM	0x103C	759	-154	+FLIP_Y
+        FM	0x103C	773	-197
+        FM	0x103C	773	-154	+FLIP_Y
+        FM	0x103C	787	-197
+        FM	0x103C	787	-154	+FLIP_Y
+        FM	0x103C	801	-197
+        FM	0x103C	801	-154	+FLIP_Y
+        FM	0x103C	815	-197
+        FM	0x103C	815	-154	+FLIP_Y
+        FM	0x103C	829	-197
+        FM	0x103C	829	-154	+FLIP_Y
+        FM	0x103C	843	-197
+        FM	0x103C	843	-154	+FLIP_Y
+        FM	0x103C	857	-197
+        FM	0x103C	857	-154	+FLIP_Y
+        FM	0x103C	871	-197
+        FM	0x103C	871	-154	+FLIP_Y
+        FM	0x103C	885	-197
+        FM	0x103C	885	-154	+FLIP_Y
+        FM	0x103C	899	-197
+        FM	0x103C	899	-154	+FLIP_Y
+        FM	0x103C	913	-197
+        FM	0x103C	913	-154	+FLIP_Y
+        FM	0x103C	927	-197
+        FM	0x103C	927	-154	+FLIP_Y
+        FM	0x103C	941	-197
+        FM	0x103C	941	-154	+FLIP_Y
+        FM	0x103C	955	-197
+        FM	0x103C	955	-154	+FLIP_Y
+        FM	0x103C	969	-197
+        FM	0x103C	969	-154	+FLIP_Y
+        FM	0x103C	983	-197
+        FM	0x103C	983	-154	+FLIP_Y
+        FM	0x103C	997	-197
+        FM	0x103C	997	-154	+FLIP_Y
+        FM	0x103C	1011	-197
+        FM	0x103C	1011	-154	+FLIP_Y
+        FM	0x103C	1025	-197
+        FM	0x103C	1025	-154	+FLIP_Y
+    }
+
+    FRAME "7day_text_title" // Index = 4, FModules = 0
+    {
+        0x2000
+        RC	488	-599	648	-544
+    }
+
+    FRAME "7day_text_logindays" // Index = 5, FModules = 0
+    {
+        0x2008
+        RC	829	-607	1046	-571
+    }
+
+    FRAME "7day_frame_rewardback" // Index = 6, FModules = 10
+    {
+        0x2001
+        RC	376	-494	1056	-263
+        FM	0x10C4	376	-494
+        FM	0x10C4	996	-494	+FLIP_X
+        FM	0x10C5	436	-494
+        FM	0x10C5	506	-494
+        FM	0x10C5	576	-494
+        FM	0x10C5	646	-494
+        FM	0x10C5	716	-494
+        FM	0x10C5	786	-494
+        FM	0x10C5	856	-494
+        FM	0x10C5	926	-494
+    }
+
+    FRAME "7day_frame_rewardarea" // Index = 7, FModules = 0
+    {
+        0x2004
+        RC	389	-488	1042	-268
+    }
+
+    FRAME "7day_day1_rewardarea" // Index = 8, FModules = 0
+    {
+        0x2027
+        RC	392	-479	542	-281
+    }
+
+    FRAME "7day_day1_rewardback" // Index = 9, FModules = 2
+    {
+        0x2005
+        RC	392	-479	542	-281
+        FM	0x10C6	392	-479
+        FM	0x10C6	467	-479	+FLIP_X
+    }
+
+    FRAME "7day_day1_rewardback_select" // Index = 10, FModules = 2
+    {
+        0x2028
+        RC	368	-502	566	-256
+        FM	0x10CA	368	-502
+        FM	0x10CA	467	-502	+FLIP_X
+    }
+
+    FRAME "7day_day1_gotmark" // Index = 11, FModules = 1
+    {
+        0x2030
+        RC	466	-356	540	-281
+        FM	0x10CB	466	-356
+    }
+
+    FRAME "7day_day1_rewardpic" // Index = 12, FModules = 0
+    {
+        0x2006
+        RC	399	-450	534	-287
+    }
+
+    FRAME "7day_day1_text" // Index = 13, FModules = 0
+    {
+        0x2007
+        RC	399	-472	534	-451
+    }
+
+    FRAME "7day_bar_back" // Index = 14, FModules = 7
+    {
+        0x2009
+        RC	394	-245	1037	-213
+        FM	0x10C1	394	-245
+        FM	0x10C3	487	-245
+        FM	0x10C1	578	-245
+        FM	0x10C3	671	-245
+        FM	0x10C3	762	-245
+        FM	0x10C1	853	-245
+        FM	0x10C3	946	-245
+    }
+
+    FRAME "7day_bar_bar" // Index = 15, FModules = 7
+    {
+        0x200B
+        RC	396	-261	1033	-197
+        FM	0x106B	379	-263
+        FM	0x106B	942	-263	+FLIP_X
+        FM	0x106C	487	-263
+        FM	0x106C	578	-263
+        FM	0x106C	669	-263
+        FM	0x106C	760	-263
+        FM	0x106C	851	-263
+    }
+
+    FRAME "7day_bar_frame" // Index = 16, FModules = 7
+    {
+        0x200A
+        RC	366	-250	1063	-208
+        FM	0x10BF	366	-250
+        FM	0x10BF	942	-250	+FLIP_X
+        FM	0x10C0	487	-250
+        FM	0x10C0	578	-250
+        FM	0x10C0	669	-250
+        FM	0x10C0	760	-250
+        FM	0x10C0	851	-250
+    }
+
+    FRAME "7day_text_day1num" // Index = 17, FModules = 0
+    {
+        0x2029
+        RC	396	-244	484	-215
+    }
+
+    FRAME "7day_text_day2num" // Index = 18, FModules = 0
+    {
+        0x202A
+        RC	488	-244	576	-215
+    }
+
+    FRAME "7day_text_day3num" // Index = 19, FModules = 0
+    {
+        0x202B
+        RC	580	-244	668	-215
+    }
+
+    FRAME "7day_text_day4num" // Index = 20, FModules = 0
+    {
+        0x202C
+        RC	671	-244	759	-215
+    }
+
+    FRAME "7day_text_day5num" // Index = 21, FModules = 0
+    {
+        0x202D
+        RC	762	-244	850	-215
+    }
+
+    FRAME "7day_text_day6num" // Index = 22, FModules = 0
+    {
+        0x202E
+        RC	853	-244	941	-215
+    }
+
+    FRAME "7day_text_day7num" // Index = 23, FModules = 0
+    {
+        0x202F
+        RC	943	-244	1031	-215
+    }
+
+    FRAME "7day_bar_mark1" // Index = 24, FModules = 1
+    {
+        0x200C
+        RC	475	-265	498	-198
+        FM	0x106D	475	-265
+    }
+
+    FRAME "7day_bar_mark2" // Index = 25, FModules = 1
+    {
+        0x200D
+        RC	566	-265	589	-198
+        FM	0x106D	566	-265
+    }
+
+    FRAME "7day_bar_mark3" // Index = 26, FModules = 1
+    {
+        0x200E
+        RC	657	-265	680	-198
+        FM	0x106D	657	-265
+    }
+
+    FRAME "7day_bar_mark4" // Index = 27, FModules = 1
+    {
+        0x200F
+        RC	748	-265	771	-198
+        FM	0x106D	748	-265
+    }
+
+    FRAME "7day_bar_mark5" // Index = 28, FModules = 1
+    {
+        0x2010
+        RC	839	-265	862	-198
+        FM	0x106D	839	-265
+    }
+
+    FRAME "7day_bar_mark6" // Index = 29, FModules = 1
+    {
+        0x2011
+        RC	930	-265	953	-198
+        FM	0x106D	930	-265
+    }
+
+    FRAME "7day_bar_mark7" // Index = 30, FModules = 1
+    {
+        0x2012
+        RC	1021	-265	1044	-198
+        FM	0x106D	1021	-265
+    }
+
+    FRAME "7day_reward_background" // Index = 31, FModules = 116
+    {
+        0x2031
+        RC	205	-197	1089	-111
+        FM	0x1017	205	-197
+        FM	0x1017	205	-154	+FLIP_Y
+        FM	0x1017	1039	-197	+FLIP_X
+        FM	0x1017	1039	-154	+FLIP_X	+FLIP_Y
+        FM	0x103C	269	-197
+        FM	0x103C	269	-154	+FLIP_Y
+        FM	0x103C	255	-197
+        FM	0x103C	255	-154	+FLIP_Y
+        FM	0x103C	283	-197
+        FM	0x103C	283	-154	+FLIP_Y
+        FM	0x103C	297	-197
+        FM	0x103C	297	-154	+FLIP_Y
+        FM	0x103C	311	-197
+        FM	0x103C	311	-154	+FLIP_Y
+        FM	0x103C	325	-197
+        FM	0x103C	325	-154	+FLIP_Y
+        FM	0x103C	339	-197
+        FM	0x103C	339	-154	+FLIP_Y
+        FM	0x103C	353	-197
+        FM	0x103C	353	-154	+FLIP_Y
+        FM	0x103C	367	-197
+        FM	0x103C	367	-154	+FLIP_Y
+        FM	0x103C	381	-197
+        FM	0x103C	381	-154	+FLIP_Y
+        FM	0x103C	395	-197
+        FM	0x103C	395	-154	+FLIP_Y
+        FM	0x103C	409	-197
+        FM	0x103C	409	-154	+FLIP_Y
+        FM	0x103C	423	-197
+        FM	0x103C	423	-154	+FLIP_Y
+        FM	0x103C	437	-197
+        FM	0x103C	437	-154	+FLIP_Y
+        FM	0x103C	451	-197
+        FM	0x103C	451	-154	+FLIP_Y
+        FM	0x103C	465	-197
+        FM	0x103C	465	-154	+FLIP_Y
+        FM	0x103C	479	-197
+        FM	0x103C	479	-154	+FLIP_Y
+        FM	0x103C	493	-197
+        FM	0x103C	493	-154	+FLIP_Y
+        FM	0x103C	507	-197
+        FM	0x103C	507	-154	+FLIP_Y
+        FM	0x103C	521	-197
+        FM	0x103C	521	-154	+FLIP_Y
+        FM	0x103C	535	-197
+        FM	0x103C	535	-154	+FLIP_Y
+        FM	0x103C	549	-197
+        FM	0x103C	549	-154	+FLIP_Y
+        FM	0x103C	563	-197
+        FM	0x103C	563	-154	+FLIP_Y
+        FM	0x103C	577	-197
+        FM	0x103C	577	-154	+FLIP_Y
+        FM	0x103C	591	-197
+        FM	0x103C	591	-154	+FLIP_Y
+        FM	0x103C	605	-197
+        FM	0x103C	605	-154	+FLIP_Y
+        FM	0x103C	619	-197
+        FM	0x103C	619	-154	+FLIP_Y
+        FM	0x103C	633	-197
+        FM	0x103C	633	-154	+FLIP_Y
+        FM	0x103C	647	-197
+        FM	0x103C	647	-154	+FLIP_Y
+        FM	0x103C	661	-197
+        FM	0x103C	661	-154	+FLIP_Y
+        FM	0x103C	675	-197
+        FM	0x103C	675	-154	+FLIP_Y
+        FM	0x103C	689	-197
+        FM	0x103C	689	-154	+FLIP_Y
+        FM	0x103C	703	-197
+        FM	0x103C	703	-154	+FLIP_Y
+        FM	0x103C	717	-197
+        FM	0x103C	717	-154	+FLIP_Y
+        FM	0x103C	731	-197
+        FM	0x103C	731	-154	+FLIP_Y
+        FM	0x103C	745	-197
+        FM	0x103C	745	-154	+FLIP_Y
+        FM	0x103C	759	-197
+        FM	0x103C	759	-154	+FLIP_Y
+        FM	0x103C	773	-197
+        FM	0x103C	773	-154	+FLIP_Y
+        FM	0x103C	787	-197
+        FM	0x103C	787	-154	+FLIP_Y
+        FM	0x103C	801	-197
+        FM	0x103C	801	-154	+FLIP_Y
+        FM	0x103C	815	-197
+        FM	0x103C	815	-154	+FLIP_Y
+        FM	0x103C	829	-197
+        FM	0x103C	829	-154	+FLIP_Y
+        FM	0x103C	843	-197
+        FM	0x103C	843	-154	+FLIP_Y
+        FM	0x103C	857	-197
+        FM	0x103C	857	-154	+FLIP_Y
+        FM	0x103C	871	-197
+        FM	0x103C	871	-154	+FLIP_Y
+        FM	0x103C	885	-197
+        FM	0x103C	885	-154	+FLIP_Y
+        FM	0x103C	899	-197
+        FM	0x103C	899	-154	+FLIP_Y
+        FM	0x103C	913	-197
+        FM	0x103C	913	-154	+FLIP_Y
+        FM	0x103C	927	-197
+        FM	0x103C	927	-154	+FLIP_Y
+        FM	0x103C	941	-197
+        FM	0x103C	941	-154	+FLIP_Y
+        FM	0x103C	955	-197
+        FM	0x103C	955	-154	+FLIP_Y
+        FM	0x103C	969	-197
+        FM	0x103C	969	-154	+FLIP_Y
+        FM	0x103C	983	-197
+        FM	0x103C	983	-154	+FLIP_Y
+        FM	0x103C	997	-197
+        FM	0x103C	997	-154	+FLIP_Y
+        FM	0x103C	1011	-197
+        FM	0x103C	1011	-154	+FLIP_Y
+        FM	0x103C	1025	-197
+        FM	0x103C	1025	-154	+FLIP_Y
+    }
+
+    FRAME "7day_text_day" // Index = 32, FModules = 0
+    {
+        0x2013
+        RC	230	-177	349	-131
+    }
+
+    FRAME "7day_frame_reward1" // Index = 33, FModules = 1
+    {
+        0x2014
+        RC	358	-203	449	-111
+        FM	0x1002	358	-203
+    }
+
+    FRAME "7day_icon_reward1" // Index = 34, FModules = 0
+    {
+        0x2019
+        RC	369	-191	438	-122
+    }
+
+    FRAME "7day_num_reward1" // Index = 35, FModules = 0
+    {
+        0x201C
+        RC	386	-150	438	-122
+    }
+
+    FRAME "7day_frame_reward2" // Index = 36, FModules = 1
+    {
+        0x2015
+        RC	468	-203	559	-111
+        FM	0x1002	468	-203
+    }
+
+    FRAME "7day_icon_reward2" // Index = 37, FModules = 0
+    {
+        0x201A
+        RC	479	-191	548	-122
+    }
+
+    FRAME "7day_num_reward2" // Index = 38, FModules = 0
+    {
+        0x201D
+        RC	496	-150	548	-122
+    }
+
+    FRAME "7day_frame_reward3" // Index = 39, FModules = 1
+    {
+        0x2016
+        RC	578	-203	669	-111
+        FM	0x1002	578	-203
+    }
+
+    FRAME "7day_icon_reward3" // Index = 40, FModules = 0
+    {
+        0x201B
+        RC	589	-191	658	-122
+    }
+
+    FRAME "7day_num_reward3" // Index = 41, FModules = 0
+    {
+        0x201E
+        RC	606	-150	658	-122
+    }
+
+    FRAME "7day_frame_reward4" // Index = 42, FModules = 1
+    {
+        0x2017
+        RC	688	-203	779	-111
+        FM	0x1002	688	-203
+    }
+
+    FRAME "7day_icon_reward4" // Index = 43, FModules = 0
+    {
+        0x201F
+        RC	699	-191	768	-122
+    }
+
+    FRAME "7day_num_reward4" // Index = 44, FModules = 0
+    {
+        0x2020
+        RC	716	-150	768	-122
+    }
+
+    FRAME "7day_frame_reward5" // Index = 45, FModules = 1
+    {
+        0x2018
+        RC	798	-203	889	-111
+        FM	0x1002	798	-203
+    }
+
+    FRAME "7day_icon_reward5" // Index = 46, FModules = 0
+    {
+        0x2021
+        RC	809	-191	878	-122
+    }
+
+    FRAME "7day_num_reward5" // Index = 47, FModules = 0
+    {
+        0x2022
+        RC	826	-150	878	-122
+    }
+
+    FRAME "7day_button_getreward" // Index = 48, FModules = 4
+    {
+        0x2023
+        RC	894	-189	1066	-119
+        FM	0x1010	894	-189
+        FM	0x1010	1000	-189	+FLIP_X
+        FM	0x1057	960	-189
+        FM	0x1057	980	-189
+    }
+
+    FRAME "7day_button_getreward_clicked" // Index = 49, FModules = 4
+    {
+        0x2024
+        RC	894	-189	1066	-119
+        FM	0x1011	894	-189
+        FM	0x1011	1000	-189	+FLIP_X
+        FM	0x1058	960	-189
+        FM	0x1058	980	-189
+    }
+
+    FRAME "7day_button_getreward_cant" // Index = 50, FModules = 4
+    {
+        0x2025
+        RC	894	-189	1066	-119
+        FM	0x10B1	894	-189
+        FM	0x10B1	1000	-189	+FLIP_X
+        FM	0x10B2	960	-189
+        FM	0x10B2	980	-189
+    }
+
+    FRAME "7day_text_getreward" // Index = 51, FModules = 0
+    {
+        0x2026
+        RC	906	-178	1053	-131
+    }
+
+    FRAME "7day_close" // Index = 52, FModules = 1
+    {
+        0x22EE
+        RC	1050	-640	1137	-554
+        FM	0x100E	1050	-640
+    }
+
+    FRAME "7day_close_clicked" // Index = 53, FModules = 1
+    {
+        0x22EF
+        RC	1050	-640	1137	-554
+        FM	0x100F	1050	-640
+    }
+
+    SPRITE_END
+
+} // SPRITE
+////////////////////////////////////////////////////////////////////////////////

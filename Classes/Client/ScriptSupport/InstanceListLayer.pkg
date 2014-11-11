@@ -1,0 +1,15 @@
+class InstanceInfo
+{
+	unsigned int id;// 副本ID
+	unsigned int star;// 星星
+	bool can_enter_flag;// 是否可进标识(true:可进 false:不可进) (对精英、地下城副本有效)
+	unsigned int refresh_times;// 重置次数 (对精英、地下城副本有效)
+	bool isgray;//当前是否是灰色
+	unsigned int  battle_times; // 可以挂机次数, valid for normal instance
+	
+};
+
+class InstanceListLayer : public cocos2d::CCLayer
+{
+	static void showInstanceInfo(CCNode* parent,unsigned int instanceId,unsigned int instanceType,CCPoint pt);
+};

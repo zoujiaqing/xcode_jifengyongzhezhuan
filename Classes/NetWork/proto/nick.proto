@@ -1,0 +1,95 @@
+/*
+1. 包格式:
+    len(u32) + hlen(u32) + msghead + msgbody + checksum(u32)
+
+2. 使用规则:
+    (1) 字段只能加, 不能减;
+    (2) 增加的字段只能是 optional 类型, 且必须给出 default 值, 最好还有相关说明;
+*/
+
+/*
+#PROTO  user_set_flag
+*/
+package TaomeeNickProto;
+
+
+/* DB通讯错误码 */
+enum db_err_code_t {
+    DB_ERR_NOERROR                          = 0; //没有错误
+
+    /*dbser 内部错误码 1000-9999*/
+    //没有定义                                  = 1000;
+    //系统出错 一般是内存出错				    = 1001;
+    //数据库出错   							    = 1002;
+    //NET出错   							    = 1003;
+    //命令ID没有定义 			  		        = 1004;
+    //协议长度不符合  			 			    = 1005;
+    //数值越界 	 			                    = 1006;
+    //要设置的flag和原有一致  	 			    = 1007;
+    //数据不完整 	 			                = 1008;
+    //枚举越界:不在类型的限定范围.(如某一字段只允许[0,1],却填了2) 	 			    = 1009;
+    //返回报文长度有问题	 			        = 1010;
+    //数据库中数据有误DB_DATA_ERR               = 1011;
+	//NET_SEND_ERR   						    = 1012;
+	//NET_RECV_ERR   						    = 1013;
+    //KEY 已经存在了 					        = 1014;
+    //KEY 不存在						        = 1015;
+    //DB不允许更新   				            = 1016;
+    //网络超时 					                = 1017;
+    //当命令号每分钟超过最大限制 		        = 1018;
+	//VALUE_NOENOUGH_E 					        = 1020;
+	//VALUE_MAX_E 						        = 1021;
+    //当命令的md5_tags检查失败 					= 1021;
+    //登入时，检查用户名和密码出错		        = 1103;
+    //在insert，米米号已存在				    = 1104;
+    //在select update, delete 时，米米号不存在  = 1105;
+	//LIST_ID_EXISTED					    	= 1109;
+    //列表中的ID  好友列表，黑                  = 1110;
+	//LIST_ID_MAX						 	    = 1115;
+    DB_ERR_NO_FIND                              = 30001;
+    DB_ERR_NO_NICK_EXIST                        = 30002;
+    DB_ERR_ALL_NICK_PEND                        = 30003;
+}
+
+message nick_msgheader_t {
+	// 前三个是DB框架要求的字段，不能改变含义
+	required bytes msg_name   = 1; // 协议名字
+	required uint32 target_uid = 2; // 要操作的米米号
+	required uint32 ret    = 3; // DB返回的错误码
+	// 后五个是Online可以自定义含义的变量
+	optional uint32 reg_time   = 4; // 要操作的角色的创建时间，限定同一个米米号不能在同一秒创建两个角色
+	optional uint32 src_uid    = 5; // 发起操作请求的米米号，如果需要记录日志，或者需要处理DB返回，则必须设置本字段。
+	optional uint32 login_id   = 6; // 发起操作请求的米米号的登录ID，每次登录都不一样，用于DB返回时，Online判断玩家是否
+									// 已经重新登录或者Online是否已经重启。如果没有设置该字段，则表明无需处理DB返回包。
+	optional bytes aux        = 7; // 辅助信息，目前通过aux.size()来判断是否需要给客户端返回
+	optional uint32 trans_id   = 8; // 请求ID，Online用这个来一一对应请求和返回，并写日志记录请求是否成功。
+                                    // 如果不需要写日志，则无需设置该字段。
+                                    // ahero 项目目前用改字段表示玩家渠道号
+}
+
+
+//试取一个昵称(服务器从未使用以及未pending的昵称中随机选择一个)
+message lookup_nick_in {
+	required uint32 sexual 	= 1; //性别
+	required uint32 zone_id = 2; //服务器号
+	required uint32 userid  = 3;
+	required uint32 channelid = 4;
+}
+
+//返回一个昵称(服务器会把这个昵称的状态置为pending)
+message lookup_nick_out {
+    repeated bytes nick 	= 1;
+	required uint32 sexual 	= 2; //性别
+	required uint32 userid  = 3;
+	required uint32 channelid = 4;
+
+}
+
+//确定选择一个昵称(服务器会把这个昵称的状态置为used)
+message select_nick_in {
+    required bytes 	nick 	= 1;
+	required uint32 sexual 	= 2; //性别
+	required uint32 zone_id = 3; //服务器号
+
+}
+

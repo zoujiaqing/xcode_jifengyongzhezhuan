@@ -1,0 +1,369 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>monster_dajiaojiqiren_10025:da chiluen.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{38,185},{32,33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,33}}</string>
+                <key>sourceSize</key>
+                <string>{32,33}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:da chiluen 3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{250,194},{30,33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{30,33}}</string>
+                <key>sourceSize</key>
+                <string>{30,33}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:da chiluen2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{213,159},{17,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,17}}</string>
+                <key>sourceSize</key>
+                <string>{17,17}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:da chiluen3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{213,132},{24,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,24}}</string>
+                <key>sourceSize</key>
+                <string>{24,24}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:da jiao.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{131,132},{79,63}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{79,63}}</string>
+                <key>sourceSize</key>
+                <string>{79,63}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:da jiao2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,137},{71,45}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{71,45}}</string>
+                <key>sourceSize</key>
+                <string>{71,45}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:da shen.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{437,0},{67,78}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{67,78}}</string>
+                <key>sourceSize</key>
+                <string>{67,78}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:da shen2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{437,81},{65,70}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{65,70}}</string>
+                <key>sourceSize</key>
+                <string>{65,70}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:da tou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{384,180},{37,41}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{37,41}}</string>
+                <key>sourceSize</key>
+                <string>{37,41}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:da tou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{213,194},{34,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{34,32}}</string>
+                <key>sourceSize</key>
+                <string>{34,32}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:da xian1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{326,136},{12,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,16}}</string>
+                <key>sourceSize</key>
+                <string>{12,16}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:da xian2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{326,155},{9,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,15}}</string>
+                <key>sourceSize</key>
+                <string>{9,15}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:da xian3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{487,180},{15,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,12}}</string>
+                <key>sourceSize</key>
+                <string>{15,12}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:da xian4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{487,154},{15,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,23}}</string>
+                <key>sourceSize</key>
+                <string>{15,23}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:da xian5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{326,113},{14,20}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,20}}</string>
+                <key>sourceSize</key>
+                <string>{14,20}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:daxian6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{213,179},{17,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,11}}</string>
+                <key>sourceSize</key>
+                <string>{17,11}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:jnydewbqe/z 43.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{74,137},{50,56}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{50,56}}</string>
+                <key>sourceSize</key>
+                <string>{50,56}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:jnydewbqe/z 60.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{429,154},{55,59}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{55,59}}</string>
+                <key>sourceSize</key>
+                <string>{55,59}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:jnydewbqe/z 61.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{326,180},{55,55}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{55,55}}</string>
+                <key>sourceSize</key>
+                <string>{55,55}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:jnydewbqe/z 62.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{283,194},{32,28}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,28}}</string>
+                <key>sourceSize</key>
+                <string>{32,28}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:t1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,185},{35,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{35,32}}</string>
+                <key>sourceSize</key>
+                <string>{35,32}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:t2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{343,94},{83,83}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{83,83}}</string>
+                <key>sourceSize</key>
+                <string>{83,83}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:t3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{343,0},{91,91}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{91,91}}</string>
+                <key>sourceSize</key>
+                <string>{91,91}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:t4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{245,113},{78,78}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{78,78}}</string>
+                <key>sourceSize</key>
+                <string>{78,78}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:t5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{245,0},{95,110}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{95,110}}</string>
+                <key>sourceSize</key>
+                <string>{95,110}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:t6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{131,0},{111,129}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{111,129}}</string>
+                <key>sourceSize</key>
+                <string>{111,129}</string>
+            </dict>
+            <key>monster_dajiaojiqiren_10025:t7.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{128,134}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{128,134}}</string>
+                <key>sourceSize</key>
+                <string>{128,134}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>monster_dajiaojiqiren_10025.pvr.ccz</string>
+            <key>size</key>
+            <string>{504,235}</string>
+            <key>textureFileName</key>
+            <string>monster_dajiaojiqiren_10025.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

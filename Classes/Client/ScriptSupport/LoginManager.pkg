@@ -1,0 +1,12 @@
+class LoginManager
+{
+	static LoginManager* Get();
+	
+		// 用户登录
+	void loginWithUserName(const char* userName,const char* password);
+
+	// 用户注册
+	void registerWithUserName(const char* userName,const char* password,const char* confirmPassword);
+	void doUserCenter();
+	bool doRecentLogin();
+}

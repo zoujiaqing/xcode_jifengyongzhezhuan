@@ -1,0 +1,473 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>monster_xianrenzhang_10016:sprite 10.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{464,73},{38,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{38,29}}</string>
+                <key>sourceSize</key>
+                <string>{38,29}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 12.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{464,105},{36,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{36,21}}</string>
+                <key>sourceSize</key>
+                <string>{36,21}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 14.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{195,126},{30,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{30,24}}</string>
+                <key>sourceSize</key>
+                <string>{30,24}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 16.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{110,149},{24,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,17}}</string>
+                <key>sourceSize</key>
+                <string>{24,17}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 18.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{410,73},{51,69}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{51,69}}</string>
+                <key>sourceSize</key>
+                <string>{51,69}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{195,153},{20,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,18}}</string>
+                <key>sourceSize</key>
+                <string>{20,18}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 20.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{472,0},{34,34}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{34,34}}</string>
+                <key>sourceSize</key>
+                <string>{34,34}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 22.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{137,149},{21,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,17}}</string>
+                <key>sourceSize</key>
+                <string>{21,17}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 24.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{124,126},{36,20}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{36,20}}</string>
+                <key>sourceSize</key>
+                <string>{36,20}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 26.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{81,157},{16,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,8}}</string>
+                <key>sourceSize</key>
+                <string>{16,8}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 28.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{218,157},{16,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,8}}</string>
+                <key>sourceSize</key>
+                <string>{16,8}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 30.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{422,145},{24,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,17}}</string>
+                <key>sourceSize</key>
+                <string>{24,17}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 32.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{26,132},{26,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,24}}</string>
+                <key>sourceSize</key>
+                <string>{26,24}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 34.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{369,145},{20,22}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,22}}</string>
+                <key>sourceSize</key>
+                <string>{20,22}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 36.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{326,145},{18,26}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,26}}</string>
+                <key>sourceSize</key>
+                <string>{18,26}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 38.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{347,145},{19,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,24}}</string>
+                <key>sourceSize</key>
+                <string>{19,24}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{472,37},{32,33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,33}}</string>
+                <key>sourceSize</key>
+                <string>{32,33}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 40.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{228,126},{20,28}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,28}}</string>
+                <key>sourceSize</key>
+                <string>{20,28}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 42.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{81,132},{26,22}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,22}}</string>
+                <key>sourceSize</key>
+                <string>{26,22}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 44.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,132},{23,30}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{23,30}}</string>
+                <key>sourceSize</key>
+                <string>{23,30}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 46.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{275,145},{24,22}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,22}}</string>
+                <key>sourceSize</key>
+                <string>{24,22}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 48.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{356,73},{51,69}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{51,69}}</string>
+                <key>sourceSize</key>
+                <string>{51,69}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 50.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{163,126},{29,26}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{29,26}}</string>
+                <key>sourceSize</key>
+                <string>{29,26}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 52.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{302,145},{21,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,24}}</string>
+                <key>sourceSize</key>
+                <string>{21,24}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 54.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{251,145},{21,26}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,26}}</string>
+                <key>sourceSize</key>
+                <string>{21,26}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 56.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{464,129},{27,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,27}}</string>
+                <key>sourceSize</key>
+                <string>{27,27}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 58.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{161,155},{22,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,14}}</string>
+                <key>sourceSize</key>
+                <string>{22,14}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{356,0},{55,70}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{55,70}}</string>
+                <key>sourceSize</key>
+                <string>{55,70}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 60.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{392,145},{27,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,14}}</string>
+                <key>sourceSize</key>
+                <string>{27,14}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 64.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,169},{156,86}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{156,86}}</string>
+                <key>sourceSize</key>
+                <string>{156,86}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 70.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{121,129}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{121,129}}</string>
+                <key>sourceSize</key>
+                <string>{121,129}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 74.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{252,0},{101,142}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{101,142}}</string>
+                <key>sourceSize</key>
+                <string>{101,142}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 77.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{124,0},{125,123}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{125,123}}</string>
+                <key>sourceSize</key>
+                <string>{125,123}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 8.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{55,132},{23,26}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{23,26}}</string>
+                <key>sourceSize</key>
+                <string>{23,26}</string>
+            </dict>
+            <key>monster_xianrenzhang_10016:sprite 81.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{414,0},{55,70}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{55,70}}</string>
+                <key>sourceSize</key>
+                <string>{55,70}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>monster_xianrenzhang_10016.pvr.ccz</string>
+            <key>size</key>
+            <string>{506,255}</string>
+            <key>textureFileName</key>
+            <string>monster_xianrenzhang_10016.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

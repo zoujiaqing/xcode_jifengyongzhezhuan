@@ -1,0 +1,28 @@
+/*
+1. 包格式:
+     total_len(u32) + header_len(u32) + msghead + msgbody
+	|   整包长度   |  包头长度（包括本身） | 包头 | 包体 |
+
+2. 使用规则：
+    (1) 包头格式绝对不能改；
+	(2) 字段只能加，不能减；
+	(3) 增加的字段只能是optional类型，且必须给出default值，最好还有相关说明；
+	(4) 不能改变原来字段的序号。
+
+3. 命名规则：
+	XXXX_in/_out：以大写DB开头，Online发来的请求以_in结尾，sw应答包以_out结尾，
+					中间的XXXX代表对应的功能，比如reg_server_in/_out。
+*/
+
+// 和Alarm通信头使用sw_msgheader_t
+
+// --------------------各个服务和alarm svc的通信协议--------------
+message svc_notify_alarm_in {     
+    required bytes svc_ip              	= 1;    // server ip
+    required uint32 svc_port            = 2;	// server port
+	required uint32 svc_id				= 3;	// server id
+ 	required bytes msg_title          	= 4;    // 消息标题      
+    required bytes msg_content         	= 5;   	// 消息内容
+	repeated bytes to_mails				= 6;	// 需要发送邮件给哪些人(如果为空则默认发给所有配置的人)
+	repeated bytes to_phone_numbs		= 7;	// 需要发送短信给哪些人(如果为空则默认发给所有配置的人)
+}

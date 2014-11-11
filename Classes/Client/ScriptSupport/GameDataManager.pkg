@@ -1,0 +1,6 @@
+class GameDataManager
+{
+	static GameDataManager* Get();
+
+	void setHeroAutoAttack(bool autoAttack);
+};

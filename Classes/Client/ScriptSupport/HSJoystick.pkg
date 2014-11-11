@@ -1,0 +1,6 @@
+class HSJoystick
+{
+	static HSJoystick* sharedJoystick();
+	
+	void setIsEnable(bool enable);
+};

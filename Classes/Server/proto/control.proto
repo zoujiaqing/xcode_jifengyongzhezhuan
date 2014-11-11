@@ -1,0 +1,4 @@
+message reload_config {
+	required uint32 type  = 1;		//1为指定更新，0为全部更新
+	repeated string confs = 2;		//指定更新的XML文件名
+}

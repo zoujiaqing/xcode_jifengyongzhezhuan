@@ -1,0 +1,201 @@
+enum
+{
+	GM_E_ENTER_MAINLAND_COLOR_LAYER_OVER ,
+	GM_ATTR_COIN_UPDATE ,
+	GM_ATTR_SP_UPDATE,
+	GM_ATTR_SP_CHIP_UPDATE,
+	GM_ATTR_SP_DIAMOND_UPDATE,
+	GM_ATTR_HERO_LEVEL_UPDATE,
+	GM_ATTR_PHYSICAL_ATTACK_UPDATE,
+	GM_ATTR_MAGIC_ATTACK_UPDATE,
+	GM_ATTR_SKILL_ATTACK_UPDATE,
+	GM_ATTR_PHYSICAL_DEFENCE_UPDATE,
+	GM_ATTR_MAGIC_DEFENCE_UPDATE,
+	GM_ATTR_SKILL_DEFENCE_UPDATE,
+	GM_ATTR_HEALTH_POINT_UPDATE,
+	GM_ATTR_ACCURATE_UPDATE,
+	GM_ATTR_DODGE_UPDATE,
+	GM_ATTR_WRECK_UPDATE,
+	GM_ATTR_PARRY_UPDATE,
+	GM_ATTR_CRITICAL_STRIKE_UPDATE,
+	GM_ATTR_TENACITY_UPDATE,
+	GM_ATTR_SLAY_UPDATE,
+	GM_ATTR_SPEED_UPDATE,
+	GM_ATTR_PROFICIENCY_UPDATE,
+	GM_ATTR_ABILITY_ALL_UPDATE,
+	GM_ATTR_COURAGE_UPDATE,
+	GM_ATTR_CHARM_UPDATE,
+	GM_ATTR_TRICK_UPDATE,
+	GM_ATTR_STAMINA_UPDATE,
+	GM_ATTR_REPUTATION_UPDATE,
+	GM_ATTR_EXP_UPDATE,
+	GM_ATTR_EQUIP_LVUP_UESED_TIMES,
+	GM_ATTR_EQUIP_LVUP_CD,
+	GM_NETWORK_DISCONNCT,
+	GM_CLOSE_TALENTLAYER,
+	GM_CLOSE_AUTOONHOOK,
+	GM_ATTR_PLAYER_EXPOLIT,
+	GM_LUA_LAYER_CLOSE,
+	GM_ATTR_PLAYER_EXPLOER_EXP,
+	GM_ATTR_GEM_RECAST,
+	GM_ATTR_PLAYER_GEM_ANIMA,
+	GM_E_ENTER_MAINLAND,
+	GM_E_ENTER_FB,
+	GM_ATTR_BUY_BAG_CAPACITY,
+	GM_ATTR_BUY_STORE_CAPACITY,
+	GM_ATTR_BUY_SS_BAG_CAPACITY,
+	GM_ATTR_AUTO_FIGHT_CD,
+	GM_ATTR_BAO_ZHANG_COIN_CHANGE,
+	GM_ATTR_VIP_LEVEL_CHANGE,
+	GM_ATTR_SERVER_TIME_SYNCED,
+	GM_E_ENTER_FIRST_LOGIN_STATE,
+	GM_ATTR_FRAG_STONE,
+	GM_ATTR_FRAG_CAN_CONPOSE,
+	GM_FAIRY_SELECT_DONE,
+	GM_ATTR_FAIRY_EFFECTIVENESS,
+	GM_ATTR_FAIRY_FETTER,
+	GM_ATTR_FARIY_FLAG_ENOUGH,
+	GM_ATTR_NEW_FAIRY_INFO,
+	GM_MONTHCARD_GET_SUCCESS,
+	GM_GET_PLAYER_CHANGE_NAME,
+};
+
+class USERINFO
+{
+	USERINFO(void);
+	PLAYER_ID  id;
+	char userSession[SESSION_LENGTH];
+	char szName[20];	
+	char ip[30];
+	char lastServerName[30];
+	unsigned int port;
+	long createdTime;
+
+	unsigned int tokenId;
+	unsigned int level;
+	unsigned int exp;
+	unsigned int nextExp;
+	unsigned int mapId;
+	unsigned int xPos;
+	unsigned int yPos;
+	unsigned int orient;
+	unsigned int type;
+	// add more data parameters
+	unsigned int battleId;
+	unsigned int current_title;
+	unsigned int battleSide;
+
+	unsigned int m_spriteEnergy;
+	unsigned int m_gold;
+	unsigned int m_diamond;
+	unsigned int m_stamina;			//体力
+	unsigned int m_spriteChip;
+	unsigned int m_alchemyBagUnlockPos;
+	unsigned int m_alchemyStorageUnlockPos;
+	unsigned int m_gemRecastTimes;			//宝石重铸次数
+	unsigned int m_reputation;
+	unsigned int m_soulStone;		//魂石
+	unsigned int physical_attack;
+	unsigned int magic_attack;
+	unsigned int skill_attack;
+	unsigned int physical_defence;
+	unsigned int magic_defence;
+	unsigned int skill_defence;
+	unsigned int health_point;
+	unsigned int accurate ;
+	unsigned int dodge;
+	unsigned int wreck;
+	unsigned int parry;
+	unsigned int critical_strike;
+	unsigned int tenacity;
+	unsigned int slay;
+	unsigned int proficiency;
+	unsigned int speed;
+	unsigned int total_hp;
+	unsigned int courage; // 勇气
+	unsigned int charm; // 魔力
+	unsigned int trick; // 技巧
+	unsigned int effectiveness;
+	unsigned int m_player_exploit;
+	unsigned int m_playerExploerExperience;
+	unsigned int m_playerGemAnima;
+	unsigned int m_enterManorTimes;
+	
+	unsigned int m_continueloginTime;
+	unsigned int m_loginRewardTime;
+    unsigned int m_vipRewardTime;
+    unsigned int m_payRewardTime;
+	unsigned int m_buyDiamondRewardTime;
+	unsigned int m_buyManorTimes;
+    unsigned int m_pvaiRewardTime;
+    unsigned int m_palyHoldExp;
+	unsigned int m_newMailNum;
+	unsigned int m_totalMailNum;
+    unsigned int m_autofightNormalCd;
+	unsigned int m_autofightJingYingCd;
+	unsigned int pay_money;
+	unsigned int mine_money; 
+	unsigned int train_money;
+	unsigned int suspend_limit_exp;
+	unsigned int m_vip;
+	unsigned int m_fragStone;
+	unsigned int m_pvpDuelTimesNum;
+	unsigned int m_pvpDueledTimesNum;
+	unsigned int m_pvpRed;
+	bool b_hasEnouchFairyFlag;
+	bool b_reputationExchangeFlag;
+	unsigned int m_diamond_acc;
+	std::string guildName;
+	GUILD_ID m_guildId;
+};
+
+class PLAYER_ID
+{
+public:
+	PLAYER_ID();
+	void setPlayId(unsigned int id, unsigned int regTime,unsigned int channel);
+	void setPlayId(PLAYER_ID& playId);
+	bool isEqual(PLAYER_ID& playId);
+	unsigned int getID() const;
+	unsigned int getRegTime();
+	unsigned int getChannel();
+	void setRegTime(unsigned int reg_time);
+};
+
+class GUILD_ID
+{
+public:
+	GUILD_ID();
+	void setGuildId(unsigned int high_id,unsigned int low_id);
+	void setGuildId(const GUILD_ID& guildId);
+	bool isEqual(const GUILD_ID& guildId);
+	unsigned int getHighID() const{return m_highId;}
+	unsigned int getLowID() const{return m_lowId;}
+};
+
+class UserData
+{
+public:
+	static UserData* Get();
+	static PLAYER_ID getUserId();
+	static const char*  getUserName();
+	static void setUserName(const char* newName);
+	static unsigned int getHeroHp();
+	static unsigned int getHeroTotalHp();
+	static unsigned int GetUserType();
+	static USERINFO & GetUserInfo();
+	static unsigned int GetUserLevel();
+	static void SetUserInfo(USERINFO info);
+	USERINFO* GetUserInfo(PLAYER_ID id);
+	void SetUserInfo(PLAYER_ID id, USERINFO& info);
+	void removeOtherUser(PLAYER_ID id);
+	static unsigned int getRagePoint();
+	static unsigned int getTotalRagePoint();
+	static unsigned int getSecRagePoint();
+	static unsigned int getSecTotalRagePoint();
+	static unsigned int GetDiamond();
+	static unsigned int GetVipLevel();
+};
+
+PLAYER_ID  PlayerIdMake(unsigned int id,unsigned int regTime,unsigned int channel);
+GUILD_ID	GuildIdMake(unsigned int high_id,unsigned int low_id);

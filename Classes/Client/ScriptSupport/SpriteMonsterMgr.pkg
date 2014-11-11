@@ -1,0 +1,8 @@
+class SpriteMonsterMgr
+{
+	static SpriteMonsterMgr* Get();
+	
+	void  CreateCacheMonster(int typeId);
+	
+	void updateSpecialMonsterHPLayer(int id, int nowHp, int totalHp, int type);
+};

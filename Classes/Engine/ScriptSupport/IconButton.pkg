@@ -1,0 +1,30 @@
+namespace TXGUI
+{
+	class IconButton : public CCNode
+	{
+		IconButton(CCSprite* backgroundTex , CCSprite* normalTex, CCSprite* selectedTex);
+
+		~IconButton();
+
+		void SetButtonIndex(int index){m_pagePosition = index;}
+
+		int GetButtonIndex(){return m_pagePosition;}
+
+		void SetNormalIcon(CCSprite* normalTex);
+
+		void SetSelectedIcon(CCSprite* selectedTex);
+
+		void AddExternalSprite(CCSprite* sprite, CCPoint pt);
+
+		virtual UILabelTTF* getItemLabel();
+
+		virtual void setItemLabel(const char * text,float fontSize,const char* font);
+
+		virtual void removeItemLabel();
+
+		void SetUserData(int data);
+
+		virtual bool isReleaseInButton(CCTouch* touch);
+		virtual void setDragMove(bool);
+	};
+}

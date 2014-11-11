@@ -1,0 +1,243 @@
+/*
+1. 包格式:
+    len(u32) + hlen(u32) + msghead + msgbody + checksum(u32)
+
+2. 使用规则:
+    (1) 字段只能加, 不能减;
+    (2) 增加的字段只能是 optional 类型, 且必须给出 default 值, 最好还有相关说明;
+*/
+enum RANK_DATAFLAG{
+	RANK_TOTAL					= 1;	// 总类型的排行
+	RANK_DAILY					= 2; 	// 每日类型的排行
+	RANK_WEEK					= 3;	// 每周类型的排行
+	RANK_MONTH					= 4;	// 每月类型的排行
+	RANK_DAILY_WEEK				= 5;	// 周日同时
+	RANK_ALL					= 6;	// 全部类型
+	RANK_NULL					= 7;	// 这个不是使用的，只是视为默认值而已
+}
+
+enum RANK_SETFLAG{
+	RANK_ADD					= 1;	// 在原有分数上加分数
+	RANK_SET					= 2;	// 尝试覆盖分数，若该分数小于原有分数，则不覆盖
+	RANK_SET_BOTH				= 3;	// 直接覆盖原有分数并且记录用户信息
+	RANK_SET_FORCE				= 4;	// 强制覆盖原有分数
+}
+
+enum RANK_RES{
+	RANK_SUCC					= 1;	// 成功
+	RANK_FAIL					= 2;	// 失败	
+	RANK_NONAME					= 3;	// 设置了set_both但是name没有
+}
+
+message rank_msgheader_t {
+	// 前三个是DB框架要求的字段，不能改变含义
+	required bytes msg_name   	= 1;	// 协议名字
+	required uint32 ret			= 2;	// 返回结果码
+	required uint64 userid		= 3;	// 请求用户id
+	required uint32	reg_tm		= 4;	// 请求用户reg_tm
+}
+
+message rk_set_score_req{
+	required RANK_SETFLAG sflag	= 1;	// 设置方式
+	required uint64 score		= 2;	// 分数
+	required uint64	userid		= 3;	// 用户id
+	required uint32 reg_tm		= 4;	// 注册时间
+	required uint32 zone_id		= 5;	// 服务器号
+	optional bytes name			= 6;	// 同时设置该玩家信息
+	optional uint32 type		= 7;
+	required uint32 max			= 8 [default = 0];	// rankname高位  
+	required uint32 mid			= 9 [default = 0];	// rankname中位
+	required uint32 min			= 10 [default = 0];  // rankname低位
+	required RANK_DATAFLAG flag	= 11 [default = RANK_NULL]; // rankname类型
+	required uint32 now			= 12 [default = 0]; // 查看历史排名
+}
+
+message rk_set_score_rsp{
+	required RANK_RES res		= 1;	// set结果 
+	required uint32 max			= 2 [default = 0];	// rankname高位  
+	required uint32 mid			= 3 [default = 0];	// rankname中位
+	required uint32 min			= 4	[default = 0];  // rankname低位
+	required RANK_DATAFLAG flag	= 5 [default = RANK_NULL]; // rankname类型
+	required uint32 now			= 6 [default = 0]; // 查看历史排名
+}
+
+message basic_info{
+	required uint64 userid      = 1;    // 用户id
+	required uint32 reg_tm      = 2;    // 注册时间
+	required uint32 zone_id     = 3;    // 服务器号
+}
+
+message rk_get_score_req{
+	repeated basic_info req		= 1;	// 所要获取信的玩家
+	required uint32 max			= 2 [default = 0];	// rankname高位  
+	required uint32 mid			= 3 [default = 0];	// rankname中位
+	required uint32 min			= 4	[default = 0];  // rankname低位
+	required RANK_DATAFLAG flag	= 5 [default = RANK_NULL]; // rankname类型
+	required uint32 now			= 6 [default = 0]; // 查看历史排名
+}
+
+message rank_info{
+	message player_rank{
+		required uint32 count		= 1;	// 排名
+		required uint64 score		= 2;	// 分数 
+		required RANK_DATAFLAG flag	= 3 [default = RANK_NULL]; // rankname类型
+	}
+	required uint64 userid      = 1;    // 用户id
+	required uint32 reg_tm      = 2;    // 注册时间
+	required uint32 zone_id     = 3;    // 服务器号
+	required bytes	userinfo	= 4;	// 用户基本信息
+	repeated player_rank ranks	= 5;	// 排名信息
+}
+
+message rk_get_score_rsp{
+	repeated rank_info ranks	= 1;
+	required uint32 max			= 2 [default = 0];	// rankname高位  
+	required uint32 mid			= 3 [default = 0];	// rankname中位
+	required uint32 min			= 4	[default = 0];  // rankname低位
+	required uint32 now			= 5 [default = 0]; // 查看历史排名
+	required RANK_DATAFLAG flag	= 6 [default = RANK_NULL]; // rankname类型
+}
+
+message rk_get_count_req{
+	required uint32 max			= 1 [default = 0];	// rankname高位  
+	required uint32 mid			= 2 [default = 0];	// rankname中位
+	required uint32 min			= 3	[default = 0];  // rankname低位
+	required RANK_DATAFLAG flag	= 4 [default = RANK_NULL]; // rankname类型
+	required uint32 now			= 5 [default = 0]; // 查看历史排名
+}
+
+message rk_get_count_rsp{
+	required uint32 count		= 1;
+	required uint32 max			= 2 [default = 0];	// rankname高位  
+	required uint32 mid			= 3 [default = 0];	// rankname中位
+	required uint32 min			= 4	[default = 0];  // rankname低位
+	required RANK_DATAFLAG flag	= 5 [default = RANK_NULL]; // rankname类型
+	required uint32 now			= 6 [default = 0]; // 查看历史排名
+}
+
+message rk_get_range_req{
+	required uint64 start		= 1;	// 从1开始
+	required uint64 end			= 2;	
+	required uint32 max			= 3 [default = 0];	// rankname高位  
+	required uint32 mid			= 4 [default = 0];	// rankname中位
+	required uint32 min			= 5	[default = 0];  // rankname低位
+	required RANK_DATAFLAG flag	= 6 [default = RANK_NULL]; // rankname类型
+	required uint32 now			= 7 [default = 0]; // 查看历史排名
+}
+
+message rk_user_info{
+	required uint64 userid		= 1;	
+	required uint32 reg_tm		= 2;
+   	required uint32 zone_id		= 3;
+	required uint64	score		= 4;
+	required bytes	userinfo	= 5;	// 用户基本信息
+	required uint32 count		= 6;	// 排名
+	required uint32 updown		= 7;	// 上升下降
+	optional uint32 type		= 8;
+}
+
+message rk_get_range_rsp{
+	repeated rk_user_info infos	= 1;
+	required uint32 max			= 2 [default = 0];	// rankname高位  
+	required uint32 mid			= 3 [default = 0];	// rankname中位
+	required uint32 min			= 4	[default = 0];  // rankname低位
+	required RANK_DATAFLAG flag	= 5 [default = RANK_NULL]; // rankname类型
+	required uint32 now			= 6 [default = 0]; // 查看历史排名
+}
+
+enum DELWAY{
+	DEL_ONE						= 1;	// 只删除指定的排名中的信息
+	DEL_ALL						= 2;	// 删除所有正在使用中的排名信息	
+}
+
+message rk_del_usr_score_req{
+	repeated basic_info req     = 1;    // 所要删除的玩家信息
+	required DELWAY way			= 2;	// 全部删除还是指定删除
+	optional uint32 max			= 3 [default = 0];	// rankname高位  
+	optional uint32 mid			= 4 [default = 0];	// rankname中位
+	optional uint32 min			= 5	[default = 0];  // rankname低位
+	optional RANK_DATAFLAG flag	= 6 [default = RANK_NULL]; // rankname类型
+	optional uint32 now			= 7 [default = 0]; // 查看历史排名
+
+}
+
+message rk_del_usr_score_rsp{
+	required bool req			= 1;	// 删除结果
+	optional uint32 max			= 2 [default = 0];	// rankname高位  
+	optional uint32 mid			= 3 [default = 0];	// rankname中位
+	optional uint32 min			= 4	[default = 0];  // rankname低位
+	optional RANK_DATAFLAG flag	= 5 [default = RANK_NULL]; // rankname类型
+	optional uint32 now			= 6 [default = 0]; // 查看历史排名
+
+}
+
+//根据时间
+message rk_del_usr_req{
+	required uint32	time		= 1;
+	required uint32 max			= 2 [default = 0];	// rankname高位  
+	required uint32 mid			= 3 [default = 0];	// rankname中位
+	required uint32 min			= 4	[default = 0];  // rankname低位
+	required RANK_DATAFLAG flag	= 5 [default = RANK_NULL]; // rankname类型
+	required uint32 now			= 6 [default = 0]; // 查看历史排名
+}
+
+message rk_del_usr_rsp{
+	required bool req			= 1;	// 删除结果
+	optional uint32 max			= 2 [default = 0];	// rankname高位  
+	optional uint32 mid			= 3 [default = 0];	// rankname中位
+	optional uint32 min			= 4	[default = 0];  // rankname低位
+	optional RANK_DATAFLAG flag	= 5 [default = RANK_NULL]; // rankname类型
+	optional uint32 now			= 6 [default = 0]; // 查看历史排名
+
+}
+
+enum EXWAY{
+	EX_ONE						= 1;	// 只导出指定的 
+	EX_ALL						= 2;	// 导出所有
+}
+
+//导出数据
+message rk_exp_to_file_req{
+	required EXWAY way			= 1;	// 全部还是指定备份
+	required string dir			= 2;				// 备份目录
+	optional uint32 max			= 3 [default = 0];	// rankname高位  
+	optional uint32 mid			= 4 [default = 0];	// rankname中位
+	optional uint32 min			= 5	[default = 0];  // rankname低位
+	optional RANK_DATAFLAG flag	= 6 [default = RANK_NULL]; // rankname类型
+	optional uint32 now			= 7 [default = 0]; // 查看历史排名
+
+}
+
+message rk_exp_to_file_rsp{
+	required bool req			= 1;				// 导出结果
+	required uint32 max			= 2 [default = 0];	// rankname高位  
+	required uint32 mid			= 3 [default = 0];	// rankname中位
+	required uint32 min			= 4	[default = 0];  // rankname低位
+	required RANK_DATAFLAG flag	= 5 [default = RANK_NULL]; // rankname类型
+	required uint32 now			= 6 [default = 0]; // 查看历史排名
+}
+
+message rk_imp_from_file_req{
+	required string dir			= 1;				// 要导入的目录
+	required uint32 max			= 2 [default = 0];	// rankname高位  
+	required uint32 mid			= 3 [default = 0];	// rankname中位
+	required uint32 min			= 4	[default = 0];  // rankname低位
+	required RANK_DATAFLAG flag	= 5 [default = RANK_NULL]; // rankname类型
+	required uint32 now			= 6 [default = 0]; // 查看历史排名
+
+}
+
+message rk_imp_from_file_rsp{
+	required bool req			= 1;				// 导入结果
+	required uint32 max			= 2 [default = 0];	// rankname高位  
+	required uint32 mid			= 3 [default = 0];	// rankname中位
+	required uint32 min			= 4	[default = 0];  // rankname低位
+	required RANK_DATAFLAG flag	= 5 [default = RANK_NULL]; // rankname类型
+	required uint32 now			= 6 [default = 0]; // 查看历史排名
+
+}
+
+message rk_fairy_info {
+    required bytes username  = 1;
+    required uint32 fairy_id    = 2;
+}

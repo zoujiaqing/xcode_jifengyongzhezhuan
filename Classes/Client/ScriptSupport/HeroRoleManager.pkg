@@ -1,0 +1,5 @@
+class HeroRoleManager:
+{
+	static HeroRoleManager* Get();
+	RoleBase* createRole(PLAYER_ID s_id,const char *name, int type, bool isPlayerSet,bool isCreateEffect);
+}

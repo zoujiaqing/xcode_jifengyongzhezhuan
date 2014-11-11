@@ -1,0 +1,1306 @@
+// saved by AuroraGT v0.1.0.2 (SpriteEditor v0.1.0.5)
+////////////////////////////////////////////////////////////////////////////////
+/*SPRITE*/ {
+
+    VERSION 0001
+
+    // Images:  2
+    // Modules: 211
+    // Frames:  85
+    // Anims:   0
+
+////////////////////////////////////////////////////////////////////////////////
+// Images...
+// <Image> := IMAGE [id] "file" [ALPHA "alpha_file"] [TRANSP transp_color]
+
+    IMAGE 0x0001 ".\ui_dailyobjective.png" TRANSP 0x00FF00FF // 0  size: 256 x 256  palettes: 1
+    IMAGE 0x0000 ".\ui.png" TRANSP 0x00FF00FF // 1  size: 1024 x 1024  palettes: 1
+
+////////////////////////////////////////////////////////////////////////////////
+// Modules...
+// <Modules> := MODULES { <MD1> <MD2> ... }
+// <MDi>     := MD id Type [params] ["desc"]
+// Type      := MD_IMAGE | MD_RECT | ...
+// [params]  := if (Type == MD_IMAGE)     -> image x y width height
+//              if (Type == MD_RECT)      -> color width height
+//              if (Type == MD_FILL_RECT) -> color width height
+//              if (Type == MD_ARC)       -> color width height startAngle arcAngle
+//              if (Type == MD_FILL_ARC)  -> color width height startAngle arcAngle
+//              if (Type == MD_MARKER)    -> color width height
+//              if (Type == MD_TRIANGLE)  -> color p2X p2Y p3X p3Y
+//              if (Type == MD_FILL_TRIANGLE)  -> color p2X p2Y p3X p3Y
+
+    MODULES
+    {
+        MD	0x1000	MD_IMAGE	1	10	13	139	138
+        MD	0x1001	MD_IMAGE	1	154	6	119	119
+        MD	0x1004	MD_IMAGE	1	5	165	172	171
+        MD	0x1005	MD_IMAGE	1	187	187	148	148
+        MD	0x1007	MD_IMAGE	1	20	359	91	93
+        MD	0x1008	MD_IMAGE	1	128	368	77	78
+        MD	0x1014	MD_IMAGE	1	219	372	69	69
+        MD	0x1015	MD_IMAGE	1	14	545	52	42
+        MD	0x1016	MD_IMAGE	1	15	590	51	42
+        MD	0x1017	MD_IMAGE	1	75	544	50	43
+        MD	0x103C	MD_IMAGE	1	125	544	14	43
+        MD	0x10A9	MD_IMAGE	1	75	587	50	43
+        MD	0x10AA	MD_IMAGE	1	125	587	14	43
+        MD	0x109A	MD_IMAGE	1	197	537	14	14
+        MD	0x10A4	MD_IMAGE	1	217	537	17	17
+        MD	0x10A5	MD_IMAGE	1	236	537	17	17
+        MD	0x10A6	MD_IMAGE	1	255	537	17	17
+        MD	0x109B	MD_IMAGE	1	154	537	43	14
+        MD	0x1019	MD_IMAGE	1	8	457	32	39
+        MD	0x10B4	MD_IMAGE	1	40	457	9	39
+        MD	0x10B5	MD_IMAGE	1	49	457	148	39
+        MD	0x1028	MD_IMAGE	1	8	498	137	39
+        MD	0x1029	MD_IMAGE	1	151	507	121	23
+        MD	0x102A	MD_IMAGE	1	284	507	20	24
+        MD	0x102B	MD_IMAGE	1	309	505	32	25
+        MD	0x102C	MD_IMAGE	1	346	507	22	23
+        MD	0x10B6	MD_IMAGE	1	329	571	22	26
+        MD	0x10B7	MD_IMAGE	1	358	569	24	29
+        MD	0x106A	MD_IMAGE	1	373	509	16	19
+        MD	0x101A	MD_IMAGE	1	199	457	45	39
+        MD	0x101B	MD_IMAGE	1	249	457	44	39
+        MD	0x1039	MD_IMAGE	1	306	24	109	110
+        MD	0x1002	MD_IMAGE	1	446	13	91	92
+        MD	0x1003	MD_IMAGE	1	543	14	90	91
+        MD	0x1006	MD_IMAGE	1	638	0	228	111
+        MD	0x1009	MD_IMAGE	1	450	112	212	11
+        MD	0x103D	MD_IMAGE	1	662	112	26	11
+        MD	0x100A	MD_IMAGE	1	450	130	35	46
+        MD	0x1040	MD_IMAGE	1	450	176	35	29
+        MD	0x103E	MD_IMAGE	1	485	130	15	46
+        MD	0x1041	MD_IMAGE	1	485	176	15	29
+        MD	0x103F	MD_IMAGE	1	500	130	35	46
+        MD	0x1042	MD_IMAGE	1	500	176	35	29
+        MD	0x100B	MD_IMAGE	1	542	130	35	46
+        MD	0x1043	MD_IMAGE	1	542	176	35	29
+        MD	0x1044	MD_IMAGE	1	577	130	15	46
+        MD	0x1045	MD_IMAGE	1	577	176	15	29
+        MD	0x1046	MD_IMAGE	1	592	130	35	46
+        MD	0x1047	MD_IMAGE	1	592	176	35	29
+        MD	0x100C	MD_IMAGE	1	643	143	42	55
+        MD	0x100D	MD_IMAGE	1	699	145	48	52
+        MD	0x100E	MD_IMAGE	1	762	125	87	86
+        MD	0x100F	MD_IMAGE	1	848	125	87	86
+        MD	0x1010	MD_IMAGE	1	449	206	66	70
+        MD	0x1057	MD_IMAGE	1	518	206	20	70
+        MD	0x10B1	MD_IMAGE	1	587	912	66	70
+        MD	0x10B2	MD_IMAGE	1	656	912	20	70
+        MD	0x1011	MD_IMAGE	1	544	206	66	70
+        MD	0x1058	MD_IMAGE	1	613	206	20	70
+        MD	0x1012	MD_IMAGE	1	687	221	229	183
+        MD	0x1013	MD_IMAGE	1	921	221	25	183
+        MD	0x1018	MD_IMAGE	1	696	409	220	25
+        MD	0x101C	MD_IMAGE	1	921	409	25	25
+        MD	0x101D	MD_IMAGE	1	151	560	64	61
+        MD	0x101E	MD_IMAGE	1	215	568	48	47
+        MD	0x101F	MD_IMAGE	1	269	566	54	52
+        MD	0x1020	MD_IMAGE	1	217	558	9	9
+        MD	0x1021	MD_IMAGE	1	229	558	9	9
+        MD	0x1022	MD_IMAGE	1	393	421	94	213
+        MD	0x1023	MD_IMAGE	1	492	520	263	107
+        MD	0x1024	MD_IMAGE	1	0	341	383	15
+        MD	0x1025	MD_IMAGE	1	287	359	93	8
+        MD	0x1026	MD_IMAGE	1	566	283	52	46
+        MD	0x1027	MD_IMAGE	1	634	277	50	57
+        MD	0x102D	MD_IMAGE	1	569	333	51	56
+        MD	0x102E	MD_IMAGE	1	624	334	63	49
+        MD	0x102F	MD_IMAGE	1	571	391	50	46
+        MD	0x1030	MD_IMAGE	1	626	385	51	53
+        MD	0x1031	MD_IMAGE	1	286	534	16	30
+        MD	0x1032	MD_IMAGE	1	308	534	25	31
+        MD	0x1033	MD_IMAGE	1	335	535	18	31
+        MD	0x1034	MD_IMAGE	1	358	539	19	27
+        MD	0x1035	MD_IMAGE	1	360	164	80	69
+        MD	0x1036	MD_IMAGE	1	356	247	80	69
+        MD	0x1037	MD_IMAGE	1	440	279	109	39
+        MD	0x1038	MD_IMAGE	1	432	320	28	96
+        MD	0x103A	MD_IMAGE	1	466	320	50	96
+        MD	0x103B	MD_IMAGE	1	522	320	31	96
+        MD	0x1048	MD_IMAGE	1	608	444	51	44
+        MD	0x1049	MD_IMAGE	1	673	444	51	44
+        MD	0x104A	MD_IMAGE	1	739	443	20	46
+        MD	0x1051	MD_IMAGE	1	759	443	20	46
+        MD	0x104B	MD_IMAGE	1	791	443	20	46
+        MD	0x1052	MD_IMAGE	1	811	443	20	46
+        MD	0x104C	MD_IMAGE	1	838	439	32	119
+        MD	0x104D	MD_IMAGE	1	873	439	40	119
+        MD	0x104E	MD_IMAGE	1	916	439	32	119
+        MD	0x104F	MD_IMAGE	1	353	373	16	89
+        MD	0x1050	MD_IMAGE	1	370	373	20	89
+        MD	0x1078	MD_IMAGE	1	308	373	16	89
+        MD	0x1079	MD_IMAGE	1	325	373	20	89
+        MD	0x1098	MD_IMAGE	1	394	320	16	89
+        MD	0x1099	MD_IMAGE	1	411	320	20	89
+        MD	0x1053	MD_IMAGE	1	299	470	29	22
+        MD	0x106E	MD_IMAGE	1	330	466	20	31
+        MD	0x106F	MD_IMAGE	1	356	464	19	33
+        MD	0x1054	MD_IMAGE	1	3	642	161	310
+        MD	0x1055	MD_IMAGE	1	170	636	103	103
+        MD	0x1060	MD_IMAGE	1	279	635	108	107
+        MD	0x1061	MD_IMAGE	1	393	636	106	107
+        MD	0x1062	MD_IMAGE	1	503	635	45	45
+        MD	0x1063	MD_IMAGE	1	550	635	76	45
+        MD	0x1064	MD_IMAGE	1	503	682	45	76
+        MD	0x1065	MD_IMAGE	1	550	682	76	76
+        MD	0x1066	MD_IMAGE	1	503	761	45	45
+        MD	0x1067	MD_IMAGE	1	550	761	76	45
+        MD	0x1059	MD_IMAGE	1	792	565	110	58
+        MD	0x105A	MD_IMAGE	1	906	565	38	58
+        MD	0x105B	MD_IMAGE	1	492	436	84	84
+        MD	0x105C	MD_IMAGE	1	834	628	70	70
+        MD	0x105E	MD_IMAGE	1	834	703	70	38
+        MD	0x105D	MD_IMAGE	1	907	628	38	70
+        MD	0x105F	MD_IMAGE	1	907	703	38	38
+        MD	0x1068	MD_IMAGE	1	948	14	50	163
+        MD	0x1069	MD_IMAGE	1	948	180	74	156
+        MD	0x1070	MD_IMAGE	1	171	761	25	149
+        MD	0x1071	MD_IMAGE	1	196	753	185	37
+        MD	0x10B8	MD_IMAGE	1	196	753	113	37
+        MD	0x10B9	MD_IMAGE	1	309	753	40	37
+        MD	0x1072	MD_IMAGE	1	386	753	25	43
+        MD	0x1073	MD_IMAGE	1	802	746	187	141
+        MD	0x1074	MD_IMAGE	1	994	746	25	141
+        MD	0x1075	MD_IMAGE	1	802	892	187	25
+        MD	0x1076	MD_IMAGE	1	994	892	25	25
+        MD	0x1077	MD_IMAGE	1	946	341	78	78
+        MD	0x107A	MD_IMAGE	1	205	802	187	141
+        MD	0x107B	MD_IMAGE	1	204	948	188	25
+        MD	0x107C	MD_IMAGE	1	397	948	25	25
+        MD	0x107D	MD_IMAGE	1	397	802	25	141
+        MD	0x107E	MD_IMAGE	1	414	751	42	42
+        MD	0x107F	MD_IMAGE	1	458	752	42	42
+        MD	0x1080	MD_IMAGE	1	628	635	29	41
+        MD	0x108E	MD_IMAGE	1	660	635	20	41
+        MD	0x108F	MD_IMAGE	1	683	635	46	41
+        MD	0x1081	MD_IMAGE	1	643	684	12	12
+        MD	0x1082	MD_IMAGE	1	657	684	12	12
+        MD	0x1083	MD_IMAGE	1	671	684	12	12
+        MD	0x1084	MD_IMAGE	1	686	684	12	12
+        MD	0x1085	MD_IMAGE	1	701	684	12	12
+        MD	0x1086	MD_IMAGE	1	717	684	10	10
+        MD	0x1087	MD_IMAGE	1	629	701	102	32
+        MD	0x1088	MD_IMAGE	1	697	738	102	178
+        MD	0x1089	MD_IMAGE	1	955	632	63	45
+        MD	0x108A	MD_IMAGE	1	955	679	63	30
+        MD	0x108B	MD_IMAGE	1	955	711	63	30
+        MD	0x108C	MD_IMAGE	1	952	425	38	69
+        MD	0x10A8	MD_IMAGE	1	990	425	29	69
+        MD	0x108D	MD_IMAGE	1	952	496	38	69
+        MD	0x10A7	MD_IMAGE	1	990	496	29	69
+        MD	0x1090	MD_IMAGE	1	799	500	29	29
+        MD	0x1091	MD_IMAGE	1	431	811	68	95
+        MD	0x1092	MD_IMAGE	1	500	811	17	95
+        MD	0x10AF	MD_IMAGE	1	738	634	68	95
+        MD	0x10B0	MD_IMAGE	1	807	634	17	95
+        MD	0x1093	MD_IMAGE	1	519	811	68	95
+        MD	0x1094	MD_IMAGE	1	588	811	17	95
+        MD	0x1095	MD_IMAGE	1	606	811	68	95
+        MD	0x1096	MD_IMAGE	1	675	811	17	95
+        MD	0x1097	MD_IMAGE	1	162	977	211	47
+        MD	0x109C	MD_IMAGE	1	0	962	49	58
+        MD	0x109D	MD_IMAGE	1	52	964	49	44
+        MD	0x109E	MD_IMAGE	1	103	963	49	44
+        MD	0x109F	MD_IMAGE	1	427	910	154	67
+        MD	0x10A1	MD_IMAGE	1	742	931	89	89
+        MD	0x10A2	MD_IMAGE	1	838	930	90	92
+        MD	0x10A3	MD_IMAGE	1	932	931	90	92
+        MD	0x10AB	MD_IMAGE	1	377	977	48	47
+        MD	0x10AC	MD_IMAGE	1	426	977	48	47
+        MD	0x10AD	MD_IMAGE	1	475	977	48	47
+        MD	0x10AE	MD_IMAGE	1	526	977	48	47
+        MD	0x10A0	MD_IMAGE	1	1023	0	1	1
+        MD	0x1056	MD_IMAGE	1	328	604	22	24
+        MD	0x10B3	MD_IMAGE	1	354	599	35	35
+        MD	0x10BA	MD_IMAGE	1	878	10	51	44
+        MD	0x10BB	MD_IMAGE	1	877	64	51	44
+        MD	0x10BC	MD_IMAGE	1	606	990	22	21
+        MD	0x10BD	MD_IMAGE	1	641	987	29	28
+        MD	0x10BE	MD_IMAGE	1	693	929	28	28
+        MD	0x10D0	MD_IMAGE	1	690	966	33	33
+        MD	0x10D1	MD_IMAGE	1	645	738	33	33
+        MD	0x10D2	MD_IMAGE	1	645	777	33	33
+        MD	0x106B	MD_IMAGE	0	6	2	6	55
+        MD	0x106C	MD_IMAGE	0	17	3	61	57
+        MD	0x106D	MD_IMAGE	0	80	5	78	54
+        MD	0x10BF	MD_IMAGE	0	5	64	112	54
+        MD	0x10C0	MD_IMAGE	0	5	122	112	54
+        MD	0x10C1	MD_IMAGE	0	5	180	112	54
+        MD	0x10C2	MD_IMAGE	0	189	245	63	7
+        MD	0x10C3	MD_IMAGE	0	118	59	75	72
+        MD	0x10C4	MD_IMAGE	0	118	133	75	24
+        MD	0x10C5	MD_IMAGE	0	118	159	75	73
+        MD	0x10C6	MD_IMAGE	0	159	8	45	17
+        MD	0x10C7	MD_IMAGE	0	214	8	34	17
+        MD	0x10C8	MD_IMAGE	0	161	34	35	17
+        MD	0x10C9	MD_IMAGE	0	216	33	33	17
+        MD	0x10CA	MD_IMAGE	0	199	58	48	35
+        MD	0x10CB	MD_IMAGE	0	199	96	48	35
+        MD	0x10CC	MD_IMAGE	0	200	134	48	35
+        MD	0x10CD	MD_IMAGE	0	196	169	58	35
+        MD	0x10CE	MD_IMAGE	0	1	241	93	12
+        MD	0x10CF	MD_IMAGE	0	94	232	93	24
+    }
+
+////////////////////////////////////////////////////////////////////////////////
+// Frames...
+// <Frame> := FRAME ["desc"] { id <RC1> [<RC2> ...] <FM1> [<FM2> ...] }
+// <RCi>   := RC x1 y1 x2 y2
+// <FMi>   := FM module_or_frame_id ox oy [FLAGS hex_flags] [+Flags]
+// Flags   := HYPER_FM | FLIP_X | FLIP_Y | ROT_90 | FREE_ROT
+
+    FRAME "dailyobjective_background" // Index = 0, FModules = 252
+    {
+        0x22DF
+        RC	18	-637	1126	-96
+        FM	0x1012	18	-637
+        FM	0x1012	897	-637	+FLIP_X
+        FM	0x1013	247	-637
+        FM	0x1013	272	-637
+        FM	0x1013	297	-637
+        FM	0x1013	322	-637
+        FM	0x1013	347	-637
+        FM	0x1013	372	-637
+        FM	0x1013	397	-637
+        FM	0x1013	422	-637
+        FM	0x1013	447	-637
+        FM	0x1013	472	-637
+        FM	0x1013	497	-637
+        FM	0x1013	522	-637
+        FM	0x1013	547	-637
+        FM	0x1013	572	-637
+        FM	0x1013	597	-637
+        FM	0x1013	622	-637
+        FM	0x1013	647	-637
+        FM	0x1013	672	-637
+        FM	0x1013	697	-637
+        FM	0x1013	722	-637
+        FM	0x1013	747	-637
+        FM	0x1013	772	-637
+        FM	0x1013	797	-637
+        FM	0x1013	822	-637
+        FM	0x1013	847	-637
+        FM	0x1013	872	-637
+        FM	0x1013	247	-279	+FLIP_Y
+        FM	0x1013	272	-279	+FLIP_Y
+        FM	0x1013	297	-279	+FLIP_Y
+        FM	0x1013	322	-279	+FLIP_Y
+        FM	0x1013	347	-279	+FLIP_Y
+        FM	0x1013	372	-279	+FLIP_Y
+        FM	0x1013	397	-279	+FLIP_Y
+        FM	0x1013	422	-279	+FLIP_Y
+        FM	0x1013	447	-279	+FLIP_Y
+        FM	0x1013	472	-279	+FLIP_Y
+        FM	0x1013	497	-279	+FLIP_Y
+        FM	0x1013	522	-279	+FLIP_Y
+        FM	0x1013	547	-279	+FLIP_Y
+        FM	0x1013	572	-279	+FLIP_Y
+        FM	0x1013	597	-279	+FLIP_Y
+        FM	0x1013	622	-279	+FLIP_Y
+        FM	0x1013	647	-279	+FLIP_Y
+        FM	0x1013	672	-279	+FLIP_Y
+        FM	0x1013	697	-279	+FLIP_Y
+        FM	0x1013	722	-279	+FLIP_Y
+        FM	0x1013	747	-279	+FLIP_Y
+        FM	0x1013	772	-279	+FLIP_Y
+        FM	0x1013	797	-279	+FLIP_Y
+        FM	0x1013	822	-279	+FLIP_Y
+        FM	0x1013	847	-279	+FLIP_Y
+        FM	0x1013	872	-279	+FLIP_Y
+        FM	0x1018	27	-454
+        FM	0x1018	27	-429
+        FM	0x1018	27	-404
+        FM	0x1018	27	-379
+        FM	0x1018	27	-354
+        FM	0x1018	27	-329
+        FM	0x1018	897	-454	+FLIP_X
+        FM	0x1018	897	-429	+FLIP_X
+        FM	0x1018	897	-404	+FLIP_X
+        FM	0x1018	897	-379	+FLIP_X
+        FM	0x1018	897	-354	+FLIP_X
+        FM	0x1018	897	-329	+FLIP_X
+        FM	0x1012	18	-279	+FLIP_Y
+        FM	0x1012	897	-279	+FLIP_X	+FLIP_Y
+        FM	0x101C	247	-454
+        FM	0x101C	247	-429
+        FM	0x101C	247	-404
+        FM	0x101C	247	-379
+        FM	0x101C	247	-354
+        FM	0x101C	247	-329
+        FM	0x101C	272	-454
+        FM	0x101C	272	-429
+        FM	0x101C	272	-404
+        FM	0x101C	272	-379
+        FM	0x101C	272	-354
+        FM	0x101C	272	-329
+        FM	0x101C	297	-454
+        FM	0x101C	297	-429
+        FM	0x101C	297	-404
+        FM	0x101C	297	-379
+        FM	0x101C	297	-354
+        FM	0x101C	297	-329
+        FM	0x101C	322	-454
+        FM	0x101C	322	-429
+        FM	0x101C	322	-404
+        FM	0x101C	322	-379
+        FM	0x101C	322	-354
+        FM	0x101C	322	-329
+        FM	0x101C	347	-454
+        FM	0x101C	347	-429
+        FM	0x101C	347	-404
+        FM	0x101C	347	-379
+        FM	0x101C	347	-354
+        FM	0x101C	347	-329
+        FM	0x101C	372	-454
+        FM	0x101C	372	-429
+        FM	0x101C	372	-404
+        FM	0x101C	372	-379
+        FM	0x101C	372	-354
+        FM	0x101C	372	-329
+        FM	0x101C	397	-454
+        FM	0x101C	397	-429
+        FM	0x101C	397	-404
+        FM	0x101C	397	-379
+        FM	0x101C	397	-354
+        FM	0x101C	397	-329
+        FM	0x101C	422	-454
+        FM	0x101C	422	-429
+        FM	0x101C	422	-404
+        FM	0x101C	422	-379
+        FM	0x101C	422	-354
+        FM	0x101C	422	-329
+        FM	0x101C	447	-454
+        FM	0x101C	447	-429
+        FM	0x101C	447	-404
+        FM	0x101C	447	-379
+        FM	0x101C	447	-354
+        FM	0x101C	447	-329
+        FM	0x101C	472	-454
+        FM	0x101C	472	-429
+        FM	0x101C	472	-404
+        FM	0x101C	472	-379
+        FM	0x101C	472	-354
+        FM	0x101C	472	-329
+        FM	0x101C	497	-454
+        FM	0x101C	497	-429
+        FM	0x101C	497	-404
+        FM	0x101C	497	-379
+        FM	0x101C	497	-354
+        FM	0x101C	497	-329
+        FM	0x101C	522	-454
+        FM	0x101C	522	-429
+        FM	0x101C	522	-404
+        FM	0x101C	522	-379
+        FM	0x101C	522	-354
+        FM	0x101C	522	-329
+        FM	0x101C	547	-454
+        FM	0x101C	547	-429
+        FM	0x101C	547	-404
+        FM	0x101C	547	-379
+        FM	0x101C	547	-354
+        FM	0x101C	547	-329
+        FM	0x101C	572	-454
+        FM	0x101C	572	-429
+        FM	0x101C	572	-404
+        FM	0x101C	572	-379
+        FM	0x101C	572	-354
+        FM	0x101C	572	-329
+        FM	0x101C	597	-454
+        FM	0x101C	597	-429
+        FM	0x101C	597	-404
+        FM	0x101C	597	-379
+        FM	0x101C	597	-354
+        FM	0x101C	597	-329
+        FM	0x101C	622	-454
+        FM	0x101C	622	-429
+        FM	0x101C	622	-404
+        FM	0x101C	622	-379
+        FM	0x101C	622	-354
+        FM	0x101C	622	-329
+        FM	0x101C	647	-454
+        FM	0x101C	647	-429
+        FM	0x101C	647	-404
+        FM	0x101C	647	-379
+        FM	0x101C	647	-354
+        FM	0x101C	647	-329
+        FM	0x101C	672	-454
+        FM	0x101C	672	-429
+        FM	0x101C	672	-404
+        FM	0x101C	672	-379
+        FM	0x101C	672	-354
+        FM	0x101C	672	-329
+        FM	0x101C	697	-454
+        FM	0x101C	697	-429
+        FM	0x101C	697	-404
+        FM	0x101C	697	-379
+        FM	0x101C	697	-354
+        FM	0x101C	697	-329
+        FM	0x101C	722	-454
+        FM	0x101C	722	-429
+        FM	0x101C	722	-404
+        FM	0x101C	722	-379
+        FM	0x101C	722	-354
+        FM	0x101C	722	-329
+        FM	0x101C	747	-454
+        FM	0x101C	747	-429
+        FM	0x101C	747	-404
+        FM	0x101C	747	-379
+        FM	0x101C	747	-354
+        FM	0x101C	747	-329
+        FM	0x101C	772	-454
+        FM	0x101C	772	-429
+        FM	0x101C	772	-404
+        FM	0x101C	772	-379
+        FM	0x101C	772	-354
+        FM	0x101C	772	-329
+        FM	0x101C	797	-454
+        FM	0x101C	797	-429
+        FM	0x101C	797	-404
+        FM	0x101C	797	-379
+        FM	0x101C	797	-354
+        FM	0x101C	797	-329
+        FM	0x101C	822	-454
+        FM	0x101C	822	-429
+        FM	0x101C	822	-404
+        FM	0x101C	822	-379
+        FM	0x101C	822	-354
+        FM	0x101C	822	-329
+        FM	0x101C	847	-454
+        FM	0x101C	847	-429
+        FM	0x101C	847	-404
+        FM	0x101C	847	-379
+        FM	0x101C	847	-354
+        FM	0x101C	847	-329
+        FM	0x101C	872	-454
+        FM	0x101C	872	-429
+        FM	0x101C	872	-404
+        FM	0x101C	872	-379
+        FM	0x101C	872	-354
+        FM	0x101C	872	-329
+        FM	0x1018	27	-304
+        FM	0x1018	897	-304	+FLIP_X
+        FM	0x101C	247	-304
+        FM	0x101C	272	-304
+        FM	0x101C	297	-304
+        FM	0x101C	322	-304
+        FM	0x101C	347	-304
+        FM	0x101C	372	-304
+        FM	0x101C	397	-304
+        FM	0x101C	422	-304
+        FM	0x101C	447	-304
+        FM	0x101C	472	-304
+        FM	0x101C	497	-304
+        FM	0x101C	522	-304
+        FM	0x101C	547	-304
+        FM	0x101C	572	-304
+        FM	0x101C	597	-304
+        FM	0x101C	622	-304
+        FM	0x101C	647	-304
+        FM	0x101C	672	-304
+        FM	0x101C	697	-304
+        FM	0x101C	722	-304
+        FM	0x101C	747	-304
+        FM	0x101C	772	-304
+        FM	0x101C	797	-304
+        FM	0x101C	822	-304
+        FM	0x101C	847	-304
+        FM	0x101C	872	-304
+    }
+
+    FRAME "dailyobjective_background_decoration" // Index = 1, FModules = 30
+    {
+        0x22E0
+        RC	38	-613	1108	-456
+        FM	0x1070	38	-605
+        FM	0x1070	1083	-605	+FLIP_X
+        FM	0x1071	63	-613
+        FM	0x1071	898	-613	+FLIP_X
+        FM	0x1072	248	-613
+        FM	0x1072	273	-613
+        FM	0x1072	298	-613
+        FM	0x1072	323	-613
+        FM	0x1072	348	-613
+        FM	0x1072	373	-613
+        FM	0x1072	398	-613
+        FM	0x1072	423	-613
+        FM	0x1072	448	-613
+        FM	0x1072	473	-613
+        FM	0x1072	498	-613
+        FM	0x1072	523	-613
+        FM	0x1072	548	-613
+        FM	0x1072	573	-613
+        FM	0x1072	598	-613
+        FM	0x1072	623	-613
+        FM	0x1072	648	-613
+        FM	0x1072	673	-613
+        FM	0x1072	698	-613
+        FM	0x1072	723	-613
+        FM	0x1072	748	-613
+        FM	0x1072	773	-613
+        FM	0x1072	798	-613
+        FM	0x1072	823	-613
+        FM	0x1072	848	-613
+        FM	0x1072	873	-613
+    }
+
+    FRAME "dailyobjective_background_decoration1" // Index = 2, FModules = 18
+    {
+        0x20B9
+        RC	781	-569	1081	-124
+        FM	0x107B	893	-415	+FLIP_X
+        FM	0x107B	893	-390	+FLIP_X
+        FM	0x107B	893	-365	+FLIP_X
+        FM	0x107B	893	-340	+FLIP_X
+        FM	0x107B	893	-315	+FLIP_X
+        FM	0x107B	893	-290	+FLIP_X
+        FM	0x107A	893	-572	+FLIP_X
+        FM	0x107A	893	-265	+FLIP_X	+FLIP_Y
+        FM	0x107B	781	-415
+        FM	0x107B	893	-440	+FLIP_X
+        FM	0x107B	781	-440
+        FM	0x107B	781	-390
+        FM	0x107B	781	-365
+        FM	0x107B	781	-340
+        FM	0x107B	781	-315
+        FM	0x107B	781	-290
+        FM	0x107A	782	-572
+        FM	0x107A	782	-265	+FLIP_Y
+    }
+
+    FRAME "dailyobjective_background_decoration2" // Index = 3, FModules = 112
+    {
+        0x20BA
+        RC	67	-523	782	-124
+        FM	0x1073	67	-523
+        FM	0x1073	595	-523	+FLIP_X
+        FM	0x1073	67	-265	+FLIP_Y
+        FM	0x1073	595	-265	+FLIP_X	+FLIP_Y
+        FM	0x1075	67	-340
+        FM	0x1075	67	-315
+        FM	0x1075	67	-290
+        FM	0x1075	595	-340	+FLIP_X
+        FM	0x1075	595	-315	+FLIP_X
+        FM	0x1075	595	-290	+FLIP_X
+        FM	0x1074	254	-523
+        FM	0x1074	279	-523
+        FM	0x1074	304	-523
+        FM	0x1074	329	-523
+        FM	0x1074	354	-523
+        FM	0x1074	379	-523
+        FM	0x1074	404	-523
+        FM	0x1074	429	-523
+        FM	0x1074	454	-523
+        FM	0x1074	479	-523
+        FM	0x1074	504	-523
+        FM	0x1074	254	-265	+FLIP_Y
+        FM	0x1074	279	-265	+FLIP_Y
+        FM	0x1074	304	-265	+FLIP_Y
+        FM	0x1074	329	-265	+FLIP_Y
+        FM	0x1074	354	-265	+FLIP_Y
+        FM	0x1074	379	-265	+FLIP_Y
+        FM	0x1074	404	-265	+FLIP_Y
+        FM	0x1074	429	-265	+FLIP_Y
+        FM	0x1074	454	-265	+FLIP_Y
+        FM	0x1074	479	-265	+FLIP_Y
+        FM	0x1074	504	-265	+FLIP_Y
+        FM	0x1076	254	-340
+        FM	0x1076	279	-340
+        FM	0x1076	304	-340
+        FM	0x1076	329	-340
+        FM	0x1076	354	-340
+        FM	0x1076	379	-340
+        FM	0x1076	404	-340
+        FM	0x1076	429	-340
+        FM	0x1076	454	-340
+        FM	0x1076	479	-340
+        FM	0x1076	504	-340
+        FM	0x1075	67	-365
+        FM	0x1075	595	-365	+FLIP_X
+        FM	0x1076	254	-365
+        FM	0x1076	279	-365
+        FM	0x1076	304	-365
+        FM	0x1076	329	-365
+        FM	0x1076	354	-365
+        FM	0x1076	379	-365
+        FM	0x1076	404	-365
+        FM	0x1076	429	-365
+        FM	0x1076	454	-365
+        FM	0x1076	479	-365
+        FM	0x1076	504	-365
+        FM	0x1075	67	-390
+        FM	0x1075	595	-390	+FLIP_X
+        FM	0x1076	254	-390
+        FM	0x1076	279	-390
+        FM	0x1076	304	-390
+        FM	0x1076	329	-390
+        FM	0x1076	354	-390
+        FM	0x1076	379	-390
+        FM	0x1076	404	-390
+        FM	0x1076	429	-390
+        FM	0x1076	454	-390
+        FM	0x1076	479	-390
+        FM	0x1076	504	-390
+        FM	0x1076	254	-315
+        FM	0x1076	279	-315
+        FM	0x1076	304	-315
+        FM	0x1076	329	-315
+        FM	0x1076	354	-315
+        FM	0x1076	379	-315
+        FM	0x1076	404	-315
+        FM	0x1076	429	-315
+        FM	0x1076	454	-315
+        FM	0x1076	479	-315
+        FM	0x1076	504	-315
+        FM	0x1076	254	-290
+        FM	0x1076	279	-290
+        FM	0x1076	304	-290
+        FM	0x1076	329	-290
+        FM	0x1076	354	-290
+        FM	0x1076	379	-290
+        FM	0x1076	404	-290
+        FM	0x1076	429	-290
+        FM	0x1076	454	-290
+        FM	0x1076	479	-290
+        FM	0x1076	504	-290
+        FM	0x1074	529	-523
+        FM	0x1074	529	-265	+FLIP_Y
+        FM	0x1076	529	-340
+        FM	0x1076	529	-365
+        FM	0x1076	529	-390
+        FM	0x1076	529	-315
+        FM	0x1076	529	-290
+        FM	0x1074	554	-523
+        FM	0x1074	554	-265	+FLIP_Y
+        FM	0x1076	554	-340
+        FM	0x1076	554	-365
+        FM	0x1076	554	-390
+        FM	0x1076	554	-315
+        FM	0x1076	554	-290
+        FM	0x1074	579	-523
+        FM	0x1074	579	-265	+FLIP_Y
+        FM	0x1076	579	-340
+        FM	0x1076	579	-365
+        FM	0x1076	579	-390
+        FM	0x1076	579	-315
+        FM	0x1076	579	-290
+    }
+
+    FRAME "dailyobjective_background_decoration3" // Index = 4, FModules = 2
+    {
+        0x20BB
+        RC	305	-636	831	-529
+        FM	0x1023	305	-636
+        FM	0x1023	568	-636	+FLIP_X
+    }
+
+    FRAME "dailyobjective_text_tip" // Index = 5, FModules = 0
+    {
+        0x2011
+        RC	113	-553	436	-524
+    }
+
+    FRAME "dailyobjective_list_area" // Index = 6, FModules = 0
+    {
+        0x200F
+        RC	93	-509	761	-146
+    }
+
+    FRAME "dailyobjective_button_system1" // Index = 7, FModules = 40
+    {
+        0x2000
+        RC	100	-507	751	-414
+        FM	0x1078	155	-504
+        FM	0x1078	171	-504
+        FM	0x1078	187	-504
+        FM	0x1078	203	-504
+        FM	0x1078	219	-504
+        FM	0x1078	235	-504
+        FM	0x1078	251	-504
+        FM	0x1078	267	-504
+        FM	0x1078	283	-504
+        FM	0x1078	299	-504
+        FM	0x1078	315	-504
+        FM	0x1078	331	-504
+        FM	0x1078	347	-504
+        FM	0x1078	363	-504
+        FM	0x1078	379	-504
+        FM	0x1078	395	-504
+        FM	0x1078	411	-504
+        FM	0x1078	427	-504
+        FM	0x1078	443	-504
+        FM	0x1078	459	-504
+        FM	0x1078	475	-504
+        FM	0x1078	491	-504
+        FM	0x1078	507	-504
+        FM	0x1078	523	-504
+        FM	0x1078	539	-504
+        FM	0x1078	555	-504
+        FM	0x1078	571	-504
+        FM	0x1078	587	-504
+        FM	0x1078	603	-504
+        FM	0x1078	619	-504
+        FM	0x1078	635	-504
+        FM	0x1078	651	-504
+        FM	0x1078	667	-504
+        FM	0x1078	683	-504
+        FM	0x1078	699	-504
+        FM	0x1078	715	-504
+        FM	0x1079	731	-504
+        FM	0x1014	111	-495
+        FM	0x1007	100	-507
+        FM	0x106B	464	-487
+    }
+
+    FRAME "dailyobjective_icon_system1" // Index = 8, FModules = 0
+    {
+        0x2001
+        RC	111	-494	180	-425
+    }
+
+    FRAME "dailyobjective_icon_lock1" // Index = 9, FModules = 1
+    {
+        0x2010
+        RC	111	-494	180	-425
+        FM	0x101D	118	-494
+    }
+
+    FRAME "dailyobjective_text_systemname1" // Index = 10, FModules = 0
+    {
+        0x2002
+        RC	192	-496	422	-462
+    }
+
+    FRAME "dailyobjective_text_completetask_activity1" // Index = 11, FModules = 0
+    {
+        0x2003
+        RC	192	-460	422	-426
+    }
+
+    FRAME "dailyobjective_icon_complete" // Index = 12, FModules = 0
+    {
+        0x2040
+        RC	372	-513	510	-409
+    }
+
+    FRAME "dailyobjective_icon_go" // Index = 13, FModules = 0
+    {
+        0x2041
+        RC	392	-500	495	-428
+    }
+
+    FRAME "dailyobjective_text_rewardtip" // Index = 14, FModules = 0
+    {
+        0x2004
+        RC	478	-491	730	-463
+    }
+
+    FRAME "dailyobjective_icon_reward1" // Index = 15, FModules = 0
+    {
+        0x2005
+        RC	475	-459	501	-433
+    }
+
+    FRAME "dailyobjective_number_reward1" // Index = 16, FModules = 0
+    {
+        0x2006
+        RC	506	-459	556	-433
+    }
+
+    FRAME "dailyobjective_icon_reward2" // Index = 17, FModules = 0
+    {
+        0x2007
+        RC	565	-459	591	-433
+    }
+
+    FRAME "dailyobjective_number_reward2" // Index = 18, FModules = 0
+    {
+        0x2008
+        RC	596	-459	646	-433
+    }
+
+    FRAME "dailyobjective_icon_reward3" // Index = 19, FModules = 0
+    {
+        0x2009
+        RC	655	-459	681	-433
+    }
+
+    FRAME "dailyobjective_number_reward3" // Index = 20, FModules = 0
+    {
+        0x200A
+        RC	686	-459	736	-433
+    }
+
+    FRAME "dailyobjective_icon_reward4" // Index = 21, FModules = 0
+    {
+        0x200D
+        RC	510	-459	536	-433
+    }
+
+    FRAME "dailyobjective_number_reward4" // Index = 22, FModules = 0
+    {
+        0x200E
+        RC	541	-459	591	-433
+    }
+
+    FRAME "dailyobjective_icon_reward5" // Index = 23, FModules = 0
+    {
+        0x200B
+        RC	620	-459	646	-433
+    }
+
+    FRAME "dailyobjective_number_reward5" // Index = 24, FModules = 0
+    {
+        0x200C
+        RC	651	-459	701	-433
+    }
+
+    FRAME "dailyobjective_frame_activity" // Index = 25, FModules = 22
+    {
+        0x2015
+        RC	885	-536	978	-248
+        FM	0x10CF	885	-536
+        FM	0x10CE	885	-512
+        FM	0x10CE	885	-500
+        FM	0x10CE	885	-488
+        FM	0x10CE	885	-476
+        FM	0x10CE	885	-464
+        FM	0x10CE	885	-452
+        FM	0x10CE	885	-440
+        FM	0x10CE	885	-428
+        FM	0x10CE	885	-416
+        FM	0x10CE	885	-404
+        FM	0x10CE	885	-392
+        FM	0x10CE	885	-380
+        FM	0x10CE	885	-368
+        FM	0x10CE	885	-356
+        FM	0x10CE	885	-344
+        FM	0x10CE	885	-332
+        FM	0x10CE	885	-320
+        FM	0x10CE	885	-308
+        FM	0x10CE	885	-296
+        FM	0x10CE	885	-284
+        FM	0x10CF	885	-272	+FLIP_Y
+    }
+
+    FRAME "dailyobjective_bar_activity" // Index = 26, FModules = 8
+    {
+        0x2019
+        RC	903	-524	962	-259
+        FM	0x10C5	895	-324
+        FM	0x10C4	895	-348
+        FM	0x10C4	895	-372
+        FM	0x10C4	895	-396
+        FM	0x10C4	895	-420
+        FM	0x10C4	895	-444
+        FM	0x10C4	895	-460
+        FM	0x10C3	895	-532
+    }
+
+    FRAME "dailyobjective_decoration_activity" // Index = 27, FModules = 7
+    {
+        0x2016
+        RC	871	-564	993	-202
+        FM	0x106D	894	-564
+        FM	0x106C	932	-259
+        FM	0x106C	871	-259	+FLIP_X
+        FM	0x10C2	900	-316
+        FM	0x10C2	900	-369
+        FM	0x10C2	900	-422
+        FM	0x10C2	900	-475
+    }
+
+    FRAME "dailyobjective_number_20" // Index = 28, FModules = 0
+    {
+        0x202E
+        RC	907	-312	955	-277
+    }
+
+    FRAME "dailyobjective_number_20_reached" // Index = 29, FModules = 1
+    {
+        0x202F
+        RC	907	-312	955	-277
+        FM	0x10CA	907	-312
+    }
+
+    FRAME "dailyobjective_number_40" // Index = 30, FModules = 1
+    {
+        0x2030
+        RC	908	-365	956	-330
+        FM	0x10C8	914	-356
+    }
+
+    FRAME "dailyobjective_number_40_reached" // Index = 31, FModules = 1
+    {
+        0x2032
+        RC	908	-365	956	-330
+        FM	0x10CB	908	-365
+    }
+
+    FRAME "dailyobjective_number_60" // Index = 32, FModules = 1
+    {
+        0x2031
+        RC	908	-417	956	-382
+        FM	0x10C7	914	-408
+    }
+
+    FRAME "dailyobjective_number_60_reached" // Index = 33, FModules = 1
+    {
+        0x2033
+        RC	908	-417	956	-382
+        FM	0x10CC	908	-417
+    }
+
+    FRAME "dailyobjective_number_80" // Index = 34, FModules = 1
+    {
+        0x2034
+        RC	902	-471	960	-436
+        FM	0x10C6	908	-462
+    }
+
+    FRAME "dailyobjective_number_80_reached" // Index = 35, FModules = 1
+    {
+        0x2035
+        RC	902	-471	960	-436
+        FM	0x10CD	902	-471
+    }
+
+    FRAME "dailyobjective_number_100" // Index = 36, FModules = 1
+    {
+        0x2042
+        RC	902	-521	960	-486
+        FM	0x10C6	908	-512
+    }
+
+    FRAME "dailyobjective_number_100_reached" // Index = 37, FModules = 1
+    {
+        0x2043
+        RC	902	-521	960	-486
+        FM	0x10CD	902	-521
+    }
+
+    FRAME "dailyobjective_text_activity" // Index = 38, FModules = 0
+    {
+        0x2017
+        RC	903	-257	962	-229
+    }
+
+    FRAME "dailyobjective_number_activity" // Index = 39, FModules = 0
+    {
+        0x2018
+        RC	905	-229	961	-208
+    }
+
+    FRAME "dailyobjective_mark_reward20" // Index = 40, FModules = 1
+    {
+        0x201A
+        RC	791	-340	903	-286
+        FM	0x10BF	791	-340
+    }
+
+    FRAME "dailyobjective_mark_reward20_canget" // Index = 41, FModules = 1
+    {
+        0x201B
+        RC	791	-340	903	-286
+        FM	0x10C0	791	-340
+    }
+
+    FRAME "dailyobjective_mark_reward20_getted" // Index = 42, FModules = 1
+    {
+        0x201C
+        RC	791	-340	903	-286
+        FM	0x10C1	791	-340
+    }
+
+    FRAME "dailyobjective_icon_reward20" // Index = 43, FModules = 0
+    {
+        0x2026
+        RC	792	-327	816	-303
+    }
+
+    FRAME "dailyobjective_number_reward20" // Index = 44, FModules = 0
+    {
+        0x2027
+        RC	818	-328	861	-302
+    }
+
+    FRAME "dailyobjective_mark_reward40" // Index = 45, FModules = 1
+    {
+        0x201D
+        RC	959	-394	1071	-340
+        FM	0x10BF	959	-394	+FLIP_X
+    }
+
+    FRAME "dailyobjective_mark_reward40_canget" // Index = 46, FModules = 1
+    {
+        0x2020
+        RC	959	-394	1071	-340
+        FM	0x10C0	959	-394	+FLIP_X
+    }
+
+    FRAME "dailyobjective_mark_reward40_getted" // Index = 47, FModules = 1
+    {
+        0x2021
+        RC	959	-394	1071	-340
+        FM	0x10C1	959	-394	+FLIP_X
+    }
+
+    FRAME "dailyobjective_icon_reward40" // Index = 48, FModules = 0
+    {
+        0x202A
+        RC	1000	-380	1024	-356
+    }
+
+    FRAME "dailyobjective_number_reward40" // Index = 49, FModules = 0
+    {
+        0x202B
+        RC	1026	-381	1069	-355
+    }
+
+    FRAME "dailyobjective_mark_reward60" // Index = 50, FModules = 1
+    {
+        0x2022
+        RC	791	-446	903	-392
+        FM	0x10BF	791	-446
+    }
+
+    FRAME "dailyobjective_mark_reward60_canget" // Index = 51, FModules = 1
+    {
+        0x201E
+        RC	791	-446	903	-392
+        FM	0x10C0	791	-446
+    }
+
+    FRAME "dailyobjective_mark_reward60_getted" // Index = 52, FModules = 1
+    {
+        0x2023
+        RC	791	-446	903	-392
+        FM	0x10C1	791	-446
+    }
+
+    FRAME "dailyobjective_icon_reward60" // Index = 53, FModules = 0
+    {
+        0x2028
+        RC	792	-433	816	-409
+    }
+
+    FRAME "dailyobjective_number_reward60" // Index = 54, FModules = 0
+    {
+        0x2029
+        RC	818	-434	861	-408
+    }
+
+    FRAME "dailyobjective_mark_reward80" // Index = 55, FModules = 1
+    {
+        0x201F
+        RC	959	-500	1071	-446
+        FM	0x10BF	959	-500	+FLIP_X
+    }
+
+    FRAME "dailyobjective_mark_reward80_canget" // Index = 56, FModules = 1
+    {
+        0x2024
+        RC	959	-500	1071	-446
+        FM	0x10C0	959	-500	+FLIP_X
+    }
+
+    FRAME "dailyobjective_mark_reward80_getted" // Index = 57, FModules = 1
+    {
+        0x2025
+        RC	959	-500	1071	-446
+        FM	0x10C1	959	-500	+FLIP_X
+    }
+
+    FRAME "dailyobjective_icon_reward80" // Index = 58, FModules = 0
+    {
+        0x202C
+        RC	1000	-486	1024	-462
+    }
+
+    FRAME "dailyobjective_number_reward80" // Index = 59, FModules = 0
+    {
+        0x202D
+        RC	1026	-487	1069	-461
+    }
+
+    FRAME "dailyobjective_mark_reward100" // Index = 60, FModules = 1
+    {
+        0x2044
+        RC	791	-546	903	-492
+        FM	0x10BF	791	-546
+    }
+
+    FRAME "dailyobjective_mark_reward100_canget" // Index = 61, FModules = 1
+    {
+        0x2045
+        RC	791	-546	903	-492
+        FM	0x10C0	791	-546
+    }
+
+    FRAME "dailyobjective_mark_reward100_getted" // Index = 62, FModules = 1
+    {
+        0x2046
+        RC	791	-546	903	-492
+        FM	0x10C1	791	-546
+    }
+
+    FRAME "dailyobjective_icon_reward100" // Index = 63, FModules = 0
+    {
+        0x2047
+        RC	792	-533	816	-509
+    }
+
+    FRAME "dailyobjective_number_reward100" // Index = 64, FModules = 0
+    {
+        0x2048
+        RC	818	-534	861	-508
+    }
+
+    FRAME "dailyobjective_text_title" // Index = 65, FModules = 0
+    {
+        0x22E2
+        RC	490	-600	647	-547
+    }
+
+    FRAME "dailyobjective_button_getreward" // Index = 66, FModules = 4
+    {
+        0x2012
+        RC	845	-205	1017	-135
+        FM	0x1010	845	-205
+        FM	0x1010	951	-205	+FLIP_X
+        FM	0x1057	911	-205
+        FM	0x1057	931	-205
+    }
+
+    FRAME "dailyobjective_button_getreward_clicked" // Index = 67, FModules = 4
+    {
+        0x2013
+        RC	845	-205	1017	-135
+        FM	0x1011	845	-205
+        FM	0x1011	951	-205	+FLIP_X
+        FM	0x1058	911	-205
+        FM	0x1058	931	-205
+    }
+
+    FRAME "dailyobjective_text_getreward" // Index = 68, FModules = 0
+    {
+        0x2014
+        RC	857	-194	1005	-147
+    }
+
+    FRAME "dailyobjective_close" // Index = 69, FModules = 1
+    {
+        0x22EE
+        RC	1040	-640	1127	-554
+        FM	0x100E	1040	-640
+    }
+
+    FRAME "dailyobjective_close_clicked" // Index = 70, FModules = 1
+    {
+        0x22EF
+        RC	1040	-640	1127	-554
+        FM	0x100F	1040	-640
+    }
+
+    FRAME "dailyobjective_icon_diamond_inall" // Index = 71, FModules = 1
+    {
+        0x22F0
+        RC	340	-73	362	-50
+        FM	0x102C	340	-73
+    }
+
+    FRAME "dailyobjective_number_diamond_inall" // Index = 72, FModules = 0
+    {
+        0x22F1
+        RC	366	-75	457	-52
+    }
+
+    FRAME "dailyobjective_icon_coin_inall" // Index = 73, FModules = 1
+    {
+        0x22F2
+        RC	342	-43	362	-19
+        FM	0x102A	342	-43
+    }
+
+    FRAME "dailyobjective_number_coin_inall" // Index = 74, FModules = 0
+    {
+        0x22F3
+        RC	366	-45	457	-21
+    }
+
+    FRAME "dailyobjective_icon_diamond" // Index = 75, FModules = 1
+    {
+        0x2036
+        RC	0	0	22	23
+        FM	0x102C	0	0
+    }
+
+    FRAME "dailyobjective_icon_coin" // Index = 76, FModules = 1
+    {
+        0x2037
+        RC	0	0	20	24
+        FM	0x102A	0	0
+    }
+
+    FRAME "dailyobjective_icon_stamina" // Index = 77, FModules = 1
+    {
+        0x2039
+        RC	0	0	32	25
+        FM	0x102B	0	0
+    }
+
+    FRAME "dailyobjective_icon_exp" // Index = 78, FModules = 1
+    {
+        0x203A
+        RC	0	0	29	22
+        FM	0x1053	0	0
+    }
+
+    FRAME "dailyobjective_icon_exploit" // Index = 79, FModules = 1
+    {
+        0x2038
+        RC	0	0	24	29
+        FM	0x10B7	0	0
+    }
+
+    FRAME "dailyobjective_icon_reputation" // Index = 80, FModules = 1
+    {
+        0x203B
+        RC	0	0	22	24
+        FM	0x1056	0	0
+    }
+
+    FRAME "dailyobjective_icon_medal" // Index = 81, FModules = 1
+    {
+        0x203C
+        RC	0	0	28	28
+        FM	0x10BE	0	0
+    }
+
+    FRAME "dailyobjective_icon_attribute" // Index = 82, FModules = 1
+    {
+        0x203D
+        RC	0	0	33	33
+        FM	0x10D1	0	0
+    }
+
+    FRAME "dailyobjective_icon_card" // Index = 83, FModules = 1
+    {
+        0x203E
+        RC	0	0	33	33
+        FM	0x10D2	0	0
+    }
+
+    FRAME "dailyobjective_icon_armory" // Index = 84, FModules = 1
+    {
+        0x203F
+        RC	0	0	33	33
+        FM	0x10D0	0	0
+    }
+
+    SPRITE_END
+
+} // SPRITE
+////////////////////////////////////////////////////////////////////////////////

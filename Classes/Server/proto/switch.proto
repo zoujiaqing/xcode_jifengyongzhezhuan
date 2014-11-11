@@ -1,0 +1,562 @@
+/*
+1. 包格式:
+     total_len(u32) + header_len(u32) + msghead + msgbody
+	|   整包长度   |  包头长度（包括本身） | 包头 | 包体 |
+
+2. 使用规则：
+    (1) 包头格式绝对不能改；
+	(2) 字段只能加，不能减；
+	(3) 增加的字段只能是optional类型，且必须给出default值，最好还有相关说明；
+	(4) 不能改变原来字段的序号。
+
+3. 命名规则：
+	XXXX_in/_out：以大写DB开头，Online发来的请求以_in结尾，sw应答包以_out结尾，
+					中间的XXXX代表对应的功能，比如reg_server_in/_out。
+*/
+enum SW_OPT_T {
+	SW_PLAYER_LOGIN			= 1;
+	SW_PLAYER_LOGOUT		= 2;
+}
+
+import "cs_core.proto";
+
+enum MAIL_STATUS_T {
+    MAIL_STATUS_NEW                     = 0;    // 新增
+    MAIL_STATUS_UNREAD                  = 1;    // 未阅
+    MAIL_STATUS_READ                    = 2;    // 已阅
+	MAIL_STATUS_GOT						= 3;	// 已领取
+    MAIL_STATUS_DEL                     = 4;    // 已删除   
+}
+
+// 和SW通讯的头部
+/* 包头 */
+message sw_msgheader_t {
+    required string msg_name		  	= 1;    // 协议名
+    optional uint32 ret 				= 2;
+	optional uint64 gateway_session     = 3;
+}
+
+message sw_errorcode_out {
+
+}
+/* 包体 (只有 _out/_in 的 才是用于通信的, 否则就是在 _in/_out 里被用到的结构体) */
+
+
+// 邮件基本信息
+message mail_info_t {
+    required uint64 mail_id             = 1;    // 邮件id
+    required uint32 mail_status         = 2;    // 邮件状态(0:新增 1:未阅 2:已阅 3:已删除(删除状态是真的删除还是置标志位再讨论))
+}
+
+//------------------协议部分---------------------------//
+
+// server(online) 启动上报 
+message reg_server_in {
+    required uint32 server_id 		= 1; 	/* 服务器编号 */
+    required uint32 listen_port 	= 2;	/*服务器的监听端口 服务器的IP已经在fdsession中有了*/
+}
+
+//拉取online 共用基本信息
+message reg_server_out {
+	optional bytes	global_db_ip	= 1;
+	optional uint32 global_db_port	= 2;
+}
+
+// 上报成功后,假如online此时已经有玩家连线(online断线后重连sw)需要同步玩家数据 不需要回包
+message online_notify_sync_player_info_in {
+    repeated player_basic_info_t player_list = 1; // 如果是重新连接到sw,则需上报已在online上的玩家信息
+}
+
+// 玩家登录/下线时上报 不需要回包
+message online_notify_report_player_onoff_in {
+    required player_basic_info_t basic 	= 1;
+    required uint32 login_or_logout 	= 2;//1上线 2下线
+}
+
+// 踢人下线通知包(一个uid + channel_id 只能同时有一个reg_time在线)
+message sw_notify_kick_player_off_out {
+    required player_basic_info_t basic = 1;
+}
+
+// --------------------邮件协议-------------------//
+message add_new_mail_in{
+	required bytes title               = 1;    // 邮件名称
+	required bytes from                = 2;    // 发件人
+	required bytes content             = 3;    // 内容
+	repeated sw_attach_item items      = 4;    // 附件
+    optional uint32 dead_tm            = 5[default = 0];    //有效期 0为永久
+}
+
+message add_new_mail_out{
+	required int32 mail_id		   = 1;    //邮件编号
+}
+
+message userinfo{
+	required uint32 userid          = 1;    // 米米号
+	required uint32 reg_time        = 2;    // 玩家注册时间
+	required uint32 channel_id      = 3;    // 玩家渠道号
+	required uint32 zone_id			= 4;	// 服务器
+	required uint32 mail_id			= 5;	// 邮件编号
+	required uint32 hasattach		= 6;	// 是否有附件
+
+}
+
+message add_new_mail_rel_in{
+	repeated userinfo info			= 1;	//邮件用户信息
+}
+
+message add_new_mail_rel_out{
+}
+
+message mail_rel_flush_in{			//邮件关系到数据库
+
+}
+
+message mail_rel_flush_out{			//邮件关系到数据库
+
+}
+
+message serial_online_rsp{
+	required player_basic_info_t basic = 1;    //基础信息
+	required uint32 zone_id			   = 2;	   //服务器号
+	required bytes msg_name	   		   = 3;    //消息名
+	required bytes msg_body        	   = 4;    //消息体
+}
+
+
+message sw_attach_item{
+	required uint32 id					= 1;	//物品编号
+	required uint32 num					= 2;	//物品数目
+}
+
+message sw_style{
+	required uint32 red					= 1;	//颜色
+	required uint32 green				= 2;	//绿色
+	required uint32 blue				= 3;	//蓝色
+	required bytes text					= 4;	//文本
+	optional uint32 fontsize			= 5;    //字体大小
+}
+
+
+message sw_announcement{
+	repeated sw_style  context          = 1;	//内容
+	optional uint32 from				= 2;	//起止时间
+	optional uint32 to 				    = 3;	//截止时间
+	optional uint32 count				= 4;	//次数
+	required uint32 ann_id				= 5;	//id
+	optional bytes title				= 6;    //标题
+}
+
+message sw_login_announcement_in{
+	required uint32 channelid			= 1;	//渠道号
+	required sw_announcement note		= 2;	//公告
+}
+
+message sw_login_announcement_kefu_out{
+
+}
+
+message sw_announcement_in{
+	required uint32 zone_id            	= 1;	//服务器
+	repeated sw_announcement note		= 2;	//公告
+}
+
+message sw_announcement_out{
+	repeated sw_announcement note		= 2;	//公告
+}
+
+
+message sw_announcement_kefu_out{
+
+}
+
+message sw_ma_advertising_in{
+	required uint32 zone_id				= 1;	//服务器
+	repeated sw_style content			= 2;    //内容
+	required uint32 opt                 = 3;    //优先级
+}
+
+message sw_ma_advertising_kefu_out{
+
+}
+
+message sw_ma_advertising_out{
+	repeated sw_style content			= 1;    //内容
+	required uint32 opt                 = 2;    //优先级
+}
+
+// ------------------------- 充值 ---------------------------------------------//
+message sw_add_diamond_in {
+	required uint32 userid              = 1;
+	required uint32 reg_tm              = 2;
+	required uint32 channel_id          = 3;
+    required uint32 buy_diamond_num     = 4;    // 需要添加钻石的数量(购买)
+    required uint32 ext_diamond_num     = 5;    // 需要添加钻石的数量(赠送)
+    required uint32 buy_time            = 6;    // 购买时间
+	required uint32 buy_channel_id		= 7;	// 购买渠道号
+	required uint32 cost_money			= 8;	// 花费的钱(国内单位:rmb 分)
+	required uint64 order_index         = 9;    // 订单index
+	required uint32 add_times			= 10;	// 加倍
+
+    optional uint32 item_id             = 11;   // 道具ID
+    optional uint32 item_count          = 12;   // 道具数量
+    optional uint32 gift_id             = 13;   // 礼物ID
+    optional uint32 gift_count          = 14;   // 礼物数量
+    optional uint32 consume_type        = 15;   // 海外专用 1的时候为首充
+	optional uint32 zone_id				= 16[default = 0];	// 
+}
+message sw_add_diamond_out {
+	required uint64 order_index         = 1;    // 订单index
+}
+
+// ------------------------- 邮件 ---------------------------------------------//
+//-------------------- mail svc 和online 通信部分 ----------------------------
+message mail_all_info_t {
+	message item_attachment {
+		required uint32 item_id             = 1;    // 物品id
+		required uint32 item_num            = 2;    // 物品数量
+	}
+	required uint32 mail_id_high            = 1;    // 添加邮件的id 高32位
+	required uint32 mail_id_low             = 2;    // 添加邮件的id 低32位
+	required bytes title                    = 3;    // 邮件名称
+	required bytes from                     = 4;    // 发件人
+	required bytes content                  = 5;    // 内容
+	repeated item_attachment items          = 6;    // 附件
+}
+// mail svc 通知online 有新邮件(不等online回包)
+message sw_notify_player_new_mail_out {
+    repeated player_basic_info_t players    = 1;    // 玩家信息(size = 0时通知全服玩家有新邮件)
+    required mail_info_t new_mail           = 2;    // 玩家新邮件信息
+}
+
+//-------------------- gm 和switch 通信部分 ----------------------------
+// 添加新邮件
+message item_attachment {
+		required uint32 item_id				= 1;	// 物品id
+		required uint32 item_num			= 2;	// 物品数量
+//		required uint32 item_level			= 3;	// 物品等级 (默认都是1)
+}
+
+message sw_add_new_mail_in {
+	required uint32 server_id				= 1;	// 邮件所属服务器id
+	required bytes title               		= 2;    // 邮件名称
+	required bytes from                		= 3;    // 发件人
+	required bytes content             		= 4;    // 内容
+	repeated item_attachment items      	= 5;    // 附件
+	optional bool is_full_svc_mail			= 6;	// 是否是全服邮件(true:是 false:不是)
+	optional uint64 mail_id					= 7;	// 邮件id(sw 给 ol的msg必须要有该字段)
+	optional uint32 dead_tm				    = 8[default = 0];	// 有效期(全服邮件用) 
+}
+message sw_add_new_mail_out {
+	required uint32 mail_id_high			= 1;	// 添加邮件的id 高32位
+	required uint32 mail_id_low				= 2;	// 添加邮件的id 低32位
+	required uint32 server_id				= 3;	// 邮件所属服务器id
+}
+// 给玩家添加新邮件(包长控制在60K以内, 每次大约最多给5000人添加新邮件)
+message sw_add_new_mail_to_players_in {
+	required uint32 mail_id_high			= 1;	// 添加邮件的id 高32位
+	required uint32 mail_id_low				= 2;	// 添加邮件的id 低32位
+    required uint32 server_id               = 3;    // 邮件所属服务器id
+    repeated player_basic_info_t players    = 4;    // 需要添加邮件的玩家(如果size=0, 则给全服人添加新邮件)
+	required uint32 page_num				= 5;	// 当前页数(swith 会原样返回给GM, GM接到回包后,继续添加page_num+1的用户信息)
+	optional uint32 dead_tm				    = 6[default = 0];	// 有效期 
+}
+message sw_add_new_mail_to_players_out {
+	required uint32 mail_id_high			= 1;	// 添加邮件的id 高32位
+	required uint32 mail_id_low				= 2;	// 添加邮件的id 低32位
+	required uint32 server_id               = 3;    // 邮件所属服务器id
+	required uint32 page_num                = 4;	// 当前页数
+	optional uint32 dead_tm				    = 5[default = 0];	// 有效期 
+}
+
+// ------------------------- 邮件 end ---------------------------------------------//
+
+// ------------------------- 配表重读 start ---------------------------------------------//
+//-------------------- switch、 online、 GM通信部分 ----------------------------
+message sw_notify_reload_conf_in {
+	required uint32 server_id               = 1;    // 服务器id
+	repeated bytes 	conf_file_names			= 2;	// 重新加载文件名字
+	optional uint32 client_id				= 3;	// 客户端请求ID
+}
+
+message sw_notify_reload_conf_out {
+	required uint32 server_id               = 1;    // 服务器id
+	
+	repeated bytes 	conf_file_names_succ			= 2;	// 成功重新加载文件名字
+	repeated bytes 	conf_file_names_fail			= 3;	// 失败重新加载文件名字
+	
+	optional uint32 client_id				= 4;	// 客户端请求ID
+}
+
+// ------------------------- 配表重读 end -----------------------------------------------//
+
+//--------------封号 解封-------------------
+message user_info{
+	required uint32 userid					= 1;	// 用户
+	required uint32 reg_tm 					= 2;	// 注册时间
+	required uint32 zone_id					= 3;	// 服务器号
+	required uint32 channel_id				= 4;	// 渠道号
+}
+
+message sw_freeze_player_in{
+	repeated user_info	info				= 1;	// 冻结玩家信息
+	required uint32 time 					= 2;
+}
+
+message sw_freeze_player_kefu_out{
+
+}
+
+message sw_unfreeze_player_in{
+	repeated user_info	info				= 1;	// 冻结玩家信息
+}
+
+
+message sw_unfreeze_player_kefu_out{
+
+}
+
+message sw_set_attribute_in{
+	required uint32 userid					= 1;	// 用户
+	required uint32 reg_tm 					= 2;	// 注册时间
+	required uint32 zone_id					= 3;	// 服务器
+	required uint32 attribute_id			= 4;	// 属性id
+	required uint32 attribute_value			= 5;	// 属性值
+	required uint32 dead_tm					= 6;	// 有效期 这个是隐藏的 ，填0 为无限
+	required uint32 channel_id				= 7;	// 渠道号
+}
+
+
+message sw_set_attribute_kefu_out{
+}
+
+
+//跨服邀请
+message sw_invite_across_svr_in{
+	required uint32 time					= 1;    // 时间戳(30s内无应答，邀请包失效)
+	required uint32 scene_id			    = 2;    // 房间id
+	required uint32 scene_type              = 3;    // 房间类型(2:pvp 4:pve)
+	required uint32 battle_svr_id			= 4;	// 对战服务器ID
+	required base_info inviter				= 5;	
+	repeated base_info invitee              = 6;    // 被邀请方信息
+}
+
+message sw_invite_across_svr_out{
+	required uint32 time					= 1;    // 时间戳(30s内无应答，邀请包失效)
+	required uint32 scene_id			    = 2;    // 房间id
+	required uint32 scene_type              = 3;    // 房间类型(2:pvp 4:pve)
+	required uint32 battle_svr_id			= 4;	// 对战服务器ID	
+	required base_info inviter				= 5;
+	required base_info invitee				= 6;
+}
+
+//邀请拒绝返回，同意返回CSPVEJoinRoomRsp/CSPVPJoinRoomRsp
+message sw_refuse_arcoss_srv_in
+{
+	required base_info inviter				= 1;
+	required base_info invitee				= 2;
+	required uint32		accept				= 3;
+}
+message sw_refuse_arcoss_srv_out
+{
+	required base_info inviter				= 1;
+	required base_info invitee				= 2;
+	required uint32		accept				= 3;
+}
+
+//查询好友信息
+message sw_lookup_friend_list_in{
+	required base_info me					= 1;	//玩家自身信息
+	repeated base_info friends				= 2;    //好友列表	
+}
+
+message sw_lookup_friend_list_out{
+	required base_info me					= 1;
+	repeated player_basic_info_t friends	= 2;    //好友信息列表
+	repeated player_basic_info_t off_friends= 3;    //离线好友信息列表
+}
+
+//跨服聊天(1对1)
+message sw_talk_across_svr_in{
+	required base_info inviter				= 1;    //发送方	
+	required base_info invitee				= 2;    //接收方	
+	required CSNoteShow  info				= 3;
+}
+
+message sw_talk_across_svr_out{
+	required base_info invitee				= 1;    //接收方	
+	required CSNoteShow  info				= 2;
+}
+
+message sw_return_error_code_out{
+	required base_info inviter				= 1;    //发送方	
+	required base_info invitee				= 2;    //接收方	
+	required int32	 error_code				= 3;	//错误码
+}
+
+message sw_get_server_status_in{
+	required uint32 zone_id					= 1;	//服务器ID 0为查找所有服务器状态
+}
+
+message server_data{
+    required uint32 zone_id					= 1;	//服务器ID
+    required uint32 ol_player_num			= 2;	//在线玩家人数
+    required uint32 ip                      = 3;    //IP
+    required uint32 port                    = 4;    //Port
+}
+
+message sw_get_server_status_out{
+    repeated server_data server                = 1;
+}
+
+//玩家背包道具、礼物修改接口
+message sw_user_bag_modify_in {
+    required uint64 user_id     = 1;
+	required uint32 reg_tm		= 2;
+	required uint32 zone_id		= 3;
+    required int32  item_id     = 4; //物品编号
+    required int32  item_count  = 5;  //修改物品数量(正数为增加，负数为减少)
+    required int32  modify_type = 6; //修改物品类型（type=1 为修改背包物品数量，
+                                     //type=0为修改玩家礼品背包的物品数量，默认为1物品背包）
+    required int32  delete_type = 7; //是否删除物品（delete=0 为删除所有该类型物品，
+									 //number此时无用，delete=1 为不删除，默认为1不删除）
+	required uint32 channel_id	= 8;	// 渠道号
+}
+message sw_user_bag_modify_out {
+    required uint64 user_id     = 1;
+	required uint32 reg_tm		= 2;
+	required uint32 zone_id		= 3;
+	required uint32 channel_id	= 4;	// 渠道号
+}
+// 获取用户邮件
+message sw_get_maillist_from_player_in
+{
+    required uint64 userid                  = 1;
+    required uint32 reg_tm                  = 2;
+    required uint32 zone_id                 = 3;
+    required uint32 channel_id              = 4;
+    required uint32 gm_svr_id               = 5;
+}
+message sw_get_maillist_from_player_out
+{
+
+    required uint64 userid                  = 1;
+    required uint32 reg_tm                  = 2;
+    required uint32 zone_id                 = 3;
+    required uint32 channel_id              = 4;
+    repeated CSMailInfo mails               = 5; 
+    required uint32 gm_svr_id               = 6;
+}
+
+message sw_attribute_modify_in{
+	required uint64 userid				= 1;	// 用户
+	required uint32 reg_tm 				= 2;	// 注册时间
+	required uint32 zone_id				= 3;	// 服务器
+	required uint32 attribute_id		= 4;	// 属性id
+	required int32 attribute_value		= 5;	// 属性值
+	required uint32 dead_tm				= 6;	// 有效期 这个是隐藏的 ，填0 为无限
+	required uint32 channel_id			= 7;	// 渠道号
+}
+
+message sw_check_gidnick_in{
+	required uint64 globalid				= 1;	// 全局ID
+	required string nickname				= 2;	// 用户昵称
+}
+
+message sw_check_gidnick_out{
+	required uint64 globalid				= 1;	// 全局ID
+	required string nickname				= 2;	// 用户昵称
+	required bool	result					= 3;	// 0不一致 1一致
+}
+
+
+message sw_buy_item_in{
+	required uint32 userid              = 1;
+	required uint32 reg_tm              = 2;
+	required uint32 channel_id          = 3;
+	required uint64 order_index         = 4;    // 订单index
+    optional uint32 item_id             = 5;   // 道具ID
+}
+
+
+message sw_buy_item_out{
+	required uint64 order_index         = 1;    // 订单index
+}
+
+message ol_info{
+	required uint32 ol_id				= 1;
+	required bytes ol_ip				= 2;
+	required uint32 ol_port				= 3;
+}
+
+message sw_ol_notify_in{
+	repeated ol_info ols				= 1;
+}
+
+message sw_ol_notify_out{
+	optional uint32 res					= 1;
+}
+
+message sw_get_ol_in{
+
+}
+
+message sw_get_ol_out{
+	repeated ol_info ols 				= 1;
+}
+
+//---push-db-information-to-switch----------------
+message sw_push_db_info_in{
+	required string db_ip				= 1; //DBser IP
+	required uint32 db_port				= 2; //DBser port
+	required string mysql_ip			= 3; // mysql IP
+	required uint32 mysql_port			= 4; // mysql port
+	required uint32 svr_id				= 5; // online svr id
+}
+
+message sw_push_db_info_out {
+
+}
+
+message db_information {
+	required uint32 online_id			= 1; // online id
+	required string db_ip				= 2; // online 对应的 db_proxy ip
+	required uint32 db_port				= 3; // online 对应的 db_proxy port
+	required string mysql_ip			= 4; // db_proxy 对应的 mysql ip
+	required uint32 mysql_port			= 5; // db_proxy 对应的 mysql port
+}
+
+message sw_db_to_login_in {
+
+}
+
+message sw_db_to_login_out {
+	repeated db_information db_infos	= 1;
+}
+
+message sw_online_opt_in {
+	required uint32 type	  = 1;				//0关闭 1启动 2重启
+	optional uint32 online_id = 2[default = 0];	//0表示关闭所有服务器
+}
+
+message sw_online_opt_out {
+	required uint32 type	  = 1;				//0关闭 1启动 2重启
+	required uint32 online_id = 2[default = 0];	//0表示关闭所有服务器、
+	required uint32 ret		  = 3;				//0成功 1失败
+}
+
+message sw_ma_vip_control_in{
+	required uint32 content				= 1;    //1 开 0 关(00001 vip开,00010 热点问题开,00100 兑换码接口开,01000 邀请好友开,10000 我的推荐人,可杂糅)
+}
+
+message sw_ma_vip_control_out{
+	required uint32 content				= 1;    //1 开 0 关(00001 vip开,00010 热点问题开,00100 兑换码接口开,01000 邀请好友开,10000 我的推荐人,可杂糅)
+}
+
+message sw_get_tw_sensitive_control_in{
+	required uint32 zone_id				= 1;	// 服务器ID
+}
+
+message sw_get_tw_sensitive_control_out{
+	required uint32 content				= 1;    //1 开 0 关(00001 vip开,00010 热点问题开,00100 兑换码接口开,01000 邀请好友开,10000 我的推荐人,可杂糅)
+}

@@ -1,0 +1,629 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>monster_gangjiajiqiangbing_10053: ji shoubi2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{27,199},{12,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,16}}</string>
+                <key>sourceSize</key>
+                <string>{12,16}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji chi 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{213,108},{15,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,21}}</string>
+                <key>sourceSize</key>
+                <string>{15,21}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji chi1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{213,132},{14,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,21}}</string>
+                <key>sourceSize</key>
+                <string>{14,21}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji chi2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{128,187},{14,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,19}}</string>
+                <key>sourceSize</key>
+                <string>{14,19}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji chi3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{216,189},{10,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{10,17}}</string>
+                <key>sourceSize</key>
+                <string>{10,17}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji jian1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{96,166},{29,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{29,23}}</string>
+                <key>sourceSize</key>
+                <string>{29,23}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji jian2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{72,143},{21,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,18}}</string>
+                <key>sourceSize</key>
+                <string>{21,18}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji jiao1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{146,89},{25,35}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,35}}</string>
+                <key>sourceSize</key>
+                <string>{25,35}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji jiao2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{170,149},{28,34}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{28,34}}</string>
+                <key>sourceSize</key>
+                <string>{28,34}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji jiao2 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,149},{28,35}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{28,35}}</string>
+                <key>sourceSize</key>
+                <string>{28,35}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji jiao2 1 3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{201,156},{26,30}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,30}}</string>
+                <key>sourceSize</key>
+                <string>{26,30}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji jiao2 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{35,111},{35,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{35,29}}</string>
+                <key>sourceSize</key>
+                <string>{35,29}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji jiao2 2 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{134,157},{33,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{33,27}}</string>
+                <key>sourceSize</key>
+                <string>{33,27}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji jiao3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,111},{32,35}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,35}}</string>
+                <key>sourceSize</key>
+                <string>{32,35}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji jiao3 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{230,133},{21,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,24}}</string>
+                <key>sourceSize</key>
+                <string>{21,24}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji jiao3 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{170,186},{26,22}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,22}}</string>
+                <key>sourceSize</key>
+                <string>{26,22}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji jiao3 3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{231,67},{22,31}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,31}}</string>
+                <key>sourceSize</key>
+                <string>{22,31}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji jiao3 3 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{73,111},{21,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,29}}</string>
+                <key>sourceSize</key>
+                <string>{21,29}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji jiao6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{233,0},{20,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,23}}</string>
+                <key>sourceSize</key>
+                <string>{20,23}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji ku1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{230,160},{21,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,14}}</string>
+                <key>sourceSize</key>
+                <string>{21,14}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji ku2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{72,164},{21,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,14}}</string>
+                <key>sourceSize</key>
+                <string>{21,14}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji shen2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{63,181},{27,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,21}}</string>
+                <key>sourceSize</key>
+                <string>{27,21}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji shenti1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{31,175},{29,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{29,21}}</string>
+                <key>sourceSize</key>
+                <string>{29,21}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji shou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{176,60},{52,45}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{52,45}}</string>
+                <key>sourceSize</key>
+                <string>{52,45}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji shou5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{145,187},{16,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,14}}</string>
+                <key>sourceSize</key>
+                <string>{16,14}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji shou6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{98,89},{45,42}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{45,42}}</string>
+                <key>sourceSize</key>
+                <string>{45,42}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji shoubi1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{108,192},{15,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,13}}</string>
+                <key>sourceSize</key>
+                <string>{15,13}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji shoubi2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{230,177},{14,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,19}}</string>
+                <key>sourceSize</key>
+                <string>{14,19}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji shoubi3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{233,26},{19,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,18}}</string>
+                <key>sourceSize</key>
+                <string>{19,18}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji shoubi4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{199,189},{14,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,16}}</string>
+                <key>sourceSize</key>
+                <string>{14,16}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji shoubi5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{93,192},{12,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,17}}</string>
+                <key>sourceSize</key>
+                <string>{12,17}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji shoubi8.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{233,47},{19,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,17}}</string>
+                <key>sourceSize</key>
+                <string>{19,17}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji tou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{35,143},{34,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{34,29}}</string>
+                <key>sourceSize</key>
+                <string>{34,29}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji tou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{97,134},{34,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{34,29}}</string>
+                <key>sourceSize</key>
+                <string>{34,29}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji tui1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{58,205},{11,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,14}}</string>
+                <key>sourceSize</key>
+                <string>{11,14}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji tui2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{229,199},{12,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,14}}</string>
+                <key>sourceSize</key>
+                <string>{12,14}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji tui4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{145,204},{11,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,15}}</string>
+                <key>sourceSize</key>
+                <string>{11,15}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji tui6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{42,199},{13,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,14}}</string>
+                <key>sourceSize</key>
+                <string>{13,14}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji yao1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{108,208},{13,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,8}}</string>
+                <key>sourceSize</key>
+                <string>{13,8}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:ji yao2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{72,205},{13,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,8}}</string>
+                <key>sourceSize</key>
+                <string>{13,8}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:jishou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{231,101},{21,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,29}}</string>
+                <key>sourceSize</key>
+                <string>{21,29}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:jishou1 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{146,127},{21,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,27}}</string>
+                <key>sourceSize</key>
+                <string>{21,27}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:t1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,187},{24,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,21}}</string>
+                <key>sourceSize</key>
+                <string>{24,21}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:t2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{174,108},{36,38}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{36,38}}</string>
+                <key>sourceSize</key>
+                <string>{36,38}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:t3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{176,0},{54,57}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{54,57}}</string>
+                <key>sourceSize</key>
+                <string>{54,57}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:t4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{98,0},{75,86}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{75,86}}</string>
+                <key>sourceSize</key>
+                <string>{75,86}</string>
+            </dict>
+            <key>monster_gangjiajiqiangbing_10053:t5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{95,108}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{95,108}}</string>
+                <key>sourceSize</key>
+                <string>{95,108}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>monster_gangjiajiqiangbing_10053.pvr.ccz</string>
+            <key>size</key>
+            <string>{254,220}</string>
+            <key>textureFileName</key>
+            <string>monster_gangjiajiqiangbing_10053.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

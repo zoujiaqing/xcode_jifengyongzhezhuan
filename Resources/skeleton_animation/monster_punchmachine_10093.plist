@@ -1,0 +1,629 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>monster_punchmachine_10093: ji shoubi2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{140,107},{9,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,16}}</string>
+                <key>sourceSize</key>
+                <string>{9,16}</string>
+            </dict>
+            <key>monster_punchmachine_10093:fasdwec.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{167,186},{11,5}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,5}}</string>
+                <key>sourceSize</key>
+                <string>{11,5}</string>
+            </dict>
+            <key>monster_punchmachine_10093:fllmdg.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{152,0},{69,69}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{69,69}}</string>
+                <key>sourceSize</key>
+                <string>{69,69}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji chi 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{238,113},{15,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,21}}</string>
+                <key>sourceSize</key>
+                <string>{15,21}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji chi1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{238,137},{14,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,21}}</string>
+                <key>sourceSize</key>
+                <string>{14,21}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji chi2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{236,161},{14,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,19}}</string>
+                <key>sourceSize</key>
+                <string>{14,19}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji chi3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{199,164},{10,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{10,17}}</string>
+                <key>sourceSize</key>
+                <string>{10,17}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji jian1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{75,109},{29,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{29,23}}</string>
+                <key>sourceSize</key>
+                <string>{29,23}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji jian2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{128,168},{21,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,18}}</string>
+                <key>sourceSize</key>
+                <string>{21,18}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji jiao1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{112,107},{25,35}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,35}}</string>
+                <key>sourceSize</key>
+                <string>{25,35}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji jiao2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{224,38},{28,34}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{28,34}}</string>
+                <key>sourceSize</key>
+                <string>{28,34}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji jiao2 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{224,0},{28,35}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{28,35}}</string>
+                <key>sourceSize</key>
+                <string>{28,35}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji jiao2 1 3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,109},{26,30}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,30}}</string>
+                <key>sourceSize</key>
+                <string>{26,30}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji jiao2 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,77},{35,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{35,29}}</string>
+                <key>sourceSize</key>
+                <string>{35,29}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji jiao2 2 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{112,77},{33,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{33,27}}</string>
+                <key>sourceSize</key>
+                <string>{33,27}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji jiao3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{213,75},{32,35}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,35}}</string>
+                <key>sourceSize</key>
+                <string>{32,35}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji jiao3 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{104,145},{21,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,24}}</string>
+                <key>sourceSize</key>
+                <string>{21,24}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji jiao3 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{170,144},{26,22}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,22}}</string>
+                <key>sourceSize</key>
+                <string>{26,22}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji jiao3 3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{29,109},{22,31}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,31}}</string>
+                <key>sourceSize</key>
+                <string>{22,31}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji jiao3 3 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,142},{21,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,29}}</string>
+                <key>sourceSize</key>
+                <string>{21,29}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji jiao6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{213,146},{20,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,23}}</string>
+                <key>sourceSize</key>
+                <string>{20,23}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji ku1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{93,172},{21,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,14}}</string>
+                <key>sourceSize</key>
+                <string>{21,14}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji ku2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{167,169},{21,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,14}}</string>
+                <key>sourceSize</key>
+                <string>{21,14}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji shen2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{140,144},{27,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,21}}</string>
+                <key>sourceSize</key>
+                <string>{27,21}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji shenti1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{72,135},{29,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{29,21}}</string>
+                <key>sourceSize</key>
+                <string>{29,21}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji shou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{54,109},{18,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,18}}</string>
+                <key>sourceSize</key>
+                <string>{18,18}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji shou5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,174},{16,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,14}}</string>
+                <key>sourceSize</key>
+                <string>{16,14}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji shou6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{212,172},{18,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,17}}</string>
+                <key>sourceSize</key>
+                <string>{18,17}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji shoubi1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{19,175},{13,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,14}}</string>
+                <key>sourceSize</key>
+                <string>{13,14}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji shoubi2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{54,130},{15,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,21}}</string>
+                <key>sourceSize</key>
+                <string>{15,21}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji shoubi3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{48,154},{19,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,23}}</string>
+                <key>sourceSize</key>
+                <string>{19,23}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji shoubi4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{199,144},{11,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,17}}</string>
+                <key>sourceSize</key>
+                <string>{11,17}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji shoubi5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{152,168},{12,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,17}}</string>
+                <key>sourceSize</key>
+                <string>{12,17}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji shoubi8.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{70,159},{20,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,21}}</string>
+                <key>sourceSize</key>
+                <string>{20,21}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji tou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{75,77},{34,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{34,29}}</string>
+                <key>sourceSize</key>
+                <string>{34,29}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji tou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{38,77},{34,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{34,29}}</string>
+                <key>sourceSize</key>
+                <string>{34,29}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji tui1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{35,175},{10,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{10,14}}</string>
+                <key>sourceSize</key>
+                <string>{10,14}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji tui2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{64,183},{12,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,14}}</string>
+                <key>sourceSize</key>
+                <string>{12,14}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji tui4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{79,183},{11,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,15}}</string>
+                <key>sourceSize</key>
+                <string>{11,15}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji tui6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{48,180},{13,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,14}}</string>
+                <key>sourceSize</key>
+                <string>{13,14}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji yao1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{233,183},{13,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,8}}</string>
+                <key>sourceSize</key>
+                <string>{13,8}</string>
+            </dict>
+            <key>monster_punchmachine_10093:ji yao2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{191,184},{13,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,8}}</string>
+                <key>sourceSize</key>
+                <string>{13,8}</string>
+            </dict>
+            <key>monster_punchmachine_10093:jishou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{24,143},{21,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,29}}</string>
+                <key>sourceSize</key>
+                <string>{21,29}</string>
+            </dict>
+            <key>monster_punchmachine_10093:jishou1 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{213,113},{22,30}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,30}}</string>
+                <key>sourceSize</key>
+                <string>{22,30}</string>
+            </dict>
+            <key>monster_punchmachine_10093:mjws.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{152,72},{58,69}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{58,69}}</string>
+                <key>sourceSize</key>
+                <string>{58,69}</string>
+            </dict>
+            <key>monster_punchmachine_10093:qwecw.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{73,74}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{73,74}}</string>
+                <key>sourceSize</key>
+                <string>{73,74}</string>
+            </dict>
+            <key>monster_punchmachine_10093:vawq.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{76,0},{73,74}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{73,74}}</string>
+                <key>sourceSize</key>
+                <string>{73,74}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>monster_punchmachine_10093.pvr.ccz</string>
+            <key>size</key>
+            <string>{253,198}</string>
+            <key>textureFileName</key>
+            <string>monster_punchmachine_10093.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

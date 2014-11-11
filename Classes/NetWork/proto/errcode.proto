@@ -1,0 +1,332 @@
+// 所有的错误码都定义于此
+
+// Online产生的错误码，范围100001～199999。
+enum ol_errcode_t {
+    // 100001～110000预留给严重的系统错误
+    olerr_decode                        = 100001; 	// 请求包格式不对
+    olerr_invalid_req                   = 100002; 	// 客户端发送的协议名不存在
+    olerr_invalid_dbrsp                 = 100003; 	// DB返回的协议名不存在
+	olerr_msg_param						= 100004;	// 协议参数错误
+	olerr_invalid_msg					= 100005;	// 协议参数不存在
+	olerr_system_busy					= 100006;	// 服务器忙
+	olerr_server_not_exist				= 100007;	// 服务器不存在
+    // 110001以后的错误码描述业务逻辑错误
+    olerr_multi_login                   = 110001; 	// 重复登录
+    olerr_role_creating                 = 110002; 	// 正在创建角色，请稍候
+    olerr_no_such_role                  = 110003; 	// 选择的角色类型不存在
+	olerr_can_transfer_next				= 110004; 	// 不能跳转副本地图
+	
+	olerr_not_enough_level				= 110005; 	// 用户等级不够
+	olerr_not_enough_diamond			= 110006; 	// 钻石不够
+	olerr_not_enough_coin				= 110007; 	// 没有足够的金币
+	olerr_not_enough_exploit			= 110008; 	// 没有足够的功勋 
+	olerr_not_enough_stamina			= 110009;	// 没有足够的体力
+	olerr_buy_times_logic_err			= 110010;	// 购买进入某系统时逻辑错误
+	olerr_not_enough_explore_times		= 110011;	// 没有足够的探索次数
+	olerr_nofound_explore_id			= 110012;	// 没有探索地图id
+	olerr_ppve_times_limit				= 110013;	// ppve次数达到上限
+	olerr_not_enough_vip_lv				= 110014;	// 玩家vip等级不够
+	olerr_not_enough_lv_world_talk		= 110015;	// 玩家群发消息等级不够
+
+	olerr_be_kick_off					= 110100;	// 玩家被踢出
+	olerr_token_id						= 110101;	// token id 出错
+	olerr_need_complete_login_proc		= 110102;	// 需要走全新的登录流程
+	olerr_assert						= 110103;	// assert错误
+// ---物品相关 120000 - 120999------------------------------------------------------
+	olerr_invalid_move_item_pos			= 120009;	// 移动物品pos不合法
+	olerr_nofound_item_id				= 120010;	// 物品不存在
+	olerr_exist_item_id					= 120011;	// 物品已经存在
+	olerr_not_enough_item				= 120012;	// 物品不够
+	olerr_invalid_pos					= 120013;	// pos无效
+	olerr_exist_pos						= 120014;	// pos 已经开启了(即格子已经开启了)
+	olerr_invalid_item_id  				= 120015;	// 无效的物品id
+	olerr_invalid_hole					= 120016;	// 选择不合法
+	olerr_not_enough_reset_gam_times	= 120017;	// 没有足够的装备重铸次数
+	olerr_open_hole_seq_err				= 120018;	// 装备开孔的顺序错误
+	olerr_not_enough_pos				= 120019;	// 没有足够的格子
+	olerr_not_fairy_in_pos				= 120020;	// 该装备栏上尚未有精灵
+	// 庄园
+	olerr_warm_sport_lv_max				= 120020;	// 庄园热身运动达到最大等级
+	olerr_manor_opt_error				= 120021;	// 庄园操作错误
+	olerr_not_clear_manor_cd			= 120022;	// 庄园cd未清除
+	olerr_enter_manor_times_max			= 120023;	// 进入庄园次数达到最大
+	// 神秘商店
+	olerr_old_shop_items_list			= 120030;	// 商店商品列表已经旧了
+	olerr_invalid_buy_item_index		= 120031;	// 不合法的购买id
+	olerr_has_buy_item_index			= 120032;	// 已经购买
+	olerr_invalid_sell_item				= 120033;	// 不允许卖物品
+	olerr_not_enough_item_shop			= 120034;	// 神秘商店物品不足
+
+	olerr_has_same_attr_in_item			= 120040;	// 在物品中有相同的属性
+	olerr_not_found_reward				= 120041;	// 不存在奖励
+	olerr_item_cannot_del				= 120042;	// 该物品不能删除
+	olerr_item_cannot_sell				= 120043;	// 该物品不能卖出
+	olerr_monster_exist					= 120044;	// 精灵已经存在
+
+	olerr_not_enough_bag_pos			= 120050;	// 背包没有足够的格子
+	olerr_not_enough_ss_pos				= 120051;	// 灵石背包没有足够的格子
+	olerr_not_enough_card_pos			= 120052;	// 卡牌背包没有足够的格子
+	olerr_not_enough_gem_pos			= 120053;	// 宝石(文章)背包没有足够的格子
+	// 各种物品不足
+	olerr_not_enough_honour				= 120060;	// 没有足够的荣耀勋章
+	olerr_not_enough_potential_drug		= 120061;	// 没有足够的潜力丹
+	olerr_not_enough_treasure_box		= 120062;	// 没有足够的宝箱
+	olerr_not_enough_key				= 120063;	// 没有足够的钥匙
+	
+	olerr_bag_have_not_enough_item		= 120064;	// 背包中没有足够的兑换物品
+	olerr_equpment_not_enough			= 120065;	// 合成中装备不足
+
+// ---对战相关 121000 - 121999------------------------------------------------------
+	olerr_not_enough_pvai_times			= 121000;	// 没有足够的pvai次数
+	olerr_not_clear_pvai_cd				= 121001;	// pvai时间cd未清除
+	olerr_not_enough_pvp_times			= 121002;	// 没有足够的pvai次数
+	olerr_cannot_pvai_self				= 121003;	// pvai不能打自己
+	olerr_not_enough_cdef_times			= 121004;	// 没有足够的cdef次数
+	olerr_cdef_timeout					= 121005;	// 主城防守过时
+	olerr_start_battle_timeout			= 121006;	// 进入副本超时
+	olerr_wboss_timeout					= 121007;	// 世界boss过时
+	olerr_wboss_not_clear_revival_cd	= 121008;	// 世界boss复活cd未清除
+	olerr_wboss_this_turn_over			= 121009;	// 世界boss本轮已经结束
+	olerr_not_unlock_pve    			= 121010;	// 没有解锁副本
+	olerr_wboss_double_limit    		= 121011;	// 世界boss购买已达上限
+	olerr_wboss_times_limit    			= 121012;	// 世界boss次数已满
+
+// ---地图相关 122000 - 122999------------------------------------------------------
+	olerr_nofound_spec_map_index		= 122000;	// 精英副本index不合法
+	olerr_enter_spec_map_num_max		= 122001;	// 进入精英副本的次数达到最大
+	olerr_instance_not_enough_star		= 122002;	// 副本没有足够的星星
+	olerr_cpt_all_instance_can_enter	= 122003;	// 章节所有的副本都可以进入
+	olerr_instance_id_not_found			= 122004;	// 副本id未找到
+	olerr_btl_times_not_enough			= 122005;	// 剩余挑战次数不足
+// ---每日任务、目标、领取相关 123000 - 123999--------------------------------------------------
+	olerr_daily_task_accept				= 123000;	// 每日任务已经接受
+	olerr_daily_task_not_accept       	= 123001;	// 没有接受每日任务
+	olerr_accept_daily_task_timeout		= 123002;	// 接受的每日任务已经失效
+	olerr_accept_daily_task_max_star	= 123003;	// 接受的每日任务是满星任务
+	olerr_finish_daily_task_times_limit	= 123004;	// 每日任务完成达到上限
+	olerr_daily_task_id_invalid			= 123005;	// 每日任务id无效
+	olerr_daily_task_not_finish			= 123006;	// 每日任务未完成
+	olerr_daily_task_finish				= 123007;	// 每日任务已经完成
+	olerr_not_enough_active				= 123008;	// 没有足够的活跃度
+	olerr_no_daily_goal_reward			= 123009;	// 没有每日目标奖励
+	olerr_daily_task_all_max_star		= 123010;	// 每日任务都是满星
+
+	olerr_today_reward_has_been			= 123100;	// 今日奖励已经领取
+	olerr_login_reward_not_enough		= 123101;	// 登入奖励领取条件不合法
+	olerr_get_daily_rewary_time			= 123102;	// 每日领取时间不合法
+	olerr_get_daily_rewary_limit		= 123103;	// 每日领取超过次数
+
+// --- 运营活动相关 124000 - 124999 -----------------------------------------
+	olerr_activity_not_finish 			= 124000;	// 活动未完成
+	olerr_activity_not_found			= 124001;	// 活动未找到
+	olerr_activity_reward_revc			= 124002;	// 活动已经领取
+	olerr_activity_not_start			= 124003;	// 活动未开始
+
+	olerr_lottery_opt_logic_err 		= 124010;	// 转盘抽奖逻辑错误
+	olerr_lottery_times_limit			= 124011;	// 转盘抽奖次数达到上限
+	
+	olerr_mail_not_found				= 124020;	// 邮件不存在
+	olerr_mail_not_found_attach			= 124021;	// 邮件没有发现附件
+//------聊天错误---------------------------------------------------------------------
+	olerr_player_offline				= 125000;   // 聊天用户已经下线
+//-----首充奖励错误-----------------------------------------------------------
+	olerr_incorrect_topup_award_id      = 126000;   // 错误的首充奖励id
+	olerr_outdated_topup_award_id       = 126001;   // 失效的首充奖励id
+	olerr_not_topup                     = 126002;   // 玩家没有充值
+	olerr_already_got_topup_award       = 126003;   // 玩家已经领取了奖励
+//-----兑换码错误------------------------------------------------------------
+	olerr_magic_card_invalid			= 127000;	// 卡无效
+	olerr_magic_card_used				= 127001;	// 已被使用
+	olerr_magic_card_ceiling			= 127002;	// 此类兑换码已使用到达上限
+	olerr_magic_card_only_once			= 127003;	// 此类兑换码只可使用一次
+//-----kakao错误------------------------------------------------------------
+	olerr_not_clear_kakao_cd		 	= 128001;	// kakao 好友邀请cd冷却中 
+	olerr_get_power_reward_limit	   	= 128002;	// kakao 获取体力面包超过上限 
+	olerr_kakao_friend_offline			= 128003;	// kakao 好友已经下线
+	olerr_kakao_friend_exist			= 128003;	// kakao 好友已经存在
+	olerr_kakao_friend_not_exist		= 128004;	// kakao 好友不存在
+	olerr_kakao_friend_record_not_find	= 128005;	// kakao 好友邀请记录不存在
+	olerr_kakao_friend_add_limit		= 128006;	// kakao 好友添加超过上限
+	olerr_kakao_friend_del_limit		= 128007;	// kakao 好友删除超过上限
+	olerr_already_got_award     		= 126008;   // kakao 玩家已经领取了奖励
+	olerr_kakao_cd_type_not_exist		= 126009;   // kakao 对应cd类型不存在
+//-----对决错误------------------------------------------------------------
+	olerr_duel_times_limit				= 129000;	// 您今天的决斗次数已用完
+	olerr_dueled_times_limit			= 129001;	// 对方决斗次数已用完
+	olerr_dueled_timeout				= 129002;	// 决斗邀请已经超时
+	olerr_dueled_player_logout			= 129003;	// 决斗邀请对方已经下线
+	olerr_dueled_player_busy			= 129004;	// 决斗邀请对方已经拥有邀请
+	olerr_dueled_player_on_battle		= 129005;	// 决斗邀请对方已经在战斗中
+	olerr_duel_level_limit				= 129006;	// 决斗邀请等级不够
+	olerr_dueled_level_limit			= 129007;	// 对方决斗邀请等级不够
+	olerr_duel_map_limit				= 129008;	// 不能在某些地图上发起
+	olerr_dueled_player_protecting		= 129009;	// 决斗方正处于保护中
+	olerr_mandatory_duel_level_limit	= 129010;	// 强制决斗邀请等级不够
+	olerr_mandatory_dueled_level_limit	= 129011;	// 对方强制决斗邀请等级不够
+	olerr_duel_player_busy  			= 129012;	// 已经邀请其它玩家
+//-----副本星数奖励错误------------------------------------------------------------
+	olerr_invalid_raid_id				= 130000;	// 无效的副本阵列ID
+	olerr_cant_get_star_reward			= 130001;   // 领取状态错误而不能领取奖励
+	olerr_refresh_times_limit			= 130002;	// 重置次数到达上限
+// -----新精灵系统相关------------------------------------------------------------
+	olerr_fairy_invalid_pos				= 131000;	// 精灵pos无效
+	olerr_fairy_move_pos_invalid		= 131001;	// 移动精灵pos无效
+	olerr_fairy_quality					= 131002;	// 精灵品质不符合要求
+	olerr_fairy_max_grade				= 131003;	// 精灵达到最大阶
+	olerr_not_enough_min_grade_fairy	= 131004;	// 没有足够的低级精灵
+	olerr_fairy_bag_full				= 131005;	// 精灵背包满
+	olerr_fairy_cannot_rebrith			= 131006;	// 精灵不可以重生
+	olerr_spec_fairy_id_multi			= 131007;	// 上阵、小伙伴精灵id有重复
+	olerr_fairy_grade_not_enough		= 131008;	// 精灵阶级未满足
+	olerr_fairy_pos_have_no_fairy		= 131009;	// pos无精灵无法装备
+	olerr_fairy_lv_not_exceed_user_lv	= 131010;	// 精灵等级不能超过人物
+	olerr_fairy_grade_1_not_exceed_lv	= 131021;	// 人物等级不足1阶
+	olerr_fairy_grade_2_not_exceed_lv	= 131022;	// 人物等级不足2阶
+	olerr_fairy_grade_3_not_exceed_lv	= 131023;	// 人物等级不足3阶
+	olerr_fairy_grade_4_not_exceed_lv	= 131024;	// 人物等级不足4阶
+	olerr_fairy_grade_5_not_exceed_lv	= 131025;	// 人物等级不足5阶
+	olerr_fairy_grade_6_not_exceed_lv	= 131026;	// 人物等级不足6阶
+	olerr_fairy_grade_7_not_exceed_lv	= 131027;	// 人物等级不足7阶
+// -----抽精灵相关-----------------------------------------------------------------------
+	olerr_draw_not_enough_diamod		= 132000;	// 没有足够的钻石
+	olerr_draw_config_error				= 132001;	// 掉落配表错误
+//	----通天塔--------------------------------------------------------------------------------
+	olerr_babel_level_exceed			= 133000;	// 通天塔层数未开启
+	olerr_babel_ticket_not_enough		= 133001;	// 通天塔层通天塔门票不足 
+// ----------------------------------------------------------------------------------
+	olerr_shopping_times_exceed			= 134000;	// 商品次数超过
+// ----------------------------------------------------------------------------------
+    olerr_star_not_enough               = 134100;   // 剩余的星星总量不够
+    olerr_learn_not_attach              = 134101;   // 未满足学习条件
+    olerr_lock_not_attach               = 134102;   // 未满足解锁条件
+    olerr_dower_full                    = 134103;   // 训练已满
+// ----------------------------------------------------------------------------------
+	olerr_not_uc_vip					= 140001;	// 不是ucvip
+	olerr_no_uc_topus					= 140002;	// 没有首冲
+	olerr_have_got_uc_topus				= 140003;	// uc首冲奖励已领
+// ----------------------------------------------------------------------------------
+	olerr_max_map						= 140004;	// 探宝地图已到最大
+	olerr_explore_refresh_times_exceed 	= 140005;	// 探宝刷新次数到顶
+	olerr_explore_lv_not_enough		 	= 140006;	// 探宝升级等级未到
+
+	olerr_no_facebook_share				= 150001;	// 今日FACEBOOK未分享
+// ------------------------------------------------------------------------------
+	olerr_has_join_guild				= 160000;	// 已经加入公会
+	olerr_join_guild_in_cold			= 160001;	// 退出公会冷却时间未截止
+	olerr_guild_member_full				= 160002;	// 公会已满
+	olerr_guild_fightcondition_not_meet = 160003;	// 公会战力条件未满足
+	olerr_invalid_guild_id				= 160004;	// 无效的公会id
+	olerr_owner_cannot_quit_guild		= 160005;	// 会长不能退出公会
+	olerr_guild_elite_num_limit			= 160006;	// 会长精英人数达到上限
+	olerr_guild_vice_num_limit			= 160007;	// 会长副会长达到上限
+	olerr_guild_power_not_enough		= 160008;	// 权限不足
+	olerr_guild_is_full					= 160009;	// 公会已满
+	olerr_player_has_enter_otherguild	= 160010;	// 玩家已去其他公会
+	olerr_player_contribute_not_enough	= 160011;	// 玩家贡献不足
+	olerr_guild_no_apply				= 160012;	// 公会不能申请
+	olerr_guild_set_self				= 160013;	// 不能任命自己
+	olerr_goddess_times_limit			= 160014;	// 女神祝福次数用尽
+	olerr_wait_accept					= 160015;	// 加入成功
+	olerr_guild_name_repeated			= 160016;	// 公会名字重复
+//------GUILD_RED_PACKET-----------------------------------------------------------------
+	olerr_not_enough_recharge_diamond	= 160017;	//充值钻石大于所发红包的钻石才可送红包
+	olerr_not_enough_times_to_send		= 160018;	//今日公会可发该红包次数已用完
+	olerr_not_enough_guild_member		= 160019;	//公会人数大于等于5人时才可发放红包
+	olerr_not_enough_part_red_packet	= 160020;	// 该公会红包不足,已发完
+	olerr_player_not_in_guild			= 160021;	// 玩家没有公会
+	olerr_invalid_activity_time			= 160022;	// 不在活动时间内
+	olerr_invalid_red_packet			= 160023;	// 红包已过期
+	olerr_ss_has_top_level				= 160024;	// 一键顶级已到最高
+	olerr_pvai3_time_limit				= 160025;	// pvai3次数已到
+}
+
+// DB业务返回的错误码，可直接返回给客户端。范围200001～299999，其中200001～210000用于
+// 重定义DB框架内部错误码，比如原DB框架错误码1001，返回给客户端时变成201001(200000 + 1001)。
+enum db_errcode_t {
+    dberr_succ                          = 0; // 操作成功
+    // 假设DB返回1001～9999范围内的错误码，Online统一在此基础上加上200000，然后返回给客户端
+    dberr_dbmem         			    = 201001; // 数据库系统出错，一般是内存问题
+    dberr_dbsys						    = 201002; // 数据库系统出错
+    dberr_dbnet						    = 201003; // 数据库系统网络出错
+    dberr_no_cmd 				        = 201004; // 数据库命令ID没有定义
+    dberr_protolen 		 			    = 201005; // 数据库协议长度不符合
+    dberr_range 	 		            = 201006; // 数据库数值越界
+    dberr_setflag       			    = 201007; // 要设置的flag和原有一致
+    dberr_data 	 			            = 201008; // 协议数据不完整
+    dberr_enum         	 			    = 201009; // 枚举越界，如某一字段只允许0和1，却填了2。
+    dberr_sendprotolen  		        = 201010; // 返回报文长度有问题
+    dberr_dbdata                        = 201011; // 数据库中数据有误
+	dberr_netsend					    = 201012; // 数据发送出错
+	dberr_netrecv					    = 201013; // 数据接收出错
+    dberr_keyexists				        = 201014; // KEY 已经存在了
+    dberr_keynotfound			        = 201015; // KEY 不存在
+    dberr_noupdate 			            = 201016; // DB不允许更新
+    dberr_net_timeout		            = 201017; // 网络超时
+    dberr_flowcontrol      		        = 201018; // 当命令号每分钟超过最大限制
+    dberr_md5          					= 201021; // 当命令的md5_tags检查失败
+    dberr_password        		        = 201103; // 用户名和密码出错
+    dberr_uidexists   				    = 201104; // 米米号已存在
+    dberr_uidnofound                    = 201105; // 米米号不存在
+    // DB业务错误码，直接返回客户端
+    dberr_role_notfound                 = 210001; // 角色不存在
+    dberr_role_exists                   = 210002; // 角色已存在。目前一个服只允许创建一个角色。
+    dberr_crtrole_time_limit            = 210003; // 创建角色太频繁，请稍候重试。
+    dberr_duplicated_nickname           = 210004; // 昵称已存在，请尝试别的名字。
+}
+enum sw_errcode_t {
+	swerr_decode						= 300001;	// 请求包格式不对
+	swerr_invalid_req					= 300003;	// 客户端发送的协议名不存在
+	swerr_not_enough_res				= 300002;	// 系统没有足够的资源
+}
+enum lg_errcode_t {
+	lgerr_decode						= 400001;	// 请求包格式不对
+	lgerr_invalid_req					= 400002;   // 客户端发送的协议名不存在
+	lgerr_invalid_dbrsp                 = 400003;   // DB返回的协议名不存在
+	lgerr_msg_param						= 400004;	// 协议参数不正确
+
+	lgerr_multi_check_session			= 401001;   // 重复验证session
+	lgerr_session_unchecked				= 401002;	// session 未校验
+	lgerr_qurey_role_list_uncomplete	= 401003;	// 查询角色列表未完成
+	lgerr_player_role_num_limit			= 401004;	// 创建角色数目达到最大
+	lgerr_no_such_role					= 401005;	// 选择的角色类型不存在
+	lgerr_name_has_dirty_word			= 401006;	// 取得名字有脏字
+}
+enum acc_errcode_t {
+	acc_err_base						= 500000;
+	acc_err_curl_init					= 500002;	// curl初始化失败
+	acc_err_curl_write_err				= 500023;	// 调用写回调函数失败
+	acc_err_curl_read_err				= 500026;	// 调用读回调函数失败
+	acc_err_auth_timeout				= 500028;	// 验证超时
+
+	acc_err_wrong_json					= 500101;	// json_decode failed
+	acc_err_system_err					= 501001;	// 系统处理错误
+	acc_err_invalid_params				= 501002;	// 无效的参数
+	acc_err_invalid_action				= 501003;	// 无效的action值
+	acc_err_system_busy					= 501004;	// 系统繁忙
+	acc_err_invalid_sign				= 501006;	// 签名失败
+	acc_err_req_timeout					= 501007;	// 客户端请求时间戳已经过期
+	acc_err_much_wrong					= 501010;	// 接口错误次数过多或接口尝试次数过多，需要验证码才能调用接口
+	acc_err_passwd_already_set			= 501011;	// 无线第一次设置密码时密码已经被设置过了
+	acc_err_wrong_old_passwd			= 501012;	// 用老密码修改新密码时老密码错误
+	acc_err_udid_not_reg				= 501013;	// 查询设备号对应米米号时设备号未注册过
+	acc_err_check_verify_code_failed	= 501014;	// 验证码错误
+	acc_err_check_uid_err				= 501015;	// 米米号没有绑定邮箱
+	acc_err_check_user_email_failed		= 501016;	// 输入的邮箱与米米号不对应
+	acc_err_check_email					= 501017;	// 邮箱格式不正确
+	acc_err_sys_err						= 501018;	// 系统错误
+	acc_err_email_existed				= 501019;	// 邮箱已经存在，不能绑定
+	acc_err_email_bind_err				= 501020;	// 邮箱绑定失败（但是其他操作成功，如注册时绑定那么注册成功但是绑定失败）
+	acc_err_send_err					= 501021;	// 邮件发送失败
+	acc_err_pwd_err						= 501103;	// 密码错误
+	acc_err_not_existed					= 501105;	// 米米号或者邮箱不存在
+	acc_err_add_openid_err				= 501106;	// 登录成功，绑定失败
+	acc_err_login_err					= 501108;	// 设备被冻结无法登陆
+	acc_err_bind_err					= 501109;	// 绑定第三方账号失败
+	acc_err_getthird_err				= 501110;	// 获取第三方账号失败
+	acc_err_getbind_err					= 501111;	// 已经绑定不能重复绑定
+	acc_err_verify_err					= 501112;	// 第三方登录验证失败，用户没有登录或者已经过期等
+	acc_err_udid_err					= 501113;	// 自定义注册用户名不能全为数字
+
+	acc_err_session_illegal				= 504331;	// 账号session不合法
+	acc_err_max							= 599999;	// 账号错误码最大值
+}

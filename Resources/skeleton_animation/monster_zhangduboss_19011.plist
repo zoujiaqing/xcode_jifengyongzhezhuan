@@ -1,0 +1,1201 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>monster_zhangduboss_19011:asdfa.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{662,0},{144,174}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{144,174}}</string>
+                <key>sourceSize</key>
+                <string>{144,174}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:g1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{642,760},{86,67}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{86,67}}</string>
+                <key>sourceSize</key>
+                <string>{86,67}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:g2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{457,664},{102,78}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{102,78}}</string>
+                <key>sourceSize</key>
+                <string>{102,78}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:g3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{868,508},{109,88}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{109,88}}</string>
+                <key>sourceSize</key>
+                <string>{109,88}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:g4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{101,493},{114,95}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{114,95}}</string>
+                <key>sourceSize</key>
+                <string>{114,95}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:g5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{244,475},{122,104}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{122,104}}</string>
+                <key>sourceSize</key>
+                <string>{122,104}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:g6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{580,452},{124,106}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{124,106}}</string>
+                <key>sourceSize</key>
+                <string>{124,106}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:g7.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{868,397},{125,108}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{125,108}}</string>
+                <key>sourceSize</key>
+                <string>{125,108}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:g8.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{998,116},{0,0}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{0,0}}</string>
+                <key>sourceSize</key>
+                <string>{0,0}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j  tou3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{707,550},{49,94}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{49,94}}</string>
+                <key>sourceSize</key>
+                <string>{49,94}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j daobi1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{971,819},{47,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{47,29}}</string>
+                <key>sourceSize</key>
+                <string>{47,29}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j daobing2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{716,371},{43,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{43,29}}</string>
+                <key>sourceSize</key>
+                <string>{43,29}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j jianbang.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,859},{57,49}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{57,49}}</string>
+                <key>sourceSize</key>
+                <string>{57,49}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j jiao1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{60,848},{71,41}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{71,41}}</string>
+                <key>sourceSize</key>
+                <string>{71,41}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j jiao2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{901,819},{67,50}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{67,50}}</string>
+                <key>sourceSize</key>
+                <string>{67,50}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j jiao2 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{809,137},{170,119}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{170,119}}</string>
+                <key>sourceSize</key>
+                <string>{170,119}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j jiao3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{140,829},{69,47}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{69,47}}</string>
+                <key>sourceSize</key>
+                <string>{69,47}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j jiao4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{674,868},{53,39}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{53,39}}</string>
+                <key>sourceSize</key>
+                <string>{53,39}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j kudang.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{716,315},{46,53}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{46,53}}</string>
+                <key>sourceSize</key>
+                <string>{46,53}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shenti1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{244,357},{126,115}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{126,115}}</string>
+                <key>sourceSize</key>
+                <string>{126,115}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shenti2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{250,232},{143,122}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{143,122}}</string>
+                <key>sourceSize</key>
+                <string>{143,122}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{731,820},{64,53}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{64,53}}</string>
+                <key>sourceSize</key>
+                <string>{64,53}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shou1 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{303,828},{64,53}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{64,53}}</string>
+                <key>sourceSize</key>
+                <string>{64,53}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{562,735},{77,82}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{77,82}}</string>
+                <key>sourceSize</key>
+                <string>{77,82}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shou2 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{946,735},{74,81}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{74,81}}</string>
+                <key>sourceSize</key>
+                <string>{74,81}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shou5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{478,864},{53,49}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{53,49}}</string>
+                <key>sourceSize</key>
+                <string>{53,49}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{478,802},{62,59}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{62,59}}</string>
+                <key>sourceSize</key>
+                <string>{62,59}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi1 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{968,599},{53,69}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{53,69}}</string>
+                <key>sourceSize</key>
+                <string>{53,69}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi1 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{253,739},{54,56}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{54,56}}</string>
+                <key>sourceSize</key>
+                <string>{54,56}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{396,232},{85,130}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{85,130}}</string>
+                <key>sourceSize</key>
+                <string>{85,130}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi2 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{97,685},{83,86}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{83,86}}</string>
+                <key>sourceSize</key>
+                <string>{83,86}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{400,802},{75,68}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{75,68}}</string>
+                <key>sourceSize</key>
+                <string>{75,68}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi3 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{823,783},{75,68}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{75,68}}</string>
+                <key>sourceSize</key>
+                <string>{75,68}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi3 3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{863,691},{80,89}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,89}}</string>
+                <key>sourceSize</key>
+                <string>{80,89}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{753,724},{67,93}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{67,93}}</string>
+                <key>sourceSize</key>
+                <string>{67,93}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi5 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{183,739},{67,87}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{67,87}}</string>
+                <key>sourceSize</key>
+                <string>{67,87}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi7.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,693},{61,103}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{61,103}}</string>
+                <key>sourceSize</key>
+                <string>{61,103}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi7 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,799},{57,57}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{57,57}}</string>
+                <key>sourceSize</key>
+                <string>{57,57}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi7 3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{689,647},{61,110}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{61,110}}</string>
+                <key>sourceSize</key>
+                <string>{61,110}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi8.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{369,502},{85,122}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{85,122}}</string>
+                <key>sourceSize</key>
+                <string>{85,122}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi8 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{64,774},{73,71}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{73,71}}</string>
+                <key>sourceSize</key>
+                <string>{73,71}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j shoubi9.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{253,798},{47,57}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{47,57}}</string>
+                <key>sourceSize</key>
+                <string>{47,57}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j suolian.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{995,58},{25,55}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,55}}</string>
+                <key>sourceSize</key>
+                <string>{25,55}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j suolian2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{995,0},{25,55}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,55}}</string>
+                <key>sourceSize</key>
+                <string>{25,55}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j tou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{707,452},{51,95}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{51,95}}</string>
+                <key>sourceSize</key>
+                <string>{51,95}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j tou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{448,119},{35,57}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{35,57}}</string>
+                <key>sourceSize</key>
+                <string>{35,57}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j tou4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{968,671},{49,61}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{49,61}}</string>
+                <key>sourceSize</key>
+                <string>{49,61}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j tui1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{611,868},{60,39}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{60,39}}</string>
+                <key>sourceSize</key>
+                <string>{60,39}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j tui10.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{370,873},{54,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{54,32}}</string>
+                <key>sourceSize</key>
+                <string>{54,32}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j tui2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{798,854},{64,48}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{64,48}}</string>
+                <key>sourceSize</key>
+                <string>{64,48}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j tui5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{865,872},{59,34}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{59,34}}</string>
+                <key>sourceSize</key>
+                <string>{59,34}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j tui6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{927,872},{56,36}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{56,36}}</string>
+                <key>sourceSize</key>
+                <string>{56,36}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j tui7.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{310,768},{87,57}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,57}}</string>
+                <key>sourceSize</key>
+                <string>{87,57}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j tui8.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{543,820},{65,52}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{65,52}}</string>
+                <key>sourceSize</key>
+                <string>{65,52}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j tui9.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{212,858},{61,47}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{61,47}}</string>
+                <key>sourceSize</key>
+                <string>{61,47}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j wuqi1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{809,0},{183,134}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{183,134}}</string>
+                <key>sourceSize</key>
+                <string>{183,134}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j wuqi1 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{489,0},{170,153}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{170,153}}</string>
+                <key>sourceSize</key>
+                <string>{170,153}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:j yao.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{310,720},{118,45}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{118,45}}</string>
+                <key>sourceSize</key>
+                <string>{118,45}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:nvbnvbnv 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,218},{131,137}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{131,137}}</string>
+                <key>sourceSize</key>
+                <string>{131,137}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{982,137},{31,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{31,16}}</string>
+                <key>sourceSize</key>
+                <string>{31,16}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s10.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,504},{98,90}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{98,90}}</string>
+                <key>sourceSize</key>
+                <string>{98,90}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s11.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{863,599},{102,89}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{102,89}}</string>
+                <key>sourceSize</key>
+                <string>{102,89}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s12.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{101,591},{102,91}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{102,91}}</string>
+                <key>sourceSize</key>
+                <string>{102,91}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s13.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{580,561},{106,91}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{106,91}}</string>
+                <key>sourceSize</key>
+                <string>{106,91}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s14.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{457,570},{105,91}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{105,91}}</string>
+                <key>sourceSize</key>
+                <string>{105,91}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s15.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1001,116},{0,0}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{0,0}}</string>
+                <key>sourceSize</key>
+                <string>{0,0}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s16.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{995,116},{0,0}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{0,0}}</string>
+                <key>sourceSize</key>
+                <string>{0,0}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{611,830},{80,35}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,35}}</string>
+                <key>sourceSize</key>
+                <string>{80,35}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{431,745},{99,54}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{99,54}}</string>
+                <key>sourceSize</key>
+                <string>{99,54}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{565,655},{110,77}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{110,77}}</string>
+                <key>sourceSize</key>
+                <string>{110,77}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,597},{94,93}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{94,93}}</string>
+                <key>sourceSize</key>
+                <string>{94,93}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{761,534},{99,96}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{99,96}}</string>
+                <key>sourceSize</key>
+                <string>{99,96}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s7.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{206,649},{101,87}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{101,87}}</string>
+                <key>sourceSize</key>
+                <string>{101,87}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s8.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{759,633},{101,88}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{101,88}}</string>
+                <key>sourceSize</key>
+                <string>{101,88}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:s9.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{353,627},{101,90}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{101,90}}</string>
+                <key>sourceSize</key>
+                <string>{101,90}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:sd23.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{254,119},{191,110}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{191,110}}</string>
+                <key>sourceSize</key>
+                <string>{191,110}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:sd24.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{251,215}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{251,215}}</string>
+                <key>sourceSize</key>
+                <string>{251,215}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:sd25.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{254,0},{232,116}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{232,116}}</string>
+                <key>sourceSize</key>
+                <string>{232,116}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:sd26.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{218,582},{132,64}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{132,64}}</string>
+                <key>sourceSize</key>
+                <string>{132,64}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:w21.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{486,156},{139,136}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{139,136}}</string>
+                <key>sourceSize</key>
+                <string>{139,136}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:w22.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{628,177},{134,135}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{134,135}}</string>
+                <key>sourceSize</key>
+                <string>{134,135}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:w23.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{765,259},{129,135}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{129,135}}</string>
+                <key>sourceSize</key>
+                <string>{129,135}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:w24.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{897,259},{123,135}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{123,135}}</string>
+                <key>sourceSize</key>
+                <string>{123,135}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:w25.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{484,295},{118,135}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{118,135}}</string>
+                <key>sourceSize</key>
+                <string>{118,135}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:w26.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{134,218},{113,135}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{113,135}}</string>
+                <key>sourceSize</key>
+                <string>{113,135}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:w27.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{605,315},{108,134}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{108,134}}</string>
+                <key>sourceSize</key>
+                <string>{108,134}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:w28.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{762,397},{103,134}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{103,134}}</string>
+                <key>sourceSize</key>
+                <string>{103,134}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:w29.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,433},{98,134}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{98,134}}</string>
+                <key>sourceSize</key>
+                <string>{98,134}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:w30.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,358},{98,143}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{98,143}}</string>
+                <key>sourceSize</key>
+                <string>{98,143}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:w31.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{373,365},{103,134}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{103,134}}</string>
+                <key>sourceSize</key>
+                <string>{103,134}</string>
+            </dict>
+            <key>monster_zhangduboss_19011:w32.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{134,356},{107,134}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{107,134}}</string>
+                <key>sourceSize</key>
+                <string>{107,134}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>monster_zhangduboss_19011.pvr.ccz</string>
+            <key>size</key>
+            <string>{1022,913}</string>
+            <key>textureFileName</key>
+            <string>monster_zhangduboss_19011.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

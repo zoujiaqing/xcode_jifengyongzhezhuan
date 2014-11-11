@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Monster_Basic>
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="1" MonsterID="10041" MosterBornCoordinate="44/60" MosterPatrolRange="37/53;52/68" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="2" MonsterID="10041" MosterBornCoordinate="103/44" MosterPatrolRange="96/36;111/51" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="3" MonsterID="10043" MosterBornCoordinate="98/34" MosterPatrolRange="91/26;106/41" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="4" MonsterID="10043" MosterBornCoordinate="41/56" MosterPatrolRange="34/48;49/63" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="5" MonsterID="10043" MosterBornCoordinate="107/40" MosterPatrolRange="100/34;115/49" Group="0" Rate="0" Turn="0" Elite="1" Friend="0" MonsterType="120" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="6" MonsterID="10041" MosterBornCoordinate="98/38" MosterPatrolRange="91/32;106/47" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="7" MonsterID="10043" MosterBornCoordinate="97/45" MosterPatrolRange="90/39;105/54" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="8" MonsterID="10043" MosterBornCoordinate="91/42" MosterPatrolRange="84/36;99/51" Group="0" Rate="0" Turn="0" Elite="1" Friend="0" MonsterType="120" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="9" MonsterID="10043" MosterBornCoordinate="105/36" MosterPatrolRange="98/30;113/45" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="10" MonsterID="10043" MosterBornCoordinate="102/31" MosterPatrolRange="95/25;110/40" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="11" MonsterID="10041" MosterBornCoordinate="49/59" MosterPatrolRange="42/52;57/67" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="12" MonsterID="10043" MosterBornCoordinate="47/55" MosterPatrolRange="40/48;55/63" Group="0" Rate="0" Turn="0" Elite="1" Friend="0" MonsterType="120" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="13" MonsterID="10043" MosterBornCoordinate="35/53" MosterPatrolRange="28/46;43/61" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="14" MonsterID="10041" MosterBornCoordinate="33/57" MosterPatrolRange="26/50;41/65" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="15" MonsterID="10043" MosterBornCoordinate="40/49" MosterPatrolRange="33/42;48/57" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="16" MonsterID="10041" MosterBornCoordinate="37/51" MosterPatrolRange="30/45;45/60" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="17" MonsterID="10043" MosterBornCoordinate="35/40" MosterPatrolRange="28/33;43/48" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="18" MonsterID="10043" MosterBornCoordinate="46/50" MosterPatrolRange="39/43;54/58" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="19" MonsterID="10043" MosterBornCoordinate="51/51" MosterPatrolRange="44/44;59/59" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="20" MonsterID="10043" MosterBornCoordinate="91/36" MosterPatrolRange="84/28;99/43" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+     <Monster RaidID="200497" MapID="100401" RaidMonsterID="21" MonsterID="10043" MosterBornCoordinate="94/32" MosterPatrolRange="87/24;102/39" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="111" MosterLevel="68" />
+</RaidID>

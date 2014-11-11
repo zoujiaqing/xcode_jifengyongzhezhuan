@@ -1,0 +1,43 @@
+namespace TXGUI {
+class UILabelTTF : public CCNode ,public CCRGBAProtocol
+{
+        UILabelTTF();
+        virtual ~UILabelTTF();
+		
+        /** creates a CCLabel from a fontname, alignment, dimension in points and font size in points
+         @since v2.0.1
+         */
+        static UILabelTTF * create(const char *content, const char *fontName, float fontSize,
+                                   const CCSize& dimensions, int hAlignment,
+                                   int vAlignment);		
+        
+        static UILabelTTF * create(const char *content, const char *fontName, float fontSize);
+        
+        /** creates a CCLabelTTF from a fontname, horizontal alignment, dimension in points,  and font size in points.
+         @since v2.0.1
+         */
+        static UILabelTTF * create(const char *content, const char *fontName, float fontSize,
+                                   const CCSize& dimensions, CCTextAlignment hAlignment);
+        
+        
+        bool initWithString(const char *content, const char *fontName, float fontSize,
+                            const CCSize& dimensions, CCTextAlignment hAlignment,
+                            CCVerticalTextAlignment vAlignment);
+        
+        virtual void setString(const char *label);
+        virtual const char* getString(void);
+		virtual void setOpacity(GLubyte opacity);
+		virtual GLubyte getOpacity(void);
+		virtual void setOpacityModifyRGB(bool bValue);
+		virtual bool isOpacityModifyRGB(void);
+		virtual void setColor(const ccColor3B& color);
+		virtual ccColor3B getColor(void);
+        virtual void visit(void);
+
+		virtual void setAnchorPoint(const CCPoint &anchorPoint);
+
+        CCRenderTexture* createStroke(CCLabelTTF* label, float size ,ccColor3B cor);
+
+		void listenToBackground(CCObject *obj);
+};
+}

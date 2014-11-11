@@ -1,0 +1,54 @@
+/*
+1. 包格式:
+     total_len(u32) + header_len(u32) + msghead + msgbody
+	|   整包长度   |  包头长度（包括本身） | 包头 | 包体 |
+
+2. 使用规则：
+    (1) 包头格式绝对不能改；
+	(2) 字段只能加，不能减；
+	(3) 增加的字段只能是optional类型，且必须给出default值，最好还有相关说明；
+	(4) 不能改变原来字段的序号。
+
+3. 命名规则：
+	DBXXXXReq/Rsp：以大写DB开头，Online发来的请求以Req结尾，DB应答包以Rsp结尾，
+					中间的XXXX代表对应的功能，比如DBLoginReq/Rsp。
+*/
+
+package opdb;
+
+// 和DB通讯的标准报文头部
+message db_msgheader_t {
+	// 前三个是DB框架要求的字段，不能改变含义
+	required bytes msg_name   = 1; // 协议名字
+	required uint32 target_uid = 2; // 要操作的米米号
+	required uint32 errcode    = 3; // DB返回的错误码
+	// 后五个是Online可以自定义含义的变量
+	optional uint32 reg_time   = 4; // 要操作的角色的创建时间，限定同一个米米号不能在同一秒创建两个角色
+	optional uint32 src_uid    = 5; // 发起操作请求的米米号，如果需要记录日志，或者需要处理DB返回，则必须设置本字段。
+	optional uint32 login_id   = 6; // 发起操作请求的米米号的登录ID，每次登录都不一样，用于DB返回时，Online判断玩家是否
+									// 已经重新登录或者Online是否已经重启。如果没有设置该字段，则表明无需处理DB返回包。
+	optional bytes aux        = 7; // 辅助信息，目前通过aux.size()来判断是否需要给客户端返回
+	optional uint32 trans_id   = 8; // 请求ID，Online用这个来一一对应请求和返回，并写日志记录请求是否成功。
+                                    // 如果不需要写日志，则无需设置该字段。
+                                    // ahero 项目目前用改字段表示玩家渠道号
+}
+
+message db_insert_in {
+	message element {
+		optional uint64 	number_value	= 1;
+		optional bytes 		string_value	= 2; 
+	}
+	required element name			= 1;
+	repeated element elements		= 2;
+}
+
+message db_new_talk{
+	required uint64 userid			= 1;
+	required uint32 reg_tm			= 2;
+	required uint32 zone_id			= 3;
+	required uint32 type			= 4;
+	optional uint64 tuserid			= 5;
+	optional uint32 treg_tm			= 6;
+	optional uint32 tzone_id		= 7;
+	required bytes	content			= 8;
+}

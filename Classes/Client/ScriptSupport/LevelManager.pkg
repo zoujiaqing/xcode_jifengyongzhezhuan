@@ -1,0 +1,24 @@
+class LevelManager
+{
+public:
+	static LevelManager*		sShareInstance();
+	
+	int getCurMapId();
+	
+	/// check current level is ppve map level
+	bool	isCurrentPPVELevel();
+    /// check current level is pve map level
+	bool	isCurrentPVELevel();
+	bool	isCurrentPVPLevel();
+	bool    isCurrentCommonPKLevel();
+	bool    isCurrentMandPKLevel(); 
+	bool	isCurrentEliteLevel();
+	bool    isCurrentUndergroundLevel();
+	bool    isCurrentCityDefendLevel();
+	bool    isCurrentWorldBossLevel();
+	bool    isCurrentBestFighterLevel();
+	bool    isCurrentGuildInstanceLevel();
+	
+	LevelLayer*	getCurrentLevelLayer();
+	
+}

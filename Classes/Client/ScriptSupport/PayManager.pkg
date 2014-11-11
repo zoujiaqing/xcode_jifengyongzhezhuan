@@ -1,0 +1,8 @@
+class PayManager
+{
+	static PayManager* Get();
+	void loadPlugin();
+	void unloadPlugin();
+	void payForProduct(int, int);
+
+}

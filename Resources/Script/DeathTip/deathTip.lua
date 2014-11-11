@@ -1,0 +1,9 @@
+End_Prompt={}
+End_Prompt[1]={Text='M_DEAD_TEXT_1',LookFace='icon_train',OpenLayerName='SpriteElfStrengthenPanel',}
+End_Prompt[2]={Text='M_DEAD_TEXT_2',LookFace='icon_skill',OpenLayerName='SkillSelectLayer',}
+End_Prompt[3]={Text='M_DEAD_TEXT_3',LookFace='icon_genius',OpenLayerName='TalentLayer',}
+End_Prompt[4]={Text='M_DEAD_TEXT_4',LookFace='icon_equipupgrade',OpenLayerName='EquipmentUpgradeUILayer',}
+End_Prompt[5]={Text='M_DEAD_TEXT_5',LookFace='icon_enchase',OpenLayerName='EnchaseUILayer',}
+End_Prompt[6]={Text='M_DEAD_TEXT_6',LookFace='icon_card',OpenLayerName='CardUILayer',}
+End_Prompt[7]={Text='M_DEAD_TEXT_7',LookFace='icon_equipcombine',OpenLayerName='BackPackLayer',}
+End_Prompt[8]={Text='M_DEAD_TEXT_8',LookFace='button_fairyring',OpenLayerName='lotteryUIPanel',}

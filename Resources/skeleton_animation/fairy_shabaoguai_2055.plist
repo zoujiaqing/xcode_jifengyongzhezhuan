@@ -1,0 +1,226 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>fairy_shabaoguai_2055:h1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{183,255},{66,30}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{66,30}}</string>
+                <key>sourceSize</key>
+                <string>{66,30}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:n chushou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{459,149},{35,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{35,23}}</string>
+                <key>sourceSize</key>
+                <string>{35,23}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:n daoju.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{485,174},{25,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,23}}</string>
+                <key>sourceSize</key>
+                <string>{25,23}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:ni daoju2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{459,174},{24,34}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,34}}</string>
+                <key>sourceSize</key>
+                <string>{24,34}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:ni shen.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{295,156},{61,39}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{61,39}}</string>
+                <key>sourceSize</key>
+                <string>{61,39}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:ni yan.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{317,197},{20,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,8}}</string>
+                <key>sourceSize</key>
+                <string>{20,8}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:ni zui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{295,197},{20,20}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,20}}</string>
+                <key>sourceSize</key>
+                <string>{20,20}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:t11.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{362,149},{95,99}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{95,99}}</string>
+                <key>sourceSize</key>
+                <string>{95,99}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:t13.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{362,0},{147,147}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{147,147}}</string>
+                <key>sourceSize</key>
+                <string>{147,147}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:t15.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{200,200}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{200,200}}</string>
+                <key>sourceSize</key>
+                <string>{200,200}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:t17.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{202,0},{158,154}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{158,154}}</string>
+                <key>sourceSize</key>
+                <string>{158,154}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:t5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,202},{91,91}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{91,91}}</string>
+                <key>sourceSize</key>
+                <string>{91,91}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:t7.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{93,202},{88,88}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{88,88}}</string>
+                <key>sourceSize</key>
+                <string>{88,88}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:t9.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{202,156},{91,97}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{91,97}}</string>
+                <key>sourceSize</key>
+                <string>{91,97}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:z11.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{295,250},{77,28}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{77,28}}</string>
+                <key>sourceSize</key>
+                <string>{77,28}</string>
+            </dict>
+            <key>fairy_shabaoguai_2055:z22.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{374,250},{74,28}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{74,28}}</string>
+                <key>sourceSize</key>
+                <string>{74,28}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>fairy_shabaoguai_2055.pvr.ccz</string>
+            <key>size</key>
+            <string>{512,284}</string>
+            <key>textureFileName</key>
+            <string>fairy_shabaoguai_2055.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

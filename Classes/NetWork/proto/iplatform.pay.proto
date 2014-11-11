@@ -1,0 +1,141 @@
+/*
+1. 包格式:
+    pkg_len(uint32) + head_len(uint32) + msghead + msgbody
+    [注]: pkg_len、head_len值包含自身占用的长度(即uint32的长度), 按网络字节序打包
+            pkg_len: sizeof(uint32) + sizeof(uint32) + sizeof(msghead) + sizeof(msgbody)
+            head_len: sizeof(uint32) + sizeof(msghead)
+
+2. 使用规则:
+    (1) 字段只能加, 不能减;
+    (2) 增加的字段只能是 optional 类型, 且必须给出 default 值, 最好还有相关说明;
+*/
+
+package IPlatformPayProto;
+
+/*ipay 错误码*/ 
+enum ipay_err_code_t {
+    IPAY_ERR_NO_ERROR                         = 0; //没有错误 
+
+    //BASE 1000
+    IPAY_ERR_SYS_BUSY             = 1001; // game server忙 
+    IPAY_ERR_INV_PKGLEN           = 1002; // 包长和收到的数据不匹配 
+    IPAY_ERR_UNSUPPORTED_MSG      = 1003; // 不支持的消息 
+    IPAY_ERR_NOT_ENOUGH_RES       = 1004; // 系统资源不足 
+    IPAY_ERR_UNSUPPORTED_MSG_TYPE = 1005; // 不支持该协议 
+    IPAY_ERR_NOFOUND_SERVER       = 1006; // 找不到game服务器 
+    IPAY_ERR_INV_SIGN             = 1007; // 连接非法(sign验证失败） 
+
+    //proxy <--> game server
+    IPAY_ERR_HAS_REGISTERED       = 2001; // 游戏已经注册过
+    IPAY_ERR_REG_TIMEOUT          = 2002; // 游戏注册超时
+    IPAY_ERR_NO_MATCH_REG_FD      = 2003; // fd未注册
+    IPAY_ERR_WRONG_ORDER          = 2004; // 订单验证失败
+    IPAY_ERR_NO_SUCH_ITEM         = 2005; // 商品ID不存在
+    IPAY_ERR_ORDER_IN_HANDLING    = 2006; // 订单正在处理中
+    IPAY_ERR_ORDER_HAS_HANDLED    = 2007; // 订单已经处理过
+    IPAY_ERR_GAME_SERVER_DOWN     = 2008; // 游戏sever连接断开
+
+    //proxy <--> boss client
+    IPAY_ERR_NO_REG_GAME       = 3001; // 游戏还未注册
+
+    //game server --> boss client
+    IPAY_ERR_NO_SUCH_USER     = 4001; // 用户不存在
+    IPAY_ERR_NO_SUCH_ORDER    = 4002; // 订单不存在
+    IPAY_ERR_ITEM_DECODE_FAIL = 4003; // 订单商品信息解析失败
+}
+
+
+message pay_msg_head_t {
+    required string msg_type_name = 1;  //协议命令字符串
+    required uint32 game_id = 2;        //游戏ID，由C01统一分配
+    required uint32 channel_id = 3;     //第三方平台id(与登录中的platfome_id对应), 由C01统一分配
+    required int32 ret = 4;             //协议返回码
+    required uint32 seq = 5;            //数据包序列号,原样返回
+    required int32  connect_id = 6;     //客户端连接ID,原样返回
+    optional string sign = 7;           //签名认证，md5(game_id=%u&channel_id=%u&pri_key=%s&data=msg_body), msg_body为包体二进制
+}
+
+//===================protocol between game and proxy===================
+/** @brief game向proxy注册请求包体 */
+message game2proxy_register_msg_t {
+    required uint32 register_time   = 1;  //game register time
+    required uint32 item_game_id    = 2;  //商品系统中游戏ID, B03平台组统一分配:
+                                          //1-icar, 4-iseer, 5-imole_android, 6-douzhuan, 7-iseer2, 8-ahero
+}
+
+/** @brief game向proxy注册返回包体 */
+message proxy2game_register_msg_t {
+    required uint32 handle_time = 1;  //game register handle time
+}
+
+/** @brief proxy给game的订单请求包 */
+message proxy2game_pay_msg_t {
+    required uint32 server_id       = 1; // server id, defined by game server
+    required uint64 user_id         = 2; // user id, define by third party platform
+    required string order_id        = 3; // order id
+    required int64  product_id      = 4; // product id, defined by game server
+    required int32  amount          = 5; // product price (分/美分)
+    required string currency_kind   = 6; // kind of currency: CNY/USD
+    required string item_detail     = 7; // item detail info: {"258":{"base":"38","gift":"8"}}, 258为游戏中物品ID，购买base个物品并赠送gift(该字段可能没有)个该物品
+    optional uint32 user_time       = 8; // user create time
+    optional string ext_data        = 9; // extended data
+
+    //newly add
+    optional int32  add_times       = 10; // 商品添加倍数,需要除以100
+    optional int32  product_attr    = 11; // 商品属性
+    optional string product_extend  = 12; // 商品系统扩展字段
+    optional int32 real_amount      = 13; // 用户实际支付金额(分/美分)
+}
+
+/** @brief game给proxy的订单处理返回包 */
+message game2proxy_pay_msg_t {
+    required string order_id   = 1; // order id
+    required uint64 user_id    = 2; // user id, define by third party platform
+}
+
+//** @brief proxy给game的订单请求包 */
+message overseas_proxy2game_pay_msg_t {
+    //user unique info
+    required int32  server_id       = 1; // server id, defined by game server
+    required uint64 user_id         = 2; // user id, define by ourself
+    required uint64 user_time       = 3; // user create time
+    required uint64 third_user_id   = 4; // user id, define by third party platform
+
+    //order info
+    required string order_id        = 5; // order id
+    required uint64 item_id         = 6; // item id, defined by third platfrom
+    required int32  item_count      = 7; // item count
+    required int32  amount          = 8; // total price
+    required int32  real_amount     = 9; // user real pay amount (min unit)
+    required string currency_kind   = 10; // kind of currency: XXX/USD
+    optional uint64 gift_id         = 11 [default = 0]; //present gift ID
+    optional int32  gift_count      = 12 [default = 0];
+    optional uint64 consume_time    = 13 [default = 0];
+    optional uint64 consume_ip      = 14 [default = 0];
+    optional int32  consume_type    = 15 [default = 0];//1-paid,2-free,3-Integral wall
+
+    optional string ext_data        = 16 [default = ""]; // extended data
+	
+	//newly add 2014-09-04
+    optional int32  product_add_times   = 17 [default = 100];   // 商品添加倍数,单位: % 
+    optional int32  product_attr_int    = 18 [default = 0];     // 商品属性整数值: 含义需要跟策划沟通
+    optional string product_attr_string = 19 [default = ""];    // 商品属性字符串表达式: 含义需要跟策划沟通
+}
+
+/** @brief game给proxy订单处理返回包体 */
+message overseas_game2proxy_pay_msg_t {
+    required uint64 user_id         = 1; // user id, define by third party platform
+    required string order_id        = 2; // order id
+}
+
+//=====================================================================
+
+
+/** @brief 返回错误码统一协议 */
+message ack_errcode_t {
+    required int32  errcode = 1;
+    optional string errmsg = 2 [default = "default error"];
+    optional string ori_msg_typename = 3 [default = "Unknown"];
+}
+
+

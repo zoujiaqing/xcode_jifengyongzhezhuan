@@ -1,0 +1,8 @@
+class GameAudioManager
+{
+	static GameAudioManager* sharedManager();
+	void playEffect(unsigned int soundID,bool isLoop,const float delay=0);
+	void stopAllEffect();
+	void stopPlayBGM();
+	void preLoadEffect(unsigned int soundID);
+};

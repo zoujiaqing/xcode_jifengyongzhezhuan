@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  TaomeeGameMore
+
+  Created by Michael Wong on 12/13/11.
+  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+*/
+"Personal Thread" = "My Issue";
+"FAQ" = "FAQ";
+"Cancel" = "Cancel";
+"Feedback" = "Submit a Request";
+"Answer" = "Check Reply";
+"Taomee Feedback" = "Feedback";
+"Back" = "Back";
+"Reply" = "Reply";
+"Send" = "Submit";
+"Title" = "Title (%d characters)";
+"Question" = "Question content  by %d (%d characters)";
+"Reply content" = "Reply content by %d (%d characters)";
+"Contact" = "Phone/Email/QQ/MSN";
+"Need User ID" = "Current user id is (%d). Please sign in before use feedback.";
+"ERR_IO_PENDING" = "ERR_IO_PENDING";
+"ERR_FAILED" = "System Error";
+"ERR_ABORTED" = "System Exception";
+"ERR_TIMED_OUT" = "Connection timed out";
+"ERR_HEADER_RETURN" = "System Error";
+"ERR_HEADER_NAGTIVE_BODY_LENGTH" = "System Error";
+"ERR_MESSAGE_BODY_CORRUPTED" = "System Error";
+"ERR_UNEXPECTED" = "System Exception";
+"Post Question Success" = "Post Question Success";
+"Answer Question Success" = "Answer Question Success";
+"Bug report" = "Bug Report";
+"QuestionPost" = "Question";
+"Suggestion" = "Suggestion";
+"Forum" = "Forum";
+"ForumTitle" = "Fourm";

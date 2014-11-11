@@ -1,0 +1,4 @@
+class MessageBox
+{
+	static void AdjustStyle(string okBtnContent,string cancelBtnContent);
+};

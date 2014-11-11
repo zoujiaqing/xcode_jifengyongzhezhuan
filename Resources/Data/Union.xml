@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Union>
+	<Union Level="1" Exp="3360" people_Number="20" Chairman_Number="1" Elite_Number="4" Donate="1" Benediction="1" Shop="0" Transcript="0" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="2" Exp="4400" people_Number="21" Chairman_Number="1" Elite_Number="4" Donate="1" Benediction="1" Shop="1" Transcript="0" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="3" Exp="5520" people_Number="22" Chairman_Number="1" Elite_Number="4" Donate="1" Benediction="2" Shop="1" Transcript="0" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="4" Exp="6720" people_Number="23" Chairman_Number="1" Elite_Number="4" Donate="1" Benediction="2" Shop="2" Transcript="295001" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="5" Exp="8000" people_Number="24" Chairman_Number="2" Elite_Number="5" Donate="1" Benediction="3" Shop="2" Transcript="295001" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="6" Exp="9360" people_Number="25" Chairman_Number="2" Elite_Number="5" Donate="1" Benediction="3" Shop="3" Transcript="295001" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="7" Exp="10800" people_Number="26" Chairman_Number="2" Elite_Number="5" Donate="1" Benediction="4" Shop="3" Transcript="295001" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="8" Exp="12320" people_Number="27" Chairman_Number="2" Elite_Number="5" Donate="1" Benediction="4" Shop="4" Transcript="295002" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="9" Exp="13920" people_Number="28" Chairman_Number="2" Elite_Number="5" Donate="1" Benediction="5" Shop="4" Transcript="295002" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="10" Exp="19200" people_Number="29" Chairman_Number="3" Elite_Number="6" Donate="1" Benediction="5" Shop="5" Transcript="295002" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="11" Exp="24000" people_Number="30" Chairman_Number="3" Elite_Number="6" Donate="1" Benediction="6" Shop="5" Transcript="295002" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="12" Exp="28800" people_Number="31" Chairman_Number="3" Elite_Number="6" Donate="1" Benediction="6" Shop="6" Transcript="295003" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="13" Exp="33600" people_Number="32" Chairman_Number="3" Elite_Number="6" Donate="1" Benediction="7" Shop="6" Transcript="295003" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="14" Exp="38400" people_Number="33" Chairman_Number="3" Elite_Number="6" Donate="1" Benediction="7" Shop="7" Transcript="295003" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="15" Exp="43200" people_Number="34" Chairman_Number="3" Elite_Number="6" Donate="1" Benediction="8" Shop="7" Transcript="295003" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="16" Exp="48000" people_Number="35" Chairman_Number="3" Elite_Number="6" Donate="1" Benediction="8" Shop="8" Transcript="295004" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="17" Exp="52800" people_Number="36" Chairman_Number="3" Elite_Number="6" Donate="1" Benediction="9" Shop="8" Transcript="295004" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="18" Exp="57600" people_Number="37" Chairman_Number="3" Elite_Number="6" Donate="1" Benediction="9" Shop="9" Transcript="295004" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="19" Exp="62400" people_Number="38" Chairman_Number="3" Elite_Number="6" Donate="1" Benediction="10" Shop="9" Transcript="295004" Target="0" Boss="0" Melee="0" Scramble="0"/>
+	<Union Level="20" Exp="0" people_Number="40" Chairman_Number="3" Elite_Number="6" Donate="1" Benediction="10" Shop="10" Transcript="295005" Target="0" Boss="0" Melee="0" Scramble="0"/>
+</Union>

@@ -1,0 +1,48 @@
+enum
+{
+	TIMER_INSTANCE_COUNTDOWN,
+	TIMER_PVAI_COOLDOWN,
+	TIMER_PVAI_REWARD,  
+	TIMER_OFFLINE_EXP_COUNTDOWN,
+	TIMER_MANOUR_1,
+	TIMER_MANOUR_2,
+	TIMER_MANOUR_3,
+	TIMER_MANOUR_4,
+	TIMER_MANOUR_5,
+	TIMER_CITYDEFEND_REMAIN,
+	TIMER_ACTIVITY_UPDATE,
+	TIMER_WORLDBOSS_START_REMAIN,
+	TIMER_WORLDBOSS_END_REMAIN,
+	TIMER_WORLDBOSS_REVIVE_COUNTDOWN,
+	TIMER_ONLINEREWARD_COUNTDOWN,
+	TIMER_BESTFIGHTER_REMAIN,
+	TIMER_BESTFIGHTER_QUEUE_REMAIN,
+	TIMER_REWARD_STAMINA_REMAIN,
+	TIMER_RED_NAME_REMAIN,
+	TIMER_COIN_BOSS_REMAIN,
+};
+
+class TimeManager
+{
+	static TimeManager* Get();
+	
+	long getCurServerTime();
+	bool isInited();
+	
+	int  getTimeZone();
+	
+	string secondsToString(long seconds);
+	
+	int registerLuaTimer(LUA_FUNCTION handler, int counterId, long endTime);
+	bool unregisterLuaTimer(int handler, int counterId);
+	int attachLuaTimer(LUA_FUNCTION handler, int counterId);
+	
+	//计时器启动、暂停、更新
+	bool startTimer(int counterId, long endTime);
+	bool stopTimer(int counterId);	
+	bool renewTimer(int counterId, long endTime);
+
+	//检测计时器
+	bool hasTimer(int counterId);
+	bool hasLuaObserver(LUA_FUNCTION handler, int counterId);
+};

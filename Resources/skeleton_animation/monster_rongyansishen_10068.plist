@@ -1,0 +1,343 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>monster_rongyansishen_10068:g31.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{154,210},{106,96}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{106,96}}</string>
+                <key>sourceSize</key>
+                <string>{106,96}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:g32.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{382,0},{113,143}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{113,143}}</string>
+                <key>sourceSize</key>
+                <string>{113,143}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:g33.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{174,133}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{174,133}}</string>
+                <key>sourceSize</key>
+                <string>{174,133}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:g34.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{177,0},{202,92}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{202,92}}</string>
+                <key>sourceSize</key>
+                <string>{202,92}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s ku1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,254},{53,50}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{53,50}}</string>
+                <key>sourceSize</key>
+                <string>{53,50}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s ku2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{355,200},{17,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,15}}</string>
+                <key>sourceSize</key>
+                <string>{17,15}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s mifeng3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{153,309},{68,54}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{68,54}}</string>
+                <key>sourceSize</key>
+                <string>{68,54}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s pifeng.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{263,277},{64,63}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{64,63}}</string>
+                <key>sourceSize</key>
+                <string>{64,63}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s shen1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{154,188},{16,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,19}}</string>
+                <key>sourceSize</key>
+                <string>{16,19}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s shenti3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{97,258},{53,50}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{53,50}}</string>
+                <key>sourceSize</key>
+                <string>{53,50}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s shou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{355,95},{18,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,32}}</string>
+                <key>sourceSize</key>
+                <string>{18,32}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s shou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{355,158},{19,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,19}}</string>
+                <key>sourceSize</key>
+                <string>{19,19}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s shou3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{355,130},{23,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{23,25}}</string>
+                <key>sourceSize</key>
+                <string>{23,25}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s shou5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{154,136},{17,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,29}}</string>
+                <key>sourceSize</key>
+                <string>{17,29}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s shoubi1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{154,168},{19,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,17}}</string>
+                <key>sourceSize</key>
+                <string>{19,17}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s shoubi2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{355,180},{18,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,17}}</string>
+                <key>sourceSize</key>
+                <string>{18,17}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s tou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{97,311},{43,45}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{43,45}}</string>
+                <key>sourceSize</key>
+                <string>{43,45}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s tou3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,307},{43,45}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{43,45}}</string>
+                <key>sourceSize</key>
+                <string>{43,45}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:s wuqi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{336,254},{114,73}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{114,73}}</string>
+                <key>sourceSize</key>
+                <string>{114,73}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:y21.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{336,218},{32,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,32}}</string>
+                <key>sourceSize</key>
+                <string>{32,32}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:y22.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{263,210},{70,64}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{70,64}}</string>
+                <key>sourceSize</key>
+                <string>{70,64}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:y23.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,258},{94,84}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{94,84}}</string>
+                <key>sourceSize</key>
+                <string>{94,84}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:y24.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{381,146},{116,105}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{116,105}}</string>
+                <key>sourceSize</key>
+                <string>{116,105}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:y25.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,136},{151,119}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{151,119}}</string>
+                <key>sourceSize</key>
+                <string>{151,119}</string>
+            </dict>
+            <key>monster_rongyansishen_10068:y26.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{177,95},{175,112}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{175,112}}</string>
+                <key>sourceSize</key>
+                <string>{175,112}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>monster_rongyansishen_10068.pvr.ccz</string>
+            <key>size</key>
+            <string>{506,363}</string>
+            <key>textureFileName</key>
+            <string>monster_rongyansishen_10068.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

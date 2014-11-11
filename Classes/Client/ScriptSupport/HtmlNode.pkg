@@ -1,0 +1,10 @@
+class HtmlNode : public CCNode
+{
+public:
+    static HtmlNode* create(float nodeWidth);
+	void begin();
+    void addLabel(const char* strContent, int fontsize, const char* fontname, ccColor3B color);
+	void addImage(cocos2d::CCSprite* sprite);
+    int addHyperLink(const char* strContent, int fontsize, const char* fontname, ccColor3B color,LUA_FUNCTION touchLuaFunc,int priority,bool isButtonEnable);
+	void finish();
+};

@@ -1,0 +1,104 @@
+class ITEMATTR
+{
+	unsigned int attr_key;					// 物品属性key
+	unsigned int attr_basic_value;			// 物品基本属性对应的value
+	unsigned int attr_intensify_value;		// 强化影响物品属性value增量
+	unsigned int attr_gem_value;			// 宝石影响物品属性value增量
+};
+
+class MANORBASEINFO
+{
+	unsigned int hurtGetCoin; // 打猎获取金币
+	unsigned int pickGetExp;  // 采集获取经验
+};
+
+enum
+{
+	FAIRYFRAGMENTBAGCAPACITY,
+
+};
+
+enum
+{
+	kItemBag,
+	kItemStorage,
+	kItemHeroEquip,
+	kItemEnchaseEquip,
+	kItemFairyEquip,
+	kAlchemyBag,
+	kAlchemyStorage,
+	kAlchemyHeroEquip,
+	kAlchemyFairyEquip,
+	kFairyStartId,
+	kItemGemStone,
+	kCardBag,
+	kCardEquip,
+	kItemManorId,
+	kEquipFragmet,
+	kFairyFragment,
+	kItemRecycle,
+};
+
+class BackPackItem
+{
+	ItemBase* getItemInfo();
+	unsigned int getItemId();
+	
+	bool isLocked;			// 是否解锁
+	bool isEmpty;			// 是否为空	
+	unsigned int position;	// 物品位置
+	unsigned int amount;	// 物品数量
+	unsigned int itemLevel;	// 物品等级
+	EQUIPINFO* m_equipInfo;	// 装备强化属性
+	unsigned int packType; // 格子类型： 0 背包; 1仓库 ; 2装备栏 ;3 灵石背包;4 灵石仓库 ; 5灵石装备栏 ;6 精灵装备
+	SPRITEINFO* m_spriteInfo; // 灵石特有属性
+	MANORBASEINFO* m_manorBaseInfo; // 庄园信息
+
+};
+
+class ItemManager
+{
+	static ItemManager* Get();
+	BackPackItem* findItemByPos(unsigned int pos);
+	CCSprite* getIconSpriteById(unsigned int ItemId);
+	CCSprite* getIconFrame(unsigned int level);
+	ccColor3B getLabelColorByQuality(unsigned int quality);
+	ccColor3B getFairyLabelColorByQuality(unsigned int quality);
+	unsigned int getItemNumberById(unsigned int id);
+	const char* getAttributionText(unsigned int key,unsigned int value);
+	void showItemTipsById(unsigned int itemId,CCPoint pt);
+	void setTipLuaHander(LUA_FUNCTION leftHandler,const char* leftText,bool isLeftVisible,
+						LUA_FUNCTION rightHandler,const char* rightText,bool isRightVisible);
+	void setMiddleLuaHander(LUA_FUNCTION leftHandler,const char* leftText,bool isLeftVisible);
+	ItemBase* getItemInfoById(unsigned int id);
+	void openBackPack(bool withEquipment);
+	void closeEquipment();
+	void checkBagEmptyItemNum();
+	void showSpriteParticleEffect(CCNode* parent,unsigned int id,CCPoint pt);
+};
+
+class ItemBase
+{
+	unsigned int getEquipLevel();
+	unsigned int	m_id;				//物品Id
+	char			m_name[128];		//物品名
+	bool			b_isPiledUp;		//是否可堆叠
+	unsigned int	m_maxPiledNum;		//最大堆叠数量
+	unsigned int	m_source[5];		//获取方式
+	unsigned int	m_byeprice;			//购买价格
+	unsigned int	m_sellprice;		//卖出价格
+	unsigned int	m_requiredLevel;	//等级要求
+	unsigned int	m_type;				//物品类型
+	bool			b_Destroyed;		//是否可摧毁
+	char            m_szDescription[128]; //描述字段
+	unsigned int	m_quality;			//物品品质
+	unsigned int	m_iconId;
+	unsigned int	m_order;
+};
+
+class EquipmentItem : public ItemBase
+{
+	unsigned int		m_ownerType;		//使用者类型
+	unsigned int		m_equipPart;		//装备位置
+	unsigned int		m_equipLevel;		//装备等级
+};

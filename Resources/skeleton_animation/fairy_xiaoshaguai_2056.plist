@@ -1,0 +1,161 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>fairy_xiaoshaguai_2056:n chushou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{216,41},{32,20}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,20}}</string>
+                <key>sourceSize</key>
+                <string>{32,20}</string>
+            </dict>
+            <key>fairy_xiaoshaguai_2056:n daoju.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{216,63},{25,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,23}}</string>
+                <key>sourceSize</key>
+                <string>{25,23}</string>
+            </dict>
+            <key>fairy_xiaoshaguai_2056:ni daoju2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{190,41},{24,34}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,34}}</string>
+                <key>sourceSize</key>
+                <string>{24,34}</string>
+            </dict>
+            <key>fairy_xiaoshaguai_2056:ni shen.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{190,0},{61,39}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{61,39}}</string>
+                <key>sourceSize</key>
+                <string>{61,39}</string>
+            </dict>
+            <key>fairy_xiaoshaguai_2056:ni yan.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{212,88},{20,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,8}}</string>
+                <key>sourceSize</key>
+                <string>{20,8}</string>
+            </dict>
+            <key>fairy_xiaoshaguai_2056:ni zui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{190,77},{20,20}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,20}}</string>
+                <key>sourceSize</key>
+                <string>{20,20}</string>
+            </dict>
+            <key>fairy_xiaoshaguai_2056:t11.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{95,99}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{95,99}}</string>
+                <key>sourceSize</key>
+                <string>{95,99}</string>
+            </dict>
+            <key>fairy_xiaoshaguai_2056:t9.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{97,0},{91,97}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{91,97}}</string>
+                <key>sourceSize</key>
+                <string>{91,97}</string>
+            </dict>
+            <key>fairy_xiaoshaguai_2056:w1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,101},{70,30}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{70,30}}</string>
+                <key>sourceSize</key>
+                <string>{70,30}</string>
+            </dict>
+            <key>fairy_xiaoshaguai_2056:z11.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{97,99},{77,28}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{77,28}}</string>
+                <key>sourceSize</key>
+                <string>{77,28}</string>
+            </dict>
+            <key>fairy_xiaoshaguai_2056:z22.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{176,99},{74,28}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{74,28}}</string>
+                <key>sourceSize</key>
+                <string>{74,28}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>fairy_xiaoshaguai_2056.pvr.ccz</string>
+            <key>size</key>
+            <string>{251,132}</string>
+            <key>textureFileName</key>
+            <string>fairy_xiaoshaguai_2056.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

@@ -1,0 +1,499 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>monster_baixiong_10071: vnbd.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{65,194},{44,42}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{44,42}}</string>
+                <key>sourceSize</key>
+                <string>{44,42}</string>
+            </dict>
+            <key>monster_baixiong_10071:B houjiao.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{355,198},{48,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{48,29}}</string>
+                <key>sourceSize</key>
+                <string>{48,29}</string>
+            </dict>
+            <key>monster_baixiong_10071:B houtui1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{437,209},{37,38}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{37,38}}</string>
+                <key>sourceSize</key>
+                <string>{37,38}</string>
+            </dict>
+            <key>monster_baixiong_10071:B houtui2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{283,224},{35,33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{35,33}}</string>
+                <key>sourceSize</key>
+                <string>{35,33}</string>
+            </dict>
+            <key>monster_baixiong_10071:B qianjiao3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{231,227},{43,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{43,23}}</string>
+                <key>sourceSize</key>
+                <string>{43,23}</string>
+            </dict>
+            <key>monster_baixiong_10071:B qianshen.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{119,102},{80,80}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,80}}</string>
+                <key>sourceSize</key>
+                <string>{80,80}</string>
+            </dict>
+            <key>monster_baixiong_10071:B qiantui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{175,185},{23,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{23,25}}</string>
+                <key>sourceSize</key>
+                <string>{23,25}</string>
+            </dict>
+            <key>monster_baixiong_10071:Bhoushen.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{445,88},{63,61}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{63,61}}</string>
+                <key>sourceSize</key>
+                <string>{63,61}</string>
+            </dict>
+            <key>monster_baixiong_10071:Bpid.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,161},{62,47}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{62,47}}</string>
+                <key>sourceSize</key>
+                <string>{62,47}</string>
+            </dict>
+            <key>monster_baixiong_10071:Bqiantui.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{86,159},{27,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,32}}</string>
+                <key>sourceSize</key>
+                <string>{27,32}</string>
+            </dict>
+            <key>monster_baixiong_10071:Btou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{365,130},{74,65}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{74,65}}</string>
+                <key>sourceSize</key>
+                <string>{74,65}</string>
+            </dict>
+            <key>monster_baixiong_10071:F dsjoq.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,211},{38,36}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{38,36}}</string>
+                <key>sourceSize</key>
+                <string>{38,36}</string>
+            </dict>
+            <key>monster_baixiong_10071:F houshen.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{283,166},{44,55}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{44,55}}</string>
+                <key>sourceSize</key>
+                <string>{44,55}</string>
+            </dict>
+            <key>monster_baixiong_10071:F qianshen.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,76},{83,82}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{83,82}}</string>
+                <key>sourceSize</key>
+                <string>{83,82}</string>
+            </dict>
+            <key>monster_baixiong_10071:F qianyouxiaot.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{477,209},{28,22}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{28,22}}</string>
+                <key>sourceSize</key>
+                <string>{28,22}</string>
+            </dict>
+            <key>monster_baixiong_10071:F qianyouz.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{112,228},{36,26}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{36,26}}</string>
+                <key>sourceSize</key>
+                <string>{36,26}</string>
+            </dict>
+            <key>monster_baixiong_10071:F tou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{442,152},{64,54}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{64,54}}</string>
+                <key>sourceSize</key>
+                <string>{64,54}</string>
+            </dict>
+            <key>monster_baixiong_10071:bgnt.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{242,0},{127,70}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{127,70}}</string>
+                <key>sourceSize</key>
+                <string>{127,70}</string>
+            </dict>
+            <key>monster_baixiong_10071:cdhfw.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{406,198},{28,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{28,25}}</string>
+                <key>sourceSize</key>
+                <string>{28,25}</string>
+            </dict>
+            <key>monster_baixiong_10071:cihdw.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{238,166},{42,58}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{42,58}}</string>
+                <key>sourceSize</key>
+                <string>{42,58}</string>
+            </dict>
+            <key>monster_baixiong_10071:cnhdsw.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{202,102},{33,47}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{33,47}}</string>
+                <key>sourceSize</key>
+                <string>{33,47}</string>
+            </dict>
+            <key>monster_baixiong_10071:ganhquan.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{134,0},{105,99}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{105,99}}</string>
+                <key>sourceSize</key>
+                <string>{105,99}</string>
+            </dict>
+            <key>monster_baixiong_10071:jiao4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{330,166},{22,37}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,37}}</string>
+                <key>sourceSize</key>
+                <string>{22,37}</string>
+            </dict>
+            <key>monster_baixiong_10071:jvdj,.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{201,186},{34,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{34,21}}</string>
+                <key>sourceSize</key>
+                <string>{34,21}</string>
+            </dict>
+            <key>monster_baixiong_10071:lopq.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{242,73},{120,56}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{120,56}}</string>
+                <key>sourceSize</key>
+                <string>{120,56}</string>
+            </dict>
+            <key>monster_baixiong_10071:mcjdf.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{86,76},{30,80}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{30,80}}</string>
+                <key>sourceSize</key>
+                <string>{30,80}</string>
+            </dict>
+            <key>monster_baixiong_10071:misdoq.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{151,228},{36,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{36,23}}</string>
+                <key>sourceSize</key>
+                <string>{36,23}</string>
+            </dict>
+            <key>monster_baixiong_10071:mjkd.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{490,50},{11,7}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,7}}</string>
+                <key>sourceSize</key>
+                <string>{11,7}</string>
+            </dict>
+            <key>monster_baixiong_10071:mjss.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{445,0},{42,85}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{42,85}}</string>
+                <key>sourceSize</key>
+                <string>{42,85}</string>
+            </dict>
+            <key>monster_baixiong_10071:oplou.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{131,73}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{131,73}}</string>
+                <key>sourceSize</key>
+                <string>{131,73}</string>
+            </dict>
+            <key>monster_baixiong_10071:pid.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{116,185},{56,40}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{56,40}}</string>
+                <key>sourceSize</key>
+                <string>{56,40}</string>
+            </dict>
+            <key>monster_baixiong_10071:pqowe.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{201,210},{27,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,17}}</string>
+                <key>sourceSize</key>
+                <string>{27,17}</string>
+            </dict>
+            <key>monster_baixiong_10071:qwa.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{238,132},{108,31}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{108,31}}</string>
+                <key>sourceSize</key>
+                <string>{108,31}</string>
+            </dict>
+            <key>monster_baixiong_10071:shdwo.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{202,152},{33,31}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{33,31}}</string>
+                <key>sourceSize</key>
+                <string>{33,31}</string>
+            </dict>
+            <key>monster_baixiong_10071:vfbfg.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{372,0},{70,127}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{70,127}}</string>
+                <key>sourceSize</key>
+                <string>{70,127}</string>
+            </dict>
+            <key>monster_baixiong_10071:vvdfv.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{490,30},{16,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,17}}</string>
+                <key>sourceSize</key>
+                <string>{16,17}</string>
+            </dict>
+            <key>monster_baixiong_10071:weib.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{490,0},{15,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,27}}</string>
+                <key>sourceSize</key>
+                <string>{15,27}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>monster_baixiong_10071.pvr.ccz</string>
+            <key>size</key>
+            <string>{508,257}</string>
+            <key>textureFileName</key>
+            <string>monster_baixiong_10071.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

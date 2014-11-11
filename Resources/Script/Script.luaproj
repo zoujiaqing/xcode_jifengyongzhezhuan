@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlLuaProjectDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <DocumentRef FileName=".\GameUILayer.lua" />
+    <DocumentRef FileName=".\handleMessage.lua" />
+    <DocumentRef FileName=".\main.lua" />
+    <DocumentRef FileName=".\ppveUILayer.lua" />
+    <DocumentRef FileName=".\ppveRoom.lua" />
+    <DocumentRef FileName=".\OsCommonMethod.lua" />
+    <DocumentRef FileName=".\ChatToolLayer.lua" />
+    <DocumentRef FileName=".\CommonDefine.lua" />
+    <DocumentRef FileName=".\pvp_1vs1.lua" />
+    <DocumentRef FileName=".\pvp_2vs2.lua" />
+    <DocumentRef FileName=".\pvp_s1.lua" />
+    <DocumentRef FileName=".\pvpUILayer.lua" />
+  </Documents>
+  <DocumentGroups />
+  <DocumentFolders>
+    <XmlDocumentFolder>
+      <Documents>
+        <DocumentRef FileName=".\QuestDialog.lua" />
+        <DocumentRef FileName=".\EquipmentItem.lua" />
+        <DocumentRef FileName=".\ExchangeItem.lua" />
+        <DocumentRef FileName=".\Item.lua" />
+        <DocumentRef FileName=".\ItemConfigTab.lua" />
+        <DocumentRef FileName=".\characterString.lua" />
+        <DocumentRef FileName=".\Localization.lua" />
+        <DocumentRef FileName=".\LocalizationItemGetter.lua" />
+        <DocumentRef FileName=".\npc.lua" />
+        <DocumentRef FileName=".\NpcItemConfigTable.lua" />
+        <DocumentRef FileName=".\InstanceConfigTable.lua" />
+        <DocumentRef FileName=".\InstanceList.lua" />
+        <DocumentRef FileName=".\RaidBasic.lua" />
+        <DocumentRef FileName=".\MapDataTable.lua" />
+      </Documents>
+      <DocumentGroups />
+      <DocumentFolders />
+      <RelativePath>.\GameConfig\</RelativePath>
+    </XmlDocumentFolder>
+    <XmlDocumentFolder>
+      <Documents>
+        <DocumentRef FileName=".\10001.lua" />
+      </Documents>
+      <DocumentGroups />
+      <DocumentFolders />
+      <RelativePath>.\Level\</RelativePath>
+    </XmlDocumentFolder>
+    <XmlDocumentFolder>
+      <Documents>
+        <DocumentRef FileName=".\task.lua" />
+        <DocumentRef FileName=".\TaskState.lua" />
+        <DocumentRef FileName=".\TaskParser.lua" />
+      </Documents>
+      <DocumentGroups />
+      <DocumentFolders />
+      <RelativePath>.\Task\</RelativePath>
+    </XmlDocumentFolder>
+    <XmlDocumentFolder>
+      <Documents>
+        <DocumentRef FileName=".\ElfConfigParse.lua" />
+        <DocumentRef FileName=".\fairybasicinfo.lua" />
+        <DocumentRef FileName=".\SpriteElfLayer.lua" />
+        <DocumentRef FileName=".\SpriteElfStrengthenLayer.lua" />
+      </Documents>
+      <DocumentGroups />
+      <DocumentFolders />
+      <RelativePath>.\SpriteElf\</RelativePath>
+    </XmlDocumentFolder>
+    <XmlDocumentFolder>
+      <Documents>
+        <DocumentRef FileName=".\battleLayer.lua" />
+        <DocumentRef FileName=".\battleWinLayer.lua" />
+        <DocumentRef FileName=".\PlayerInfo.lua" />
+        <DocumentRef FileName=".\backPackLayer.lua" />
+      </Documents>
+      <DocumentGroups />
+      <DocumentFolders />
+      <RelativePath>.\UILayer\</RelativePath>
+    </XmlDocumentFolder>
+    <XmlDocumentFolder>
+      <Documents>
+        <DocumentRef FileName=".\SkillBasicDataTable.lua" />
+        <DocumentRef FileName=".\SkillDataCenter.lua" />
+        <DocumentRef FileName=".\SkillEquipLayer.lua" />
+        <DocumentRef FileName=".\SkillSelectLayer.lua" />
+      </Documents>
+      <DocumentGroups />
+      <DocumentFolders />
+      <RelativePath>.\Skill\</RelativePath>
+    </XmlDocumentFolder>
+  </DocumentFolders>
+  <ProjectProperties>
+    <ExternalProgram />
+    <CmdLineArgs />
+    <StartupFileName>.\GameConfig\npc.lua</StartupFileName>
+    <WorkingDir />
+    <UseRemoteMachine>false</UseRemoteMachine>
+    <RemoteMachineName />
+    <BuildOutputDir>E:\acc\branches</BuildOutputDir>
+    <PreBuildEventCmdLine />
+    <PostBuildEventCmdLine />
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </ProjectProperties>
+</XmlLuaProjectDocument>

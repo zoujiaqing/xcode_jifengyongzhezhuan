@@ -1,0 +1,8 @@
+class FeedbackLayer : CCLayer
+{
+    static FeedbackLayer* Get();
+	virtual void callbackHotSpot(CCObject *sender);
+	virtual void callbackOnline(CCObject *sender);
+	virtual void callbackForum(CCObject *sender);
+	void callbackWeb(char * url);
+}

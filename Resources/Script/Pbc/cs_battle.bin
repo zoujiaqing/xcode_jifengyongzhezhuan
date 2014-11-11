@@ -1,0 +1,389 @@
+
+Ω8
+cs_battle.protocs_core.proto"%
+CSPoint
+xpos (
+ypos ("Ç
+CSBattleMoveReq
+
+id (
+reg_time (
+
+channel_id (
+direct (2.CSPoint
+pos (2.CSPoint
+time ("Ç
+CSBattleMoveRsp
+
+id (
+reg_time (
+
+channel_id (
+direct (2.CSPoint
+pos (2.CSPoint
+time ("Q
+MonsterMoveValue
+
+id (
+direct (2.CSPoint
+paths (2.CSPoint"4
+CSMonsterMoveRsp 
+moves (2.MonsterMoveValue"6
+CSBattleCreateReq
+	battle_id (
+map_id ("√
+MonsterBattleInfo
+physical_attack (
+magic_attack (
+skill_attack (
+physical_defence (
+magic_defence (
+skill_defence (
+health_point (
+accurate (
+dodge	 (
+wreck
+ (
+parry (
+critical_strike (
+tenacity (
+slay (
+proficiency ("ë
+MonsterInfo
+
+id (
+type_id (
+level (
+blood (
+point (2.CSPoint
+direct (2.CSPoint
+speed (
+boss ( 
+moves	 (2.MonsterMoveValue'
+battle_info
+ (2.MonsterBattleInfo
+elite (
+hp_line (
+city ("›
+CSBattleCreateRsp!
+monsterinfo (2.MonsterInfo 
+userinfo (2.BasicUserInfo
+	battle_id (
+map_id (
+portal (2.CSPoint
+portal_map_id (
+timeout (
+monsterbirth (2.CSPoint"P
+CSBattleMonsterCreateRsp!
+monsterinfo (2.MonsterInfo
+	is_summon ("7
+CSBattleUserJoinRsp 
+userinfo (2.BasicUserInfo"L
+CSBattleUserLeaveRsp
+userid (
+reg_time (
+
+channel_id ("
+CSBattleLoadCompleteReq";
+CSBattleLoadCompleteRsp
+timeout (
+remains ("
+CSBattleLeaveReq"∂
+CSBattleLeaveRsp
+
+initiative (
+star (
+finish_time (
+dead_mon_num (
+rewards (2	.CSReward
+prop_rewards (2	.CSReward
+next_instance_id ("
+CSBattleTimeoutRsp"a
+CSBattlePlayerDelRsp
+userid (
+reg_time (
+
+channel_id (
+exchange_id ("
+CSBattlePlayerRevivalReq"P
+CSBattlePlayerRevivalRsp
+userid (
+reg_time (
+
+channel_id ("å
+AttackMonsterInfo
+
+id (
+	start_pos (2.CSPoint
+pos (2.CSPoint
+direct (2.CSPoint
+blood (
+status ("Y
+CSAttackMonsterBackInfo
+
+id (
+monster_type (
+blood (
+elite ("è
+CSMonsterAttackInfo
+
+id (
+pos (2.CSPoint
+direct (2.CSPoint
+	action_id (
+type (
+userid (
+reg_time (
+
+channel_id (
+skill_id	 (
+	effect_id
+ (
+	start_pos (2.CSPoint
+end_pos (2.CSPoint
+skill_speed (
+
+delay_time (
+	dead_time (
+
+shake_time (
+virtual_pos (2.CSPoint
+effect_animation ("Ω
+CSMonsterEffectInfo
+type (
+	effect_id (
+	start_pos (2.CSPoint
+end_pos (2.CSPoint
+skill_speed (
+
+delay_time (
+
+id (
+effect_animation (";
+CSMonsterAttackRsp%
+attacks (2.CSMonsterAttackInfo";
+CSMonsterEffectRsp%
+effects (2.CSMonsterEffectInfo"˚
+CSMonsterBuffEffectInfo
+	action_id (
+	effect_id (
+
+delay_time (
+	dead_time (:
+	buff_info (2'.CSMonsterBuffEffectInfo.BuffEffectInfo
+skill_id (E
+BuffEffectInfo
+
+id ('
+battle_info (2.MonsterBattleInfo"<
+CSBuffEffectRsp)
+effects (2.CSMonsterBuffEffectInfo"≥
+CSMonsterHitRsp(
+users (2.CSMonsterHitRsp.UserInfov
+UserInfo
+	hurt_type (
+userid (
+reg_time (
+
+channel_id (
+blood (
+
+rage_point ("˛
+CSSkillBeginReq
+userid (
+reg_time (
+
+channel_id (
+	action_id (
+pos (2.CSPoint
+start_dir_x (
+start_dir_y (
+
+target_pos (2.CSPoint
+direct_x	 (
+direct_y
+ (
+aim (
+
+entity_pos ("˛
+CSSkillBeginRsp
+userid (
+reg_time (
+
+channel_id (
+	action_id (
+pos (2.CSPoint
+start_dir_x (
+start_dir_y (
+
+target_pos (2.CSPoint
+direct_x	 (
+direct_y
+ (
+aim (
+
+entity_pos ("¯
+CSPlayerAttackReq
+userid (
+reg_time (
+
+channel_id (
+	start_pos (2.CSPoint
+start_direct (2.CSPoint
+end_pos (2.CSPoint
+
+end_direct (2.CSPoint
+	action_id ($
+monsters	 (2.AttackMonsterInfo"¯
+CSPlayerAttackRsp
+userid (
+reg_time (
+
+channel_id (
+	start_pos (2.CSPoint
+start_direct (2.CSPoint
+end_pos (2.CSPoint
+
+end_direct (2.CSPoint
+	action_id ($
+monsters	 (2.AttackMonsterInfo"j
+AttackPlayerInfo
+userid (
+reg_time (
+
+channel_id (
+blood (
+	hurt_type ("˜
+CSPlayerHitPlayerReq
+userid (
+reg_time (
+
+channel_id (
+	start_pos (2.CSPoint
+start_direct (2.CSPoint
+end_pos (2.CSPoint
+
+end_direct (2.CSPoint
+	action_id ( 
+users	 (2.AttackPlayerInfo"˜
+CSPlayerHitPlayerRsp
+userid (
+reg_time (
+
+channel_id (
+	start_pos (2.CSPoint
+start_direct (2.CSPoint
+end_pos (2.CSPoint
+
+end_direct (2.CSPoint
+	action_id ( 
+users	 (2.AttackPlayerInfo"õ
+CSPlayerHPRsp
+userid (
+reg_time (
+
+channel_id (
+blood (
+	source_id (
+source_reg_time (
+source_channel_id ("
+CSPlayerHPReq
+blood ("u
+CSMonsterBloodRsp
+userid (
+reg_time (
+
+channel_id (*
+monsters (2.CSAttackMonsterBackInfo"#
+CSMonsterDieReq
+monsters ("#
+CSMonsterDieRsp
+monsters ("
+CSPlayerDieShowReq"P
+CSPlayerDieShowRsp
+attack (
+defend (
+
+hp (
+values ("
+CSPlayerMayImproveReq")
+CSPlayerMayImproveRsp
+imp_item ("
+CSWBViewPlayersReq"Ö
+CSWBMonsterBloodRsp2
+monsters (2 .CSWBMonsterBloodRsp.MonsterInfo:
+MonsterInfo
+
+id (
+blood (
+total_hp ("K
+CSWBPlayerFailRsp
+coin (
+
+reputation (
+revival_time ("
+CSWBBtlPlayerRevivalReq"t
+CSWBHurtStatistics
+rank (
+name (
+hurt (
+
+percentage (
+coin (
+
+reputation ("
+CSWBRTHurtRankReq"d
+CSWBRTHurtRankRsp$
+ranking (2.CSWBHurtStatistics)
+self_ranking (2.CSWBHurtStatistics"
+CSWBRewardReq"ä
+CSWBRewardRsp$
+ranking (2.CSWBHurtStatistics)
+self_ranking (2.CSWBHurtStatistics(
+last_killer (2.CSWBHurtStatistics"Z
+CSBattleUserAddBloodRsp
+
+id (
+reg_time (
+
+channel_id (
+blood ("
+CSWBBattleLeaveReq"
+CSWBBattleFinishRsp">
+CSCBHurtNotifyRsp
+max_acc_hurt (
+next_target ("o
+CSCBFinshBattleRsp
+max_acc_hurt (
+his_max_hurt (
+rank (
+updown (
+item_id ("
+CSCBDoubleReq"M
+CSCBDoubleRsp
+factor (
+next_item_num (
+next_cost_num ("Ö
+CSBBMonsterBloodRsp2
+monsters (2 .CSBBMonsterBloodRsp.MonsterInfo:
+MonsterInfo
+
+id (
+blood (
+total_hp ("
+CSBBBattleLeaveReq"Ç
+CSBabelRewardRsp-
+rewards (2.CSBabelRewardRsp.RewardInfo?
+
+RewardInfo
+item_id (
+item_num (
+factor ("
+CSBabelFailRsp"{
+CSCityBloodRsp-
+monsters (2.CSCityBloodRsp.MonsterInfo:
+MonsterInfo
+
+id (
+blood (
+total_hp (

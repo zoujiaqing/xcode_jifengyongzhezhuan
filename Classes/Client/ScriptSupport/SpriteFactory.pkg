@@ -1,0 +1,16 @@
+class SpriteFactory
+{
+	void PrintLog();
+	static SpriteFactory* sharedFactory();
+	int GetValue();
+	void ShowElfOnLayerAtPoint(CCNode* parentNode,int type,CCPoint pos);
+	void RemoveElfFromHero(PLAYER_ID roleId);
+	void AttachElfToOneHero(unsigned int elfTypeId,PLAYER_ID heroId, unsigned int grade);
+	CCNode* GetMainMenuLayerNode();
+	void ResetValue();
+	bool ShowElfPanelWithBackPackLayer();
+	void SendElfAwakeMessage(unsigned int awakeType);
+	void SendAwakeConfigMessage();
+	void RemoveElfFromParent(CCNode *parentNode);
+};
+CCSprite* graylightWithCCSprite(CCSprite* oldSprite,bool isLight);

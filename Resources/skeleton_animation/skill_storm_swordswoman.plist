@@ -1,0 +1,1487 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>skill_storm_swordswoman:asdr.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{587,831},{73,52}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{73,52}}</string>
+                <key>sourceSize</key>
+                <string>{73,52}</string>
+            </dict>
+            <key>skill_storm_swordswoman:asva.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{735,765},{59,73}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{59,73}}</string>
+                <key>sourceSize</key>
+                <string>{59,73}</string>
+            </dict>
+            <key>skill_storm_swordswoman:b nvjian pifeng.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{64,768},{78,53}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{78,53}}</string>
+                <key>sourceSize</key>
+                <string>{78,53}</string>
+            </dict>
+            <key>skill_storm_swordswoman:bdvf.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{662,877},{68,43}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{68,43}}</string>
+                <key>sourceSize</key>
+                <string>{68,43}</string>
+            </dict>
+            <key>skill_storm_swordswoman:c jn11.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{369,794},{216,94}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{216,94}}</string>
+                <key>sourceSize</key>
+                <string>{216,94}</string>
+            </dict>
+            <key>skill_storm_swordswoman:c jn12.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{814,701},{171,91}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{171,91}}</string>
+                <key>sourceSize</key>
+                <string>{171,91}</string>
+            </dict>
+            <key>skill_storm_swordswoman:c jn13.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{735,840},{227,97}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{227,97}}</string>
+                <key>sourceSize</key>
+                <string>{227,97}</string>
+            </dict>
+            <key>skill_storm_swordswoman:c nvjian fa.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{980,411},{36,34}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{36,34}}</string>
+                <key>sourceSize</key>
+                <string>{36,34}</string>
+            </dict>
+            <key>skill_storm_swordswoman:c nvjian hujian1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1007,168},{15,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,9}}</string>
+                <key>sourceSize</key>
+                <string>{15,9}</string>
+            </dict>
+            <key>skill_storm_swordswoman:c nvjian shou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,361},{11,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,9}}</string>
+                <key>sourceSize</key>
+                <string>{11,9}</string>
+            </dict>
+            <key>skill_storm_swordswoman:c nvjian shou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{442,364},{9,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,9}}</string>
+                <key>sourceSize</key>
+                <string>{9,9}</string>
+            </dict>
+            <key>skill_storm_swordswoman:c nvjian shoujia 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,288},{16,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,10}}</string>
+                <key>sourceSize</key>
+                <string>{16,10}</string>
+            </dict>
+            <key>skill_storm_swordswoman:c nvjian shoujia2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,300},{13,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,10}}</string>
+                <key>sourceSize</key>
+                <string>{13,10}</string>
+            </dict>
+            <key>skill_storm_swordswoman:caz.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{249,805},{62,67}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{62,67}}</string>
+                <key>sourceSize</key>
+                <string>{62,67}</string>
+            </dict>
+            <key>skill_storm_swordswoman:cdsb.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{438,598},{197,102}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{197,102}}</string>
+                <key>sourceSize</key>
+                <string>{197,102}</string>
+            </dict>
+            <key>skill_storm_swordswoman:cxa.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{796,794},{225,44}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{225,44}}</string>
+                <key>sourceSize</key>
+                <string>{225,44}</string>
+            </dict>
+            <key>skill_storm_swordswoman:czs.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{645,704},{88,63}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{88,63}}</string>
+                <key>sourceSize</key>
+                <string>{88,63}</string>
+            </dict>
+            <key>skill_storm_swordswoman:mhn.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{82,872},{163,59}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{163,59}}</string>
+                <key>sourceSize</key>
+                <string>{163,59}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nv jian xie6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1007,92},{13,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,15}}</string>
+                <key>sourceSize</key>
+                <string>{13,15}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian fa1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{980,376},{40,33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{40,33}}</string>
+                <key>sourceSize</key>
+                <string>{40,33}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian fa3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{832,403},{35,37}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{35,37}}</string>
+                <key>sourceSize</key>
+                <string>{35,37}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian huijian2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,248},{16,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,14}}</string>
+                <key>sourceSize</key>
+                <string>{16,14}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian hujian2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,372},{11,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,8}}</string>
+                <key>sourceSize</key>
+                <string>{11,8}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian hujian3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,351},{12,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,8}}</string>
+                <key>sourceSize</key>
+                <string>{12,8}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian jiao1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,177},{17,22}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,22}}</string>
+                <key>sourceSize</key>
+                <string>{17,22}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian jiao2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1007,109},{13,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,14}}</string>
+                <key>sourceSize</key>
+                <string>{13,14}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian kudang1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,264},{17,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,10}}</string>
+                <key>sourceSize</key>
+                <string>{17,10}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian kudang2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,276},{17,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,10}}</string>
+                <key>sourceSize</key>
+                <string>{17,10}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian lian1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{997,249},{24,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,25}}</string>
+                <key>sourceSize</key>
+                <string>{24,25}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian lian2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{997,223},{25,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,24}}</string>
+                <key>sourceSize</key>
+                <string>{25,24}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian pifeng1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{587,885},{72,47}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{72,47}}</string>
+                <key>sourceSize</key>
+                <string>{72,47}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian shenti1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{997,343},{21,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,15}}</string>
+                <key>sourceSize</key>
+                <string>{21,15}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian shou4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,339},{11,10}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,10}}</string>
+                <key>sourceSize</key>
+                <string>{11,10}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian shou5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,325},{10,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{10,12}}</string>
+                <key>sourceSize</key>
+                <string>{10,12}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian shoubi1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1007,152},{11,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{11,14}}</string>
+                <key>sourceSize</key>
+                <string>{11,14}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian shoubi1 1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,232},{17,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{17,14}}</string>
+                <key>sourceSize</key>
+                <string>{17,14}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian shoubi3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{442,335},{9,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,13}}</string>
+                <key>sourceSize</key>
+                <string>{9,13}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian shoubi4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{997,204},{7,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{7,12}}</string>
+                <key>sourceSize</key>
+                <string>{7,12}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian shoujia4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1006,206},{16,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,15}}</string>
+                <key>sourceSize</key>
+                <string>{16,15}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian shoujia5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1007,138},{13,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,12}}</string>
+                <key>sourceSize</key>
+                <string>{13,12}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian tui1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{997,360},{19,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,14}}</string>
+                <key>sourceSize</key>
+                <string>{19,14}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian tui2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1007,58},{12,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,17}}</string>
+                <key>sourceSize</key>
+                <string>{12,17}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian tui3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{997,189},{8,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{8,13}}</string>
+                <key>sourceSize</key>
+                <string>{8,13}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian tui4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1007,195},{14,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,9}}</string>
+                <key>sourceSize</key>
+                <string>{14,9}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian tui5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,312},{12,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{12,11}}</string>
+                <key>sourceSize</key>
+                <string>{12,11}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian tuijia2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1007,21},{14,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,17}}</string>
+                <key>sourceSize</key>
+                <string>{14,17}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian weijing2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{980,447},{32,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,18}}</string>
+                <key>sourceSize</key>
+                <string>{32,18}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian weijing3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{832,442},{36,18}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{36,18}}</string>
+                <key>sourceSize</key>
+                <string>{36,18}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian xie3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1007,77},{15,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,13}}</string>
+                <key>sourceSize</key>
+                <string>{15,13}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian xie5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1007,0},{15,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,19}}</string>
+                <key>sourceSize</key>
+                <string>{15,19}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian xie6.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{997,300},{22,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,19}}</string>
+                <key>sourceSize</key>
+                <string>{22,19}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjian xie7.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,201},{18,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,14}}</string>
+                <key>sourceSize</key>
+                <string>{18,14}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjiang tou5.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{338,417},{32,33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,33}}</string>
+                <key>sourceSize</key>
+                <string>{32,33}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjianshenti2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{997,321},{21,20}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{21,20}}</string>
+                <key>sourceSize</key>
+                <string>{21,20}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjianshoubi2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{442,350},{9,12}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{9,12}}</string>
+                <key>sourceSize</key>
+                <string>{9,12}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjiantui1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1007,125},{14,11}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,11}}</string>
+                <key>sourceSize</key>
+                <string>{14,11}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjiantui3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1007,40},{13,16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,16}}</string>
+                <key>sourceSize</key>
+                <string>{13,16}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjiantui4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{453,217},{18,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{18,13}}</string>
+                <key>sourceSize</key>
+                <string>{18,13}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjiantuijia1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1007,179},{10,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{10,14}}</string>
+                <key>sourceSize</key>
+                <string>{10,14}</string>
+            </dict>
+            <key>skill_storm_swordswoman:nvjianweijing1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{442,382},{26,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,14}}</string>
+                <key>sourceSize</key>
+                <string>{26,14}</string>
+            </dict>
+            <key>skill_storm_swordswoman:opv.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{662,831},{71,44}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{71,44}}</string>
+                <key>sourceSize</key>
+                <string>{71,44}</string>
+            </dict>
+            <key>skill_storm_swordswoman:sadav.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{645,769},{71,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{71,60}}</string>
+                <key>sourceSize</key>
+                <string>{71,60}</string>
+            </dict>
+            <key>skill_storm_swordswoman:twee1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{313,684},{105,86}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{105,86}}</string>
+                <key>sourceSize</key>
+                <string>{105,86}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 1 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{144,788},{103,31}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{103,31}}</string>
+                <key>sourceSize</key>
+                <string>{103,31}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 13.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{264,772},{103,31}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{103,31}}</string>
+                <key>sourceSize</key>
+                <string>{103,31}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 14.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{154,749},{108,37}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{108,37}}</string>
+                <key>sourceSize</key>
+                <string>{108,37}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 15.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{155,707},{107,40}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{107,40}}</string>
+                <key>sourceSize</key>
+                <string>{107,40}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 21.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{158,588},{153,117}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{153,117}}</string>
+                <key>sourceSize</key>
+                <string>{153,117}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 22.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{472,244},{191,202}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{191,202}}</string>
+                <key>sourceSize</key>
+                <string>{191,202}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 23.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{665,244},{165,207}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{165,207}}</string>
+                <key>sourceSize</key>
+                <string>{165,207}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 24.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,417},{156,201}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{156,201}}</string>
+                <key>sourceSize</key>
+                <string>{156,201}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 26.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{373,177},{78,156}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{78,156}}</string>
+                <key>sourceSize</key>
+                <string>{78,156}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 31.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1022,50},{0,0}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{0,0}}</string>
+                <key>sourceSize</key>
+                <string>{0,0}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 32.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1022,48},{0,0}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{0,0}}</string>
+                <key>sourceSize</key>
+                <string>{0,0}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 33.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1022,54},{0,0}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{0,0}}</string>
+                <key>sourceSize</key>
+                <string>{0,0}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 34.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1022,42},{0,0}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{0,0}}</string>
+                <key>sourceSize</key>
+                <string>{0,0}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 35.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1022,44},{0,0}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{0,0}}</string>
+                <key>sourceSize</key>
+                <string>{0,0}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 36.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1022,46},{0,0}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{0,0}}</string>
+                <key>sourceSize</key>
+                <string>{0,0}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 37.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1022,40},{0,0}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{0,0}}</string>
+                <key>sourceSize</key>
+                <string>{0,0}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 38.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1022,52},{0,0}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{0,0}}</string>
+                <key>sourceSize</key>
+                <string>{0,0}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 39.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{247,874},{78,41}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{78,41}}</string>
+                <key>sourceSize</key>
+                <string>{78,41}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 41.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,806},{50,41}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{50,41}}</string>
+                <key>sourceSize</key>
+                <string>{50,41}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 42.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,620},{108,98}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{108,98}}</string>
+                <key>sourceSize</key>
+                <string>{108,98}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 44.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{639,453},{141,165}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{141,165}}</string>
+                <key>sourceSize</key>
+                <string>{141,165}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 45.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{876,189},{119,183}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{119,183}}</string>
+                <key>sourceSize</key>
+                <string>{119,183}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 46.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{876,0},{129,187}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{129,187}}</string>
+                <key>sourceSize</key>
+                <string>{129,187}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 47.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{875,374},{103,189}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{103,189}}</string>
+                <key>sourceSize</key>
+                <string>{103,189}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 48.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{338,474},{78,118}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{78,118}}</string>
+                <key>sourceSize</key>
+                <string>{78,118}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 49.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,720},{62,84}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{62,84}}</string>
+                <key>sourceSize</key>
+                <string>{62,84}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 51.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{997,276},{22,22}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{22,22}}</string>
+                <key>sourceSize</key>
+                <string>{22,22}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 52.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{110,675},{43,45}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{43,45}}</string>
+                <key>sourceSize</key>
+                <string>{43,45}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 53.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{782,453},{47,56}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{47,56}}</string>
+                <key>sourceSize</key>
+                <string>{47,56}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 54.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{832,362},{41,39}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{41,39}}</string>
+                <key>sourceSize</key>
+                <string>{41,39}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 61.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{420,702},{168,90}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{168,90}}</string>
+                <key>sourceSize</key>
+                <string>{168,90}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 62.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{158,417},{178,169}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{178,169}}</string>
+                <key>sourceSize</key>
+                <string>{178,169}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 63.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,177},{371,238}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{371,238}}</string>
+                <key>sourceSize</key>
+                <string>{371,238}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 64.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{473,0},{401,242}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{401,242}}</string>
+                <key>sourceSize</key>
+                <string>{401,242}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 65.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{471,175}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{471,175}}</string>
+                <key>sourceSize</key>
+                <string>{471,175}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 67.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{442,448},{195,148}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{195,148}}</string>
+                <key>sourceSize</key>
+                <string>{195,148}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx 68.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{313,805},{52,58}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{52,58}}</string>
+                <key>sourceSize</key>
+                <string>{52,58}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx43.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{842,565},{137,134}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{137,134}}</string>
+                <key>sourceSize</key>
+                <string>{137,134}</string>
+            </dict>
+            <key>skill_storm_swordswoman:tx53.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{110,620},{46,53}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{46,53}}</string>
+                <key>sourceSize</key>
+                <string>{46,53}</string>
+            </dict>
+            <key>skill_storm_swordswoman:vbf.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{637,620},{115,82}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{115,82}}</string>
+                <key>sourceSize</key>
+                <string>{115,82}</string>
+            </dict>
+            <key>skill_storm_swordswoman:vdc.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,872},{80,41}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,41}}</string>
+                <key>sourceSize</key>
+                <string>{80,41}</string>
+            </dict>
+            <key>skill_storm_swordswoman:vvde.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{313,594},{123,88}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{123,88}}</string>
+                <key>sourceSize</key>
+                <string>{123,88}</string>
+            </dict>
+            <key>skill_storm_swordswoman:vvft.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{64,722},{88,44}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{88,44}}</string>
+                <key>sourceSize</key>
+                <string>{88,44}</string>
+            </dict>
+            <key>skill_storm_swordswoman:wuqi_1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{832,244},{42,116}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{42,116}}</string>
+                <key>sourceSize</key>
+                <string>{42,116}</string>
+            </dict>
+            <key>skill_storm_swordswoman:wuqi_20.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{782,511},{58,130}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{58,130}}</string>
+                <key>sourceSize</key>
+                <string>{58,130}</string>
+            </dict>
+            <key>skill_storm_swordswoman:wuqi_40.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{754,643},{58,120}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{58,120}}</string>
+                <key>sourceSize</key>
+                <string>{58,120}</string>
+            </dict>
+            <key>skill_storm_swordswoman:wuqi_60.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{590,704},{53,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{53,125}}</string>
+                <key>sourceSize</key>
+                <string>{53,125}</string>
+            </dict>
+            <key>skill_storm_swordswoman:wuqi_80.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{373,335},{67,137}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{67,137}}</string>
+                <key>sourceSize</key>
+                <string>{67,137}</string>
+            </dict>
+            <key>skill_storm_swordswoman:wwec.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{144,821},{78,49}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{78,49}}</string>
+                <key>sourceSize</key>
+                <string>{78,49}</string>
+            </dict>
+            <key>skill_storm_swordswoman:z nvjian pifeng1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{52,823},{78,47}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{78,47}}</string>
+                <key>sourceSize</key>
+                <string>{78,47}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>skill_storm_swordswoman.pvr.ccz</string>
+            <key>size</key>
+            <string>{1023,943}</string>
+            <key>textureFileName</key>
+            <string>skill_storm_swordswoman.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

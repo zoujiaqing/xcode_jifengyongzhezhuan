@@ -1,0 +1,12 @@
+class TipMgr
+{
+public:
+	static TipMgr*	Get();
+    void createTip(CCSprite* icon, CCPoint pt);
+    void add(CCSprite* labelIcon, const char* message, ccColor3B color, int fontsize);
+    void add(const char* message,ccColor3B color, int fontsize);
+	HtmlNode* addPart(const char *message, ccColor3B color, int fontsize);
+	void addPart(HtmlNode* node, const char *message, ccColor3B color, int fontsize,bool isFinish);
+    void addNodeDone();
+    void destroyTip();
+}

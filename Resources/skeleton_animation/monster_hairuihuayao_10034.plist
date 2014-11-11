@@ -1,0 +1,434 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>monster_hairuihuayao_10034:b h shenti.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{130,0},{93,135}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{93,135}}</string>
+                <key>sourceSize</key>
+                <string>{93,135}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:b h tou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{445,0},{54,90}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{54,90}}</string>
+                <key>sourceSize</key>
+                <string>{54,90}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:b h tou3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{326,89},{100,94}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,94}}</string>
+                <key>sourceSize</key>
+                <string>{100,94}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:b htou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{325,220},{68,36}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{68,36}}</string>
+                <key>sourceSize</key>
+                <string>{68,36}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:n11.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{183,182},{34,47}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{34,47}}</string>
+                <key>sourceSize</key>
+                <string>{34,47}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:n12.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{429,93},{53,74}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{53,74}}</string>
+                <key>sourceSize</key>
+                <string>{53,74}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:n13.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,170},{52,73}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{52,73}}</string>
+                <key>sourceSize</key>
+                <string>{52,73}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:n14.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{361,261},{63,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{63,27}}</string>
+                <key>sourceSize</key>
+                <string>{63,27}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:n15.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{429,170},{52,73}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{52,73}}</string>
+                <key>sourceSize</key>
+                <string>{52,73}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:n16.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{325,186},{74,31}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{74,31}}</string>
+                <key>sourceSize</key>
+                <string>{74,31}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:n17.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{55,170},{52,73}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{52,73}}</string>
+                <key>sourceSize</key>
+                <string>{52,73}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:n18.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{110,259},{73,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{73,24}}</string>
+                <key>sourceSize</key>
+                <string>{73,24}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:shu1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{110,221},{68,35}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{68,35}}</string>
+                <key>sourceSize</key>
+                <string>{68,35}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:shu11.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,246},{44,36}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{44,36}}</string>
+                <key>sourceSize</key>
+                <string>{44,36}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:shu12.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{396,220},{30,38}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{30,38}}</string>
+                <key>sourceSize</key>
+                <string>{30,38}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:shu13.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,285},{37,37}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{37,37}}</string>
+                <key>sourceSize</key>
+                <string>{37,37}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:shu14.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{246,269},{41,38}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{41,38}}</string>
+                <key>sourceSize</key>
+                <string>{41,38}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:shu15.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{290,179},{32,39}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,39}}</string>
+                <key>sourceSize</key>
+                <string>{32,39}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:shu2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{110,182},{70,36}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{70,36}}</string>
+                <key>sourceSize</key>
+                <string>{70,36}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:shu3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{220,231},{67,35}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{67,35}}</string>
+                <key>sourceSize</key>
+                <string>{67,35}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:shu4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{290,259},{68,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{68,29}}</string>
+                <key>sourceSize</key>
+                <string>{68,29}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:vbcbcvbcvcb.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{47,280},{58,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{58,25}}</string>
+                <key>sourceSize</key>
+                <string>{58,25}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:z h chushou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{226,179},{61,49}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{61,49}}</string>
+                <key>sourceSize</key>
+                <string>{61,49}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:z h chushou3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{226,128},{94,48}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{94,48}}</string>
+                <key>sourceSize</key>
+                <string>{94,48}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:z h chushou4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{186,269},{57,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{57,32}}</string>
+                <key>sourceSize</key>
+                <string>{57,32}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:z h tou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{127,104}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{127,104}}</string>
+                <key>sourceSize</key>
+                <string>{127,104}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:z h yezi.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{122,138},{101,41}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{101,41}}</string>
+                <key>sourceSize</key>
+                <string>{101,41}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:z hchushou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,107},{119,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{119,60}}</string>
+                <key>sourceSize</key>
+                <string>{119,60}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:z hshenti.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{226,0},{97,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{97,125}}</string>
+                <key>sourceSize</key>
+                <string>{97,125}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:z hshou 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{429,246},{65,36}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{65,36}}</string>
+                <key>sourceSize</key>
+                <string>{65,36}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:z htou 2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{47,246},{60,31}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{60,31}}</string>
+                <key>sourceSize</key>
+                <string>{60,31}</string>
+            </dict>
+            <key>monster_hairuihuayao_10034:z htou 3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{326,0},{116,86}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{116,86}}</string>
+                <key>sourceSize</key>
+                <string>{116,86}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>monster_hairuihuayao_10034.pvr.ccz</string>
+            <key>size</key>
+            <string>{499,322}</string>
+            <key>textureFileName</key>
+            <string>monster_hairuihuayao_10034.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

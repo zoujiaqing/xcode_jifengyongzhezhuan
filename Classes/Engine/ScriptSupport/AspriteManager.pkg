@@ -1,0 +1,28 @@
+class AspriteManager
+{
+    AspriteManager();
+    ~AspriteManager();
+    
+    static AspriteManager* getInstance();
+    static void purgeInstance();    
+
+    ASprite *getAsprite(string key);
+    void loadAllAsprite();
+
+	/**
+	* Instruction : 获取某一帧Frame
+	* @param 
+	*/	
+	CCSprite* getOneFrame(std::string key,std::string frameName);
+    
+	/**
+	* Instruction : 获取Frame之间的相对位置
+	* @param parentFrame 父节点名字
+	* @param childFrame 子节点名字
+	* @param childFrameAnchorPoint 子节点锚点
+	* @result pos 相对位置
+	* @result CCSprite* 子节点
+	*/
+	CCSprite* getFramesRelativePos(std::string key,std::string parentFrame,std::string childFrame,
+		CCPoint childFrameAnchorPoint,CCPoint &pos);	
+};

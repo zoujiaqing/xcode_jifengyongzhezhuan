@@ -1,0 +1,56 @@
+class LevelLayer : public cocos2d::CCLayer
+{
+public:
+
+	static int						sCalcZorder(CCPoint pos);
+	static float					sCalcDepth(unsigned int z);
+	static BaseListener*			sGetListenerByTag(int tag);
+
+	
+	//-----------------------------------------------------------------------
+	//	return only your own seer and follow seer not other players'
+	//-----------------------------------------------------------------------
+	SpriteSeer*						getSpriteSeer();
+	SpriteElf*						getFollowSprite();
+	int								getObjectCount(int tag);
+	CCPoint							getRandomPoint();
+	CCPoint							getSeerBornPoint(sActiveLevelConfig& config);
+	int								getID();
+
+	CPhysicsLayer*					getPhysicsLayer(void){return m_pPhysicsLayer;}
+	sLevelData*						GetData(void){return m_levelDataReference;}
+
+	CCSize							getMapSizeInPixel(void);
+	CCSize							getMapTileSizeInPixel( void );
+	CCRect							getMapRect(void);
+
+	CCNode*							getObjectLayer(void){return m_pObjectsLayer;}
+
+	SpriteTransPoint*				getMainLandTranspoint();
+	//get jing ying fu ben chuan shong dian
+	SpriteTransPoint* getEliteTranspoint();
+
+
+	//-----------------------------------------------------------------------
+	//	add/remove/update other player
+	//-----------------------------------------------------------------------
+	void		addOtherPlayer(PLAYER_ID uid, const char* userName, unsigned int type, cocos2d::CCPoint pt, unsigned int orient, unsigned int battleSide);
+	void		removeOtherPlayer(PLAYER_ID uid);
+	void		updateOtherPlayer(PLAYER_ID uid, cocos2d::CCPoint pt, unsigned int animID, bool bFlip);
+	void		DoOtherPlayerSkill(PLAYER_ID uid, unsigned int skillID, const CCPoint& rolePos, const CCPoint& roleDir, const CCPoint& aimDir, const CCPoint& monsterPos, bool bAnimMonster);
+	void		DoElfSkill(PLAYER_ID uid, unsigned int skillID, const CCPoint& rolePos, const CCPoint& roleDir, const CCPoint& aimDir, const CCPoint& monsterPos, bool bAnimMonster);
+
+	SpriteSeer* getPlayer(PLAYER_ID uid);
+	
+	void	EquipOnePlayerWeapon(int playerId,int weaponId);
+	
+	///  add monster / delete monster
+	void	addMonster(MonsterInitInfo info);
+	void    removeMonster(unsigned int uid);
+
+	void	ShowMonsterOrNot(bool bShow);
+
+	void    showTouchEffect(CCPoint point);
+
+	
+}

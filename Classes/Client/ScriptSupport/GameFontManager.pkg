@@ -1,0 +1,13 @@
+class GameFontManager
+{
+    static float superFontSize();
+    static float largeFontSize();
+    static float smallFontSize();
+    static float miniFontSize();
+    static float createPlayerLabelFontSize();
+    static float smallTitleFontSize();
+    static float smallTipFontSize();
+    static float captureItemTipNameFontSize();
+    static float captureItemTipCountFontSize();
+    static float captureLayerFontSize();
+};

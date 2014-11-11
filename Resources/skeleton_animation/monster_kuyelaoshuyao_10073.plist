@@ -1,0 +1,551 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>monster_kuyelaoshuyao_10073:4566f.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{150,86}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{150,86}}</string>
+                <key>sourceSize</key>
+                <string>{150,86}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 108.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{426,0},{60,71}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{60,71}}</string>
+                <key>sourceSize</key>
+                <string>{60,71}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 112.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{355,207},{47,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{47,29}}</string>
+                <key>sourceSize</key>
+                <string>{47,29}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 38.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{81,201},{27,51}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,51}}</string>
+                <key>sourceSize</key>
+                <string>{27,51}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 40.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{489,20},{20,9}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{20,9}}</string>
+                <key>sourceSize</key>
+                <string>{20,9}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 42.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{426,74},{60,71}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{60,71}}</string>
+                <key>sourceSize</key>
+                <string>{60,71}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 44.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{228,202},{47,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{47,29}}</string>
+                <key>sourceSize</key>
+                <string>{47,29}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 46.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{44,208},{32,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,27}}</string>
+                <key>sourceSize</key>
+                <string>{32,27}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 48.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{228,166},{51,33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{51,33}}</string>
+                <key>sourceSize</key>
+                <string>{51,33}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 50.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{393,248},{25,15}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,15}}</string>
+                <key>sourceSize</key>
+                <string>{25,15}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 52.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{319,223},{30,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{30,25}}</string>
+                <key>sourceSize</key>
+                <string>{30,25}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 54.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{44,238},{34,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{34,21}}</string>
+                <key>sourceSize</key>
+                <string>{34,21}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 56.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{199,199},{26,20}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{26,20}}</string>
+                <key>sourceSize</key>
+                <string>{26,20}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 58.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{452,240},{27,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,17}}</string>
+                <key>sourceSize</key>
+                <string>{27,17}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 60.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{199,244},{24,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,14}}</string>
+                <key>sourceSize</key>
+                <string>{24,14}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 62.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,246},{27,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,13}}</string>
+                <key>sourceSize</key>
+                <string>{27,13}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 64.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{388,75},{30,67}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{30,67}}</string>
+                <key>sourceSize</key>
+                <string>{30,67}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 66.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{226,234},{42,24}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{42,24}}</string>
+                <key>sourceSize</key>
+                <string>{42,24}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 68.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{473,204},{28,33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{28,33}}</string>
+                <key>sourceSize</key>
+                <string>{28,33}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 70.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{410,148},{60,71}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{60,71}}</string>
+                <key>sourceSize</key>
+                <string>{60,71}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 72.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{482,240},{27,14}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{27,14}}</string>
+                <key>sourceSize</key>
+                <string>{27,14}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 74.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{473,148},{29,53}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{29,53}}</string>
+                <key>sourceSize</key>
+                <string>{29,53}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 76.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{489,0},{19,17}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{19,17}}</string>
+                <key>sourceSize</key>
+                <string>{19,17}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:a/sprite 78.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{374,145},{33,59}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{33,59}}</string>
+                <key>sourceSize</key>
+                <string>{33,59}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:aqese.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,89},{138,63}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{138,63}}</string>
+                <key>sourceSize</key>
+                <string>{138,63}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:bf6yt.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{292,0},{131,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{131,72}}</string>
+                <key>sourceSize</key>
+                <string>{131,72}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:c/sprite 102.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{292,75},{93,44}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{93,44}}</string>
+                <key>sourceSize</key>
+                <string>{93,44}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:c/sprite 80.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{235,102},{45,61}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{45,61}}</string>
+                <key>sourceSize</key>
+                <string>{45,61}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:c/sprite 84.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,208},{41,35}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{41,35}}</string>
+                <key>sourceSize</key>
+                <string>{41,35}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:c/sprite 85.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{81,155},{52,43}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{52,43}}</string>
+                <key>sourceSize</key>
+                <string>{52,43}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:c/sprite 87.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{136,199},{60,50}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{60,50}}</string>
+                <key>sourceSize</key>
+                <string>{60,50}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:c/sprite 89.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{282,170},{70,50}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{70,50}}</string>
+                <key>sourceSize</key>
+                <string>{70,50}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:c/sprite 92.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,155},{78,50}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{78,50}}</string>
+                <key>sourceSize</key>
+                <string>{78,50}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:c/sprite 94.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{141,148},{84,48}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{84,48}}</string>
+                <key>sourceSize</key>
+                <string>{84,48}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:c/sprite 97.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{283,122},{88,45}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{88,45}}</string>
+                <key>sourceSize</key>
+                <string>{88,45}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:c/sprite 99.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{141,102},{91,43}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{91,43}}</string>
+                <key>sourceSize</key>
+                <string>{91,43}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:sdfgwr.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{153,0},{136,99}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{136,99}}</string>
+                <key>sourceSize</key>
+                <string>{136,99}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:shitou2.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{405,222},{44,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{44,23}}</string>
+                <key>sourceSize</key>
+                <string>{44,23}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:shitou3.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{352,239},{38,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{38,23}}</string>
+                <key>sourceSize</key>
+                <string>{38,23}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:shitou4.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{199,222},{24,19}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{24,19}}</string>
+                <key>sourceSize</key>
+                <string>{24,19}</string>
+            </dict>
+            <key>monster_kuyelaoshuyao_10073:shtou1.pvr.ccz</key>
+            <dict>
+                <key>frame</key>
+                <string>{{278,223},{38,29}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true />
+                <key>sourceColorRect</key>
+                <string>{{0,0},{38,29}}</string>
+                <key>sourceSize</key>
+                <string>{38,29}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>realTextureFileName</key>
+            <string>monster_kuyelaoshuyao_10073.pvr.ccz</string>
+            <key>size</key>
+            <string>{510,264}</string>
+            <key>textureFileName</key>
+            <string>monster_kuyelaoshuyao_10073.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

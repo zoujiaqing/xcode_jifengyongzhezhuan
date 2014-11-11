@@ -1,0 +1,16 @@
+struct MonthCardInfo
+{
+	unsigned int card_id;
+	bool is_received;
+	unsigned int day_count;
+	unsigned int diamond_amount;
+	bool is_alarm;
+};
+
+class MonthCardManager
+{
+public:
+	static MonthCardManager* Get();
+	bool hasMonthCard();
+	MonthCardInfo getOneMonthCard();
+}

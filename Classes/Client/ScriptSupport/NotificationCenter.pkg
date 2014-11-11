@@ -1,0 +1,9 @@
+class NotificationCenter
+{
+public:
+	static NotificationCenter* defaultCenter();
+	int registerScriptObserver(LUA_FUNCTION handler);
+	void broadcast(int msg, void*sender, std::string param1 = "", std::string param2="");
+	void unregisterScriptObserver(int handler);
+	void unregisterAllScriptObservers();
+}

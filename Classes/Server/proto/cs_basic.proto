@@ -1,0 +1,331 @@
+/*
+1. 包格式：
+	total_len(u32) + header_len(u32) + CSMessageHeader + msgpayload(例如CSLoginReq)
+
+2. 使用规则：
+	(1) 字段只能加，不能减；
+	(2) 增加的字段只能是optional类型，且必须给出default值，最好还有相关说明；
+	(3) 不能改变原来字段的序号。
+
+3. 命名规则：
+	CSXXXXReq/Rsp：以大写CS开头，客户端发来的请求以Req结尾，服务端的相应包以Rsp结尾，
+					中间的XXXX代表对应的功能，比如CSLoginReq/Rsp。
+*/
+
+import "head.proto" ;
+// 本文件只定义最基础的功能模块的协议：登录、延时检测、在线人数、同步时间
+// 社区等核心模块的协议定于cs_core.proto，对战模块的协议定义于cs_battle.proto
+
+// 定义CS协议的一些常量
+enum CSMessageConst {
+    cs_msg_min_size    = 10;      // 客户端发过来的最小包长
+    //cs_msg_max_size    = 65537;  // 客户端发过来的最大包长
+    cs_msg_max_size    = 205537;  // 客户端发过来的最大包长
+}
+
+// 和客户端通讯的标准报文头部
+message CSMessageHeader {
+	required head_msg.CSMsgName msg_id	= 1;	// 协议id
+	optional uint32 errcode             = 2; 	// 返回值，客户端发给后台的包可以不赋值
+	optional uint64 gateway_session		= 3; // gateway服务器和online及其login之间标识
+	optional uint32 ack					= 4;	//协议ACK控制划动窗口
+}
+
+message ErrorCode {
+
+}
+
+// 和客户端通讯的特殊错误,param是对错误码的相应说明(标准错误只需设置CSMessageHeader 中errcode返回给客户端即可)
+message CSErrorCode
+{
+	required uint32 errcode    	= 1; // 错误码
+	required uint32 param		= 2; // 错误码相关说明 (如:errcode为等级不足, param则表示需要达到的等级)
+}
+
+//==================================================================================
+// 下面协议是login服务器的协议
+//==================================================================================
+// 客户端检查session的合法性请求
+message CSCheckSessionReq {
+	required bytes sess_id			= 1;				// 验证的授权token、session id等
+	required int32	channel_id_self	= 2;				// 第三方平台id, 内部统一分配
+	optional int32	server_id		= 3[default = 0];	// 服务器编号(第三方服务器编号)
+	optional uint32	user_id			= 4[default = 0];	// 用户ID，未知则填0
+	optional bytes	app_id			= 5[default = ""];	// 应用ID
+	optional bytes app_key			= 6[default = ""];	// 应用密钥
+	optional bytes cp_id			= 7[default = ""];	// 游戏合作商编号
+	optional bytes channel_id		= 8[default = ""];	// 渠道编号(第三方)
+	optional bytes extra_data		= 9[default = ""];	// 客户端相关信息
+	optional uint32 game_id	   		= 10[default = 0];	// 自己渠道依赖项 sess_id + user_id + channel_id_self + game_id
+	optional bytes version			= 11[default = ""]; // 客户端版本号
+	optional bytes ip				= 12[default = ""]; // 客户端ip地址
+	optional bytes platform			= 13[default = ""]; // 客户端系统类型
+	optional bytes equdid			= 14[default = ""]; // 客户端设备imei
+	optional bytes eqtype			= 15[default = ""]; // 客户端设备型号
+	optional bytes mac				= 16[default = ""]; // 客户端mac地址
+}
+// 客户端检查session的合法性回包(给回包证明session合法，否则发送错误码)
+message CSCheckSessionRsp {
+	required uint32 user_id 		= 1;				// 用户ID
+	required int32 channel_id		= 2[default = 0];   // 第三方平台id, 内部统一分配
+	optional bytes access_token		= 3[default = ""];	// 第三方返回的token, 需要返回给客户端
+	optional bytes extra_data      	= 4[default = ""];  // 客户端相关信息
+}
+
+// 获得角色列表请求
+message CSGetRoleListReq {
+	required uint32 uid        = 1; // 登录米米号
+	required uint32 channel_id = 2; // 渠道id
+	optional uint32 server_id  = 3;	// 查询具体server的角色列表(没有赋值或为0则查询所有服务器的角色)
+}
+message CSGetRoleListRsp {
+	message Roles {
+		required uint32 uid        	= 1; // 登录米米号
+		required uint32 reg_time	= 2; // 角色注册时间
+		required uint32 channel_id 	= 3; // 渠道id
+		required uint32 server_id  	= 4; // 服务器id
+		required bytes name			= 5; // 玩家昵称，单服内唯一
+		required uint32 role_type	= 6; // 1男战士、2女战士 ...
+		required uint32 lv			= 7; // 角色等级
+		optional uint32 last_login_tm = 8;	// 玩家上次登录时间
+        optional uint32 globalid      = 9;  // 全局ID
+		optional bool 	gm		      = 10;  // GM
+	}
+	repeated Roles 					roles = 1;	// 角色列表
+    optional uint32                 server_id = 2;
+}
+
+// 创建角色请求包
+message CSCreateRoleReq {
+	required bytes  name       		= 1; // 玩家昵称，单服内唯一
+	required uint32 role_type  		= 2; // 1男战士、2女战士
+	required uint32 server_id  		= 3; // 服务器id
+	required string version         = 4; // 前段游戏版本号
+	required string platform        = 5; // 前端设备的操作系统及版本号
+	required string equdid          = 6; // 前端设备id
+	required string eqtype          = 7; // 前端设备型号
+	required string ip              = 8; // 前段设备ip地址
+	required string mac             = 9; // 前端设备mac地址
+}
+
+message CSCreateRoleRsp {
+	required uint32 userid     		= 1; // 玩家标识(米米号)
+	required uint32 reg_time   		= 2; // 玩家角色创建时间
+	required uint32 channel_id 		= 3; // 渠道id
+	required bytes name       		= 4; // 玩家昵称，单服内唯一
+	required uint32 role_type  		= 5; // 1男战士、2女战士 ...
+	required uint32 server_id		= 6; // 玩家所在服务器id
+	// ....
+}
+//==================================================================================
+// 上面协议是login服务器的协议
+//==================================================================================
+
+
+// 登录协议
+message CSLoginReq {
+	required uint32 uid        	= 1; // 登录米米号
+	required uint32 reg_time   	= 2; // 角色注册时间
+	required uint32 channel_id 	= 3; // 渠道id
+	required uint32 server_id	= 4; // 服务器id
+	//required uint32 game_id	   = 4; // 
+	
+	//required bytes sid        = 5; // 用于验证登录合法性的会话ID（Session ID）
+	optional uint64 tokenid    = 6; // 由Online生成，用于断线重连，可恢复断线前状态。如果是全新登录，则无需发送此字段。
+    optional uint32 globalid   = 7; // 全局唯一ID 海外用(从1开始递增)
+}
+
+message CSLoginRsp {
+	required uint64 tokenid    = 1; // 由Online生成，用于断线重连，可恢复断线前状态。
+
+	required uint32 userid	   = 2;	// 玩家标识(米米号)
+	required uint32 reg_time   = 3; // 玩家注册时间
+	required uint32 channel_id = 4; // 渠道id
+
+	required bytes name       = 5; // 玩家昵称
+	required uint32 lv         = 6; // 玩家等级
+	required uint32 exp        = 7; // 玩家经验值
+	required uint32 type	   = 8; // 
+    optional uint32 globalid   = 9; // 全局唯一ID 海外用(从1开始递增)
+}
+
+// 创建角色协议
+message CSCrtRoleReq {
+	required uint32 userid     = 1; // 玩家标识(米米号)
+	required uint32 channel_id = 2; // 渠道id
+    required bytes name       = 3; // 玩家昵称，单服内唯一
+    required uint32 role_type  = 4; // 1男战士、2女战士
+}
+
+
+message CSDelRoleReq {
+	
+}
+
+message CSCrtRoleRsp { // 返回这个包，表示角色创建成功，并且自动登录成功，无需再次发送登录协议
+	required uint64 tokenid    = 1; // 由Online生成，用于断线重连，可恢复断线前状态。
+	required uint32 mapid      = 2; // 玩家所在地图ID
+	required uint32 xpos       = 3; // 玩家所在地图x坐标
+	required uint32 ypos       = 4; // 玩家所在地图y坐标
+	required uint32 orient     = 5; // 玩家朝向
+}
+
+// 查询大区及服务器列表
+message CSQueryShardReq 
+{
+}
+
+message CSServerBase
+{
+	required bytes desc	   	= 1; // 服务器名称
+	required bytes ip		   	= 2; // IP地址
+	required uint32 port	   	= 3; // Port
+	required uint32 online	   	= 4; // 当前在线人数
+	required uint32 newsvr	   	= 5; // 0: 老服, 1: 新服
+}
+
+message CSShardBase
+{
+	required uint32 id			= 1; // 大区编号
+	required uint32 os		   	= 2; // 1: IOS, 2: Android
+	required uint32 provider  	= 3; // 1: 电信，2: 网通
+	repeated CSServerBase svrs 	= 4; // 服务器列表
+}
+
+// 回复大区及服务器列表
+message CSQueryShardRsp
+{
+	repeated CSShardBase shards	= 1; // 大区列表
+}
+
+// 单独刷新当前在线人数, 该消息并非CS消息，是Online到Login的消息
+message FlushOnline
+{
+	required uint32 online		= 1; // 当前在线人数
+}
+// 单独刷新服务器信息， 该消息并非CS消息，是Online到Login的消息
+message FlushServer
+{
+	required uint32 id			= 1; // 所属大区编号
+	repeated CSServerBase svrs 	= 2; // 服务器信息
+}
+
+// 玩家下线消息(用于gateway svr 告知 online、login服务器)
+message PlayerOffline {
+
+}
+
+// 客户端检测和服务端的延时
+message CSPingReq {
+    optional uint32 last_delay  = 1;
+}
+
+message CSPingRsp {
+	required uint32 time		=  1;//
+}	
+
+// Task message
+message CSTaskAccept {
+}
+
+// nick name
+message CSNickNameReq{
+	required uint32 sexual		= 1; //性别
+	required uint32 zone_id		= 2; //服务器号
+
+}
+
+message CSNickNameRsp{
+	repeated bytes nick			= 1; //名字
+	required uint32 sexual      = 2; //性别
+}
+
+message CSLoginAnnouncementReq{
+
+}
+
+message CSFreezeTimeRsp{
+	required uint32 tick		= 1; //距离解冻的秒数
+}
+
+message CSDeviceInfo {
+	required string version     = 1; // 前段游戏版本号
+	required string platform    = 2; // 前端设备的操作系统及版本号
+	required string equdid      = 3; // 前端设备id
+	required string eqtype      = 4; // 前端设备型号
+	required string ip          = 5; // 前段设备ip地址
+	required string mac         = 6; // 前端设备mac地址
+}
+
+//拉取推荐服务器列表
+message CSGetRecommendlistReq{
+
+}
+
+message CSGetRecommendlistRsp{
+	
+	required uint32 server_id	= 1; // 推荐服务器id
+}
+// 客户端退出登录协议
+message CSLoginOutReq {
+}
+
+// 提示前端播放开场动画
+message CSOpeningAnimationRsp {
+	required uint32 play_or_not = 1; // 0 代表不播放; 1 代表播放
+}
+
+// 删除账号
+message CSDelUserReq{
+
+}
+
+message CSDelUserRsp {
+
+}
+
+message CSQueryDelReq {
+}
+
+message CSQueryDelRsp {
+	required bool res			= 1; // true 代表 该账号已被删除
+}
+
+message CSRecoverUserReq{
+
+}
+
+message CSRecoverUserRsp{
+
+}
+
+message CSGetTokenReq {
+
+}
+
+message CSGetTokenRsp {
+    required uint64 tokenid      =  1;
+    optional string kakao_tokenid   =  2;   //kakao token用字段
+}
+
+message CSCheckTokenReq {
+    required uint32 user_id = 1;
+    required uint32 channel_id = 2;
+    required uint64 tokenid      =  3;
+    optional string kakao_tokenid   =  4;   //kakao token用字段
+}
+
+message CSCheckTokenRsp {
+    required bool success =  1;
+	required uint32 account_id 	= 2;				// 用户ID
+}
+
+message CSGetLastLoginSvrIDReq {
+    required uint32 user_id = 1;
+    required uint32 channel_id = 2;
+}
+
+message CSGetLastLoginSvrIDRsp {
+    required uint32 svr_id = 1;
+}
+
