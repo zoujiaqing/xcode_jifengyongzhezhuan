@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<UC_Award>
-	<Award ID="1000" Task_Text="M_9YOU_REWARD1" Task_LookFace="map_ui_system_icon_FRAME_ICON_INVITEREWARD" Type1="1" RaidDrops1="416001/50000" RaidDrops2="416020/20" RaidDrops3="416021/2" RaidDrops4="0" RaidDrops5="0" RaidDrops6="0" RaidDrops7="0" RaidDrops8="0"/>
-	<Award ID="1001" Task_Text="M_9YOU_REWARD2" Task_LookFace="map_ui_system_icon_FRAME_ICON_INVITEREWARD" Type1="2" RaidDrops1="416001/100000" RaidDrops2="416020/50" RaidDrops3="416017/3" RaidDrops4="0" RaidDrops5="0" RaidDrops6="0" RaidDrops7="0" RaidDrops8="0"/>
-	<Award ID="1002" Task_Text="M_9YOU_REWARD3" Task_LookFace="map_ui_system_icon_FRAME_ICON_INVITEREWARD" Type1="3" RaidDrops1="416001/100000" RaidDrops2="416020/200" RaidDrops3="416017/5" RaidDrops4="0" RaidDrops5="0" RaidDrops6="0" RaidDrops7="0" RaidDrops8="0"/>
-</UC_Award>

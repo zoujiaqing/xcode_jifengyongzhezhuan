@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<RaidBasicInformation>
-     <Raid RaidID="200299" RaidName="山脉PK" Submap="1" Icon="icon_instance_mountain1" MapID="100201" HeroBornCoordinate="42/58;93/56;42/53;93/51" Type="3" BGMID="301001" RequiredLevel="1" RaidDrops1="416002//10" RaidDrops2="430000//3;430000//5" money="50" exp="50" Exploit="50" TransDestination="0" TransCoordinate="0" Elite="0" />
-</RaidID>

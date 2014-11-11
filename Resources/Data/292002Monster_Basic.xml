@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Monster_Basic>
-     <Monster RaidID="292002" MapID="190002" RaidMonsterID="1" MonsterID="19009" MosterBornCoordinate="45/33" MosterPatrolRange="40/39;55/54" Group="0" Rate="0" Turn="0" Elite="0" Friend="0" MonsterType="130" MosterLevel="15" />
-</RaidID>

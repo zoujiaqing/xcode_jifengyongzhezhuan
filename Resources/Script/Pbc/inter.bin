@@ -1,74 +1,0 @@
-
-Š
-inter.proto
-head.protocs_core.proto"…
-InterAttributesInfo1
-values (2!.InterAttributesInfo.KeyValueDead;
-KeyValueDead
-key (
-value (
-dead_tm ("k
-InterUserSkillInfo-
-skills (2.InterUserSkillInfo.UserSkill&
-	UserSkill
-
-id (
-level ("’
-InterItemInfo&
-items (2.InterItemInfo.UserItemZ
-	EquipHole
-
-hole_index (
-item_gem_id (
-attr_key (
-
-attr_value (}
-UserItem
-pos (
-item_id (
-
-item_level (
-item_num (-
-equip_holes (2.InterItemInfo.EquipHole"š
-inter_fairy_basic_info_t
-fairy_lv (
-fairy_grade (
-fairy_status (
-	fairy_exp (
-fairy_born_time (
-fairy_get_way ("¶
-inter_fairy_train_info_t
-train_phy_atk (
-train_mag_atk (
-train_ski_atk (
-train_phy_def (
-train_mag_def (
-train_ski_def (
-train_hp ("§
-InterFairyInfo
-	fairy_pos (
-fairy_id (-
-
-basic_info (2.inter_fairy_basic_info_t-
-
-train_info (2.inter_fairy_train_info_t
-
-train_cost ("š
-	InterSync
-uid (
-reg_time (
-
-channel_id ( 
-userinfo (2.BasicUserInfo&
-	skillinfo (2.InterUserSkillInfo+
-attributeinfo (2.InterAttributesInfo 
-iteminfo (2.InterItemInfo"
-	fairyinfo (2.InterFairyInfo
-data	 (
-zone_id
- ("
-
-InterOut"-
-InterDbSync
-msg_name (
-data (

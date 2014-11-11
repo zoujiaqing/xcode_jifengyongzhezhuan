@@ -1,9 +1,0 @@
-require("Script/Language")
-local svn="37378"
-function getsvn()
-return svn
-end
-
-function getresversion()
-	return LanguageLocalization:GetLocalization("M_RESOURS")..svn
-end

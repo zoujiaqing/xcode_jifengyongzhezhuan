@@ -1,91 +1,0 @@
-
-º
-cs_config.protocs_battle.proto"=
-CSRangeInfo
-start (2.CSPoint
-end (2.CSPoint"Ï
-CSMonsterInfo_t
-raid_id (
-speed (
-type (
-is_boss ( 
-
-body_range (2.CSRangeInfo
-physical_attack (
-magic_attack (
-skill_attack (
-physical_defence	 (
-magic_defence
- (
-skill_defence (
-health_point (
-accurate (
-dodge (
-wreck (
-parry (
-critical_strike (
-tenacity (
-slay (
-proficiency (
-vision (
-birth (2.CSRangeInfo"º
-CSMapMonster_t
-raid_id (
-
-monster_id (
-monster_value_type (
-monster_level (
-birth_place (2.CSPoint"
-patrol_place (2.CSRangeInfo
-elite ("o
-CSMapMonsterGroup_t
-refresh_time (
-times (!
-monsters (2.CSMapMonster_t
-group_id ("°
-CSMapContent_t
-map_id (
-	trans_des (
-trans_place (2.CSPoint!
-birth_place_gen (2.CSPoint+
-monster_group (2.CSMapMonsterGroup_t
-monster_birth (2.CSPoint2
-monster_nums (2.CSMapContent_t.CSMonsterNum7
-CSMonsterNum
-
-monster_id (
-monster_num ("P
-CSMapContentList_t
-instance_id (%
-map_contents (2.CSMapContent_t"«
-CSMonsterValue_t
-
-id (
-type (
-level (
-physical_attack (
-magic_attack (
-skill_attack (
-physical_defence (
-magic_defence (
-skill_defence	 (
-health_point
- (
-accurate (
-dodge (
-wreck (
-parry (
-critical_strike (
-tenacity (
-slay (
-courage (
-charm (
-trick (
-proficiency (
-hp_line (")
-CSBattlePrepareReq
-instance_id ("y
-CSBattlePrepareRsp)
-map_contents (2.CSMapContentList_t)
-monster_values (2.CSMonsterValue_t
-error (
